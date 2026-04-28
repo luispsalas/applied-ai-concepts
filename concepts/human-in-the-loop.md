@@ -1,54 +1,82 @@
 # Human-in-the-Loop (HITL)
 
 ## One-line essence
-A design pattern that keeps humans as decision authorities at critical points in an AI workflow.
+A design pattern that keeps humans as decision authorities at critical points — not as a safety afterthought, but as a structural component of the system.
 
 ---
 
 ## Technical definition
 
-*Draft — pending synthesis*
+Human-in-the-Loop (HITL) is a system design principle in which human judgment is embedded at defined points in an AI workflow, enabling review, correction, or approval before consequential actions are taken or outputs are used. HITL is distinct from passive oversight — it specifies *where* in a process human judgment is structurally required, and *what form* that judgment takes.
+
+HITL operates on a spectrum:
+
+- **Full HITL:** Every AI output is reviewed before use (high-stakes, low-volume contexts)
+- **Selective HITL:** Human review is triggered by confidence thresholds, output type, or risk classification
+- **Human-on-the-loop:** Humans monitor at the system level and intervene when anomalies are detected, rather than reviewing individual outputs
+- **Human-initiated:** The system acts autonomously unless a human explicitly pauses it
+
+The right point on this spectrum depends on consequence severity, volume, reversibility of actions, and the model's demonstrated reliability in that specific domain.
 
 ---
 
 ## Plain-language version
 
-*Draft — pending synthesis*
+HITL answers a deceptively simple question: at what points in this AI process does a human need to make the call?
+
+It is not about distrust of AI — it is about recognizing that some decisions carry consequences that require human accountability, and that automated systems can fail in ways that are difficult to detect from the inside. HITL is the design decision that makes those moments explicit.
+
+The alternative — assuming that human oversight will happen informally — is not a design. It is an assumption that tends to erode under operational pressure.
 
 ---
 
 ## AI literacy notes
 
-*Draft — pending synthesis*
+HITL is where governance becomes operational. A policy that says "humans remain responsible for AI decisions" without specifying where in the workflow that responsibility is exercised is not a governance policy — it is a statement of intent.
+
+Three design questions that HITL forces into the open:
+
+1. **Where?** Which specific decision points require human judgment? Not "generally" — specifically.
+2. **Who?** Which role or individual holds that judgment? Unassigned responsibility is absent responsibility.
+3. **What are they reviewing?** Human reviewers need sufficient context to exercise genuine judgment, not just rubber-stamp automated outputs. If the review is too fast or too removed from the underlying data, it is not HITL in practice.
+
+A practical tension: human review does not scale at the same rate as AI throughput. As systems process more volume, HITL must be designed thoughtfully — not eliminated. The response to scale pressure is better-designed review (clear criteria, right information, appropriate tooling), not less review.
 
 ---
 
 ## Confidence level
 
-*To be assigned*
+**Established.** HITL is a foundational concept in human-computer interaction and AI safety literature. Its application to modern LLM-based systems is active and evolving — particularly around selective HITL design and the challenge of maintaining genuine human judgment at scale.
 
 ---
 
 ## Related concepts
 
-- [Harness Paradigm](harness-paradigm.md)
-- [Context Engineering](context-engineering.md)
-- Human Responsibility in AI Use
-- Guardrails
-- Evaluation (AI Systems)
+- [Harness Paradigm](harness-paradigm.md) — HITL checkpoints are implemented and enforced at the harness layer
+- [Hallucination](hallucination.md) — hallucination risk is a primary driver of HITL requirements
+- [Context Engineering](context-engineering.md) — reviewers need well-designed context to exercise genuine judgment
+- Human Responsibility in AI Use — the normative principle that HITL operationalizes
+- Guardrails — automated controls that complement HITL; not a substitute for it
+- Evaluation (AI Systems) — structured evaluation pipelines as a scalable form of HITL
 
 ---
 
 ## Sources
 
-*To be assigned*
+- LangChain — "Human Judgment in the Agent Improvement Loop" — human review alone does not scale; expert judgment must be encoded into evaluation pipelines; HITL as a design discipline, not a fallback
+- AI Literacy Concepts working notes — organizational implications layer
 
 ---
 
 ## Audience relevance
 
-*Draft — pending synthesis*
+| Audience | Relevance |
+|---|---|
+| **Technical / Professional** | Informs workflow architecture decisions: where to place review gates, how to design reviewer interfaces, how to define trigger conditions for selective HITL. |
+| **Organizational** | The concept that translates "human accountability for AI" from a principle into an operational practice. Essential for any governance framework. |
+| **Client-facing** | Addresses the practical question: "how do we make sure someone is checking the AI's work?" — with a structured answer rather than reassurance. |
+| **LLM-native** | Shapes agent design: autonomous agents require explicit HITL specification, not just default human monitoring. |
 
 ---
 
-*Last updated: v0.1 · April 2026 — placeholder*
+*Last updated: v1.0 · April 2026*

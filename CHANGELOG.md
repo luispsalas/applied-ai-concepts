@@ -1,5 +1,18 @@
 # Changelog
 
+## v1.1 — April 2026
+
+**All 6 core concepts fully drafted.**
+
+- `hallucination` — v1.0
+- `human-in-the-loop` — v1.0
+- `harness-paradigm` — v1.0
+- `persistent-synthesis` — v1.0
+- `prompt-engineering` — v1.0
+- Glossary index updated with full one-line essences for all concepts
+
+---
+
 ## v1.0 — April 2026
 
 **Initial publication.**
