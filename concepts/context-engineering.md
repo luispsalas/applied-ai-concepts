@@ -55,8 +55,11 @@ Context engineering is also where governance enters. Decisions about what contex
 
 ## Sources
 
-- Karpathy, A. — LLM Wiki (gist, 2023) — persistent synthesis philosophy; wiki as context architecture
-- General practitioner consensus — Context Engineering as a discipline distinct from prompt engineering: widely adopted framing in production AI work (2023–present)
+| ID | Source | Contribution to this entry |
+|---|---|---|
+| SRC-011 | Karpathy, Andrej — *"Context engineering is the delicate art and science..."* (X post, 2025) · [link](https://x.com/karpathy/status/1937902205765607626) | Canonical definition: "context engineering is the delicate art and science of filling the context window with just the right information for the next step." Draws the key distinction from prompt engineering — prompts are short task descriptions; context engineering is the full information environment designed for production systems. |
+| SRC-012 | LangChain — *Context Engineering for Agents* (blog, 2025) · [link](https://blog.langchain.com/context-engineering-for-agents/) | Practitioner framework for context engineering in agentic systems; dynamic context construction at runtime; distinction from prompt engineering at the system design level. |
+| SRC-007 | Karpathy, Andrej — *LLM Wiki* (gist, 2023) · [link](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) | Synthesis philosophy informing the wiki-as-context-architecture framing; context as a compounding artifact. |
 
 ---
 
@@ -71,4 +74,4 @@ Context engineering is also where governance enters. Decisions about what contex
 
 ---
 
-*Last updated: v1.0 · April 2026*
+*Last updated: v1.1 · May 2026*

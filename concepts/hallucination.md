@@ -59,8 +59,10 @@ Grounding strategies (RAG, retrieval from verified sources, tool use) reduce hal
 
 ## Sources
 
-- General practitioner and research consensus — hallucination as a fundamental property of autoregressive language models (2021–present)
-- AI Literacy Concepts working notes — organizational implications layer
+| ID | Source | Contribution to this entry |
+|---|---|---|
+| SRC-010 | Zhang et al. — *A Survey on Hallucination in Large Language Models: Principles, Taxonomy, Challenges, and Open Questions* (arXiv:2311.05232, 2023) · [link](https://arxiv.org/abs/2311.05232) | Defines factuality hallucination (discrepancy with verifiable real-world facts) and faithfulness hallucination (divergence from user input or internal consistency). Provides taxonomy, detection methods, and mitigation overview. Peer-reviewed — ACM Transactions on Information Systems. |
+| — | ⚠️ Source needed | Organizational implications framing: verification as structural rather than reactive; confidence as a non-reliability signal; model-generated explanations as subject to the same hallucination risk as any other output. |
 
 ---
 
@@ -75,4 +77,4 @@ Grounding strategies (RAG, retrieval from verified sources, tool use) reduce hal
 
 ---
 
-*Last updated: v1.0 · April 2026*
+*Last updated: v1.1 · May 2026*

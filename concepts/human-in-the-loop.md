@@ -63,8 +63,12 @@ A practical tension: human review does not scale at the same rate as AI throughp
 
 ## Sources
 
-- LangChain — "Human Judgment in the Agent Improvement Loop" — human review alone does not scale; expert judgment must be encoded into evaluation pipelines; HITL as a design discipline, not a fallback
-- AI Literacy Concepts working notes — organizational implications layer
+| ID | Source | Contribution to this entry |
+|---|---|---|
+| SRC-015 | Stanford HAI — *Humans in the Loop: The Design of Interactive AI Systems* (2019) · [link](https://hai.stanford.edu/news/humans-loop-design-interactive-ai-systems) | Authoritative academic framing of HITL as an interaction design principle; spectrum from full autonomy to full human control; HITL as an HCI design problem, not a safety afterthought. |
+| SRC-016 | Google Cloud — *What is Human-in-the-Loop (HITL) in AI & ML?* (documentation, 2024) · [link](https://cloud.google.com/discover/human-in-the-loop) | Official technical definition; three HITL patterns: pre-approval (human sign-off before AI acts), exception handling (routing low-confidence cases), and periodic review (sampling for quality monitoring). |
+| SRC-017 | Verma, Rahul (LangChain) — *Human judgment in the agent improvement loop* (blog, 2026) · [link](https://blog.langchain.com/human-judgment-in-the-agent-improvement-loop/) | Human review alone does not scale; expert judgment must be encoded into evaluation pipelines; agent improvement loop (deploy → expert review → automated evals); tacit knowledge capture as a core HITL design challenge. |
+| — | ⚠️ Source needed | Governance framing: HITL as the point where policy becomes operational rather than aspirational; the three design questions (Where? Who? What are they reviewing?). |
 
 ---
 
@@ -79,4 +83,4 @@ A practical tension: human review does not scale at the same rate as AI throughp
 
 ---
 
-*Last updated: v1.0 · April 2026*
+*Last updated: v1.1 · May 2026*

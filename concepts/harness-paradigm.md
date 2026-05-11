@@ -64,8 +64,11 @@ Four implications:
 
 ## Sources
 
-- 15-item Agent Harness architecture analysis — harness paradigm, tool contracts, permission systems, model routing, MCP as a standardization layer for tool interfaces
-- General production AI engineering practice (2023–present)
+| ID | Source | Contribution to this entry |
+|---|---|---|
+| SRC-018 | Fowler, Martin — *Harness engineering for coding agent users* (martinfowler.com, 2025) · [link](https://martinfowler.com/articles/harness-engineering.html) | Authoritative definition of the harness as the infrastructure surrounding the model. Introduces guides (feedforward controls that steer before the agent acts) vs sensors (feedback controls that observe after). Direct grounding for the core claim that intelligence and control are separate architectural layers. |
+| SRC-019 | Multiple authors — *Architectural Design Decisions in AI Agent Harnesses* (arXiv:2604.18071, 2026) · [link](https://arxiv.org/html/2604.18071v1) | Systematic academic treatment of harness components: state/persistence, security/governance, orchestration/tool use, memory, observability, and evals. Provides peer-reviewed grounding for the harness component list in the technical definition. |
+| — | ⚠️ Source needed | Tool contracts, MCP as standardization layer for tool interfaces — drawn from practitioner analysis of production agent systems; no single primary source identified. |
 
 ---
 
@@ -80,4 +83,4 @@ Four implications:
 
 ---
 
-*Last updated: v1.0 · April 2026*
+*Last updated: v1.1 · May 2026*

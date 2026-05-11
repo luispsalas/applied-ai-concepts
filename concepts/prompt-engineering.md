@@ -62,8 +62,11 @@ That said, prompt engineering is a genuine high-leverage skill at the practition
 
 ## Sources
 
-- AI Literacy Concepts working notes — practitioner and organizational implications layer
-- General practitioner consensus — prompt engineering as a discipline distinct from context engineering (2022–present)
+| ID | Source | Contribution to this entry |
+|---|---|---|
+| SRC-013 | Anthropic — *Prompt engineering overview* (documentation, 2024) · [link](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview) | Official taxonomy of prompt engineering techniques: role assignment, few-shot examples, chain-of-thought prompting, constraint specification. Authoritative naming conventions for the core techniques listed in the technical definition. |
+| SRC-014 | OpenAI — *Prompt engineering* (documentation, 2023) · [link](https://platform.openai.com/docs/guides/prompt-engineering) | Official guide covering system messages, role assignment, formatting, and few-shot patterns. Second authoritative reference corroborating the technique taxonomy. |
+| — | ⚠️ Source needed | Practitioner framing: prompt engineering as a discipline distinct from context engineering; the argument that system-level design matters more than prompt optimization at scale. |
 
 ---
 
@@ -78,4 +81,4 @@ That said, prompt engineering is a genuine high-leverage skill at the practition
 
 ---
 
-*Last updated: v1.0 · April 2026*
+*Last updated: v1.1 · May 2026*

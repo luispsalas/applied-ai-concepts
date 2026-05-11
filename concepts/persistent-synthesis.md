@@ -81,11 +81,11 @@ These gaps do not invalidate the framework — they define its frontier. The pri
 
 ## Sources
 
-| Source | Contribution |
-|---|---|
-| Karpathy, A. — *LLM Wiki* (gist, 2023) | Original synthesis philosophy; wiki as compounding artifact; contradictions flagged not accumulated; source docs as inputs, wiki as output |
-| Ghumare, R. — *LLM Wiki v2* (gist, 2024) · [link](https://gist.github.com/rohitg00/2067ab416f7bbe447c1977edaaa681e2) | "Stop re-deriving, start compiling"; memory lifecycle tiers; confidence scoring with temporal decay (Ebbinghaus); typed relationships; hybrid search (BM25 + vector + graph); schema doc as primary artifact; automation & event hooks; lint/self-healing operation |
-| @gnusupport — community critique of Ghumare gist (2024) | Implementation limitations: confidence scoring underspecified, crystallization undefined, timeline assumptions, HITL failure modes |
+| ID | Source | Contribution to this entry |
+|---|---|---|
+| SRC-007 | Karpathy, Andrej — *LLM Wiki* (gist, 2023) · [link](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) | Original synthesis philosophy; wiki as compounding artifact; contradictions flagged not accumulated; source docs as inputs, wiki as output. |
+| SRC-008 | Ghumare, Rohit — *LLM Wiki v2* (gist, 2024) · [link](https://gist.github.com/rohitg00/2067ab416f7bbe447c1977edaaa681e2) | "Stop re-deriving, start compiling"; memory lifecycle tiers; confidence scoring with temporal decay (Ebbinghaus); typed relationships (uses, depends on, contradicts, supersedes); hybrid search (BM25 + vector + graph); schema doc as primary artifact; automation & event hooks; lint/self-healing operation. |
+| SRC-009 | @gnusupport — community critique of Ghumare gist (2024) · [link](https://gist.github.com/rohitg00/2067ab416f7bbe447c1977edaaa681e2) | Implementation limitations: confidence scoring underspecified, crystallization undefined, automation timeline assumptions, HITL failure modes not addressed. |
 
 ---
 
@@ -99,4 +99,4 @@ These gaps do not invalidate the framework — they define its frontier. The pri
 
 ---
 
-*Last updated: v1.1 · April 2026*
+*Last updated: v1.2 · May 2026*
