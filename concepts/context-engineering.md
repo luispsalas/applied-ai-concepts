@@ -36,6 +36,25 @@ Context engineering is also where governance enters. Decisions about what contex
 
 ---
 
+## Governance notes
+
+**Core question:** Who controls what information the model receives — and is that control documented?
+
+**Watch for:**
+- Context treated as disposable: not logged, not versioned, and therefore not auditable. If you cannot reconstruct what context the model received, you cannot investigate or explain its outputs.
+- Sensitive or restricted data entering the context window without access controls. Context construction decisions are data access decisions.
+- Context decay: injected information (system prompts, knowledge base entries, policy documents) going stale without detection — presenting outdated content with the same authority as current information.
+
+**Practice:**
+- Log what context was injected per session or request. This is the minimum required for output auditability.
+- Treat context construction as a governed data access decision: who or what can inject information into the context window should be defined and controlled, not assumed.
+
+**Key accountability owner:** Context owner — the role responsible for defining what information the model is given access to, in what form, and under what access controls.
+
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+
+---
+
 ## Confidence level
 
 **Established.** Active practitioner consensus since 2023. The term has stabilized; the discipline continues to deepen as agentic and multi-step systems become more common.

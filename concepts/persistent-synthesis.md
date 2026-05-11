@@ -54,6 +54,25 @@ Three implications:
 
 ---
 
+## Governance notes
+
+**Core question:** Who is responsible for maintaining the knowledge base — and is there a defined, enforced process for keeping it current?
+
+**Watch for:**
+- Knowledge bases that grow by addition only: new entries appended, old entries never updated or deprecated. A knowledge base without a deprecation process accumulates drift silently — entries from a year ago carry the same apparent authority as entries written today.
+- RAG and retrieval systems inheriting the quality problems of an ungoverned knowledge base. If the knowledge base is stale, inconsistent, or unverified, retrieval makes those problems invisible rather than surfacing them.
+- Synthesis treated as informal practice rather than a governed process: no defined cadence, no ownership, no schema doc. Synthesis that depends on individual attention does not survive organizational change.
+
+**Practice:**
+- Define a maintenance cadence by knowledge type. Architecture decisions and foundational concepts require less frequent review than implementation details and vendor-specific information — set schedules accordingly, not uniformly.
+- Deprecate explicitly. When an entry is superseded, mark it so — with a pointer to the replacement. Silent obsolescence is worse than acknowledged obsolescence.
+
+**Key accountability owner:** Knowledge base owner — the role responsible for maintaining synthesis cadence, enforcing the schema, and ensuring that entries reflect current understanding rather than historical accumulation.
+
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+
+---
+
 ## Confidence level
 
 **Emerging — practitioner application.** The core insight (Karpathy, 2023) is widely validated in practice. The extended framework (Ghumare, 2024) adds significant structural depth, but carries known implementation gaps flagged in community review:

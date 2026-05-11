@@ -44,6 +44,25 @@ That said, prompt engineering is a genuine high-leverage skill at the practition
 
 ---
 
+## Governance notes
+
+**Core question:** Are system prompts versioned, owned, and change-reviewed like any other production configuration — or treated as informal setup?
+
+**Watch for:**
+- System prompts deployed without version control: no history of what changed, when, or why. An unversioned system prompt cannot be audited.
+- Prompt optimization applied to problems that live at the context or harness layer. Iterating on phrasing when the issue is information architecture or access control is optimizing the wrong lever.
+- Adversarial input scenarios not assessed: production prompts tested only under cooperative conditions, leaving injection and manipulation vectors unexamined.
+
+**Practice:**
+- Version and change-review system prompts before production deployment. Treat prompt changes the same as configuration changes — staged, reviewed, and logged.
+- Separate the prompt engineering task (what does the model need to be told?) from the harness configuration task (what is the model allowed to do?). These are different questions answered at different layers.
+
+**Key accountability owner:** System prompt owner — the role responsible for authoring, versioning, and reviewing the baseline instructions that govern model behavior in production.
+
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+
+---
+
 ## Confidence level
 
 **Established.** Prompt engineering is a recognized discipline with stable core techniques and active research frontiers (2022–present). Some specific techniques evolve as models improve; the underlying principles — clarity, structure, example provision, constraint specification — are durable.

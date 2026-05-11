@@ -44,6 +44,25 @@ A practical tension: human review does not scale at the same rate as AI throughp
 
 ---
 
+## Governance notes
+
+**Core question:** Are human review roles assigned, documented, and operationally real — or are they a statement of intent?
+
+**Watch for:**
+- "Humans remain responsible for AI decisions" stated as policy without specifying where in the workflow that responsibility is exercised. Intent is not a control.
+- Review roles unassigned: accountability that belongs to everyone belongs to no one.
+- Review that is formally present but operationally a rubber stamp — too fast, too removed from underlying data, or progressively compressed under volume pressure without a governance decision being made.
+
+**Practice:**
+- Assign HITL roles by function, not by name: specify which role reviews which output type at which decision point. Policies survive organizational change; names don't.
+- Define explicitly which HITL level applies to each use case (full review / selective / human-on-the-loop / human-initiated) and document the justification. An undocumented HITL level is not a governance decision.
+
+**Key accountability owner:** Review role owner — the specific function authorized to approve, modify, or reject AI outputs at each defined checkpoint.
+
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+
+---
+
 ## Confidence level
 
 **Established.** HITL is a foundational concept in human-computer interaction and AI safety literature. Its application to modern LLM-based systems is active and evolving — particularly around selective HITL design and the challenge of maintaining genuine human judgment at scale.

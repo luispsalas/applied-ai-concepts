@@ -45,6 +45,25 @@ Four implications:
 
 ---
 
+## Governance notes
+
+**Core question:** Who owns the harness configuration — and is it governed like a production artifact?
+
+**Watch for:**
+- Governance attention focused on model selection while harness configuration remains informal or undefined. The model doesn't enforce policies — the harness does.
+- Capability treated as permission by default: if the model can access a tool or data source, it does, because no one specified otherwise.
+- System prompts and permission models that are not versioned, not owned, and not subject to change review.
+
+**Practice:**
+- Treat harness configuration (permission model, tool contracts, system prompt, logging setup) as a governed artifact: versioned, owned, and change-reviewed the same way as any production configuration.
+- Separate capability assessment ("can it do X?") from permission design ("should it be allowed to, for whom, under what conditions?"). These are different questions answered by different people.
+
+**Key accountability owner:** Harness owner — the role or team responsible for configuring, versioning, and reviewing the control layer that sits between the model and the world.
+
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+
+---
+
 ## Confidence level
 
 **Emerging — practitioner consensus.** The paradigm is well-established in production AI engineering (2023–present). The term "harness" is gaining adoption as a conceptual frame. Its application to governance and organizational design is newer and still developing.

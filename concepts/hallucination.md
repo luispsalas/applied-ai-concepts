@@ -40,6 +40,25 @@ Grounding strategies (RAG, retrieval from verified sources, tool use) reduce hal
 
 ---
 
+## Governance notes
+
+**Core question:** Who is accountable for verifying AI outputs before they influence decisions?
+
+**Watch for:**
+- Verification that is reactive (checking outputs that seem suspicious) rather than structural (checking by design). Hallucinated outputs do not seem suspicious — so reactive verification misses them.
+- Fluency and confidence of tone used as a proxy for factual accuracy. They carry no information about correctness.
+- AI-generated explanations treated as transparent insight into the model's reasoning. They are generated outputs subject to the same hallucination risk as any other content.
+
+**Practice:**
+- Define verification as a structural step before deployment: which outputs, at what volume, reviewed by whom, using what criteria.
+- Grounding strategies (RAG, retrieval, tool use) reduce hallucination risk but do not eliminate it. Do not treat them as a substitute for verification on consequential outputs.
+
+**Key accountability owner:** Output quality owner — the role responsible for verifying AI outputs before they reach downstream use or decision-making.
+
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+
+---
+
 ## Confidence level
 
 **Established.** Hallucination is a well-documented property of current-generation language models. The mechanisms are understood; mitigation strategies are active areas of research and engineering. The term has stabilized.
