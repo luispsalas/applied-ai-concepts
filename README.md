@@ -49,6 +49,16 @@ Assumptions, confidence levels, and knowledge gaps are surfaced in every entry. 
 
 ---
 
+## Governance & Observability Notes
+
+Practical notes on what to control, monitor, and be accountable for — organized by theme across the core concepts.
+
+| Note | Covers |
+|---|---|
+| [Governance & Observability](notes/governance-and-observability.md) | Verification · Context governance · System control · Accountability checklist |
+
+---
+
 ## Glossary
 
 A quick-reference index of all terms with one-line definitions: [glossary/index.md](glossary/index.md)
