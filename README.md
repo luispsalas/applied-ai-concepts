@@ -1,10 +1,10 @@
-# applied-ai-concepts
-
-A persistently maintained knowledge base of foundational AI and data concepts — written for practitioners who work with AI systems, not just use them.
-
 <p align="center">
   <img src="assets/robot.png" alt="Applied AI Concepts" width="220">
 </p>
+
+<h1 align="center">applied-ai-concepts</h1>
+
+<p align="center">A persistently maintained knowledge base of foundational AI and data concepts — written for practitioners who work with AI systems, not just use them.</p>
 
 ---
 
