@@ -81,7 +81,7 @@ Agents represent a qualitative shift in what AI systems do — from generating t
 | ID | Source | Contribution to this entry |
 |---|---|---|
 | SRC-021 | Yao, S. et al. — *ReAct: Synergizing Reasoning and Acting in Language Models* (arXiv:2210.03629, 2022) · [link](https://arxiv.org/abs/2210.03629) | Canonical paper introducing the ReAct pattern: interleaved reasoning and acting; Reason → Act → Observe loop; empirical evidence that reasoning traces improve agent reliability on multi-step tasks. Foundational architecture reference. |
-| SRC-022 | Anthropic — *Build effective agents* (documentation, 2025) · [link](https://docs.anthropic.com/en/docs/build-with-claude/agents) | Practitioner framework for agent design: when to use agents vs. simpler pipelines; orchestrator-subagent patterns; tool design principles; human-in-the-loop integration points. |
+| SRC-022 | Anthropic — *How tool use works* (documentation, 2026) · [link](https://docs.anthropic.com/en/docs/agents-and-tools/tool-use/how-tool-use-works) | Agentic loop mechanics (Reason → Act → Observe), client vs. server tool execution, when to use tools vs. prose. Original page (*Build effective agents*) reorganized into agents-and-tools section May 2026. ⚠️ Orchestrator-subagent patterns and HITL integration points no longer covered at this URL — source needed. |
 | — | ⚠️ Source needed | Governance framing: capability vs. permission distinction; failure propagation in multi-step systems; checkpoint design proportional to action consequence. |
 
 ---
@@ -97,4 +97,4 @@ Agents represent a qualitative shift in what AI systems do — from generating t
 
 ---
 
-*Last updated: v1.0 · May 2026*
+*Last updated: v1.1 · May 2026*
