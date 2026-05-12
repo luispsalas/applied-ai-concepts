@@ -1,7 +1,7 @@
 # Black Box
 
 ## One-line essence
-An AI system whose internal reasoning process cannot be observed or interpreted — even when its outputs can.
+An AI system whose internal reasoning process cannot be observed or interpreted — even when its outputs can be.
 
 ---
 
