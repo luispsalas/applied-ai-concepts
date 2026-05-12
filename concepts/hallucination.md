@@ -72,7 +72,6 @@ Grounding strategies (RAG, retrieval from verified sources, tool use) reduce hal
 - [Human-in-the-Loop (HITL)](human-in-the-loop.md) — human review as a structural check on hallucinated outputs
 - Grounding — the practice of anchoring model outputs to verified external sources
 - Retrieval-Augmented Generation (RAG) — a technical pattern that reduces hallucination by providing the model with retrieved reference material
-- Confidence vs. Accuracy — the distinction between how certain a model sounds and how correct it is
 
 ---
 
@@ -96,4 +95,4 @@ Grounding strategies (RAG, retrieval from verified sources, tool use) reduce hal
 
 ---
 
-*Last updated: v1.1 · May 2026*
+*Last updated: v1.2 · May 2026*
