@@ -38,14 +38,52 @@ Assumptions, confidence levels, and knowledge gaps are surfaced in every entry. 
 
 ## Concepts
 
+### Foundations
+*How models behave — and why that behaviour matters*
+
+| Concept | One-line essence | Status |
+|---|---|---|
+| [Hallucination](concepts/hallucination.md) | AI models generate plausible-sounding content that is factually incorrect — confidently and without warning | ✅ v1.1 |
+| [Black Box](concepts/black-box.md) | An AI system whose internal reasoning process cannot be observed or interpreted — even when its outputs can | ✅ v1.0 |
+
+### Interaction & Design
+*How you work with models effectively*
+
 | Concept | One-line essence | Status |
 |---|---|---|
 | [Context Engineering](concepts/context-engineering.md) | Designing what an AI model receives is as important as the model itself | ✅ v1.1 |
-| [Hallucination](concepts/hallucination.md) | AI models generate plausible-sounding content that is factually incorrect — confidently and without warning | ✅ v1.1 |
-| [Human-in-the-Loop (HITL)](concepts/human-in-the-loop.md) | A design pattern that keeps humans as decision authorities at critical points | ✅ v1.1 |
-| [Harness Paradigm](concepts/harness-paradigm.md) | Intelligence and control are separate layers — governance lives in the harness | ✅ v1.1 |
-| [Persistent Synthesis](concepts/persistent-synthesis.md) | Knowledge compounds when contradictions are resolved, not accumulated | ✅ v1.2 |
 | [Prompt Engineering](concepts/prompt-engineering.md) | Structuring inputs to consistently elicit useful, accurate, and safe model outputs | ✅ v1.1 |
+
+### System Architecture
+*The control layer that makes models governable*
+
+| Concept | One-line essence | Status |
+|---|---|---|
+| [Harness Paradigm](concepts/harness-paradigm.md) | Intelligence and control are separate layers — governance lives in the harness | ✅ v1.1 |
+| [AI Agent](concepts/ai-agent.md) | A language model that doesn't just respond — it plans, acts, and iterates across multiple steps | ✅ v1.0 |
+| [Retrieval-Augmented Generation (RAG)](concepts/rag.md) | A technique that grounds model outputs in retrieved, verifiable information | ✅ v1.1 |
+
+### Knowledge & Memory
+*How knowledge persists, degrades, and stays fit for use*
+
+| Concept | One-line essence | Status |
+|---|---|---|
+| [Persistent Synthesis](concepts/persistent-synthesis.md) | Knowledge compounds when contradictions are resolved, not accumulated | ✅ v1.2 |
+| [Data Quality](concepts/data-quality.md) | The fitness of data for its intended use — and the upstream constraint on every AI system built on it | ✅ v1.0 |
+
+### Human Oversight
+*Humans in control by design — not by assumption*
+
+| Concept | One-line essence | Status |
+|---|---|---|
+| [Human-in-the-Loop (HITL)](concepts/human-in-the-loop.md) | A design pattern that keeps humans as decision authorities at critical points | ✅ v1.1 |
+
+### Observability & Governance
+*Making AI system behaviour visible and accountable*
+
+| Concept | One-line essence | Status |
+|---|---|---|
+| [Observability](concepts/observability.md) | The ability to understand what an AI system is doing — and reconstruct why — from the outside | ✅ v1.0 |
 
 ---
 
@@ -79,6 +117,6 @@ See [CHANGELOG.md](CHANGELOG.md) for version history.
 
 ## Status
 
-**Phase 1 (current):** Core repository published with 6 foundational concepts, all sourced and versioned.
-**Phase 2:** Cross-reference layer + governance notes + 2–3 additional concepts.
+**Phase 1 ✅:** 11 concepts published across 6 categories — all sourced, versioned, and with governance notes sections. Standalone governance & observability notes doc live.
+**Phase 2 (current):** Expanding concept base · glossary rendering · cross-reference layer.
 **Phase 3:** Manifesto drafted from wiki principles.
