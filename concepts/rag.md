@@ -77,7 +77,7 @@ Three things practitioners need to understand:
 - [Context Engineering](context-engineering.md) — RAG is a dynamic context injection strategy; context engineering governs how retrieved content is structured and prioritized within the prompt
 - [Persistent Synthesis](persistent-synthesis.md) — the knowledge base RAG retrieves from requires the same maintenance discipline as any managed knowledge system; accumulation without synthesis degrades RAG quality over time
 - [Harness Paradigm](harness-paradigm.md) — the retrieval layer, knowledge base access controls, and logging of retrieved content are harness-layer design decisions
-- Grounding — RAG is the most common technical implementation of grounding in production systems
+- [Grounding](grounding.md) — RAG is the most common technical implementation of grounding in production systems
 - Context Window — the physical constraint that bounds how much retrieved content can be injected per query
 - Vector Embeddings — the representation layer that makes semantic retrieval possible
 

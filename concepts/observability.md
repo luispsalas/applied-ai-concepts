@@ -80,7 +80,7 @@ Three implications:
 - [AI Agent](ai-agent.md) — agents require richer observability than single-step models; full execution traces are the minimum auditable artifact for multi-step autonomous systems
 - [Human-in-the-Loop (HITL)](human-in-the-loop.md) — observability signals can serve as HITL triggers: quality metrics, anomaly scores, or confidence thresholds that route outputs to human review
 - [Data Quality](data-quality.md) — data quality metrics (freshness, completeness, consistency) are part of a complete observability stack; observability surfaces data quality problems that would otherwise be silent
-- Evaluation (AI Systems) — production observability data feeds evaluation pipelines; the two are complementary and mutually dependent
+- [Evaluation (AI Systems)](evaluation.md) — production observability data feeds evaluation pipelines; the two are complementary and mutually dependent
 - Hallucination — observability is one of the structural responses to hallucination risk: systematic logging enables detection, investigation, and improvement
 
 ---

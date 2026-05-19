@@ -75,7 +75,7 @@ Three things practitioners need to understand:
 - [Harness Paradigm](harness-paradigm.md) — governance controls are implemented at the harness layer; the harness is where policy becomes enforceable
 - [AI Agent](ai-agent.md) — agentic systems introduce governance requirements (action authorization, multi-step accountability) that advisory AI does not
 - [Black Box](black-box.md) — opacity is a governance risk; systems that cannot be interpreted cannot be audited
-- AI Literacy — governance frameworks require the people responsible for them to understand what they are governing
+- [AI Literacy](ai-literacy.md) — governance frameworks require the people responsible for them to understand what they are governing
 
 ---
 

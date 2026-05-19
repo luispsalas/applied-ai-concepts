@@ -70,7 +70,7 @@ Grounding strategies (RAG, retrieval from verified sources, tool use) reduce hal
 - [Persistent Synthesis](persistent-synthesis.md) — a synthesis approach that flags contradictions rather than accumulating potentially hallucinated content
 - [Harness Paradigm](harness-paradigm.md) — grounding and verification controls are implemented at the harness layer
 - [Human-in-the-Loop (HITL)](human-in-the-loop.md) — human review as a structural check on hallucinated outputs
-- Grounding — the practice of anchoring model outputs to verified external sources
+- [Grounding](grounding.md) — the practice of anchoring model outputs to verified external sources
 - Retrieval-Augmented Generation (RAG) — a technical pattern that reduces hallucination by providing the model with retrieved reference material
 
 ---

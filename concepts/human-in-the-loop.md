@@ -76,7 +76,7 @@ A practical tension: human review does not scale at the same rate as AI throughp
 - [Context Engineering](context-engineering.md) — reviewers need well-designed context to exercise genuine judgment
 - Human Responsibility in AI Use — the normative principle that HITL operationalizes
 - Guardrails — automated controls that complement HITL; not a substitute for it
-- Evaluation (AI Systems) — structured evaluation pipelines as a scalable form of HITL
+- [Evaluation (AI Systems)](evaluation.md) — structured evaluation pipelines as a scalable form of HITL
 
 ---
 
