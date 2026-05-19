@@ -60,7 +60,7 @@ The accountability, oversight, and control implications. Written for governance 
 ## Concepts
 
 ### Foundations
-*How models behave — and why that behaviour matters*
+*How models behave — and why that behavior matters*
 
 | Concept | One-line essence | Status |
 |---|---|---|
@@ -91,6 +91,7 @@ The accountability, oversight, and control implications. Written for governance 
 |---|---|---|
 | [Persistent Synthesis](concepts/persistent-synthesis.md) | Knowledge compounds when contradictions are resolved, not accumulated | ✅ v1.2 |
 | [Data Quality](concepts/data-quality.md) | The fitness of data for its intended use — and the upstream constraint on every AI system built on it | ✅ v1.0 |
+| [Grounding](concepts/grounding.md) | Anchoring model outputs to specific, verifiable sources — reducing hallucination by giving the model something real to reason from | ✅ v1.0 |
 
 ### Human Oversight
 *Humans in control by design — not by assumption*
@@ -99,12 +100,27 @@ The accountability, oversight, and control implications. Written for governance 
 |---|---|---|
 | [Human-in-the-Loop (HITL)](concepts/human-in-the-loop.md) | A design pattern that keeps humans as decision authorities at critical points | ✅ v1.1 |
 
+### Reliability & Quality
+*Measuring and maintaining what AI systems actually do*
+
+| Concept | One-line essence | Status |
+|---|---|---|
+| [Evaluation (AI Systems)](concepts/evaluation.md) | The structured practice of measuring whether an AI system does what it is supposed to do — before deployment and continuously in production | ✅ v1.0 |
+
 ### Observability & Governance
-*Making AI system behaviour visible and accountable*
+*Making AI system behavior visible and accountable*
 
 | Concept | One-line essence | Status |
 |---|---|---|
 | [Observability](concepts/observability.md) | The ability to understand what an AI system is doing — and reconstruct why — from the outside | ✅ v1.0 |
+| [AI Governance](concepts/ai-governance.md) | The frameworks, policies, and accountability structures that determine who decides how AI systems behave — and who is answerable when they don't | ✅ v1.0 |
+
+### Organisational Readiness
+*The human and organizational conditions for responsible AI adoption*
+
+| Concept | One-line essence | Status |
+|---|---|---|
+| [AI Literacy](concepts/ai-literacy.md) | The competencies required to engage with, use, and govern AI systems responsibly — at an individual, team, and organizational level | ✅ v1.0 |
 
 ---
 
@@ -169,5 +185,5 @@ See [CHANGELOG.md](CHANGELOG.md) for version history.
 ## Status
 
 **Phase 1 ✅:** 11 concepts published across 6 categories — all sourced, versioned, and with governance notes sections. Standalone governance & observability notes doc live.
-**Phase 2 (current):** Expanding concept base · glossary rendering · cross-reference layer.
+**Phase 2 (current):** 15 concepts published across 8 categories · glossary rendering · cross-reference layer.
 **Phase 3:** Manifesto drafted from wiki principles.
