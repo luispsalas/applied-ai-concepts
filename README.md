@@ -29,10 +29,31 @@ New sources are synthesized into existing entries, not appended. The wiki is the
 The quality of any AI interaction is bounded by the quality of context it receives. Understanding *why* changes how you design systems, not just how you prompt them.
 
 **Governance lives in the design.**
-Every entry surfaces the control, accountability, and oversight implications of a concept. AI literacy without governance awareness is incomplete.
+Every entry surfaces the control, accountability, and oversight implications of a concept — AI literacy without governance awareness is incomplete.
 
 **Explicit over implicit.**
 Assumptions, confidence levels, and knowledge gaps are surfaced in every entry. Uncertainty is documented, not hidden.
+
+---
+
+## How entries are written
+
+Each concept is presented through multiple lenses within a single entry.
+
+**One-line essence**
+A single statement of what the concept is, written to be memorable and immediately useful. The starting point for orientation and quick reference — designed to survive being shared out of context.
+
+**Technical definition**
+A precise, mechanistic explanation of how the concept works. Written for practitioners, engineers, and governance professionals who need accuracy before accessibility. Uses correct terminology and distinguishes between related or commonly confused variants of the concept.
+
+**Plain-language version**
+The same concept re-expressed without technical vocabulary. Written for non-technical stakeholders — decision-makers, business leaders, and anyone accountable for AI outcomes who does not have an engineering background. Prioritizes intuition and consequence over mechanism.
+
+**AI literacy notes**
+The practical organizational implications of the concept. Written for teams actively adopting AI: what this concept means for day-to-day workflows, what to watch for, what changes once you understand it properly. Bridges technical understanding and operational practice — the layer most relevant to cross-functional teams.
+
+**Governance notes**
+The accountability, oversight, and control implications. Written for governance professionals, compliance functions, risk owners, and anyone responsible for AI system behavior at an organizational level. Each entry includes: a core accountability question, specific failure modes to watch for, recommended practices, and a named accountability owner role.
 
 ---
 
