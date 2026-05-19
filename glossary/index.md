@@ -7,9 +7,13 @@ Quick-reference index of all concepts. One-line essences only — follow links f
 | Term | One-line essence |
 |---|---|
 | [AI Agent](../concepts/ai-agent.md) | A language model that doesn't just respond — it plans, acts, and iterates across multiple steps to complete a task |
+| [AI Governance](../concepts/ai-governance.md) | The frameworks, policies, and accountability structures that determine who decides how AI systems behave — and who is answerable when they don't |
+| [AI Literacy](../concepts/ai-literacy.md) | The competencies required to engage with, use, and govern AI systems responsibly — at an individual, team, and organizational level |
 | [Black Box](../concepts/black-box.md) | An AI system whose internal reasoning process cannot be observed or interpreted — even when its outputs can |
 | [Context Engineering](../concepts/context-engineering.md) | Designing what an AI model receives is as important as the model itself |
 | [Data Quality](../concepts/data-quality.md) | The fitness of data for its intended use — and the upstream constraint that determines the reliability of every AI system built on it |
+| [Evaluation (AI Systems)](../concepts/evaluation.md) | The structured practice of measuring whether an AI system does what it is supposed to do — before deployment and continuously in production |
+| [Grounding](../concepts/grounding.md) | Anchoring model outputs to specific, verifiable sources — reducing hallucination by giving the model something real to reason from |
 | [Hallucination](../concepts/hallucination.md) | AI models generate plausible-sounding content that is factually incorrect — confidently and without warning |
 | [Harness Paradigm](../concepts/harness-paradigm.md) | Intelligence and control are separate layers — governance lives in the harness, not the model |
 | [Human-in-the-Loop (HITL)](../concepts/human-in-the-loop.md) | A design pattern that keeps humans as decision authorities at critical points |
