@@ -115,7 +115,7 @@ The accountability, oversight, and control implications. Written for governance 
 | [Observability](concepts/observability.md) | The ability to understand what an AI system is doing — and reconstruct why — from the outside | ✅ v1.0 |
 | [AI Governance](concepts/ai-governance.md) | The frameworks, policies, and accountability structures that determine who decides how AI systems behave — and who is answerable when they don't | ✅ v1.0 |
 
-### Organisational Readiness
+### Organizational Readiness
 *The human and organizational conditions for responsible AI adoption*
 
 | Concept | One-line essence | Status |
