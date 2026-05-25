@@ -22,15 +22,15 @@ Entries compound over time: definitions evolve, cross-references sharpen, and co
 
 ## Design philosophy
 
-<table>
+<table cellpadding="20">
 <tr>
-<td valign="top" width="50%">
+<td valign="middle" width="50%" bgcolor="#333333">
 
 **Persistent synthesis over retrieval.**  
 New sources are synthesized into existing entries, not appended. The wiki is the output; source documents are inputs. Inspired by Karpathy's LLM Wiki model — *stop re-deriving, start compiling.*
 
 </td>
-<td valign="top" width="50%">
+<td valign="middle" width="50%" bgcolor="#333333">
 
 **Context as leverage.**  
 The quality of any AI interaction is bounded by the quality of context it receives. Understanding *why* changes how you design systems, not just how you prompt them.
@@ -38,13 +38,13 @@ The quality of any AI interaction is bounded by the quality of context it receiv
 </td>
 </tr>
 <tr>
-<td valign="top">
+<td valign="middle" bgcolor="#333333">
 
 **Governance lives in the design.**  
 Every entry surfaces the control, accountability, and oversight implications of a concept — AI literacy without governance awareness is incomplete.
 
 </td>
-<td valign="top">
+<td valign="middle" bgcolor="#333333">
 
 **Explicit over implicit.**  
 Assumptions, confidence levels, and knowledge gaps are surfaced in every entry. Uncertainty is documented, not hidden.
