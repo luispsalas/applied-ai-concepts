@@ -22,30 +22,17 @@ Entries compound over time: definitions evolve, cross-references sharpen, and co
 
 ## Design philosophy
 
-<table cellpadding="20">
-<tbody>
-<tr>
-<td valign="middle" width="50%" bgcolor="#333333">
-<strong>Persistent synthesis over retrieval.</strong><br><br>
-New sources are synthesized into existing entries, not appended. The wiki is the output; source documents are inputs. Inspired by Karpathy's LLM Wiki model — <em>stop re-deriving, start compiling.</em>
-</td>
-<td valign="middle" width="50%" bgcolor="#333333">
-<strong>Context as leverage.</strong><br><br>
-The quality of any AI interaction is bounded by the quality of context it receives. Understanding <em>why</em> changes how you design systems, not just how you prompt them.
-</td>
-</tr>
-<tr>
-<td valign="middle" bgcolor="#333333">
-<strong>Governance lives in the design.</strong><br><br>
-Every entry surfaces the control, accountability, and oversight implications of a concept — AI literacy without governance awareness is incomplete.
-</td>
-<td valign="middle" bgcolor="#333333">
-<strong>Explicit over implicit.</strong><br><br>
-Assumptions, confidence levels, and knowledge gaps are surfaced in every entry. Uncertainty is documented, not hidden.
-</td>
-</tr>
-</tbody>
-</table>
+> **Persistent synthesis over retrieval.**  
+> New sources are synthesized into existing entries, not appended. The wiki is the output; source documents are inputs. Inspired by Karpathy's LLM Wiki model — *stop re-deriving, start compiling.*
+
+> **Context as leverage.**  
+> The quality of any AI interaction is bounded by the quality of context it receives. Understanding *why* changes how you design systems, not just how you prompt them.
+
+> **Governance lives in the design.**  
+> Every entry surfaces the control, accountability, and oversight implications of a concept — AI literacy without governance awareness is incomplete.
+
+> **Explicit over implicit.**  
+> Assumptions, confidence levels, and knowledge gaps are surfaced in every entry. Uncertainty is documented, not hidden.
 
 ---
 
