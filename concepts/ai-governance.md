@@ -10,7 +10,7 @@ The frameworks, policies, and accountability structures that determine who decid
 AI governance refers to the ensemble of rules, processes, roles, and controls applied to the design, deployment, monitoring, and retirement of AI systems. It operates at three distinct levels:
 
 1. **Regulatory governance** — external frameworks imposed by law or regulation. The EU AI Act establishes a risk-tiered compliance model; the NIST AI Risk Management Framework (AI RMF 1.0) provides a voluntary but widely adopted structured approach to managing AI risk across four core functions: Govern, Map, Measure, Manage.
-2. **Organisational governance** — internal policies, roles, and decision rights: model registries, AI review boards, acceptable use policies, procurement standards, accountability assignments.
+2. **Organizational governance** — internal policies, roles, and decision rights: model registries, AI review boards, acceptable use policies, procurement standards, accountability assignments.
 3. **Technical governance** — controls embedded in AI systems and their harnesses: access controls, logging, guardrails, version management, and auditability mechanisms.
 
 The governance landscape is fragmented. A 2023 synthesis found more than 84 AI ethics and governance guidelines in circulation globally; by some estimates that figure has since exceeded 200. Convergence is occurring around a small set of principles — fairness, transparency, accountability, human oversight — but implementation standards remain inconsistent across jurisdictions and sectors.

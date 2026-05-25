@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/robot.png" alt="Applied AI Concepts" width="220">
+  <img src="assets/robot.png" alt="Applied AI Concepts" width="120">
 </p>
 
 <h1 align="center">applied-ai-concepts</h1>
@@ -10,29 +10,48 @@
 
 ## What this is
 
-This repository is an AI literacy resource. It covers the concepts that matter when designing, deploying, or governing AI systems — written for people who need to understand AI at a working level: practitioners, governance professionals, and anyone accountable for the consequences of AI in their organization.
+This repository is an [AI literacy](concepts/ai-literacy.md) resource — covering the concepts that matter when designing, deploying, or governing AI systems. Written for practitioners, governance professionals, and anyone accountable for AI outcomes in their organization.
 
-Each entry is built to compound over time: definitions evolve, cross-references sharpen, and contradictions are flagged rather than glossed over. This is not a glossary of buzzwords. It is a working map of how AI systems actually behave — and what that means for the people responsible for them.
+Entries compound over time: definitions evolve, cross-references sharpen, and contradictions are flagged rather than glossed over. Content is AI-assisted and periodically human-reviewed; each entry is approved before publication and backed by cited sources that are maintained and updated.
 
-**Data governance perspective.** This wiki treats AI and data governance as inseparable. Entries are written to surface the accountability, auditability, and control implications of each concept — not just the technical ones.
+**Data governance perspective.** This wiki treats AI and data governance as inseparable. Entries surface the accountability, auditability, and control implications of each concept — not just the technical ones. → [Governance & Observability Notes](notes/governance-and-observability.md)
 
-**Methodology.** Entries are built on the persistent synthesis model developed by Andrej Karpathy and extended by practitioners: source documents are inputs; the wiki is the output. New sources are synthesized into existing entries rather than appended. Contradictions are resolved and documented, not accumulated.
+**Methodology.** Built on the persistent synthesis model: source documents are inputs; the wiki is the output. New sources are synthesized into existing entries rather than appended. Contradictions are resolved and documented, not accumulated.
 
 ---
 
 ## Design philosophy
 
-**Persistent synthesis over retrieval.**
+<table>
+<tr>
+<td valign="top" width="50%">
+
+**Persistent synthesis over retrieval.**  
 New sources are synthesized into existing entries, not appended. The wiki is the output; source documents are inputs. Inspired by Karpathy's LLM Wiki model — *stop re-deriving, start compiling.*
 
-**Context as leverage.**
+</td>
+<td valign="top" width="50%">
+
+**Context as leverage.**  
 The quality of any AI interaction is bounded by the quality of context it receives. Understanding *why* changes how you design systems, not just how you prompt them.
 
-**Governance lives in the design.**
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+**Governance lives in the design.**  
 Every entry surfaces the control, accountability, and oversight implications of a concept — AI literacy without governance awareness is incomplete.
 
-**Explicit over implicit.**
+</td>
+<td valign="top">
+
+**Explicit over implicit.**  
 Assumptions, confidence levels, and knowledge gaps are surfaced in every entry. Uncertainty is documented, not hidden.
+
+</td>
+</tr>
+</table>
 
 ---
 
@@ -54,6 +73,12 @@ The practical organizational implications of the concept. Written for teams acti
 
 **Governance notes**
 The accountability, oversight, and control implications. Written for governance professionals, compliance functions, risk owners, and anyone responsible for AI system behavior at an organizational level. Each entry includes: a core accountability question, specific failure modes to watch for, recommended practices, and a named accountability owner role.
+
+---
+
+## Glossary
+
+Browse all published terms in a single alphabetical list, with one-line definitions and links to full entries: [glossary/index.md](glossary/index.md)
 
 ---
 
@@ -131,12 +156,6 @@ Practical notes on what to control, monitor, and be accountable for — organize
 | Note | Covers |
 |---|---|
 | [Governance & Observability](notes/governance-and-observability.md) | Verification · Context governance · System control · Accountability checklist |
-
----
-
-## Glossary
-
-A quick-reference index of all terms with one-line definitions: [glossary/index.md](glossary/index.md)
 
 ---
 

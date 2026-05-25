@@ -1,6 +1,6 @@
 # Glossary
 
-Quick-reference index of all concepts. One-line essences only — follow links for full entries.
+Quick-reference index of all concepts. Follow links for full entries.
 
 ---
 
