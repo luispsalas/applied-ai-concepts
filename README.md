@@ -8,6 +8,12 @@
 
 ---
 
+## Glossary
+
+Browse all published terms in a single alphabetical list, with one-line definitions and links to full entries: [glossary/index.md](glossary/index.md)
+
+---
+
 ## What this is
 
 This repository is an [AI literacy](concepts/ai-literacy.md) resource — covering the concepts that matter when designing, deploying, or governing AI systems. Written for practitioners, governance professionals, and anyone accountable for AI outcomes in their organization.
@@ -54,12 +60,6 @@ The practical organizational implications of the concept. Written for teams acti
 
 🛡️ **Governance notes:**
 The accountability, oversight, and control implications. Written for governance professionals, compliance functions, risk owners, and anyone responsible for AI system behavior at an organizational level. Each entry includes: a core accountability question, specific failure modes to watch for, recommended practices, and a named accountability owner role.
-
----
-
-## Glossary
-
-Browse all published terms in a single alphabetical list, with one-line definitions and links to full entries: [glossary/index.md](glossary/index.md)
 
 ---
 
