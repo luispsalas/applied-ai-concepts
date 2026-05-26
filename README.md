@@ -58,20 +58,15 @@ The glossary can also be downloaded as a context package for AI and governance-r
 
 Each concept is explained through several complementary "lenses" within a single entry, so readers can understand both the idea itself and its practical implications.
 
-⚡ **One-line essence:**
-A short, memorable explanation of the concept designed for quick understanding and easy reference.
+- **One-line essence:** A short, memorable explanation of the concept designed for quick understanding and easy reference.
 
-⚙️ **Technical definition:**
-A more precise explanation of how the concept works, using accurate terminology and clarifying differences between related concepts.
+- **Technical definition:** A more precise explanation of how the concept works, using accurate terminology and clarifying differences between related concepts.
 
-💬 **Plain-language version:**
-The same idea explained in simpler, non-technical language for business teams, decision-makers, and non-engineering audiences.
+- **Plain-language version:** The same idea explained in simpler, non-technical language for business teams, decision-makers, and non-engineering audiences.
 
-🧭 **AI literacy notes:**
-Practical guidance on why the concept matters in real organizations. It includes common misunderstandings, workflow impacts, and what teams should pay attention to when adopting AI.
+- **AI literacy notes:** Practical guidance on why the concept matters in real organizations. It includes common misunderstandings, workflow impacts, and what teams should pay attention to when adopting AI.
 
-🛡️ **Governance notes:**
-The accountability, oversight, risk, and control considerations connected to the concept. Entries highlight key governance questions, common failure modes, recommended practices, and the organizational roles typically responsible for oversight.
+- **Governance notes:** The accountability, oversight, risk, and control considerations connected to the concept. Entries highlight key governance questions, common failure modes, recommended practices, and the organizational roles typically responsible for oversight.
 
 ---
 
