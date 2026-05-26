@@ -14,15 +14,27 @@ Browse all published terms in a single alphabetical list, with one-line definiti
 
 ---
 
-## What this is
+## What is this?
 
-This repository is an [AI literacy](concepts/ai-literacy.md) resource — covering the concepts that matter when designing, deploying, or governing AI systems. Written for practitioners, governance professionals, and anyone accountable for AI outcomes in their organization.
+This repository is an [AI literacy](concepts/ai-literacy.md) resource that explains the concepts behind designing, using, and governing AI systems. It is written for practitioners, governance teams, and anyone responsible for AI-related decisions and outcomes in their organization.
 
-Entries compound over time: definitions evolve, cross-references sharpen, and contradictions are flagged rather than glossed over. Content is AI-assisted and periodically human-reviewed; each entry is approved before publication and backed by cited sources that are maintained and updated.
+### How it works
 
-**Data governance perspective.** This wiki treats AI and data governance as inseparable. Entries surface the accountability, auditability, and control implications of each concept — not just the technical ones. → [Governance & Observability Notes](notes/governance-and-observability.md)
+This wiki is continuously refined over time. New source materials are integrated into existing entries instead of simply added on top. Definitions evolve, links between concepts become clearer, and conflicting perspectives are identified and documented rather than ignored.
 
-**Methodology.** Built on the persistent synthesis model: source documents are inputs; the wiki is the output. New sources are synthesized into existing entries rather than appended. Contradictions are resolved and documented, not accumulated.
+Content is AI-assisted and periodically human-reviewed. Each published entry is validated and supported by maintained source references.
+
+### Data governance perspective
+
+This wiki treats AI and data governance as closely connected. Alongside technical explanations, entries also highlight accountability, auditability, risk, observability, and control considerations relevant to real-world organizations.
+
+→ [Governance & Observability Notes](notes/governance-and-observability.md)
+
+### Using the glossary in projects
+
+The glossary can also be downloaded as a context package for AI and governance-related projects. It can help support governance-aware implementations, best practices, observability initiatives, and shared terminology across teams.
+
+→ See the [Using this as context](#using-this-as-context) section for setup instructions.
 
 ---
 
