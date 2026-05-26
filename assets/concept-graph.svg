@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 556 524" width="440">
   <style>
-    line { stroke: #c8c8c8; stroke-width: 0.9; }
-    circle { fill: #505050; }
-    text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 9.5px; fill: #505050; }
+    line { stroke: #C4B5FD; stroke-width: 0.9; }
+    circle { fill: #7C3AED; }
+    text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 9.5px; fill: #4C1D95; }
     @media (prefers-color-scheme: dark) {
-      line { stroke: #4a4a4a; }
-      circle { fill: #999; }
-      text { fill: #aaa; }
+      line { stroke: #5B21B6; }
+      circle { fill: #7C3AED; }
+      text { fill: #DDD6FE; }
     }
   </style>
   <g>
