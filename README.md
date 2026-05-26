@@ -4,7 +4,7 @@
 
 <h1 align="center">applied-ai-concepts</h1>
 
-<p align="center">A persistently maintained AI literacy resource — foundational concepts for practitioners who design, deploy, and govern AI systems.</p>
+<p align="center">A persistently maintained AI literacy resource covering the foundational concepts behind designing, deploying, and governing AI systems.</p>
 
 ---
 
