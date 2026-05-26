@@ -149,7 +149,11 @@ Practical notes on what to control, monitor, and be accountable for — organize
 
 ## Using this as context
 
-The concepts in this wiki are designed to be used as structured context in your own AI projects — not just read. Each entry is self-contained, schema-consistent, and written to be machine-readable as well as human-readable.
+<p align="center">
+  <img src="assets/concept-graph.png" alt="Concept graph" width="480">
+</p>
+
+The concepts in this wiki are designed to be used as structured context within AI projects, not just read as reference material. Each entry is self-contained, consistently structured, and written to support both human understanding and machine processing.
 
 **Clone or download**
 ```bash
@@ -157,23 +161,17 @@ git clone https://github.com/luispsalas/applied-ai-concepts.git
 ```
 Or download as a ZIP from the repository's main page (Code → Download ZIP).
 
-**Obsidian**
-Copy the `/concepts/` and `/glossary/` directories into your Obsidian vault. The entries use standard markdown and will render as-is. Internal links follow standard markdown format and will resolve within the vault. Useful as a reference layer alongside your own project notes.
+- **Obsidian** — Copy the `/concepts/` and `/glossary/` directories into your Obsidian vault. Entries use standard markdown and will render as-is. Internal links resolve within the vault. Useful as a reference layer alongside your own project notes.
 
-**LogSeq**
-Import the `/concepts/` directory into a LogSeq graph. Entries are flat markdown files with no proprietary syntax — they will load without modification.
+- **LogSeq** — Import the `/concepts/` directory into a LogSeq graph. Entries are flat markdown files with no proprietary syntax — they will load without modification.
 
-**Claude Projects**
-Upload individual concept files or the full `/concepts/` directory as project knowledge. The model will use the shared vocabulary and governance framing as context across your conversations.
+- **Claude Projects** — Upload individual concept files or the full `/concepts/` directory as project knowledge. The model will use the shared vocabulary and governance framing as context across your conversations.
 
-**ChatGPT (custom GPTs)**
-Add concept files as knowledge sources when configuring a custom GPT. The `glossary/index.md` file is particularly useful as a lightweight single-file attachment for non-technical audiences.
+- **ChatGPT (custom GPTs)** — Add concept files as knowledge sources when configuring a custom GPT. The `glossary/index.md` file is particularly useful as a lightweight single-file attachment for non-technical audiences.
 
-**Cursor / Windsurf / AI-assisted editors**
-Add the `/concepts/` directory to your project workspace. These editors will index the files and make them available as context when generating or reviewing code that involves AI system design decisions.
+- **Cursor / Windsurf / AI-assisted editors** — Add the `/concepts/` directory to your project workspace. These editors will index the files and make them available as context when generating or reviewing code that involves AI system design decisions.
 
-**RAG pipelines (LangChain, LlamaIndex, etc.)**
-The `/concepts/` directory works as a document collection out of the box. Each file is a discrete, well-structured chunk — no pre-processing required before embedding.
+- **RAG pipelines (LangChain, LlamaIndex, etc.)** — The `/concepts/` directory works as a document collection out of the box. Each file is a discrete, well-structured chunk — no pre-processing required before embedding.
 
 ---
 
