@@ -54,24 +54,24 @@ The glossary can also be downloaded as a context package for AI and governance-r
 
 ---
 
-## How entries are written
+## How are entries written?
 
-Each concept is presented through multiple lenses within a single entry.
+Each concept is explained through several complementary "lenses" within a single entry, so readers can understand both the idea itself and its practical implications.
 
 ⚡ **One-line essence:**
-A single statement of what the concept is, written to be memorable and immediately useful. The starting point for orientation and quick reference — designed to survive being shared out of context.
+A short, memorable explanation of the concept designed for quick understanding and easy reference.
 
 ⚙️ **Technical definition:**
-A precise, mechanistic explanation of how the concept works. Written for practitioners, engineers, and governance professionals who need accuracy before accessibility. Uses correct terminology and distinguishes between related or commonly confused variants of the concept.
+A more precise explanation of how the concept works, using accurate terminology and clarifying differences between related concepts.
 
 💬 **Plain-language version:**
-The same concept re-expressed without technical vocabulary. Written for non-technical stakeholders — decision-makers, business leaders, and anyone accountable for AI outcomes who does not have an engineering background. Prioritizes intuition and consequence over mechanism.
+The same idea explained in simpler, non-technical language for business teams, decision-makers, and non-engineering audiences.
 
 🧭 **AI literacy notes:**
-The practical organizational implications of the concept. Written for teams actively adopting AI: what this concept means for day-to-day workflows, what to watch for, what changes once you understand it properly. Bridges technical understanding and operational practice — the layer most relevant to cross-functional teams.
+Practical guidance on why the concept matters in real organizations. It includes common misunderstandings, workflow impacts, and what teams should pay attention to when adopting AI.
 
 🛡️ **Governance notes:**
-The accountability, oversight, and control implications. Written for governance professionals, compliance functions, risk owners, and anyone responsible for AI system behavior at an organizational level. Each entry includes: a core accountability question, specific failure modes to watch for, recommended practices, and a named accountability owner role.
+The accountability, oversight, risk, and control considerations connected to the concept. Entries highlight key governance questions, common failure modes, recommended practices, and the organizational roles typically responsible for oversight.
 
 ---
 
