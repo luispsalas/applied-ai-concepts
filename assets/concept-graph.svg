@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 556 524" width="440">
+  <style>
+    line { stroke: #c8c8c8; stroke-width: 0.9; }
+    circle { fill: #505050; }
+    text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 9.5px; fill: #505050; }
+    @media (prefers-color-scheme: dark) {
+      line { stroke: #4a4a4a; }
+      circle { fill: #999; }
+      text { fill: #aaa; }
+    }
+  </style>
+  <g>
+  <line x1="408" y1="156" x2="306" y2="76"/>
+  <line x1="408" y1="156" x2="490" y2="364"/>
+  <line x1="408" y1="156" x2="268" y2="274"/>
+  <line x1="408" y1="156" x2="356" y2="318"/>
+  <line x1="408" y1="156" x2="144" y2="111"/>
+  <line x1="408" y1="156" x2="88" y2="314"/>
+  <line x1="408" y1="156" x2="378" y2="414"/>
+  <line x1="306" y1="76" x2="248" y2="161"/>
+  <line x1="306" y1="76" x2="171" y2="244"/>
+  <line x1="306" y1="76" x2="268" y2="274"/>
+  <line x1="306" y1="76" x2="356" y2="318"/>
+  <line x1="306" y1="76" x2="144" y2="111"/>
+  <line x1="306" y1="76" x2="88" y2="314"/>
+  <line x1="248" y1="161" x2="490" y2="364"/>
+  <line x1="248" y1="161" x2="268" y2="274"/>
+  <line x1="248" y1="161" x2="118" y2="381"/>
+  <line x1="248" y1="161" x2="144" y2="111"/>
+  <line x1="248" y1="161" x2="88" y2="314"/>
+  <line x1="248" y1="161" x2="316" y2="471"/>
+  <line x1="171" y1="244" x2="268" y2="274"/>
+  <line x1="171" y1="244" x2="196" y2="484"/>
+  <line x1="171" y1="244" x2="118" y2="381"/>
+  <line x1="171" y1="244" x2="356" y2="318"/>
+  <line x1="171" y1="244" x2="144" y2="111"/>
+  <line x1="171" y1="244" x2="88" y2="314"/>
+  <line x1="490" y1="364" x2="206" y2="428"/>
+  <line x1="490" y1="364" x2="268" y2="274"/>
+  <line x1="490" y1="364" x2="196" y2="484"/>
+  <line x1="490" y1="364" x2="356" y2="318"/>
+  <line x1="490" y1="364" x2="144" y2="111"/>
+  <line x1="490" y1="364" x2="316" y2="471"/>
+  <line x1="490" y1="364" x2="474" y2="264"/>
+  <line x1="490" y1="364" x2="378" y2="414"/>
+  <line x1="206" y1="428" x2="268" y2="274"/>
+  <line x1="206" y1="428" x2="118" y2="381"/>
+  <line x1="206" y1="428" x2="356" y2="318"/>
+  <line x1="206" y1="428" x2="88" y2="314"/>
+  <line x1="206" y1="428" x2="316" y2="471"/>
+  <line x1="206" y1="428" x2="378" y2="414"/>
+  <line x1="91" y1="204" x2="268" y2="274"/>
+  <line x1="91" y1="204" x2="118" y2="381"/>
+  <line x1="91" y1="204" x2="144" y2="111"/>
+  <line x1="91" y1="204" x2="88" y2="314"/>
+  <line x1="91" y1="204" x2="316" y2="471"/>
+  <line x1="91" y1="204" x2="378" y2="414"/>
+  <line x1="268" y1="274" x2="196" y2="484"/>
+  <line x1="268" y1="274" x2="118" y2="381"/>
+  <line x1="268" y1="274" x2="356" y2="318"/>
+  <line x1="268" y1="274" x2="144" y2="111"/>
+  <line x1="268" y1="274" x2="88" y2="314"/>
+  <line x1="268" y1="274" x2="316" y2="471"/>
+  <line x1="268" y1="274" x2="474" y2="264"/>
+  <line x1="268" y1="274" x2="378" y2="414"/>
+  <line x1="196" y1="484" x2="118" y2="381"/>
+  <line x1="196" y1="484" x2="356" y2="318"/>
+  <line x1="196" y1="484" x2="88" y2="314"/>
+  <line x1="196" y1="484" x2="316" y2="471"/>
+  <line x1="196" y1="484" x2="378" y2="414"/>
+  <line x1="118" y1="381" x2="356" y2="318"/>
+  <line x1="118" y1="381" x2="144" y2="111"/>
+  <line x1="118" y1="381" x2="316" y2="471"/>
+  <line x1="118" y1="381" x2="378" y2="414"/>
+  <line x1="356" y1="318" x2="144" y2="111"/>
+  <line x1="356" y1="318" x2="88" y2="314"/>
+  <line x1="356" y1="318" x2="474" y2="264"/>
+  <line x1="356" y1="318" x2="378" y2="414"/>
+  <line x1="144" y1="111" x2="88" y2="314"/>
+  <line x1="316" y1="471" x2="378" y2="414"/>
+  </g>
+  <g>
+  <circle cx="306" cy="76" r="10.8"/>
+  <circle cx="144" cy="111" r="11.8"/>
+  <circle cx="248" cy="161" r="10.8"/>
+  <circle cx="408" cy="156" r="10.8"/>
+  <circle cx="91" cy="204" r="10.4"/>
+  <circle cx="171" cy="244" r="10.8"/>
+  <circle cx="268" cy="274" r="13.2"/>
+  <circle cx="88" cy="314" r="11.8"/>
+  <circle cx="356" cy="318" r="12.4"/>
+  <circle cx="474" cy="264" r="9.0"/>
+  <circle cx="118" cy="381" r="11.8"/>
+  <circle cx="490" cy="364" r="11.8"/>
+  <circle cx="206" cy="428" r="10.8"/>
+  <circle cx="378" cy="414" r="11.5"/>
+  <circle cx="196" cy="484" r="11.2"/>
+  <circle cx="316" cy="471" r="11.2"/>
+  </g>
+  <g>
+  <text x="306" y="98" text-anchor="middle">ai-governance</text>
+  <text x="144" y="134" text-anchor="middle">human-in-the-loop</text>
+  <text x="248" y="183" text-anchor="middle">ai-literacy</text>
+  <text x="408" y="178" text-anchor="middle">ai-agent</text>
+  <text x="83" y="225" text-anchor="end">evaluation</text>
+  <text x="171" y="266" text-anchor="middle">black-box</text>
+  <text x="254" y="298" text-anchor="end">governance-and-observability</text>
+  <text x="78" y="337" text-anchor="end">observability</text>
+  <text x="372" y="341" text-anchor="start">harness-paradigm</text>
+  <text x="484" y="284" text-anchor="start">prompt-engineering</text>
+  <text x="110" y="404" text-anchor="end">hallucination</text>
+  <text x="500" y="387" text-anchor="start">context-engineering</text>
+  <text x="206" y="450" text-anchor="middle">data-quality</text>
+  <text x="378" y="436" text-anchor="middle">rag</text>
+  <text x="196" y="506" text-anchor="middle">grounding</text>
+  <text x="316" y="493" text-anchor="middle">persistent-synthesis</text>
+  </g>
+</svg>

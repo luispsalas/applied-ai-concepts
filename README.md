@@ -150,7 +150,7 @@ Practical notes on what to control, monitor, and be accountable for — organize
 ## Using this as context
 
 <p align="center">
-  <img src="assets/concept-graph.png" alt="Concept graph" width="480">
+  <img src="assets/concept-graph.svg" alt="Concept relationship graph" width="400">
 </p>
 
 The concepts in this wiki are designed to be used as structured context within AI projects, not just read as reference material. Each entry is self-contained, consistently structured, and written to support both human understanding and machine processing.
