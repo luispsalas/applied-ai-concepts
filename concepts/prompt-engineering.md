@@ -85,7 +85,8 @@ That said, prompt engineering is a genuine high-leverage skill at the practition
 |---|---|---|
 | SRC-013 | Anthropic — *Prompt engineering overview* (documentation, 2024) · [link](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview) | Official taxonomy of prompt engineering techniques: role assignment, few-shot examples, chain-of-thought prompting, constraint specification. Authoritative naming conventions for the core techniques listed in the technical definition. |
 | SRC-014 | OpenAI — *Prompt engineering* (documentation, 2023) · [link](https://platform.openai.com/docs/guides/prompt-engineering) | Official guide covering system messages, role assignment, formatting, and few-shot patterns. Second authoritative reference corroborating the technique taxonomy. |
-| — | ⚠️ Source needed | Practitioner framing: prompt engineering as a discipline distinct from context engineering; the argument that system-level design matters more than prompt optimization at scale. |
+| SRC-011 | Karpathy, Andrej — *"Context engineering is the delicate art and science…"* (X post, 2025) · [link](https://x.com/karpathy/status/1937902205765607626) | Canonical distinction between prompt engineering (short task instructions) and context engineering (designing the full information environment) — grounds the claim that prompt engineering is a distinct, narrower discipline. |
+| SRC-012 | LangChain — *Context Engineering for Agents* (2025) · [link](https://blog.langchain.com/context-engineering-for-agents/) | Practitioner framing distinguishing context engineering from prompt engineering at the system level; argues runtime context construction matters more than prompt wording at production scale. |
 
 ---
 

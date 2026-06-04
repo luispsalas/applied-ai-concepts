@@ -89,7 +89,8 @@ Three implications:
 | ID | Source | Contribution to this entry |
 |---|---|---|
 | SRC-025 | DAMA International — *DAMA-DMBOK: Data Management Body of Knowledge* (2nd ed., 2017) · [link](https://www.dama.org/cpages/body-of-knowledge) | Canonical framework for data quality dimensions and data management practice. Authoritative definitions for accuracy, completeness, consistency, timeliness, validity, and uniqueness as the standard quality dimension set. Industry reference for data governance roles and responsibilities. |
-| — | ⚠️ Source needed | AI-specific framing: data quality as upstream constraint on model and RAG system behavior; quality governance as a continuous responsibility rather than a pre-deployment gate; the "garbage in, garbage out" extension to training data, knowledge bases, and context inputs. |
+| SRC-051 | Perrone, Paolo — *How DoorDash Built Their RAG System* (The AI Engineer, 2026) · [link](https://theaiengineer.substack.com/p/how-doordash-built-their-rag-system) | Data quality as a continuous, upstream constraint on system behavior: production RAG used layered verification and a simulation flywheel to keep retrieved-content quality high over time — quality governance as an ongoing responsibility, not a pre-deployment gate. |
+| SRC-052 | Karunakaran Ponon, Nidhin (Towards Data Science) — *How to Build an Efficient Knowledge Base for AI Models* (2026) · [link](https://towardsdatascience.com/how-to-build-an-efficient-knowledge-base-for-ai-models/) | "Garbage in, garbage out" extended to knowledge bases and context inputs: chunking, metadata, and access design determine downstream answer quality — poor input quality propagates directly into model and RAG behavior. |
 
 ---
 

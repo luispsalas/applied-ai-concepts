@@ -81,7 +81,8 @@ Three implications:
 |---|---|---|
 | SRC-023 | Lipton, Z. — *The Mythos of Model Interpretability* (arXiv:1606.03490, 2016) · [link](https://arxiv.org/abs/1606.03490) | Foundational critique of interpretability claims: distinguishes simulatability, decomposability, and algorithmic transparency; establishes that model-generated explanations do not constitute transparency; widely cited framing of why black-box opacity is not simply an engineering problem to be solved. |
 | SRC-024 | European Parliament — *EU Artificial Intelligence Act, Article 13: Transparency and provision of information to deployers* (2024) · [link](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689) | Regulatory framing: high-risk AI systems must be designed to enable deployers to interpret outputs; transparency requirements as a governance response to black-box opacity. Establishes the regulatory expectation that accountability lives in the observable system layer. |
-| — | ⚠️ Source needed | Governance framing: accountability migrating to the harness layer; logging inputs and outputs as the minimum observable artifact; opacity as a risk multiplier rather than error source. |
+| SRC-018 | Böckeler, Birgitta — *Harness engineering for coding agent users* (martinfowler.com, 2026) · [link](https://martinfowler.com/articles/harness-engineering.html) | Accountability migrating to the harness layer: when the model is opaque, control and accountability live in the surrounding harness (guides and sensors), not the model — the observable layer is where governance acts. |
+| SRC-027 | Sridharan, Cindy — *Distributed Systems Observability* (O'Reilly, 2018) · [link](https://www.oreilly.com/library/view/distributed-systems-observability/9781492033431/) | Logging inputs and outputs as the minimum observable artifact: opaque systems are governed by what is instrumented and recorded, and observability must be designed in, not added after. |
 
 ---
 

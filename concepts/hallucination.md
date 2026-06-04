@@ -80,7 +80,9 @@ Grounding strategies (RAG, retrieval from verified sources, tool use) reduce hal
 | ID | Source | Contribution to this entry |
 |---|---|---|
 | SRC-010 | Zhang et al. — *A Survey on Hallucination in Large Language Models: Principles, Taxonomy, Challenges, and Open Questions* (arXiv:2311.05232, 2023) · [link](https://arxiv.org/abs/2311.05232) | Defines factuality hallucination (discrepancy with verifiable real-world facts) and faithfulness hallucination (divergence from user input or internal consistency). Provides taxonomy, detection methods, and mitigation overview. Peer-reviewed — ACM Transactions on Information Systems. |
-| — | ⚠️ Source needed | Organizational implications framing: verification as structural rather than reactive; confidence as a non-reliability signal; model-generated explanations as subject to the same hallucination risk as any other output. |
+| SRC-051 | Perrone, Paolo — *How DoorDash Built Their RAG System* (The AI Engineer, 2026) · [link](https://theaiengineer.substack.com/p/how-doordash-built-their-rag-system) | Verification as structural rather than reactive: a production system layering a semantic-similarity guardrail, an LLM judge, and a simulation flywheel achieved ~90% fewer hallucinations — evidence that hallucination control is an architectural design choice, not after-the-fact review. |
+| SRC-064 | Alexander, Emmimal P. — *Your RAG Gets Confidently Wrong as Memory Grows* (Towards Data Science, 2026) · [link](https://towardsdatascience.com/your-rag-gets-confidently-wrong-as-memory-grows-i-built-the-memory-layer-that-stops-it/) | Confidence as a non-reliability signal: controlled experiment in which model confidence rose (70.4% → 78.0%) even as accuracy fell — output confidence does not track correctness. |
+| SRC-023 | Lipton, Z. — *The Mythos of Model Interpretability* (arXiv:1606.03490, 2016) · [link](https://arxiv.org/abs/1606.03490) | Model-generated explanations are themselves model outputs and do not constitute ground truth — an AI's explanation of its own answer carries the same hallucination risk as the answer itself. |
 
 ---
 

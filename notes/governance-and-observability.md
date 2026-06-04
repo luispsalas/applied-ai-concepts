@@ -208,7 +208,8 @@ Cross-cutting questions to ask before deploying or operating any AI system cover
 | SRC-019 | Multiple authors — *Architectural Design Decisions in AI Agent Harnesses* (arXiv:2604.18071, 2026) · [link](https://arxiv.org/html/2604.18071v1) | Harness components and their governance implications; observability and audit as harness-layer concerns. |
 | SRC-007 | Karpathy, Andrej — *LLM Wiki* (gist, 2023) · [link](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) | Persistent synthesis as a knowledge governance discipline; context as the primary leverage point. |
 | SRC-008 | Ghumare, Rohit — *LLM Wiki v2* (gist, 2024) · [link](https://gist.github.com/rohitg00/2067ab416f7bbe447c1977edaaa681e2) | Knowledge decay rates; confidence scoring; stale entry detection as a governance practice. |
-| — | ⚠️ Source needed | Adversarial input patterns and prompt injection as a harness-layer governance concern. |
+| SRC-100 | Tampere University / TAUCHI — *Securing Local LLMs for Academic Research* (Human-Intelligent Systems Integration, Springer Nature, 2025) · [link](https://link.springer.com/article/10.1007/s42454-025-00085-9) | Prompt injection and adversarial input as a security vulnerability requiring layered, harness-level mitigation grounded in HCI principles; peer-reviewed evidence that input-layer attacks are a governance concern, not just a model concern. |
+| SRC-060 | He, Yifeng et al. (UC Davis) — *Security of AI Agents* (arXiv:2406.08689, 2026) · [link](https://arxiv.org/abs/2406.08689) | Systematic taxonomy of agent vulnerabilities (confidentiality, integrity, availability) and defenses — locates adversarial-input defense at the agent/harness layer, distinct from model-level security. |
 
 ---
 

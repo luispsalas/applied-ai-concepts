@@ -87,7 +87,7 @@ Four implications:
 |---|---|---|
 | SRC-018 | Böckeler, Birgitta — *Harness engineering for coding agent users* (martinfowler.com, 2026) · [link](https://martinfowler.com/articles/harness-engineering.html) | Authoritative definition of the harness as the infrastructure surrounding the model. Introduces guides (feedforward controls that steer before the agent acts) vs sensors (feedback controls that observe after). Direct grounding for the core claim that intelligence and control are separate architectural layers. |
 | SRC-019 | Multiple authors — *Architectural Design Decisions in AI Agent Harnesses* (arXiv:2604.18071, 2026) · [link](https://arxiv.org/html/2604.18071v1) | Systematic academic treatment of harness components: state/persistence, security/governance, orchestration/tool use, memory, observability, and evals. Provides peer-reviewed grounding for the harness component list in the technical definition. |
-| — | ⚠️ Source needed | Tool contracts, MCP as standardization layer for tool interfaces — drawn from practitioner analysis of production agent systems; no single primary source identified. |
+| SRC-103 | Model Context Protocol — *What is the Model Context Protocol (MCP)?* (official documentation, 2024) · [link](https://modelcontextprotocol.io/docs/getting-started/intro) | MCP as the standardization layer for tool interfaces: an open standard ("a USB-C port for AI applications") giving AI applications a uniform way to connect to external tools and data sources, so integrations are build-once / integrate-everywhere — grounds the claim that tool contracts are converging on a shared interface standard. |
 
 ---
 
