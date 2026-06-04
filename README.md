@@ -40,16 +40,16 @@ The glossary can also be downloaded as a context package for AI and governance-r
 
 ## Design philosophy
 
-> <img src="https://www.readmecodegen.com/api/social-icon?name=arrowRight&size=32" height="16"> **Persistent synthesis over retrieval.**  
+> <img src="https://www.readmecodegen.com/api/social-icon?name=mountain&size=46&color=%23f59e0b" height="20"> **Persistent synthesis over retrieval.**  
 > New sources are synthesized into existing entries, not appended. The wiki is the output; source documents are inputs. Inspired by Karpathy's LLM Wiki model — *stop re-deriving, start compiling.*
 
-> <img src="https://www.readmecodegen.com/api/social-icon?name=arrowRight&size=32" height="16"> **Context as leverage.**  
+> <img src="https://www.readmecodegen.com/api/social-icon?name=mountain&size=46&color=%23f59e0b" height="20"> **Context as leverage.**  
 > The quality of any AI interaction is bounded by the quality of context it receives. Understanding *why* changes how you design systems, not just how you prompt them.
 
-> <img src="https://www.readmecodegen.com/api/social-icon?name=arrowRight&size=32" height="16"> **Governance lives in the design.**  
+> <img src="https://www.readmecodegen.com/api/social-icon?name=mountain&size=46&color=%23f59e0b" height="20"> **Governance lives in the design.**  
 > Every entry surfaces the control, accountability, and oversight implications of a concept — AI literacy without governance awareness is incomplete.
 
-> <img src="https://www.readmecodegen.com/api/social-icon?name=arrowRight&size=32" height="16"> **Explicit over implicit.**  
+> <img src="https://www.readmecodegen.com/api/social-icon?name=mountain&size=46&color=%23f59e0b" height="20"> **Explicit over implicit.**  
 > Assumptions, confidence levels, and knowledge gaps are surfaced in every entry. Uncertainty is documented, not hidden.
 
 ---
