@@ -18,6 +18,7 @@ Quick-reference index of all concepts. Follow links for full entries.
 | [Harness Paradigm](../concepts/harness-paradigm.md) | Intelligence and control are separate layers — governance lives in the harness, not the model |
 | [Human-in-the-Loop (HITL)](../concepts/human-in-the-loop.md) | A design pattern that keeps humans as decision authorities at critical points |
 | [Observability](../concepts/observability.md) | The ability to understand what an AI system is doing — and reconstruct why — by examining what goes in, what comes out, and every action in between |
+| [Ownership (AI Systems)](../concepts/ownership-ai-systems.md) | Explicit assignment of accountability for an AI system's outputs, data, and governance — defining who is responsible, not just who built it |
 | [Persistent Synthesis](../concepts/persistent-synthesis.md) | Knowledge compounds when contradictions are resolved — not when information is accumulated |
 | [Prompt Engineering](../concepts/prompt-engineering.md) | Structuring inputs to consistently elicit useful, accurate, and safe model outputs |
 | [Retrieval-Augmented Generation (RAG)](../concepts/rag.md) | A technique that grounds language model outputs in retrieved, verifiable information — reducing hallucination by giving the model current, specific content to work from |
