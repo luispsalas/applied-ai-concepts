@@ -127,6 +127,7 @@ Each concept is explained through several complementary "lenses" within a single
 |---|---|---|
 | [Observability](concepts/observability.md) | The ability to understand what an AI system is doing — and reconstruct why — from the outside | ✅ v1.0 |
 | [AI Governance](concepts/ai-governance.md) | The frameworks, policies, and accountability structures that determine who decides how AI systems behave — and who is answerable when they don't | ✅ v1.0 |
+| [Ownership (AI Systems)](concepts/ownership-ai-systems.md) | Explicit assignment of accountability for an AI system's outputs, data, and governance — defining who is responsible, not just who built it | ✅ v1.0 |
 
 ### Organizational Readiness
 *The human and organizational conditions for responsible AI adoption*
@@ -190,5 +191,5 @@ See [CHANGELOG.md](CHANGELOG.md) for version history.
 ## Status
 
 **Phase 1 ✅:** 11 concepts published across 6 categories — all sourced, versioned, and with governance notes sections. Standalone governance & observability notes doc live.
-**Phase 2 (current):** 15 concepts published across 8 categories · glossary rendering · cross-reference layer.
+**Phase 2 (current):** 16 concepts published across 8 categories · glossary rendering · cross-reference layer.
 **Phase 3:** Manifesto drafted from wiki principles.
