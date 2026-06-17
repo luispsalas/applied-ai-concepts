@@ -88,6 +88,7 @@ Four implications:
 | SRC-018 | Böckeler, Birgitta — *Harness engineering for coding agent users* (martinfowler.com, 2026) · [link](https://martinfowler.com/articles/harness-engineering.html) | Authoritative definition of the harness as the infrastructure surrounding the model. Introduces guides (feedforward controls that steer before the agent acts) vs sensors (feedback controls that observe after). Direct grounding for the core claim that intelligence and control are separate architectural layers. |
 | SRC-019 | Multiple authors — *Architectural Design Decisions in AI Agent Harnesses* (arXiv:2604.18071, 2026) · [link](https://arxiv.org/html/2604.18071v1) | Systematic academic treatment of harness components: state/persistence, security/governance, orchestration/tool use, memory, observability, and evals. Provides peer-reviewed grounding for the harness component list in the technical definition. |
 | SRC-103 | Model Context Protocol — *What is the Model Context Protocol (MCP)?* (official documentation, 2024) · [link](https://modelcontextprotocol.io/docs/getting-started/intro) | MCP as the standardization layer for tool interfaces: an open standard ("a USB-C port for AI applications") giving AI applications a uniform way to connect to external tools and data sources, so integrations are build-once / integrate-everywhere — grounds the claim that tool contracts are converging on a shared interface standard. |
+| SRC-118 | Sutter, Michal — *Claude Code Guide 2026: 25 Features with Examples + Demo* (MarkTechPost, 2026) · [link](https://www.marktechpost.com/2026/06/14/claude-code-guide-2026-25-features-with-examples-demo/) | Third-party analysis of a deployed agentic system's harness-layer primitives: persistent context (CLAUDE.md), reusable behaviors (skills), subagent delegation, hooks, and MCP server integrations. Illustrates that governance and control are harness-layer design choices in a concrete, production system — not model-level properties. |
 
 ---
 
@@ -102,4 +103,4 @@ Four implications:
 
 ---
 
-*Last updated: v1.1 · May 2026*
+*Last updated: v1.2 · June 2026*

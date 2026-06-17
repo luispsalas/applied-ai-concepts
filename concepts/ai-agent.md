@@ -86,6 +86,7 @@ Agents represent a qualitative shift in what AI systems do — from generating t
 | SRC-055 | Huang, Ken (DistributedApps.ai) — *Intent-Based Access Control (IBAC) for Coding Agents* (2026) · [link](https://github.com/kenhuangus/agentctl) | Capability vs. permission distinction: IBAC shifts authorization from "who can do what" to "for what purpose," enforcing intent-mapped policy at runtime — separates what an agent *can* do from what it is *permitted* to do. |
 | SRC-045 | Shapira, Natalie et al. — *Agents of Chaos* (arXiv:2602.20021, 2026) · [link](https://arxiv.org/abs/2602.20021) | Failure propagation in multi-step systems: red-team study documenting 11 empirical failure cases (unauthorized compliance, identity spoofing, partial system takeover) where errors cascade across an agent's action sequence. |
 | SRC-034 | Chase, Harrison (LangChain) — *The Agent Development Lifecycle* (2026) · [link](https://www.langchain.com/blog/the-agent-development-lifecycle) | Checkpoint design proportional to consequence: documents tool access controls, sandboxed execution, durable execution, and HITL gates as lifecycle controls scaled to the risk of the action. |
+| SRC-118 | Sutter, Michal — *Claude Code Guide 2026: 25 Features with Examples + Demo* (MarkTechPost, 2026) · [link](https://www.marktechpost.com/2026/06/14/claude-code-guide-2026-25-features-with-examples-demo/) | Third-party analysis of a deployed multi-step agentic system's extensibility primitives: subagent delegation, hooks (event-triggered controls), MCP server integrations, and permission-scoped skills. Grounds the governance notes on harness-layer permission design and the literacy note that capability and permission are distinct concerns. |
 
 ---
 
@@ -100,4 +101,4 @@ Agents represent a qualitative shift in what AI systems do — from generating t
 
 ---
 
-*Last updated: v1.1 · May 2026*
+*Last updated: v1.2 · June 2026*

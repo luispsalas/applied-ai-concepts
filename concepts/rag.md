@@ -91,6 +91,7 @@ Three things practitioners need to understand:
 | SRC-028 | Alexander, Emmimal P. — *RAG Is Blind to Time: I Built a Temporal Layer to Fix It in Production* (Towards Data Science, 2026) · [link](https://towardsdatascience.com/rag-is-blind-to-time-i-built-a-temporal-layer-to-fix-it-in-production/) | Production case study for RAG temporal blindness: vector similarity cannot distinguish document freshness or version status; three temporal failure modes (expiration, versioning, temporality); temporal reranking layer with two-axis document classification (validity states × document kinds); content-specific decay profiles; relevance gating to prevent fresh-but-irrelevant results. |
 | SRC-052 | Karunakaran Ponon, Nidhin (Towards Data Science) — *How to Build an Efficient Knowledge Base for AI Models* (2026) · [link](https://towardsdatascience.com/how-to-build-an-efficient-knowledge-base-for-ai-models/) | Access controls on retrieved content and RAG as a data access layer: documents role-based access control applied at the chunk level and metadata-driven retrieval — the knowledge base is a governed access surface, not a passive store. |
 | SRC-025 | DAMA International — *DAMA-DMBOK* (2nd ed., 2017) · [link](https://www.dama.org/cpages/body-of-knowledge) | Knowledge base as a governed data asset: standard data-governance treatment (ownership, quality, access) applies to the retrieval corpus, framing RAG content as a managed asset subject to the same controls as any data store. |
+| SRC-117 | Shi, Kezhan — *10 Common RAG Mistakes We Keep Seeing in Production* (Towards Data Science, 2026) · [link](https://towardsdatascience.com/10-common-rag-mistakes-we-keep-seeing-in-production/) | Production failure taxonomy across four components: document parsing, question interpretation, retrieval mechanisms, and answer generation. Key argument: parsing correctness precedes parameter tuning; structured, typed data flows outperform embedding-only approaches. Grounds the AI literacy note that retrieval is not search, and the governance note that the knowledge base is a governed asset, not a passive store. |
 
 ---
 
@@ -105,4 +106,4 @@ Three things practitioners need to understand:
 
 ---
 
-*Last updated: v1.1 · May 2026*
+*Last updated: v1.2 · June 2026*

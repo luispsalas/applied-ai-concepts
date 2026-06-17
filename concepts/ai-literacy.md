@@ -92,6 +92,7 @@ Three things practitioners need to understand:
 | SRC-067 | OECD/European Commission — *AI Literacy Framework* (May 2025) · [link](https://www.oecd.org/en/publications/oecd-ec-ai-literacy-framework_3440f3db-en.html) | Four-domain framework (Engage/Create/Manage/Design); institutional definition of AI literacy competencies; policy and curriculum foundation. Joint OECD/EC publication — authoritative institutional source. |
 | SRC-068 | Long, D. & Magerko, B. — *What is AI Literacy? Competencies and Design Considerations* (CHI 2020) · [link](https://dl.acm.org/doi/10.1145/3313831.3376727) | Foundational competency cluster taxonomy (capabilities, learning, societal implications, critical evaluation, design); widely cited baseline for AI literacy curriculum design. Peer-reviewed. |
 | SRC-056 | Anthropic — *The Impact of AI on the Labor Market* (2025) · [link](https://www.anthropic.com/research/impact-ai-labor-market) | AI literacy as an emerging baseline employment competency; structural shift in labor market requirements; organizational implications of literacy deficits at workforce scale. Vendor-produced — use as background reference for labor market framing; not cited as an independent authority. |
+| SRC-115 | Stanford HAI — *AI Index Report* (annual, 2026 ed.) · [link](https://hai.stanford.edu/ai-index) | Annual data on AI adoption rates, labor market restructuring, and organizational competency gaps. Supports the AI literacy note that literacy is becoming a baseline employment competency — and that organizations not building this capability are compounding an organizational deficit. |
 
 ---
 
@@ -106,4 +107,4 @@ Three things practitioners need to understand:
 
 ---
 
-*Last updated: v1.0 · May 2026*
+*Last updated: v1.1 · June 2026*

@@ -83,6 +83,7 @@ Three implications:
 | SRC-024 | European Parliament — *EU Artificial Intelligence Act, Article 13: Transparency and provision of information to deployers* (2024) · [link](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689) | Regulatory framing: high-risk AI systems must be designed to enable deployers to interpret outputs; transparency requirements as a governance response to black-box opacity. Establishes the regulatory expectation that accountability lives in the observable system layer. |
 | SRC-018 | Böckeler, Birgitta — *Harness engineering for coding agent users* (martinfowler.com, 2026) · [link](https://martinfowler.com/articles/harness-engineering.html) | Accountability migrating to the harness layer: when the model is opaque, control and accountability live in the surrounding harness (guides and sensors), not the model — the observable layer is where governance acts. |
 | SRC-027 | Sridharan, Cindy — *Distributed Systems Observability* (O'Reilly, 2018) · [link](https://www.oreilly.com/library/view/distributed-systems-observability/9781492033431/) | Logging inputs and outputs as the minimum observable artifact: opaque systems are governed by what is instrumented and recorded, and observability must be designed in, not added after. |
+| SRC-116 | Palomares Carrascosa, Iván — *A Gentle Primer on LLM Explainability* (KDnuggets, 2026) · [link](https://www.kdnuggets.com/a-gentle-primer-on-llm-explainability) | Accessible overview of current LLM explainability approaches: model-agnostic statistical methods (SMILE/gSMILE) and budget-friendly proxy solutions. Supports the AI literacy note that interpretability research provides approximate, post-hoc visibility — not production-ready accountability mechanisms for most organizational contexts. |
 
 ---
 
@@ -97,4 +98,4 @@ Three implications:
 
 ---
 
-*Last updated: v1.0 · May 2026*
+*Last updated: v1.1 · June 2026*

@@ -87,6 +87,10 @@ Three things practitioners need to understand:
 | SRC-024 | Jobin, A. et al. — *The Global Landscape of AI Ethics Guidelines* (Nature Machine Intelligence, 2019) · [link](https://www.nature.com/articles/s42256-019-0088-2) | Synthesis of 84+ AI ethics/governance guidelines globally; convergence around fairness, transparency, accountability, human oversight; fragmentation in implementation standards. Peer-reviewed. |
 | SRC-036 | European Parliament — *EU Artificial Intelligence Act* (2024) · [link](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689) | Risk-tiered compliance model; extraterritorial scope for EU market deployment; prohibited AI practices; high-risk system requirements. Primary legal source. |
 | SRC-037 | Anthropic — *Model Specification* (2024) · [link](https://anthropic.com/model-spec) | Agentic governance framing: principal hierarchy, action authorization, reduced-oversight deployment patterns, corrigibility as a governance property. Vendor-produced — used as background reference for agentic governance framing; not cited as an independent authority. |
+| SRC-112 | OECD — *AI Principles Overview* (2019, updated 2024) · [link](https://oecd.ai/en/ai-principles) | Five values-based principles for trustworthy AI (inclusive growth, human-centred values, transparency, robustness, accountability) and five policy recommendations for governments; adopted by 47 countries + EU. Foundational intergovernmental standard underpinning most national AI strategies and the regulatory governance layer described in this entry. |
+| SRC-113 | UNESCO — *Recommendation on the Ethics of Artificial Intelligence* (2021) · [link](https://www.unesco.org/en/artificial-intelligence/recommendation-ethics) | First global AI ethics standard adopted by 194 member states; four core values (human dignity, environmental flourishing, peaceful societies, diversity) and ten principles; 11 policy areas for implementation. Grounds the human-rights-based accountability and human-oversight principles that appear across governance frameworks. |
+| SRC-114 | UN Secretary-General's High-level Advisory Body — *Governing AI for Humanity* (Final Report, 2024) · [link](https://www.un.org/en/ai-advisory-body) | Framework for globally inclusive and distributed AI governance with 7 recommendations; informed by 2,000+ participants across 50+ regional consultations. Represents UN-level consensus on accountability structures, risk management, and equitable access — the international governance layer complementing NIST and the EU AI Act. |
+| SRC-115 | Stanford HAI — *AI Index Report* (annual, 2026 ed.) · [link](https://hai.stanford.edu/ai-index) | Annual benchmark on global AI progress, governance landscape, and policy developments. Supports the claim that convergence is occurring around core principles while implementation standards remain fragmented, and that the regulatory landscape continues to expand in scope and complexity. |
 
 ---
 
@@ -101,4 +105,4 @@ Three things practitioners need to understand:
 
 ---
 
-*Last updated: v1.0 · May 2026*
+*Last updated: v1.1 · June 2026*
