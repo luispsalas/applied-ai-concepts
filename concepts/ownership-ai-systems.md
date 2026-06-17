@@ -72,10 +72,10 @@ Ownership is more often assumed than assigned. Naming an owner forces three thin
 - [Data Quality](data-quality.md) — data ownership (a named owner authorizing data as fit for use) is one of the convergent domains an AI system owner must integrate
 - [Harness Paradigm](harness-paradigm.md) — ownership is enforced at the harness layer: permissions, audit trails, and decommissioning controls are where an owner's authority becomes real
 - [Observability](observability.md) — an owner cannot be accountable for what they cannot see; observability is the precondition that makes ownership enforceable
-- Accountability (AI Systems) — the principle that someone can be held answerable; ownership is the operational act that names who
-- Human Responsibility in AI Use — the principle that the obligation does not transfer to the tool; ownership assigns that non-transferable obligation to a specific role
-- Compliance (AI Systems) — ownership names the role answerable for meeting compliance obligations, not just for documenting them
-- Audit Trail (AI) — the record against which an owner's decisions and a system's behavior can be reconstructed and reviewed
+- [Accountability (AI Systems)](accountability-ai-systems.md) — the principle that someone can be held answerable; ownership is the operational act that names who
+- [Human Responsibility in AI Use](human-responsibility-in-ai-use.md) — the principle that the obligation does not transfer to the tool; ownership assigns that non-transferable obligation to a specific role
+- [Compliance (AI Systems)](compliance-ai-systems.md) — ownership names the role answerable for meeting compliance obligations, not just for documenting them
+- [Audit Trail (AI)](audit-trail-ai.md) — the record against which an owner's decisions and a system's behavior can be reconstructed and reviewed
 
 ---
 
