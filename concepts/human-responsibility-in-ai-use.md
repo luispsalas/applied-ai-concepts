@@ -13,7 +13,7 @@ This principle operates at three levels:
 
 1. **Non-transferability** — responsibility for outcomes cannot shift from humans to AI systems because AI systems cannot be moral or legal agents. A system that cannot understand the consequences of its actions, cannot be sanctioned, and cannot be held to account cannot bear responsibility. The obligation remains with the humans who set the system in motion. (Matthias 2004)
 
-2. **The responsibility gap** — as AI systems become more autonomous and their behavior harder to predict, the traditional accountability chain (developer responsible for design; operator for deployment) can break down: the system behaves in ways neither party explicitly programmed or anticipated. This gap is not a reason to attribute responsibility to the machine — it is a design problem that requires keeping humans in a position to remain responsible. (Matthias 2004)
+2. **The responsibility gap** — as AI systems become more autonomous and their behavior harder to predict, the traditional accountability chain (developer responsible for design; operator for deployment) can break down: the system behaves in ways neither party explicitly programmed or anticipated. This gap is not a reason to attribute responsibility to the machine — it is a design problem that requires keeping humans in a position to remain responsible. (Matthias 2004; cf. Veluwenkamp & Hindriks 2024, who recast it as a "control gap" answered by a duty of moral control)
 
 3. **Meaningful control conditions** — Santoni de Sio & van den Hoven (2018) identify two conditions that must be satisfied for human responsibility to be genuine rather than nominal:
    - **Tracking**: the system behaves in ways that reflect human values and intentions — if humans intended something, the system reliably produces it
@@ -65,7 +65,7 @@ Three things practitioners need to understand:
 
 ## Confidence level
 
-**Established in principle, developing in practice.** The non-transferability of responsibility is settled in philosophy (Matthias 2004) and broadly endorsed in regulation (EU AI Act, GDPR, UNESCO Recommendation on AI Ethics). The design conditions for meaningful human control (Santoni de Sio & van den Hoven 2018) are influential but implementation standards vary across sectors. How responsibility distributes across developer/deployer/user chains in specific agentic contexts — where the system acts across many steps without per-action oversight — remains an active legal and governance question.
+**Established in principle, developing in practice.** The non-transferability of responsibility is settled in philosophy (Matthias 2004) and broadly endorsed in regulation (EU AI Act, GDPR, UNESCO Recommendation on AI Ethics). The design conditions for meaningful human control (Santoni de Sio & van den Hoven 2018) are influential but implementation standards vary across sectors. How responsibility distributes across developer/deployer/user chains in specific agentic contexts — where the system acts across many steps without per-action oversight — remains an active legal and governance question. The gap framing itself is being actively re-examined in current scholarship: recent work relocates the problem from knowledge/control deficits to a "vulnerability gap" (Vallor & Vierkant 2024) or recasts it as a "control gap" met by a duty of moral control (Veluwenkamp & Hindriks 2024) — debates that refine, rather than weaken, the core principle that responsibility stays with humans.
 
 ---
 
@@ -87,6 +87,8 @@ Three things practitioners need to understand:
 | SRC-107 | Santoni de Sio, F. & van den Hoven, J. — *Meaningful Human Control over Autonomous Systems: A Philosophical Account* (Frontiers in Robotics and AI, 2018) · [link](https://doi.org/10.3389/frobt.2018.00015) | Tracking and tracing conditions as design requirements for systems that support genuine human responsibility; frames meaningful control as an engineering specification, not just a governance aspiration. |
 | SRC-113 | UNESCO — *Recommendation on the Ethics of Artificial Intelligence* (2021) · [link](https://www.unesco.org/en/artificial-intelligence/recommendation-ethics) | International endorsement: states and organizations retain responsibility for AI actions; human oversight as a governance floor that cannot be delegated away. 194 member states. |
 | SRC-001 | NIST — *Artificial Intelligence Risk Management Framework (AI RMF 1.0)* (2023) · [link](https://www.nist.gov/itl/ai-risk-management-framework) | GOVERN function: human oversight as an accountability structure; the framework basis for treating human responsibility as an operational governance requirement across the AI system lifecycle. |
+| SRC-119 | Vallor, S. & Vierkant, T. — *Find the Gap: AI, Responsible Agency and Vulnerability* (Minds and Machines, 2024) · [link](https://doi.org/10.1007/s11023-024-09674-0) | Contemporary revisiting of the responsibility gap: argues it is misdiagnosed when framed around knowledge/control deficits (humans act under the same limits yet stay responsible) and relocates it to a "vulnerability gap." Supports the entry's forward-looking framing — responsibility as something to design and cultivate, not just assign after harm. |
+| SRC-120 | Veluwenkamp, H. & Hindriks, F. — *Artificial Agents: Responsibility & Control Gaps* (Inquiry, 2024) · [link](https://doi.org/10.1080/0020174X.2024.2410995) | Critical reframing: treats the "responsibility gap" as incoherent and recasts it as a "control gap" — a discrepancy between the control an agent has and the moral control it ought to have — answered by a second-order "duty of moral control." Grounds the entry's framing of the gap as a design problem requiring humans to retain meaningful control. |
 
 ---
 
@@ -101,4 +103,4 @@ Three things practitioners need to understand:
 
 ---
 
-*Last updated: v1.0 · June 2026*
+*Last updated: v1.1 · June 2026*
