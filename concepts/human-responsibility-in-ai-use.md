@@ -71,10 +71,10 @@ Three things practitioners need to understand:
 
 ## Related concepts
 
-- Accountability (AI Systems) — accountability is the structured exercise of responsibility: naming who answers to whom, with what evidence; the two concepts are inseparable in practice
+- [Accountability (AI Systems)](accountability-ai-systems.md) — accountability is the structured exercise of responsibility: naming who answers to whom, with what evidence; the two concepts are inseparable in practice
 - [Human-in-the-Loop (HITL)](human-in-the-loop.md) — the design pattern that preserves genuine human capacity to oversee and intervene; the structural implementation of human responsibility
 - [Ownership (AI Systems)](ownership-ai-systems.md) — ownership assigns non-transferable responsibility to a specific named role; the operational act that makes the principle concrete
-- Compliance (AI Systems) — many compliance obligations explicitly require human responsibility for AI decisions (EU AI Act human oversight requirements; GDPR right to explanation and human review of automated decisions)
+- [Compliance (AI Systems)](compliance-ai-systems.md) — many compliance obligations explicitly require human responsibility for AI decisions (EU AI Act human oversight requirements; GDPR right to explanation and human review of automated decisions)
 - [AI Governance](ai-governance.md) — the framework within which human responsibility is assigned, operationalized, and enforced
 
 ---
