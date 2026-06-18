@@ -87,8 +87,8 @@ Three things practitioners need to understand:
 | ID | Source | Contribution to this entry |
 |---|---|---|
 | SRC-065 | Liang, P. et al. — *Holistic Evaluation of Language Models (HELM)* (TMLR, 2023) · [link](https://arxiv.org/abs/2211.09110) | Comprehensive benchmarking framework: 30+ metrics across accuracy, calibration, robustness, fairness, efficiency; multi-scenario evaluation methodology; distinction between capability and deployment readiness. Peer-reviewed. |
-| SRC-051 | DoorDash Engineering — *How DoorDash Efficiently Scales LLM-based Order Item Recommendations* (2024) · [link](https://doordash.engineering/2024/09/17/how-doordash-efficiently-scales-llm-based-order-item-recommendations/) | Production evaluation at scale: LLM-as-judge implementation, offline/online evaluation split, sampling pipeline, performance drift monitoring in a live recommendation system. Industry case study. |
-| SRC-017 | LangChain — *LangSmith Documentation: Evaluation* (2024) · [link](https://docs.smith.langchain.com/evaluation) | Practical evaluation tooling patterns: automated evaluators, human review workflows, production monitoring integration, evaluation dataset management. Vendor-produced — use as background reference for tooling patterns; not cited as methodological authority. |
+| SRC-132 | DoorDash Engineering — *How DoorDash Efficiently Scales LLM-based Order Item Recommendations* (2024) · [link](https://doordash.engineering/2024/09/17/how-doordash-efficiently-scales-llm-based-order-item-recommendations/) | Production evaluation at scale: LLM-as-judge implementation, offline/online evaluation split, sampling pipeline, performance drift monitoring in a live recommendation system. Industry case study. |
+| SRC-131 | LangChain — *LangSmith Documentation: Evaluation* (2024) · [link](https://docs.smith.langchain.com/evaluation) | Practical evaluation tooling patterns: automated evaluators, human review workflows, production monitoring integration, evaluation dataset management. Vendor-produced — use as background reference for tooling patterns; not cited as methodological authority. |
 
 ---
 

@@ -10,6 +10,8 @@ This wiki is maintained as a persistently synthesised knowledge base — new inf
 
 **Sources are required, not optional.** Every claim in this wiki must be traceable to a real source with a verifiable link. Vague attributions ("general consensus", "practitioner knowledge") are replaced with real sources or flagged `⚠️ Source needed` — a visible, upgradeable marker that makes knowledge gaps explicit rather than hiding them.
 
+**Source IDs map to one source each.** Every `SRC-###` identifier corresponds to exactly one source in the master source registry. Before adding or reusing a citation, check the ID against the registry — never invent, guess, or reassign an ID inside an entry. This keeps the same ID from drifting to different sources across entries.
+
 **Synthesis over accumulation.** When new information contradicts an existing entry, the contradiction is resolved and documented — not left to coexist. Both versions are not kept without annotation. This is the core principle behind the wiki's design, described in detail in the [Persistent Synthesis](concepts/persistent-synthesis.md) entry.
 
 ---
