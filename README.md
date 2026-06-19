@@ -79,6 +79,8 @@ Each concept is explained through several complementary "lenses" within a single
 |---|---|---|
 | [Hallucination](concepts/hallucination.md) | AI models generate plausible-sounding content that is factually incorrect — confidently and without warning | ✅ v1.1 |
 | [Black Box](concepts/black-box.md) | An AI system whose internal reasoning process cannot be observed or interpreted — even when its outputs can | ✅ v1.0 |
+| [Bias (AI Systems)](concepts/bias-ai-systems.md) | Systematic errors that unfairly advantage or disadvantage certain groups — often inherited from training data, rarely visible in any single output | ✅ v1.0 |
+| [Explainability (XAI)](concepts/explainability-xai.md) | Describing, in terms a human can understand, why an AI system produced a specific output — a prerequisite for accountability | ✅ v1.0 |
 
 ### Interaction & Design
 *How you work with models effectively*
@@ -120,6 +122,7 @@ Each concept is explained through several complementary "lenses" within a single
 | Concept | One-line essence | Status |
 |---|---|---|
 | [Evaluation (AI Systems)](concepts/evaluation.md) | The structured practice of measuring whether an AI system does what it is supposed to do — before deployment and continuously in production | ✅ v1.0 |
+| [Failure Modes (AI Systems)](concepts/failure-modes-ai-systems.md) | The specific ways an AI system can go wrong — each requiring a different detection-and-response control | ✅ v1.0 |
 
 ### Observability & Governance
 *Making AI system behavior visible and accountable*
@@ -132,6 +135,7 @@ Each concept is explained through several complementary "lenses" within a single
 | [Accountability (AI Systems)](concepts/accountability-ai-systems.md) | The principle that someone can be held answerable for an AI system's behavior — and that answerable means explain, justify, and face consequences | ✅ v1.0 |
 | [Audit Trail (AI)](concepts/audit-trail-ai.md) | The structured record of what an AI system received, decided, and did — enabling accountability and governance review after the fact | ✅ v1.0 |
 | [Compliance (AI Systems)](concepts/compliance-ai-systems.md) | Meeting defined AI obligations — and being answerable for whether they were actually met, not just documented | ✅ v1.0 |
+| [Data Minimization](concepts/data-minimization.md) | Collecting and keeping only the data a system actually needs — less data, less risk, lower cost | ✅ v1.0 |
 
 ### Organizational Readiness
 *The human and organizational conditions for responsible AI adoption*
@@ -195,5 +199,5 @@ See [CHANGELOG.md](CHANGELOG.md) for version history.
 ## Status
 
 **Phase 1 ✅:** 11 concepts published across 6 categories — all sourced, versioned, and with governance notes sections. Standalone governance & observability notes doc live.
-**Phase 2 (current):** 20 concepts published across 8 categories · glossary rendering · cross-reference layer.
+**Phase 2 (current):** 24 concepts published across 8 categories · glossary rendering · cross-reference layer.
 **Phase 3:** Manifesto drafted from wiki principles.
