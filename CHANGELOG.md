@@ -1,5 +1,35 @@
 # Changelog
 
+## v1.3 — July 2026
+
+**6 new concepts, standards-grounded definitions, and glossary backfill.**
+
+**6 new concepts published:**
+- `ai-use-case` — v1.0 (definition composed from ISO/IEC/IEEE 24765 "use case" + ISO/IEC 22989 "AI system" + ISO/IEC TR 24030 documentation structure — each verified against standard text)
+- `guardrails-ai-systems` — v1.0 (peer-reviewed anchor: NeMo Guardrails, EMNLP 2023)
+- `types-of-ai-systems` — v1.0 (ISO/IEC 22989 vocabulary + OECD Classification Framework + EU AI Act risk tiers)
+- `domain` — v1.0
+- `knowledge-base` — v1.0
+- `memory-ai-systems` — v1.0
+
+**Source registry:** 8 sources added (SRC-133–SRC-140), including three international standards (ISO/IEC 22989, ISO/IEC TR 24030, ISO/IEC/IEEE 24765) and reference surveys for guardrails, domain specialization, agent memory, and RAG.
+
+**Glossary backfill:** the 4 concepts published June 2026 (`bias-ai-systems`, `data-minimization`, `explainability-xai`, `failure-modes-ai-systems`) are now indexed in the glossary — they were published without a glossary/changelog update.
+
+---
+
+## v1.2.1 — June 2026
+
+**4 new concepts published** (recorded retroactively — not logged at publish time):
+- `bias-ai-systems` — v1.0
+- `data-minimization` — v1.0
+- `explainability-xai` — v1.0
+- `failure-modes-ai-systems` — v1.0
+
+Also: source-ID reconciliation audit across all entries (SRC-129–132 added, SRC-009 restored); contemporary responsibility-gap scholarship added to `human-responsibility-in-ai-use` (v1.1).
+
+---
+
 ## v1.2 — May 2026
 
 **Governance layer, 5 new concepts, source verification, and README restructure.**
@@ -21,7 +51,7 @@
 - `observability` — v1.0
 
 **README restructured:**
-- Concepts section reorganised into 6 categories: Foundations · Interaction & Design · System Architecture · Knowledge & Memory · Human Oversight · Observability & Governance
+- Concepts section reorganized into 6 categories: Foundations · Interaction & Design · System Architecture · Knowledge & Memory · Human Oversight · Observability & Governance
 - Design philosophy and What this is sections rewritten to reflect AI literacy focus, Karpathy backbone attribution, and data governance perspective
 
 ---
