@@ -20,6 +20,10 @@ Key harness components:
 - **Routing layer** — logic that determines which model, which prompt variant, or which workflow handles a given input
 - **Logging and audit** — structured records of model inputs, outputs, and tool calls for review and accountability
 
+**Harness engineering** is the corresponding practice: treating that scaffolding as a first-class engineering artifact rather than incidental glue. Its working formulation is *agent = model + harness*, and the claim that follows is that much of the gap between what a model can do and what it is observed doing is a harness gap rather than a capability gap — so a capable model with a poorly built harness can be outperformed by a weaker model with a well-built one (Osmani). Böckeler's formulation for coding agents names the two control surfaces the discipline works with: *guides* — feedforward controls that steer before the agent acts — and *sensors* — feedback controls that observe after.
+
+The distinction matters: the harness paradigm is the architectural claim (intelligence and control are separate layers), while harness engineering is the practice of designing, versioning, and iterating that control layer over time.
+
 ---
 
 ## Plain-language version
@@ -42,6 +46,7 @@ Four implications:
 2. **Capability ≠ permission.** A model that *can* do something is not the same as a model that *should* be allowed to do it in a given context. The harness is where that distinction is made real.
 3. **Harness design requires domain knowledge.** Effective harness configuration requires understanding the use case, the risk profile, and the data landscape — not just the model's technical specifications. This is a human governance task.
 4. **The harness is where accountability lives.** Logging, audit trails, and HITL checkpoints are harness-layer decisions. A system without a harness cannot be audited.
+5. **Harness engineering is failure-driven, not anticipatory.** The discipline's characteristic method is a ratchet: constraints are added once a real failure has been observed, so each rule in the configuration is traceable to a specific thing that went wrong (Osmani). This makes the harness a living artifact that accumulates institutional memory about how the system fails — which is precisely why it needs versioning and change review rather than ad-hoc edits.
 
 ---
 
@@ -53,10 +58,12 @@ Four implications:
 - Governance attention focused on model selection while harness configuration remains informal or undefined. The model doesn't enforce policies — the harness does.
 - Capability treated as permission by default: if the model can access a tool or data source, it does, because no one specified otherwise.
 - System prompts and permission models that are not versioned, not owned, and not subject to change review.
+- Constraints added speculatively and never revisited, so no one can say which rule prevents which failure — the configuration accretes instead of ratcheting.
 
 **Practice:**
 - Treat harness configuration (permission model, tool contracts, system prompt, logging setup) as a governed artifact: versioned, owned, and change-reviewed the same way as any production configuration.
 - Separate capability assessment ("can it do X?") from permission design ("should it be allowed to, for whom, under what conditions?"). These are different questions answered by different people.
+- Tie each harness constraint to the observed failure that motivated it, so the control layer accumulates reviewable institutional memory instead of undocumented accretion.
 
 **Key accountability owner:** Harness owner — the role or team responsible for configuring, versioning, and reviewing the control layer that sits between the model and the world.
 
@@ -66,7 +73,7 @@ Four implications:
 
 ## Confidence level
 
-**Emerging — practitioner consensus.** The paradigm is well-established in production AI engineering (2023–present). The term "harness" is gaining adoption as a conceptual frame. Its application to governance and organizational design is newer and still developing.
+**Emerging — practitioner consensus.** The paradigm is well-established in production AI engineering (2023–present), and *harness engineering* has since been named and treated as a discipline in practitioner literature (Böckeler; Osmani), with systematic academic treatment of harness components. Its application to governance and organizational design is newer and still developing.
 
 ---
 
@@ -75,9 +82,12 @@ Four implications:
 - [Context Engineering](context-engineering.md) — context engineering shapes the inputs the harness delivers to the model
 - [Human-in-the-Loop (HITL)](human-in-the-loop.md) — HITL checkpoints are a harness-layer design decision
 - [Hallucination](hallucination.md) — grounding and verification controls are implemented at the harness layer
+- [AI Agent](ai-agent.md) — autonomous agents require especially deliberate harness design, as they act across multiple steps with real-world consequences
+- [Guardrails (AI Systems)](guardrails-ai-systems.md) — guardrails are harness-layer controls: Böckeler's guides and sensors are the feedforward and feedback halves
+- [Failure Modes (AI Systems)](failure-modes-ai-systems.md) — the ratchet runs on observed failures; each documented failure mode is a candidate harness constraint
+- [Memory (AI Systems)](memory-ai-systems.md) — the memory layer is a harness component, and what the system retains is a harness design decision
 - Permission Model — the access control component of the harness
 - System Prompt — the baseline context layer; the most visible harness component for end users
-- AI Agent — autonomous agents require especially deliberate harness design, as they act across multiple steps with real-world consequences
 
 ---
 
@@ -87,6 +97,7 @@ Four implications:
 |---|---|---|
 | SRC-018 | Böckeler, Birgitta — *Harness engineering for coding agent users* (martinfowler.com, 2026) · [link](https://martinfowler.com/articles/harness-engineering.html) | Authoritative definition of the harness as the infrastructure surrounding the model. Introduces guides (feedforward controls that steer before the agent acts) vs sensors (feedback controls that observe after). Direct grounding for the core claim that intelligence and control are separate architectural layers. |
 | SRC-019 | Multiple authors — *Architectural Design Decisions in AI Agent Harnesses* (arXiv:2604.18071, 2026) · [link](https://arxiv.org/html/2604.18071v1) | Systematic academic treatment of harness components: state/persistence, security/governance, orchestration/tool use, memory, observability, and evals. Provides peer-reviewed grounding for the harness component list in the technical definition. |
+| SRC-071 | Osmani, Addy — *Agent Harness Engineering* (O'Reilly Radar, 2026) · [link](https://www.oreilly.com/radar/agent-harness-engineering/) | Names harness engineering as a discipline and frames the *agent = model + harness* formulation: the observed gap between model capability and system behavior is largely a harness gap. Source for the failure-driven ratchet — constraints earned from observed failures, each rule traceable to a specific thing that went wrong. |
 | SRC-103 | Model Context Protocol — *What is the Model Context Protocol (MCP)?* (official documentation, 2024) · [link](https://modelcontextprotocol.io/docs/getting-started/intro) | MCP as the standardization layer for tool interfaces: an open standard ("a USB-C port for AI applications") giving AI applications a uniform way to connect to external tools and data sources, so integrations are build-once / integrate-everywhere — grounds the claim that tool contracts are converging on a shared interface standard. |
 | SRC-118 | Sutter, Michal — *Claude Code Guide 2026: 25 Features with Examples + Demo* (MarkTechPost, 2026) · [link](https://www.marktechpost.com/2026/06/14/claude-code-guide-2026-25-features-with-examples-demo/) | Third-party analysis of a deployed agentic system's harness-layer primitives: persistent context (CLAUDE.md), reusable behaviors (skills), subagent delegation, hooks, and MCP server integrations. Illustrates that governance and control are harness-layer design choices in a concrete, production system — not model-level properties. |
 
@@ -103,4 +114,4 @@ Four implications:
 
 ---
 
-*Last updated: v1.2 · June 2026*
+*Last updated: v1.3 · July 2026*
