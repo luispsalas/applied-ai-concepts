@@ -18,6 +18,10 @@ Browse all published terms in a single alphabetical list, with one-line definiti
 
 This repository is an [AI literacy](concepts/ai-literacy.md) resource that explains the concepts behind designing, using, and governing AI systems. It is written for practitioners, governance teams, and anyone responsible for AI-related decisions and outcomes in their organization.
 
+### Why it matters
+
+Most people now rely on AI systems they don't fully understand, and most organizations are deploying them faster than they can govern them. The language for talking clearly about how these systems work, where they fail, and who is accountable is scattered across research papers, vendor blogs, and regulation. This wiki gathers that language in one place, in plain terms — so an engineer, a product manager, and a compliance lead can use the same words for the same ideas, and make better decisions because of it.
+
 ### How it works
 
 This wiki is continuously refined over time. New source materials are integrated into existing entries instead of simply added on top. Definitions evolve, links between concepts become clearer, and conflicting perspectives are identified and documented rather than ignored.
@@ -204,6 +208,6 @@ See [CHANGELOG.md](CHANGELOG.md) for version history.
 
 ## Status
 
-**Phase 1 ✅:** 11 concepts published across 6 categories — all sourced, versioned, and with governance notes sections. Standalone governance & observability notes doc live.
-**Phase 2 (current):** 30 concepts published across 8 categories · glossary rendering · cross-reference layer.
-**Phase 3:** Manifesto drafted from wiki principles.
+**Phase 1 ✅ — foundation:** core concepts published and sourced, each with a governance-notes section; standalone [governance & observability notes](notes/governance-and-observability.md) doc live.
+**Phase 2 (current) — breadth & cross-linking:** 30 concepts across 8 categories, a [glossary index](glossary/index.md), and a cross-reference layer connecting related entries.
+**Phase 3 (planned):** audience-specific rendering, glossary automation, and a manifesto distilled from the wiki's principles.
