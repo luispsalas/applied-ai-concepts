@@ -75,8 +75,8 @@ Three things practitioners need to understand:
 ## Related concepts
 
 - [AI Governance](ai-governance.md) — governance defines accountability structures; compliance meets specific external obligations within them; neither substitutes for the other
-- Accountability (AI Systems) — accountability is being answerable for compliance obligations; named, forum-based answerability is what turns compliance from documentation into a real control
-- Audit Trail (AI) — compliance evidence: the audit trail is frequently what demonstrates that obligations were met and what regulators or auditors will review
+- [Accountability (AI Systems)](accountability-ai-systems.md) — accountability is being answerable for compliance obligations; named, forum-based answerability is what turns compliance from documentation into a real control
+- [Audit Trail (AI)](audit-trail-ai.md) — compliance evidence: the audit trail is frequently what demonstrates that obligations were met and what regulators or auditors will review
 - [Human-in-the-Loop (HITL)](human-in-the-loop.md) — many compliance frameworks require human oversight; the governance challenge is ensuring that oversight is meaningful rather than theatrical
 - [Ownership (AI Systems)](ownership-ai-systems.md) — compliance obligations are ultimately borne by a named owner; diffuse ownership produces compliance gaps where no one closes the loop
 

@@ -75,7 +75,7 @@ That said, prompt engineering is a genuine high-leverage skill at the practition
 - [Harness Paradigm](harness-paradigm.md) — system prompts are a harness-layer component; prompt engineering techniques inform their design
 - Context Framing — the specific sub-skill of structuring how information is presented within a prompt
 - System Prompt — the persistent, baseline prompt layer that precedes user interaction; authored using prompt engineering principles
-- Guardrails — constraints encoded in the system prompt and harness layer to bound model behavior regardless of user prompt variation
+- [Guardrails (AI Systems)](guardrails-ai-systems.md) — constraints encoded in the system prompt and harness layer to bound model behavior regardless of user prompt variation
 
 ---
 

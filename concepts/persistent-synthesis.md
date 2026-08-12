@@ -92,8 +92,8 @@ These gaps do not invalidate the framework — they define its frontier. The pri
 
 - [Context Engineering](context-engineering.md) — a well-maintained knowledge base is a reusable context asset; synthesis is how it stays useful over time
 - [Hallucination](hallucination.md) — synthesis disciplines (contradiction resolution, confidence decay) are responses to hallucination risk in knowledge pipelines
-- Memory (AI Systems) — the memory lifecycle model (working / episodic / semantic / procedural) informs synthesis maintenance cadences
-- Knowledge Base — the artifact that persistent synthesis produces and maintains
+- [Memory (AI Systems)](memory-ai-systems.md) — the memory lifecycle model (working / episodic / semantic / procedural) informs synthesis maintenance cadences
+- [Knowledge Base](knowledge-base.md) — the artifact that persistent synthesis produces and maintains
 - Model/Data Drift — the failure mode that persistent synthesis prevents: gradual divergence between a knowledge system and current reality
 
 ---

@@ -69,7 +69,7 @@ Three implications:
 - [Hallucination](hallucination.md) — reasoning hallucination (confabulation) is a direct consequence of model opacity: the model's self-explanations do not reflect its actual computational process
 - [Harness Paradigm](harness-paradigm.md) — since the model's interior is not observable, accountability migrates entirely to the harness layer; the harness is the auditable artifact
 - [Human-in-the-Loop (HITL)](human-in-the-loop.md) — black box opacity strengthens the case for structural human review; when you cannot inspect the process, you must inspect the output
-- Explainability (AI) — the research and practice of making model behavior more interpretable; addresses but does not resolve the black box problem for production accountability
+- [Explainability (XAI)](explainability-xai.md) — the research and practice of making model behavior more interpretable; addresses but does not resolve the black box problem for production accountability
 - Confidence vs. Accuracy — the decoupling of how certain a model sounds from how correct it is; a direct consequence of opacity
 - [Grounding](grounding.md) — anchoring outputs to verifiable external sources as a partial organizational response to model opacity
 

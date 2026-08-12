@@ -71,7 +71,7 @@ Grounding strategies (RAG, retrieval from verified sources, tool use) reduce hal
 - [Harness Paradigm](harness-paradigm.md) — grounding and verification controls are implemented at the harness layer
 - [Human-in-the-Loop (HITL)](human-in-the-loop.md) — human review as a structural check on hallucinated outputs
 - [Grounding](grounding.md) — the practice of anchoring model outputs to verified external sources
-- Retrieval-Augmented Generation (RAG) — a technical pattern that reduces hallucination by providing the model with retrieved reference material
+- [Retrieval-Augmented Generation (RAG)](rag.md) — a technical pattern that reduces hallucination by providing the model with retrieved reference material
 
 ---
 

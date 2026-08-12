@@ -76,9 +76,9 @@ Accountability is the governance concept that most often fails silently. Three t
 ## Related concepts
 
 - [Ownership (AI Systems)](ownership-ai-systems.md) — ownership is the act of naming who is accountable; the two concepts are distinct but inseparable in practice
-- Audit Trail (AI) — the evidentiary record that makes accountability exercisable; without it, accountability is nominal
-- Compliance (AI Systems) — compliance is meeting defined obligations; accountability is being answerable for whether you did
-- Human Responsibility in AI Use — the principle that accountability cannot transfer to the system itself; someone human remains answerable
+- [Audit Trail (AI)](audit-trail-ai.md) — the evidentiary record that makes accountability exercisable; without it, accountability is nominal
+- [Compliance (AI Systems)](compliance-ai-systems.md) — compliance is meeting defined obligations; accountability is being answerable for whether you did
+- [Human Responsibility in AI Use](human-responsibility-in-ai-use.md) — the principle that accountability cannot transfer to the system itself; someone human remains answerable
 - [AI Governance](ai-governance.md) — the framework within which accountability structures are defined, assigned, and enforced
 - [Observability](observability.md) — the technical precondition for accountability: the forum must be able to question, which requires evidence
 

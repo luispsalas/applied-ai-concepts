@@ -74,8 +74,8 @@ A practical tension: human review does not scale at the same rate as AI throughp
 - [Harness Paradigm](harness-paradigm.md) — HITL checkpoints are implemented and enforced at the harness layer
 - [Hallucination](hallucination.md) — hallucination risk is a primary driver of HITL requirements
 - [Context Engineering](context-engineering.md) — reviewers need well-designed context to exercise genuine judgment
-- Human Responsibility in AI Use — the normative principle that HITL operationalizes
-- Guardrails — automated controls that complement HITL; not a substitute for it
+- [Human Responsibility in AI Use](human-responsibility-in-ai-use.md) — the normative principle that HITL operationalizes
+- [Guardrails (AI Systems)](guardrails-ai-systems.md) — automated controls that complement HITL; not a substitute for it
 - [Evaluation (AI Systems)](evaluation.md) — structured evaluation pipelines as a scalable form of HITL
 
 ---
