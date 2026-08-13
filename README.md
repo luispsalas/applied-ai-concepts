@@ -4,13 +4,7 @@
 
 <h1 align="center">applied-ai-concepts</h1>
 
-<p align="center">A persistently maintained AI literacy resource covering the foundational concepts behind designing, deploying, and governing AI systems.</p>
-
----
-
-## Glossary
-
-Browse all published terms in a single alphabetical list, with one-line definitions and links to full entries: [glossary/index.md](glossary/index.md)
+<p align="center">A reference for the concepts behind designing, deploying, and governing AI systems — each explained in both plain language and precise technical terms.<br>Written for both sides of the table: the people building AI systems and the people accountable for them.</p>
 
 ---
 
@@ -39,6 +33,22 @@ This wiki treats AI and data governance as closely connected. Alongside technica
 The glossary can also be downloaded as a context package for AI and governance-related projects. It can help support governance-aware implementations, best practices, observability initiatives, and shared terminology across teams.
 
 → See the [Using this as context](#using-this-as-context) section for setup instructions.
+
+---
+
+## Start here
+
+New here? Every entry explains one concept in layers — a **plain-language version** for decision-makers, a **technical definition** for practitioners, and **governance notes** on accountability and risk — so the same page works whether you build AI systems or answer for them.
+
+**A short path through the foundations:**
+
+1. [Large Language Models (LLMs)](concepts/large-language-models.md) — what the models underneath everything actually are
+2. [Determinism vs Probabilism](concepts/determinism-vs-probabilism.md) — why they don't give the same answer twice, and why that matters
+3. [Hallucination](concepts/hallucination.md) → [Grounding](concepts/grounding.md) — how they fail, and the main way to keep them honest
+4. [Harness Paradigm](concepts/harness-paradigm.md) — why control lives around the model, not inside it
+5. [AI Governance](concepts/ai-governance.md) — who decides how a system behaves, and who is answerable when it doesn't
+
+**Or browse everything:** the [glossary](glossary/index.md) lists all published terms with one-line definitions.
 
 ---
 
