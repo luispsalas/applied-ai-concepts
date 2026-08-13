@@ -18,6 +18,7 @@ Quick-reference index of all concepts. Follow links for full entries.
 | [Context Engineering](../concepts/context-engineering.md) | Designing what an AI model receives is as important as the model itself |
 | [Data Minimization](../concepts/data-minimization.md) | Collecting and keeping only the data a system actually needs — less data, less risk, lower cost |
 | [Data Quality](../concepts/data-quality.md) | The fitness of data for its intended use — and the upstream constraint that determines the reliability of every AI system built on it |
+| [Determinism vs Probabilism](../concepts/determinism-vs-probabilism.md) | Why AI models generate statistically likely outputs rather than fixed answers — the same input can produce different results |
 | [Domain](../concepts/domain.md) | The specific field the AI is working in — what counts as a "good" or "wrong" answer depends entirely on the domain |
 | [Evaluation (AI Systems)](../concepts/evaluation.md) | The structured practice of measuring whether an AI system does what it is supposed to do — before deployment and continuously in production |
 | [Explainability (XAI)](../concepts/explainability-xai.md) | Describing, in terms a human can understand, why an AI system produced a specific output — a prerequisite for accountability |
@@ -29,12 +30,14 @@ Quick-reference index of all concepts. Follow links for full entries.
 | [Human-in-the-Loop (HITL)](../concepts/human-in-the-loop.md) | A design pattern that keeps humans as decision authorities at critical points |
 | [Human Responsibility in AI Use](../concepts/human-responsibility-in-ai-use.md) | The obligation to oversee AI decisions and be answerable for their outcomes does not transfer to the system — it remains with the humans who deploy, configure, and use it |
 | [Knowledge Base](../concepts/knowledge-base.md) | The collection of documents an AI can look up when answering — the quality of the library determines the quality of the answers |
+| [Large Language Models (LLMs)](../concepts/large-language-models.md) | Neural networks trained on vast text corpora that generate language by predicting what comes next — the foundation of most modern AI assistants, tools, and agents |
 | [Memory (AI Systems)](../concepts/memory-ai-systems.md) | How an AI remembers — what it keeps in a conversation, what carries over to future sessions, and what it reuses as learned skill |
 | [Observability](../concepts/observability.md) | The ability to understand what an AI system is doing — and reconstruct why — by examining what goes in, what comes out, and every action in between |
 | [Ownership (AI Systems)](../concepts/ownership-ai-systems.md) | Explicit assignment of accountability for an AI system's outputs, data, and governance — defining who is responsible, not just who built it |
 | [Persistent Synthesis](../concepts/persistent-synthesis.md) | Knowledge compounds when contradictions are resolved — not when information is accumulated |
 | [Prompt Engineering](../concepts/prompt-engineering.md) | Structuring inputs to consistently elicit useful, accurate, and safe model outputs |
 | [Retrieval-Augmented Generation (RAG)](../concepts/rag.md) | A technique that grounds language model outputs in retrieved, verifiable information — reducing hallucination by giving the model current, specific content to work from |
+| [System Prompt](../concepts/system-prompt.md) | The behind-the-scenes instructions that set how an AI behaves before you start talking to it — a soft control that steers, not a hard boundary |
 | [Types of AI Systems](../concepts/types-of-ai-systems.md) | A taxonomy of AI by capability and autonomy — from narrow task tools to general-purpose models — that determines governance, risk, and oversight |
 
 ---

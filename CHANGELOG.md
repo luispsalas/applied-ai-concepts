@@ -1,5 +1,17 @@
 # Changelog
 
+## v1.4 — July 2026
+
+**3 foundational "grounding" concepts published — the terms the rest of the wiki assumes.**
+
+- `large-language-models` — v1.0 (Transformer, next-token prediction, the foundation-model framing)
+- `determinism-vs-probabilism` — v1.0 (why the same prompt gives different answers; temperature; inference reproducibility)
+- `system-prompt` — v1.0 (the unseen instruction layer; a soft control and a versioned governance artifact)
+
+**Source registry:** 5 sources added (SRC-141–145) — Vaswani et al. (Transformer), Zhao et al. (LLM survey), Bommasani et al. (foundation models), Holtzman et al. (nucleus sampling), He / Thinking Machines Lab (inference nondeterminism).
+
+---
+
 ## v1.3.1 — July 2026
 
 **Harness Paradigm updated to v1.3 — harness engineering named as a discipline.**
