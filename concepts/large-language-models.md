@@ -7,7 +7,7 @@ Neural networks trained on vast text corpora that generate language by predictin
 
 ## Technical definition
 
-A large language model (LLM) is a neural network — in practice a Transformer (SRC-141) — trained on very large text corpora to model the probability of the next token given the preceding ones. Text is generated autoregressively: at each step the model produces a probability distribution over the next token and samples from it (see Determinism vs Probabilism). Training runs in two broad stages — self-supervised pre-training on broad data, then adaptation (instruction tuning, RLHF) — a pattern the survey literature organizes as pre-training, adaptation, utilization, and evaluation (SRC-142). Because one pre-trained base is adaptable to many downstream tasks, LLMs are the prototypical "foundation models": broadly capable, broadly reused, and therefore broad in their risks (SRC-143). An LLM is not a fact database and not a classical reasoning engine — it is a statistical model of language whose apparent knowledge and reasoning are emergent properties of next-token prediction at scale.
+A large language model (LLM) is a neural network — in practice a Transformer (SRC-141) — trained on very large text corpora to model the probability of the next token given the preceding ones. Text is generated autoregressively: at each step the model produces a probability distribution over the next token and samples from it (see [Determinism vs Probabilism](determinism-vs-probabilism.md)). Training runs in two broad stages — self-supervised pre-training on broad data, then adaptation (instruction tuning, RLHF) — a pattern the survey literature organizes as pre-training, adaptation, utilization, and evaluation (SRC-142). Because one pre-trained base is adaptable to many downstream tasks, LLMs are the prototypical "foundation models": broadly capable, broadly reused, and therefore broad in their risks (SRC-143). An LLM is not a fact database and not a classical reasoning engine — it is a statistical model of language whose apparent knowledge and reasoning are emergent properties of next-token prediction at scale.
 
 ---
 
@@ -20,7 +20,7 @@ A large language model is the engine behind tools like ChatGPT and Claude. It wa
 ## AI literacy notes
 
 1. **Next-token prediction is the whole engine.** Everything an LLM appears to "know" or "reason" is a byproduct of predicting likely text — which is why it can be fluent and wrong at the same time; fluency and truth are different targets.
-2. **The model is frozen; the system around it is not.** A base model's knowledge stops at its training cutoff and doesn't change per user. Memory, current facts, and tool access come from the harness around the model (see Harness Paradigm), not the model itself.
+2. **The model is frozen; the system around it is not.** A base model's knowledge stops at its training cutoff and doesn't change per user. Memory, current facts, and tool access come from the harness around the model (see [Harness Paradigm](harness-paradigm.md)), not the model itself.
 3. **Capability is emergent and uneven.** Abilities appear as models scale but are "spiky" — strong at some tasks, surprisingly weak at adjacent ones — so capability must be evaluated per use case, not assumed from general impressiveness.
 4. **"Foundation model" is the governance-relevant framing:** one model reused across many applications means one model's flaws propagate across all of them.
 

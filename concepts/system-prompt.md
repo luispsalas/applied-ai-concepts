@@ -20,7 +20,7 @@ Before you type anything, the AI has usually already been given a set of instruc
 ## AI literacy notes
 
 1. **A lot of "the AI's personality" actually lives in the system prompt.** Behavior you might attribute to the model is often the system prompt talking — two products on the same model can feel completely different because of it.
-2. **It is a control surface, and therefore a governance artifact.** Because changing it changes behavior, it should be versioned, owned, and change-reviewed like any production configuration (see Harness Paradigm), not edited casually.
+2. **It is a control surface, and therefore a governance artifact.** Because changing it changes behavior, it should be versioned, owned, and change-reviewed like any production configuration (see [Harness Paradigm](harness-paradigm.md)), not edited casually.
 3. **It is a soft control, not a boundary.** A system prompt steers; it does not enforce. Anything that must not happen (data access, irreversible actions) needs a hard control — a permission model or guardrail — because system-prompt instructions can be overridden by prompt injection.
 4. **It counts as context.** Everything in the system prompt consumes the context budget and competes with user input and retrieved content, so longer is not always better.
 

@@ -4,8 +4,6 @@
 
 <h1 align="center">applied-ai-concepts</h1>
 
-<p align="center">A reference for the concepts behind designing, deploying, and governing AI systems — each explained in both plain language and precise technical terms.<br>Written for both sides of the table: the people building AI systems and the people accountable for them.</p>
-
 ---
 
 ## What is this?

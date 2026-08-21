@@ -22,7 +22,7 @@ The governance function of the audit trail is to make accountability exercisable
 
 For agentic systems, the audit trail is especially critical because:
 - Actions are distributed across multiple steps; errors propagate and compound
-- The model's internal reasoning is not observable (see: Black Box); only the observable layer — inputs, tool calls, outputs — can be captured
+- The model's internal reasoning is not observable (see: [Black Box](black-box.md)); only the observable layer — inputs, tool calls, outputs — can be captured
 - Human review may occur at checkpoints rather than after every action; the trail must cover what happened between checkpoints
 
 Regulatory requirements for AI logging include EU AI Act Article 12, which mandates automatic recording of events throughout the operational lifecycle for high-risk AI systems, and data protection frameworks requiring evidence of lawful processing decisions.
@@ -43,7 +43,7 @@ Without it, accountability is a claim you cannot support. With it, a named owner
 
 Three things practitioners need to understand:
 
-1. **The audit trail is the accountability layer for opaque systems.** Because the model's internal process is not observable (see: Black Box), the audit trail — inputs, outputs, tool calls, injected context — is the only artifact available for governance review. Accountability that does not rest on a captured audit trail has no evidentiary basis.
+1. **The audit trail is the accountability layer for opaque systems.** Because the model's internal process is not observable (see: [Black Box](black-box.md)), the audit trail — inputs, outputs, tool calls, injected context — is the only artifact available for governance review. Accountability that does not rest on a captured audit trail has no evidentiary basis.
 2. **Agentic systems require richer trails than single-turn models.** A chatbot's audit trail may be query + response. An agent's trail must capture every tool call, every retrieved result, every intermediate output, and every human checkpoint — because any of those steps may be where a failure originated.
 3. **Designing the audit trail in is not the same as logging everything.** Useful audit trails are structured: they capture what is needed for accountability and debugging, at a granularity that is reviewable, and retained for an appropriate window. Undifferentiated log dumps are not audit trails — they are noise that obscures the signal needed for governance review.
 

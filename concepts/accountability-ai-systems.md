@@ -55,7 +55,7 @@ Accountability is the governance concept that most often fails silently. Three t
 **Watch for:**
 - Accountability assigned to a team, a committee, or "the AI team" — shared accountability is functionally absent accountability; no individual is empowered to answer or face judgment
 - Named accountability without audit trail access — the accountable party cannot explain what they cannot see; accountability requires evidence
-- Accountability framed as legal compliance rather than operational reality — a documented accountability structure that no one actually follows is policy theater (see: Compliance)
+- Accountability framed as legal compliance rather than operational reality — a documented accountability structure that no one actually follows is policy theater (see: [Compliance](compliance-ai-systems.md))
 
 **Practice:**
 - For each consequential AI system: name the accountable owner, specify the forum (who they answer to, at what cadence), and ensure they have access to the evidence needed to explain the system's behavior

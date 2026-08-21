@@ -22,7 +22,7 @@ Give a calculator "2+2" and you get "4" every time — that is deterministic. As
 1. **Same input, different output is normal — not a malfunction.** It follows directly from how the model generates. Any process that assumes an AI will repeat itself exactly has to be designed with that in mind.
 2. **Temperature is a controllable trade-off, not a correctness knob.** Lower temperature buys consistency and reduces (not eliminates) surprising outputs; higher buys diversity. Neither makes the output more true.
 3. **"Deterministic" settings are only approximately deterministic.** Temperature-0 reduces variability, but production systems can still differ run to run (SRC-145) — so reproducibility for audits, evaluation, and debugging must be engineered and verified, not assumed.
-4. **This is why evaluation must be statistical.** Passing a test once is not reliability; a probabilistic system has to be measured across many runs (see Evaluation, Failure Modes).
+4. **This is why evaluation must be statistical.** Passing a test once is not reliability; a probabilistic system has to be measured across many runs (see [Evaluation](evaluation.md), [Failure Modes](failure-modes-ai-systems.md)).
 
 ---
 
