@@ -82,6 +82,14 @@ Each concept is explained through several complementary "lenses" within a single
 
 ---
 
+## How sources are handled
+
+Every claim in this wiki is meant to trace back to a real, checkable source — not "general consensus" or an unlinked paraphrase. Each entry's Sources table cites a specific paper, standard, or article with a stable ID (`SRC-###`) tracked in a maintained registry; vendor-authored sources are flagged as such rather than presented as neutral authority; and where no adequate source exists yet, the gap is marked openly with `⚠️ Source needed` instead of papered over.
+
+→ See [CONTRIBUTING.md](CONTRIBUTING.md) for the full sourcing standard.
+
+---
+
 ## Concepts
 
 ### Foundations
