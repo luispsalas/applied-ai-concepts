@@ -9,6 +9,8 @@ A taxonomy of AI by capability and autonomy — from narrow task tools to genera
 
 Classification of AI systems along the axes that determine governance treatment: capability breadth (narrow task-specific systems vs general-purpose models), autonomy (predictive/classification systems → generative models → tool-using agents → multi-agent systems), and risk (the EU AI Act's tiers: prohibited, high-risk, limited-risk, minimal-risk, plus general-purpose AI obligations).
 
+Within this taxonomy, **general-purpose AI (GPAI)** is a distinct regulatory category: the EU AI Act's term for a model trained on broad data at scale, displaying significant generality, and capable of performing a wide range of distinct tasks (Art. 3(63)), with obligations — technical documentation, training-data summaries, and systemic-risk assessment for the most capable models — that scale with the model's capability rather than attaching to a specific use case, the way the Act's other risk tiers do.
+
 ISO/IEC 22989 provides the standardized vocabulary — an AI system is "an engineered system that generates outputs such as content, forecasts, recommendations or decisions for a given set of human-defined objectives" (3.1.4). The OECD definition — a machine-based system inferring outputs from inputs with varying levels of autonomy and adaptiveness — anchors intergovernmental usage, and the OECD Classification Framework operationalizes typing along five dimensions: People & Planet, Economic Context, Data & Input, AI Model, Task & Output. The workflow-vs-agent distinction captures the autonomy axis as used in current engineering practice.
 
 ---
@@ -24,6 +26,7 @@ Not all AI is the same kind of thing. A spam filter, a chatbot, and an agent tha
 1. **Type determines governance.** A classifier needs different controls than an autonomous agent. Autonomy is the key axis for oversight — the more a system can act without a human, the more consequential its failure modes.
 2. **The generic word "AI" flattens the distinctions that matter.** Insist on specificity before assessing risk: what kind of system, with what autonomy, in what use?
 3. **Taxonomies are unstable.** Agent definitions are still contested, and regulatory tiers classify by risk of use, not by architecture — the same architecture can land in different tiers depending on deployment.
+4. **GPAI obligations attach to the model, not the use.** Unlike the Act's other risk tiers, which classify by what a system is used for, general-purpose AI obligations (documentation, training-data summaries, systemic-risk assessment for the most capable models) attach to the model itself — because one GPAI model gets embedded in many different downstream use cases, each with its own risk profile.
 
 ---
 
@@ -84,4 +87,4 @@ Not all AI is the same kind of thing. A spam filter, a chatbot, and an agent tha
 
 ---
 
-*Last updated: v1.0 · July 2026*
+*Last updated: v1.1 · July 2026*

@@ -1,5 +1,15 @@
 # Changelog
 
+## v1.5.1 — July 2026
+
+**Types of AI Systems updated to v1.1 — General-Purpose AI (GPAI) folded in as a named regulatory category.**
+
+- `types-of-ai-systems` — v1.1: adds an explicit definition of general-purpose AI (GPAI) under the EU AI Act (Art. 3(63)) — a model trained on broad data at scale with obligations that scale with capability rather than attach to a specific use case. New AI literacy note: GPAI obligations attach to the model, not the use.
+- This closes a tracker item: a standalone "General-Purpose AI (GPAI)" term was folded into this entry rather than kept separate, since it's a category within the existing taxonomy, not a distinct concept.
+- Also folded (tracker only, not yet published): "Deceptive Alignment (Alignment Faking)" folded into the not-yet-drafted "Alignment (AI Systems)" entry's essence, for the same reason.
+
+---
+
 ## v1.5 — July 2026
 
 **3 fast-follow concepts published — a general-audience security term, a common failure people already name, and a privacy pairing for Data Minimization.**
