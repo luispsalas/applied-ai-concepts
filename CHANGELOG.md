@@ -1,5 +1,17 @@
 # Changelog
 
+## v1.5 — July 2026
+
+**3 fast-follow concepts published — a general-audience security term, a common failure people already name, and a privacy pairing for Data Minimization.**
+
+- `prompt-injection` — v1.0 (direct vs. indirect injection; the top-ranked LLM application security risk per OWASP)
+- `context-window` — v1.0 ("it forgot / hit its limit"; the "lost in the middle" recall effect)
+- `privacy-ai-systems` — v1.0 (broader than Data Minimization; AI-specific training-data memorization risk)
+
+**Source registry:** 6 sources added (SRC-146–151) — Greshake et al. and Perez & Ribeiro (indirect/direct prompt injection), OWASP Top 10 for LLM Applications, Liu et al. ("Lost in the Middle"), Carlini et al. (training-data extraction), NIST Privacy Framework 1.1. The NIST source is an unfinalized Initial Public Draft — cited only for its general direction, no section numbers or exact wording treated as settled, and flagged in the Sources table for review once a final version ships.
+
+---
+
 ## v1.4 — July 2026
 
 **3 foundational "grounding" concepts published — the terms the rest of the wiki assumes.**
