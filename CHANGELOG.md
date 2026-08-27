@@ -1,5 +1,14 @@
 # Changelog
 
+## v1.5.3 — August 2026
+
+**An open invitation to contribute, made visible.**
+
+- CONTRIBUTING.md has always documented how to propose a term, flag an error, or supply a missing source — but the README linked it only inside the sourcing section, so a reader had no visible reason to think contributions were wanted. New "Can I suggest a term or a correction?" section surfaces the four issue labels and states plainly that disagreement is in scope.
+- It also states what doesn't change: nothing merges automatically, every change is human-reviewed, and new claims need sources like any other.
+
+---
+
 ## v1.5.2 — August 2026
 
 **Authorship declared, not just disclaimed.**

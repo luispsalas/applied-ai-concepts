@@ -90,6 +90,21 @@ Every claim in this wiki is meant to trace back to a real, checkable source — 
 
 ---
 
+## Can I suggest a term or a correction?
+
+Yes — and that includes disagreeing with what's already here. If a concept is missing, an entry is wrong or out of date, or you have a real source that could close a `⚠️ Source needed` flag, open a GitHub Issue with one of these labels:
+
+- **`new-term`** — a concept that belongs here isn't covered yet
+- **`correction`** — an error, a broken link, or a citation that has gone stale
+- **`source`** — a source that supports or replaces a flagged gap
+- **`discussion`** — a question about scope, framing, or accuracy
+
+Nothing is merged automatically. Every change is reviewed by a human before it lands, and every new claim needs a source like any other.
+
+→ [CONTRIBUTING.md](CONTRIBUTING.md) explains what to include in each kind of issue.
+
+---
+
 ## Concepts
 
 ### Foundations
