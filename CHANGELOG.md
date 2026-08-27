@@ -1,5 +1,21 @@
 # Changelog
 
+## v1.7 — August 2026
+
+**5 concepts published — a security cluster, plus the two entries that had been parked as unsourceable.**
+
+- `jailbreak` — v1.0 (why safety training fails structurally: competing objectives and mismatched generalization; and why model refusal is the weakest possible boundary)
+- `red-teaming` — v1.0 (manual and automated modes; findings are specific to a deployment and expire on every change)
+- `data-leakage-ai-systems` — v1.0 (three distinct pathways — memorization, context leakage, cross-tenant — needing different controls)
+- `permission-model-ai` — v1.0 (least privilege applied to AI: the enforcement point, not the prompt, is the control)
+- `small-language-models` — v1.0 (size as a per-task decision; the governance shift comes from where the model runs, not how big it is)
+
+**Jailbreak and prompt injection are now explicitly distinguished** — one attacks the model's safety behavior, the other the application's instruction hierarchy. They co-occur and are routinely conflated, but they call for different defenses.
+
+**Source registry:** 5 sources added (SRC-157–161), including two peer-reviewed anchors — Wei et al. on how safety training fails (NeurIPS 2023) and Perez et al. on automated red teaming (EMNLP 2022) — and Saltzer & Schroeder's 1975 least-privilege paper, which grounds AI permission design in fifty-year-old security practice rather than treating it as a new discipline.
+
+---
+
 ## v1.6 — August 2026
 
 **3 concepts published — the agent action layer, and how models "think."**
