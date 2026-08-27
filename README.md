@@ -12,7 +12,7 @@ This repository is an [AI literacy](concepts/ai-literacy.md) resource that expla
 
 ### Why it matters
 
-Most people now rely on AI systems they don't fully understand, and most organizations are deploying them faster than they can govern them. The language for talking clearly about how these systems work, where they fail, and who is accountable is scattered across research papers, vendor blogs, and regulation. This wiki gathers that language in one place, in plain terms — so an engineer, a product manager, and a compliance lead can use the same words for the same ideas, and make better decisions because of it.
+Most organizations are deploying AI systems faster than they can understand and govern them. The language for talking clearly about how these systems work, where they fail, and who is accountable is scattered across research papers, vendor blogs, and regulation. This wiki gathers that language in one place, in plain terms — so an engineer, a product manager, and a compliance lead can use the same words for the same ideas, and make better decisions because of it.
 
 ### How it works
 
