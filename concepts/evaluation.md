@@ -78,7 +78,7 @@ Three things practitioners need to understand:
 - [Retrieval-Augmented Generation (RAG)](rag.md) — RAG systems require evaluation of both retrieval quality and generation quality as distinct dimensions
 - [Persistent Synthesis](persistent-synthesis.md) — evaluation findings should be synthesized into the knowledge base; accumulated evaluation results without synthesis produce noise, not signal
 - Benchmarking — the standardized test set methodology; HELM is the most comprehensive current framework
-- Red-teaming — adversarial evaluation practice; identifies failure modes that benchmarks miss
+- [Red Teaming](red-teaming.md) — adversarial evaluation practice; identifies failure modes that benchmarks miss
 
 ---
 

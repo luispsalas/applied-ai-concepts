@@ -57,8 +57,8 @@ Prompt injection is a trick where someone hides instructions inside text an AI r
 - [Guardrails (AI Systems)](guardrails-ai-systems.md) — the layered defenses (input/output filtering, action constraints) that mitigate injection risk
 - [Harness Paradigm](harness-paradigm.md) — the control layer where instruction/data separation and permission enforcement must be implemented
 - [Failure Modes (AI Systems)](failure-modes-ai-systems.md) — prompt injection is a named, high-severity failure mode for any system that reads external content
-- Data Leakage (AI Systems) — a common objective and consequence of a successful injection attack
-- Permission Model (AI) — the enforced access control that limits what an injected instruction can actually achieve
+- [Data Leakage (AI Systems)](data-leakage-ai-systems.md) — a common objective and consequence of a successful injection attack
+- [Permission Model (AI)](permission-model-ai.md) — the enforced access control that limits what an injected instruction can actually achieve
 - [Human-in-the-Loop (HITL)](human-in-the-loop.md) — the checkpoint that catches consequential actions an injection attempts to trigger
 
 ---

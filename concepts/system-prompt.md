@@ -59,7 +59,7 @@ Before you type anything, the AI has usually already been given a set of instruc
 - [Harness Paradigm](harness-paradigm.md) — the system prompt is a harness-layer control (a "guide"), owned and versioned at the system level
 - [Guardrails (AI Systems)](guardrails-ai-systems.md) — the hard controls that back up a system prompt, since the prompt only steers
 - [Prompt Injection](prompt-injection.md) — the adversarial input that can override system-prompt instructions
-- Permission Model (AI) — the enforced access control that must carry any must-not-happen rule, not the system prompt
+- [Permission Model (AI)](permission-model-ai.md) — the enforced access control that must carry any must-not-happen rule, not the system prompt
 
 ---
 
