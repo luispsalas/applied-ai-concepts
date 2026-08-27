@@ -1,5 +1,19 @@
 # Changelog
 
+## v1.6 — August 2026
+
+**3 concepts published — the agent action layer, and how models "think."**
+
+- `multi-agent-systems` — v1.0 (orchestrator–workers; why coordination adds failure surface rather than removing it; per-agent attribution as a governance requirement)
+- `tool-use` — v1.0 (the model requests, your system executes — and that boundary is where permission logic belongs)
+- `reasoning-models` — v1.0 (test-time compute as a tunable dial; the trap of reading a reasoning trace as an explanation)
+
+**Two terms folded in rather than kept separate.** *Function Calling* and *Model Context Protocol (MCP)* are covered inside Tool Use — function calling as the mechanism by which a model selects a tool and binds its parameters, MCP as the open standard for exposing tools through a common interface. Neither is a distinct concept from the capability itself.
+
+**Source registry:** 5 sources added (SRC-152–156) — an IJCAI survey of LLM-based multi-agent systems, a production multi-agent case study, a tool-selection guide, Snell et al. on compute-optimal test-time scaling, and DeepSeek-R1 (peer-reviewed in Nature) on reasoning incentivized through reinforcement learning. Nine existing sources were reused rather than re-registered.
+
+---
+
 ## v1.5.3 — August 2026
 
 **An open invitation to contribute, made visible.**
