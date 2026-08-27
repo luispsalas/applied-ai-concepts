@@ -18,7 +18,7 @@ Most people now rely on AI systems they don't fully understand, and most organiz
 
 This wiki is continuously refined over time. New source materials are integrated into existing entries instead of simply added on top. Definitions evolve, links between concepts become clearer, and conflicting perspectives are identified and documented rather than ignored.
 
-Content is AI-assisted and periodically human-reviewed. Each published entry is validated and supported by maintained source references.
+Content is AI-assisted and human-reviewed, and this wiki declares exactly how — stage by stage, from who had the idea to who verified the sources — in a published [authorship declaration](https://luispsalas.github.io/authorship-meter/declarations/applied-ai-concepts.html). Each published entry is validated and supported by maintained source references.
 
 ### Data governance perspective
 
@@ -233,3 +233,13 @@ See [CHANGELOG.md](CHANGELOG.md) for version history.
 **Phase 1 ✅ — foundation:** core concepts published and sourced, each with a governance-notes section; standalone [governance & observability notes](notes/governance-and-observability.md) doc live.
 **Phase 2 (current) — breadth & cross-linking:** 36 concepts across 8 categories, a [glossary index](glossary/index.md), and a cross-reference layer connecting related entries.
 **Phase 3 (planned):** audience-specific rendering, glossary automation, and a manifesto distilled from the wiki's principles.
+
+---
+
+## Authorship
+
+This wiki is made by a human working with AI models, and it says so in the same structured way it asks of any other AI-assisted work. The declaration below breaks the contribution down across five stages — conception, structure, production, curation, verification — rather than reducing it to a single "AI-generated" label.
+
+→ **[Authorship declaration](https://luispsalas.github.io/authorship-meter/declarations/applied-ai-concepts.html)** — assessed with the [Authorship Meter](https://github.com/luispsalas/authorship-meter) format.
+
+It covers the wiki as a whole at the release version named in the declaration, not any single entry — individual entries carry their own version line — and is re-assessed at each minor release.

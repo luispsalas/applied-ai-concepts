@@ -1,5 +1,15 @@
 # Changelog
 
+## v1.5.2 — August 2026
+
+**Authorship declared, not just disclaimed.**
+
+- The README previously said only that content is "AI-assisted and periodically human-reviewed" — an honest claim, but an unquantified one, and the kind of vague disclosure this wiki's own entries on accountability and explainability argue against. It now points to a structured [authorship declaration](https://luispsalas.github.io/authorship-meter/declarations/applied-ai-concepts.html) breaking the human/AI contribution down across five process stages.
+- New `## Authorship` section stating what the declaration covers: the wiki as a whole at a named release version, not any single entry, re-assessed at each minor release.
+- The declaration is hosted externally and linked, never embedded or copied here, so there is one source of truth that can't silently go stale.
+
+---
+
 ## v1.5.1 — July 2026
 
 **Types of AI Systems updated to v1.1 — General-Purpose AI (GPAI) folded in as a named regulatory category.**
