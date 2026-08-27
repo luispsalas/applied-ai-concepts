@@ -175,6 +175,7 @@ Every claim in this wiki is meant to trace back to a real, checkable source — 
 | [Data Minimization](concepts/data-minimization.md) | Collecting and keeping only the data a system actually needs — less data, less risk, lower cost | ✅ v1.0 |
 | [Privacy (AI Systems)](concepts/privacy-ai-systems.md) | The rights and obligations that govern how personal data is used in AI training and deployment — and the responsibility to uphold them | ✅ v1.0 |
 | [Data Leakage (AI Systems)](concepts/data-leakage-ai-systems.md) | When sensitive information from training data or context surfaces in model outputs — exposing what was never meant to be accessible | ✅ v1.0 |
+| [AI Incident (Reporting)](concepts/ai-incident-reporting.md) | A documented event where an AI system caused or nearly caused harm — now with legal deadlines to report it, not just fix it quietly | ✅ v1.0 |
 
 ### Organizational Readiness
 *The human and organizational conditions for responsible AI adoption*
@@ -254,7 +255,7 @@ See [CHANGELOG.md](CHANGELOG.md) for version history.
 ## Status
 
 **Phase 1 ✅ — foundation:** core concepts published and sourced, each with a governance-notes section; standalone [governance & observability notes](notes/governance-and-observability.md) doc live.
-**Phase 2 (current) — breadth & cross-linking:** 44 concepts across 8 categories, a [glossary index](glossary/index.md), and a cross-reference layer connecting related entries.
+**Phase 2 (current) — breadth & cross-linking:** 45 concepts across 8 categories, a [glossary index](glossary/index.md), and a cross-reference layer connecting related entries.
 **Phase 3 (planned):** audience-specific rendering, glossary automation, and a manifesto distilled from the wiki's principles.
 
 ---

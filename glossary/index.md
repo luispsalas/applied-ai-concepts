@@ -7,6 +7,7 @@ Quick-reference index of all concepts. Follow links for full entries.
 | Term | One-line essence |
 |---|---|
 | [AI Agent](../concepts/ai-agent.md) | A language model that doesn't just respond — it plans, acts, and iterates across multiple steps to complete a task |
+| [AI Incident (Reporting)](../concepts/ai-incident-reporting.md) | A documented event where an AI system caused or nearly caused harm — now with legal deadlines to report it, not just fix it quietly |
 | [AI Use Case](../concepts/ai-use-case.md) | A defined, bounded application of AI to a specific problem — the unit of design, risk assessment, and governance accountability |
 | [AI Governance](../concepts/ai-governance.md) | The frameworks, policies, and accountability structures that determine who decides how AI systems behave — and who is answerable when they don't |
 | [AI Literacy](../concepts/ai-literacy.md) | The competencies required to engage with, use, and govern AI systems responsibly — at an individual, team, and organizational level |

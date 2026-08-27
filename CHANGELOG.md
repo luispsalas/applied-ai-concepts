@@ -1,5 +1,16 @@
 # Changelog
 
+## v1.8 — August 2026
+
+**AI Incident (Reporting) published — completing the score-5 governance cluster.**
+
+- `ai-incident-reporting` — v1.0. Separates an **AI incident** (harm occurred) from an **AI hazard** (harm nearly occurred), using the OECD definitions — the near-miss being the cheaper and more abundant evidence that informal processes routinely discard. Sets out the EU AI Act Article 73 obligation with its tiered deadlines (15 days generally, 2 days for critical-infrastructure disruption, 10 where a person has died), the fact that the clock starts at *awareness* rather than diagnosis, and the aviation analogy behind public incident cataloguing.
+- The entry makes its dependency explicit: an incident you cannot reconstruct from an audit trail is an incident you cannot report.
+
+**Source registry:** 3 sources added (SRC-162–164) — EU AI Act Art. 73, the OECD's *Defining AI incidents and related terms*, and McGregor's peer-reviewed AAAI paper on the AI Incident Database. Article 73's deadlines were verified against the article text rather than taken from secondary summaries; the Commission's operational guidance was still in draft and is flagged as such.
+
+---
+
 ## v1.7 — August 2026
 
 **5 concepts published — a security cluster, plus the two entries that had been parked as unsourceable.**
