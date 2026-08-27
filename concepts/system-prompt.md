@@ -7,7 +7,7 @@ The behind-the-scenes instructions that set up how an AI behaves before you star
 
 ## Technical definition
 
-A system prompt is the standing set of instructions supplied to a language model before any user input — establishing role, task framing, tone, constraints, and available context for the session. It is distinct from the user prompt (the turn-by-turn input) and is authored using prompt-engineering technique (SRC-013); in context terms it is the baseline layer of engineered context the model always receives (SRC-069). Architecturally it is a harness component — one of the "guides" that steer behavior before the model acts (SRC-018) — not a property of the model: the same model behaves differently under different system prompts. It is also a soft control, not a hard boundary: a system prompt shapes behavior probabilistically and can be undermined by adversarial user input (see Prompt Injection), which is why it complements rather than replaces enforced controls like the permission model and guardrails.
+A system prompt is the standing set of instructions supplied to a language model before any user input — establishing role, task framing, tone, constraints, and available context for the session. It is distinct from the user prompt (the turn-by-turn input) and is authored using prompt-engineering technique (SRC-013); in context terms it is the baseline layer of engineered context the model always receives (SRC-069). Architecturally it is a harness component — one of the "guides" that steer behavior before the model acts (SRC-018) — not a property of the model: the same model behaves differently under different system prompts. It is also a soft control, not a hard boundary: a system prompt shapes behavior probabilistically and can be undermined by adversarial user input (see [Prompt Injection](prompt-injection.md)), which is why it complements rather than replaces enforced controls like the permission model and guardrails.
 
 ---
 
@@ -58,7 +58,7 @@ Before you type anything, the AI has usually already been given a set of instruc
 - [Context Engineering](context-engineering.md) — the system prompt is the baseline layer of a model's engineered context
 - [Harness Paradigm](harness-paradigm.md) — the system prompt is a harness-layer control (a "guide"), owned and versioned at the system level
 - [Guardrails (AI Systems)](guardrails-ai-systems.md) — the hard controls that back up a system prompt, since the prompt only steers
-- Prompt Injection — the adversarial input that can override system-prompt instructions
+- [Prompt Injection](prompt-injection.md) — the adversarial input that can override system-prompt instructions
 - Permission Model (AI) — the enforced access control that must carry any must-not-happen rule, not the system prompt
 
 ---

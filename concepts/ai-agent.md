@@ -71,8 +71,8 @@ Agents represent a qualitative shift in what AI systems do — from generating t
 - [Human-in-the-Loop (HITL)](human-in-the-loop.md) — agents acting across multiple steps are the primary driver for explicit, checkpoint-based HITL design; autonomy without oversight is a governance gap
 - [Context Engineering](context-engineering.md) — agent execution depends on well-constructed context at each step; context engineering at the system level determines agent reliability across the full chain
 - [Retrieval-Augmented Generation (RAG)](rag.md) — agents frequently incorporate RAG as a tool-use step, retrieving context dynamically during execution
-- Multi-Agent Systems — architectures in which multiple agents coordinate, delegate, and check each other's outputs; extends the single-agent permission and oversight challenges
-- Tool Use — the mechanism by which agents interact with external systems; requires explicit contract definition and permission scoping
+- [Multi-Agent Systems](multi-agent-systems.md) — architectures in which multiple agents coordinate, delegate, and check each other's outputs; extends the single-agent permission and oversight challenges
+- [Tool Use](tool-use.md) — the mechanism by which agents interact with external systems; requires explicit contract definition and permission scoping
 
 ---
 

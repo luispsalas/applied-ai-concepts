@@ -87,7 +87,7 @@ Four implications:
 - [Failure Modes (AI Systems)](failure-modes-ai-systems.md) — the ratchet runs on observed failures; each documented failure mode is a candidate harness constraint
 - [Memory (AI Systems)](memory-ai-systems.md) — the memory layer is a harness component, and what the system retains is a harness design decision
 - Permission Model — the access control component of the harness
-- System Prompt — the baseline context layer; the most visible harness component for end users
+- [System Prompt](system-prompt.md) — the baseline context layer; the most visible harness component for end users
 
 ---
 

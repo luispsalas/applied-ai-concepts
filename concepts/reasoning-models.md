@@ -84,7 +84,7 @@ Most models answer immediately, like someone blurting out the first thing that c
 | SRC-047 | Wei, Jason et al. (Google Research, Brain Team) — *Chain-of-Thought Prompting Elicits Reasoning in Large Language Models* (2023) · [link](https://arxiv.org/abs/2201.11903) | The antecedent technique: intermediate reasoning steps improve arithmetic, commonsense, and symbolic task performance. |
 | SRC-155 | Snell, C.; Lee, J.; Xu, K.; Kumar, A. (UC Berkeley / Google DeepMind) — *Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters* (arXiv, 2024) · [link](https://arxiv.org/abs/2408.03314) | Compute-optimal allocation of test-time compute; the finding that it can outperform a substantially larger model under a FLOPs-matched comparison. |
 | SRC-156 | Guo, D.; Yang, D.; Zhang, H.; Song, J.; Wang, P.; Zhu, Q. et al. (DeepSeek-AI) — *DeepSeek-R1 incentivizes reasoning in LLMs through reinforcement learning*, Nature 645(8081), 633–638 (2025) · [link](https://doi.org/10.1038/s41586-025-09422-z) | Peer-reviewed evidence that reasoning can be incentivized by reinforcement learning alone, with self-reflection and verification emerging from training. |
-| SRC-142 | Zhao, W.X. et al. — *A Survey of Large Language Models* (2023) | Background on inference-time behavior and the training-vs-inference distinction this entry rests on. |
+| SRC-142 | Zhao, W.X. et al. — *A Survey of Large Language Models* (2023) · [link](https://arxiv.org/abs/2303.18223) | Background on inference-time behavior and the training-vs-inference distinction this entry rests on. |
 
 ---
 

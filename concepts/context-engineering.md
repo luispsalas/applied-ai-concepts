@@ -67,8 +67,8 @@ Context engineering is also where governance enters. Decisions about what contex
 - [Harness Paradigm](harness-paradigm.md) — the harness is the primary mechanism for managing context at the system level
 - [Persistent Synthesis](persistent-synthesis.md) — a wiki is itself an exercise in context engineering: structured knowledge as reusable input
 - [Retrieval-Augmented Generation (RAG)](rag.md) — a technical pattern for dynamic context injection
-- System Prompt — the baseline layer of engineered context in any deployed model
-- Context Window — the physical constraint context engineering must work within
+- [System Prompt](system-prompt.md) — the baseline layer of engineered context in any deployed model
+- [Context Window](context-window.md) — the physical constraint context engineering must work within
 
 ---
 

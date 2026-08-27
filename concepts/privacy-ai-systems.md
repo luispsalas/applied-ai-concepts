@@ -19,7 +19,7 @@ Privacy asks: what personal information does this AI system touch, and what happ
 
 ## AI literacy notes
 
-1. **Privacy is broader than minimization.** Minimization is one privacy discipline (collect less); privacy overall also covers consent, purpose limitation, retention, and rights of access/deletion (see Data Minimization).
+1. **Privacy is broader than minimization.** Minimization is one privacy discipline (collect less); privacy overall also covers consent, purpose limitation, retention, and rights of access/deletion (see [Data Minimization](data-minimization.md)).
 2. **Models can memorize and leak training data verbatim.** This is a distinct AI-specific privacy risk — not hypothetical: demonstrated at scale, and larger models are more prone to it (SRC-150).
 3. **Privacy risk doesn't stop at training.** Prompts, retrieved documents, conversation logs, and fine-tuning data can all carry personal information that needs the same discipline as the original training corpus.
 4. **Regulation is actively catching up.** Existing privacy law (GDPR) already applies to AI systems; frameworks like NIST's are being updated specifically to address AI-era privacy risk, meaning the compliance bar is still moving.
