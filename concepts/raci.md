@@ -37,7 +37,7 @@ Four letters against every task: who does it, who answers for it, who gets asked
 3. **Automation changes the matrix and almost nobody redraws it.** When a step is automated, the R moves. If the matrix is not revisited, it now describes a workflow that no longer exists.
 4. **Accountability moves across the lifecycle.** Selection, operation, and decommissioning frequently have different accountable owners. Draw the matrix per phase, and pay attention to the handovers — that is where it gets dropped.
 5. **RACI records assignment; it does not create capability.** Naming someone accountable who has no visibility into the system, no authority to stop it, and no budget to fix it produces a name to blame rather than a functioning control.
-6. **It is a convention, not a standard.** There is no canonical RACI specification and variants differ. Agree what each letter means locally before using it, or the matrix will encode a disagreement.
+6. **It is a convention, not a standard, and the AI-era version is actively contested.** There is no canonical RACI specification, and variants differ. More to the point here: **whether an AI system belongs in the matrix at all is unsettled.** Practitioner frameworks published within months of each other take opposite positions — some place agents in R/C/I with human review gates, others hold that AI systems are objects of governance and never participants, on the grounds that admitting them signals clarity while introducing ambiguity. No standard resolves it, and the established variants (RASCI, RACI-VS, DACI) all predate the question. Agree what each letter means locally before using it, or the matrix will encode a disagreement.
 
 ---
 
@@ -68,7 +68,11 @@ Four letters against every task: who does it, who answers for it, who gets asked
 
 ## Confidence level
 
-**Medium.** The mechanics are stable, widely used, and uncontroversial, but RACI is practitioner convention with **no authoritative defining source** — this entry describes established usage rather than a specification, and variants disagree at the edges. The AI-specific claim it rests on is better grounded: that accountability requires an actor who can explain, justify, and face consequences is supported by the peer-reviewed accountability literature, and it is what rules a model out of the A cell.
+**Medium — and lower for the AI-specific application.** The mechanics are stable, widely used, and uncontroversial, but RACI is practitioner convention with **no authoritative defining source** — this entry describes established usage rather than a specification, and variants disagree at the edges.
+
+The one claim this entry rests on is well grounded: that accountability requires an actor who can explain, justify, and face consequences is supported by the peer-reviewed accountability literature, and it is what rules a model out of the A cell.
+
+**Everything past that is in active development, and the entry deliberately stops there.** How an automated executor should be *represented* in a responsibility matrix has no authoritative answer: no standard admits AI systems as role-holders, practitioner frameworks openly disagree, and there is no peer-reviewed treatment of RACI-with-agents at all. A further complication sits underneath: recent formal work argues that above a threshold of system autonomy, naming an accountable human satisfies completeness at the cost of foreseeability — producing a designated blame-holder rather than a genuinely accountable person. **Treat the R/A split as durable and any notation for machine execution as unsettled.**
 
 ---
 
@@ -109,4 +113,4 @@ Four letters against every task: who does it, who answers for it, who gets asked
 
 ---
 
-*Last updated: v1.0 · August 2026*
+*Last updated: v1.1 · August 2026*

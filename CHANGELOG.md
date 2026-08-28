@@ -1,5 +1,15 @@
 # Changelog
 
+## v1.9.1 — August 2026
+
+**RACI updated to v1.1 — the AI-era application marked as contested, not settled.**
+
+- Research for a parallel governance-asset project surfaced that whether an AI system belongs in a responsibility matrix at all is genuinely unresolved: practitioner frameworks published months apart take opposite positions, no standard admits AI systems as role-holders, and there is no peer-reviewed treatment of RACI-with-agents. The entry now says so.
+- Confidence level split in two: the R/A distinction stays well grounded, while any *notation* for machine execution is flagged as in active development. Also notes the formal argument that above a threshold of autonomy, naming an accountable human buys completeness at the cost of foreseeability — a designated blame-holder rather than an accountable person.
+- No claim was removed. The entry stops where the evidence stops rather than implying a settled practice exists.
+
+---
+
 ## v1.9 — August 2026
 
 **6 concepts published — completing the score-5 tier: the organizational and operational half of AI governance.**
