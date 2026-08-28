@@ -78,7 +78,7 @@ Most teams never actually decide who does what when a person and an AI system sh
 - [Sycophancy (LLMs)](sycophancy-llms.md) — a system that agrees by default corrodes the human check the model depends on
 - [Explainability (XAI)](explainability-xai.md) — a reviewer needs a reason, not just an output, to add anything
 - [Evaluation (AI Systems)](evaluation.md) — whether oversight changes outcomes is an empirical question
-- RACI — the coarser organizational counterpart: who is responsible, accountable, consulted, informed
+- [RACI](raci.md) — the coarser organizational counterpart: who is responsible, accountable, consulted, informed
 
 ---
 
