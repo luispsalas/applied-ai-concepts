@@ -1,5 +1,22 @@
 # Changelog
 
+## v1.9 — August 2026
+
+**6 concepts published — completing the score-5 tier: the organizational and operational half of AI governance.**
+
+- `human-ai-collaboration-model` — v1.0 (the division of labor as a design artifact; over-reliance and under-reliance as the two stable failures of leaving it unspecified)
+- `model-data-drift` — v1.0 (data drift vs concept drift, and why nothing breaking is what makes it dangerous)
+- `operational-readiness-ai` — v1.0 (whether you can *run* it, not whether it works; the model is the small part)
+- `raci` — v1.0 (the system can hold Responsible; only a person can hold Accountable)
+- `sycophancy-llms` — v1.0 (agreement carries no information — and it is rewarded by the training signal, not an incidental bug)
+- `ai-management-system-iso-42001` — v1.0 (certifiable, voluntary, and not compliance — it certifies the process, not the product)
+
+**Three distinctions these entries draw that are routinely collapsed elsewhere:** data drift is not concept drift and they need different remedies; ISO 42001 certification is not regulatory compliance and does not vouch for any model; and an AI system can be *Responsible* for a task while never being *Accountable* for it — which is where the responsibility gap opens in practice.
+
+**Source registry:** 6 sources added (SRC-165–169 plus reuse), including four peer-reviewed anchors — Gama et al. on concept drift (ACM Computing Surveys), Sculley et al. on hidden technical debt (NIPS), Sharma et al. on sycophancy (ICLR), and Amershi et al. on human-AI interaction guidelines (CHI) — and ISO/IEC 42001:2023 itself, cited for scope and clause structure only, since the standard text is paywalled and was not read in full.
+
+---
+
 ## v1.8 — August 2026
 
 **AI Incident (Reporting) published — completing the score-5 governance cluster.**

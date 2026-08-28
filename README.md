@@ -101,6 +101,7 @@ Every claim in this wiki is meant to trace back to a real, checkable source — 
 | [Small Language Models (SLMs)](concepts/small-language-models.md) | Language models small enough to run cheaply, locally, or at the edge — often the better fit for narrow, repetitive tasks | ✅ v1.0 |
 | [Determinism vs Probabilism](concepts/determinism-vs-probabilism.md) | Why AI models generate statistically likely outputs rather than fixed answers — the same input can produce different results | ✅ v1.0 |
 | [Reasoning Models / Test-Time Compute](concepts/reasoning-models.md) | Models that spend extra computation "thinking" through a problem step by step before answering — trading speed for higher accuracy on hard tasks | ✅ v1.0 |
+| [Sycophancy (LLMs)](concepts/sycophancy-llms.md) | Models agreeing with users rather than being accurate — a behavior the training signal rewards, not an incidental bug | ✅ v1.0 |
 | [Hallucination](concepts/hallucination.md) | AI models generate plausible-sounding content that is factually incorrect — confidently and without warning | ✅ v1.1 |
 | [Black Box](concepts/black-box.md) | An AI system whose internal reasoning process cannot be observed or interpreted — even when its outputs can | ✅ v1.0 |
 | [Bias (AI Systems)](concepts/bias-ai-systems.md) | Systematic errors that unfairly advantage or disadvantage certain groups — often inherited from training data, rarely visible in any single output | ✅ v1.0 |
@@ -151,6 +152,8 @@ Every claim in this wiki is meant to trace back to a real, checkable source — 
 | [Human-in-the-Loop (HITL)](concepts/human-in-the-loop.md) | A design pattern that keeps humans as decision authorities at critical points | ✅ v1.1 |
 | [Human Responsibility in AI Use](concepts/human-responsibility-in-ai-use.md) | The obligation to oversee AI decisions does not transfer to the system — it remains with the humans who deploy and use it | ✅ v1.0 |
 | [Permission Model (AI)](concepts/permission-model-ai.md) | What an AI may do on its own, what needs human approval, and what is always off-limits — enforced, not requested | ✅ v1.0 |
+| [Human–AI Collaboration Model](concepts/human-ai-collaboration-model.md) | The explicit design of how people and AI systems divide work, hand over, and resolve disagreement — documented, not assumed | ✅ v1.0 |
+| [RACI](concepts/raci.md) | Who does the work, who answers for it, who is consulted, who is informed — the system can be Responsible, only a person can be Accountable | ✅ v1.0 |
 
 ### Reliability & Quality
 *Measuring and maintaining what AI systems actually do*
@@ -160,6 +163,7 @@ Every claim in this wiki is meant to trace back to a real, checkable source — 
 | [Evaluation (AI Systems)](concepts/evaluation.md) | The structured practice of measuring whether an AI system does what it is supposed to do — before deployment and continuously in production | ✅ v1.0 |
 | [Failure Modes (AI Systems)](concepts/failure-modes-ai-systems.md) | The specific ways an AI system can go wrong — each requiring a different detection-and-response control | ✅ v1.0 |
 | [Red Teaming](concepts/red-teaming.md) | Deliberately attacking your own AI system — probing for jailbreaks, data leaks, and harmful outputs before anyone else finds them | ✅ v1.0 |
+| [Model/Data Drift](concepts/model-data-drift.md) | The quiet decay of a deployed system as the world moves away from its training data — nothing breaks, accuracy just slides | ✅ v1.0 |
 
 ### Observability & Governance
 *Making AI system behavior visible and accountable*
@@ -176,6 +180,7 @@ Every claim in this wiki is meant to trace back to a real, checkable source — 
 | [Privacy (AI Systems)](concepts/privacy-ai-systems.md) | The rights and obligations that govern how personal data is used in AI training and deployment — and the responsibility to uphold them | ✅ v1.0 |
 | [Data Leakage (AI Systems)](concepts/data-leakage-ai-systems.md) | When sensitive information from training data or context surfaces in model outputs — exposing what was never meant to be accessible | ✅ v1.0 |
 | [AI Incident (Reporting)](concepts/ai-incident-reporting.md) | A documented event where an AI system caused or nearly caused harm — now with legal deadlines to report it, not just fix it quietly | ✅ v1.0 |
+| [AI Management System (ISO 42001)](concepts/ai-management-system-iso-42001.md) | The certifiable standard for governing AI across its lifecycle — it certifies the process, not the product | ✅ v1.0 |
 
 ### Organizational Readiness
 *The human and organizational conditions for responsible AI adoption*
@@ -184,6 +189,7 @@ Every claim in this wiki is meant to trace back to a real, checkable source — 
 |---|---|---|
 | [AI Literacy](concepts/ai-literacy.md) | The competencies required to engage with, use, and govern AI systems responsibly — at an individual, team, and organizational level | ✅ v1.0 |
 | [AI Use Case](concepts/ai-use-case.md) | A defined, bounded application of AI to a specific problem — the unit of design, risk assessment, and governance accountability | ✅ v1.0 |
+| [Operational Readiness (AI)](concepts/operational-readiness-ai.md) | Whether the organization can actually run an AI system — data, infrastructure, skills, process, governance — not whether the model works | ✅ v1.0 |
 
 ---
 
@@ -255,7 +261,7 @@ See [CHANGELOG.md](CHANGELOG.md) for version history.
 ## Status
 
 **Phase 1 ✅ — foundation:** core concepts published and sourced, each with a governance-notes section; standalone [governance & observability notes](notes/governance-and-observability.md) doc live.
-**Phase 2 (current) — breadth & cross-linking:** 45 concepts across 8 categories, a [glossary index](glossary/index.md), and a cross-reference layer connecting related entries.
+**Phase 2 (current) — breadth & cross-linking:** 51 concepts across 8 categories, a [glossary index](glossary/index.md), and a cross-reference layer connecting related entries.
 **Phase 3 (planned):** audience-specific rendering, glossary automation, and a manifesto distilled from the wiki's principles.
 
 ---
