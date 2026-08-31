@@ -1,5 +1,23 @@
 # Changelog
 
+## v1.11 — August 2026
+
+**3 concepts published — rebalancing toward the literacy half of the wiki's stated purpose.**
+
+- `knowledge-cutoff` — v1.0 (why it is wrong about recent events, why the last months before the cutoff are the *weakest*, and why a bigger model is not a more current one)
+- `anthropomorphism-ai` — v1.0 (the reflex underneath most other misconceptions — automatic, measurable, and it survives knowing better)
+- `automation-bias` — v1.0 (people stop checking a system that is usually right; reliability is what causes the problem)
+
+**Why these three.** The README's first sentence calls this an AI literacy resource, and two of the five lenses in every entry — plain-language version and AI literacy notes — exist to serve a non-specialist reader. But recent batches ran governance-heavy, until only about a dozen of 54 entries served that reader directly. These three address the audience the wiki has always claimed: **people using AI in other fields who lack a working understanding of it.** No criteria changed; the selection was rebalanced.
+
+**Anthropomorphism is placed upstream of the others deliberately.** Over-trusting confident tone, reading agreement as confirmation, assuming memory, assuming the system would say if it were unsure — these all descend from attributing understanding. Correcting it addresses several misconceptions at once, which is why it earns an entry rather than a footnote.
+
+**Two findings worth surfacing from the sources:** a keyword-matching script from 1966 was enough to make users attribute comprehension and confide in it — so no one should feel naive for responding to a fluent model. And in experimental work, participants *without* an automated aid outperformed those given a highly-but-imperfectly reliable one: **reliability is precisely what erodes checking.**
+
+**Source registry:** 5 sources added (SRC-174–178) — Skitka et al. and Goddard et al. on automation bias, Nass & Moon on mindless social responses to computers, Weizenbaum's 1966 ELIZA paper, and Lazaridou et al. on temporal generalization.
+
+---
+
 ## v1.10 — August 2026
 
 **3 concepts published — the truthfulness cluster, drafted together so the distinctions are drawn once.**

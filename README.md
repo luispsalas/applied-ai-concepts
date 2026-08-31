@@ -103,6 +103,7 @@ Every claim in this wiki is meant to trace back to a real, checkable source — 
 | [Reasoning Models / Test-Time Compute](concepts/reasoning-models.md) | Models that spend extra computation "thinking" through a problem step by step before answering — trading speed for higher accuracy on hard tasks | ✅ v1.0 |
 | [Sycophancy (LLMs)](concepts/sycophancy-llms.md) | Models agreeing with users rather than being accurate — a behavior the training signal rewards, not an incidental bug | ✅ v1.0 |
 | [Confidence vs Accuracy](concepts/confidence-vs-accuracy.md) | How sure a model sounds is not evidence of how right it is — tone is generated independently of correctness | ✅ v1.0 |
+| [Knowledge Cutoff](concepts/knowledge-cutoff.md) | Every model was trained up to a fixed date and knows nothing after it — and cannot reliably tell you when a question falls outside what it knows | ✅ v1.0 |
 | [Hallucination](concepts/hallucination.md) | AI models generate plausible-sounding content that is factually incorrect — confidently and without warning | ✅ v1.1 |
 | [Black Box](concepts/black-box.md) | An AI system whose internal reasoning process cannot be observed or interpreted — even when its outputs can | ✅ v1.0 |
 | [Bias (AI Systems)](concepts/bias-ai-systems.md) | Systematic errors that unfairly advantage or disadvantage certain groups — often inherited from training data, rarely visible in any single output | ✅ v1.0 |
@@ -116,6 +117,7 @@ Every claim in this wiki is meant to trace back to a real, checkable source — 
 |---|---|---|
 | [Context Engineering](concepts/context-engineering.md) | Designing what an AI model receives is as important as the model itself | ✅ v1.1 |
 | [Prompt Engineering](concepts/prompt-engineering.md) | Structuring inputs to consistently elicit useful, accurate, and safe model outputs | ✅ v1.1 |
+| [Anthropomorphism (AI)](concepts/anthropomorphism-ai.md) | Reading fluent language as understanding, intent or care — the reflex underneath most other misconceptions about AI | ✅ v1.0 |
 
 ### System Architecture
 *The control layer that makes models governable*
@@ -154,6 +156,7 @@ Every claim in this wiki is meant to trace back to a real, checkable source — 
 | [Human Responsibility in AI Use](concepts/human-responsibility-in-ai-use.md) | The obligation to oversee AI decisions does not transfer to the system — it remains with the humans who deploy and use it | ✅ v1.0 |
 | [Permission Model (AI)](concepts/permission-model-ai.md) | What an AI may do on its own, what needs human approval, and what is always off-limits — enforced, not requested | ✅ v1.0 |
 | [Human–AI Collaboration Model](concepts/human-ai-collaboration-model.md) | The explicit design of how people and AI systems divide work, hand over, and resolve disagreement — documented, not assumed | ✅ v1.0 |
+| [Automation Bias](concepts/automation-bias.md) | People stop checking a system that is usually right — which is how a rare wrong answer becomes a bad decision | ✅ v1.0 |
 | [RACI](concepts/raci.md) | Who does the work, who answers for it, who is consulted, who is informed — the system can be Responsible, only a person can be Accountable | ✅ v1.1 |
 
 ### Reliability & Quality
@@ -264,7 +267,7 @@ See [CHANGELOG.md](CHANGELOG.md) for version history.
 ## Status
 
 **Phase 1 ✅ — foundation:** core concepts published and sourced, each with a governance-notes section; standalone [governance & observability notes](notes/governance-and-observability.md) doc live.
-**Phase 2 (current) — breadth & cross-linking:** 54 concepts across 8 categories, a [glossary index](glossary/index.md), and a cross-reference layer connecting related entries.
+**Phase 2 (current) — breadth & cross-linking:** 57 concepts across 8 categories, a [glossary index](glossary/index.md), and a cross-reference layer connecting related entries.
 **Phase 3 (planned):** audience-specific rendering, glossary automation, and a manifesto distilled from the wiki's principles.
 
 ---

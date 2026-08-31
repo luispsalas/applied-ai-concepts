@@ -13,7 +13,9 @@ Quick-reference index of all concepts. Follow links for full entries.
 | [AI Governance](../concepts/ai-governance.md) | The frameworks, policies, and accountability structures that determine who decides how AI systems behave — and who is answerable when they don't |
 | [AI Literacy](../concepts/ai-literacy.md) | The competencies required to engage with, use, and govern AI systems responsibly — at an individual, team, and organizational level |
 | [Accountability (AI Systems)](../concepts/accountability-ai-systems.md) | The principle that someone can be held answerable for an AI system's behavior and outcomes — and that answerable means they must explain, justify, and face consequences |
+| [Anthropomorphism (AI)](../concepts/anthropomorphism-ai.md) | Reading fluent language as understanding, intent or care — the reflex underneath most other misconceptions about AI |
 | [Audit Trail (AI)](../concepts/audit-trail-ai.md) | The structured record of what an AI system received, decided, and did — enabling accountability, compliance, and governance review after the fact |
+| [Automation Bias](../concepts/automation-bias.md) | People stop checking a system that is usually right — which is how a rare wrong answer becomes a bad decision |
 | [Bias (AI Systems)](../concepts/bias-ai-systems.md) | Systematic errors that unfairly advantage or disadvantage certain groups — often inherited from training data, rarely visible in any single output |
 | [Black Box](../concepts/black-box.md) | An AI system whose internal reasoning process cannot be observed or interpreted — even when its outputs can |
 | [Compliance (AI Systems)](../concepts/compliance-ai-systems.md) | Meeting defined obligations for how AI systems are built, deployed, and operated — and being answerable for whether those obligations were actually met, not just documented |
@@ -39,6 +41,7 @@ Quick-reference index of all concepts. Follow links for full entries.
 | [Human–AI Collaboration Model](../concepts/human-ai-collaboration-model.md) | The explicit design of how people and AI systems divide work, hand over, and resolve disagreement — documented, not assumed |
 | [Jailbreak](../concepts/jailbreak.md) | Bypassing a model's safety training through crafted prompts rather than a technical flaw — getting it to do what it was trained to refuse |
 | [Knowledge Base](../concepts/knowledge-base.md) | The collection of documents an AI can look up when answering — the quality of the library determines the quality of the answers |
+| [Knowledge Cutoff](../concepts/knowledge-cutoff.md) | Every model was trained up to a fixed date and knows nothing after it — and cannot reliably tell you when a question falls outside what it knows |
 | [Large Language Models (LLMs)](../concepts/large-language-models.md) | Neural networks trained on vast text corpora that generate language by predicting what comes next — the foundation of most modern AI assistants, tools, and agents |
 | [Memory (AI Systems)](../concepts/memory-ai-systems.md) | How an AI remembers — what it keeps in a conversation, what carries over to future sessions, and what it reuses as learned skill |
 | [Model/Data Drift](../concepts/model-data-drift.md) | The quiet decay of a deployed system as the world moves away from its training data — nothing breaks, accuracy just slides |
