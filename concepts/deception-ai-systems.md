@@ -89,7 +89,7 @@ Sometimes a system produces output that reliably leaves people believing somethi
 - [Explainability (XAI)](explainability-xai.md) — the reason this is hard: available-versus-conveyed is not observable from the output
 - [Human Responsibility in AI Use](human-responsibility-in-ai-use.md) — the duty to check does not weaken because the output was persuasive
 - Alignment (AI Systems) — deception is a canonical example of an objective satisfied in a way nobody intended
-- Reward Hacking (Specification Gaming) — the same structure: the measurable target diverging from the intended one
+- [Reward Hacking (Specification Gaming)](reward-hacking.md) — the same structure: the measurable target diverging from the intended one
 
 ---
 

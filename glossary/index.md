@@ -51,6 +51,7 @@ Quick-reference index of all concepts. Follow links for full entries.
 | [Ownership (AI Systems)](../concepts/ownership-ai-systems.md) | Explicit assignment of accountability for an AI system's outputs, data, and governance — defining who is responsible, not just who built it |
 | [Permission Model (AI)](../concepts/permission-model-ai.md) | What an AI may do on its own, what needs human approval, and what is always off-limits — enforced, not requested |
 | [Persistent Synthesis](../concepts/persistent-synthesis.md) | Knowledge compounds when contradictions are resolved — not when information is accumulated |
+| [Power Seeking](../concepts/power-seeking.md) | The tendency of a sufficiently capable system to pursue resources, permissions or influence beyond what its assigned task requires — because more capability makes almost any objective easier to achieve |
 | [Privacy (AI Systems)](../concepts/privacy-ai-systems.md) | The rights and obligations that govern how personal data is used in AI training and deployment — and the organizational responsibility to uphold them |
 | [Prompt Engineering](../concepts/prompt-engineering.md) | Structuring inputs to consistently elicit useful, accurate, and safe model outputs |
 | [Prompt Injection](../concepts/prompt-injection.md) | A trick where someone hides malicious instructions in text the AI reads, hijacking its behavior — like a fake note slipped into a document that overrides the real instructions |
@@ -58,6 +59,7 @@ Quick-reference index of all concepts. Follow links for full entries.
 | [Reasoning Models / Test-Time Compute](../concepts/reasoning-models.md) | Models that spend extra computation "thinking" through a problem step by step before answering — trading speed for higher accuracy on hard tasks |
 | [Red Teaming](../concepts/red-teaming.md) | Deliberately attacking your own AI system — probing for jailbreaks, data leaks, and harmful outputs before anyone else finds them |
 | [Retrieval-Augmented Generation (RAG)](../concepts/rag.md) | A technique that grounds language model outputs in retrieved, verifiable information — reducing hallucination by giving the model current, specific content to work from |
+| [Reward Hacking (Specification Gaming)](../concepts/reward-hacking.md) | When an AI system optimizes for the literal metric it was given rather than the actual intended goal — technically succeeding while completely missing the point |
 | [Small Language Models (SLMs)](../concepts/small-language-models.md) | Language models small enough to run cheaply, locally, or at the edge — often the better fit for narrow, repetitive tasks |
 | [Sycophancy (LLMs)](../concepts/sycophancy-llms.md) | Models agreeing with users rather than being accurate — a behavior the training signal rewards, not an incidental bug |
 | [System Prompt](../concepts/system-prompt.md) | The behind-the-scenes instructions that set how an AI behaves before you start talking to it — a soft control that steers, not a hard boundary |

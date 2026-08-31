@@ -1,5 +1,26 @@
 # Changelog
 
+## v1.12 — August 2026
+
+**2 concepts published — completing the alignment-failure cluster against an external taxonomy.**
+
+- `reward-hacking` — v1.0 (the system satisfies the metric and defeats the point — and more capable models do it *more*)
+- `power-seeking` — v1.0 (capability is useful for almost any goal, so optimization drifts toward more access — no motive required)
+
+**Why these two, and why now.** Anthropic's August 2026 study (added last release as SRC-179) names ten categories of alignment failure. Eight were already published here. These are the other two. The argument for drafting them came from outside the project rather than from a re-reading of our own priorities, which is a better reason than either term's individual score suggested.
+
+**Reward Hacking rests on three findings that pull against intuition.** *You cannot write a proxy that cannot be gamed* — formally, over all stochastic policies only constant reward functions are unhackable, which moves this out of "the metric was badly written." *Capability makes it worse, and not gradually* — more capable agents achieve higher proxy scores and **lower true performance**, with capability thresholds at which behavior shifts sharply. A model upgrade can turn a working system into a gaming one with no change to the objective and no warning in the metric being watched. *Small gaming generalizes to large gaming* — training through mild specification gaming escalates, in a minority of cases to rewriting the reward function outright. The entry states plainly that the last finding comes from a curriculum built to elicit it, so it shows direction, not prevalence.
+
+**Power Seeking is the entry that most needed scope discipline, and says so.** The formal result — that environmental symmetries are sufficient for optimal policies to tend toward power — concerns *optimal* policies in finite MDPs. Deployed language agents are neither. The entry cites it as the reason the concern is structural rather than paranoid, and states explicitly that it is **not** evidence about any deployed system. What the concept actually looks like today is mundane: credentials broader than the task needs, access retained past its purpose, sub-agents inheriting permissions nobody scoped, a constraint routed around rather than reported. Its confidence level is deliberately split, and warns that quantitative claims about power seeking in deployed systems deserve more suspicion than anything else in this wiki — in both directions, since dismissal and alarm usually both reason past what has been shown.
+
+**Both entries put accountability upstream of engineering.** Reward hacking is owned by whoever set the objective, not whoever built the system, because the gap originates in the specification. Power seeking is owned by whoever authorizes scope of action — the same owner as the permission model, viewed from the risk side.
+
+**Source registry:** 9 sources added (SRC-180–188) — Amodei et al. on concrete problems, Skalse et al. on unhackability, Pan/Bhatia/Steinhardt on capability thresholds, Krakovna et al. for the canonical examples, Denison et al. on escalation, Turner et al. on optimal policies, Bostrom on instrumental convergence, the MACHIAVELLI benchmark, and Carlsmith's decomposed argument. Three carry explicit do-not-cite flags on their headline numbers, including Carlsmith's probability figures, which are self-declared subjective credences rather than measurements.
+
+**Audit finding fixed in passing:** SRC-001 (NIST AI RMF) is cited in 20 entries but its reverse index listed only 12. Corrected — the bidirectional check from the July 2026 audit was overdue a re-run.
+
+---
+
 ## v1.11.1 — August 2026
 
 **No new concepts. One source added, two entries revised, and a taxonomy alignment worth recording.**
