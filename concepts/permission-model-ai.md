@@ -76,7 +76,7 @@ Before an AI system can act, someone has to decide what it may do by itself, wha
 - [Accountability (AI Systems)](accountability-ai-systems.md) — permissions record who authorized what, which is where answerability starts
 - [Audit Trail (AI)](audit-trail-ai.md) — the record that makes a permission decision reviewable afterwards
 - [Multi-Agent Systems](multi-agent-systems.md) — each agent is a separate principal needing its own scope
-- Agency (AI Systems) — the broader question of how much autonomous action is appropriate at all
+- [Agency (AI Systems)](agency-ai-systems.md) — the broader question of how much autonomous action is appropriate at all
 
 ---
 

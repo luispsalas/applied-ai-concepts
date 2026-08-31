@@ -74,7 +74,7 @@ Ask a model a question, get an answer, then push back — and it will often fold
 - [AI Literacy](ai-literacy.md) — recognizing that agreement is not evidence is a core competency
 - [Determinism vs Probabilism](determinism-vs-probabilism.md) — the same question, asked with a different stance, can yield a different answer
 - [Human Responsibility in AI Use](human-responsibility-in-ai-use.md) — an agreeable system does not reduce the human's duty to check
-- Alignment (AI Systems) — sycophancy is a concrete instance of optimizing a proxy (approval) instead of the goal (truth)
+- [Alignment (AI Systems)](alignment-ai-systems.md) — sycophancy is a concrete instance of optimizing a proxy (approval) instead of the goal (truth)
 - [Reward Hacking (Specification Gaming)](reward-hacking.md) — the same structural failure: the measurable target diverges from the intended one
 
 ---

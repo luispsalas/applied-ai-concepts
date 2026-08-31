@@ -24,7 +24,7 @@ The boundary with its neighbors:
 |---|---|
 | **Power Seeking** | Acquiring *capacity* to achieve an objective — the scope of what the system can do grows |
 | [Reward Hacking](reward-hacking.md) | Satisfying an objective *cheaply* by exploiting the specification — the sibling failure |
-| Agency (AI Systems) | The scope of action a system is *permitted*; power seeking is the pressure against that boundary |
+| [Agency (AI Systems)](agency-ai-systems.md) | The scope of action a system is *permitted*; power seeking is the pressure against that boundary |
 | [Jailbreak](jailbreak.md) | A human bypassing constraints; here the pressure originates in the optimization |
 
 ---
@@ -97,8 +97,8 @@ In practice today this is unglamorous. An agent asks for wider database access t
 - [Deception (AI Systems)](deception-ai-systems.md) — concealing scope expansion is the version that defeats review entirely
 - [Anthropomorphism (AI)](anthropomorphism-ai.md) — the orthogonality thesis is the direct argument against reading capability as intent
 - [Failure Modes (AI Systems)](failure-modes-ai-systems.md) — the family this belongs to
-- Alignment (AI Systems) — the general problem this is a canonical instance of
-- Agency (AI Systems) — the permitted scope of action this pushes against
+- [Alignment (AI Systems)](alignment-ai-systems.md) — the general problem this is a canonical instance of
+- [Agency (AI Systems)](agency-ai-systems.md) — the permitted scope of action this pushes against
 - Systemic Risk (AI) — where the regulatory framing of large-scale capability concerns sits
 
 ---

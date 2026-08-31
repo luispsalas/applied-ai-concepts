@@ -6,6 +6,7 @@ Quick-reference index of all concepts. Follow links for full entries.
 
 | Term | One-line essence |
 |---|---|
+| [Agency (AI Systems)](../concepts/agency-ai-systems.md) | The scope of autonomous action an AI system is permitted to take — and the governance question of where human authorization is required before the system acts |
 | [AI Agent](../concepts/ai-agent.md) | A language model that doesn't just respond — it plans, acts, and iterates across multiple steps to complete a task |
 | [AI Incident (Reporting)](../concepts/ai-incident-reporting.md) | A documented event where an AI system caused or nearly caused harm — now with legal deadlines to report it, not just fix it quietly |
 | [AI Management System (ISO 42001)](../concepts/ai-management-system-iso-42001.md) | The certifiable standard for governing AI across its lifecycle — it certifies the process, not the product |
@@ -13,6 +14,7 @@ Quick-reference index of all concepts. Follow links for full entries.
 | [AI Governance](../concepts/ai-governance.md) | The frameworks, policies, and accountability structures that determine who decides how AI systems behave — and who is answerable when they don't |
 | [AI Literacy](../concepts/ai-literacy.md) | The competencies required to engage with, use, and govern AI systems responsibly — at an individual, team, and organizational level |
 | [Accountability (AI Systems)](../concepts/accountability-ai-systems.md) | The principle that someone can be held answerable for an AI system's behavior and outcomes — and that answerable means they must explain, justify, and face consequences |
+| [Alignment (AI Systems)](../concepts/alignment-ai-systems.md) | The problem of making an AI system's behavior match what its deployers actually intended — and the prior question of whose intentions those should be |
 | [Anthropomorphism (AI)](../concepts/anthropomorphism-ai.md) | Reading fluent language as understanding, intent or care — the reflex underneath most other misconceptions about AI |
 | [Audit Trail (AI)](../concepts/audit-trail-ai.md) | The structured record of what an AI system received, decided, and did — enabling accountability, compliance, and governance review after the fact |
 | [Automation Bias](../concepts/automation-bias.md) | People stop checking a system that is usually right — which is how a rare wrong answer becomes a bad decision |
@@ -65,6 +67,7 @@ Quick-reference index of all concepts. Follow links for full entries.
 | [System Prompt](../concepts/system-prompt.md) | The behind-the-scenes instructions that set how an AI behaves before you start talking to it — a soft control that steers, not a hard boundary |
 | [Tool Use](../concepts/tool-use.md) | How an AI model acts on the world rather than just describing it — calling external functions, APIs, and data sources |
 | [Types of AI Systems](../concepts/types-of-ai-systems.md) | A taxonomy of AI by capability and autonomy — from narrow task tools to general-purpose models — that determines governance, risk, and oversight |
+| [Verification](../concepts/verification.md) | Checking AI output against ground truth before trusting it — run the code, check the source, test the claim — because plausible is not the same as correct |
 
 ---
 

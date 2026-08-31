@@ -73,7 +73,7 @@ A jailbreak is talking a model into something it was trained to refuse — with 
 - [Failure Modes (AI Systems)](failure-modes-ai-systems.md) — where this sits among the ways AI systems go wrong
 - [Tool Use](tool-use.md) — what determines whether a jailbreak yields bad text or a real-world action
 - [Permission Model (AI)](permission-model-ai.md) — the enforced boundary that makes model refusal non-load-bearing
-- Alignment (AI Systems) — safety training is an alignment technique; jailbreaks are evidence of its limits
+- [Alignment (AI Systems)](alignment-ai-systems.md) — safety training is an alignment technique; jailbreaks are evidence of its limits
 
 ---
 

@@ -82,7 +82,7 @@ When something answers reliably enough, for long enough, people stop checking it
 - [Anthropomorphism (AI)](anthropomorphism-ai.md) — attributed understanding makes the output easier to accept
 - [Confidence vs Accuracy](confidence-vs-accuracy.md) — confident delivery lowers the perceived need to check
 - [Sycophancy (LLMs)](sycophancy-llms.md) — a system that agrees with you is especially easy to stop questioning
-- Verification — the habit automation bias erodes
+- [Verification](verification.md) — the habit automation bias erodes
 - [Human Responsibility in AI Use](human-responsibility-in-ai-use.md) — the duty persists even when the checking stops
 - [Explainability (XAI)](explainability-xai.md) — grounds give a reviewer something to engage with rather than accept
 - [AI Literacy](ai-literacy.md) — knowing the effect exists is a prerequisite for designing around it

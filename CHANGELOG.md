@@ -1,5 +1,27 @@
 # Changelog
 
+## v1.13 — August 2026
+
+**3 concepts published — the last unpublished score-5 term, and the two entries the rest of the corpus had been pointing at.**
+
+- `verification` — v1.0 (checking *this* output — and the finding that people check least on the problems that most need it)
+- `agency-ai-systems` — v1.0 (how much a system may do without asking — granted by an organization, not possessed by the model)
+- `alignment-ai-systems` — v1.0 (matching behavior to intent — and the prior question of whose intent)
+
+**Verification's central claim is uncomfortable and well evidenced.** It is not that people should check more; it is that **verification is an economic decision and the economics run the wrong way.** People weigh the cost of checking against the cost of relying, and checking drops as task difficulty rises — so the hardest problems, where a system is least reliable, are the ones that get verified least (Vasconcelos et al., CSCW 2023). Two supporting findings sharpen it. A citation is not verification: only 51.5% of generated sentences were fully supported by their citations and only 74.5% of citations supported the statement they were attached to (Liu, Zhang & Liang, EMNLP 2023). And assistance can lower quality while raising confidence in it — participants with an AI coding assistant wrote significantly less secure code *and* were more likely to believe it was secure (Perry et al., CCS 2023). **The practice recommendation follows from the mechanism: reduce the cost of checking rather than demanding more of it.** Exhortation has no evidence behind it; making the source visible next to the claim does.
+
+**The entry also draws a line the wiki had been blurring.** Evaluation is system-level — does this system perform acceptably across many cases. Verification is instance-level — is *this* output correct. Strong benchmark scores tell you nothing about the output in front of you, and the two are not substitutes.
+
+**Agency is framed as granted rather than possessed.** Capability and permission are independent axes; the useful properties are reach, irreversibility, and whether a checkpoint is *required* rather than merely available. EU AI Act Article 14 makes this prescriptive for high-risk systems, enumerating what the assigned person must be enabled to do — decline to use, disregard, override or reverse the output, and interrupt via a stop that leaves the system in a safe state. **Article 14 also names automation bias in the statute itself**, an unusual case of a human-factors finding written into law, and it links directly to the entry published two releases ago.
+
+**Alignment leads with "aligned to what, decided by whom."** The outer/inner split organizes the technical side, but the entry's load-bearing claim is Gabriel's: the normative and technical halves are inseparable, and the goal is fair principles rather than true ones. Practically — the vendor aligned to *their* labeler pool against *their* guidelines, which is not the same as alignment with your organization's intent, and cannot be procured. Deceptive alignment is stated carefully: defined from the originating paper, demonstrated since under deliberately constructed conditions, and explicitly **not** established as occurring in ordinary deployment.
+
+**Source registry:** 8 sources added (SRC-189–196). Two carry accuracy caveats worth noting here — SRC-189's percentages describe 2023-era products and should not be quoted as current, and SRC-195's 14%/78% figures are meaningless without their conditions attached. EU AI Act Art. 14 text was verified against a third-party mirror because EUR-Lex truncates the consolidated regulation before the articles; the row says so and names EUR-Lex as canonical.
+
+**Cross-reference sweep:** nine plain-text references across seven entries converted now that their targets exist — *Verification* in `automation-bias` and `hallucination`, *Agency* in `power-seeking` and `permission-model-ai`, *Alignment* in `power-seeking`, `jailbreak`, `sycophancy-llms`, `reward-hacking` and `deception-ai-systems`. This is the largest single sweep yet, and it reflects something real: these three were the concepts other entries most often needed to gesture at without being able to link.
+
+---
+
 ## v1.12 — August 2026
 
 **2 concepts published — completing the alignment-failure cluster against an external taxonomy.**

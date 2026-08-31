@@ -32,7 +32,7 @@ Hallucination is the most consequential literacy gap in organizational AI adopti
 
 Three practical implications:
 
-1. **Verification can't be selective.** If you only verify outputs that seem suspicious, you will miss hallucinations — because they don't seem suspicious. Verification must be structural, not reactive.
+1. **[Verification](verification.md) can't be selective.** If you only verify outputs that seem suspicious, you will miss hallucinations — because they don't seem suspicious. Verification must be structural, not reactive.
 2. **Confidence is not a reliability signal.** The model's tone, fluency, and assertiveness carry no information about factual accuracy. Treat them as noise.
 3. **Explanations are not transparent.** When a model explains its reasoning, that explanation is itself a generated output — subject to the same hallucination risk as any other content. A convincing rationale is not a reliable rationale.
 
@@ -70,6 +70,7 @@ Grounding strategies (RAG, retrieval from verified sources, tool use) reduce hal
 - [Persistent Synthesis](persistent-synthesis.md) — a synthesis approach that flags contradictions rather than accumulating potentially hallucinated content
 - [Harness Paradigm](harness-paradigm.md) — grounding and verification controls are implemented at the harness layer
 - [Human-in-the-Loop (HITL)](human-in-the-loop.md) — human review as a structural check on hallucinated outputs
+- [Verification](verification.md) — the instance-level check hallucination is most often expected to fail past
 - [Grounding](grounding.md) — the practice of anchoring model outputs to verified external sources
 - [Retrieval-Augmented Generation (RAG)](rag.md) — a technical pattern that reduces hallucination by providing the model with retrieved reference material
 
