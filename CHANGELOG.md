@@ -1,5 +1,33 @@
 # Changelog
 
+## v1.14 — August 2026
+
+**7 concepts published — the largest batch so far, filling the structural gaps rather than the safety ones.**
+
+- `context-ai-systems` — v1.0 (the object; one bounded, undifferentiated stream, assembled fresh every time)
+- `local-llms` — v1.0 (the data stays in; every duty the provider was carrying becomes yours)
+- `data-provenance-lineage` — v1.0 (origin and history — now a legal duty, and currently broken)
+- `human-llm-communication-skills` — v1.0 (mostly noticing what you left unstated)
+- `orchestration-ai-systems` — v1.0 (the control layer, where failures hide in the seams)
+- `scalability-ai-systems` — v1.0 (volume scales, review capacity does not)
+- `systemic-risk-ai` — v1.0 (a precise legal threshold, and an unregulated risk everyone else carries)
+
+**Context is published as the object, with Context Engineering remaining the practice.** The entry's load-bearing claim is that context is *one undifferentiated stream* — the model cannot distinguish operator instruction from user text from tool result except by what surrounds it. That is not an oversight to be patched; it is why prompt injection works, and why "tell it to ignore untrusted content" is not a control.
+
+**Data Provenance / Lineage separates two things routinely merged.** Provenance answers *may we use this*; lineage answers *what is this and what breaks if it changes*. EU AI Act Art. 10 makes the first a documented obligation for high-risk systems, naming "the origin of data" and the original collection purpose explicitly. The state of practice is worse than most teams assume: an audit of 1,800+ widely used datasets found **license omission above 70% and error rates above 50%**. And the AI-specific asymmetry gets its own note — training *absorbs* while retrieval *references*, so the provenance check that counts is the one before training, since weights cannot be selectively unlearned.
+
+**Scalability's central claim is a governance one, and it is flagged as an inference.** Four things scale independently — load, data, complexity, and human review — and the fourth does not scale at all. Volume rises, verification capacity does not, and a reviewed assistive tool becomes an unreviewed pipeline with no decision taken and no alarm raised. **The entry proposes the review rate — what proportion of output is actually checked — as a first-class metric**, precisely so the claim can be observed rather than assumed. The Confidence level says plainly that this pattern is reasoned from the automation-bias and verification-cost literature rather than directly measured.
+
+**Systemic Risk is split down the middle, deliberately.** The regulatory sense is precise and quotable: Art. 51's classification, the 10^25 FLOP presumption, and Art. 55's four provider obligations. The analytical sense has no agreed measurement. The entry's practical weight goes on the question that is actionable today and that no regulation covers — **single-provider concentration risk, which sits with deployers and belongs to third-party and continuity risk, not to the AI team.** The compute threshold is stated as a rebuttable presumption about capability, chosen because compute is observable, and explicitly not a safety line in either direction.
+
+**Orchestration's contribution is that its failures look like success.** Peer-reviewed fault taxonomy places agentic failures in the seams — a malformed result consumed as valid, an error swallowed, a loop that neither completes nor terminates — so the run finishes and returns something plausible. That is why the trace, not the output, is the unit of review.
+
+**Source registry:** 4 sources added (SRC-197–200) — EU AI Act Arts. 10, 51 and 55, the Data Provenance Initiative audit, and *Datasheets for Datasets*. The remaining 35 citations across these seven entries reuse existing registry rows, and every reverse index was regenerated from the files rather than appended to.
+
+**Cross-reference sweep:** three plain-text references converted in `small-language-models`, `multi-agent-systems` and `power-seeking`. Two mislinks were caught during drafting and removed rather than shipped — *Training Data* and *Shadow AI* had each been pointed at a different existing entry, which is the exact failure the anchor-text check exists for.
+
+---
+
 ## v1.13 — August 2026
 
 **3 concepts published — the last unpublished score-5 term, and the two entries the rest of the corpus had been pointing at.**

@@ -99,6 +99,7 @@ Every claim in this wiki is meant to trace back to a real, checkable source — 
 |---|---|---|
 | [Large Language Models (LLMs)](concepts/large-language-models.md) | Neural networks trained on vast text corpora that generate language by predicting what comes next — the foundation of most modern AI tools and agents | ✅ v1.0 |
 | [Small Language Models (SLMs)](concepts/small-language-models.md) | Language models small enough to run cheaply, locally, or at the edge — often the better fit for narrow, repetitive tasks | ✅ v1.0 |
+| [Local LLMs](concepts/local-llms.md) | Models run on your own infrastructure — the data stays in, and every duty the provider was carrying becomes yours | ✅ v1.0 |
 | [Determinism vs Probabilism](concepts/determinism-vs-probabilism.md) | Why AI models generate statistically likely outputs rather than fixed answers — the same input can produce different results | ✅ v1.0 |
 | [Reasoning Models / Test-Time Compute](concepts/reasoning-models.md) | Models that spend extra computation "thinking" through a problem step by step before answering — trading speed for higher accuracy on hard tasks | ✅ v1.0 |
 | [Sycophancy (LLMs)](concepts/sycophancy-llms.md) | Models agreeing with users rather than being accurate — a behavior the training signal rewards, not an incidental bug | ✅ v1.0 |
@@ -118,6 +119,7 @@ Every claim in this wiki is meant to trace back to a real, checkable source — 
 | [Context Engineering](concepts/context-engineering.md) | Designing what an AI model receives is as important as the model itself | ✅ v1.1 |
 | [Prompt Engineering](concepts/prompt-engineering.md) | Structuring inputs to consistently elicit useful, accurate, and safe model outputs | ✅ v1.1 |
 | [Anthropomorphism (AI)](concepts/anthropomorphism-ai.md) | Reading fluent language as understanding, intent or care — the reflex underneath most other misconceptions about AI | ✅ v1.0 |
+| [Human–LLM Communication Skills](concepts/human-llm-communication-skills.md) | Working well with a model is mostly noticing what you left unstated — and knowing when not to trust the answer | ✅ v1.0 |
 
 ### System Architecture
 *The control layer that makes models governable*
@@ -128,6 +130,7 @@ Every claim in this wiki is meant to trace back to a real, checkable source — 
 | [AI Agent](concepts/ai-agent.md) | A language model that doesn't just respond — it plans, acts, and iterates across multiple steps | ✅ v1.2 |
 | [Tool Use](concepts/tool-use.md) | How an AI model acts on the world rather than just describing it — calling external functions, APIs, and data sources | ✅ v1.0 |
 | [Multi-Agent Systems](concepts/multi-agent-systems.md) | Multiple AI agents with different roles working together on a task — coordination and division of labor instead of one model doing everything | ✅ v1.0 |
+| [Orchestration (AI Systems)](concepts/orchestration-ai-systems.md) | The control layer deciding what runs and in what order — where the failures hide in the seams and look like success | ✅ v1.0 |
 | [Retrieval-Augmented Generation (RAG)](concepts/rag.md) | A technique that grounds model outputs in retrieved, verifiable information | ✅ v1.2 |
 | [Guardrails (AI Systems)](concepts/guardrails-ai-systems.md) | Technical and policy constraints that prevent an AI system from producing outputs or taking actions outside defined boundaries | ✅ v1.0 |
 | [System Prompt](concepts/system-prompt.md) | The behind-the-scenes instructions that set how an AI behaves before you interact with it — a soft control, not a hard boundary | ✅ v1.0 |
@@ -141,11 +144,13 @@ Every claim in this wiki is meant to trace back to a real, checkable source — 
 |---|---|---|
 | [Persistent Synthesis](concepts/persistent-synthesis.md) | Knowledge compounds when contradictions are resolved, not accumulated | ✅ v1.2 |
 | [Data Quality](concepts/data-quality.md) | The fitness of data for its intended use — and the upstream constraint on every AI system built on it | ✅ v1.0 |
+| [Data Provenance / Lineage](concepts/data-provenance-lineage.md) | Where the data came from and what has happened to it since — the record that answers "can we actually use this?" | ✅ v1.0 |
 | [Grounding](concepts/grounding.md) | Anchoring model outputs to specific, verifiable sources — reducing hallucination by giving the model something real to reason from | ✅ v1.0 |
 | [Knowledge Base](concepts/knowledge-base.md) | The collection of documents an AI can look up when answering — the quality of the library determines the quality of the answers | ✅ v1.0 |
 | [Memory (AI Systems)](concepts/memory-ai-systems.md) | How an AI remembers — what it keeps in a conversation, what carries over to future sessions, and what it reuses as learned skill | ✅ v1.0 |
 | [Domain](concepts/domain.md) | The specific field the AI is working in — what counts as a "good" or "wrong" answer depends entirely on the domain | ✅ v1.0 |
 | [Context Window](concepts/context-window.md) | The maximum amount of text an AI model can consider at once — a hard limit on what it can reason about | ✅ v1.0 |
+| [Context (AI Systems)](concepts/context-ai-systems.md) | Everything the model receives before it answers — one bounded, undifferentiated stream, assembled fresh every time | ✅ v1.0 |
 
 ### Human Oversight
 *Humans in control by design — not by assumption*
@@ -192,6 +197,7 @@ Every claim in this wiki is meant to trace back to a real, checkable source — 
 | [Data Leakage (AI Systems)](concepts/data-leakage-ai-systems.md) | When sensitive information from training data or context surfaces in model outputs — exposing what was never meant to be accessible | ✅ v1.0 |
 | [AI Incident (Reporting)](concepts/ai-incident-reporting.md) | A documented event where an AI system caused or nearly caused harm — now with legal deadlines to report it, not just fix it quietly | ✅ v1.0 |
 | [AI Management System (ISO 42001)](concepts/ai-management-system-iso-42001.md) | The certifiable standard for governing AI across its lifecycle — it certifies the process, not the product | ✅ v1.0 |
+| [Systemic Risk (AI)](concepts/systemic-risk-ai.md) | A precise legal threshold for a few model providers — and an unregulated concentration risk carried by everyone else | ✅ v1.0 |
 
 ### Organizational Readiness
 *The human and organizational conditions for responsible AI adoption*
@@ -201,6 +207,7 @@ Every claim in this wiki is meant to trace back to a real, checkable source — 
 | [AI Literacy](concepts/ai-literacy.md) | The competencies required to engage with, use, and govern AI systems responsibly — at an individual, team, and organizational level | ✅ v1.1 |
 | [AI Use Case](concepts/ai-use-case.md) | A defined, bounded application of AI to a specific problem — the unit of design, risk assessment, and governance accountability | ✅ v1.0 |
 | [Operational Readiness (AI)](concepts/operational-readiness-ai.md) | Whether the organization can actually run an AI system — data, infrastructure, skills, process, governance — not whether the model works | ✅ v1.0 |
+| [Scalability (AI Systems)](concepts/scalability-ai-systems.md) | Volume scales, review capacity does not — and nothing alarms when a governed tool becomes an unreviewed pipeline | ✅ v1.0 |
 
 ---
 
@@ -272,7 +279,7 @@ See [CHANGELOG.md](CHANGELOG.md) for version history.
 ## Status
 
 **Phase 1 ✅ — foundation:** core concepts published and sourced, each with a governance-notes section; standalone [governance & observability notes](notes/governance-and-observability.md) doc live.
-**Phase 2 (current) — breadth & cross-linking:** 62 concepts across 8 categories, a [glossary index](glossary/index.md), and a cross-reference layer connecting related entries.
+**Phase 2 (current) — breadth & cross-linking:** 69 concepts across 8 categories, a [glossary index](glossary/index.md), and a cross-reference layer connecting related entries.
 **Phase 3 (planned):** audience-specific rendering, glossary automation, and a manifesto distilled from the wiki's principles.
 
 ---

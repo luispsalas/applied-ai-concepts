@@ -69,7 +69,7 @@ Instead of asking one AI to do a whole complicated job, you split the job across
 - [Observability](observability.md) — reconstructing a multi-agent run requires tracing across hops, not inspecting one output
 - [Types of AI Systems](types-of-ai-systems.md) — the high-autonomy end of the taxonomy, where oversight requirements concentrate
 - [Tool Use](tool-use.md) — agents coordinate by acting, and they act through tools
-- Orchestration (AI Systems) — the general coordination problem of which multi-agent is one instance
+- [Orchestration (AI Systems)](orchestration-ai-systems.md) — the general coordination problem of which multi-agent is one instance
 
 ---
 

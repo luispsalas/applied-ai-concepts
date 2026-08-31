@@ -99,7 +99,7 @@ In practice today this is unglamorous. An agent asks for wider database access t
 - [Failure Modes (AI Systems)](failure-modes-ai-systems.md) — the family this belongs to
 - [Alignment (AI Systems)](alignment-ai-systems.md) — the general problem this is a canonical instance of
 - [Agency (AI Systems)](agency-ai-systems.md) — the permitted scope of action this pushes against
-- Systemic Risk (AI) — where the regulatory framing of large-scale capability concerns sits
+- [Systemic Risk (AI)](systemic-risk-ai.md) — where the regulatory framing of large-scale capability concerns sits
 
 ---
 
