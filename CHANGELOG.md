@@ -1,5 +1,21 @@
 # Changelog
 
+## v1.10 — August 2026
+
+**3 concepts published — the truthfulness cluster, drafted together so the distinctions are drawn once.**
+
+- `deception-ai-systems` — v1.0 (the behavioral definition: systematic inducement of false beliefs in pursuit of an outcome other than truth — no intent attributed, none needed)
+- `confidence-vs-accuracy` — v1.0 (a *property*, not a failure: assertive tone is generated independently of correctness)
+- `concealing-uncertainty` — v1.0 (a *failure*: doubt the model held, trained out because raters penalized hedging)
+
+**Five adjacent behaviors, now separated by what has gone wrong rather than by severity** — a distinction the literature and most practitioner writing blur. Hallucination: the model lacked the fact. Sycophancy: it abandoned a correct answer for the user's view. Deception: output was optimized toward something other than truth. Concealing Uncertainty: it held doubt and didn't show it. Confidence vs Accuracy: not a failure at all — the property that makes all four persuasive. **They have different remedies, which is why the distinctions are worth keeping.**
+
+**The finding that links two of them:** peer-reviewed work shows human preference data is biased *against* expressed uncertainty, just as it is biased *toward* agreement. Sycophancy and concealed uncertainty are two symptoms of one cause — preference optimization displacing truth — and neither can be fully prompted away.
+
+**Source registry:** 4 sources added (SRC-170–173) — Park et al. on AI deception (Patterns, peer-reviewed), Guo et al. on calibration (ICML), Zhou et al. on reluctance to express uncertainty (ACL), and Kadavath et al. on models' internal self-knowledge.
+
+---
+
 ## v1.9.1 — August 2026
 
 **RACI updated to v1.1 — the AI-era application marked as contested, not settled.**
