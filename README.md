@@ -144,7 +144,7 @@ Every claim in this wiki is meant to trace back to a real, checkable source — 
 |---|---|---|
 | [Persistent Synthesis](concepts/persistent-synthesis.md) | Knowledge compounds when contradictions are resolved, not accumulated | ✅ v1.2 |
 | [Data Quality](concepts/data-quality.md) | The fitness of data for its intended use — and the upstream constraint on every AI system built on it | ✅ v1.0 |
-| [Data Provenance / Lineage](concepts/data-provenance-lineage.md) | Where the data came from and what has happened to it since — the record that answers "can we actually use this?" | ✅ v1.0 |
+| [Data Provenance / Lineage](concepts/data-provenance-lineage.md) | Where the data came from and what has happened to it since — the record that answers "can we actually use this?" | ✅ v1.1 |
 | [Grounding](concepts/grounding.md) | Anchoring model outputs to specific, verifiable sources — reducing hallucination by giving the model something real to reason from | ✅ v1.0 |
 | [Knowledge Base](concepts/knowledge-base.md) | The collection of documents an AI can look up when answering — the quality of the library determines the quality of the answers | ✅ v1.0 |
 | [Memory (AI Systems)](concepts/memory-ai-systems.md) | How an AI remembers — what it keeps in a conversation, what carries over to future sessions, and what it reuses as learned skill | ✅ v1.0 |

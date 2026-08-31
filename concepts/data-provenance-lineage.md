@@ -14,6 +14,8 @@ Two related records, often used interchangeably and worth separating:
 
 Provenance answers *may we use this*. Lineage answers *what is this, and what breaks if it changes*. An AI system needs both, at two distinct points: the data a model or index was **built from**, and the data a running system **retrieves** at inference time.
 
+**Why one entry, given they answer different questions.** Because they are *governed* as one practice, even though they are *understood* as two. EU AI Act Art. 10 places origin and transformation history inside a single obligation, discharged by a single record and audited together — and in practice both are captured or lost at the same moment, when data enters the pipeline. Splitting them would let a reader satisfy half a duty with no signal that the other half belonged to it. **Keep the distinction when reasoning; keep the record whole.**
+
 **In the EU this is now a legal duty rather than a maturity practice.** Article 10 of the AI Act requires training, validation and testing data sets for high-risk systems to be subject to governance practices covering, in the regulation's own words, *"data collection processes and the origin of data, and in the case of personal data, the original purpose of the data collection"* — origin named explicitly — along with annotation, labelling, cleaning, updating, enrichment and aggregation, examination for biases likely to affect health, safety or fundamental rights, measures to mitigate those biases, and identification of data gaps. Art. 10(3) requires the data to be *"relevant, sufficiently representative, and to the best extent possible, free of errors and complete."*
 
 **The state of practice is worse than most teams assume.** A systematic audit of over 1,800 widely used text datasets traced their lineage and licensing and found **license omission above 70% and error rates above 50%** on major hosting platforms — the authors describe it as a crisis in misattribution and informed use. The pattern is structural: datasets get aggregated, re-packaged and re-hosted, and provenance is lost at each hop, not maliciously but because nothing carries it forward.
@@ -123,4 +125,4 @@ The uncomfortable part is that provenance degrades by default. Data gets copied,
 
 ---
 
-*Last updated: v1.0 · August 2026*
+*Last updated: v1.1 · August 2026*

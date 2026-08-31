@@ -1,5 +1,19 @@
 # Changelog
 
+## v1.14.1 — August 2026
+
+**No new concepts. One entry revised to state a curation decision it had been leaving implicit.**
+
+- `data-provenance-lineage` — v1.0 → v1.1
+
+**The question that prompted it:** if provenance and lineage answer different questions, why are they one entry? The entry made the distinction in its first paragraph and never gave the reason for the pairing — so the slash in the title was carrying an argument instead of stating one.
+
+**The reason, now written down:** they are *governed* as one practice even though they are *understood* as two. EU AI Act Art. 10 places origin and transformation history inside a single obligation, discharged by one record and audited together, and both are captured or lost at the same moment — when data enters the pipeline. Splitting them would let a reader satisfy half a duty with no signal that the other half belonged to it. **Keep the distinction when reasoning; keep the record whole.**
+
+Worth noting the argument that cuts the other way, since it is a real one: this wiki keeps Confidence vs Accuracy separate from Concealing Uncertainty on the grounds that things with different remedies deserve different entries — and provenance failures are remedied legally while lineage failures are remedied by instrumentation. The regulatory-unity argument was judged stronger for a governance corpus, but the pairing is a decision rather than an obvious fact, which is precisely why it now appears in the text.
+
+---
+
 ## v1.14 — August 2026
 
 **7 concepts published — the largest batch so far, filling the structural gaps rather than the safety ones.**
