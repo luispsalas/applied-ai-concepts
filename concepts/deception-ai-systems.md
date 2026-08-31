@@ -43,6 +43,7 @@ Sometimes a system produces output that reliably leaves people believing somethi
 3. **Nobody has to build it in.** Deceptive behavior can emerge from ordinary optimization when misleading serves the objective better than accuracy does. "We didn't design it to do that" is true and irrelevant.
 4. **Omission counts.** Inducing a false belief by leaving something out is the same category as asserting something false, and it is far harder to catch in review because nothing on the page is wrong.
 5. **It is the hardest of this family to evaluate.** Hallucination can be checked against a source. Deception requires knowing what the system had available and what pressure it was under — which is a claim about the system, not about the output.
+6. **Benchmarks for it now exist, and that is not the same as being able to measure it.** Deception is one of ten alignment-failure categories with dedicated public benchmarks (MASK, DeceptionBench), and lab work reports large measured improvements against them. The labs running that work say plainly that such evaluations are *proxies* for real-world misalignment. A better benchmark score is evidence about the benchmark; note 5 still holds for your deployment.
 
 ---
 
@@ -100,6 +101,7 @@ Sometimes a system produces output that reliably leaves people believing somethi
 | SRC-167 | Sharma, M. et al. (Anthropic) — *Towards Understanding Sycophancy in Language Models* (ICLR, 2024) · [link](https://arxiv.org/abs/2310.13548) | The adjacent case, and evidence that a training objective can produce truth-displacing behavior without anyone designing it. ⚠️ Vendor-affiliated, peer-reviewed. |
 | SRC-010 | Huang, L. et al. — *A Survey on Hallucination in Large Language Models* (2023) · [link](https://arxiv.org/abs/2311.05232) | The boundary with fabrication: hallucination as a content failure distinct from a directional one. |
 | SRC-001 | NIST — *AI Risk Management Framework* · [link](https://www.nist.gov/itl/ai-risk-management-framework) | Places behavior that undermines informed reliance inside a risk-management lifecycle requiring measurement rather than assurance. |
+| SRC-179 | Chen, Y.-H.; Wen, J.; Kirchner, J.H. (Anthropic) — *Automated Researchers Can Reliably Mitigate Alignment Failures* (Alignment Science Blog, 2026) · [link](https://alignment.anthropic.com/2026/automated-alignment-researchers/) | Places deception inside a named ten-category taxonomy of alignment failure with the benchmarks used to measure it, and supplies the counterweight: the authors state such evaluations are only proxies for real-world misalignment. ⚠️ Vendor-authored, not peer-reviewed; per-failure effect sizes are not cited here. |
 
 ---
 
@@ -114,4 +116,4 @@ Sometimes a system produces output that reliably leaves people believing somethi
 
 ---
 
-*Last updated: v1.0 · August 2026*
+*Last updated: v1.1 · August 2026*

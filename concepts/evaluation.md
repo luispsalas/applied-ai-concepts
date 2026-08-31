@@ -42,6 +42,7 @@ Three things practitioners need to understand:
 1. **Benchmark scores do not transfer directly to your use case.** A model that performs well on HELM's general capability tests may underperform on your domain-specific documents, your users' actual queries, or your organization's risk profile. Published benchmarks inform model selection; they do not replace task-specific evaluation.
 2. **Evaluation must be designed before deployment, not retrofitted after.** This requires knowing in advance what "good" looks like: what dimensions matter, who judges them, and what thresholds trigger action. Teams that skip this step cannot tell whether their system is working.
 3. **Production drift is the most common and least monitored failure mode.** Models that pass pre-deployment evaluation can degrade silently as the world changes, as user behavior evolves, or as retrieval sources go stale. Evaluation doesn't end at launch.
+4. **A benchmark is a proxy, and the people building them say so.** The gap is not only that scores don't transfer to your use case (note 1) — it is that some failures have no benchmark at all. A 2026 Anthropic study measuring ten categories of alignment failure states in its own limitations that its evaluations "are only proxies for real-world misalignment," that some failures "occur so rarely or emerge so recently that no benchmark exists to measure them," and that methods accepted as safe "may have degraded other important capabilities that we didn't measure." Read that as the ceiling on what any evaluation result can tell you: it bounds what was tested, never what is safe.
 
 ---
 
@@ -52,6 +53,7 @@ Three things practitioners need to understand:
 **Watch for:**
 - Evaluation treated as a one-time gate at deployment rather than a continuous practice. Pre-deployment evaluation measures a model at a point in time; production behavior can diverge without any visible signal unless monitoring is in place.
 - Benchmark scores used as deployment decisions without task-specific validation. General-purpose benchmarks measure capability; they do not measure fit for your use case, your data, or your users.
+- An improved benchmark score reported as reduced risk. Optimizing against a benchmark is a legitimate practice and a weak claim: it demonstrates movement on the measured proxy, not on the behavior the proxy stands for.
 - Evaluation criteria defined by the team building the system rather than by the function accountable for consequences. The team optimizing a system has an incentive to set thresholds it can clear; the accountability owner should set the criteria.
 
 **Practice:**
@@ -66,7 +68,7 @@ Three things practitioners need to understand:
 
 ## Confidence level
 
-**Established, evolving.** Pre-deployment benchmarking and human evaluation are stable practices. Production evaluation methods — LLM-as-judge, drift detection, automated pipelines — are active development areas with known limitations. Evaluation methodology is a fast-moving field; specific techniques and benchmarks should be treated as current best practice, not fixed standards.
+**Established, evolving.** Pre-deployment benchmarking and human evaluation are stable practices. Production evaluation methods — LLM-as-judge, drift detection, automated pipelines — are active development areas with known limitations. Evaluation methodology is a fast-moving field; specific techniques and benchmarks should be treated as current best practice, not fixed standards. The limits of benchmarking itself are also better documented than they were: the strongest recent statements of what evaluation cannot establish come from the labs producing the evaluations, in their own limitations sections.
 
 ---
 
@@ -89,6 +91,7 @@ Three things practitioners need to understand:
 | SRC-065 | Liang, P. et al. — *Holistic Evaluation of Language Models (HELM)* (TMLR, 2023) · [link](https://arxiv.org/abs/2211.09110) | Comprehensive benchmarking framework: 30+ metrics across accuracy, calibration, robustness, fairness, efficiency; multi-scenario evaluation methodology; distinction between capability and deployment readiness. Peer-reviewed. |
 | SRC-132 | DoorDash Engineering — *How DoorDash Efficiently Scales LLM-based Order Item Recommendations* (2024) · [link](https://doordash.engineering/2024/09/17/how-doordash-efficiently-scales-llm-based-order-item-recommendations/) | Production evaluation at scale: LLM-as-judge implementation, offline/online evaluation split, sampling pipeline, performance drift monitoring in a live recommendation system. Industry case study. |
 | SRC-131 | LangChain — *LangSmith Documentation: Evaluation* (2024) · [link](https://docs.smith.langchain.com/evaluation) | Practical evaluation tooling patterns: automated evaluators, human review workflows, production monitoring integration, evaluation dataset management. Vendor-produced — use as background reference for tooling patterns; not cited as methodological authority. |
+| SRC-179 | Chen, Y.-H.; Wen, J.; Kirchner, J.H. (Anthropic) — *Automated Researchers Can Reliably Mitigate Alignment Failures* (Alignment Science Blog, 2026) · [link](https://alignment.anthropic.com/2026/automated-alignment-researchers/) | A first-party statement of what benchmark evaluation cannot establish — proxies for real-world behavior, no benchmark at all for rare or recent failures, unmeasured capability degradation in accepted methods. Also a working case of AI-supervised AI: a monitoring agent reviewed every proposed method and caught cheating in 2.4% of ~1,600 transcripts. ⚠️ Vendor-authored, not peer-reviewed; cited for its limitations and method, not its effect sizes. |
 
 ---
 
@@ -103,4 +106,4 @@ Three things practitioners need to understand:
 
 ---
 
-*Last updated: v1.0 · May 2026*
+*Last updated: v1.1 · August 2026*

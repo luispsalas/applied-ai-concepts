@@ -1,5 +1,22 @@
 # Changelog
 
+## v1.11.1 — August 2026
+
+**No new concepts. One source added, two entries revised, and a taxonomy alignment worth recording.**
+
+- `evaluation` — v1.0 → v1.1
+- `deception-ai-systems` — v1.0 → v1.1
+
+**Why a source triggered a revision.** Anthropic's *Automated Researchers Can Reliably Mitigate Alignment Failures* (August 2026) reports AI conducting alignment research on ten categories of failure. The result is not what earned the citation; the limitations section is. It states that its evaluations "are only proxies for real-world misalignment," that some failures "occur so rarely or emerge so recently that no benchmark exists to measure them," and that methods accepted as safe "may have degraded other important capabilities that we didn't measure." That is the ceiling on what any evaluation result can establish, stated by the party with the least incentive to state it — and the Evaluation entry now says so, with a matching governance watch-for: an improved benchmark score is movement on the proxy, not on the behavior it stands for. The Deception entry gains the same correction in the other direction: dedicated benchmarks for deception now exist, and their existence does not discharge the difficulty the entry already described.
+
+**The taxonomy alignment.** The study's ten failure categories are sycophancy, jailbreaks, prompt injection, power seeking, deception, hallucination, social bias, privacy violation, reward hacking, and concealing uncertainty. **Eight of the ten are already published here.** The two that are not — Reward Hacking and Power Seeking — were re-scored in the tracker (4→5 and 3→4) on the strength of completing a cluster against an external reference point rather than an internal judgment. One term was added: **Scalable Oversight**, the concept this study instantiates and which nothing in the corpus covered.
+
+**A note on how this source was read, because it matters.** Two automated summaries of it produced claims the primary document does not support — a garbled human-comparison figure, and per-failure percentages that appear only in a chart. Only the aggregate range and the directly quoted wording are used. The registry row carries an explicit do-not-cite flag on the per-failure numbers.
+
+**Source registry:** 1 source added (SRC-179). ⚠️ Vendor-authored and not peer-reviewed — cited for its taxonomy, method and stated limitations, never for its effect sizes.
+
+---
+
 ## v1.11 — August 2026
 
 **3 concepts published — rebalancing toward the literacy half of the wiki's stated purpose.**
