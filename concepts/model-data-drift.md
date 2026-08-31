@@ -78,7 +78,7 @@ A model learns from the world as it was when it was trained. The world keeps mov
 - [Knowledge Base](knowledge-base.md) — corpus freshness is a drift control
 - [Operational Readiness (AI)](operational-readiness-ai.md) — the monitoring capability must exist before deployment, not after the first incident
 - Continuous Feedback & Improvement — the loop that turns drift detection into correction
-- Confidence vs Accuracy — a drifting model stays confident while becoming less accurate
+- [Confidence vs Accuracy](confidence-vs-accuracy.md) — a drifting model stays confident while becoming less accurate
 
 ---
 

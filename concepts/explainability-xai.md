@@ -63,7 +63,7 @@ The catch with modern AI: a system can produce a confident, fluent explanation t
 
 - [Black Box](black-box.md) — explainability is the set of techniques for working around opacity; the black box is the problem it responds to
 - [Hallucination](hallucination.md) — a model's self-explanation can itself be hallucinated, which is why faithfulness must be tested
-- Confidence vs Accuracy — a fluent, confident explanation is not evidence that it is the true reason
+- [Confidence vs Accuracy](confidence-vs-accuracy.md) — a fluent, confident explanation is not evidence that it is the true reason
 - [Human Responsibility in AI Use](human-responsibility-in-ai-use.md) — explanation enables accountability but does not transfer it away from humans
 - [Accountability (AI Systems)](accountability-ai-systems.md) — being answerable for a decision depends on being able to give a faithful account of it
 - [AI Governance](ai-governance.md) — explainability is moving from research aspiration to regulatory requirement
