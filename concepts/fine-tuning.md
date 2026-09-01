@@ -21,8 +21,8 @@ Continued training of an existing model on a smaller, targeted dataset, to speci
 
 **And it silently degrades safety.** This is the finding that should change practice:
 
-- **Adversarially:** safety alignment was stripped from a production model with **10 malicious training examples, for under $0.20.**
-- **Benignly, which matters far more:** *"simply fine-tuning with benign and commonly used datasets can also inadvertently degrade the safety alignment of LLMs."*
+- **Adversarially:** the authors *"jailbreak GPT-3.5 Turbo's safety guardrails by fine-tuning it on only 10 such examples at a cost of less than $0.20 via OpenAI's APIs, making the model responsive to nearly any harmful instructions."* Note what that last clause means: the damage **generalized far beyond the 10 examples shown.**
+- **Benignly, which matters far more for most organizations:** *"simply fine-tuning with benign and commonly used datasets can also inadvertently degrade the safety alignment of LLMs, **though to a lesser extent**."* The qualifier is the authors' own and should travel with the claim.
 
 **A team fine-tuning on ordinary internal data has changed the model's refusal behavior and has no reason to suspect it.** Nothing announces it. The provider's safety evaluation describes a model you are no longer running.
 

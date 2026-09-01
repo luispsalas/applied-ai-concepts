@@ -385,6 +385,7 @@
         "model-data-drift",
         "power-seeking",
         "reward-hacking",
+        "rlhf",
         "sycophancy-llms"
       ],
       "sources": [
@@ -613,7 +614,8 @@
         "evaluation",
         "human-responsibility-in-ai-use",
         "model-card-system-card",
-        "ownership-ai-systems"
+        "ownership-ai-systems",
+        "value-realization-ai"
       ],
       "sources": [
         "SRC-036",
@@ -731,6 +733,7 @@
         "grounding",
         "hallucination",
         "human-in-the-loop",
+        "rlhf",
         "sycophancy-llms"
       ],
       "sources": [
@@ -1461,6 +1464,7 @@
         "model-data-drift",
         "power-seeking",
         "red-teaming",
+        "scalable-oversight",
         "small-language-models",
         "systemic-risk-ai"
       ],
@@ -1795,6 +1799,7 @@
         "ai-literacy",
         "anthropomorphism-ai",
         "automation-bias",
+        "cognitive-offloading-deskilling",
         "concealing-uncertainty",
         "confidence-vs-accuracy",
         "context-ai-systems",
@@ -1912,6 +1917,7 @@
         "knowledge-base",
         "large-language-models",
         "model-data-drift",
+        "model-version-update",
         "rag"
       ],
       "sources": [
@@ -1943,6 +1949,7 @@
       "related": [
         "ai-agent",
         "determinism-vs-probabilism",
+        "fine-tuning",
         "grounding",
         "hallucination",
         "harness-paradigm",
@@ -2313,7 +2320,8 @@
         "evaluation",
         "model-data-drift",
         "observability",
-        "ownership-ai-systems"
+        "ownership-ai-systems",
+        "value-realization-ai"
       ],
       "sources": [
         "SRC-001",
@@ -2690,7 +2698,8 @@
         "explainability-xai",
         "hallucination",
         "large-language-models",
-        "prompt-engineering"
+        "prompt-engineering",
+        "rlhf"
       ],
       "sources": [
         "SRC-047",
@@ -2803,6 +2812,7 @@
         "failure-modes-ai-systems",
         "guardrails-ai-systems",
         "human-in-the-loop",
+        "model-version-update",
         "observability",
         "permission-model-ai",
         "power-seeking",
@@ -3016,6 +3026,7 @@
       "updated": "August 2026",
       "related": [
         "evaluation",
+        "fine-tuning",
         "guardrails-ai-systems",
         "large-language-models",
         "local-llms",
@@ -3177,6 +3188,7 @@
         "frontier-ai",
         "local-llms",
         "model-data-drift",
+        "model-version-update",
         "operational-readiness-ai",
         "power-seeking",
         "red-teaming",
@@ -3375,6 +3387,7 @@
       "related": [
         "audit-trail-ai",
         "automation-bias",
+        "cognitive-offloading-deskilling",
         "concealing-uncertainty",
         "confidence-vs-accuracy",
         "evaluation",
