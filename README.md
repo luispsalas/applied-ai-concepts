@@ -26,6 +26,14 @@ This wiki treats AI and data governance as closely connected. Alongside technica
 
 → [Governance & Observability Notes](notes/governance-and-observability.md)
 
+### Looking a concept up
+
+Browse the [glossary index](glossary/index.md) — 81 terms alphabetically with their one-line essences — or use **`search.html`**, a self-contained search page covering every term plus 405 hand-written synonyms.
+
+It is built for concept lookup rather than text search, so describing the problem works: *"who is responsible when the AI does it"*, *"it used to work"*, *"why do I get different answers"*. Each result shows which synonym matched.
+
+> GitHub displays `.html` as source rather than running it. **Clone the repo and open `search.html` in a browser** — it needs no server and makes no network requests. The same data is published as [`search-index.json`](search-index.json) for tooling.
+
 ### Using the glossary in projects
 
 The glossary can also be downloaded as a context package for AI and governance-related projects. It can help support governance-aware implementations, best practices, observability initiatives, and shared terminology across teams.
@@ -291,7 +299,7 @@ See [CHANGELOG.md](CHANGELOG.md) for version history.
 ## Status
 
 **Phase 1 ✅ — foundation:** core concepts published and sourced, each with a governance-notes section; standalone [governance & observability notes](notes/governance-and-observability.md) doc live.
-**Phase 2 (current) — breadth & cross-linking:** 81 concepts across 8 categories, a [glossary index](glossary/index.md), and a cross-reference layer connecting related entries.
+**Phase 2 (current) — breadth & cross-linking:** 81 concepts across 8 categories, a [glossary index](glossary/index.md), client-side [search](search.html), and a cross-reference layer connecting related entries.
 **Phase 3 (planned):** audience-specific rendering, glossary automation, and a manifesto distilled from the wiki's principles.
 
 ---

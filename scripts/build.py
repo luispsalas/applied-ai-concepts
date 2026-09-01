@@ -25,6 +25,8 @@ from entry_meta import load, ROOT  # noqa: E402
 README = ROOT / "README.md"
 GLOSSARY = ROOT / "glossary" / "index.md"
 INDEX = ROOT / "search-index.json"
+SEARCH = ROOT / "search.html"
+TEMPLATE = ROOT / "scripts" / "search-template.html"
 CONCEPTS = ROOT / "concepts"
 
 ROW_RE = re.compile(r"^\|\s*\[([^\]]+)\]\(concepts/([a-z0-9-]+)\.md\)\s*\|\s*(.*?)\s*\|\s*✅\s*(v[\d.]+)\s*\|\s*$")
@@ -247,6 +249,19 @@ def write(entries):
         INDEX.write_text(new_idx)
         changed.append(f"search-index.json ({len(entries)} entries, "
                        f"{sum(len(e['aliases']) for e in entries)} aliases)")
+
+    # search.html — index INLINED, not fetched. GitHub Pages is not enabled on this
+    # repo, so the page has to work when opened from a clone over file://, where
+    # fetch() is blocked by CORS. Inlining costs a duplicate copy of generated data,
+    # which cannot drift because this function writes both.
+    if TEMPLATE.exists():
+        page = (TEMPLATE.read_text()
+                .replace("__INDEX__", json.dumps(payload, ensure_ascii=False, separators=(",", ":")))
+                .replace("__COUNT__", str(len(entries)))
+                .replace("__ALIASES__", str(sum(len(e["aliases"]) for e in entries))))
+        if not SEARCH.exists() or SEARCH.read_text() != page:
+            SEARCH.write_text(page)
+            changed.append(f"search.html ({len(page)//1024} KB, self-contained)")
     return changed
 
 

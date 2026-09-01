@@ -1,0 +1,213 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Search — Applied AI Concepts</title>
+<style>
+  :root{
+    --bg:#fff; --fg:#1f2328; --muted:#59636e; --line:#d1d9e0; --accent:#0969da;
+    --hit:#fff8c5; --chip:#f6f8fa; --card:#fff;
+    --mono:ui-monospace,SFMono-Regular,Menlo,monospace;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{--bg:#0d1117;--fg:#e6edf3;--muted:#9198a1;--line:#3d444d;--accent:#4493f8;
+          --hit:#5a4a00;--chip:#151b23;--card:#0d1117}
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.55 var(--sans);
+       -webkit-font-smoothing:antialiased}
+  .wrap{max-width:860px;margin:0 auto;padding:2rem 1.25rem 5rem}
+  h1{font-size:1.5rem;margin:0 0 .25rem}
+  .sub{color:var(--muted);margin:0 0 1.5rem;font-size:.92rem}
+  .sub a{color:var(--accent)}
+  #q{width:100%;padding:.8rem 1rem;font:1.05rem var(--sans);color:var(--fg);
+     background:var(--card);border:1px solid var(--line);border-radius:8px}
+  #q:focus{outline:2px solid var(--accent);outline-offset:-1px;border-color:transparent}
+  .meta{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+        margin:.7rem 0 .3rem;color:var(--muted);font-size:.82rem}
+  .cats{display:flex;flex-wrap:wrap;gap:.35rem;margin:.5rem 0 0}
+  .cat{font:.78rem var(--sans);padding:.2rem .55rem;border:1px solid var(--line);
+       border-radius:99px;background:var(--chip);color:var(--muted);cursor:pointer}
+  .cat[aria-pressed=true]{background:var(--accent);border-color:var(--accent);color:#fff}
+  ol{list-style:none;padding:0;margin:1rem 0 0}
+  li{padding:.85rem 0;border-top:1px solid var(--line)}
+  li[aria-selected=true]{background:var(--chip);box-shadow:-.75rem 0 0 var(--chip),.75rem 0 0 var(--chip)}
+  .t{font-weight:600;font-size:1.02rem}
+  .t a{color:var(--fg);text-decoration:none}
+  .t a:hover{color:var(--accent);text-decoration:underline}
+  .badge{font:.72rem var(--mono);color:var(--muted);margin-left:.5rem;white-space:nowrap}
+  .e{color:var(--fg);margin:.25rem 0 0;font-size:.93rem}
+  .why{color:var(--muted);font-size:.82rem;margin:.3rem 0 0}
+  .why b{background:var(--hit);color:var(--fg);font-weight:600;padding:0 .15em;border-radius:2px}
+  mark{background:var(--hit);color:var(--fg);padding:0 .1em;border-radius:2px}
+  .empty{color:var(--muted);padding:2rem 0;text-align:center}
+  kbd{font:.75rem var(--mono);border:1px solid var(--line);border-bottom-width:2px;
+      border-radius:4px;padding:.05rem .3rem;background:var(--chip)}
+</style>
+
+<div class="wrap">
+  <h1>Applied AI Concepts</h1>
+  <p class="sub">__COUNT__ concepts · __ALIASES__ search aliases · concept lookup, not full-text search — try
+     <em>“who is responsible when the AI does it”</em>.
+     <a href="search-index.json">index as JSON</a> · <a href="README.md">README</a></p>
+
+  <input id="q" type="search" autofocus autocomplete="off" spellcheck="false"
+         placeholder="Search terms, synonyms, or describe the problem…"
+         aria-label="Search concepts">
+  <div class="meta"><span id="n"></span><span><kbd>↑</kbd><kbd>↓</kbd> move · <kbd>↵</kbd> open</span></div>
+  <div class="cats" id="cats"></div>
+  <ol id="out"></ol>
+</div>
+
+<script>
+const DATA = __INDEX__;
+
+const STOP = new Set(("a an the and or of for to in on is are was were be been it its this that "+
+  "with when what who whom whose how why do does did can could should would i you my our we "+
+  "if not no as at by from about into over than then there here").split(" "));
+const norm = s => s.toLowerCase().replace(/[^a-z0-9\s]/g," ").replace(/\s+/g," ").trim();
+
+// Light suffix stripping so "responsible" reaches "responsibility", "agents" reaches
+// "agent", "governing" reaches "governance". Not a real stemmer — a real one would
+// need a dependency, and this corpus is 81 short strings.
+const SUF = ["ibility","ability","ization","isation","ivity","ility","ement","ments","ances",
+             "ences","ation","ition","ingly","ness","ible","able","ance","ence","ment","tion",
+             "sion","ing","ies","ers","est","ed","es","ly","s"];
+function stem(w){
+  if (w.length < 5) return w;
+  for (const suf of SUF){
+    if (w.length - suf.length >= 4 && w.endsWith(suf)) return w.slice(0, w.length - suf.length);
+  }
+  return w;
+}
+const toks = s => norm(s).split(" ").filter(t => t && !STOP.has(t)).map(stem);
+
+// Precompute the searchable surface once.
+for (const e of DATA.entries){
+  e._term = norm(e.term);
+  e._alias = (e.aliases||[]).map(norm);
+  e._words = {
+    term: new Set(toks(e.term)),
+    alias: new Set(e._alias.flatMap(a => toks(a))),
+    text: new Set([...toks(e.short||""), ...toks(e.essence||"")]),
+    cat: new Set(toks(e.category||""))
+  };
+  e._all = new Set([...e._words.term, ...e._words.alias, ...e._words.text]);
+}
+
+// Inverse document frequency. Without this, "ai" — a token in nearly every term in
+// an AI glossary — outweighs the one word in the query that actually discriminates.
+// A token matching most of the corpus tells you nothing, and should score like it.
+const N = DATA.entries.length, DF = new Map();
+for (const e of DATA.entries) for (const w of e._all) DF.set(w, (DF.get(w)||0) + 1);
+const idf = t => Math.max(0.04, Math.log(N / (1 + (DF.get(t)||0))) / Math.log(N));
+
+const anyHit = (set, t) => set.has(t) || (t.length >= 4 && [...set].some(w => w.startsWith(t)));
+
+function score(e, raw, tk){
+  let s = 0, why = null;
+  if (raw){
+    if (e._term === raw) return {s: 1000, why: null};
+    const ai = e._alias.indexOf(raw);
+    if (ai > -1) return {s: 900, why: e.aliases[ai]};
+    if (e._term.startsWith(raw)) s += 500;
+    else if (e._term.includes(raw)) s += 300;
+    const ap = e._alias.findIndex(a => a.includes(raw));
+    if (ap > -1){ s += 250; why = e.aliases[ap]; }
+  }
+  let hits = 0, wsum = 0, whit = 0;
+  for (const t of tk){
+    const w = idf(t); wsum += w;
+    let h = 0;
+    if (anyHit(e._words.term, t))  h = 60;
+    else if (anyHit(e._words.alias, t)) h = 40;
+    else if (anyHit(e._words.text, t))  h = 12;
+    else if (anyHit(e._words.cat, t))   h = 5;
+    if (h){ s += h * w; hits++; whit += w; }
+  }
+  if (!s) return null;
+  // Reward covering the INFORMATIVE part of the query, weighted by idf rather than
+  // by token count — otherwise matching "ai" twice beats matching "responsible" once.
+  if (tk.length > 1 && wsum) s += (whit / wsum) * 60;
+  if (!why && tk.length){
+    const m = (e.aliases||[]).find(a => tk.some(t => anyHit(new Set(toks(a)), t)));
+    if (m) why = m;
+  }
+  return {s, why};
+}
+
+const esc = s => s.replace(/[&<>]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+function hl(text, tk){
+  let out = esc(text);
+  for (const t of [...new Set(tk)].sort((a,b)=>b.length-a.length)){
+    if (t.length < 3) continue;
+    out = out.replace(new RegExp(`(?<![\\\\w>])(${t.replace(/[.*+?^${}()|[\\]\\\\]/g,"\\\\$&")}\\\\w*)`,"gi"),
+                      "<mark>$1</mark>");
+  }
+  return out;
+}
+
+let filter = null, sel = -1, rows = [];
+const $q = document.getElementById("q"), $out = document.getElementById("out"),
+      $n = document.getElementById("n"), $cats = document.getElementById("cats");
+
+const CATS = [...new Set(DATA.entries.map(e => e.category))].sort();
+$cats.innerHTML = CATS.map(c =>
+  `<button class="cat" aria-pressed="false" data-c="${esc(c)}">${esc(c)}</button>`).join("");
+$cats.onclick = ev => {
+  const b = ev.target.closest(".cat"); if (!b) return;
+  filter = filter === b.dataset.c ? null : b.dataset.c;
+  [...$cats.children].forEach(x => x.setAttribute("aria-pressed", x.dataset.c === filter));
+  run();
+};
+
+function run(){
+  const raw = norm($q.value), tk = toks($q.value);
+  let list;
+  if (!raw){
+    list = DATA.entries.map(e => ({e, s: 0, why: null}))
+                       .sort((a,b) => a.e.term.localeCompare(b.e.term));
+  } else {
+    list = [];
+    for (const e of DATA.entries){
+      const r = score(e, raw, tk);
+      if (r) list.push({e, ...r});
+    }
+    list.sort((a,b) => b.s - a.s || a.e.term.localeCompare(b.e.term));
+  }
+  if (filter) list = list.filter(x => x.e.category === filter);
+  rows = list; sel = -1;
+
+  $n.textContent = !raw
+    ? `${list.length} concept${list.length===1?"":"s"}${filter?` in ${filter}`:""} · A–Z`
+    : `${list.length} match${list.length===1?"":"es"}`;
+
+  $out.innerHTML = list.length ? list.map(({e, why}, i) => `
+    <li aria-selected="false" data-i="${i}">
+      <div class="t"><a href="${esc(e.path)}">${raw?hl(e.term,tk):esc(e.term)}</a>
+        <span class="badge">${esc(e.category)} · ${esc(e.version)}</span></div>
+      <p class="e">${raw?hl(e.essence,tk):esc(e.essence)}</p>
+      ${why ? `<p class="why">matched on <b>${esc(why)}</b></p>` : ""}
+    </li>`).join("")
+    : `<div class="empty">Nothing for “${esc($q.value)}”.<br>
+       This wiki has ${DATA.count} concepts — try a broader word, or browse a category above.</div>`;
+}
+
+function move(d){
+  if (!rows.length) return;
+  const li = [...$out.children].filter(x => x.tagName === "LI");
+  if (sel > -1) li[sel]?.setAttribute("aria-selected","false");
+  sel = (sel + d + li.length) % li.length;
+  li[sel].setAttribute("aria-selected","true");
+  li[sel].scrollIntoView({block:"nearest"});
+}
+$q.addEventListener("input", run);
+document.addEventListener("keydown", ev => {
+  if (ev.key === "ArrowDown"){ ev.preventDefault(); move(1); }
+  else if (ev.key === "ArrowUp"){ ev.preventDefault(); move(-1); }
+  else if (ev.key === "Enter" && sel > -1){ $out.querySelectorAll("li")[sel].querySelector("a").click(); }
+  else if (ev.key === "/" && document.activeElement !== $q){ ev.preventDefault(); $q.focus(); }
+  else if (ev.key === "Escape"){ $q.value = ""; run(); $q.focus(); }
+});
+run();
+</script>
