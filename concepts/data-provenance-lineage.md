@@ -20,7 +20,7 @@ Provenance answers *may we use this*. Lineage answers *what is this, and what br
 
 **The state of practice is worse than most teams assume.** A systematic audit of over 1,800 widely used text datasets traced their lineage and licensing and found **license omission above 70% and error rates above 50%** on major hosting platforms — the authors describe it as a crisis in misattribution and informed use. The pattern is structural: datasets get aggregated, re-packaged and re-hosted, and provenance is lost at each hop, not maliciously but because nothing carries it forward.
 
-**The documentation pattern predates the regulation.** *Datasheets for Datasets* proposed, by analogy with electronic components shipping operating characteristics and test results, that every dataset carry a record of its motivation, composition, collection process and recommended uses. Model Cards and the AI Act's Art. 10 duties both descend from it.
+**The documentation pattern predates the regulation.** *Datasheets for Datasets* proposed, by analogy with electronic components shipping operating characteristics and test results, that every dataset carry a record of its motivation, composition, collection process and recommended uses. [Model cards](model-card-system-card.md) and the AI Act's Art. 10 duties both descend from it.
 
 **Where AI changes the classic data-governance problem.** Lineage is a mature discipline in data management, but AI adds three things it was not designed for: **training data is absorbed rather than referenced**, so a model cannot be un-trained on a record that must be deleted; **retrieval at inference time** means the data reaching a user is selected per request, so scope is decided at runtime; and **model weights are themselves a derived data asset** whose lineage almost nobody tracks.
 
@@ -85,7 +85,7 @@ The uncomfortable part is that provenance degrades by default. Data gets copied,
 ## Related concepts
 
 - [Data Quality](data-quality.md) — provenance is what lets you judge fitness rather than assume it
-- Training Data — what the model absorbed, and where its gaps and biases originate
+- [Training Data](training-data.md) — what the model absorbed, and where its gaps and biases originate
 - [Knowledge Base](knowledge-base.md) — the retrieval corpus is a governed dataset, with the same intake duties
 - [Retrieval-Augmented Generation (RAG)](rag.md) — where runtime data scope is decided per request
 - [Privacy (AI Systems)](privacy-ai-systems.md) — original collection purpose and lawful basis are provenance fields
@@ -96,7 +96,7 @@ The uncomfortable part is that provenance degrades by default. Data gets copied,
 - [Ownership (AI Systems)](ownership-ai-systems.md) — the assembled corpus needs an owner, and usually lacks one
 - [Data Leakage (AI Systems)](data-leakage-ai-systems.md) — why absorbed data is not recoverable, and can resurface
 - [Model/Data Drift](model-data-drift.md) — lineage is what tells you which systems a changed source affects
-- Model Card / System Card — the model-level counterpart of a datasheet
+- [Model Card / System Card](model-card-system-card.md) — the model-level counterpart of a datasheet
 - Copyright & AI Output — the licensing question provenance exists to answer
 
 ---

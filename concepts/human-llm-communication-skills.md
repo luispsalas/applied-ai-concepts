@@ -90,7 +90,7 @@ The third is judgment about when to rely on it at all — which tasks it does we
 - [Anthropomorphism (AI)](anthropomorphism-ai.md) — the reflex this competency has to work against
 - [Human Responsibility in AI Use](human-responsibility-in-ai-use.md) — the obligation this skill is exercised in service of
 - [Human–AI Collaboration Model](human-ai-collaboration-model.md) — the organizational counterpart of an individual competency
-- Curse of Knowledge (AI Context) — the specific mechanism behind the hardest part of this skill
+- [Curse of Knowledge (AI Context)](curse-of-knowledge-ai-context.md) — the specific mechanism behind the hardest part of this skill
 - Cognitive Offloading & Deskilling — what happens to the competency under sustained reliance
 
 ---

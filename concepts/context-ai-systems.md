@@ -89,7 +89,7 @@ The practical consequence is that most disappointing AI output is a context prob
 - [Data Minimization](data-minimization.md) — what should *not* reach the window
 - [Audit Trail (AI)](audit-trail-ai.md) — an output is only explainable if its input was recorded
 - [Hallucination](hallucination.md) — what tends to fill an unstated gap
-- Curse of Knowledge (AI Context) — why the missing piece is usually the thing that seemed too obvious to say
+- [Curse of Knowledge (AI Context)](curse-of-knowledge-ai-context.md) — why the missing piece is usually the thing that seemed too obvious to say
 
 ---
 

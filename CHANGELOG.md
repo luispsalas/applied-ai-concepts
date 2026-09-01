@@ -1,5 +1,34 @@
 # Changelog
 
+## v1.15 — August 2026
+
+**6 concepts published — the score-4 terms that other entries were already reaching for.**
+
+- `training-data` — v1.0 (where knowledge, gaps and bias all originate, and which you usually cannot inspect)
+- `shadow-ai` — v1.0 (unsanctioned use — a signal about the sanctioned option, not only a violation)
+- `model-card-system-card` — v1.0 (a scoping document whose job is to say where *not* to use a model)
+- `frontier-ai` — v1.0 (a category defined by capability being discovered after training, not by size)
+- `curse-of-knowledge-ai-context` — v1.0 (you cannot un-know what you know, so you under-specify)
+- `content-provenance-watermarking` — v1.0 (a positive detection means something; a negative one does not)
+
+**Selected by inbound demand rather than by score.** All eighteen remaining candidates sat at 4, so the tiebreak was which terms other entries were already mentioning as unlinkable plain text: Training Data had four such references, the next four had two each. That converted nine dangling references into links — a better signal than re-reading the scores, and worth reusing as a tiebreak when a score tier is flat.
+
+**Training Data's most useful content is an audit, not a definition.** A direct examination of C4 found machine-generated text inside the corpus, **evaluation examples from other benchmarks** (contamination that inflates measured performance), unexpected sources including patents and military websites, and — the finding that should change how people think about data cleaning — **blocklist filtering that disproportionately removed text from and about minority individuals.** The cleaning step is itself a source of bias, not a correction for it. The entry is explicit that the auditable corpora are dated precisely because they are the ones that could be audited, and that frontier composition is undisclosed.
+
+**Content Provenance leads with the asymmetry that matters:** a positive detection is informative, a negative one is not. "No watermark found" is not evidence of human authorship, and treating it as such is the most consequential misreading available. The entry also carries the specification's own limit verbatim — C2PA "SHOULD NOT provide value judgments about whether a given set of provenance data is 'good' or 'bad'" — because **validation establishes integrity and attribution, never that the content is true.** And it separates the machine obligation under Art. 50(2) from voluntary human disclosure, which does not discharge it.
+
+**Model Card is framed as a scoping instrument** — its stated purpose is to *minimize* use in contexts a model is not suited to — with disaggregated evaluation as the test of whether a card is doing governance work or is a brochure with sections. It also draws the model-card/system-card line: you deploy systems, not models, and no provider will document your guardrails, retrieval and prompts for you.
+
+**Shadow AI argues it is a supply problem.** Three properties separate it from classic Shadow IT — data leaves on every interaction rather than at setup, there is no procurement event to catch, and adoption has zero marginal cost — but the response inherits the Shadow IT finding that suppression without a usable alternative displaces behavior downward, onto personal accounts where visibility is worse. **Deliberately cites no prevalence figures**, since the circulating numbers are vendor-commissioned and measure salience.
+
+**Frontier AI is written about properties, not membership**, because the membership dates. And it keeps "frontier" separate from the EU's "systemic risk" designation, which are used interchangeably and are not the same set.
+
+**Source registry:** 7 sources added (SRC-201–207). Two citations were verified through Crossref rather than written from recall, and three carry publisher-block flags so future link audits do not re-raise them as dead.
+
+**Cross-reference sweep:** nine plain-text references converted across six entries. **Four mislinks were caught before shipping** — *Datasheets*, *Model Version & Update*, *Scalable Oversight* and *AI Disclosure* had each been pointed at a different existing entry. All four resolve correctly and would pass a broken-link check, which is why the anchor-text comparison now runs as its own step.
+
+---
+
 ## v1.14.1 — August 2026
 
 **No new concepts. One entry revised to state a curation decision it had been leaving implicit.**

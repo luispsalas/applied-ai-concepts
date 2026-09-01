@@ -58,7 +58,7 @@ Everything else you were quietly getting from the provider now belongs to you: k
 - Local deployment adopted as a general risk reduction without naming the obligation it satisfies; the transfer question is usually the only one it answers
 - No owner for model updates, so the deployment quietly freezes and ages
 - Provider-side safety behavior assumed to be a property of the model — an open-weight model typically has less refusal and filtering than the hosted product it resembles
-- Individual or team-level local deployments outside central visibility, which is Shadow AI with the data-transfer argument as cover
+- Individual or team-level local deployments outside central visibility, which is [Shadow AI](shadow-ai.md) with the data-transfer argument as cover
 - Model licensing and training-data provenance not checked before commercial use
 - Capacity and cost modeled as if elastic when the hardware is fixed
 
@@ -95,7 +95,7 @@ Everything else you were quietly getting from the provider now belongs to you: k
 - [Ownership (AI Systems)](ownership-ai-systems.md) — the transferred responsibilities need a name attached
 - [Scalability (AI Systems)](scalability-ai-systems.md) — fixed capacity is a different scaling problem
 - [Data Leakage (AI Systems)](data-leakage-ai-systems.md) — the model can still surface training data; local execution does not prevent it
-- Shadow AI — local deployment can make unsanctioned use easier to justify and harder to see
+- [Shadow AI](shadow-ai.md) — local deployment can make unsanctioned use easier to justify and harder to see
 
 ---
 

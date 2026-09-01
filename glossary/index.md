@@ -23,9 +23,11 @@ Quick-reference index of all concepts. Follow links for full entries.
 | [Compliance (AI Systems)](../concepts/compliance-ai-systems.md) | Meeting defined obligations for how AI systems are built, deployed, and operated — and being answerable for whether those obligations were actually met, not just documented |
 | [Concealing Uncertainty](../concepts/concealing-uncertainty.md) | A tentative answer presented as settled — the caveats a calibrated response would surface, trained away |
 | [Confidence vs Accuracy](../concepts/confidence-vs-accuracy.md) | How sure a model sounds is not evidence of how right it is — tone is generated independently of correctness |
+| [Content Provenance & Watermarking (C2PA)](../concepts/content-provenance-watermarking.md) | Technical standards for labeling and tracing AI-generated content — cryptographic metadata (C2PA/Content Credentials) and invisible watermarks that let people verify what's real and what a model made |
 | [Context (AI Systems)](../concepts/context-ai-systems.md) | Everything an AI model receives before generating a response — the information, instructions, and framing that shape every output it produces |
 | [Context Engineering](../concepts/context-engineering.md) | Designing what an AI model receives is as important as the model itself |
 | [Context Window](../concepts/context-window.md) | The maximum amount of text an AI model can consider at once — a hard limit on what it can reason about when generating any given response |
+| [Curse of Knowledge (AI Context)](../concepts/curse-of-knowledge-ai-context.md) | The tendency to assume shared context that doesn't exist — the primary cause of poor AI outputs when users fail to surface what they already know |
 | [Data Leakage (AI Systems)](../concepts/data-leakage-ai-systems.md) | When sensitive information from training data or context surfaces in model outputs — exposing what was never meant to be accessible |
 | [Data Minimization](../concepts/data-minimization.md) | Collecting and keeping only the data a system actually needs — less data, less risk, lower cost |
 | [Data Provenance / Lineage](../concepts/data-provenance-lineage.md) | The traceable history of where data came from, how it was transformed, and what it has touched — the record that makes it possible to answer "can we actually use this?" |
@@ -36,6 +38,7 @@ Quick-reference index of all concepts. Follow links for full entries.
 | [Evaluation (AI Systems)](../concepts/evaluation.md) | The structured practice of measuring whether an AI system does what it is supposed to do — before deployment and continuously in production |
 | [Explainability (XAI)](../concepts/explainability-xai.md) | Describing, in terms a human can understand, why an AI system produced a specific output — a prerequisite for accountability |
 | [Failure Modes (AI Systems)](../concepts/failure-modes-ai-systems.md) | The specific ways an AI system can go wrong — each requiring a different detection-and-response control |
+| [Frontier AI (Frontier Model)](../concepts/frontier-ai.md) | The most capable AI models at any given time — the class regulators and AI labs single out for extra safety scrutiny because their capabilities are advancing faster than tools to evaluate them |
 | [Grounding](../concepts/grounding.md) | Anchoring model outputs to specific, verifiable sources — reducing hallucination by giving the model something real to reason from |
 | [Guardrails (AI Systems)](../concepts/guardrails-ai-systems.md) | Technical and policy constraints that prevent an AI system from producing outputs or taking actions outside defined boundaries |
 | [Hallucination](../concepts/hallucination.md) | AI models generate plausible-sounding content that is factually incorrect — confidently and without warning |
@@ -50,6 +53,7 @@ Quick-reference index of all concepts. Follow links for full entries.
 | [Large Language Models (LLMs)](../concepts/large-language-models.md) | Neural networks trained on vast text corpora that generate language by predicting what comes next — the foundation of most modern AI assistants, tools, and agents |
 | [Local LLMs](../concepts/local-llms.md) | Language models run entirely on your own infrastructure — no data leaves your environment, but full governance responsibility falls on the organization with no vendor backstop |
 | [Memory (AI Systems)](../concepts/memory-ai-systems.md) | How an AI remembers — what it keeps in a conversation, what carries over to future sessions, and what it reuses as learned skill |
+| [Model Card / System Card](../concepts/model-card-system-card.md) | A standardized document describing a model's capabilities, limitations, training data, and evaluation results — the transparency artifact regulators and users increasingly expect |
 | [Model/Data Drift](../concepts/model-data-drift.md) | The quiet decay of a deployed system as the world moves away from its training data — nothing breaks, accuracy just slides |
 | [Multi-Agent Systems](../concepts/multi-agent-systems.md) | Multiple AI agents with different roles working together on a task — coordination and division of labor instead of one model doing everything |
 | [Observability](../concepts/observability.md) | The ability to understand what an AI system is doing — and reconstruct why — by examining what goes in, what comes out, and every action in between |
@@ -68,11 +72,13 @@ Quick-reference index of all concepts. Follow links for full entries.
 | [Retrieval-Augmented Generation (RAG)](../concepts/rag.md) | A technique that grounds language model outputs in retrieved, verifiable information — reducing hallucination by giving the model current, specific content to work from |
 | [Reward Hacking (Specification Gaming)](../concepts/reward-hacking.md) | When an AI system optimizes for the literal metric it was given rather than the actual intended goal — technically succeeding while completely missing the point |
 | [Scalability (AI Systems)](../concepts/scalability-ai-systems.md) | An AI system's ability to handle increasing load, data volume, and complexity — and the governance trade-offs that come with scaling |
+| [Shadow AI](../concepts/shadow-ai.md) | AI tools used inside an organization without official sanction, review, or governance — invisible to the very processes meant to manage AI risk |
 | [Small Language Models (SLMs)](../concepts/small-language-models.md) | Language models small enough to run cheaply, locally, or at the edge — often the better fit for narrow, repetitive tasks |
 | [Sycophancy (LLMs)](../concepts/sycophancy-llms.md) | Models agreeing with users rather than being accurate — a behavior the training signal rewards, not an incidental bug |
 | [System Prompt](../concepts/system-prompt.md) | The behind-the-scenes instructions that set how an AI behaves before you start talking to it — a soft control that steers, not a hard boundary |
 | [Systemic Risk (AI)](../concepts/systemic-risk-ai.md) | Risk from an AI model's capabilities being significant enough to cause large-scale harm across society — a defined regulatory threshold that triggers extra obligations |
 | [Tool Use](../concepts/tool-use.md) | How an AI model acts on the world rather than just describing it — calling external functions, APIs, and data sources |
+| [Training Data](../concepts/training-data.md) | The text, images and code a model learned from — where its knowledge, its gaps, its blind spots and its biases all come from, and which is rarely fully disclosed |
 | [Types of AI Systems](../concepts/types-of-ai-systems.md) | A taxonomy of AI by capability and autonomy — from narrow task tools to general-purpose models — that determines governance, risk, and oversight |
 | [Verification](../concepts/verification.md) | Checking AI output against ground truth before trusting it — run the code, check the source, test the claim — because plausible is not the same as correct |
 

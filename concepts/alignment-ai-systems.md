@@ -95,7 +95,7 @@ Two things make it harder than ordinary miscommunication. First, you often canno
 - [Human Responsibility in AI Use](human-responsibility-in-ai-use.md) — an aligned system does not relocate answerability
 - [Failure Modes (AI Systems)](failure-modes-ai-systems.md) — the family the alignment failures belong to
 - RLHF (Reinforcement Learning from Human Feedback) — the training stage where current alignment is applied
-- Frontier AI (Frontier Model) — where alignment research and safety scrutiny concentrate
+- [Frontier AI (Frontier Model)](frontier-ai.md) — where alignment research and safety scrutiny concentrate
 
 ---
 
