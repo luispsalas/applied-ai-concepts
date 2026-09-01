@@ -1,3 +1,8 @@
+<!--meta
+category: System Architecture
+short: A technique that grounds model outputs in retrieved, verifiable information
+aliases: [RAG, retrieval augmented generation, search plus generation, document Q&A, grounded retrieval]
+-->
 # Retrieval-Augmented Generation (RAG)
 
 ## One-line essence

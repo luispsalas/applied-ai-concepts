@@ -1,3 +1,8 @@
+<!--meta
+category: System Architecture
+short: A language model that doesn't just respond — it plans, acts, and iterates across multiple steps
+aliases: [agentic AI, autonomous agent, AI that takes actions, agent, multi-step AI]
+-->
 # AI Agent
 
 ## One-line essence

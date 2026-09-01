@@ -1,3 +1,8 @@
+<!--meta
+category: Foundations
+short: Language models small enough to run cheaply, locally, or at the edge — often the better fit for narrow, repetitive tasks
+aliases: [SLM, compact model, on-device model, efficient model, smaller model]
+-->
 # Small Language Models (SLMs)
 
 ## One-line essence

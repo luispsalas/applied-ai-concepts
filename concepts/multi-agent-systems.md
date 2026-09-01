@@ -1,3 +1,8 @@
+<!--meta
+category: System Architecture
+short: Multiple AI agents with different roles working together on a task — coordination and division of labor instead of one model doing everything
+aliases: [agent swarm, multiple agents, agent teams, agent collaboration, A2A]
+-->
 # Multi-Agent Systems
 
 ## One-line essence
@@ -66,7 +71,7 @@ Instead of asking one AI to do a whole complicated job, you split the job across
 - [Harness Paradigm](harness-paradigm.md) — coordination logic lives in the harness, not the models; multi-agent systems are a harness design problem
 - [Failure Modes (AI Systems)](failure-modes-ai-systems.md) — orchestration, state, and hand-off failures are specific to this architecture
 - [Audit Trail (AI)](audit-trail-ai.md) — attribution across agents is only possible if it was logged per agent
-- [Observability](observability.md) — reconstructing a multi-agent run requires tracing across hops, not inspecting one output
+- [Observability (AI Systems)](observability.md) — reconstructing a multi-agent run requires tracing across hops, not inspecting one output
 - [Types of AI Systems](types-of-ai-systems.md) — the high-autonomy end of the taxonomy, where oversight requirements concentrate
 - [Tool Use](tool-use.md) — agents coordinate by acting, and they act through tools
 - [Orchestration (AI Systems)](orchestration-ai-systems.md) — the general coordination problem of which multi-agent is one instance

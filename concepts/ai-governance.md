@@ -1,3 +1,8 @@
+<!--meta
+category: Observability & Governance
+short: The frameworks, policies, and accountability structures that determine who decides how AI systems behave — and who is answerable when they don't
+aliases: [responsible AI, AI oversight, AI policy, governing AI, AI risk management]
+-->
 # AI Governance
 
 ## One-line essence
@@ -70,7 +75,7 @@ Three things practitioners need to understand:
 
 ## Related concepts
 
-- [Observability](observability.md) — the technical precondition for governance: you cannot govern what you cannot see
+- [Observability (AI Systems)](observability.md) — the technical precondition for governance: you cannot govern what you cannot see
 - [Human-in-the-Loop (HITL)](human-in-the-loop.md) — the design pattern that preserves human decision authority; a core governance requirement for high-stakes systems
 - [Harness Paradigm](harness-paradigm.md) — governance controls are implemented at the harness layer; the harness is where policy becomes enforceable
 - [AI Agent](ai-agent.md) — agentic systems introduce governance requirements (action authorization, multi-step accountability) that advisory AI does not

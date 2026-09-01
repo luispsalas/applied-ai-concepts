@@ -1,3 +1,8 @@
+<!--meta
+category: Knowledge & Memory
+short: The collection of documents an AI can look up when answering — the quality of the library determines the quality of the answers
+aliases: [document corpus, reference library, the documents it searches, KB, knowledge repository]
+-->
 # Knowledge Base
 
 ## One-line essence

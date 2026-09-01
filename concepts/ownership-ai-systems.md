@@ -1,3 +1,8 @@
+<!--meta
+category: Observability & Governance
+short: Explicit assignment of accountability for an AI system's outputs, data, and governance — defining who is responsible, not just who built it
+aliases: [who owns this system, system owner, accountable owner, stewardship, assignment of ownership]
+-->
 # Ownership (AI Systems)
 
 ## One-line essence
@@ -71,7 +76,7 @@ Ownership is more often assumed than assigned. Naming an owner forces three thin
 - [Human-in-the-Loop (HITL)](human-in-the-loop.md) — HITL specifies *where* a human makes the call; ownership specifies *who* is accountable for the decisions and outcomes at those points
 - [Data Quality](data-quality.md) — data ownership (a named owner authorizing data as fit for use) is one of the convergent domains an AI system owner must integrate
 - [Harness Paradigm](harness-paradigm.md) — ownership is enforced at the harness layer: permissions, audit trails, and decommissioning controls are where an owner's authority becomes real
-- [Observability](observability.md) — an owner cannot be accountable for what they cannot see; observability is the precondition that makes ownership enforceable
+- [Observability (AI Systems)](observability.md) — an owner cannot be accountable for what they cannot see; observability is the precondition that makes ownership enforceable
 - [Accountability (AI Systems)](accountability-ai-systems.md) — the principle that someone can be held answerable; ownership is the operational act that names who
 - [Human Responsibility in AI Use](human-responsibility-in-ai-use.md) — the principle that the obligation does not transfer to the tool; ownership assigns that non-transferable obligation to a specific role
 - [Compliance (AI Systems)](compliance-ai-systems.md) — ownership names the role answerable for meeting compliance obligations, not just for documenting them

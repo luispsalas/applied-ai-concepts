@@ -1,3 +1,8 @@
+<!--meta
+category: Foundations
+short: Systematic errors that unfairly advantage or disadvantage certain groups — often inherited from training data, rarely visible in any single output
+aliases: [algorithmic bias, AI fairness, discrimination in AI, unfair outcomes, model bias]
+-->
 # Bias (AI Systems)
 
 ## One-line essence

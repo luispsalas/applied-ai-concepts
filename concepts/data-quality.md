@@ -1,3 +1,8 @@
+<!--meta
+category: Knowledge & Memory
+short: The fitness of data for its intended use — and the upstream constraint on every AI system built on it
+aliases: [fitness for purpose, garbage in garbage out, data readiness, clean data, data fitness]
+-->
 # Data Quality
 
 ## One-line essence
@@ -79,7 +84,7 @@ Three implications:
 - [Hallucination](hallucination.md) — poor data quality can produce factually incorrect outputs that are indistinguishable from model-generated hallucinations; both require structural verification
 - [Context Engineering](context-engineering.md) — data injected into model context is subject to the same quality requirements as any other data asset; context engineering governs what the model receives
 - [Harness Paradigm](harness-paradigm.md) — data access controls and quality monitoring are harness-layer responsibilities; the harness is where data governance meets AI deployment
-- [Observability](observability.md) — data quality metrics (freshness, completeness, consistency) are a component of a complete AI observability stack
+- [Observability (AI Systems)](observability.md) — data quality metrics (freshness, completeness, consistency) are a component of a complete AI observability stack
 - [Model/Data Drift](model-data-drift.md) — the failure mode when data quality degrades silently post-deployment, causing model behavior to shift without a visible trigger
 
 ---

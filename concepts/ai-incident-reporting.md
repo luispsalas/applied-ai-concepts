@@ -1,3 +1,8 @@
+<!--meta
+category: Observability & Governance
+short: A documented event where an AI system caused or nearly caused harm — now with legal deadlines to report it, not just fix it quietly
+aliases: [AI incident, near miss, when something goes wrong, serious incident reporting, postmortem]
+-->
 # AI Incident (Reporting)
 
 ## One-line essence
@@ -67,7 +72,7 @@ An AI incident is when an AI system actually hurt someone or something — and a
 ## Related concepts
 
 - [Audit Trail (AI)](audit-trail-ai.md) — the precondition; an incident you cannot reconstruct is one you cannot report
-- [Observability](observability.md) — determines whether you detect an incident yourself or hear about it from a user or regulator
+- [Observability (AI Systems)](observability.md) — determines whether you detect an incident yourself or hear about it from a user or regulator
 - [Compliance (AI Systems)](compliance-ai-systems.md) — reporting is now an obligation with deadlines, not a discretionary practice
 - [Accountability (AI Systems)](accountability-ai-systems.md) — an incident is the moment answerability stops being theoretical
 - [Failure Modes (AI Systems)](failure-modes-ai-systems.md) — the taxonomy of what goes wrong; incidents are those failures realized in the world

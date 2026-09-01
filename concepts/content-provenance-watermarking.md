@@ -1,3 +1,8 @@
+<!--meta
+category: Observability & Governance
+short: Signed labels and invisible marks on generated content — a positive detection means something, a negative one does not
+aliases: [C2PA, Content Credentials, watermarking, was this made by AI, AI detection, provenance metadata]
+-->
 # Content Provenance & Watermarking (C2PA)
 
 ## One-line essence

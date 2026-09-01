@@ -1,3 +1,8 @@
+<!--meta
+category: Human Oversight
+short: A design pattern that keeps humans as decision authorities at critical points
+aliases: [HITL, human review, human oversight, approval step, human in the loop]
+-->
 # Human-in-the-Loop (HITL)
 
 ## One-line essence

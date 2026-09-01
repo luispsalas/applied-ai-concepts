@@ -1,3 +1,8 @@
+<!--meta
+category: Interaction & Design
+short: Working well with a model is mostly noticing what you left unstated — and knowing when not to trust the answer
+aliases: [talking to AI, how to work with AI, AI communication, getting better answers, working with a model]
+-->
 # Human–LLM Communication Skills
 
 ## One-line essence

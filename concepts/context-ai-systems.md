@@ -1,3 +1,8 @@
+<!--meta
+category: Knowledge & Memory
+short: Everything the model receives before it answers — one bounded, undifferentiated stream, assembled fresh every time
+aliases: [context window contents, what the model sees, input context, the prompt plus everything else, what does it actually know]
+-->
 # Context (AI Systems)
 
 ## One-line essence

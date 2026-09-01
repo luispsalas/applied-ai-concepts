@@ -1,3 +1,8 @@
+<!--meta
+category: Observability & Governance
+short: The transparency artifact — a scoping document whose job is to say where *not* to use a model
+aliases: [model card, system card, model documentation, what does this model do, transparency artifact]
+-->
 # Model Card / System Card
 
 ## One-line essence

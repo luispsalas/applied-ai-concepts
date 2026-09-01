@@ -1,3 +1,8 @@
+<!--meta
+category: Organizational Readiness
+short: A defined, bounded application of AI to a specific problem — the unit of design, risk assessment, and governance accountability
+aliases: [use case definition, AI application, scoping an AI project, where should we use AI, problem definition]
+-->
 # AI Use Case
 
 ## One-line essence

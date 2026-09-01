@@ -1,3 +1,8 @@
+<!--meta
+category: Observability & Governance
+short: The structured record of what an AI system received, decided, and did — enabling accountability and governance review after the fact
+aliases: [logging, traceability, what did it do, AI logs, record keeping]
+-->
 # Audit Trail (AI)
 
 ## One-line essence
@@ -78,7 +83,7 @@ Three things practitioners need to understand:
 ## Related concepts
 
 - [Accountability (AI Systems)](accountability-ai-systems.md) — the audit trail is the evidentiary basis for accountability; without a trail, accountability is nominal
-- [Observability](observability.md) — audit trails are the accountability-facing output of an observability architecture; observability addresses real-time monitoring, audit trails address post-hoc governance review
+- [Observability (AI Systems)](observability.md) — audit trails are the accountability-facing output of an observability architecture; observability addresses real-time monitoring, audit trails address post-hoc governance review
 - [Black Box](black-box.md) — because the model's interior is not observable, the audit trail is the only accessible record of what happened at the governance layer
 - [Harness Paradigm](harness-paradigm.md) — audit trails are implemented at the harness layer; logging and checkpoint capture are harness design decisions
 - [Human-in-the-Loop (HITL)](human-in-the-loop.md) — HITL checkpoints are auditable events; the trail must record who reviewed, when, and what decision was made

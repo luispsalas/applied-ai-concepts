@@ -1,3 +1,8 @@
+<!--meta
+category: Observability & Governance
+short: When sensitive information from training data or context surfaces in model outputs — exposing what was never meant to be accessible
+aliases: [memorization, training data extraction, it leaked our data, PII in output, data exposure]
+-->
 # Data Leakage (AI Systems)
 
 ## One-line essence

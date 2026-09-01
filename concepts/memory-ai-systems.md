@@ -1,3 +1,8 @@
+<!--meta
+category: Knowledge & Memory
+short: How an AI remembers — what it keeps in a conversation, what carries over to future sessions, and what it reuses as learned skill
+aliases: [does it remember me, conversation history, persistence, session memory, long-term memory]
+-->
 # Memory (AI Systems)
 
 ## One-line essence

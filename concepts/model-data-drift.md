@@ -1,3 +1,8 @@
+<!--meta
+category: Reliability & Quality
+short: The quiet decay of a deployed system as the world moves away from its training data — nothing breaks, accuracy just slides
+aliases: [concept drift, model decay, it used to work, performance degradation, data drift]
+-->
 # Model/Data Drift
 
 ## One-line essence
@@ -71,7 +76,7 @@ A model learns from the world as it was when it was trained. The world keeps mov
 ## Related concepts
 
 - [Evaluation (AI Systems)](evaluation.md) — the measurement that makes drift visible; drift is why evaluation cannot be a one-time gate
-- [Observability](observability.md) — drift detection is an observability capability, not a modeling one
+- [Observability (AI Systems)](observability.md) — drift detection is an observability capability, not a modeling one
 - [Data Quality](data-quality.md) — the input side of the problem; degrading data produces degrading outputs
 - [Failure Modes (AI Systems)](failure-modes-ai-systems.md) — the slow, silent member of the family
 - [RAG](rag.md) — moves part of the drift surface from the model to the retrieved corpus

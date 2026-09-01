@@ -1,3 +1,8 @@
+<!--meta
+category: Observability & Governance
+short: The principle that someone can be held answerable for an AI system's behavior — and that answerable means explain, justify, and face consequences
+aliases: [answerability, who is accountable, responsibility for AI, liability, who answers for it]
+-->
 # Accountability (AI Systems)
 
 ## One-line essence
@@ -80,7 +85,7 @@ Accountability is the governance concept that most often fails silently. Three t
 - [Compliance (AI Systems)](compliance-ai-systems.md) — compliance is meeting defined obligations; accountability is being answerable for whether you did
 - [Human Responsibility in AI Use](human-responsibility-in-ai-use.md) — the principle that accountability cannot transfer to the system itself; someone human remains answerable
 - [AI Governance](ai-governance.md) — the framework within which accountability structures are defined, assigned, and enforced
-- [Observability](observability.md) — the technical precondition for accountability: the forum must be able to question, which requires evidence
+- [Observability (AI Systems)](observability.md) — the technical precondition for accountability: the forum must be able to question, which requires evidence
 
 ---
 

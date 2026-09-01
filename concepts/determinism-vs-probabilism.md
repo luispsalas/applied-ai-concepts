@@ -1,3 +1,8 @@
+<!--meta
+category: Foundations
+short: Why AI models generate statistically likely outputs rather than fixed answers — the same input can produce different results
+aliases: [nondeterminism, why do I get different answers, randomness, temperature, stochastic output]
+-->
 # Determinism vs Probabilism
 
 ## One-line essence

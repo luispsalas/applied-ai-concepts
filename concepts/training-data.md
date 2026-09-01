@@ -1,3 +1,8 @@
+<!--meta
+category: Knowledge & Memory
+short: What the model learned from — where its knowledge, gaps, blind spots and biases all come from, and which is rarely disclosed
+aliases: [what was it trained on, training corpus, pretraining data, the data behind the model, where its knowledge comes from]
+-->
 # Training Data
 
 ## One-line essence

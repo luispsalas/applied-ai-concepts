@@ -61,7 +61,7 @@ Quick-reference index of all concepts. Follow links for full entries.
 | [Model/Data Drift](../concepts/model-data-drift.md) | The quiet decay of a deployed system as the world moves away from its training data — nothing breaks, accuracy just slides |
 | [Multi-Agent Systems](../concepts/multi-agent-systems.md) | Multiple AI agents with different roles working together on a task — coordination and division of labor instead of one model doing everything |
 | [Multimodal AI](../concepts/multimodal-ai.md) | AI systems that process and generate across multiple types of input and output — text, images, audio, video — rather than being limited to one modality |
-| [Observability](../concepts/observability.md) | The ability to understand what an AI system is doing — and reconstruct why — by examining what goes in, what comes out, and every action in between |
+| [Observability (AI Systems)](../concepts/observability.md) | The ability to understand what an AI system is doing — and reconstruct why — by examining what goes in, what comes out, and every action in between |
 | [Operational Readiness (AI)](../concepts/operational-readiness-ai.md) | Whether the organization can actually run an AI system — data, infrastructure, skills, process, governance |
 | [Orchestration (AI Systems)](../concepts/orchestration-ai-systems.md) | Coordinating multiple AI components — models, tools, memory, agents — to complete a complex task as a unified, governable system |
 | [Ownership (AI Systems)](../concepts/ownership-ai-systems.md) | Explicit assignment of accountability for an AI system's outputs, data, and governance — defining who is responsible, not just who built it |

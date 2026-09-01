@@ -1,3 +1,8 @@
+<!--meta
+category: Organizational Readiness
+short: Whether the organization can actually run an AI system — data, infrastructure, skills, process, governance — not whether the model works
+aliases: [are we ready, deployment readiness, AI maturity, production readiness, can we actually run this]
+-->
 # Operational Readiness (AI)
 
 ## One-line essence
@@ -78,7 +83,7 @@ Getting an AI system to work in a demo is the easy part. Running it is the commi
 
 - [AI Management System (ISO 42001)](ai-management-system-iso-42001.md) — the certifiable framework that formalizes much of this capacity
 - [Ownership (AI Systems)](ownership-ai-systems.md) — a named owner is a readiness precondition, not a formality
-- [Observability](observability.md) — the detection capability readiness is largely assessing
+- [Observability (AI Systems)](observability.md) — the detection capability readiness is largely assessing
 - [Model/Data Drift](model-data-drift.md) — the reason monitoring must exist before deployment rather than after the first surprise
 - [Data Quality](data-quality.md) — the upstream constraint on everything downstream
 - [Evaluation (AI Systems)](evaluation.md) — measures whether it works; readiness measures whether you can run it

@@ -1,3 +1,8 @@
+<!--meta
+category: Observability & Governance
+short: Collecting and keeping only the data a system actually needs — less data, less risk, lower cost
+aliases: [collect only what you need, least data, GDPR minimization, data reduction, need to know]
+-->
 # Data Minimization
 
 ## One-line essence

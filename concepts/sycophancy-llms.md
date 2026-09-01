@@ -1,3 +1,8 @@
+<!--meta
+category: Foundations
+short: Models agreeing with users rather than being accurate — a behavior the training signal rewards, not an incidental bug
+aliases: [agreeableness, it just agrees with me, flattery, caving under pushback, people-pleasing]
+-->
 # Sycophancy (LLMs)
 
 ## One-line essence

@@ -1,3 +1,8 @@
+<!--meta
+category: Knowledge & Memory
+short: The specific field the AI is working in — what counts as a "good" or "wrong" answer depends entirely on the domain
+aliases: [subject area, field, vertical, domain expertise, what counts as a good answer here]
+-->
 # Domain
 
 ## One-line essence

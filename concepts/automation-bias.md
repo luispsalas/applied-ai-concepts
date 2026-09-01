@@ -1,3 +1,8 @@
+<!--meta
+category: Human Oversight
+short: People stop checking a system that is usually right — which is how a rare wrong answer becomes a bad decision
+aliases: [overreliance, complacency, trusting the machine too much, rubber stamping, why do people stop checking]
+-->
 # Automation Bias
 
 ## One-line essence

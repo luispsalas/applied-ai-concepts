@@ -1,3 +1,8 @@
+<!--meta
+category: Foundations
+short: An AI system whose internal reasoning process cannot be observed or interpreted — even when its outputs can
+aliases: [opaque model, uninterpretable AI, can't see inside the model, opacity]
+-->
 # Black Box
 
 ## One-line essence

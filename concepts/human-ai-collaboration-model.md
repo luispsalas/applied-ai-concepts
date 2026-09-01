@@ -1,3 +1,8 @@
+<!--meta
+category: Human Oversight
+short: The explicit design of how people and AI systems divide work, hand over, and resolve disagreement — documented, not assumed
+aliases: [division of labor with AI, who does what, handoff design, human AI teaming, collaboration pattern]
+-->
 # Human–AI Collaboration Model
 
 ## One-line essence

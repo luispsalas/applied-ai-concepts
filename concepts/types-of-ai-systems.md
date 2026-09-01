@@ -1,3 +1,8 @@
+<!--meta
+category: Foundations
+short: A taxonomy of AI by capability and autonomy — from narrow task tools to general-purpose models — that determines governance, risk, and oversight
+aliases: [AI taxonomy, kinds of AI, narrow vs general AI, AI classification, what counts as AI]
+-->
 # Types of AI Systems
 
 ## One-line essence

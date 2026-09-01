@@ -1,3 +1,8 @@
+<!--meta
+category: Foundations
+short: Describing, in terms a human can understand, why an AI system produced a specific output — a prerequisite for accountability
+aliases: [XAI, interpretability, why did it decide that, explainable AI, right to explanation]
+-->
 # Explainability (XAI)
 
 ## One-line essence
@@ -67,7 +72,7 @@ The catch with modern AI: a system can produce a confident, fluent explanation t
 - [Human Responsibility in AI Use](human-responsibility-in-ai-use.md) — explanation enables accountability but does not transfer it away from humans
 - [Accountability (AI Systems)](accountability-ai-systems.md) — being answerable for a decision depends on being able to give a faithful account of it
 - [AI Governance](ai-governance.md) — explainability is moving from research aspiration to regulatory requirement
-- [Observability](observability.md) — observability instruments the system boundary; explainability interprets the decision — complementary, not the same
+- [Observability (AI Systems)](observability.md) — observability instruments the system boundary; explainability interprets the decision — complementary, not the same
 
 ---
 

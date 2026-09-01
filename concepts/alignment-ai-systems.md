@@ -1,3 +1,8 @@
+<!--meta
+category: Reliability & Quality
+short: Making a system's behavior match what was actually intended — and the prior question of whose intentions those are
+aliases: [AI alignment, aligned with human values, deceptive alignment, alignment faking, does it do what we meant]
+-->
 # Alignment (AI Systems)
 
 ## One-line essence

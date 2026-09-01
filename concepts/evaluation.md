@@ -1,3 +1,8 @@
+<!--meta
+category: Reliability & Quality
+short: The structured practice of measuring whether an AI system does what it is supposed to do — before deployment and continuously in production
+aliases: [evals, benchmarking, how do we know it works, testing AI, measuring performance]
+-->
 # Evaluation (AI Systems)
 
 ## One-line essence
@@ -74,7 +79,7 @@ Three things practitioners need to understand:
 
 ## Related concepts
 
-- [Observability](observability.md) — evaluation measures performance quality; observability provides the signal stream that makes production evaluation possible
+- [Observability (AI Systems)](observability.md) — evaluation measures performance quality; observability provides the signal stream that makes production evaluation possible
 - [Hallucination](hallucination.md) — factual accuracy is a core evaluation dimension; hallucination rate is a key metric in most evaluation frameworks
 - [Human-in-the-Loop (HITL)](human-in-the-loop.md) — human evaluation is the most reliable method for dimensions that resist automated measurement; HITL design decisions affect what can be evaluated
 - [Retrieval-Augmented Generation (RAG)](rag.md) — RAG systems require evaluation of both retrieval quality and generation quality as distinct dimensions

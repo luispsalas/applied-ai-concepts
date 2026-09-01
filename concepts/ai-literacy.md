@@ -1,3 +1,8 @@
+<!--meta
+category: Organizational Readiness
+short: The competencies required to engage with, use, and govern AI systems responsibly — at an individual, team, and organizational level
+aliases: [AI skills, AI education, AI competency, understanding AI, AI training for staff]
+-->
 # AI Literacy
 
 ## One-line essence
@@ -80,7 +85,7 @@ Three things practitioners need to understand:
 - [Human-in-the-Loop (HITL)](human-in-the-loop.md) — HITL design only functions if the humans in the loop have sufficient literacy to exercise meaningful judgment
 - [AI Governance](ai-governance.md) — governance frameworks require literacy to be operational; ungoverned AI and literacy-deficient AI often co-occur
 - [Context Engineering](context-engineering.md) — operational literacy includes the ability to frame requests effectively and understand how context shapes outputs
-- [Observability](observability.md) — governance literacy includes understanding what should be monitored, why, and what the signals mean
+- [Observability (AI Systems)](observability.md) — governance literacy includes understanding what should be monitored, why, and what the signals mean
 - [Persistent Synthesis](persistent-synthesis.md) — the synthesis model this wiki is built on is itself a literacy practice: compiling understanding rather than accumulating information
 
 ---

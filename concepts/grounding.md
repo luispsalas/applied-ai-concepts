@@ -1,3 +1,8 @@
+<!--meta
+category: Knowledge & Memory
+short: Anchoring model outputs to specific, verifiable sources — reducing hallucination by giving the model something real to reason from
+aliases: [source anchoring, citations, factual grounding, evidence-backed output, tie answers to sources]
+-->
 # Grounding
 
 ## One-line essence
@@ -73,7 +78,7 @@ Three things practitioners need to understand:
 - [Hallucination](hallucination.md) — grounding's primary motivation; reduces but does not eliminate hallucination risk
 - [Context Engineering](context-engineering.md) — grounding decisions are context engineering decisions: what to retrieve, how to structure it, how to frame its authority to the model
 - [Harness Paradigm](harness-paradigm.md) — grounding infrastructure (retrieval layer, knowledge base access, citation logging) is implemented at the harness layer
-- [Observability](observability.md) — grounding makes outputs attributable; observability makes that attribution auditable
+- [Observability (AI Systems)](observability.md) — grounding makes outputs attributable; observability makes that attribution auditable
 - [Persistent Synthesis](persistent-synthesis.md) — the knowledge base a grounding system retrieves from requires the same synthesis discipline as any managed knowledge system
 
 ---

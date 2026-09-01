@@ -1,3 +1,8 @@
+<!--meta
+category: Observability & Governance
+short: The rights and obligations that govern how personal data is used in AI training and deployment — and the responsibility to uphold them
+aliases: [GDPR, personal data, data protection, PII, privacy compliance]
+-->
 # Privacy (AI Systems)
 
 ## One-line essence
