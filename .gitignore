@@ -3,3 +3,7 @@ CONTEXT.md
 
 # macOS
 .DS_Store
+
+# Generated caches
+__pycache__/
+*.pyc

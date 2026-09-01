@@ -1,0 +1,51 @@
+Continuous Feedback & Improvement
+Custodial Agency
+Performativity (LLMs)
+Tacit Knowledge
+Value Realization (AI)
+Scalable Oversight
+Reinforcement Learning (RL)
+Agent Memory
+Agentic Design
+AI Benchmarking
+APIs (Application Programming Interfaces)
+Context Framing
+Fine-tuning
+Instantiation (AI Systems)
+Knowledge Graphs
+LLM-as-Judge
+Recursive Self-Improvement
+Synthetic Data
+Zero-shot / Few-shot Learning
+Pre-training
+Transformers
+NLP
+Data Leakage (Model Evaluation)
+Sandboxing
+Flow Engineering
+Mechanistic interpretability
+Edge AI
+Embeddings
+Metaprompting
+Agent Interoperability (A2A)
+RLHF (Reinforcement Learning from Human Feedback)
+Tokenization
+Cognitive Offloading & Deskilling
+Model Version & Update
+Environmental Cost of AI
+Agentic Pattern
+Compact
+Latency (AI Systems)
+Overfitting
+Prompt Chaining
+Temperature (LLMs)
+LangChain
+Underfitting
+Catastrophic forgetting
+Direct Preference Optimization
+Inference
+Hook
+Skill
+Model distillation
+Checkpointing
+LLM Mesh

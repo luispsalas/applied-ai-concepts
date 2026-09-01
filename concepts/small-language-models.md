@@ -34,7 +34,7 @@ Not every job needs the biggest model. A lot of what AI systems do all day is sm
 2. **Model size is a design decision per task, not per system.** The useful question is which steps need generality and which are bounded — a heterogeneous system routing accordingly usually beats a single-model choice in both directions.
 3. **The governance shift comes from location, not size.** Running on your own infrastructure is what changes the data-protection analysis. It also removes the vendor backstop: evaluation, monitoring, and safety testing become entirely yours.
 4. **Weaker safety training is a real consideration.** Smaller and specialized models generally receive less safety tuning than frontier models, which raises the importance of enforced [guardrails](guardrails-ai-systems.md) rather than reliance on model behavior.
-5. **Cheap enough to run everywhere is also cheap enough to run unsupervised.** Low cost and easy deployment make [shadow](ai-governance.md) usage more likely, not less — governance needs to keep up with how easy deployment has become.
+5. **Cheap enough to run everywhere is also cheap enough to run unsupervised.** Low cost and easy deployment make [shadow](shadow-ai.md) usage more likely, not less — governance needs to keep up with how easy deployment has become.
 
 ---
 
