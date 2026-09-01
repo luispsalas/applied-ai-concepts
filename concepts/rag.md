@@ -2,6 +2,7 @@
 category: System Architecture
 short: A technique that grounds model outputs in retrieved, verifiable information
 aliases: [RAG, retrieval augmented generation, search plus generation, document Q&A, grounded retrieval]
+tags: [Architecture, Data Governance]
 -->
 # Retrieval-Augmented Generation (RAG)
 

@@ -2,6 +2,7 @@
 category: Observability & Governance
 short: A documented event where an AI system caused or nearly caused harm — now with legal deadlines to report it, not just fix it quietly
 aliases: [AI incident, near miss, when something goes wrong, serious incident reporting, postmortem]
+tags: [Regulatory, Safety]
 -->
 # AI Incident (Reporting)
 

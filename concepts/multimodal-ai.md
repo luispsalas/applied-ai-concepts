@@ -2,6 +2,7 @@
 category: Foundations
 short: Text, images, audio and video in one system — every text risk carried across, with weaker tooling to detect it
 aliases: [vision language model, image and text AI, VLM, AI that sees, cross-modal]
+tags: [Architecture, Security]
 -->
 # Multimodal AI
 

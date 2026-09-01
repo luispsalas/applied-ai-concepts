@@ -2,6 +2,7 @@
 category: Human Oversight
 short: The obligation to oversee AI decisions does not transfer to the system — it remains with the humans who deploy and use it
 aliases: [responsibility gap, who is to blame, the AI did it, moral responsibility, accountability does not transfer]
+tags: [Ethics, AI Literacy]
 -->
 # Human Responsibility in AI Use
 

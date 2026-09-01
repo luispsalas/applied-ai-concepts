@@ -2,6 +2,7 @@
 category: Reliability & Quality
 short: The quiet decay of a deployed system as the world moves away from its training data — nothing breaks, accuracy just slides
 aliases: [concept drift, model decay, it used to work, performance degradation, data drift]
+tags: [Model Behavior, Data Governance, Evaluation]
 -->
 # Model/Data Drift
 

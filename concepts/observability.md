@@ -2,6 +2,7 @@
 category: Observability & Governance
 short: The ability to understand what an AI system is doing — and reconstruct why — from the outside
 aliases: [monitoring, telemetry, can I see what it's doing, instrumentation, visibility]
+tags: [Architecture, Evaluation]
 -->
 # Observability (AI Systems)
 

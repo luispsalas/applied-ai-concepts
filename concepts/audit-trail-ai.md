@@ -2,6 +2,7 @@
 category: Observability & Governance
 short: The structured record of what an AI system received, decided, and did — enabling accountability and governance review after the fact
 aliases: [logging, traceability, what did it do, AI logs, record keeping]
+tags: [Data Governance, Regulatory, Security]
 -->
 # Audit Trail (AI)
 

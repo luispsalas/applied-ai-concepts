@@ -2,6 +2,7 @@
 category: Knowledge & Memory
 short: The fitness of data for its intended use — and the upstream constraint on every AI system built on it
 aliases: [fitness for purpose, garbage in garbage out, data readiness, clean data, data fitness]
+tags: [Data Governance]
 -->
 # Data Quality
 

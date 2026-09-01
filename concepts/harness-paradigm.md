@@ -2,6 +2,7 @@
 category: System Architecture
 short: Intelligence and control are separate layers — governance lives in the harness
 aliases: [agent harness, scaffolding, the layer around the model, control layer, harness engineering]
+tags: [Architecture, Agents]
 -->
 # Harness Paradigm
 

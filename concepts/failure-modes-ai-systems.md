@@ -2,6 +2,7 @@
 category: Reliability & Quality
 short: The specific ways an AI system can go wrong — each requiring a different detection-and-response control
 aliases: [what can go wrong, AI failures, error modes, risk taxonomy, ways AI breaks]
+tags: [Evaluation, Safety]
 -->
 # Failure Modes (AI Systems)
 

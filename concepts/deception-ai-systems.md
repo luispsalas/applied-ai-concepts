@@ -2,6 +2,7 @@
 category: Reliability & Quality
 short: Output that systematically induces false beliefs because something other than truth was being optimized for
 aliases: [misleading output, AI deception, did it lie to me, systematic misleading, manipulation]
+tags: [Safety, Model Behavior, Ethics]
 -->
 # Deception (AI Systems)
 

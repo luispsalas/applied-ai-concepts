@@ -2,6 +2,7 @@
 category: Foundations
 short: How sure a model sounds is not evidence of how right it is — tone is generated independently of correctness
 aliases: [overconfidence, calibration, why does it sound so sure, confident but wrong, tone vs correctness]
+tags: [Model Behavior, AI Literacy]
 -->
 # Confidence vs Accuracy
 

@@ -2,6 +2,7 @@
 category: Knowledge & Memory
 short: The maximum amount of text an AI model can consider at once — a hard limit on what it can reason about
 aliases: [token limit, how much can it read, input length limit, maximum context, context size]
+tags: [Architecture]
 -->
 # Context Window
 

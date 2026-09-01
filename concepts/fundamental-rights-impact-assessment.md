@@ -2,6 +2,7 @@
 category: Observability & Governance
 short: A deployer's pre-launch assessment of who is affected and what recourse they have — and it binds far fewer organizations than commonly claimed
 aliases: [FRIA, rights impact assessment, Article 27, impact assessment, pre-deployment assessment]
+tags: [Regulatory, Ethics]
 -->
 # Fundamental Rights Impact Assessment (FRIA)
 

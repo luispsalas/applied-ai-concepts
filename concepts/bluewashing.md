@@ -2,6 +2,7 @@
 category: Observability & Governance
 short: Responsible-AI claims with nothing behind them — the test is whether anything can constrain a decision
 aliases: [ethics washing, AI washing, responsible AI theater, greenwashing for AI, empty ethics claims]
+tags: [Ethics, Regulatory]
 -->
 # Bluewashing
 

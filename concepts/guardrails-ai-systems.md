@@ -2,6 +2,7 @@
 category: System Architecture
 short: Technical and policy constraints that prevent an AI system from producing outputs or taking actions outside defined boundaries
 aliases: [safety filters, content filtering, constraints, boundaries, policy enforcement]
+tags: [Security, Architecture, Safety]
 -->
 # Guardrails (AI Systems)
 

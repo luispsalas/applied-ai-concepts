@@ -2,6 +2,7 @@
 category: System Architecture
 short: Bypassing a model's safety training through crafted prompts rather than a technical flaw — getting it to do what it was trained to refuse
 aliases: [prompt jailbreaking, bypassing safety, getting it to break its rules, safety bypass, DAN]
+tags: [Security, Safety]
 -->
 # Jailbreak
 

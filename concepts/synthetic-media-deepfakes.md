@@ -2,6 +2,7 @@
 category: Reliability & Quality
 short: Generation scales and verification does not — and the documented harm is fraud and intimate imagery, not mainly politics
 aliases: [deepfake, AI-generated video, voice cloning, fake audio, manipulated media]
+tags: [Security, Ethics, Regulatory]
 -->
 # Synthetic Media (Deepfakes)
 

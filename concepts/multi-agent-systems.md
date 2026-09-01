@@ -2,6 +2,7 @@
 category: System Architecture
 short: Multiple AI agents with different roles working together on a task — coordination and division of labor instead of one model doing everything
 aliases: [agent swarm, multiple agents, agent teams, agent collaboration, A2A]
+tags: [Agents, Architecture]
 -->
 # Multi-Agent Systems
 

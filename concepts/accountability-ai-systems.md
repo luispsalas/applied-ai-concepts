@@ -2,6 +2,7 @@
 category: Observability & Governance
 short: The principle that someone can be held answerable for an AI system's behavior — and that answerable means explain, justify, and face consequences
 aliases: [answerability, who is accountable, responsibility for AI, liability, who answers for it]
+tags: [Ethics, Data Governance, Regulatory]
 -->
 # Accountability (AI Systems)
 

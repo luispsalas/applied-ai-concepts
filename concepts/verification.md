@@ -2,6 +2,7 @@
 category: Reliability & Quality
 short: Checking this output against ground truth before trusting it — and the finding that people check least on the problems that most need it
 aliases: [fact checking AI output, checking the answer, should I trust this, validating output, double checking]
+tags: [Evaluation, AI Literacy]
 -->
 # Verification
 

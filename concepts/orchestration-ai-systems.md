@@ -2,6 +2,7 @@
 category: System Architecture
 short: The control layer deciding what runs and in what order — where the failures hide in the seams and look like success
 aliases: [workflow, pipeline, coordinating AI components, agent orchestration, chaining steps]
+tags: [Agents, Architecture]
 -->
 # Orchestration (AI Systems)
 

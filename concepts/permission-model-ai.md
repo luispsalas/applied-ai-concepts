@@ -2,6 +2,7 @@
 category: Human Oversight
 short: What an AI may do on its own, what needs human approval, and what is always off-limits — enforced, not requested
 aliases: [least privilege, what is the AI allowed to do, access control for AI, authorization, guardrails on actions]
+tags: [Security, Agents, Data Governance]
 -->
 # Permission Model (AI)
 

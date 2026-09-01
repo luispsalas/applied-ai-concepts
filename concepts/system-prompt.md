@@ -2,6 +2,7 @@
 category: System Architecture
 short: The behind-the-scenes instructions that set how an AI behaves before you interact with it — a soft control, not a hard boundary
 aliases: [system message, instructions before the chat, preamble, system instructions, hidden prompt]
+tags: [Prompting, Architecture, Security]
 -->
 # System Prompt
 

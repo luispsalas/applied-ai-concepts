@@ -15,6 +15,11 @@
         "liability",
         "who answers for it"
       ],
+      "tags": [
+        "Ethics",
+        "Data Governance",
+        "Regulatory"
+      ],
       "version": "v1.0",
       "updated": "June 2026",
       "related": [
@@ -46,6 +51,11 @@
         "scope of action",
         "levels of autonomy",
         "autonomous action"
+      ],
+      "tags": [
+        "Agents",
+        "Regulatory",
+        "Security"
       ],
       "version": "v1.0",
       "updated": "August 2026",
@@ -87,6 +97,10 @@
         "agent",
         "multi-step AI"
       ],
+      "tags": [
+        "Agents",
+        "Architecture"
+      ],
       "version": "v1.2",
       "updated": "June 2026",
       "related": [
@@ -120,6 +134,11 @@
         "should I say I used AI",
         "AI-assisted disclosure",
         "transparency statement"
+      ],
+      "tags": [
+        "Ethics",
+        "Regulatory",
+        "AI Literacy"
       ],
       "version": "v1.0",
       "updated": "August 2026",
@@ -158,6 +177,11 @@
         "governing AI",
         "AI risk management"
       ],
+      "tags": [
+        "Data Governance",
+        "Regulatory",
+        "Ethics"
+      ],
       "version": "v1.1",
       "updated": "June 2026",
       "related": [
@@ -191,6 +215,10 @@
         "when something goes wrong",
         "serious incident reporting",
         "postmortem"
+      ],
+      "tags": [
+        "Regulatory",
+        "Safety"
       ],
       "version": "v1.0",
       "updated": "August 2026",
@@ -227,6 +255,9 @@
         "understanding AI",
         "AI training for staff"
       ],
+      "tags": [
+        "AI Literacy"
+      ],
       "version": "v1.1",
       "updated": "June 2026",
       "related": [
@@ -257,6 +288,10 @@
         "AIMS",
         "AI management system",
         "AI certification"
+      ],
+      "tags": [
+        "Regulatory",
+        "Data Governance"
       ],
       "version": "v1.0",
       "updated": "August 2026",
@@ -294,6 +329,10 @@
         "where should we use AI",
         "problem definition"
       ],
+      "tags": [
+        "Data Governance",
+        "Architecture"
+      ],
       "version": "v1.0",
       "updated": "July 2026",
       "related": [
@@ -325,6 +364,11 @@
         "deceptive alignment",
         "alignment faking",
         "does it do what we meant"
+      ],
+      "tags": [
+        "Safety",
+        "Model Behavior",
+        "Ethics"
       ],
       "version": "v1.0",
       "updated": "August 2026",
@@ -367,6 +411,10 @@
         "attributing intent",
         "humanizing AI"
       ],
+      "tags": [
+        "AI Literacy",
+        "Model Behavior"
+      ],
       "version": "v1.0",
       "updated": "August 2026",
       "related": [
@@ -401,6 +449,11 @@
         "AI logs",
         "record keeping"
       ],
+      "tags": [
+        "Data Governance",
+        "Regulatory",
+        "Security"
+      ],
       "version": "v1.0",
       "updated": "June 2026",
       "related": [
@@ -431,6 +484,10 @@
         "trusting the machine too much",
         "rubber stamping",
         "why do people stop checking"
+      ],
+      "tags": [
+        "AI Literacy",
+        "Evaluation"
       ],
       "version": "v1.0",
       "updated": "August 2026",
@@ -468,6 +525,11 @@
         "unfair outcomes",
         "model bias"
       ],
+      "tags": [
+        "Ethics",
+        "Data Governance",
+        "Regulatory"
+      ],
       "version": "v1.0",
       "updated": "June 2026",
       "related": [
@@ -497,6 +559,10 @@
         "uninterpretable AI",
         "can't see inside the model",
         "opacity"
+      ],
+      "tags": [
+        "Ethics",
+        "Evaluation"
       ],
       "version": "v1.1",
       "updated": "June 2026",
@@ -529,6 +595,10 @@
         "responsible AI theater",
         "greenwashing for AI",
         "empty ethics claims"
+      ],
+      "tags": [
+        "Ethics",
+        "Regulatory"
       ],
       "version": "v1.0",
       "updated": "August 2026",
@@ -568,6 +638,10 @@
         "conformity",
         "legal obligations"
       ],
+      "tags": [
+        "Regulatory",
+        "Data Governance"
+      ],
       "version": "v1.0",
       "updated": "June 2026",
       "related": [
@@ -597,6 +671,10 @@
         "it didn't say it was unsure",
         "suppressed caveats",
         "false certainty"
+      ],
+      "tags": [
+        "Model Behavior",
+        "Evaluation"
       ],
       "version": "v1.0",
       "updated": "August 2026",
@@ -633,6 +711,10 @@
         "confident but wrong",
         "tone vs correctness"
       ],
+      "tags": [
+        "Model Behavior",
+        "AI Literacy"
+      ],
       "version": "v1.0",
       "updated": "August 2026",
       "related": [
@@ -668,6 +750,11 @@
         "was this made by AI",
         "AI detection",
         "provenance metadata"
+      ],
+      "tags": [
+        "Regulatory",
+        "Security",
+        "Ethics"
       ],
       "version": "v1.0",
       "updated": "August 2026",
@@ -706,6 +793,11 @@
         "input context",
         "the prompt plus everything else",
         "what does it actually know"
+      ],
+      "tags": [
+        "Architecture",
+        "Prompting",
+        "Security"
       ],
       "version": "v1.0",
       "updated": "August 2026",
@@ -747,6 +839,10 @@
         "assembling context",
         "beyond prompt engineering"
       ],
+      "tags": [
+        "Prompting",
+        "Architecture"
+      ],
       "version": "v1.1",
       "updated": "May 2026",
       "related": [
@@ -777,6 +873,9 @@
         "maximum context",
         "context size"
       ],
+      "tags": [
+        "Architecture"
+      ],
       "version": "v1.0",
       "updated": "July 2026",
       "related": [
@@ -805,6 +904,11 @@
         "intellectual property",
         "can I copyright this",
         "training data copyright"
+      ],
+      "tags": [
+        "Regulatory",
+        "Ethics",
+        "AI Literacy"
       ],
       "version": "v1.0",
       "updated": "August 2026",
@@ -844,6 +948,10 @@
         "why doesn't it understand what I want",
         "missing context"
       ],
+      "tags": [
+        "AI Literacy",
+        "Prompting"
+      ],
       "version": "v1.0",
       "updated": "August 2026",
       "related": [
@@ -880,6 +988,10 @@
         "PII in output",
         "data exposure"
       ],
+      "tags": [
+        "Security",
+        "Privacy"
+      ],
       "version": "v1.0",
       "updated": "August 2026",
       "related": [
@@ -914,6 +1026,11 @@
         "data reduction",
         "need to know"
       ],
+      "tags": [
+        "Privacy",
+        "Regulatory",
+        "Data Governance"
+      ],
       "version": "v1.0",
       "updated": "June 2026",
       "related": [
@@ -943,6 +1060,10 @@
         "dataset provenance",
         "data origin",
         "where did this data come from"
+      ],
+      "tags": [
+        "Data Governance",
+        "Regulatory"
       ],
       "version": "v1.1",
       "updated": "August 2026",
@@ -985,6 +1106,9 @@
         "clean data",
         "data fitness"
       ],
+      "tags": [
+        "Data Governance"
+      ],
       "version": "v1.0",
       "updated": "May 2026",
       "related": [
@@ -1015,6 +1139,11 @@
         "did it lie to me",
         "systematic misleading",
         "manipulation"
+      ],
+      "tags": [
+        "Safety",
+        "Model Behavior",
+        "Ethics"
       ],
       "version": "v1.1",
       "updated": "August 2026",
@@ -1053,6 +1182,9 @@
         "temperature",
         "stochastic output"
       ],
+      "tags": [
+        "Model Behavior"
+      ],
       "version": "v1.0",
       "updated": "July 2026",
       "related": [
@@ -1082,6 +1214,9 @@
         "domain expertise",
         "what counts as a good answer here"
       ],
+      "tags": [
+        "Data Governance"
+      ],
       "version": "v1.0",
       "updated": "July 2026",
       "related": [
@@ -1110,6 +1245,10 @@
         "how do we know it works",
         "testing AI",
         "measuring performance"
+      ],
+      "tags": [
+        "Evaluation",
+        "Data Governance"
       ],
       "version": "v1.1",
       "updated": "August 2026",
@@ -1141,6 +1280,11 @@
         "why did it decide that",
         "explainable AI",
         "right to explanation"
+      ],
+      "tags": [
+        "Ethics",
+        "Regulatory",
+        "Evaluation"
       ],
       "version": "v1.0",
       "updated": "June 2026",
@@ -1174,6 +1318,10 @@
         "risk taxonomy",
         "ways AI breaks"
       ],
+      "tags": [
+        "Evaluation",
+        "Safety"
+      ],
       "version": "v1.0",
       "updated": "June 2026",
       "related": [
@@ -1205,6 +1353,10 @@
         "most capable models",
         "cutting edge AI",
         "leading models"
+      ],
+      "tags": [
+        "Regulatory",
+        "Safety"
       ],
       "version": "v1.0",
       "updated": "August 2026",
@@ -1243,6 +1395,10 @@
         "Article 27",
         "impact assessment",
         "pre-deployment assessment"
+      ],
+      "tags": [
+        "Regulatory",
+        "Ethics"
       ],
       "version": "v1.0",
       "updated": "August 2026",
@@ -1283,6 +1439,10 @@
         "evidence-backed output",
         "tie answers to sources"
       ],
+      "tags": [
+        "Data Governance",
+        "Evaluation"
+      ],
       "version": "v1.0",
       "updated": "May 2026",
       "related": [
@@ -1312,6 +1472,11 @@
         "constraints",
         "boundaries",
         "policy enforcement"
+      ],
+      "tags": [
+        "Security",
+        "Architecture",
+        "Safety"
       ],
       "version": "v1.0",
       "updated": "July 2026",
@@ -1344,6 +1509,10 @@
         "invented citations",
         "false output"
       ],
+      "tags": [
+        "Model Behavior",
+        "Evaluation"
+      ],
       "version": "v1.2",
       "updated": "May 2026",
       "related": [
@@ -1374,6 +1543,10 @@
         "the layer around the model",
         "control layer",
         "harness engineering"
+      ],
+      "tags": [
+        "Architecture",
+        "Agents"
       ],
       "version": "v1.3",
       "updated": "July 2026",
@@ -1410,6 +1583,10 @@
         "moral responsibility",
         "accountability does not transfer"
       ],
+      "tags": [
+        "Ethics",
+        "AI Literacy"
+      ],
       "version": "v1.1",
       "updated": "June 2026",
       "related": [
@@ -1442,6 +1619,10 @@
         "approval step",
         "human in the loop"
       ],
+      "tags": [
+        "Ethics",
+        "Agents"
+      ],
       "version": "v1.1",
       "updated": "May 2026",
       "related": [
@@ -1472,6 +1653,10 @@
         "handoff design",
         "human AI teaming",
         "collaboration pattern"
+      ],
+      "tags": [
+        "Architecture",
+        "Ethics"
       ],
       "version": "v1.0",
       "updated": "August 2026",
@@ -1508,6 +1693,10 @@
         "AI communication",
         "getting better answers",
         "working with a model"
+      ],
+      "tags": [
+        "AI Literacy",
+        "Prompting"
       ],
       "version": "v1.0",
       "updated": "August 2026",
@@ -1548,6 +1737,10 @@
         "safety bypass",
         "DAN"
       ],
+      "tags": [
+        "Security",
+        "Safety"
+      ],
       "version": "v1.0",
       "updated": "August 2026",
       "related": [
@@ -1580,6 +1773,10 @@
         "KB",
         "knowledge repository"
       ],
+      "tags": [
+        "Architecture",
+        "Data Governance"
+      ],
       "version": "v1.0",
       "updated": "July 2026",
       "related": [
@@ -1609,6 +1806,10 @@
         "out of date model",
         "cutoff date",
         "stale knowledge"
+      ],
+      "tags": [
+        "Model Behavior",
+        "AI Literacy"
       ],
       "version": "v1.0",
       "updated": "August 2026",
@@ -1643,6 +1844,9 @@
         "GPT",
         "chatbot model"
       ],
+      "tags": [
+        "Architecture"
+      ],
       "version": "v1.0",
       "updated": "July 2026",
       "related": [
@@ -1674,6 +1878,11 @@
         "offline model",
         "open weights deployment",
         "run AI on my own servers"
+      ],
+      "tags": [
+        "Architecture",
+        "Privacy",
+        "Security"
       ],
       "version": "v1.0",
       "updated": "August 2026",
@@ -1714,6 +1923,10 @@
         "session memory",
         "long-term memory"
       ],
+      "tags": [
+        "Architecture",
+        "Privacy"
+      ],
       "version": "v1.0",
       "updated": "July 2026",
       "related": [
@@ -1743,6 +1956,11 @@
         "model documentation",
         "what does this model do",
         "transparency artifact"
+      ],
+      "tags": [
+        "Regulatory",
+        "Evaluation",
+        "Data Governance"
       ],
       "version": "v1.0",
       "updated": "August 2026",
@@ -1784,6 +2002,11 @@
         "performance degradation",
         "data drift"
       ],
+      "tags": [
+        "Model Behavior",
+        "Data Governance",
+        "Evaluation"
+      ],
       "version": "v1.0",
       "updated": "August 2026",
       "related": [
@@ -1816,6 +2039,10 @@
         "agent teams",
         "agent collaboration",
         "A2A"
+      ],
+      "tags": [
+        "Agents",
+        "Architecture"
       ],
       "version": "v1.0",
       "updated": "August 2026",
@@ -1851,6 +2078,10 @@
         "VLM",
         "AI that sees",
         "cross-modal"
+      ],
+      "tags": [
+        "Architecture",
+        "Security"
       ],
       "version": "v1.0",
       "updated": "August 2026",
@@ -1892,6 +2123,10 @@
         "instrumentation",
         "visibility"
       ],
+      "tags": [
+        "Architecture",
+        "Evaluation"
+      ],
       "version": "v1.0",
       "updated": "May 2026",
       "related": [
@@ -1924,6 +2159,10 @@
         "AI maturity",
         "production readiness",
         "can we actually run this"
+      ],
+      "tags": [
+        "Architecture",
+        "Data Governance"
       ],
       "version": "v1.0",
       "updated": "August 2026",
@@ -1960,6 +2199,10 @@
         "coordinating AI components",
         "agent orchestration",
         "chaining steps"
+      ],
+      "tags": [
+        "Agents",
+        "Architecture"
       ],
       "version": "v1.0",
       "updated": "August 2026",
@@ -2001,6 +2244,10 @@
         "stewardship",
         "assignment of ownership"
       ],
+      "tags": [
+        "Data Governance",
+        "Ethics"
+      ],
       "version": "v1.0",
       "updated": "June 2026",
       "related": [
@@ -2035,6 +2282,11 @@
         "access control for AI",
         "authorization",
         "guardrails on actions"
+      ],
+      "tags": [
+        "Security",
+        "Agents",
+        "Data Governance"
       ],
       "version": "v1.0",
       "updated": "August 2026",
@@ -2071,6 +2323,10 @@
         "living document",
         "cumulative knowledge"
       ],
+      "tags": [
+        "Architecture",
+        "Data Governance"
+      ],
       "version": "v1.2",
       "updated": "May 2026",
       "related": [
@@ -2099,6 +2355,10 @@
         "scope creep by AI",
         "self-preservation",
         "seeking capability"
+      ],
+      "tags": [
+        "Safety",
+        "Agents"
       ],
       "version": "v1.0",
       "updated": "August 2026",
@@ -2140,6 +2400,10 @@
         "PII",
         "privacy compliance"
       ],
+      "tags": [
+        "Privacy",
+        "Regulatory"
+      ],
       "version": "v1.0",
       "updated": "July 2026",
       "related": [
@@ -2171,6 +2435,9 @@
         "prompt patterns",
         "prompt craft"
       ],
+      "tags": [
+        "Prompting"
+      ],
       "version": "v1.1",
       "updated": "May 2026",
       "related": [
@@ -2199,6 +2466,10 @@
         "prompt hijacking",
         "injection attack",
         "malicious input"
+      ],
+      "tags": [
+        "Security",
+        "Prompting"
       ],
       "version": "v1.0",
       "updated": "July 2026",
@@ -2229,6 +2500,10 @@
         "responsible accountable consulted informed",
         "role assignment",
         "who owns what"
+      ],
+      "tags": [
+        "Ethics",
+        "Data Governance"
       ],
       "version": "v1.1",
       "updated": "August 2026",
@@ -2265,6 +2540,10 @@
         "extended reasoning",
         "inference-time scaling"
       ],
+      "tags": [
+        "Architecture",
+        "Model Behavior"
+      ],
       "version": "v1.0",
       "updated": "August 2026",
       "related": [
@@ -2296,6 +2575,11 @@
         "penetration testing AI",
         "stress testing",
         "safety testing"
+      ],
+      "tags": [
+        "Security",
+        "Evaluation",
+        "Safety"
       ],
       "version": "v1.0",
       "updated": "August 2026",
@@ -2331,6 +2615,10 @@
         "document Q&A",
         "grounded retrieval"
       ],
+      "tags": [
+        "Architecture",
+        "Data Governance"
+      ],
       "version": "v1.2",
       "updated": "June 2026",
       "related": [
@@ -2362,6 +2650,11 @@
         "gaming the metric",
         "optimizing the wrong thing",
         "reward misspecification"
+      ],
+      "tags": [
+        "Safety",
+        "Evaluation",
+        "Model Behavior"
       ],
       "version": "v1.0",
       "updated": "August 2026",
@@ -2400,6 +2693,10 @@
         "does this work at scale",
         "cost at scale",
         "capacity"
+      ],
+      "tags": [
+        "Architecture",
+        "Evaluation"
       ],
       "version": "v1.0",
       "updated": "August 2026",
@@ -2441,6 +2738,11 @@
         "unapproved AI tools",
         "rogue AI"
       ],
+      "tags": [
+        "Security",
+        "Data Governance",
+        "Regulatory"
+      ],
       "version": "v1.0",
       "updated": "August 2026",
       "related": [
@@ -2480,6 +2782,9 @@
         "efficient model",
         "smaller model"
       ],
+      "tags": [
+        "Architecture"
+      ],
       "version": "v1.0",
       "updated": "August 2026",
       "related": [
@@ -2512,6 +2817,10 @@
         "flattery",
         "caving under pushback",
         "people-pleasing"
+      ],
+      "tags": [
+        "Model Behavior",
+        "Ethics"
       ],
       "version": "v1.0",
       "updated": "August 2026",
@@ -2546,6 +2855,11 @@
         "voice cloning",
         "fake audio",
         "manipulated media"
+      ],
+      "tags": [
+        "Security",
+        "Ethics",
+        "Regulatory"
       ],
       "version": "v1.0",
       "updated": "August 2026",
@@ -2586,6 +2900,11 @@
         "system instructions",
         "hidden prompt"
       ],
+      "tags": [
+        "Prompting",
+        "Architecture",
+        "Security"
+      ],
       "version": "v1.0",
       "updated": "July 2026",
       "related": [
@@ -2615,6 +2934,10 @@
         "Article 51",
         "societal risk",
         "concentration risk"
+      ],
+      "tags": [
+        "Regulatory",
+        "Safety"
       ],
       "version": "v1.0",
       "updated": "August 2026",
@@ -2655,6 +2978,11 @@
         "actions",
         "MCP tools"
       ],
+      "tags": [
+        "Agents",
+        "Architecture",
+        "Security"
+      ],
       "version": "v1.0",
       "updated": "August 2026",
       "related": [
@@ -2689,6 +3017,11 @@
         "pretraining data",
         "the data behind the model",
         "where its knowledge comes from"
+      ],
+      "tags": [
+        "Data Governance",
+        "Ethics",
+        "AI Literacy"
       ],
       "version": "v1.0",
       "updated": "August 2026",
@@ -2729,6 +3062,10 @@
         "AI classification",
         "what counts as AI"
       ],
+      "tags": [
+        "Architecture",
+        "Regulatory"
+      ],
       "version": "v1.1",
       "updated": "July 2026",
       "related": [
@@ -2758,6 +3095,10 @@
         "should I trust this",
         "validating output",
         "double checking"
+      ],
+      "tags": [
+        "Evaluation",
+        "AI Literacy"
       ],
       "version": "v1.0",
       "updated": "August 2026",

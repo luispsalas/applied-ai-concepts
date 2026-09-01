@@ -2,6 +2,7 @@
 category: Observability & Governance
 short: Saying AI was used — a human practice, distinct from machine marking, and only one of them satisfies the law
 aliases: [declaring AI use, AI attribution, should I say I used AI, AI-assisted disclosure, transparency statement]
+tags: [Ethics, Regulatory, AI Literacy]
 -->
 # AI Disclosure (Attribution)
 

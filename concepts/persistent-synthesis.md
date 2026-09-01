@@ -2,6 +2,7 @@
 category: Knowledge & Memory
 short: Knowledge compounds when contradictions are resolved, not accumulated
 aliases: [knowledge compounding, integrating sources, compile don't re-derive, living document, cumulative knowledge]
+tags: [Architecture, Data Governance]
 -->
 # Persistent Synthesis
 

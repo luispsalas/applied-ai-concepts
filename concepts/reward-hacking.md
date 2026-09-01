@@ -2,6 +2,7 @@
 category: Reliability & Quality
 short: The system satisfies the metric and defeats the point — and more capable models do it more, not less
 aliases: [specification gaming, Goodhart's law, gaming the metric, optimizing the wrong thing, reward misspecification]
+tags: [Safety, Evaluation, Model Behavior]
 -->
 # Reward Hacking (Specification Gaming)
 

@@ -2,6 +2,7 @@
 category: Foundations
 short: Models run on your own infrastructure — the data stays in, and every duty the provider was carrying becomes yours
 aliases: [on-premises AI, self-hosted LLM, offline model, open weights deployment, run AI on my own servers]
+tags: [Architecture, Privacy, Security]
 -->
 # Local LLMs
 

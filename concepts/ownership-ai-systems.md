@@ -2,6 +2,7 @@
 category: Observability & Governance
 short: Explicit assignment of accountability for an AI system's outputs, data, and governance — defining who is responsible, not just who built it
 aliases: [who owns this system, system owner, accountable owner, stewardship, assignment of ownership]
+tags: [Data Governance, Ethics]
 -->
 # Ownership (AI Systems)
 

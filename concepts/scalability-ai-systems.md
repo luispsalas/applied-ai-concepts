@@ -2,6 +2,7 @@
 category: Organizational Readiness
 short: Volume scales, review capacity does not — and nothing alarms when a governed tool becomes an unreviewed pipeline
 aliases: [scaling AI, volume growth, does this work at scale, cost at scale, capacity]
+tags: [Architecture, Evaluation]
 -->
 # Scalability (AI Systems)
 

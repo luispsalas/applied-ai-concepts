@@ -2,6 +2,7 @@
 category: Reliability & Quality
 short: The structured practice of measuring whether an AI system does what it is supposed to do — before deployment and continuously in production
 aliases: [evals, benchmarking, how do we know it works, testing AI, measuring performance]
+tags: [Evaluation, Data Governance]
 -->
 # Evaluation (AI Systems)
 

@@ -16,6 +16,7 @@ Two more are derived for the generator's own checks:
 Three fields are AUTHORED, in an HTML comment at the top of the file, because
 they cannot be recovered from the prose:
     category   the README section the entry belongs to
+    tags       topical facet, orthogonal to category (a term has one category, several topics)
     short      the README table form (~110 chars), distinct from `essence`
     aliases    what someone would type who does not know the title
 
@@ -46,7 +47,7 @@ def parse_meta(block):
             continue
         k, v = line.split(":", 1)
         k, v = k.strip(), v.strip()
-        if k == "aliases":
+        if k in ("aliases", "tags"):
             v = v.strip("[]")
             out[k] = [a.strip() for a in v.split(",") if a.strip()]
         else:

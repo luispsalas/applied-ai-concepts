@@ -2,6 +2,7 @@
 category: Foundations
 short: Models that spend extra computation "thinking" through a problem step by step before answering — trading speed for higher accuracy on hard tasks
 aliases: [test-time compute, thinking models, chain of thought, extended reasoning, inference-time scaling]
+tags: [Architecture, Model Behavior]
 -->
 # Reasoning Models / Test-Time Compute
 

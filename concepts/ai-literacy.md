@@ -2,6 +2,7 @@
 category: Organizational Readiness
 short: The competencies required to engage with, use, and govern AI systems responsibly — at an individual, team, and organizational level
 aliases: [AI skills, AI education, AI competency, understanding AI, AI training for staff]
+tags: [AI Literacy]
 -->
 # AI Literacy
 

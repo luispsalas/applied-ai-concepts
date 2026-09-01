@@ -2,6 +2,7 @@
 category: Knowledge & Memory
 short: Anchoring model outputs to specific, verifiable sources — reducing hallucination by giving the model something real to reason from
 aliases: [source anchoring, citations, factual grounding, evidence-backed output, tie answers to sources]
+tags: [Data Governance, Evaluation]
 -->
 # Grounding
 

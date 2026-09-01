@@ -2,6 +2,7 @@
 category: Interaction & Design
 short: Reading fluent language as understanding, intent or care — the reflex underneath most other misconceptions about AI
 aliases: [ELIZA effect, treating AI like a person, does it understand me, attributing intent, humanizing AI]
+tags: [AI Literacy, Model Behavior]
 -->
 # Anthropomorphism (AI)
 

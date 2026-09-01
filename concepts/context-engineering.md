@@ -2,6 +2,7 @@
 category: Interaction & Design
 short: Designing what an AI model receives is as important as the model itself
 aliases: [context design, what to put in the prompt, context management, assembling context, beyond prompt engineering]
+tags: [Prompting, Architecture]
 -->
 # Context Engineering
 

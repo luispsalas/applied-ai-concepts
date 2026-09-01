@@ -2,6 +2,7 @@
 category: Observability & Governance
 short: The leading edge — a category defined by capabilities being discovered after training, not by size
 aliases: [frontier model, state of the art model, most capable models, cutting edge AI, leading models]
+tags: [Regulatory, Safety]
 -->
 # Frontier AI (Frontier Model)
 

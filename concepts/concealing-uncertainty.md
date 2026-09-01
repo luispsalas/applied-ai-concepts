@@ -2,6 +2,7 @@
 category: Reliability & Quality
 short: A tentative answer presented as settled — the caveats a calibrated response would surface, trained away
 aliases: [hidden uncertainty, no hedging, it didn't say it was unsure, suppressed caveats, false certainty]
+tags: [Model Behavior, Evaluation]
 -->
 # Concealing Uncertainty
 

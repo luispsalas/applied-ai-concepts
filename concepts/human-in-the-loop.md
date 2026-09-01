@@ -2,6 +2,7 @@
 category: Human Oversight
 short: A design pattern that keeps humans as decision authorities at critical points
 aliases: [HITL, human review, human oversight, approval step, human in the loop]
+tags: [Ethics, Agents]
 -->
 # Human-in-the-Loop (HITL)
 

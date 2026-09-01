@@ -2,6 +2,7 @@
 category: Interaction & Design
 short: Structuring inputs to consistently elicit useful, accurate, and safe model outputs
 aliases: [prompting, prompt design, how to write prompts, prompt patterns, prompt craft]
+tags: [Prompting]
 -->
 # Prompt Engineering
 

@@ -2,6 +2,7 @@
 category: System Architecture
 short: How an AI model acts on the world rather than just describing it — calling external functions, APIs, and data sources
 aliases: [function calling, tool calling, API calls from AI, actions, MCP tools]
+tags: [Agents, Architecture, Security]
 -->
 # Tool Use
 

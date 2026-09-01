@@ -2,6 +2,7 @@
 category: Observability & Governance
 short: Meeting defined AI obligations — and being answerable for whether they were actually met, not just documented
 aliases: [regulatory compliance, EU AI Act obligations, meeting requirements, conformity, legal obligations]
+tags: [Regulatory, Data Governance]
 -->
 # Compliance (AI Systems)
 

@@ -2,6 +2,7 @@
 category: Foundations
 short: Every model was trained up to a fixed date and knows nothing after it — and cannot reliably tell you when a question falls outside what it knows
 aliases: [training cutoff, why doesn't it know about recent events, out of date model, cutoff date, stale knowledge]
+tags: [Model Behavior, AI Literacy]
 -->
 # Knowledge Cutoff
 

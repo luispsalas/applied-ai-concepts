@@ -2,6 +2,7 @@
 category: Foundations
 short: Describing, in terms a human can understand, why an AI system produced a specific output — a prerequisite for accountability
 aliases: [XAI, interpretability, why did it decide that, explainable AI, right to explanation]
+tags: [Ethics, Regulatory, Evaluation]
 -->
 # Explainability (XAI)
 

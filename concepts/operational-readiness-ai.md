@@ -2,6 +2,7 @@
 category: Organizational Readiness
 short: Whether the organization can actually run an AI system — data, infrastructure, skills, process, governance — not whether the model works
 aliases: [are we ready, deployment readiness, AI maturity, production readiness, can we actually run this]
+tags: [Architecture, Data Governance]
 -->
 # Operational Readiness (AI)
 

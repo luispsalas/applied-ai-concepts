@@ -29,6 +29,13 @@
   .cat{font:.78rem var(--sans);padding:.2rem .55rem;border:1px solid var(--line);
        border-radius:99px;background:var(--chip);color:var(--muted);cursor:pointer}
   .cat[aria-pressed=true]{background:var(--accent);border-color:var(--accent);color:#fff}
+  .lbl{font:.7rem var(--mono);color:var(--muted);text-transform:uppercase;letter-spacing:.06em;
+       align-self:center;margin-right:.15rem;min-width:3.6rem}
+  .cat.tag{border-style:dashed}
+  .tags{margin:.3rem 0 0;display:flex;flex-wrap:wrap;gap:.3rem}
+  .tg{font:.72rem var(--mono);color:var(--muted);background:var(--chip);
+      border:1px solid var(--line);border-radius:3px;padding:.02rem .35rem}
+  .tg.on{color:var(--accent);border-color:var(--accent)}
   ol{list-style:none;padding:0;margin:1rem 0 0}
   li{padding:.85rem 0;border-top:1px solid var(--line)}
   li[aria-selected=true]{background:var(--chip);box-shadow:-.75rem 0 0 var(--chip),.75rem 0 0 var(--chip)}
@@ -55,6 +62,7 @@
          placeholder="Search terms, synonyms, or describe the problem…"
          aria-label="Search concepts">
   <div class="meta"><span id="n"></span><span><kbd>↑</kbd><kbd>↓</kbd> move · <kbd>↵</kbd> open</span></div>
+  <div class="cats" id="tags"></div>
   <div class="cats" id="cats"></div>
   <ol id="out"></ol>
 </div>
@@ -93,10 +101,12 @@ for (const e of DATA.entries){
   e._words = {
     term: new Set(toks(e.term)),
     alias: new Set(e._alias.flatMap(a => toks(a))),
+    tag: new Set((e.tags||[]).flatMap(t => toks(t))),
+    tag1: new Set(toks((e.tags||[])[0] || "")),   // first tag = primary topic, authored that way
     text: new Set([...toks(e.short||""), ...toks(e.essence||"")]),
     cat: new Set(toks(e.category||""))
   };
-  e._all = new Set([...e._words.term, ...e._words.alias, ...e._words.text]);
+  e._all = new Set([...e._words.term, ...e._words.alias, ...e._words.tag, ...e._words.text]);
 }
 
 // Inverse document frequency. Without this, "ai" — a token in nearly every term in
@@ -125,7 +135,13 @@ function score(e, raw, tk){
     let h = 0;
     if (anyHit(e._words.term, t))  h = 60;
     else if (anyHit(e._words.alias, t)) h = 40;
-    else if (anyHit(e._words.text, t))  h = 12;
+    // Tags are ordered by primacy when authored, so a hit on the FIRST tag means the
+    // entry is *about* that topic rather than merely touching it. Without this every
+    // tag match ties and results fall back to alphabetical — "security" led with
+    // Agency and Audit Trail instead of Prompt Injection and Jailbreak.
+    else if (anyHit(e._words.tag1, t))  h = 32;
+    else if (anyHit(e._words.tag, t))   h = 20;   // topical signal, not a name — must not
+    else if (anyHit(e._words.text, t))  h = 12;   // outrank an entry actually titled this
     else if (anyHit(e._words.cat, t))   h = 5;
     if (h){ s += h * w; hits++; whit += w; }
   }
@@ -136,6 +152,10 @@ function score(e, raw, tk){
   if (!why && tk.length){
     const m = (e.aliases||[]).find(a => tk.some(t => anyHit(new Set(toks(a)), t)));
     if (m) why = m;
+    else {
+      const g = (e.tags||[]).find(t2 => tk.some(t => anyHit(new Set(toks(t2)), t)));
+      if (g) why = `tag: ${g}`;
+    }
   }
   return {s, why};
 }
@@ -151,12 +171,22 @@ function hl(text, tk){
   return out;
 }
 
-let filter = null, sel = -1, rows = [];
+let filter = null, tagf = null, sel = -1, rows = [];
 const $q = document.getElementById("q"), $out = document.getElementById("out"),
       $n = document.getElementById("n"), $cats = document.getElementById("cats");
 
+const TAGV = __TAGS__;
+$tags.innerHTML = `<span class="lbl">topic</span>` + TAGV.map(t =>
+  `<button class="cat tag" aria-pressed="false" data-t="${esc(t)}">${esc(t)}</button>`).join("");
+$tags.onclick = ev => {
+  const b = ev.target.closest(".cat"); if (!b) return;
+  tagf = tagf === b.dataset.t ? null : b.dataset.t;
+  [...$tags.querySelectorAll(".cat")].forEach(x => x.setAttribute("aria-pressed", x.dataset.t === tagf));
+  run();
+};
+
 const CATS = [...new Set(DATA.entries.map(e => e.category))].sort();
-$cats.innerHTML = CATS.map(c =>
+$cats.innerHTML = `<span class="lbl">section</span>` + CATS.map(c =>
   `<button class="cat" aria-pressed="false" data-c="${esc(c)}">${esc(c)}</button>`).join("");
 $cats.onclick = ev => {
   const b = ev.target.closest(".cat"); if (!b) return;
@@ -180,16 +210,18 @@ function run(){
     list.sort((a,b) => b.s - a.s || a.e.term.localeCompare(b.e.term));
   }
   if (filter) list = list.filter(x => x.e.category === filter);
+  if (tagf)   list = list.filter(x => (x.e.tags||[]).includes(tagf));
   rows = list; sel = -1;
 
   $n.textContent = !raw
-    ? `${list.length} concept${list.length===1?"":"s"}${filter?` in ${filter}`:""} · A–Z`
+    ? `${list.length} concept${list.length===1?"":"s"}${tagf?` tagged ${tagf}`:""}${filter?` in ${filter}`:""} · A–Z`
     : `${list.length} match${list.length===1?"":"es"}`;
 
   $out.innerHTML = list.length ? list.map(({e, why}, i) => `
     <li aria-selected="false" data-i="${i}">
       <div class="t"><a href="${BLOB + esc(e.path)}">${raw?hl(e.term,tk):esc(e.term)}</a>
         <span class="badge">${esc(e.category)} · ${esc(e.version)}</span></div>
+      <p class="tags">${(e.tags||[]).map(t=>`<span class="tg${t===tagf?" on":""}">${esc(t)}</span>`).join("")}</p>
       <p class="e">${raw?hl(e.essence,tk):esc(e.essence)}</p>
       ${why ? `<p class="why">matched on <b>${esc(why)}</b></p>` : ""}
     </li>`).join("")
@@ -211,7 +243,9 @@ document.addEventListener("keydown", ev => {
   else if (ev.key === "ArrowUp"){ ev.preventDefault(); move(-1); }
   else if (ev.key === "Enter" && sel > -1){ $out.querySelectorAll("li")[sel].querySelector("a").click(); }
   else if (ev.key === "/" && document.activeElement !== $q){ ev.preventDefault(); $q.focus(); }
-  else if (ev.key === "Escape"){ $q.value = ""; run(); $q.focus(); }
+  else if (ev.key === "Escape"){ $q.value = ""; filter = tagf = null;
+    [...document.querySelectorAll(".cat")].forEach(x => x.setAttribute("aria-pressed","false"));
+    run(); $q.focus(); }
 });
 run();
 </script>

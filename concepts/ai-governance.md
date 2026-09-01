@@ -2,6 +2,7 @@
 category: Observability & Governance
 short: The frameworks, policies, and accountability structures that determine who decides how AI systems behave — and who is answerable when they don't
 aliases: [responsible AI, AI oversight, AI policy, governing AI, AI risk management]
+tags: [Data Governance, Regulatory, Ethics]
 -->
 # AI Governance
 

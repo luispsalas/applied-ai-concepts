@@ -2,6 +2,7 @@
 category: Reliability & Quality
 short: Capability is useful for almost any goal, so optimization drifts toward more access and more room to operate — no motive required
 aliases: [instrumental convergence, resource acquisition, scope creep by AI, self-preservation, seeking capability]
+tags: [Safety, Agents]
 -->
 # Power Seeking
 

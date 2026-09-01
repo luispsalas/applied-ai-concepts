@@ -2,6 +2,7 @@
 category: Foundations
 short: AI models generate plausible-sounding content that is factually incorrect — confidently and without warning
 aliases: [confabulation, making things up, fabricated facts, invented citations, false output]
+tags: [Model Behavior, Evaluation]
 -->
 # Hallucination
 

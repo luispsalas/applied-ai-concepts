@@ -2,6 +2,7 @@
 category: Human Oversight
 short: Who does the work, who answers for it, who is consulted, who is informed — the system can be Responsible, only a person can be Accountable
 aliases: [responsibility matrix, RACI matrix, responsible accountable consulted informed, role assignment, who owns what]
+tags: [Ethics, Data Governance]
 -->
 # RACI
 

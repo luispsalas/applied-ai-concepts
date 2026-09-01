@@ -29,6 +29,13 @@ SEARCH = ROOT / "search.html"
 TEMPLATE = ROOT / "scripts" / "search-template.html"
 CONCEPTS = ROOT / "concepts"
 
+# Closed vocabulary. Pruned 26 -> 12 on Aug 31 2026; "LLM" was dropped outright
+# (25 of 81 entries — a tag that matches a third of the corpus discriminates nothing,
+# the same reason "ai" is a stopword in the search ranking). Adding a tag is a
+# deliberate act: extend this list, then re-tag, rather than inventing one in a file.
+VOCAB = ["AI Literacy", "Agents", "Architecture", "Data Governance", "Ethics", "Evaluation",
+         "Model Behavior", "Privacy", "Prompting", "Regulatory", "Safety", "Security"]
+
 ROW_RE = re.compile(r"^\|\s*\[([^\]]+)\]\(concepts/([a-z0-9-]+)\.md\)\s*\|\s*(.*?)\s*\|\s*✅\s*(v[\d.]+)\s*\|\s*$")
 SECTION_RE = re.compile(r"^### (.+)$")
 COUNT_RE = re.compile(r"(\*\*Phase 2 \(current\)[^*]*\*\*\s*)(\d+)( concepts)")
@@ -66,9 +73,12 @@ def check(entries):
             problems.append(f"derivation: {e['slug']} missing {', '.join(miss)}")
         if not e.get("authored"):
             problems.append(f"schema: {e['slug']} has no <!--meta block")
-        for k in ("category", "short", "aliases"):
+        for k in ("category", "short", "aliases", "tags"):
             if not e.get(k):
                 problems.append(f"schema: {e['slug']} missing authored field '{k}'")
+        for t in e.get("tags") or []:
+            if t not in VOCAB:
+                problems.append(f"tag: {e['slug']} '{t}' is not in the closed vocabulary")
 
     # 2. README round-trip (term, category, short, version)
     for slug, (term, short, ver, _) in rrows.items():
@@ -241,7 +251,7 @@ def write(entries):
     # search index
     payload = {"schema": 1, "count": len(entries),
                "entries": [{k: e[k] for k in ("slug", "term", "category", "essence", "short",
-                                              "aliases", "version", "updated", "related",
+                                              "aliases", "tags", "version", "updated", "related",
                                               "sources", "path")} for e in
                            sorted(entries, key=lambda e: e["term"].lower())]}
     new_idx = json.dumps(payload, indent=2, ensure_ascii=False) + "\n"
@@ -263,7 +273,8 @@ def write(entries):
                 .replace("__BLOB__", blob)
                 .replace("__INDEX__", json.dumps(payload, ensure_ascii=False, separators=(",", ":")))
                 .replace("__COUNT__", str(len(entries)))
-                .replace("__ALIASES__", str(sum(len(e["aliases"]) for e in entries))))
+                .replace("__ALIASES__", str(sum(len(e["aliases"]) for e in entries)))
+                .replace("__TAGS__", json.dumps(sorted(VOCAB))))
         if not SEARCH.exists() or SEARCH.read_text() != page:
             SEARCH.write_text(page)
             changed.append(f"search.html ({len(page)//1024} KB, self-contained)")
@@ -290,6 +301,13 @@ def report(entries):
     rev_review = inline_anchor_review(entries)
     print(f"\n== Inline anchors to eyeball ({len(rev_review)}) — paraphrase is fine, a wrong target is not ==")
     print("\n".join(rev_review) if rev_review else "  none")
+
+    tc = Counter(t for e in entries for t in (e.get("tags") or []))
+    print(f"\n== Tag distribution ({len(tc)} tags, {sum(tc.values())} assignments, "
+          f"{sum(tc.values())/max(1,len(entries)):.1f}/entry) ==")
+    for t, n in tc.most_common():
+        flag = "  <- matches a third of the corpus; discriminates little" if n > len(entries) * 0.33 else ""
+        print(f"{n:4d}  {t}{flag}")
 
     # gap report: unpublished candidate terms ranked by unlinked plain-text mentions
     tracker = ROOT / "scripts" / "tracker-terms.txt"

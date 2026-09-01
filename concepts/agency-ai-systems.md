@@ -2,6 +2,7 @@
 category: Human Oversight
 short: How much a system may do without asking — granted by an organization, not possessed by the model
 aliases: [autonomy, how much can it do on its own, scope of action, levels of autonomy, autonomous action]
+tags: [Agents, Regulatory, Security]
 -->
 # Agency (AI Systems)
 
