@@ -89,7 +89,7 @@ None of this makes the models unusable. It means that when a model is unreliable
 - [Privacy (AI Systems)](privacy-ai-systems.md) — personal data absorbed rather than stored
 - [Local LLMs](local-llms.md) — open weights do not imply open or licensed training data
 - Synthetic Data — increasingly part of the corpus, with its own quality and feedback questions
-- Copyright & AI Output — the licensing question the corpus raises and does not answer
+- [Copyright & AI Output](copyright-ai-output.md) — the licensing question the corpus raises and does not answer
 - Pre-training — the stage at which the corpus does its work
 
 ---

@@ -1,5 +1,36 @@
 # Changelog
 
+## v1.16 — August 2026
+
+**6 concepts published — the authenticity and attribution cluster, plus two governance gaps.**
+
+- `copyright-ai-output` — v1.0 (two questions, one with a US answer and one genuinely open)
+- `ai-disclosure-attribution` — v1.0 (a human practice, distinct from machine marking)
+- `synthetic-media-deepfakes` — v1.0 (generation scales, verification does not)
+- `fundamental-rights-impact-assessment` — v1.0 (a deployer duty binding far fewer organizations than commonly claimed)
+- `bluewashing` — v1.0 (the test is whether anything can constrain a decision)
+- `multimodal-ai` — v1.0 (every text risk carried across, with weaker tooling to detect it)
+
+**The inbound-demand tiebreak was weak this round, and that is worth recording.** Last release it separated the field cleanly. Here it returned 2, 2, then seven candidates tied at 1 — so the top two were selected by it and the rest by cluster coherence and the dual curation lens. **A tiebreak that works once is not a rule**; when it goes flat, say so and fall back rather than pretending the signal decided.
+
+**Copyright's value is in refusing to give one answer.** Two questions get merged — is the output protectable, and was training lawful — with different parties at risk. On the first, the US Copyright Office is quotable and precise: *"prompts alone do not provide sufficient human control to make users of an AI system the authors of the output."* On the second, nothing is settled anywhere. The entry states the asymmetry rather than smoothing it, **makes no forecast about how training litigation resolves**, and flags that the Office's conclusion is explicitly technology-dependent.
+
+**AI Disclosure separates two things that are routinely conflated**, in both directions: a voluntary human disclosure does not discharge the Art. 50(2) machine-marking duty, and a technical watermark does not tell a reader what was actually done. The ICMJE position supplies the principle worth borrowing well beyond publishing — **an AI cannot be an author because it cannot be answerable for the work**, which settles the crediting question by reasoning rather than etiquette.
+
+**Synthetic Media puts its practical weight where the harm is.** The documented damage concentrates in non-consensual intimate imagery and in fraud, not primarily in political deception — so the highest-value control is procedural: **remove voice and video from the trust path and require out-of-band confirmation.** That belongs to fraud prevention, not the AI team. The entry also carries a finding that should change how detection tooling is deployed: in a 15,016-participant study, *"inaccurate model predictions often decrease participants' accuracy."* A wrong detector makes a reviewer worse. And it names the *liar's dividend* — a harm requiring no successful fake at all, which detection cannot address.
+
+**FRIA is written primarily to correct an over-broad reading.** Art. 27 binds deployers that are public bodies or private entities providing public services, plus specific Annex III categories — **not every high-risk deployer**, which is how practitioner writing routinely states it. Also that a DPIA does not discharge it, and that complaint mechanisms are an enumerated element rather than a nicety.
+
+**Bluewashing adopts the peer-reviewed framing rather than a hypocrisy charge**, which makes it more useful and fairer. The diagnostic: *the tell is not that a company published principles — it is whether anything can constrain a decision.* Four tells, and an explicit defense for honest immaturity, because the accusation is serious and often wrong. It also names the symmetrical failure — dismissing ethics wholesale — which lands in the same place.
+
+**Multimodal AI earns a governance entry rather than a technical one:** adding a modality does not add one risk, it multiplies the existing set across a surface with weaker instrumentation. Image-borne prompt injection is the most commonly missed, since most filtering stops at text.
+
+**Source registry:** 6 sources added (SRC-208–213). The Copyright Office conclusion was verified by full-text search of the report PDF rather than from a summary, and two citations were confirmed through Crossref — one DOI written from recall had resolved to an unrelated call for papers.
+
+**Cross-reference sweep:** six references converted. One mislink caught before shipping.
+
+---
+
 ## v1.15 — August 2026
 
 **6 concepts published — the score-4 terms that other entries were already reaching for.**

@@ -98,8 +98,8 @@ Two things are worth understanding about what they can actually tell you. A vali
 - [Anthropomorphism (AI)](anthropomorphism-ai.md) — Art. 50(1)'s duty to say a user is interacting with an AI addresses the same reflex
 - [AI Literacy](ai-literacy.md) — reading a negative detection correctly is a literacy skill, not a technical one
 - [Human-in-the-Loop (HITL)](human-in-the-loop.md) — the editorial review the public-interest text exemption depends on
-- Synthetic Media (Deepfakes) — the harm this infrastructure is built against
-- AI Disclosure (Attribution) — the human practice that complements machine marking without substituting for it
+- [Synthetic Media (Deepfakes)](synthetic-media-deepfakes.md) — the harm this infrastructure is built against
+- [AI Disclosure (Attribution)](ai-disclosure-attribution.md) — the human practice that complements machine marking without substituting for it
 
 ---
 

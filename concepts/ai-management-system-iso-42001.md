@@ -80,7 +80,7 @@ Most organizations say they use AI responsibly. ISO 42001 is the standard that l
 - [Audit Trail (AI)](audit-trail-ai.md) — documented information is what makes the system auditable at all
 - [AI Incident (Reporting)](ai-incident-reporting.md) — incident handling sits inside the operation and improvement clauses
 - [Types of AI Systems](types-of-ai-systems.md) — the AI inventory the standard requires depends on being able to classify what you have
-- Bluewashing — certification is both a defense against unfounded responsibility claims and, if pursued for the badge, a way to make one
+- [Bluewashing](bluewashing.md) — certification is both a defense against unfounded responsibility claims and, if pursued for the badge, a way to make one
 - [RACI](raci.md) — the role-assignment mechanics behind the standard's responsibility requirements
 
 ---

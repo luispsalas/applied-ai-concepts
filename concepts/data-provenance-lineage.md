@@ -97,7 +97,7 @@ The uncomfortable part is that provenance degrades by default. Data gets copied,
 - [Data Leakage (AI Systems)](data-leakage-ai-systems.md) — why absorbed data is not recoverable, and can resurface
 - [Model/Data Drift](model-data-drift.md) — lineage is what tells you which systems a changed source affects
 - [Model Card / System Card](model-card-system-card.md) — the model-level counterpart of a datasheet
-- Copyright & AI Output — the licensing question provenance exists to answer
+- [Copyright & AI Output](copyright-ai-output.md) — the licensing question provenance exists to answer
 
 ---
 

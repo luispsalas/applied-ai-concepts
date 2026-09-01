@@ -8,6 +8,7 @@ Quick-reference index of all concepts. Follow links for full entries.
 |---|---|
 | [Agency (AI Systems)](../concepts/agency-ai-systems.md) | The scope of autonomous action an AI system is permitted to take — and the governance question of where human authorization is required before the system acts |
 | [AI Agent](../concepts/ai-agent.md) | A language model that doesn't just respond — it plans, acts, and iterates across multiple steps to complete a task |
+| [AI Disclosure (Attribution)](../concepts/ai-disclosure-attribution.md) | When and how to say AI was used in producing something — an emerging expectation with real reputational and, increasingly, regulatory weight |
 | [AI Incident (Reporting)](../concepts/ai-incident-reporting.md) | A documented event where an AI system caused or nearly caused harm — now with legal deadlines to report it, not just fix it quietly |
 | [AI Management System (ISO 42001)](../concepts/ai-management-system-iso-42001.md) | The certifiable standard for governing AI across its lifecycle — it certifies the process, not the product |
 | [AI Use Case](../concepts/ai-use-case.md) | A defined, bounded application of AI to a specific problem — the unit of design, risk assessment, and governance accountability |
@@ -20,6 +21,7 @@ Quick-reference index of all concepts. Follow links for full entries.
 | [Automation Bias](../concepts/automation-bias.md) | People stop checking a system that is usually right — which is how a rare wrong answer becomes a bad decision |
 | [Bias (AI Systems)](../concepts/bias-ai-systems.md) | Systematic errors that unfairly advantage or disadvantage certain groups — often inherited from training data, rarely visible in any single output |
 | [Black Box](../concepts/black-box.md) | An AI system whose internal reasoning process cannot be observed or interpreted — even when its outputs can |
+| [Bluewashing](../concepts/bluewashing.md) | When a company says its AI is responsible or ethical — but it's mainly for show, without real processes behind it |
 | [Compliance (AI Systems)](../concepts/compliance-ai-systems.md) | Meeting defined obligations for how AI systems are built, deployed, and operated — and being answerable for whether those obligations were actually met, not just documented |
 | [Concealing Uncertainty](../concepts/concealing-uncertainty.md) | A tentative answer presented as settled — the caveats a calibrated response would surface, trained away |
 | [Confidence vs Accuracy](../concepts/confidence-vs-accuracy.md) | How sure a model sounds is not evidence of how right it is — tone is generated independently of correctness |
@@ -27,6 +29,7 @@ Quick-reference index of all concepts. Follow links for full entries.
 | [Context (AI Systems)](../concepts/context-ai-systems.md) | Everything an AI model receives before generating a response — the information, instructions, and framing that shape every output it produces |
 | [Context Engineering](../concepts/context-engineering.md) | Designing what an AI model receives is as important as the model itself |
 | [Context Window](../concepts/context-window.md) | The maximum amount of text an AI model can consider at once — a hard limit on what it can reason about when generating any given response |
+| [Copyright & AI Output](../concepts/copyright-ai-output.md) | Who owns what a model produces, whether it can reproduce protected work, and why the answer is genuinely unsettled rather than merely unclear |
 | [Curse of Knowledge (AI Context)](../concepts/curse-of-knowledge-ai-context.md) | The tendency to assume shared context that doesn't exist — the primary cause of poor AI outputs when users fail to surface what they already know |
 | [Data Leakage (AI Systems)](../concepts/data-leakage-ai-systems.md) | When sensitive information from training data or context surfaces in model outputs — exposing what was never meant to be accessible |
 | [Data Minimization](../concepts/data-minimization.md) | Collecting and keeping only the data a system actually needs — less data, less risk, lower cost |
@@ -39,6 +42,7 @@ Quick-reference index of all concepts. Follow links for full entries.
 | [Explainability (XAI)](../concepts/explainability-xai.md) | Describing, in terms a human can understand, why an AI system produced a specific output — a prerequisite for accountability |
 | [Failure Modes (AI Systems)](../concepts/failure-modes-ai-systems.md) | The specific ways an AI system can go wrong — each requiring a different detection-and-response control |
 | [Frontier AI (Frontier Model)](../concepts/frontier-ai.md) | The most capable AI models at any given time — the class regulators and AI labs single out for extra safety scrutiny because their capabilities are advancing faster than tools to evaluate them |
+| [Fundamental Rights Impact Assessment (FRIA)](../concepts/fundamental-rights-impact-assessment.md) | A required pre-deployment analysis of how a high-risk AI system could affect people's fundamental rights — before it goes live, not after |
 | [Grounding](../concepts/grounding.md) | Anchoring model outputs to specific, verifiable sources — reducing hallucination by giving the model something real to reason from |
 | [Guardrails (AI Systems)](../concepts/guardrails-ai-systems.md) | Technical and policy constraints that prevent an AI system from producing outputs or taking actions outside defined boundaries |
 | [Hallucination](../concepts/hallucination.md) | AI models generate plausible-sounding content that is factually incorrect — confidently and without warning |
@@ -56,6 +60,7 @@ Quick-reference index of all concepts. Follow links for full entries.
 | [Model Card / System Card](../concepts/model-card-system-card.md) | A standardized document describing a model's capabilities, limitations, training data, and evaluation results — the transparency artifact regulators and users increasingly expect |
 | [Model/Data Drift](../concepts/model-data-drift.md) | The quiet decay of a deployed system as the world moves away from its training data — nothing breaks, accuracy just slides |
 | [Multi-Agent Systems](../concepts/multi-agent-systems.md) | Multiple AI agents with different roles working together on a task — coordination and division of labor instead of one model doing everything |
+| [Multimodal AI](../concepts/multimodal-ai.md) | AI systems that process and generate across multiple types of input and output — text, images, audio, video — rather than being limited to one modality |
 | [Observability](../concepts/observability.md) | The ability to understand what an AI system is doing — and reconstruct why — by examining what goes in, what comes out, and every action in between |
 | [Operational Readiness (AI)](../concepts/operational-readiness-ai.md) | Whether the organization can actually run an AI system — data, infrastructure, skills, process, governance |
 | [Orchestration (AI Systems)](../concepts/orchestration-ai-systems.md) | Coordinating multiple AI components — models, tools, memory, agents — to complete a complex task as a unified, governable system |
@@ -75,6 +80,7 @@ Quick-reference index of all concepts. Follow links for full entries.
 | [Shadow AI](../concepts/shadow-ai.md) | AI tools used inside an organization without official sanction, review, or governance — invisible to the very processes meant to manage AI risk |
 | [Small Language Models (SLMs)](../concepts/small-language-models.md) | Language models small enough to run cheaply, locally, or at the edge — often the better fit for narrow, repetitive tasks |
 | [Sycophancy (LLMs)](../concepts/sycophancy-llms.md) | Models agreeing with users rather than being accurate — a behavior the training signal rewards, not an incidental bug |
+| [Synthetic Media (Deepfakes)](../concepts/synthetic-media-deepfakes.md) | Convincing fabricated audio, image and video — and the practical problem that verifying what is real is now harder than producing what is not |
 | [System Prompt](../concepts/system-prompt.md) | The behind-the-scenes instructions that set how an AI behaves before you start talking to it — a soft control that steers, not a hard boundary |
 | [Systemic Risk (AI)](../concepts/systemic-risk-ai.md) | Risk from an AI model's capabilities being significant enough to cause large-scale harm across society — a defined regulatory threshold that triggers extra obligations |
 | [Tool Use](../concepts/tool-use.md) | How an AI model acts on the world rather than just describing it — calling external functions, APIs, and data sources |

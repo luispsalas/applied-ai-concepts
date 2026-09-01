@@ -90,7 +90,7 @@ There is also a distinction worth holding onto. A model card describes the model
 - [Model/Data Drift](model-data-drift.md) — why a card needs a re-issue trigger
 - [Accountability (AI Systems)](accountability-ai-systems.md) — a card names what was claimed, and by whom
 - [Frontier AI (Frontier Model)](frontier-ai.md) — where system cards are most developed in practice, and most scrutinized
-- AI Disclosure (Attribution) — the adjacent question of disclosing AI use in output rather than model properties
+- [AI Disclosure (Attribution)](ai-disclosure-attribution.md) — the adjacent question of disclosing AI use in output rather than model properties
 
 ---
 
