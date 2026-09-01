@@ -49,7 +49,7 @@
   <h1>Applied AI Concepts</h1>
   <p class="sub">__COUNT__ concepts · __ALIASES__ search aliases · concept lookup, not full-text search — try
      <em>“who is responsible when the AI does it”</em>.
-     <a href="search-index.json">index as JSON</a> · <a href="README.md">README</a></p>
+     <a href="search-index.json">index as JSON</a> · <a href="__BLOB__README.md">README</a></p>
 
   <input id="q" type="search" autofocus autocomplete="off" spellcheck="false"
          placeholder="Search terms, synonyms, or describe the problem…"
@@ -61,6 +61,10 @@
 
 <script>
 const DATA = __INDEX__;
+// Results link to the canonical rendered view. Relative .md links break in both
+// deployment contexts: Jekyll rewrites them to .html on Pages, and a browser opening
+// file:// shows raw markdown. The blob URL renders correctly from either.
+const BLOB = "__BLOB__";
 
 const STOP = new Set(("a an the and or of for to in on is are was were be been it its this that "+
   "with when what who whom whose how why do does did can could should would i you my our we "+
@@ -184,7 +188,7 @@ function run(){
 
   $out.innerHTML = list.length ? list.map(({e, why}, i) => `
     <li aria-selected="false" data-i="${i}">
-      <div class="t"><a href="${esc(e.path)}">${raw?hl(e.term,tk):esc(e.term)}</a>
+      <div class="t"><a href="${BLOB + esc(e.path)}">${raw?hl(e.term,tk):esc(e.term)}</a>
         <span class="badge">${esc(e.category)} · ${esc(e.version)}</span></div>
       <p class="e">${raw?hl(e.essence,tk):esc(e.essence)}</p>
       ${why ? `<p class="why">matched on <b>${esc(why)}</b></p>` : ""}

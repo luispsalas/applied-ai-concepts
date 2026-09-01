@@ -255,7 +255,12 @@ def write(entries):
     # fetch() is blocked by CORS. Inlining costs a duplicate copy of generated data,
     # which cannot drift because this function writes both.
     if TEMPLATE.exists():
+        remote = subprocess.run(["git", "remote", "get-url", "origin"], cwd=ROOT,
+                                capture_output=True, text=True).stdout.strip()
+        m = re.search(r"github\.com[:/]([^/]+/[^/.]+)", remote)
+        blob = f"https://github.com/{m.group(1)}/blob/main/" if m else ""
         page = (TEMPLATE.read_text()
+                .replace("__BLOB__", blob)
                 .replace("__INDEX__", json.dumps(payload, ensure_ascii=False, separators=(",", ":")))
                 .replace("__COUNT__", str(len(entries)))
                 .replace("__ALIASES__", str(sum(len(e["aliases"]) for e in entries))))
