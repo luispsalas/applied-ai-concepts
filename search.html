@@ -173,7 +173,8 @@ function hl(text, tk){
 
 let filter = null, tagf = null, sel = -1, rows = [];
 const $q = document.getElementById("q"), $out = document.getElementById("out"),
-      $n = document.getElementById("n"), $cats = document.getElementById("cats");
+      $n = document.getElementById("n"), $cats = document.getElementById("cats"),
+      $tags = document.getElementById("tags");
 
 const TAGV = ["AI Literacy", "Agents", "Architecture", "Data Governance", "Ethics", "Evaluation", "Model Behavior", "Privacy", "Prompting", "Regulatory", "Safety", "Security"];
 $tags.innerHTML = `<span class="lbl">topic</span>` + TAGV.map(t =>

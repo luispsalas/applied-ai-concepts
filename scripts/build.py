@@ -118,7 +118,37 @@ def check(entries):
 
     # 6. alias rules
     problems += alias_problems(entries)
+
+    # 7. generated page sanity
+    problems += page_problems()
     return problems
+
+
+def page_problems():
+    """Catch the failure that shipped a broken search page: an identifier used but
+    never declared.
+
+    A silent no-op string replace left `$tags` referenced and undeclared, which threw
+    a ReferenceError partway down the script — killing the filter chips AND the
+    addEventListener below it, so typing did nothing. Nothing caught it: the file was
+    valid HTML, every link resolved, and the JSON was correct. This check is six lines
+    and would have failed the publish.
+    """
+    out = []
+    if not SEARCH.exists():
+        return out
+    src = SEARCH.read_text()
+    body = src.split("<script>")[-1]
+    used = set(re.findall(r"\$[A-Za-z_][A-Za-z0-9_]*", body))
+    declared = set(re.findall(r"(?:const|let|var)\s+(\$[A-Za-z_][A-Za-z0-9_]*)", body))
+    declared |= set(re.findall(r",\s*(\$[A-Za-z_][A-Za-z0-9_]*)\s*=", body))
+    for name in sorted(used - declared):
+        out.append(f"search.html: `{name}` is used but never declared "
+                   f"(ReferenceError would kill everything after it)")
+    for el in sorted(set(re.findall(r'getElementById\("([^"]+)"\)', body))):
+        if f'id="{el}"' not in src:
+            out.append(f"search.html: getElementById(\"{el}\") but no element has that id")
+    return out
 
 
 def link_problems(entries, by_slug):
