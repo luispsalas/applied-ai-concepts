@@ -32,7 +32,9 @@ Browse the [glossary index](glossary/index.md) — 81 terms alphabetically with 
 
 It is built for concept lookup rather than text search, so describing the problem works: *"who is responsible when the AI does it"*, *"it used to work"*, *"why do I get different answers"*. Each result shows which synonym matched.
 
-> GitHub displays `.html` as source rather than running it. **Clone the repo and open `search.html` in a browser** — it needs no server and makes no network requests. The same data is published as [`search-index.json`](search-index.json) for tooling.
+**→ [luispsalas.github.io/applied-ai-concepts/search.html](https://luispsalas.github.io/applied-ai-concepts/search.html)**
+
+The page is self-contained, so cloning the repo and opening `search.html` works identically offline. The same data is published as [`search-index.json`](search-index.json) for tooling and AI retrieval.
 
 ### Using the glossary in projects
 
