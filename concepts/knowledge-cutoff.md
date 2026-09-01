@@ -83,7 +83,7 @@ A model learned from a snapshot of the world that ends on a particular date. Ask
 - [Concealing Uncertainty](concealing-uncertainty.md) — the model rarely volunteers that a question falls outside what it knows
 - [Large Language Models (LLMs)](large-language-models.md) — why knowledge lives in fixed parameters at all
 - [Knowledge Base](knowledge-base.md) — a retrieval corpus has its own freshness obligation
-- Model Version & Update — a new version means a new cutoff, and a new set of things it does not know
+- [Model Version & Update](model-version-update.md) — a new version means a new cutoff, and a new set of things it does not know
 
 ---
 

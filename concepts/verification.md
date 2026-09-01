@@ -91,7 +91,7 @@ Verification is the step where you find out: run the code instead of reading it,
 - [Human-in-the-Loop (HITL)](human-in-the-loop.md) — the design pattern that places a verifier where one is needed
 - [Audit Trail (AI)](audit-trail-ai.md) — the record of whether checking actually happened
 - [Explainability (XAI)](explainability-xai.md) — explanations reduce overreliance only when they lower the cost of checking
-- Cognitive Offloading & Deskilling — the long-run cost when verification stops being practiced
+- [Cognitive Offloading & Deskilling](cognitive-offloading-deskilling.md) — the long-run cost when verification stops being practiced
 
 ---
 

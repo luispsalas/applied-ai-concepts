@@ -99,7 +99,7 @@ Outside the legal sense, the phrase describes something the law does not cover a
 - [Local LLMs](local-llms.md) — one structural answer to provider concentration, with its own costs
 - [Model/Data Drift](model-data-drift.md) — a provider changing a model underneath you is the everyday version of dependency risk
 - [Frontier AI (Frontier Model)](frontier-ai.md) — the informal category the regulatory one formalizes
-- Model Version & Update — the mechanism by which provider dependency becomes a live operational issue
+- [Model Version & Update](model-version-update.md) — the mechanism by which provider dependency becomes a live operational issue
 
 ---
 

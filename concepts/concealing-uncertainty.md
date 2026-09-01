@@ -92,7 +92,7 @@ Ask a model something it half-knows and you will usually get a clean, complete-s
 - [Evaluation (AI Systems)](evaluation.md) — accuracy testing does not detect suppressed hedging; it needs its own test
 - [Explainability (XAI)](explainability-xai.md) — grounds let a reader judge support independently of tone
 - [Failure Modes (AI Systems)](failure-modes-ai-systems.md) — the family this belongs to
-- RLHF (Reinforcement Learning from Human Feedback) — the training stage where the bias against hedging is introduced
+- [RLHF (Reinforcement Learning from Human Feedback)](rlhf.md) — the training stage where the bias against hedging is introduced
 
 ---
 

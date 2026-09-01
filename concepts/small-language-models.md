@@ -79,7 +79,7 @@ Not every job needs the biggest model. A lot of what AI systems do all day is sm
 - [Guardrails (AI Systems)](guardrails-ai-systems.md) — thinner safety training raises the value of enforced constraints
 - [Types of AI Systems](types-of-ai-systems.md) — where capability scale sits in the wider taxonomy
 - [Local LLMs](local-llms.md) — the deployment pattern SLMs most often enable, with its own governance profile
-- Fine-tuning — the usual route to making a small model sufficient for a narrow task
+- [Fine-tuning](fine-tuning.md) — the usual route to making a small model sufficient for a narrow task
 
 ---
 

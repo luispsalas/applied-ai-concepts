@@ -1,5 +1,36 @@
 # Changelog
 
+## v1.17 — September 2026
+
+**6 concepts published — the training-pipeline chain, plus three long-run costs.**
+
+- `rlhf` — v1.0 (humans rank outputs; the step that imports whoever did the ranking)
+- `fine-tuning` — v1.0 (cheap enough to be routine, and it silently degrades safety)
+- `model-version-update` — v1.0 (the system you tested may not be the one you're running)
+- `cognitive-offloading-deskilling` — v1.0 (delegating judgment erodes the judgment needed to check)
+- `value-realization-ai` — v1.0 (the gap is complementary investment, not a better model)
+- `scalable-oversight` — v1.0 (AI reviewing AI, and who checks the checker)
+
+**Selected by the gap report, which is now automated.** `build.py report` counts unlinked plain-text mentions of every unpublished term and prints a flatness warning. It surfaced RLHF, Model Version & Update and Fine-tuning at the top — **all score-3 tracker terms, ahead of the remaining score-4s.** The corpus reached for them more than their score predicted, which is exactly the signal the report exists to expose. Three apparent hits (`Skill`, `NLP`, `Inference`) were verified as false positives on prose and source titles before being discarded.
+
+**RLHF and Fine-tuning complete a chain the corpus kept gesturing at.** Training Data was published; what happens *to* a model afterwards was not. Three published entries — Alignment, Sycophancy, Concealing Uncertainty — rest their central claims on preference optimization, and none could link to it. **The RLHF entry's point is that its two documented side effects are one mechanism**: optimizing against approval, which is adjacent to truth and not the same thing.
+
+**Fine-tuning carries the finding most likely to change practice.** Safety alignment was stripped from a production model with 10 adversarial examples for under $0.20 — but the load-bearing half is the second: *"simply fine-tuning with benign and commonly used datasets can also inadvertently degrade the safety alignment."* A team adapting a model on ordinary internal data has changed its refusal behavior with no warning, and the provider's safety evaluation now describes a model they are not running.
+
+**Model Version & Update deliberately refuses the popular reading of its own headline source.** The widely-cited prime-number result (84% → 51%) is presented with the parts usually dropped: the *other* model improved on the same task, and the drop is substantially reduced amenability to chain-of-thought prompting — **a behavior change, not demonstrated capability loss.** The entry cites it for *that behavior changes unannounced*, never as evidence any model got worse.
+
+**Two entries are unusually explicit about weak evidence.** Cognitive Offloading & Deskilling states plainly that **no longitudinal study of AI-specific deskilling exists** — the mechanism is established, the loop is reasoned, the outcome is not observed — and warns against confident claims in either direction. Scalable Oversight is flagged as **the least settled entry in the corpus**, and carries the counter-evidence its own headline source omits: in one task a fallible assistant improved human performance, in another it *degraded* it, and nobody knows what predicts which.
+
+**Value Realization is anchored in economics rather than consultancy material.** The J-curve — complementary intangible investment producing a dip before a rebound — means a disappointing early return is the predicted shape, and equally that the rebound is not automatic. The entry cites no AI ROI figure deliberately, and says why.
+
+**Source registry:** 7 sources added (SRC-214–220). Two Crossref-verified.
+
+**Generator did the mechanical work.** One `build.py write` synced six README rows, regenerated the glossary, updated the count, and rebuilt the search index and page — four previously manual steps. `check` gates the result.
+
+**Two of my own errors caught by round-trip verification, both worth recording.** Reverse-index values for SRC-173 and SRC-192 were composed by hand instead of from the report, and were wrong in both directions (one missing an entry, one with three spurious ones); comparing the sheet against the generator's output found them. And a tracker cell was cleared by writing an **empty string** rather than being blanked — an empty-string cell is not a blank cell, `"" < "X"`, and it sorted an unpublished term to the top of the published block. Both are the same lesson: verify the write, don't trust it.
+
+---
+
 ## v1.16 — August 2026
 
 **6 concepts published — the authenticity and attribution cluster, plus two governance gaps.**

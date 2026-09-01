@@ -106,7 +106,7 @@ There is a second, subtler failure that comes from over-correcting. Concluding t
 - [Human Responsibility in AI Use](human-responsibility-in-ai-use.md) — responsibility that a published principle does not discharge
 - [AI Literacy](ai-literacy.md) — reading governance claims critically is a literacy skill
 - [Audit Trail (AI)](audit-trail-ai.md) — the record that would evidence a commitment was applied
-- Value Realization (AI) — the parallel gap between stated capability and achieved outcome
+- [Value Realization (AI)](value-realization-ai.md) — the parallel gap between stated capability and achieved outcome
 
 ---
 

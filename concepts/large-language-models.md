@@ -63,7 +63,7 @@ A large language model is the engine behind tools like ChatGPT and Claude. It wa
 - [Grounding](grounding.md) — anchoring an LLM's output to real sources, the main remedy for its lack of a fact store
 - [Retrieval-Augmented Generation (RAG)](rag.md) — the dominant pattern for giving a frozen model current, specific knowledge at run time
 - [Determinism vs Probabilism](determinism-vs-probabilism.md) — the probabilistic nature of next-token sampling, and why the same prompt can differ
-- Fine-tuning — adapting a pre-trained base to a domain or task; the "adaptation" stage of the LLM lifecycle
+- [Fine-tuning](fine-tuning.md) — adapting a pre-trained base to a domain or task; the "adaptation" stage of the LLM lifecycle
 - [Types of AI Systems](types-of-ai-systems.md) — where LLMs sit within the wider taxonomy of AI by capability and autonomy
 - [Harness Paradigm](harness-paradigm.md) — the control layer around the model that supplies the memory, tools, and governance the model itself lacks
 - [AI Agent](ai-agent.md) — an LLM placed in a loop with tools and goals; the agentic extension of a base model

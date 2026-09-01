@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "count": 81,
+  "count": 87,
   "entries": [
     {
       "slug": "accountability-ai-systems",
@@ -624,6 +624,50 @@
         "SRC-212"
       ],
       "path": "concepts/bluewashing.md"
+    },
+    {
+      "slug": "cognitive-offloading-deskilling",
+      "term": "Cognitive Offloading & Deskilling",
+      "category": "Interaction & Design",
+      "essence": "Delegating thinking to a system erodes the skill needed to judge its output — the long-run cost of convenience, and the reason oversight can quietly hollow out.",
+      "short": "Delegating thinking to a system erodes the skill needed to judge its output — the long-run cost of convenience",
+      "aliases": [
+        "deskilling",
+        "skill atrophy",
+        "losing the ability to do it myself",
+        "dependence on AI",
+        "cognitive atrophy",
+        "Google effect"
+      ],
+      "tags": [
+        "AI Literacy",
+        "Model Behavior",
+        "Evaluation"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "ai-literacy",
+        "anthropomorphism-ai",
+        "automation-bias",
+        "confidence-vs-accuracy",
+        "human-ai-collaboration-model",
+        "human-in-the-loop",
+        "human-llm-communication-skills",
+        "human-responsibility-in-ai-use",
+        "operational-readiness-ai",
+        "scalability-ai-systems",
+        "verification"
+      ],
+      "sources": [
+        "SRC-068",
+        "SRC-174",
+        "SRC-175",
+        "SRC-190",
+        "SRC-191",
+        "SRC-218"
+      ],
+      "path": "concepts/cognitive-offloading-deskilling.md"
     },
     {
       "slug": "compliance-ai-systems",
@@ -1342,6 +1386,53 @@
       "path": "concepts/failure-modes-ai-systems.md"
     },
     {
+      "slug": "fine-tuning",
+      "term": "Fine-tuning",
+      "category": "Foundations",
+      "essence": "Adapting a pre-trained model to a specific domain or task by training it further on targeted data — between prompting and building from scratch in cost, control, and risk.",
+      "short": "Adapting a model on your own data — cheap enough to be routine, and it can silently strip the safety behavior you were relying on",
+      "aliases": [
+        "LoRA",
+        "PEFT",
+        "parameter-efficient fine-tuning",
+        "adapting a model",
+        "custom model",
+        "training on our own data",
+        "domain adaptation"
+      ],
+      "tags": [
+        "Architecture",
+        "Data Governance",
+        "Security"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "data-provenance-lineage",
+        "evaluation",
+        "guardrails-ai-systems",
+        "local-llms",
+        "model-card-system-card",
+        "model-version-update",
+        "ownership-ai-systems",
+        "privacy-ai-systems",
+        "rag",
+        "rlhf",
+        "shadow-ai",
+        "small-language-models",
+        "training-data"
+      ],
+      "sources": [
+        "SRC-142",
+        "SRC-150",
+        "SRC-197",
+        "SRC-198",
+        "SRC-215",
+        "SRC-216"
+      ],
+      "path": "concepts/fine-tuning.md"
+    },
+    {
       "slug": "frontier-ai",
       "term": "Frontier AI (Frontier Model)",
       "category": "Observability & Governance",
@@ -1988,6 +2079,52 @@
         "SRC-201"
       ],
       "path": "concepts/model-card-system-card.md"
+    },
+    {
+      "slug": "model-version-update",
+      "term": "Model Version & Update",
+      "category": "Reliability & Quality",
+      "essence": "The system you use today may not be the system you tested — providers change models underneath you, and behavior that was reliable can shift without notice.",
+      "short": "The system you use today may not be the one you tested — providers change models underneath you, and reliable behavior can shift without notice",
+      "aliases": [
+        "model updates",
+        "version pinning",
+        "deprecation",
+        "it changed without telling us",
+        "model changed",
+        "provider update",
+        "snapshot models"
+      ],
+      "tags": [
+        "Model Behavior",
+        "Evaluation",
+        "Regulatory"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "ai-incident-reporting",
+        "compliance-ai-systems",
+        "evaluation",
+        "fine-tuning",
+        "frontier-ai",
+        "local-llms",
+        "model-card-system-card",
+        "model-data-drift",
+        "observability",
+        "operational-readiness-ai",
+        "prompt-engineering",
+        "rlhf"
+      ],
+      "sources": [
+        "SRC-001",
+        "SRC-129",
+        "SRC-165",
+        "SRC-166",
+        "SRC-196",
+        "SRC-217"
+      ],
+      "path": "concepts/model-version-update.md"
     },
     {
       "slug": "model-data-drift",
@@ -2682,6 +2819,51 @@
       "path": "concepts/reward-hacking.md"
     },
     {
+      "slug": "rlhf",
+      "term": "RLHF (Reinforcement Learning from Human Feedback)",
+      "category": "Foundations",
+      "essence": "A training technique that shapes model behavior using human ratings of its outputs as a reward signal — the foundational method behind aligning raw language models with what people actually want.",
+      "short": "Humans rank outputs, the model learns the ranking — the step that turns a raw model into an assistant, and imports whoever did the ranking",
+      "aliases": [
+        "reinforcement learning from human feedback",
+        "preference optimization",
+        "human feedback training",
+        "RLAIF",
+        "DPO",
+        "how models are made polite"
+      ],
+      "tags": [
+        "Model Behavior",
+        "Ethics",
+        "Evaluation"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "alignment-ai-systems",
+        "bias-ai-systems",
+        "concealing-uncertainty",
+        "evaluation",
+        "fine-tuning",
+        "human-in-the-loop",
+        "large-language-models",
+        "model-version-update",
+        "reward-hacking",
+        "scalable-oversight",
+        "sycophancy-llms",
+        "training-data"
+      ],
+      "sources": [
+        "SRC-142",
+        "SRC-167",
+        "SRC-172",
+        "SRC-193",
+        "SRC-196",
+        "SRC-214"
+      ],
+      "path": "concepts/rlhf.md"
+    },
+    {
       "slug": "scalability-ai-systems",
       "term": "Scalability (AI Systems)",
       "category": "Organizational Readiness",
@@ -2724,6 +2906,51 @@
         "SRC-191"
       ],
       "path": "concepts/scalability-ai-systems.md"
+    },
+    {
+      "slug": "scalable-oversight",
+      "term": "Scalable Oversight",
+      "category": "Human Oversight",
+      "essence": "Using AI to help supervise AI, because the volume and difficulty of the work has outrun what humans can check directly — and the unresolved question of who checks the checker.",
+      "short": "Using AI to supervise AI because the work has outrun direct human review — and the unresolved question of who checks the checker",
+      "aliases": [
+        "AI supervising AI",
+        "LLM as judge",
+        "oversight at scale",
+        "who checks the checker",
+        "automated review",
+        "AI-assisted oversight"
+      ],
+      "tags": [
+        "Safety",
+        "Evaluation",
+        "AI Literacy"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "accountability-ai-systems",
+        "agency-ai-systems",
+        "alignment-ai-systems",
+        "automation-bias",
+        "cognitive-offloading-deskilling",
+        "evaluation",
+        "frontier-ai",
+        "human-in-the-loop",
+        "rlhf",
+        "scalability-ai-systems",
+        "synthetic-media-deepfakes",
+        "verification"
+      ],
+      "sources": [
+        "SRC-001",
+        "SRC-174",
+        "SRC-179",
+        "SRC-191",
+        "SRC-210",
+        "SRC-220"
+      ],
+      "path": "concepts/scalable-oversight.md"
     },
     {
       "slug": "shadow-ai",
@@ -3082,6 +3309,49 @@
         "SRC-134"
       ],
       "path": "concepts/types-of-ai-systems.md"
+    },
+    {
+      "slug": "value-realization-ai",
+      "term": "Value Realization (AI)",
+      "category": "Organizational Readiness",
+      "essence": "The gap between what an AI system is capable of and what an organization actually achieves with it — closed through design, governance, and adoption, not technology alone.",
+      "short": "The gap between what AI can do and what an organization gets from it — closed by complementary investment, not by better models",
+      "aliases": [
+        "ROI on AI",
+        "why isn't AI paying off",
+        "business value",
+        "adoption gap",
+        "productivity paradox",
+        "pilot purgatory"
+      ],
+      "tags": [
+        "Data Governance",
+        "Architecture",
+        "Evaluation"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "ai-governance",
+        "ai-literacy",
+        "ai-use-case",
+        "bluewashing",
+        "evaluation",
+        "human-ai-collaboration-model",
+        "model-data-drift",
+        "operational-readiness-ai",
+        "ownership-ai-systems",
+        "scalability-ai-systems",
+        "verification"
+      ],
+      "sources": [
+        "SRC-001",
+        "SRC-056",
+        "SRC-105",
+        "SRC-166",
+        "SRC-219"
+      ],
+      "path": "concepts/value-realization-ai.md"
     },
     {
       "slug": "verification",

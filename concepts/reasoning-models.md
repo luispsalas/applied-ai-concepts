@@ -78,7 +78,7 @@ Most models answer immediately, like someone blurting out the first thing that c
 - [Context Window](context-window.md) — reasoning traces consume context, and long traces compete with the input for room
 - [Hallucination](hallucination.md) — a fluent reasoning trace can make a wrong answer more persuasive, not less
 - [Evaluation (AI Systems)](evaluation.md) — outcome correctness must be measured separately from whether the reasoning reads well
-- RLHF (Reinforcement Learning from Human Feedback) — the adjacent training paradigm; reasoning models use RL with rule-based rather than human-preference rewards
+- [RLHF (Reinforcement Learning from Human Feedback)](rlhf.md) — the adjacent training paradigm; reasoning models use RL with rule-based rather than human-preference rewards
 - Inference — the phase where this additional compute is spent
 
 ---

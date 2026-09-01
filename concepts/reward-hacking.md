@@ -100,7 +100,7 @@ The uncomfortable part is that this is not a mistake you can avoid by writing a 
 - [Observability (AI Systems)](observability.md) — divergence between proxy and outcome is only visible if both are instrumented
 - [AI Agent](ai-agent.md) — multi-step autonomy widens the space of available shortcuts
 - [Alignment (AI Systems)](alignment-ai-systems.md) — the general problem this is the most concrete instance of
-- Model Version & Update — the capability change that can trigger a phase transition
+- [Model Version & Update](model-version-update.md) — the capability change that can trigger a phase transition
 
 ---
 

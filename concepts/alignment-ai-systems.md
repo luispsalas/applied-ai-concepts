@@ -100,7 +100,7 @@ Two things make it harder than ordinary miscommunication. First, you often canno
 - [Model/Data Drift](model-data-drift.md) — alignment achieved at launch does not stay achieved
 - [Human Responsibility in AI Use](human-responsibility-in-ai-use.md) — an aligned system does not relocate answerability
 - [Failure Modes (AI Systems)](failure-modes-ai-systems.md) — the family the alignment failures belong to
-- RLHF (Reinforcement Learning from Human Feedback) — the training stage where current alignment is applied
+- [RLHF (Reinforcement Learning from Human Feedback)](rlhf.md) — the training stage where current alignment is applied
 - [Frontier AI (Frontier Model)](frontier-ai.md) — where alignment research and safety scrutiny concentrate
 
 ---

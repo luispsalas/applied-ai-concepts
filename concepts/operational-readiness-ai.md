@@ -92,7 +92,7 @@ Getting an AI system to work in a demo is the easy part. Running it is the commi
 - [AI Governance](ai-governance.md) — readiness is the operational face of the governance commitment
 - [AI Literacy](ai-literacy.md) — the skills dimension, at organizational scale
 - [Audit Trail (AI)](audit-trail-ai.md) — without it, the "explain what happened" requirement cannot be met
-- Value Realization (AI) — the other half of the deployment question: capable of running it, and getting something from it
+- [Value Realization (AI)](value-realization-ai.md) — the other half of the deployment question: capable of running it, and getting something from it
 
 ---
 

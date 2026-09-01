@@ -94,7 +94,7 @@ The word itself is a moving target. Whatever counts as frontier today will be or
 - [Model Card / System Card](model-card-system-card.md) — where frontier providers document capabilities and limits
 - [Alignment (AI Systems)](alignment-ai-systems.md) — much of the underlying capability concern
 - [Power Seeking](power-seeking.md) — a specific capability concern in the same register
-- Scalable Oversight — the proposed answer to evaluation not keeping pace
+- [Scalable Oversight](scalable-oversight.md) — the proposed answer to evaluation not keeping pace
 - [AI Governance](ai-governance.md) — where the deployer-side decisions actually get made
 - [Compliance (AI Systems)](compliance-ai-systems.md) — the obligations designation triggers
 - [Model/Data Drift](model-data-drift.md) — provider capability changes as a change to your system

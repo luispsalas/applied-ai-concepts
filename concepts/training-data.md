@@ -57,7 +57,7 @@ None of this makes the models unusable. It means that when a model is unreliable
 - Model selection made on capability benchmarks alone, with no question asked about corpus composition or disclosure
 - Bias controls designed as output filters, when the origin is upstream and the filter only catches what it was told to look for
 - Benchmark performance treated as evidence of capability without accounting for contamination
-- Fine-tuning or adaptation performed with no record of what was used — the most common training-data gap inside an organization, and the one you actually control
+- [Fine-tuning](fine-tuning.md) or adaptation performed with no record of what was used — the most common training-data gap inside an organization, and the one you actually control
 - Subject-rights and deletion processes that stop at storage, with no position on data already absorbed into weights
 - "Publicly available" used as a licensing answer
 
