@@ -1,3 +1,8 @@
+<!--meta
+category: Knowledge & Memory
+short: Where the data came from and what has happened to it since — the record that answers "can we actually use this?"
+aliases: [data lineage, provenance, dataset provenance, data origin, where did this data come from]
+-->
 # Data Provenance / Lineage
 
 ## One-line essence

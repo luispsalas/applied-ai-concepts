@@ -1,3 +1,8 @@
+<!--meta
+category: Interaction & Design
+short: You cannot un-know what you know, so you under-specify — and the model answers anyway instead of asking
+aliases: [assumed context, unstated context, underspecified prompt, why doesn't it understand what I want, missing context]
+-->
 # Curse of Knowledge (AI Context)
 
 ## One-line essence

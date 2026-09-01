@@ -1,3 +1,8 @@
+<!--meta
+category: Observability & Governance
+short: Unsanctioned AI use — invisible to the processes meant to govern it, and usually a signal about the sanctioned option
+aliases: [shadow IT, unsanctioned AI, ungoverned AI, unapproved AI tools, rogue AI]
+-->
 # Shadow AI
 
 ## One-line essence
