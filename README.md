@@ -317,7 +317,7 @@ See [CHANGELOG.md](CHANGELOG.md) for version history.
 This wiki is made by a human working with AI models, and it says so in the same structured way it asks of any other AI-assisted work. The declaration below breaks the contribution down across five stages — conception, structure, production, curation, verification — rather than reducing it to a single "AI-generated" label.
 
 <a href="https://luispsalas.github.io/authorship-meter/declarations/applied-ai-concepts.html">
-  <img src="assets/authorship-meter.png" width="460" alt="Authorship Meter for applied-ai-concepts: Co-created — 45% human, 55% AI, LLM-assisted, assessed August 31 2026. Click for the interactive version with the per-stage breakdown.">
+  <img src="assets/authorship-meter.png" width="460" alt="Authorship Meter for applied-ai-concepts: Co-created — 45% human, 55% AI, LLM-assisted, assessed September 1 2026. Click for the interactive version with the per-stage breakdown.">
 </a>
 
 → **[View the interactive declaration](https://luispsalas.github.io/authorship-meter/declarations/applied-ai-concepts.html)** — assessed with the [Authorship Meter](https://github.com/luispsalas/authorship-meter) format.
