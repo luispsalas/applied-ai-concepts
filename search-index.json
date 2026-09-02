@@ -2917,29 +2917,43 @@
         "thinking models",
         "chain of thought",
         "extended reasoning",
-        "inference-time scaling"
+        "inference-time scaling",
+        "CoT faithfulness",
+        "chain-of-thought faithfulness",
+        "unfaithful reasoning",
+        "is the thinking real",
+        "does it really think that",
+        "reasoning trace",
+        "thinking text"
       ],
       "tags": [
         "Architecture",
         "Model Behavior"
       ],
-      "version": "v1.0",
-      "updated": "August 2026",
+      "version": "v1.1",
+      "updated": "September 2026",
       "related": [
+        "concealing-uncertainty",
         "context-window",
+        "deception-ai-systems",
         "determinism-vs-probabilism",
         "evaluation",
         "explainability-xai",
         "hallucination",
         "large-language-models",
         "prompt-engineering",
-        "rlhf"
+        "reward-hacking",
+        "rlhf",
+        "scalable-oversight"
       ],
       "sources": [
         "SRC-047",
         "SRC-142",
         "SRC-155",
-        "SRC-156"
+        "SRC-156",
+        "SRC-238",
+        "SRC-239",
+        "SRC-240"
       ],
       "path": "concepts/reasoning-models.md"
     },
