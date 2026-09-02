@@ -114,3 +114,30 @@ New entries must follow this schema in full.
 ---
 
 *Maintenance model: human-reviewed, HITL-first, source-required.*
+
+---
+
+## Maintenance
+
+A corpus this size decays in ways that are invisible from inside a single entry. Three tiers, by what each check needs and how fast the thing it watches actually moves.
+
+### Every publish — automatic, blocking
+`python3 scripts/build.py check` — fails the publish on schema gaps, README/glossary/count desync, unresolved links, alias collisions, unknown tags, a term status that disagrees with its visible line, an unparseable confidence rating, and any disagreement between the tracker export and the entries. Then the numbered steps in the publishing workflow: cross-reference sweep, tracker re-sort.
+
+**Most historical drift checks are gone rather than automated.** Essence, version and count drift used to need their own checks; those fields are now *derived* from entry front-matter, so there is nothing left to drift. Writing a check for them today would be dead code.
+
+### Monthly — `python3 scripts/maintain.py offline`
+Report-only, no network. US-English sweep (quotations and Sources rows excluded), Sources-table completeness, and SRC-IDs cited in prose but missing from a Sources table.
+
+### Quarterly — `python3 scripts/maintain.py links`
+The above plus HTTP liveness on every cited source URL, via curl. Slow. Publishers that block automated clients are skipped by name rather than re-raised every quarter.
+
+### Manual, quarterly — the registry
+Not scriptable from here: the Sources sheet is reached through an MCP, not a library.
+- Reverse index (`col L`) in **both** directions — regenerate with `build.py report` and compare; do not hand-edit.
+- `Outstanding` ↔ `Sources` promotion drift.
+- **Export the tracker to CSV.** The repo has git history, a remote and a local clone. The tracker is a single Sheet whose only recovery path is Google's version history, and it holds pertinence scores, statuses and essences that exist nowhere else. It is the one thing here without a backup.
+
+### Two standing rules
+- **Nothing in `maintain.py` blocks a publish.** Every check it runs needs a human call: a British spelling inside a quoted EU or ISO passage is *correct*, and a 403 is usually a bot policy rather than a dead link.
+- **Suspect the checker before the corpus.** The first version of the liveness check reported 146 live sources as dead — Python's urllib had no CA bundle. If a check suddenly fails everywhere, that is the shape of an environment problem.

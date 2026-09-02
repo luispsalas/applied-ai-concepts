@@ -22,7 +22,7 @@ An AI system whose internal reasoning process cannot be observed or interpreted 
 2. **Emergent behavior** — capabilities and failure modes that were not explicitly programmed, and which appear (or disappear) in ways that resist prediction from architecture or training data alone. A model may perform a task reliably at one capability level and fail unpredictably at another.
 3. **Non-transparent self-explanation** — model-generated explanations of its own outputs are themselves generated text, not readouts of the internal process that produced the answer. A model that explains its reasoning is not describing what happened computationally — it is generating a plausible account. (See: Hallucination — reasoning hallucination.)
 
-Black box is often contrasted with *white box* (fully interpretable, e.g., a decision tree or rule-based system) and *grey box* (partially interpretable via post-hoc methods such as attention visualization or feature attribution). Current large language models are black boxes; interpretability research provides partial and approximate visibility, not operational transparency.
+Black box is often contrasted with *white box* (fully interpretable, e.g., a decision tree or rule-based system) and *gray box* (partially interpretable via post-hoc methods such as attention visualization or feature attribution). Current large language models are black boxes; interpretability research provides partial and approximate visibility, not operational transparency.
 
 ---
 
