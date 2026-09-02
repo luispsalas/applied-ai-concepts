@@ -3,8 +3,11 @@ category: Knowledge & Memory
 short: Anchoring model outputs to specific, verifiable sources — reducing hallucination by giving the model something real to reason from
 aliases: [source anchoring, citations, factual grounding, evidence-backed output, tie answers to sources]
 tags: [Data Governance, Evaluation]
+established: established
 -->
 # Grounding
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 Anchoring model outputs to specific, verifiable sources — reducing hallucination by giving the model something real to reason from.
@@ -69,7 +72,7 @@ Three things practitioners need to understand:
 
 ## Confidence level
 
-**Established, active.** Context grounding and RAG-based approaches are widely deployed and well-documented. The failure modes — source hallucination, context override, stale grounding — are empirically documented. Tool grounding and multi-step agentic grounding are active development areas. The distinction between grounding as a practice and RAG as one implementation is underappreciated in practitioner literature and warrants continued emphasis.
+**High.** Context grounding and RAG-based approaches are widely deployed and well-documented. The failure modes — source hallucination, context override, stale grounding — are empirically documented. Tool grounding and multi-step agentic grounding are active development areas. The distinction between grounding as a practice and RAG as one implementation is underappreciated in practitioner literature and warrants continued emphasis.
 
 ---
 

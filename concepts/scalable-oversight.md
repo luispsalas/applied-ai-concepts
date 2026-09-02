@@ -3,8 +3,11 @@ category: Human Oversight
 short: Using AI to supervise AI because the work has outrun direct human review — and the unresolved question of who checks the checker
 aliases: [AI supervising AI, LLM as judge, oversight at scale, who checks the checker, automated review, AI-assisted oversight]
 tags: [Safety, Evaluation, AI Literacy]
+established: established
 -->
 # Scalable Oversight
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 Using AI to help supervise AI, because the volume and difficulty of the work has outrun what humans can check directly — and the unresolved question of who checks the checker.

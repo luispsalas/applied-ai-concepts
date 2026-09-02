@@ -3,8 +3,11 @@ category: System Architecture
 short: The behind-the-scenes instructions that set how an AI behaves before you interact with it — a soft control, not a hard boundary
 aliases: [system message, instructions before the chat, preamble, system instructions, hidden prompt]
 tags: [Prompting, Architecture, Security]
+established: established
 -->
 # System Prompt
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 The behind-the-scenes instructions that set up how an AI behaves before you start talking to it — like a job description the AI reads first. Changing it changes the AI's behavior.
@@ -54,7 +57,7 @@ Before you type anything, the AI has usually already been given a set of instruc
 
 ## Confidence level
 
-**Established practice.** The concept and its use are stable and universal across deployed LLM systems; terminology varies by vendor ("system prompt", "system message", "developer message") but refers to the same layer.
+**High.** The concept and its use are stable and universal across deployed LLM systems; terminology varies by vendor ("system prompt", "system message", "developer message") but refers to the same layer.
 
 ---
 

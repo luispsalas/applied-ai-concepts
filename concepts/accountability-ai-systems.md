@@ -3,8 +3,11 @@ category: Observability & Governance
 short: The principle that someone can be held answerable for an AI system's behavior — and that answerable means explain, justify, and face consequences
 aliases: [answerability, who is accountable, responsibility for AI, liability, who answers for it]
 tags: [Ethics, Data Governance, Regulatory]
+established: established
 -->
 # Accountability (AI Systems)
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 The principle that someone can be held answerable for an AI system's behavior and outcomes — and that answerable means they must explain, justify, and face consequences.
@@ -75,7 +78,7 @@ Accountability is the governance concept that most often fails silently. Three t
 
 ## Confidence level
 
-**Established.** Accountability as a governance concept is well-defined in public administration theory (Bovens 2007) and widely applied to AI governance. The three-layer structure (developer/deployer/user) is codified in regulatory frameworks (EU AI Act, GDPR) and the NIST AI RMF GOVERN function. Application to agentic and multi-model systems is an active development area.
+**High.** Accountability as a governance concept is well-defined in public administration theory (Bovens 2007) and widely applied to AI governance. The three-layer structure (developer/deployer/user) is codified in regulatory frameworks (EU AI Act, GDPR) and the NIST AI RMF GOVERN function. Application to agentic and multi-model systems is an active development area.
 
 ---
 

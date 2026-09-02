@@ -3,8 +3,11 @@ category: Foundations
 short: Language models small enough to run cheaply, locally, or at the edge — often the better fit for narrow, repetitive tasks
 aliases: [SLM, compact model, on-device model, efficient model, smaller model]
 tags: [Architecture]
+established: established
 -->
 # Small Language Models (SLMs)
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 Language models small enough to run cheaply, locally, or at the edge — often the better fit for narrow, repetitive tasks where a frontier model is more capability than the job requires.

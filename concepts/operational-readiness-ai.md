@@ -3,8 +3,11 @@ category: Organizational Readiness
 short: Whether the organization can actually run an AI system — data, infrastructure, skills, process, governance — not whether the model works
 aliases: [are we ready, deployment readiness, AI maturity, production readiness, can we actually run this]
 tags: [Architecture, Data Governance]
+established: established
 -->
 # Operational Readiness (AI)
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 The organizational capacity — data, infrastructure, skills, processes, and governance — required before an AI system can be safely deployed at scale.

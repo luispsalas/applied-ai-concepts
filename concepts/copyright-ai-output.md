@@ -3,8 +3,11 @@ category: Knowledge & Memory
 short: Who owns what a model makes, and whether training was lawful — two questions, one with a US answer and one genuinely open
 aliases: [who owns AI output, AI copyright, intellectual property, can I copyright this, training data copyright]
 tags: [Regulatory, Ethics, AI Literacy]
+established: established
 -->
 # Copyright & AI Output
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 Who owns what a model produces, whether it can reproduce protected work, and why the answer is genuinely unsettled rather than merely unclear.

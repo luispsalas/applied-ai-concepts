@@ -3,8 +3,11 @@ category: Observability & Governance
 short: When sensitive information from training data or context surfaces in model outputs — exposing what was never meant to be accessible
 aliases: [memorization, training data extraction, it leaked our data, PII in output, data exposure]
 tags: [Security, Privacy]
+established: established
 -->
 # Data Leakage (AI Systems)
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 When sensitive information from training data unintentionally surfaces in model outputs — exposing content that was never meant to be accessible.

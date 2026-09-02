@@ -3,8 +3,11 @@ category: Observability & Governance
 short: Explicit assignment of accountability for an AI system's outputs, data, and governance — defining who is responsible, not just who built it
 aliases: [who owns this system, system owner, accountable owner, stewardship, assignment of ownership]
 tags: [Data Governance, Ethics]
+established: established
 -->
 # Ownership (AI Systems)
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 Explicit assignment of accountability for an AI system's outputs, data, and governance — defining who is responsible, not just who built it.
@@ -67,7 +70,7 @@ Ownership is more often assumed than assigned. Naming an owner forces three thin
 
 ## Confidence level
 
-**Established.** The need to assign a single accountable owner is a settled principle across data governance (DAMA-DMBOK stewardship/ownership roles), AI risk management (NIST AI RMF GOVERN function), and regulation (GDPR controller accountability; EU AI Act provider/deployer responsibilities). The operational mechanics — RACI mapping, lifecycle ownership — are well-documented practitioner consensus; specific role taxonomies vary by organization.
+**High.** The need to assign a single accountable owner is a settled principle across data governance (DAMA-DMBOK stewardship/ownership roles), AI risk management (NIST AI RMF GOVERN function), and regulation (GDPR controller accountability; EU AI Act provider/deployer responsibilities). The operational mechanics — RACI mapping, lifecycle ownership — are well-documented practitioner consensus; specific role taxonomies vary by organization.
 
 ---
 

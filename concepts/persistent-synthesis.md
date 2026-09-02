@@ -3,8 +3,11 @@ category: Knowledge & Memory
 short: Knowledge compounds when contradictions are resolved, not accumulated
 aliases: [knowledge compounding, integrating sources, compile don't re-derive, living document, cumulative knowledge]
 tags: [Architecture, Data Governance]
+established: emerging
 -->
 # Persistent Synthesis
+
+> **Term status — Emerging.** In active use and genuinely useful, but not yet settled — definitions still vary between sources. Read the Confidence level before relying on the term in a formal document.
 
 ## One-line essence
 Knowledge compounds when contradictions are resolved — not when information is accumulated.
@@ -81,7 +84,7 @@ Three implications:
 
 ## Confidence level
 
-**Emerging — practitioner application.** The core insight (Karpathy, 2023) is widely validated in practice. The extended framework (Ghumare, 2024) adds significant structural depth, but carries known implementation gaps flagged in community review:
+**Medium.** The core insight (Karpathy, 2023) is widely validated in practice. The extended framework (Ghumare, 2024) adds significant structural depth, but carries known implementation gaps flagged in community review:
 
 - Confidence scoring lacks a rigorous operational definition
 - "Crystallization" (the point at which synthesized knowledge becomes stable) is underspecified

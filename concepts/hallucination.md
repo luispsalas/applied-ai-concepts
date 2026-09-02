@@ -3,8 +3,11 @@ category: Foundations
 short: AI models generate plausible-sounding content that is factually incorrect — confidently and without warning
 aliases: [confabulation, making things up, fabricated facts, invented citations, false output]
 tags: [Model Behavior, Evaluation]
+established: established
 -->
 # Hallucination
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 AI models generate plausible-sounding content that is factually incorrect — confidently and without warning.
@@ -67,7 +70,7 @@ Grounding strategies (RAG, retrieval from verified sources, tool use) reduce hal
 
 ## Confidence level
 
-**Established.** Hallucination is a well-documented property of current-generation language models. The mechanisms are understood; mitigation strategies are active areas of research and engineering. The term has stabilized.
+**High.** Hallucination is a well-documented property of current-generation language models. The mechanisms are understood; mitigation strategies are active areas of research and engineering. The term has stabilized.
 
 ---
 

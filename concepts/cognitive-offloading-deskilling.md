@@ -3,8 +3,11 @@ category: Interaction & Design
 short: Delegating thinking to a system erodes the skill needed to judge its output — the long-run cost of convenience
 aliases: [deskilling, skill atrophy, losing the ability to do it myself, dependence on AI, cognitive atrophy, Google effect]
 tags: [AI Literacy, Model Behavior, Evaluation]
+established: established
 -->
 # Cognitive Offloading & Deskilling
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 Delegating thinking to a system erodes the skill needed to judge its output — the long-run cost of convenience, and the reason oversight can quietly hollow out.

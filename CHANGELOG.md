@@ -1,5 +1,54 @@
 # Changelog
 
+## v1.18 — September 2026
+
+**8 concepts published — the missing mechanism layer, two organizational gaps, and the last two score-4 terms. Plus a term-status gate, and the rename it produced on its first real use.**
+
+- `tokenization` — v1.0 (the unit of the mechanism, the context window and the bill)
+- `temperature-llms` — v1.0 (a variability knob widely mistaken for an accuracy knob)
+- `embeddings` — v1.0 (meaning as position; bias as a measurable direction)
+- `pre-training` — v1.0 (where everything a model knows is fixed, irreversibly)
+- `continuous-feedback-improvement` — v1.0 (the loop is only real if someone may act on it)
+- `tacit-knowledge` — v1.0 (Polanyi's paradox, and the articulation bottleneck it moved)
+- `moral-crumple-zone` — v1.0 (the operator who absorbs blame for a system they could not control)
+- `performativity-llms` — v1.0 (the model changing the user, measured in spontaneous speech)
+
+**The automated gap report went flat, and the fallback found more than it did.** Top score was 2, and all three hits at that score — `Skill`, `NLP`, `Inference` — were verified as the known common-word false positives, matching "Skills," "EMNLP" and "inference" as a phase word. **Inbound demand as a selection signal is exhausted**: three consecutive batches drained it, because published entries are careful not to leave unlinkable jargon lying around.
+
+**Falling back to the curation criteria surfaced a signal the report structurally cannot see.** Five of the six terms were already *promised* by published entries — named in a Related-concepts list with no link behind them: Embeddings (from RAG), Temperature (from Determinism vs Probabilism), Pre-training (from Training Data), Tacit Knowledge (from Curse of Knowledge), Continuous Feedback (from Model & Data Drift). The report scored these 1 or 0 and buried them. **A mention in a Related-concepts list is a promise; a mention in prose is a usage.** They are different demand signals and the report weights them identically.
+
+**Tokenization was selected on a different basis again, and it is the strongest of the six.** It had *zero* unlinked mentions — because the corpus says "token," not "Tokenization." Eleven published entries depend on the unit: "next-token prediction is the whole engine," "per-token pricing," "token limits." **None defined it.** A structural hole is invisible to a term-matching report by construction.
+
+**The hand-assigned scores were wrong in the same direction as last release, and further.** The six published here scored 4, 4, 3, 3, 3 and **2**. Temperature (LLMs) sat at score 2 while a published entry pointed at it by name. Two releases running, the foundational mechanism terms have been under-scored relative to what the corpus demonstrably needs.
+
+**Tokenization and Temperature both carry findings that contradict common practice.** Tokenizers make the same text up to **15× longer** in some languages than others — and since cost, latency and context capacity share the token as their unit, one disparity propagates into all three: same model, same posted price, less service. And sampling temperature between 0.0 and 1.0 has **no statistically significant effect on problem-solving accuracy** across nine models and five prompting methods. Lowering it buys consistency, not correctness — so it is not a risk control unless an evaluation shows it acting as one.
+
+**Embeddings carries a negative result rather than a mitigation.** Bias in an embedding space is a measurable *direction*, which makes it auditable. But published debiasing methods "hide the bias, not remove it" — it survives in inter-word distances and can be recovered. The entry states that measurement is reliable and any claim a space has been debiased is not, and cites both papers so the pairing is visible.
+
+**Continuous Feedback names the step that actually fails.** Not instrumentation — that gets budgeted. The **decision authority**: organizations build the dashboards and find nobody owns the call to act on them. The entry also treats the loop as a hazard in its own right, since a system improved on data it influenced confirms itself and reports progress while doing so.
+
+**The last two score-4 terms are published, and the tier is now empty.** Custodial Agency and Performativity (LLMs) had sat unpicked through five batches. Both were parked as sourcing risks — and, as with Small Language Models and Red Teaming before them, **"source-blocked" again meant "nobody has looked."** Both had strong anchors available, and Custodial Agency's four best sources were *already in the registry*, filed against other entries.
+
+**A term-status gate now runs on every entry, and it changed one of them.** Every entry declares, in a line under its title, whether its name is `established`, `emerging`, this wiki's own `house` label, or `vendor`-coined. This is a **separate axis from the confidence level** — that rates the evidence, this rates the term, and they vary independently: *Cognitive Offloading & Deskilling* is a completely standard term resting on weak evidence, and the corpus's one house term was assembled entirely from peer-reviewed work. Both are machine-checked; `check` fails the publish on a missing or unknown status, or on a visible line that disagrees with the metadata.
+
+**Custodial Agency was the gate's first real test, and it failed three of four checks — so it was renamed to `Moral Crumple Zone`, keeping the content.** Check 4 passed and mattered: the substance was measurably absent from the rest of the corpus, and 2 of its 6 sources were unique to it. What failed was the name. And the failure was not the expected one — **the phrase was not unattested, it was already taken**, occupied by three unrelated established senses (custodial *funds*, custodial *services*, government *agency oversight*). A reader searching it lands in facilities management.
+
+**That distinction is now part of the gate.** An unattested coinage and a collision are different failures: a coinage can honestly be labeled and kept, whereas a collision means the confusion is active rather than merely absent, and argues for renaming. Candidate replacements were run through the same four checks before adoption rather than after — which eliminated *Meaningful Human Control* on check 4, since the corpus already covers it in two entries, and eliminated *Embedded Oversight* and *Operator Accountability* on checks 1 and 3, where the only usage found was vendor governance blogs using the words descriptively with no stable definition. **Moral Crumple Zone passed all four**, on Elish (ESTS 2019) plus genuinely independent peer-reviewed uptake — Hohenstein & Jung put it in the title of a *Computers in Human Behavior* paper with no authorship overlap.
+
+**The rename was not a title swap, and should not be read as one.** A title promising an established concept has to deliver it, so the entry was re-centered: the crumple zone is now the subject, with the responsibility gap and the many-hands problem explaining why AI widens the opening, and the "embedded and accountable" framing kept as the honest counterpart — the same position, legitimate when four conditions hold. `custodial agency` survives as an alias. **Net effect: the corpus now has zero house terms.**
+
+**The confidence field was silently doing two jobs, and 25 entries were migrated.** They led with `**Established.**` or `**Emerging.**` in a field meant for evidence strength — term maturity in the confidence slot. Rather than add a second authored field, **the rating is now derived from the prose**, per the schema's own "derive rather than author" rule: a derived value cannot drift from its source, so no reconciliation gate is needed, and `check` fails any entry whose confidence does not open with a parseable rating. **The derivation deliberately refuses to flatten compound ratings** — 21 entries lead with statements like *"High on the mechanism, low on effectiveness in the wild,"* and taking the first word would have advertised confidence about the half the entry is not confident in. Two ratings in one statement derives as `split`. Corpus calibration is now a standing report section: **43 high · 17 medium-high · 16 medium · 1 low-medium · 18 split** — and the 18 split entries are a quality signal, evidence of per-part calibration rather than uniform hedging.
+
+**Its central move is to carry the hazard, not just the ideal.** Elish's *moral crumple zone* — the nearest human absorbing moral and legal responsibility for a system they could not control, protecting the technology at the operator's expense — is the same position described from the outside. The entry's position is that **"you are embedded and therefore accountable" can describe a genuine duty or launder an institutional one, and the phrasing does not distinguish them.** The test it offers is four conditions: authority, information, time, incentive.
+
+**Performativity carries a deliberate scope correction against its own one-line essence.** The seed definition says these systems shape what people *believe, say, and expect*. The evidence — a synthetic control over 737,083 hours of podcast speech linking ChatGPT-preferred words (*delve*, *showcase*, *meticulous*) to its release, plus a preregistered experiment (N=496) showing the adoption entrenches — covers **say**. The confidence level states that belief and expectation are plausible extensions and not findings, and tells readers not to cite the study for them. **A version trap is flagged in the registry:** the current paper uses the podcast corpus; v1 used a YouTube corpus, and secondary summaries conflate the two sets of figures.
+
+**Source registry:** 17 sources added (SRC-221–237), 14 reused. All 11 archive URLs captured at registration — the Nonaka DOI returned no snapshot until the publisher URL form was tried, the same literal-matching trap the workflow warns about. One source (Gonen & Goldberg) was registered specifically because a claim in a draft confidence level would otherwise have gone uncited.
+
+**One duplicate resolved as already-clean.** The standing "Pre-training / Pre-trainining typo" note in the project record described a tracker row that no longer exists.
+
+---
+
 ## v1.17 — September 2026
 
 **6 concepts published — the training-pipeline chain, plus three long-run costs.**

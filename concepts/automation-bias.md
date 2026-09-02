@@ -3,8 +3,11 @@ category: Human Oversight
 short: People stop checking a system that is usually right — which is how a rare wrong answer becomes a bad decision
 aliases: [overreliance, complacency, trusting the machine too much, rubber stamping, why do people stop checking]
 tags: [AI Literacy, Evaluation]
+established: established
 -->
 # Automation Bias
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 The documented human tendency to accept what an automated system says and to stop checking — the mechanism by which a flawed output becomes a bad decision.

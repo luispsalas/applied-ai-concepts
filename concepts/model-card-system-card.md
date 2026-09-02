@@ -3,8 +3,11 @@ category: Observability & Governance
 short: The transparency artifact — a scoping document whose job is to say where *not* to use a model
 aliases: [model card, system card, model documentation, what does this model do, transparency artifact]
 tags: [Regulatory, Evaluation, Data Governance]
+established: established
 -->
 # Model Card / System Card
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 A standardized document describing a model's capabilities, limitations, training data, and evaluation results — the transparency artifact regulators and users increasingly expect before trusting a system.

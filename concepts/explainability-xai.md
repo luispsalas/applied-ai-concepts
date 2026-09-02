@@ -3,8 +3,11 @@ category: Foundations
 short: Describing, in terms a human can understand, why an AI system produced a specific output — a prerequisite for accountability
 aliases: [XAI, interpretability, why did it decide that, explainable AI, right to explanation]
 tags: [Ethics, Regulatory, Evaluation]
+established: established
 -->
 # Explainability (XAI)
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 The ability to describe, in terms a human can understand, why an AI system produced a specific output — a prerequisite for accountability in high-stakes decisions.
@@ -61,7 +64,7 @@ The catch with modern AI: a system can produce a confident, fluent explanation t
 
 ## Confidence level
 
-**Established (field), active (LLM frontier).** XAI is a mature research field with standardized methods (attribution, counterfactuals) and a foundational literature (Doshi-Velez & Kim 2017; Gunning & Aha 2019). Explainability for large generative models is an active, fast-moving area: self-explanation, mechanistic interpretability, and faithfulness evaluation are open problems (Singh et al. 2024). Regulatory demand (EU AI Act, GDPR) is pushing explainability from research aspiration to compliance requirement.
+**High (field), medium (LLM frontier).** XAI is a mature research field with standardized methods (attribution, counterfactuals) and a foundational literature (Doshi-Velez & Kim 2017; Gunning & Aha 2019). Explainability for large generative models is an active, fast-moving area: self-explanation, mechanistic interpretability, and faithfulness evaluation are open problems (Singh et al. 2024). Regulatory demand (EU AI Act, GDPR) is pushing explainability from research aspiration to compliance requirement.
 
 ---
 

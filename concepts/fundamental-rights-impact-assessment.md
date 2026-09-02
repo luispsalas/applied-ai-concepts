@@ -3,8 +3,11 @@ category: Observability & Governance
 short: A deployer's pre-launch assessment of who is affected and what recourse they have — and it binds far fewer organizations than commonly claimed
 aliases: [FRIA, rights impact assessment, Article 27, impact assessment, pre-deployment assessment]
 tags: [Regulatory, Ethics]
+established: established
 -->
 # Fundamental Rights Impact Assessment (FRIA)
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 A required pre-deployment analysis of how a high-risk AI system could affect people's fundamental rights — fairness, privacy, non-discrimination — before it goes live, not after.

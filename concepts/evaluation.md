@@ -3,8 +3,11 @@ category: Reliability & Quality
 short: The structured practice of measuring whether an AI system does what it is supposed to do — before deployment and continuously in production
 aliases: [evals, benchmarking, how do we know it works, testing AI, measuring performance]
 tags: [Evaluation, Data Governance]
+established: established
 -->
 # Evaluation (AI Systems)
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 The structured practice of measuring whether an AI system does what it is supposed to do — before deployment and continuously in production.
@@ -74,7 +77,7 @@ Three things practitioners need to understand:
 
 ## Confidence level
 
-**Established, evolving.** Pre-deployment benchmarking and human evaluation are stable practices. Production evaluation methods — LLM-as-judge, drift detection, automated pipelines — are active development areas with known limitations. Evaluation methodology is a fast-moving field; specific techniques and benchmarks should be treated as current best practice, not fixed standards. The limits of benchmarking itself are also better documented than they were: the strongest recent statements of what evaluation cannot establish come from the labs producing the evaluations, in their own limitations sections.
+**High on pre-deployment practice, medium on production evaluation.** Pre-deployment benchmarking and human evaluation are stable practices. Production evaluation methods — LLM-as-judge, drift detection, automated pipelines — are active development areas with known limitations. Evaluation methodology is a fast-moving field; specific techniques and benchmarks should be treated as current best practice, not fixed standards. The limits of benchmarking itself are also better documented than they were: the strongest recent statements of what evaluation cannot establish come from the labs producing the evaluations, in their own limitations sections.
 
 ---
 

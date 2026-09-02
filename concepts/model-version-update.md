@@ -3,8 +3,11 @@ category: Reliability & Quality
 short: The system you use today may not be the one you tested — providers change models underneath you, and reliable behavior can shift without notice
 aliases: [model updates, version pinning, deprecation, it changed without telling us, model changed, provider update, snapshot models]
 tags: [Model Behavior, Evaluation, Regulatory]
+established: established
 -->
 # Model Version & Update
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 The system you use today may not be the system you tested — providers change models underneath you, and behavior that was reliable can shift without notice.

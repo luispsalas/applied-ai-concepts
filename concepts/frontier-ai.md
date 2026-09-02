@@ -3,8 +3,11 @@ category: Observability & Governance
 short: The leading edge — a category defined by capabilities being discovered after training, not by size
 aliases: [frontier model, state of the art model, most capable models, cutting edge AI, leading models]
 tags: [Regulatory, Safety]
+established: established
 -->
 # Frontier AI (Frontier Model)
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 The most capable AI models at any given time — the class regulators and AI labs single out for extra safety scrutiny because their capabilities are advancing faster than tools to evaluate them.
@@ -99,7 +102,7 @@ The word itself is a moving target. Whatever counts as frontier today will be or
 - [Compliance (AI Systems)](compliance-ai-systems.md) — the obligations designation triggers
 - [Model/Data Drift](model-data-drift.md) — provider capability changes as a change to your system
 - [AI Incident (Reporting)](ai-incident-reporting.md) — the reporting duties attached to designated models
-- Reasoning Models / Test-Time Compute — a capability axis that moves the frontier without moving parameter counts
+- [Reasoning Models](reasoning-models.md) — a capability axis that moves the frontier without moving parameter counts
 
 ---
 

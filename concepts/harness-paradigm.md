@@ -3,8 +3,11 @@ category: System Architecture
 short: Intelligence and control are separate layers — governance lives in the harness
 aliases: [agent harness, scaffolding, the layer around the model, control layer, harness engineering]
 tags: [Architecture, Agents]
+established: emerging
 -->
 # Harness Paradigm
+
+> **Term status — Emerging.** In active use and genuinely useful, but not yet settled — definitions still vary between sources. Read the Confidence level before relying on the term in a formal document.
 
 ## One-line essence
 Intelligence and control are separate layers — governance lives in the harness, not the model.
@@ -79,7 +82,7 @@ Four implications:
 
 ## Confidence level
 
-**Emerging — practitioner consensus.** The paradigm is well-established in production AI engineering (2023–present), and *harness engineering* has since been named and treated as a discipline in practitioner literature (Böckeler; Osmani), with systematic academic treatment of harness components. Its application to governance and organizational design is newer and still developing.
+**Medium-High.** The paradigm is well-established in production AI engineering (2023–present), and *harness engineering* has since been named and treated as a discipline in practitioner literature (Böckeler; Osmani), with systematic academic treatment of harness components. Its application to governance and organizational design is newer and still developing.
 
 ---
 

@@ -3,8 +3,11 @@ category: Observability & Governance
 short: The frameworks, policies, and accountability structures that determine who decides how AI systems behave — and who is answerable when they don't
 aliases: [responsible AI, AI oversight, AI policy, governing AI, AI risk management]
 tags: [Data Governance, Regulatory, Ethics]
+established: established
 -->
 # AI Governance
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 The frameworks, policies, and accountability structures that determine who decides how AI systems behave — and who is answerable when they don't.
@@ -70,7 +73,7 @@ Three things practitioners need to understand:
 
 ## Confidence level
 
-**Established, active.** Core governance principles (accountability, transparency, human oversight) are stable and widely endorsed. Regulatory frameworks (NIST AI RMF, EU AI Act) are published and in force. Implementation standards and agentic governance norms are active development areas — this entry will require revision as the regulatory landscape consolidates.
+**High.** Core governance principles (accountability, transparency, human oversight) are stable and widely endorsed. Regulatory frameworks (NIST AI RMF, EU AI Act) are published and in force. Implementation standards and agentic governance norms are active development areas — this entry will require revision as the regulatory landscape consolidates.
 
 ---
 

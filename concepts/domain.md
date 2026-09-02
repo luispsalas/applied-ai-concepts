@@ -3,8 +3,11 @@ category: Knowledge & Memory
 short: The specific field the AI is working in — what counts as a "good" or "wrong" answer depends entirely on the domain
 aliases: [subject area, field, vertical, domain expertise, what counts as a good answer here]
 tags: [Data Governance]
+established: established
 -->
 # Domain
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 The specific field or world the AI is working in — healthcare, legal, finance, architecture. What counts as a "good" or "wrong" answer depends entirely on the domain.

@@ -3,8 +3,11 @@ category: Observability & Governance
 short: Signed labels and invisible marks on generated content — a positive detection means something, a negative one does not
 aliases: [C2PA, Content Credentials, watermarking, was this made by AI, AI detection, provenance metadata]
 tags: [Regulatory, Security, Ethics]
+established: established
 -->
 # Content Provenance & Watermarking (C2PA)
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 Technical standards for labeling and tracing AI-generated content — cryptographic metadata (C2PA/Content Credentials) and invisible watermarks that let people verify what's real and what a model made.

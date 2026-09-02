@@ -33,6 +33,18 @@ CONCEPTS = ROOT / "concepts"
 # (25 of 81 entries — a tag that matches a third of the corpus discriminates nothing,
 # the same reason "ai" is a stopword in the search ranking). Adding a tag is a
 # deliberate act: extend this list, then re-tag, rather than inventing one in a file.
+# Term establishment status. Answers "is this a real term?" — a DIFFERENT question from
+# the entry's `## Confidence level`, which answers "how good is the evidence for these
+# claims?". Conflating them is why 26 entries once carried "Established"/"Emerging" in a
+# field meant for evidence strength. A well-established term can have weak evidence
+# (Cognitive Offloading) and a house term can have excellent sources (Custodial Agency).
+STATUS = {
+    "established": "> **Term status — Established.**",
+    "emerging":    "> **Term status — Emerging.**",
+    "house":       "> **Term status — House term.**",
+    "vendor":      "> **Term status — Vendor-coined.**",
+}
+
 VOCAB = ["AI Literacy", "Agents", "Architecture", "Data Governance", "Ethics", "Evaluation",
          "Model Behavior", "Privacy", "Prompting", "Regulatory", "Safety", "Security"]
 
@@ -66,6 +78,18 @@ def check(entries):
     by_slug = {e["slug"]: e for e in entries}
     lines, rrows, rorder = read_readme_rows()
 
+    # 0. README prose counts that the row-sync does not touch (they drifted to 81/405
+    #    while the corpus was at 95/507 — invisible to every other check here)
+    rtext = README.read_text()
+    n_alias = len({a for e in entries for a in (e.get("aliases") or [])})
+    for pat, want, what in ((r"— (\d+) terms alphabetically", len(entries), "glossary term count"),
+                            (r"plus (\d+) hand-written synonyms", n_alias, "alias count")):
+        m = re.search(pat, rtext)
+        if not m:
+            problems.append(f"readme: prose {what} sentence not found")
+        elif int(m.group(1)) != want:
+            problems.append(f"readme: prose {what} says {m.group(1)}, corpus has {want}")
+
     # 1. schema completeness
     for e in entries:
         miss = [k for k in ("term", "essence", "version") if not e.get(k)]
@@ -76,6 +100,22 @@ def check(entries):
         for k in ("category", "short", "aliases", "tags"):
             if not e.get(k):
                 problems.append(f"schema: {e['slug']} missing authored field '{k}'")
+        if not e.get("confidence"):
+            problems.append(f"derivation: {e['slug']} confidence level does not open with a "
+                            f"parseable rating (high / medium-high / medium / low-medium / low / split)")
+        st = e.get("established")
+        if not st:
+            problems.append(f"schema: {e['slug']} missing authored field 'established'")
+        elif st not in STATUS:
+            problems.append(f"schema: {e['slug']} established '{st}' not in {sorted(STATUS)}")
+        else:
+            # the visible line and the meta value must agree — two surfaces, one fact
+            body = (CONCEPTS / f"{e['slug']}.md").read_text()
+            shown = [l for l in body.splitlines() if l.startswith("> **Term status")]
+            if len(shown) != 1:
+                problems.append(f"status: {e['slug']} has {len(shown)} visible term-status lines, want 1")
+            elif not shown[0].startswith(STATUS[st]):
+                problems.append(f"status: {e['slug']} meta says '{st}' but the visible line disagrees")
         for t in e.get("tags") or []:
             if t not in VOCAB:
                 problems.append(f"tag: {e['slug']} '{t}' is not in the closed vocabulary")
@@ -318,6 +358,27 @@ def _reparse(lines):
 
 # ---------- reports ----------
 
+def promise_gaps(entries):
+    """Unlinked bullets in a Related concepts section.
+
+    Higher-value than the gap report and structurally invisible to it: a bullet
+    here is a promise the entry has already made, whereas a prose mention is
+    only a usage. The gap report weights them identically, which buries the
+    promises. Found by hand for the v1.18 batch (5 of 6 terms); automated after.
+    """
+    out = []
+    for e in entries:
+        body = (CONCEPTS / f"{e['slug']}.md").read_text()
+        m = re.search(r"^## Related concepts\s*\n(.*?)(?=^## |\Z)", body, re.M | re.S)
+        if not m:
+            continue
+        for line in m.group(1).splitlines():
+            line = line.strip()
+            if line.startswith("- ") and "](" not in line:
+                out.append(f"  {e['slug']}: {line[2:]}")
+    return out
+
+
 def report(entries):
     # reverse index for Wiki-Sources col L
     rev = defaultdict(list)
@@ -338,6 +399,26 @@ def report(entries):
     for t, n in tc.most_common():
         flag = "  <- matches a third of the corpus; discriminates little" if n > len(entries) * 0.33 else ""
         print(f"{n:4d}  {t}{flag}")
+
+    order = ["high", "medium-high", "medium", "low-medium", "low", "split"]
+    cc = Counter(e["confidence"] for e in entries)
+    sc = Counter(e.get("established") for e in entries)
+    print(f"\n== Calibration ({len(entries)} entries) ==")
+    print("  term status:  " + " · ".join(f"{sc[k]} {k}" for k in ("established","emerging","house","vendor") if sc.get(k)))
+    print("  confidence:   " + " · ".join(f"{cc[k]} {k}" for k in order if cc.get(k)))
+    split = sorted(e["term"] for e in entries if e["confidence"] == "split")
+    print(f"  {len(split)} entries rate their own halves differently — a calibration signal, not a defect:")
+    for s in split:
+        print(f"     {s}")
+    odd = sorted((e.get("established"), e["confidence"], e["term"]) for e in entries
+                 if e.get("established") != "established")
+    print("  non-established terms, with their evidence rating (the two axes are independent):")
+    for s, c, term in odd:
+        print(f"     {s:12} {c:12} {term}")
+
+    pg = promise_gaps(entries)
+    print(f"\n== Promised but unpublished ({len(pg)}) — Related-concepts bullets with no link ==")
+    print("\n".join(pg) if pg else "  none — every Related-concepts bullet resolves")
 
     # gap report: unpublished candidate terms ranked by unlinked plain-text mentions
     tracker = ROOT / "scripts" / "tracker-terms.txt"

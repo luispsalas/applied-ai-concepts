@@ -3,8 +3,11 @@ category: Reliability & Quality
 short: Deliberately attacking your own AI system — probing for jailbreaks, data leaks, and harmful outputs before anyone else finds them
 aliases: [adversarial testing, attacking your own system, penetration testing AI, stress testing, safety testing]
 tags: [Security, Evaluation, Safety]
+established: established
 -->
 # Red Teaming
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 Deliberately attacking your own AI system — probing for jailbreaks, data leaks, and harmful outputs before adversaries or users find them.

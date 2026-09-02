@@ -3,8 +3,11 @@ category: Foundations
 short: Why AI models generate statistically likely outputs rather than fixed answers — the same input can produce different results
 aliases: [nondeterminism, why do I get different answers, randomness, temperature, stochastic output]
 tags: [Model Behavior]
+established: established
 -->
 # Determinism vs Probabilism
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 The difference between systems that always produce the same output from the same input and those that generate statistically likely outputs — AI models are probabilistic, not deterministic.
@@ -64,7 +67,7 @@ Give a calculator "2+2" and you get "4" every time — that is deterministic. As
 - [AI Hallucination](hallucination.md) — a downstream consequence: probabilistic generation with no truth constraint produces confident errors
 - [Evaluation (AI Systems)](evaluation.md) — why evaluation must be statistical: a probabilistic system is measured across many runs, not one
 - [Failure Modes (AI Systems)](failure-modes-ai-systems.md) — non-reproducibility is itself a failure surface for testing, debugging, and audit
-- Temperature (LLMs) — the sampling parameter that tunes the determinism–variability trade-off
+- [Temperature (LLMs)](temperature-llms.md) — the sampling parameter that tunes the determinism–variability trade-off
 - [Prompt Engineering](prompt-engineering.md) — prompt design interacts with sampling: structure reduces (but never removes) output variance
 
 ---

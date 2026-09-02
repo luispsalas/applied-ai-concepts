@@ -3,8 +3,11 @@ category: Human Oversight
 short: A design pattern that keeps humans as decision authorities at critical points
 aliases: [HITL, human review, human oversight, approval step, human in the loop]
 tags: [Ethics, Agents]
+established: established
 -->
 # Human-in-the-Loop (HITL)
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 A design pattern that keeps humans as decision authorities at critical points — not as a safety afterthought, but as a structural component of the system.
@@ -71,7 +74,7 @@ A practical tension: human review does not scale at the same rate as AI throughp
 
 ## Confidence level
 
-**Established.** HITL is a foundational concept in human-computer interaction and AI safety literature. Its application to modern LLM-based systems is active and evolving — particularly around selective HITL design and the challenge of maintaining genuine human judgment at scale.
+**High.** HITL is a foundational concept in human-computer interaction and AI safety literature. Its application to modern LLM-based systems is active and evolving — particularly around selective HITL design and the challenge of maintaining genuine human judgment at scale.
 
 ---
 

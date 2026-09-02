@@ -3,8 +3,11 @@ category: System Architecture
 short: A technique that grounds model outputs in retrieved, verifiable information
 aliases: [RAG, retrieval augmented generation, search plus generation, document Q&A, grounded retrieval]
 tags: [Architecture, Data Governance]
+established: established
 -->
 # Retrieval-Augmented Generation (RAG)
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 A technique that grounds language model outputs in retrieved, verifiable information — reducing hallucination by giving the model current, specific content to work from.
@@ -73,7 +76,7 @@ Three things practitioners need to understand:
 
 ## Confidence level
 
-**Established.** RAG has a canonical academic origin (Lewis et al., 2020) and is widely deployed in production. The core retrieval-injection-generation pipeline is stable. Implementation patterns — chunking strategies, re-ranking, hybrid search, agentic RAG — are active development areas.
+**High.** RAG has a canonical academic origin (Lewis et al., 2020) and is widely deployed in production. The core retrieval-injection-generation pipeline is stable. Implementation patterns — chunking strategies, re-ranking, hybrid search, agentic RAG — are active development areas.
 
 ---
 
@@ -85,7 +88,7 @@ Three things practitioners need to understand:
 - [Harness Paradigm](harness-paradigm.md) — the retrieval layer, knowledge base access controls, and logging of retrieved content are harness-layer design decisions
 - [Grounding](grounding.md) — RAG is the most common technical implementation of grounding in production systems
 - [Context Window](context-window.md) — the physical constraint that bounds how much retrieved content can be injected per query
-- Vector Embeddings — the representation layer that makes semantic retrieval possible
+- [Embeddings](embeddings.md) — the representation layer that makes semantic retrieval possible
 
 ---
 

@@ -3,8 +3,11 @@ category: Interaction & Design
 short: You cannot un-know what you know, so you under-specify — and the model answers anyway instead of asking
 aliases: [assumed context, unstated context, underspecified prompt, why doesn't it understand what I want, missing context]
 tags: [AI Literacy, Prompting]
+established: established
 -->
 # Curse of Knowledge (AI Context)
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 The tendency to assume shared context that doesn't exist — the primary cause of poor AI outputs when users fail to surface what they already know.
@@ -94,7 +97,7 @@ The frustrating part is that expertise makes this worse. The more you know a sub
 - [Domain](domain.md) — the field-specific standards most likely to go unsaid
 - [Anthropomorphism (AI)](anthropomorphism-ai.md) — why people expect the clarifying question that never comes
 - [Verification](verification.md) — the check that catches what the omission produced
-- Tacit Knowledge — the knowledge type this bias operates on
+- [Tacit Knowledge](tacit-knowledge.md) — the knowledge type this bias operates on
 
 ---
 

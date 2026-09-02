@@ -3,8 +3,11 @@ category: Knowledge & Memory
 short: The collection of documents an AI can look up when answering — the quality of the library determines the quality of the answers
 aliases: [document corpus, reference library, the documents it searches, KB, knowledge repository]
 tags: [Architecture, Data Governance]
+established: established
 -->
 # Knowledge Base
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 The collection of documents and information an AI can look up when answering questions — like a reference library it can search. The quality and governance of the library directly determines the quality and trustworthiness of the answers.

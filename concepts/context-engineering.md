@@ -3,8 +3,11 @@ category: Interaction & Design
 short: Designing what an AI model receives is as important as the model itself
 aliases: [context design, what to put in the prompt, context management, assembling context, beyond prompt engineering]
 tags: [Prompting, Architecture]
+established: established
 -->
 # Context Engineering
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 Designing what an AI model receives is as important as the model itself.
@@ -63,7 +66,7 @@ Context engineering is also where governance enters. Decisions about what contex
 
 ## Confidence level
 
-**Established.** Active practitioner consensus since 2023. The term has stabilized; the discipline continues to deepen as agentic and multi-step systems become more common.
+**Medium-High.** Active practitioner consensus since 2023. The term has stabilized; the discipline continues to deepen as agentic and multi-step systems become more common.
 
 ---
 

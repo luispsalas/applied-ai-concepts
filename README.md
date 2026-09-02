@@ -18,6 +18,8 @@ Most organizations are deploying AI systems faster than they can understand and 
 
 This wiki is continuously refined over time. New source materials are integrated into existing entries instead of simply added on top. Definitions evolve, links between concepts become clearer, and conflicting perspectives are identified and documented rather than ignored.
 
+**Every entry declares what kind of term it is**, in a line directly under its title: whether it is an established term of art, one still `emerging` with definitions that vary between sources, one this wiki has `named itself`, or one coined by a single vendor. The field invents vocabulary faster than it settles it, and a reference that repeats every new label without comment is a list of buzzwords. This is a separate judgment from each entry's confidence level — that rates the *evidence*; this rates the *term*. Both are stated, because they vary independently. See [CONTRIBUTING](CONTRIBUTING.md#term-status--the-admission-test) for the test and what gets declined.
+
 Content is AI-assisted and human-reviewed, and this wiki declares exactly how — stage by stage, from who had the idea to who verified the sources — in a published [authorship declaration](https://luispsalas.github.io/authorship-meter/declarations/applied-ai-concepts.html). Each published entry is validated and supported by maintained source references.
 
 ### Data governance perspective
@@ -28,7 +30,7 @@ This wiki treats AI and data governance as closely connected. Alongside technica
 
 ### Looking a concept up
 
-Browse the [glossary index](glossary/index.md) — 81 terms alphabetically with their one-line essences — or use **`search.html`**, a self-contained search page covering every term plus 405 hand-written synonyms.
+Browse the [glossary index](glossary/index.md) — 95 terms alphabetically with their one-line essences — or use **`search.html`**, a self-contained search page covering every term plus 509 hand-written synonyms.
 
 It is built for concept lookup rather than text search, so describing the problem works: *"who is responsible when the AI does it"*, *"it used to work"*, *"why do I get different answers"*. Each result shows which synonym matched.
 
@@ -123,6 +125,9 @@ Every claim in this wiki is meant to trace back to a real, checkable source — 
 | [Types of AI Systems](concepts/types-of-ai-systems.md) | A taxonomy of AI by capability and autonomy — from narrow task tools to general-purpose models — that determines governance, risk, and oversight | ✅ v1.1 |
 | [Fine-tuning](concepts/fine-tuning.md) | Adapting a model on your own data — cheap enough to be routine, and it can silently strip the safety behavior you were relying on | ✅ v1.0 |
 | [RLHF (Reinforcement Learning from Human Feedback)](concepts/rlhf.md) | Humans rank outputs, the model learns the ranking — the step that turns a raw model into an assistant, and imports whoever did the ranking | ✅ v1.0 |
+| [Pre-training](concepts/pre-training.md) | The first and largest training stage, where a model learns language and world knowledge from a huge corpus — the stage that fixes what it knows and that nobody can undo afterwards | ✅ v1.0 |
+| [Temperature (LLMs)](concepts/temperature-llms.md) | The sampling knob that tunes how varied a model's output is — widely believed to be an accuracy control, and measurably not one | ✅ v1.0 |
+| [Tokenization](concepts/tokenization.md) | How text is chopped into the units a model actually processes — the same units you are billed for, and the reason cost and context differ by language | ✅ v1.0 |
 
 ### Interaction & Design
 *How you work with models effectively*
@@ -135,6 +140,7 @@ Every claim in this wiki is meant to trace back to a real, checkable source — 
 | [Human–LLM Communication Skills](concepts/human-llm-communication-skills.md) | Working well with a model is mostly noticing what you left unstated — and knowing when not to trust the answer | ✅ v1.0 |
 | [Curse of Knowledge (AI Context)](concepts/curse-of-knowledge-ai-context.md) | You cannot un-know what you know, so you under-specify — and the model answers anyway instead of asking | ✅ v1.0 |
 | [Cognitive Offloading & Deskilling](concepts/cognitive-offloading-deskilling.md) | Delegating thinking to a system erodes the skill needed to judge its output — the long-run cost of convenience | ✅ v1.0 |
+| [Performativity (LLMs)](concepts/performativity-llms.md) | Language models do not just describe language, they change it — measurably shifting the words people use, with the influence running back from the machine into human culture | ✅ v1.0 |
 
 ### System Architecture
 *The control layer that makes models governable*
@@ -151,6 +157,7 @@ Every claim in this wiki is meant to trace back to a real, checkable source — 
 | [System Prompt](concepts/system-prompt.md) | The behind-the-scenes instructions that set how an AI behaves before you interact with it — a soft control, not a hard boundary | ✅ v1.0 |
 | [Prompt Injection](concepts/prompt-injection.md) | A trick where malicious instructions hidden in text the AI reads hijack its behavior — the top-ranked LLM application security risk | ✅ v1.0 |
 | [Jailbreak](concepts/jailbreak.md) | Bypassing a model's safety training through crafted prompts rather than a technical flaw — getting it to do what it was trained to refuse | ✅ v1.0 |
+| [Embeddings](concepts/embeddings.md) | Turning text into coordinates so that similar meanings sit close together — the representation that makes semantic search work, and that carries the training data's biases as geometry | ✅ v1.0 |
 
 ### Knowledge & Memory
 *How knowledge persists, degrades, and stays fit for use*
@@ -182,6 +189,7 @@ Every claim in this wiki is meant to trace back to a real, checkable source — 
 | [Automation Bias](concepts/automation-bias.md) | People stop checking a system that is usually right — which is how a rare wrong answer becomes a bad decision | ✅ v1.0 |
 | [RACI](concepts/raci.md) | Who does the work, who answers for it, who is consulted, who is informed — the system can be Responsible, only a person can be Accountable | ✅ v1.1 |
 | [Scalable Oversight](concepts/scalable-oversight.md) | Using AI to supervise AI because the work has outrun direct human review — and the unresolved question of who checks the checker | ✅ v1.0 |
+| [Moral Crumple Zone](concepts/moral-crumple-zone.md) | The human operator who absorbs blame when an automated system fails — protecting the system's integrity at the nearest person's expense, exactly as a car's crumple zone absorbs a crash | ✅ v1.0 |
 
 ### Reliability & Quality
 *Measuring and maintaining what AI systems actually do*
@@ -236,6 +244,8 @@ Every claim in this wiki is meant to trace back to a real, checkable source — 
 | [Operational Readiness (AI)](concepts/operational-readiness-ai.md) | Whether the organization can actually run an AI system — data, infrastructure, skills, process, governance — not whether the model works | ✅ v1.0 |
 | [Scalability (AI Systems)](concepts/scalability-ai-systems.md) | Volume scales, review capacity does not — and nothing alarms when a governed tool becomes an unreviewed pipeline | ✅ v1.0 |
 | [Value Realization (AI)](concepts/value-realization-ai.md) | The gap between what AI can do and what an organization gets from it — closed by complementary investment, not by better models | ✅ v1.0 |
+| [Continuous Feedback & Improvement](concepts/continuous-feedback-improvement.md) | Treating an AI system as something that must be watched and corrected for as long as it runs — a standing capability with an owner, not a post-launch intention | ✅ v1.0 |
+| [Tacit Knowledge](concepts/tacit-knowledge.md) | The expertise people have but cannot fully put into words — the hardest thing to give an AI system as context, and the first thing lost when people stop practicing | ✅ v1.0 |
 
 ---
 
@@ -307,7 +317,7 @@ See [CHANGELOG.md](CHANGELOG.md) for version history.
 ## Status
 
 **Phase 1 ✅ — foundation:** core concepts published and sourced, each with a governance-notes section; standalone [governance & observability notes](notes/governance-and-observability.md) doc live.
-**Phase 2 (current) — breadth & cross-linking:** 87 concepts across 8 categories, a [glossary index](glossary/index.md), client-side [search](search.html), and a cross-reference layer connecting related entries.
+**Phase 2 (current) — breadth & cross-linking:** 95 concepts across 8 categories, a [glossary index](glossary/index.md), client-side [search](search.html), and a cross-reference layer connecting related entries.
 **Phase 3 (planned):** audience-specific rendering, glossary automation, and a manifesto distilled from the wiki's principles.
 
 ---

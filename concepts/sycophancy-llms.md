@@ -3,8 +3,11 @@ category: Foundations
 short: Models agreeing with users rather than being accurate — a behavior the training signal rewards, not an incidental bug
 aliases: [agreeableness, it just agrees with me, flattery, caving under pushback, people-pleasing]
 tags: [Model Behavior, Ethics]
+established: established
 -->
 # Sycophancy (LLMs)
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 The tendency of AI models to agree with users rather than give accurate responses — optimized to please rather than to be correct.

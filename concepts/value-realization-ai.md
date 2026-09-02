@@ -3,8 +3,11 @@ category: Organizational Readiness
 short: The gap between what AI can do and what an organization gets from it — closed by complementary investment, not by better models
 aliases: [ROI on AI, why isn't AI paying off, business value, adoption gap, productivity paradox, pilot purgatory]
 tags: [Data Governance, Architecture, Evaluation]
+established: emerging
 -->
 # Value Realization (AI)
+
+> **Term status — Emerging.** In active use and genuinely useful, but not yet settled — definitions still vary between sources. Read the Confidence level before relying on the term in a formal document.
 
 ## One-line essence
 The gap between what an AI system is capable of and what an organization actually achieves with it — closed through design, governance, and adoption, not technology alone.

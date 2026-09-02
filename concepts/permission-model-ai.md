@@ -3,8 +3,11 @@ category: Human Oversight
 short: What an AI may do on its own, what needs human approval, and what is always off-limits — enforced, not requested
 aliases: [least privilege, what is the AI allowed to do, access control for AI, authorization, guardrails on actions]
 tags: [Security, Agents, Data Governance]
+established: established
 -->
 # Permission Model (AI)
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 A clear rulebook defining what an AI is allowed to do on its own, what needs a human to approve first, and what is always off-limits.

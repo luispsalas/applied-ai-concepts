@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "count": 87,
+  "count": 95,
   "entries": [
     {
       "slug": "accountability-ai-systems",
@@ -73,6 +73,7 @@
         "permission-model-ai",
         "power-seeking",
         "tool-use",
+        "types-of-ai-systems",
         "verification"
       ],
       "sources": [
@@ -427,6 +428,7 @@
         "human-ai-collaboration-model",
         "large-language-models",
         "memory-ai-systems",
+        "performativity-llms",
         "sycophancy-llms"
       ],
       "sources": [
@@ -940,6 +942,50 @@
       "path": "concepts/context-window.md"
     },
     {
+      "slug": "continuous-feedback-improvement",
+      "term": "Continuous Feedback & Improvement",
+      "category": "Organizational Readiness",
+      "essence": "The standing capability to detect that a deployed AI system has degraded, decide what to do about it, and make the change — funded and owned for the life of the system, rather than assumed to happen once a project has closed.",
+      "short": "Treating an AI system as something that must be watched and corrected for as long as it runs — a standing capability with an owner, not a post-launch intention",
+      "aliases": [
+        "continuous improvement",
+        "feedback loop",
+        "closing the loop",
+        "iterate",
+        "post-deployment monitoring",
+        "corrective action",
+        "continual improvement",
+        "learning from production"
+      ],
+      "tags": [
+        "Evaluation",
+        "Data Governance"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "ai-incident-reporting",
+        "ai-management-system-iso-42001",
+        "audit-trail-ai",
+        "evaluation",
+        "model-data-drift",
+        "model-version-update",
+        "observability",
+        "operational-readiness-ai",
+        "ownership-ai-systems",
+        "raci",
+        "rlhf",
+        "sycophancy-llms",
+        "value-realization-ai"
+      ],
+      "sources": [
+        "SRC-001",
+        "SRC-166",
+        "SRC-169"
+      ],
+      "path": "concepts/continuous-feedback-improvement.md"
+    },
+    {
       "slug": "copyright-ai-output",
       "term": "Copyright & AI Output",
       "category": "Knowledge & Memory",
@@ -1011,6 +1057,7 @@
         "human-llm-communication-skills",
         "prompt-engineering",
         "system-prompt",
+        "tacit-knowledge",
         "verification"
       ],
       "sources": [
@@ -1239,7 +1286,8 @@
         "failure-modes-ai-systems",
         "hallucination",
         "large-language-models",
-        "prompt-engineering"
+        "prompt-engineering",
+        "temperature-llms"
       ],
       "sources": [
         "SRC-142",
@@ -1279,6 +1327,53 @@
         "SRC-136"
       ],
       "path": "concepts/domain.md"
+    },
+    {
+      "slug": "embeddings",
+      "term": "Embeddings",
+      "category": "System Architecture",
+      "essence": "Representing text as points in a high-dimensional space arranged so that related meanings land near each other — the layer that makes semantic retrieval possible, and that encodes whatever associations its training data contained as measurable direction.",
+      "short": "Turning text into coordinates so that similar meanings sit close together — the representation that makes semantic search work, and that carries the training data's biases as geometry",
+      "aliases": [
+        "vector embeddings",
+        "word embeddings",
+        "sentence embeddings",
+        "vectors",
+        "vector search",
+        "semantic search",
+        "word2vec",
+        "vector database",
+        "latent space"
+      ],
+      "tags": [
+        "Architecture",
+        "AI Literacy"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "bias-ai-systems",
+        "data-leakage-ai-systems",
+        "data-provenance-lineage",
+        "grounding",
+        "knowledge-base",
+        "memory-ai-systems",
+        "model-version-update",
+        "multimodal-ai",
+        "pre-training",
+        "privacy-ai-systems",
+        "rag",
+        "tokenization"
+      ],
+      "sources": [
+        "SRC-020",
+        "SRC-141",
+        "SRC-224",
+        "SRC-225",
+        "SRC-226",
+        "SRC-227"
+      ],
+      "path": "concepts/embeddings.md"
     },
     {
       "slug": "evaluation",
@@ -1463,6 +1558,7 @@
         "model-card-system-card",
         "model-data-drift",
         "power-seeking",
+        "reasoning-models",
         "red-teaming",
         "scalable-oversight",
         "small-language-models",
@@ -2155,6 +2251,7 @@
       "updated": "August 2026",
       "related": [
         "confidence-vs-accuracy",
+        "continuous-feedback-improvement",
         "data-quality",
         "evaluation",
         "failure-modes-ai-systems",
@@ -2170,6 +2267,55 @@
         "SRC-166"
       ],
       "path": "concepts/model-data-drift.md"
+    },
+    {
+      "slug": "moral-crumple-zone",
+      "term": "Moral Crumple Zone",
+      "category": "Human Oversight",
+      "essence": "The human operator who ends up bearing moral and legal responsibility for the failure of a complex automated system they could not realistically have controlled — absorbing the impact to protect the system, exactly as a car's crumple zone absorbs a crash to protect what is behind it.",
+      "short": "The human operator who absorbs blame when an automated system fails — protecting the system's integrity at the nearest person's expense, exactly as a car's crumple zone absorbs a crash",
+      "aliases": [
+        "custodial agency",
+        "moral crumple zones",
+        "blame the operator",
+        "human in the loop takes the blame",
+        "responsibility without control",
+        "liability sink",
+        "scapegoat",
+        "who gets blamed when AI fails",
+        "embedded oversight"
+      ],
+      "tags": [
+        "Ethics",
+        "AI Literacy"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "accountability-ai-systems",
+        "agency-ai-systems",
+        "ai-incident-reporting",
+        "automation-bias",
+        "bluewashing",
+        "continuous-feedback-improvement",
+        "human-ai-collaboration-model",
+        "human-in-the-loop",
+        "human-responsibility-in-ai-use",
+        "ownership-ai-systems",
+        "raci",
+        "scalable-oversight",
+        "tacit-knowledge"
+      ],
+      "sources": [
+        "SRC-106",
+        "SRC-107",
+        "SRC-109",
+        "SRC-110",
+        "SRC-232",
+        "SRC-233",
+        "SRC-237"
+      ],
+      "path": "concepts/moral-crumple-zone.md"
     },
     {
       "slug": "multi-agent-systems",
@@ -2416,6 +2562,49 @@
       "path": "concepts/ownership-ai-systems.md"
     },
     {
+      "slug": "performativity-llms",
+      "term": "Performativity (LLMs)",
+      "category": "Interaction & Design",
+      "essence": "The way language models actively shape what people believe, say, and expect — not just reflecting language, but influencing it at scale.",
+      "short": "Language models do not just describe language, they change it — measurably shifting the words people use, with the influence running back from the machine into human culture",
+      "aliases": [
+        "performative",
+        "delve",
+        "LLM influence on language",
+        "linguistic homogenization",
+        "models shaping culture",
+        "feedback into human language",
+        "performative prediction"
+      ],
+      "tags": [
+        "Model Behavior",
+        "Ethics"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "ai-literacy",
+        "anthropomorphism-ai",
+        "bias-ai-systems",
+        "cognitive-offloading-deskilling",
+        "content-provenance-watermarking",
+        "data-provenance-lineage",
+        "evaluation",
+        "large-language-models",
+        "pre-training",
+        "sycophancy-llms",
+        "systemic-risk-ai",
+        "training-data"
+      ],
+      "sources": [
+        "SRC-142",
+        "SRC-234",
+        "SRC-235",
+        "SRC-236"
+      ],
+      "path": "concepts/performativity-llms.md"
+    },
+    {
       "slug": "permission-model-ai",
       "term": "Permission Model (AI)",
       "category": "Human Oversight",
@@ -2531,6 +2720,51 @@
         "SRC-188"
       ],
       "path": "concepts/power-seeking.md"
+    },
+    {
+      "slug": "pre-training",
+      "term": "Pre-training",
+      "category": "Foundations",
+      "essence": "The first and by far the largest training stage, in which a model learns language, facts and reasoning patterns by predicting text across a vast corpus — establishing everything it knows before any adaptation, and doing so irreversibly.",
+      "short": "The first and largest training stage, where a model learns language and world knowledge from a huge corpus — the stage that fixes what it knows and that nobody can undo afterwards",
+      "aliases": [
+        "pretraining",
+        "pre-trained model",
+        "base model",
+        "foundation model training",
+        "how models are trained",
+        "where knowledge comes from",
+        "scaling laws",
+        "Chinchilla"
+      ],
+      "tags": [
+        "AI Literacy",
+        "Data Governance"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "copyright-ai-output",
+        "data-provenance-lineage",
+        "embeddings",
+        "fine-tuning",
+        "frontier-ai",
+        "knowledge-cutoff",
+        "large-language-models",
+        "model-card-system-card",
+        "rlhf",
+        "small-language-models",
+        "systemic-risk-ai",
+        "tokenization",
+        "training-data"
+      ],
+      "sources": [
+        "SRC-141",
+        "SRC-142",
+        "SRC-143",
+        "SRC-228"
+      ],
+      "path": "concepts/pre-training.md"
     },
     {
       "slug": "privacy-ai-systems",
@@ -2770,6 +3004,7 @@
       "related": [
         "context-engineering",
         "context-window",
+        "embeddings",
         "grounding",
         "hallucination",
         "harness-paradigm",
@@ -3205,6 +3440,134 @@
       "path": "concepts/systemic-risk-ai.md"
     },
     {
+      "slug": "tacit-knowledge",
+      "term": "Tacit Knowledge",
+      "category": "Organizational Readiness",
+      "essence": "Competence that people demonstrably possess but cannot fully articulate — the reason expert judgment resists being written down, the hardest input to supply an AI system deliberately, and the capacity that erodes quietly when the work is delegated.",
+      "short": "The expertise people have but cannot fully put into words — the hardest thing to give an AI system as context, and the first thing lost when people stop practicing",
+      "aliases": [
+        "know-how",
+        "unwritten knowledge",
+        "Polanyi's paradox",
+        "we can know more than we can tell",
+        "implicit knowledge",
+        "expert intuition",
+        "institutional knowledge",
+        "undocumented expertise"
+      ],
+      "tags": [
+        "AI Literacy"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "ai-literacy",
+        "cognitive-offloading-deskilling",
+        "context-engineering",
+        "curse-of-knowledge-ai-context",
+        "human-ai-collaboration-model",
+        "human-in-the-loop",
+        "human-llm-communication-skills",
+        "human-responsibility-in-ai-use",
+        "knowledge-base",
+        "persistent-synthesis",
+        "training-data",
+        "verification"
+      ],
+      "sources": [
+        "SRC-017",
+        "SRC-229",
+        "SRC-230",
+        "SRC-231"
+      ],
+      "path": "concepts/tacit-knowledge.md"
+    },
+    {
+      "slug": "temperature-llms",
+      "term": "Temperature (LLMs)",
+      "category": "Foundations",
+      "essence": "The sampling parameter that controls how much variety a model allows itself when choosing each next token — a trade-off between consistency and range, and, on the evidence, not the accuracy dial most people take it for.",
+      "short": "The sampling knob that tunes how varied a model's output is — widely believed to be an accuracy control, and measurably not one",
+      "aliases": [
+        "temperature setting",
+        "temp",
+        "sampling temperature",
+        "creativity slider",
+        "top-p",
+        "nucleus sampling",
+        "why is my output different each time",
+        "set temperature to zero"
+      ],
+      "tags": [
+        "Model Behavior",
+        "AI Literacy"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "audit-trail-ai",
+        "confidence-vs-accuracy",
+        "determinism-vs-probabilism",
+        "evaluation",
+        "grounding",
+        "hallucination",
+        "large-language-models",
+        "model-version-update",
+        "prompt-engineering",
+        "tokenization"
+      ],
+      "sources": [
+        "SRC-142",
+        "SRC-144",
+        "SRC-145",
+        "SRC-223"
+      ],
+      "path": "concepts/temperature-llms.md"
+    },
+    {
+      "slug": "tokenization",
+      "term": "Tokenization",
+      "category": "Foundations",
+      "essence": "Splitting text into the subword units a language model actually reads and writes — the unit of the mechanism, of the context window, and of the bill, which is why the same sentence can cost several times more in one language than another.",
+      "short": "How text is chopped into the units a model actually processes — the same units you are billed for, and the reason cost and context differ by language",
+      "aliases": [
+        "tokens",
+        "what is a token",
+        "token count",
+        "BPE",
+        "byte pair encoding",
+        "subword units",
+        "tokenizer",
+        "why am I charged per token",
+        "how many r's in strawberry"
+      ],
+      "tags": [
+        "AI Literacy",
+        "Architecture"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "bias-ai-systems",
+        "context-window",
+        "embeddings",
+        "hallucination",
+        "large-language-models",
+        "local-llms",
+        "model-version-update",
+        "multimodal-ai",
+        "pre-training",
+        "scalability-ai-systems"
+      ],
+      "sources": [
+        "SRC-141",
+        "SRC-142",
+        "SRC-221",
+        "SRC-222"
+      ],
+      "path": "concepts/tokenization.md"
+    },
+    {
       "slug": "tool-use",
       "term": "Tool Use",
       "category": "System Architecture",
@@ -3276,6 +3639,7 @@
         "large-language-models",
         "local-llms",
         "model-card-system-card",
+        "pre-training",
         "privacy-ai-systems"
       ],
       "sources": [

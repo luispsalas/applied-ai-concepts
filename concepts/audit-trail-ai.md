@@ -3,8 +3,11 @@ category: Observability & Governance
 short: The structured record of what an AI system received, decided, and did — enabling accountability and governance review after the fact
 aliases: [logging, traceability, what did it do, AI logs, record keeping]
 tags: [Data Governance, Regulatory, Security]
+established: established
 -->
 # Audit Trail (AI)
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 The structured record of what an AI system received, decided, and did — enabling accountability, compliance, and governance review after the fact.
@@ -77,7 +80,7 @@ Three things practitioners need to understand:
 
 ## Confidence level
 
-**Established.** Logging and audit requirements for AI systems are codified in regulatory frameworks (EU AI Act Art. 12, GDPR) and well-established in systems engineering. The specific design patterns for agentic audit trails — capturing multi-step action chains and human checkpoint decisions — are an active development area.
+**High.** Logging and audit requirements for AI systems are codified in regulatory frameworks (EU AI Act Art. 12, GDPR) and well-established in systems engineering. The specific design patterns for agentic audit trails — capturing multi-step action chains and human checkpoint decisions — are an active development area.
 
 ---
 

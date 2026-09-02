@@ -3,8 +3,11 @@ category: Observability & Governance
 short: Responsible-AI claims with nothing behind them — the test is whether anything can constrain a decision
 aliases: [ethics washing, AI washing, responsible AI theater, greenwashing for AI, empty ethics claims]
 tags: [Ethics, Regulatory]
+established: established
 -->
 # Bluewashing
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 When a company says its AI is responsible or ethical — but it's mainly for show, without real processes behind it. The AI version of claiming to be 'green' without changing anything meaningful.

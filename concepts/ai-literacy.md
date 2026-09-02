@@ -3,8 +3,11 @@ category: Organizational Readiness
 short: The competencies required to engage with, use, and govern AI systems responsibly — at an individual, team, and organizational level
 aliases: [AI skills, AI education, AI competency, understanding AI, AI training for staff]
 tags: [AI Literacy]
+established: established
 -->
 # AI Literacy
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 The competencies required to engage with, use, and govern AI systems responsibly — at an individual, team, and organizational level.
@@ -76,7 +79,7 @@ Three things practitioners need to understand:
 
 ## Confidence level
 
-**Established, developing.** The foundational competency clusters (Long & Magerko, 2020) are stable and widely cited. The OECD/EC framework (2025) provides current institutional consensus on domain structure. Organizational literacy tiers and labor market implications are active research areas. Specific curriculum standards and assessment methodologies are nascent.
+**High on the competency frameworks, medium on organizational application.** The foundational competency clusters (Long & Magerko, 2020) are stable and widely cited. The OECD/EC framework (2025) provides current institutional consensus on domain structure. Organizational literacy tiers and labor market implications are active research areas. Specific curriculum standards and assessment methodologies are nascent.
 
 ---
 

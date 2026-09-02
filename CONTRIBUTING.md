@@ -46,6 +46,43 @@ If you're unsure whether something fits, open a `discussion` issue.
 
 ---
 
+## Term status — the admission test
+
+The field names things faster than it settles them. A term can be widely repeated and still mean something different in every source, and publishing those without comment would make this a list of buzzwords rather than a reference. So **every entry declares what kind of term it is**, on the entry itself, directly under the title.
+
+This is a **separate question** from the entry's `## Confidence level`, and the two are deliberately not merged:
+
+| | Asks | Example |
+|---|---|---|
+| **Term status** | Is this a real, recognized term? | *Cognitive Offloading* — yes, entirely standard |
+| **Confidence level** | How good is the evidence for these claims? | *Cognitive Offloading* — weak; no longitudinal study exists |
+
+They vary independently. A settled term can rest on thin evidence, and a term invented here can be assembled entirely from peer-reviewed work. One score cannot express both, and trying made earlier entries put "Established" in a field meant for evidence strength.
+
+**Four checks, applied before drafting** — the cost of skipping them is a finished entry nobody can agree about:
+
+1. Does the term appear in peer-reviewed work, a standard, or regulation — **by someone other than whoever coined it?**
+2. **Filter the originator's own domains out of a search.** What is left? **Two different failures hide here, and they call for different actions:** *nothing found* means a clean coinage — a `house` label is honest and workable. *Something found, in unrelated fields* means *the phrase is already taken*, and a reader who searches it lands somewhere else entirely. **A collision is a much stronger argument for renaming than mere novelty is**, because the confusion is active rather than absent.
+3. Is the meaning **stable** across independent uses, or does each source redefine it?
+4. Does this wiki already cover the concept under an established name?
+
+**Four outcomes:**
+
+| Status | Meaning | What happens |
+|---|---|---|
+| `established` | Recognized term of art, in independent use | Publish normally |
+| `emerging` | Real and useful, definitions still vary | Publish with the status shown, and say what is unsettled |
+| `house` | This wiki's own label for something sources call other things | Publish only if the entry says so plainly and names what to cite instead |
+| `vendor` | Originated with one vendor | **Do not publish under the vendor's term.** Publish the concept under a neutral name, citing the vendor as one implementation |
+
+A fifth outcome — *not a term* — is a decline, recorded with its reason rather than silently dropped.
+
+**The status judges the concept, not the wording of the title.** Entry titles are editorial; many are descriptive compounds. The question a reader needs answered is whether the *thing* is real, not whether the exact phrase is a standard string.
+
+**It is machine-checked.** `established:` is a required field in each entry's metadata block, and `build.py check` fails the publish if it is missing, holds an unknown value, or disagrees with the visible line on the entry.
+
+---
+
 ## Planned: automated proposal pipeline
 
 A future version of this workflow will include a scheduled agent that monitors primary sources (academic publications, practitioner blogs, key authors) and proposes new terms or updates to existing entries as pull requests. Every proposal will still require human review before merging — the automation handles discovery and drafting; human judgment handles approval.

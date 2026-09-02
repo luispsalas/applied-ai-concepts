@@ -3,8 +3,11 @@ category: Interaction & Design
 short: Structuring inputs to consistently elicit useful, accurate, and safe model outputs
 aliases: [prompting, prompt design, how to write prompts, prompt patterns, prompt craft]
 tags: [Prompting]
+established: established
 -->
 # Prompt Engineering
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 Structuring inputs to consistently elicit useful, accurate, and safe model outputs.
@@ -71,7 +74,7 @@ That said, prompt engineering is a genuine high-leverage skill at the practition
 
 ## Confidence level
 
-**Established.** Prompt engineering is a recognized discipline with stable core techniques and active research frontiers (2022–present). Some specific techniques evolve as models improve; the underlying principles — clarity, structure, example provision, constraint specification — are durable.
+**High.** Prompt engineering is a recognized discipline with stable core techniques and active research frontiers (2022–present). Some specific techniques evolve as models improve; the underlying principles — clarity, structure, example provision, constraint specification — are durable.
 
 ---
 

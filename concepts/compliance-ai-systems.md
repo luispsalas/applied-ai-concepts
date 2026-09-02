@@ -3,8 +3,11 @@ category: Observability & Governance
 short: Meeting defined AI obligations — and being answerable for whether they were actually met, not just documented
 aliases: [regulatory compliance, EU AI Act obligations, meeting requirements, conformity, legal obligations]
 tags: [Regulatory, Data Governance]
+established: established
 -->
 # Compliance (AI Systems)
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 Meeting defined obligations for how AI systems are built, deployed, and operated — and being answerable for whether those obligations were actually met, not just documented.
@@ -74,7 +77,7 @@ Three things practitioners need to understand:
 
 ## Confidence level
 
-**Established, active.** Regulatory frameworks (EU AI Act, GDPR) are published and in force. The compliance gap between documented principles and practice is well-documented in the AI ethics literature (Hagendorff 2022; Green 2022). Specific sector-by-sector compliance standards and the enforcement posture of AI regulators are actively developing.
+**High.** Regulatory frameworks (EU AI Act, GDPR) are published and in force. The compliance gap between documented principles and practice is well-documented in the AI ethics literature (Hagendorff 2022; Green 2022). Specific sector-by-sector compliance standards and the enforcement posture of AI regulators are actively developing.
 
 ---
 

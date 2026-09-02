@@ -3,8 +3,11 @@ category: System Architecture
 short: A language model that doesn't just respond — it plans, acts, and iterates across multiple steps
 aliases: [agentic AI, autonomous agent, AI that takes actions, agent, multi-step AI]
 tags: [Agents, Architecture]
+established: established
 -->
 # AI Agent
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 A language model that doesn't just respond — it plans, acts, and iterates across multiple steps to complete a task.
@@ -67,7 +70,7 @@ Agents represent a qualitative shift in what AI systems do — from generating t
 
 ## Confidence level
 
-**Established.** AI agents are a recognized and widely deployed architecture (2023–present). Core patterns — tool use, ReAct reasoning loop, memory management — are stable. Orchestration frameworks, multi-agent coordination, and long-horizon reliability are active development areas.
+**High.** AI agents are a recognized and widely deployed architecture (2023–present). Core patterns — tool use, ReAct reasoning loop, memory management — are stable. Orchestration frameworks, multi-agent coordination, and long-horizon reliability are active development areas.
 
 ---
 

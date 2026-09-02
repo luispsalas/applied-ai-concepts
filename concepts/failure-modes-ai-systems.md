@@ -3,8 +3,11 @@ category: Reliability & Quality
 short: The specific ways an AI system can go wrong — each requiring a different detection-and-response control
 aliases: [what can go wrong, AI failures, error modes, risk taxonomy, ways AI breaks]
 tags: [Evaluation, Safety]
+established: established
 -->
 # Failure Modes (AI Systems)
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 The specific ways an AI system can go wrong — from hallucination to scope creep to misuse — each requiring different governance responses.
@@ -69,7 +72,7 @@ The most dangerous failures are the quiet ones: the system keeps running and loo
 
 ## Confidence level
 
-**Established (concept), active (agentic taxonomies).** That AI systems fail in distinct, categorizable ways is well-established and standardized in risk frameworks (NIST AI RMF). Specific failure taxonomies for LLM agents are an active, fast-developing area — recent peer-reviewed and preprint work is still converging on shared categories (Shah et al. 2026; Agents of Chaos 2026). Expect this entry to evolve as agentic-failure taxonomies mature.
+**High (concept), medium (agentic taxonomies).** That AI systems fail in distinct, categorizable ways is well-established and standardized in risk frameworks (NIST AI RMF). Specific failure taxonomies for LLM agents are an active, fast-developing area — recent peer-reviewed and preprint work is still converging on shared categories (Shah et al. 2026; Agents of Chaos 2026). Expect this entry to evolve as agentic-failure taxonomies mature.
 
 ---
 

@@ -3,8 +3,11 @@ category: Reliability & Quality
 short: Output that systematically induces false beliefs because something other than truth was being optimized for
 aliases: [misleading output, AI deception, did it lie to me, systematic misleading, manipulation]
 tags: [Safety, Model Behavior, Ethics]
+established: established
 -->
 # Deception (AI Systems)
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 When a model conveys something it does not internally represent as true — asserting, implying or omitting to produce a false impression, as distinct from being confidently wrong.

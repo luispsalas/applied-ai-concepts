@@ -3,8 +3,11 @@ category: System Architecture
 short: A trick where malicious instructions hidden in text the AI reads hijack its behavior — the top-ranked LLM application security risk
 aliases: [indirect prompt injection, hidden instructions, prompt hijacking, injection attack, malicious input]
 tags: [Security, Prompting]
+established: established
 -->
 # Prompt Injection
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 A trick where someone hides malicious instructions in text the AI reads, hijacking its behavior — like a fake note slipped into a document that overrides the real instructions.

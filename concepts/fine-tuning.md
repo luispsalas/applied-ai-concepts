@@ -3,8 +3,11 @@ category: Foundations
 short: Adapting a model on your own data — cheap enough to be routine, and it can silently strip the safety behavior you were relying on
 aliases: [LoRA, PEFT, parameter-efficient fine-tuning, adapting a model, custom model, training on our own data, domain adaptation]
 tags: [Architecture, Data Governance, Security]
+established: established
 -->
 # Fine-tuning
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 Adapting a pre-trained model to a specific domain or task by training it further on targeted data — between prompting and building from scratch in cost, control, and risk.

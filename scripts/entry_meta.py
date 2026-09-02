@@ -33,6 +33,33 @@ CONCEPTS = ROOT / "concepts"
 META_RE = re.compile(r"\A<!--meta\s*\n(.*?)\n-->", re.S)
 ESSENCE_RE = re.compile(r"^## One-line essence\s*\n(.+?)\s*$", re.M)
 VERSION_RE = re.compile(r"^\*Last updated:\s*(v[\d.]+)\s*·\s*(.+?)\*\s*$", re.M)
+CONF_RE = re.compile(r"^## Confidence level\s*\n+\*\*(.+?)\*\*", re.M | re.S)
+# Longest-first: "medium-high" must win before "medium" or "high" can match inside it.
+RATINGS = ("medium-high", "low-medium", "high", "medium", "low")
+
+def derive_confidence(text):
+    """The headline rating, DERIVED from the prose so it cannot drift from it.
+
+    Two ratings in one statement ("High on the mechanism, low on effectiveness in
+    the wild") is a *split* assessment, and saying so is the point -- flattening it
+    to its first word would report an entry as confident about the half it is not.
+    """
+    m = CONF_RE.search(text)
+    if not m:
+        return None
+    head = m.group(1).lower()
+    if head.startswith("split"):
+        return "split"
+    found, seen = [], head
+    for r in RATINGS:
+        if re.search(rf"\b{r}\b", seen):
+            found.append(r)
+            seen = seen.replace(r, " ")
+    if not found:
+        return None
+    return "split" if len(found) > 1 else found[0]
+
+
 RELATED_RE = re.compile(r"^## Related concepts\s*\n(.*?)(?=\n---|\n## )", re.S | re.M)
 LINK_RE = re.compile(r"\]\(([a-z0-9-]+)\.md\)")
 SRC_RE = re.compile(r"SRC-\d{3}")
@@ -68,6 +95,7 @@ def read_entry(path):
     e["authored"] = bool(m)
 
     e["term"] = first.lstrip("# ").strip() if first.startswith("#") else None
+    e["confidence"] = derive_confidence(text)
     me = ESSENCE_RE.search(text)
     e["essence"] = me.group(1).strip() if me else None
     mv = VERSION_RE.search(text)

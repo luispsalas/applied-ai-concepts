@@ -3,8 +3,11 @@ category: Observability & Governance
 short: A documented event where an AI system caused or nearly caused harm — now with legal deadlines to report it, not just fix it quietly
 aliases: [AI incident, near miss, when something goes wrong, serious incident reporting, postmortem]
 tags: [Regulatory, Safety]
+established: established
 -->
 # AI Incident (Reporting)
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 A documented event where an AI system caused or nearly caused harm — with a growing set of legal obligations to report and investigate it, not just fix it quietly.

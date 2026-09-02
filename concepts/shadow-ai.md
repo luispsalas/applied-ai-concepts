@@ -3,8 +3,11 @@ category: Observability & Governance
 short: Unsanctioned AI use — invisible to the processes meant to govern it, and usually a signal about the sanctioned option
 aliases: [shadow IT, unsanctioned AI, ungoverned AI, unapproved AI tools, rogue AI]
 tags: [Security, Data Governance, Regulatory]
+established: established
 -->
 # Shadow AI
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 AI tools used inside an organization without official sanction, review, or governance — invisible to the very processes meant to manage AI risk.

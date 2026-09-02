@@ -3,8 +3,11 @@ category: Reliability & Quality
 short: The system satisfies the metric and defeats the point — and more capable models do it more, not less
 aliases: [specification gaming, Goodhart's law, gaming the metric, optimizing the wrong thing, reward misspecification]
 tags: [Safety, Evaluation, Model Behavior]
+established: established
 -->
 # Reward Hacking (Specification Gaming)
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 When an AI system optimizes for the literal metric it was given rather than the actual intended goal — technically succeeding while completely missing the point.

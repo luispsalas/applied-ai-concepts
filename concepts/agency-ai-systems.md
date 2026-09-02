@@ -3,8 +3,11 @@ category: Human Oversight
 short: How much a system may do without asking — granted by an organization, not possessed by the model
 aliases: [autonomy, how much can it do on its own, scope of action, levels of autonomy, autonomous action]
 tags: [Agents, Regulatory, Security]
+established: established
 -->
 # Agency (AI Systems)
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 The scope of autonomous action an AI system is permitted to take — and the governance question of where human authorization is required before the system acts.
@@ -102,7 +105,7 @@ That is the useful reframe: agency is not something a system *has*, it is someth
 - [Automation Bias](automation-bias.md) — named in Art. 14 itself as a risk oversight personnel must be aware of
 - [Verification](verification.md) — an oversight step is only real if performing it is affordable
 - [Compliance (AI Systems)](compliance-ai-systems.md) — where Art. 14 obligations are demonstrated
-- Types of AI Systems — autonomy is one of the axes that taxonomy turns on
+- [Types of AI Systems](types-of-ai-systems.md) — autonomy is one of the axes that taxonomy turns on
 
 ---
 

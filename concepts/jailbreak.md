@@ -3,8 +3,11 @@ category: System Architecture
 short: Bypassing a model's safety training through crafted prompts rather than a technical flaw — getting it to do what it was trained to refuse
 aliases: [prompt jailbreaking, bypassing safety, getting it to break its rules, safety bypass, DAN]
 tags: [Security, Safety]
+established: established
 -->
 # Jailbreak
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 Bypassing an AI model's safety training through crafted prompts, rather than exploiting a technical flaw — getting the model to do what it was trained to refuse, from the inside.

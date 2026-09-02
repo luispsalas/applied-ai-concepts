@@ -3,8 +3,11 @@ category: Foundations
 short: Systematic errors that unfairly advantage or disadvantage certain groups — often inherited from training data, rarely visible in any single output
 aliases: [algorithmic bias, AI fairness, discrimination in AI, unfair outcomes, model bias]
 tags: [Ethics, Data Governance, Regulatory]
+established: established
 -->
 # Bias (AI Systems)
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 Systematic errors in AI outputs that unfairly advantage or disadvantage certain groups — often inherited from training data or embedded in design choices, rarely visible in the output itself.
@@ -65,7 +68,7 @@ You usually can't see bias by looking at one decision. It hides in the pattern a
 
 ## Confidence level
 
-**Established.** The existence, categories, and mechanisms of AI bias are well-documented and standardized (NIST SP 1270), and the fairness-metrics literature is mature and peer-reviewed (Mehrabi et al. 2021). What remains active is operational: which fairness definition applies in a given regulatory or business context, how to mitigate bias without introducing new harms, and how bias manifests in large generative models where training data is vast and opaque.
+**High.** The existence, categories, and mechanisms of AI bias are well-documented and standardized (NIST SP 1270), and the fairness-metrics literature is mature and peer-reviewed (Mehrabi et al. 2021). What remains active is operational: which fairness definition applies in a given regulatory or business context, how to mitigate bias without introducing new harms, and how bias manifests in large generative models where training data is vast and opaque.
 
 ---
 

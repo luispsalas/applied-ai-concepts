@@ -3,8 +3,11 @@ category: Human Oversight
 short: The explicit design of how people and AI systems divide work, hand over, and resolve disagreement — documented, not assumed
 aliases: [division of labor with AI, who does what, handoff design, human AI teaming, collaboration pattern]
 tags: [Architecture, Ethics]
+established: established
 -->
 # Human–AI Collaboration Model
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 The explicit design of how humans and AI systems divide tasks, share information, and maintain oversight — not assumed, but documented and enforced.

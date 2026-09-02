@@ -3,8 +3,11 @@ category: Foundations
 short: Every model was trained up to a fixed date and knows nothing after it — and cannot reliably tell you when a question falls outside what it knows
 aliases: [training cutoff, why doesn't it know about recent events, out of date model, cutoff date, stale knowledge]
 tags: [Model Behavior, AI Literacy]
+established: established
 -->
 # Knowledge Cutoff
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 Every model was trained up to a fixed point in time and knows nothing after it — which is why it can be confidently wrong about recent events, and why it may not know it is out of date.

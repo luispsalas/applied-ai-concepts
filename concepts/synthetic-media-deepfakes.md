@@ -3,8 +3,11 @@ category: Reliability & Quality
 short: Generation scales and verification does not — and the documented harm is fraud and intimate imagery, not mainly politics
 aliases: [deepfake, AI-generated video, voice cloning, fake audio, manipulated media]
 tags: [Security, Ethics, Regulatory]
+established: established
 -->
 # Synthetic Media (Deepfakes)
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 Convincing fabricated audio, image and video — and the practical problem that verifying what is real is now harder than producing what is not.

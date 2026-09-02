@@ -3,8 +3,11 @@ category: Knowledge & Memory
 short: How an AI remembers — what it keeps in a conversation, what carries over to future sessions, and what it reuses as learned skill
 aliases: [does it remember me, conversation history, persistence, session memory, long-term memory]
 tags: [Architecture, Privacy]
+established: established
 -->
 # Memory (AI Systems)
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 How an AI remembers things — what it keeps during a conversation, what carries over to future sessions, and what it can reuse as a learned skill.

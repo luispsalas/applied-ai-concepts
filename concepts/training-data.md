@@ -3,8 +3,11 @@ category: Knowledge & Memory
 short: What the model learned from — where its knowledge, gaps, blind spots and biases all come from, and which is rarely disclosed
 aliases: [what was it trained on, training corpus, pretraining data, the data behind the model, where its knowledge comes from]
 tags: [Data Governance, Ethics, AI Literacy]
+established: established
 -->
 # Training Data
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 The text, images and code a model learned from — where its knowledge, its gaps, its blind spots and its biases all come from, and which is rarely fully disclosed.
@@ -96,7 +99,7 @@ None of this makes the models unusable. It means that when a model is unreliable
 - [Local LLMs](local-llms.md) — open weights do not imply open or licensed training data
 - Synthetic Data — increasingly part of the corpus, with its own quality and feedback questions
 - [Copyright & AI Output](copyright-ai-output.md) — the licensing question the corpus raises and does not answer
-- Pre-training — the stage at which the corpus does its work
+- [Pre-training](pre-training.md) — the stage at which the corpus does its work
 
 ---
 

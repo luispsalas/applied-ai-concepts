@@ -3,8 +3,11 @@ category: Human Oversight
 short: Who does the work, who answers for it, who is consulted, who is informed — the system can be Responsible, only a person can be Accountable
 aliases: [responsibility matrix, RACI matrix, responsible accountable consulted informed, role assignment, who owns what]
 tags: [Ethics, Data Governance]
+established: established
 -->
 # RACI
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 A simple table that answers four questions for any AI task: who does the work, who is on the hook if something goes wrong, who you consult for expertise, and who just needs to be kept informed.

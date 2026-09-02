@@ -3,8 +3,11 @@ category: Interaction & Design
 short: Reading fluent language as understanding, intent or care — the reflex underneath most other misconceptions about AI
 aliases: [ELIZA effect, treating AI like a person, does it understand me, attributing intent, humanizing AI]
 tags: [AI Literacy, Model Behavior]
+established: established
 -->
 # Anthropomorphism (AI)
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 Reading a system that produces fluent language as though it understands, intends, or feels — the assumption underneath most other misunderstandings about what AI can be trusted to do.
@@ -92,7 +95,7 @@ Something that talks like a person feels like a person, and that reaction happen
 - [Large Language Models (LLMs)](large-language-models.md) — what is actually happening when the text appears
 - [Memory (AI Systems)](memory-ai-systems.md) — what continuity exists, and what is assumed
 - [Human–AI Collaboration Model](human-ai-collaboration-model.md) — a colleague framing quietly changes how much checking a person does
-- Performativity (LLMs) — how these systems shape the language and expectations of the people using them
+- [Performativity (LLMs)](performativity-llms.md) — how these systems shape the language and expectations of the people using them
 
 ---
 

@@ -3,8 +3,11 @@ category: Knowledge & Memory
 short: The fitness of data for its intended use — and the upstream constraint on every AI system built on it
 aliases: [fitness for purpose, garbage in garbage out, data readiness, clean data, data fitness]
 tags: [Data Governance]
+established: established
 -->
 # Data Quality
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 The fitness of data for its intended use — and the upstream constraint that determines the reliability of every AI system built on it.
@@ -74,7 +77,7 @@ Three implications:
 
 ## Confidence level
 
-**Established.** Data quality as a discipline has a stable, canonical framework (DAMA-DMBOK defines the authoritative quality dimensions) with extensive literature and practitioner adoption. Its application as an upstream constraint on AI system reliability is well-understood and increasingly documented in responsible AI and MLOps literature.
+**High.** Data quality as a discipline has a stable, canonical framework (DAMA-DMBOK defines the authoritative quality dimensions) with extensive literature and practitioner adoption. Its application as an upstream constraint on AI system reliability is well-understood and increasingly documented in responsible AI and MLOps literature.
 
 ---
 

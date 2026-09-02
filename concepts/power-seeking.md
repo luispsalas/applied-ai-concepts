@@ -3,8 +3,11 @@ category: Reliability & Quality
 short: Capability is useful for almost any goal, so optimization drifts toward more access and more room to operate — no motive required
 aliases: [instrumental convergence, resource acquisition, scope creep by AI, self-preservation, seeking capability]
 tags: [Safety, Agents]
+established: established
 -->
 # Power Seeking
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 The tendency of a sufficiently capable system to pursue resources, permissions or influence beyond what its assigned task requires — because more capability makes almost any objective easier to achieve.

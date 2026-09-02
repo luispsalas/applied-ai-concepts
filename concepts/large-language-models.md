@@ -3,8 +3,11 @@ category: Foundations
 short: Neural networks trained on vast text corpora that generate language by predicting what comes next — the foundation of most modern AI tools and agents
 aliases: [LLM, foundation model, language model, GPT, chatbot model]
 tags: [Architecture]
+established: established
 -->
 # Large Language Models (LLMs)
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 Neural networks trained on vast text corpora that generate language by predicting what comes next — the foundation of most modern AI assistants, tools, and agents.

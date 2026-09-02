@@ -3,8 +3,11 @@ category: System Architecture
 short: The control layer deciding what runs and in what order — where the failures hide in the seams and look like success
 aliases: [workflow, pipeline, coordinating AI components, agent orchestration, chaining steps]
 tags: [Agents, Architecture]
+established: established
 -->
 # Orchestration (AI Systems)
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 Coordinating multiple AI components — models, tools, memory, agents — to complete a complex task as a unified, governable system.

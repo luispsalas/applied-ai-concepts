@@ -3,8 +3,11 @@ category: Observability & Governance
 short: The certifiable standard for governing AI across its lifecycle — it certifies the process, not the product
 aliases: [ISO 42001, ISO/IEC 42001, AIMS, AI management system, AI certification]
 tags: [Regulatory, Data Governance]
+established: established
 -->
 # AI Management System (ISO 42001)
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 A certifiable organizational framework (ISO/IEC 42001) for governing AI across its lifecycle — the operational standard organizations adopt to demonstrate responsible AI practices, not just claim them.

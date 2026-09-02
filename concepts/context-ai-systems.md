@@ -3,8 +3,11 @@ category: Knowledge & Memory
 short: Everything the model receives before it answers — one bounded, undifferentiated stream, assembled fresh every time
 aliases: [context window contents, what the model sees, input context, the prompt plus everything else, what does it actually know]
 tags: [Architecture, Prompting, Security]
+established: established
 -->
 # Context (AI Systems)
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 Everything an AI model receives before generating a response — the information, instructions, and framing that shape every output it produces.

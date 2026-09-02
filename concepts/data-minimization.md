@@ -3,8 +3,11 @@ category: Observability & Governance
 short: Collecting and keeping only the data a system actually needs — less data, less risk, lower cost
 aliases: [collect only what you need, least data, GDPR minimization, data reduction, need to know]
 tags: [Privacy, Regulatory, Data Governance]
+established: established
 -->
 # Data Minimization
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 Only giving the AI the data it actually needs — nothing extra. Less data means less risk of privacy problems, lower cost, and a more focused system.
@@ -62,7 +65,7 @@ It runs against the instinct of modern AI, which is "collect everything, you mig
 
 ## Confidence level
 
-**Established (legal), developing (AI practice).** The principle is settled law under GDPR Article 5(1)(c) and echoed across global privacy regimes. Its application to large-scale AI training — where data appetite is enormous and purpose specification is loose — is an active and contested area. The fairness implications of minimization are documented but not yet standardized in practice (Biega et al. 2020).
+**High (legal), medium (AI practice).** The principle is settled law under GDPR Article 5(1)(c) and echoed across global privacy regimes. Its application to large-scale AI training — where data appetite is enormous and purpose specification is loose — is an active and contested area. The fairness implications of minimization are documented but not yet standardized in practice (Biega et al. 2020).
 
 ---
 

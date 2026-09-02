@@ -3,8 +3,11 @@ category: Reliability & Quality
 short: The quiet decay of a deployed system as the world moves away from its training data — nothing breaks, accuracy just slides
 aliases: [concept drift, model decay, it used to work, performance degradation, data drift]
 tags: [Model Behavior, Data Governance, Evaluation]
+established: established
 -->
 # Model/Data Drift
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 The gradual degradation in an AI system's reliability as the real world changes and its training data or assumptions become outdated.
@@ -83,7 +86,7 @@ A model learns from the world as it was when it was trained. The world keeps mov
 - [RAG](rag.md) — moves part of the drift surface from the model to the retrieved corpus
 - [Knowledge Base](knowledge-base.md) — corpus freshness is a drift control
 - [Operational Readiness (AI)](operational-readiness-ai.md) — the monitoring capability must exist before deployment, not after the first incident
-- Continuous Feedback & Improvement — the loop that turns drift detection into correction
+- [Continuous Feedback & Improvement](continuous-feedback-improvement.md) — the loop that turns drift detection into correction
 - [Confidence vs Accuracy](confidence-vs-accuracy.md) — a drifting model stays confident while becoming less accurate
 
 ---

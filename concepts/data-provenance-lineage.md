@@ -3,8 +3,11 @@ category: Knowledge & Memory
 short: Where the data came from and what has happened to it since — the record that answers "can we actually use this?"
 aliases: [data lineage, provenance, dataset provenance, data origin, where did this data come from]
 tags: [Data Governance, Regulatory]
+established: established
 -->
 # Data Provenance / Lineage
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 The traceable history of where data came from, how it was transformed, and what it has touched — the record that makes it possible to answer "can we actually use this?" for training or retrieval data.

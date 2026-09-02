@@ -3,8 +3,11 @@ category: System Architecture
 short: Multiple AI agents with different roles working together on a task — coordination and division of labor instead of one model doing everything
 aliases: [agent swarm, multiple agents, agent teams, agent collaboration, A2A]
 tags: [Agents, Architecture]
+established: established
 -->
 # Multi-Agent Systems
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 Multiple AI agents, often with different roles or specializations, working together on a task — coordination and division of labor instead of one model doing everything.

@@ -3,8 +3,11 @@ category: Interaction & Design
 short: Working well with a model is mostly noticing what you left unstated — and knowing when not to trust the answer
 aliases: [talking to AI, how to work with AI, AI communication, getting better answers, working with a model]
 tags: [AI Literacy, Prompting]
+established: emerging
 -->
 # Human–LLM Communication Skills
+
+> **Term status — Emerging.** In active use and genuinely useful, but not yet settled — definitions still vary between sources. Read the Confidence level before relying on the term in a formal document.
 
 ## One-line essence
 The ability to communicate effectively with language models — structuring inputs, recognizing output limitations, and knowing when not to trust the result.

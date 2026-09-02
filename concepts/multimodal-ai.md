@@ -3,8 +3,11 @@ category: Foundations
 short: Text, images, audio and video in one system — every text risk carried across, with weaker tooling to detect it
 aliases: [vision language model, image and text AI, VLM, AI that sees, cross-modal]
 tags: [Architecture, Security]
+established: established
 -->
 # Multimodal AI
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 AI systems that process and generate across multiple types of input and output — text, images, audio, video — rather than being limited to one modality.

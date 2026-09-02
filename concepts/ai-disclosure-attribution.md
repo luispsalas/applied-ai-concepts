@@ -3,8 +3,11 @@ category: Observability & Governance
 short: Saying AI was used — a human practice, distinct from machine marking, and only one of them satisfies the law
 aliases: [declaring AI use, AI attribution, should I say I used AI, AI-assisted disclosure, transparency statement]
 tags: [Ethics, Regulatory, AI Literacy]
+established: established
 -->
 # AI Disclosure (Attribution)
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 When and how to say AI was used in producing something — an emerging expectation with real reputational and, increasingly, regulatory weight.

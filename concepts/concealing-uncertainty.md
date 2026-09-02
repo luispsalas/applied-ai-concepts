@@ -3,8 +3,11 @@ category: Reliability & Quality
 short: A tentative answer presented as settled — the caveats a calibrated response would surface, trained away
 aliases: [hidden uncertainty, no hedging, it didn't say it was unsure, suppressed caveats, false certainty]
 tags: [Model Behavior, Evaluation]
+established: established
 -->
 # Concealing Uncertainty
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 When a model presents a tentative or thinly-supported answer as settled — omitting the caveats, alternatives and gaps a calibrated response would surface, so the reader cannot tell the difference.

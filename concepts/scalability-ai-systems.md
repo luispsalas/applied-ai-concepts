@@ -3,8 +3,11 @@ category: Organizational Readiness
 short: Volume scales, review capacity does not — and nothing alarms when a governed tool becomes an unreviewed pipeline
 aliases: [scaling AI, volume growth, does this work at scale, cost at scale, capacity]
 tags: [Architecture, Evaluation]
+established: established
 -->
 # Scalability (AI Systems)
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 An AI system's ability to handle increasing load, data volume, and complexity — and the governance trade-offs that come with scaling.

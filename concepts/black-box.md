@@ -3,8 +3,11 @@ category: Foundations
 short: An AI system whose internal reasoning process cannot be observed or interpreted — even when its outputs can
 aliases: [opaque model, uninterpretable AI, can't see inside the model, opacity]
 tags: [Ethics, Evaluation]
+established: established
 -->
 # Black Box
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 An AI system whose internal reasoning process cannot be observed or interpreted — even when its outputs can be.
@@ -66,7 +69,7 @@ Three implications:
 
 ## Confidence level
 
-**Established.** The opacity of large language models is a well-documented property with an active research community (interpretability, explainability, mechanistic analysis). The practical governance implications — that accountability must live in the harness, not in model-generated explanations — are settled in the responsible AI literature.
+**High.** The opacity of large language models is a well-documented property with an active research community (interpretability, explainability, mechanistic analysis). The practical governance implications — that accountability must live in the harness, not in model-generated explanations — are settled in the responsible AI literature.
 
 ---
 

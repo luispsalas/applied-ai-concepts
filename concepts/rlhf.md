@@ -3,8 +3,11 @@ category: Foundations
 short: Humans rank outputs, the model learns the ranking — the step that turns a raw model into an assistant, and imports whoever did the ranking
 aliases: [reinforcement learning from human feedback, preference optimization, human feedback training, RLAIF, DPO, how models are made polite]
 tags: [Model Behavior, Ethics, Evaluation]
+established: established
 -->
 # RLHF (Reinforcement Learning from Human Feedback)
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 A training technique that shapes model behavior using human ratings of its outputs as a reward signal — the foundational method behind aligning raw language models with what people actually want.

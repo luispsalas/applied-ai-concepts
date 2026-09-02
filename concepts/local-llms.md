@@ -3,8 +3,11 @@ category: Foundations
 short: Models run on your own infrastructure — the data stays in, and every duty the provider was carrying becomes yours
 aliases: [on-premises AI, self-hosted LLM, offline model, open weights deployment, run AI on my own servers]
 tags: [Architecture, Privacy, Security]
+established: established
 -->
 # Local LLMs
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 Language models run entirely on your own infrastructure — no data leaves your environment, but full governance responsibility falls on the organization with no vendor backstop.

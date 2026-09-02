@@ -3,8 +3,11 @@ category: Observability & Governance
 short: The ability to understand what an AI system is doing — and reconstruct why — from the outside
 aliases: [monitoring, telemetry, can I see what it's doing, instrumentation, visibility]
 tags: [Architecture, Evaluation]
+established: established
 -->
 # Observability (AI Systems)
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 The ability to understand what an AI system is doing — and reconstruct why — by examining what goes in, what comes out, and every action in between.
@@ -75,7 +78,7 @@ Three implications:
 
 ## Confidence level
 
-**Established — with AI-specific extensions emerging.** Observability is a mature concept from distributed systems engineering with stable tooling (OpenTelemetry) and frameworks (DORA). Its application to AI systems is well-established (2023–present), with a growing ecosystem of AI-specific observability tools. The governance framing — observability as the auditable layer for black-box systems — is consolidating as a standard position in responsible AI and MLOps literature.
+**High.** Observability is a mature concept from distributed systems engineering with stable tooling (OpenTelemetry) and frameworks (DORA). Its application to AI systems is well-established (2023–present), with a growing ecosystem of AI-specific observability tools. The governance framing — observability as the auditable layer for black-box systems — is consolidating as a standard position in responsible AI and MLOps literature.
 
 ---
 

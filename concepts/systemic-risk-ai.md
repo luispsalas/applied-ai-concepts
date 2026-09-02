@@ -3,8 +3,11 @@ category: Observability & Governance
 short: A precise legal threshold for a few model providers — and an unregulated concentration risk carried by everyone else
 aliases: [GPAI systemic risk, large-scale AI risk, Article 51, societal risk, concentration risk]
 tags: [Regulatory, Safety]
+established: established
 -->
 # Systemic Risk (AI)
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 Risk from an AI model's capabilities being significant enough to cause large-scale harm across society — a defined regulatory threshold that triggers extra obligations under frameworks like the EU AI Act.

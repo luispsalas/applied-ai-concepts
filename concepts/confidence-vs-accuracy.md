@@ -3,8 +3,11 @@ category: Foundations
 short: How sure a model sounds is not evidence of how right it is — tone is generated independently of correctness
 aliases: [overconfidence, calibration, why does it sound so sure, confident but wrong, tone vs correctness]
 tags: [Model Behavior, AI Literacy]
+established: established
 -->
 # Confidence vs Accuracy
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 How sure a model sounds is not evidence of how right it is — fluency and assertiveness are generated independently of correctness, so confidence cannot be read as a reliability signal.

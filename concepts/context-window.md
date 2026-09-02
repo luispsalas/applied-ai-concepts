@@ -3,8 +3,11 @@ category: Knowledge & Memory
 short: The maximum amount of text an AI model can consider at once — a hard limit on what it can reason about
 aliases: [token limit, how much can it read, input length limit, maximum context, context size]
 tags: [Architecture]
+established: established
 -->
 # Context Window
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 The maximum amount of text an AI model can consider at once — a hard limit on what it can reason about when generating any given response.

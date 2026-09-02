@@ -3,8 +3,11 @@ category: Human Oversight
 short: The obligation to oversee AI decisions does not transfer to the system — it remains with the humans who deploy and use it
 aliases: [responsibility gap, who is to blame, the AI did it, moral responsibility, accountability does not transfer]
 tags: [Ethics, AI Literacy]
+established: established
 -->
 # Human Responsibility in AI Use
+
+> **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
 The obligation to oversee AI decisions and be answerable for their outcomes does not transfer to the system — it remains with the humans who deploy, configure, and use it.
@@ -71,7 +74,7 @@ Three things practitioners need to understand:
 
 ## Confidence level
 
-**Established in principle, developing in practice.** The non-transferability of responsibility is settled in philosophy (Matthias 2004) and broadly endorsed in regulation (EU AI Act, GDPR, UNESCO Recommendation on AI Ethics). The design conditions for meaningful human control (Santoni de Sio & van den Hoven 2018) are influential but implementation standards vary across sectors. How responsibility distributes across developer/deployer/user chains in specific agentic contexts — where the system acts across many steps without per-action oversight — remains an active legal and governance question. The gap framing itself is being actively re-examined in current scholarship: recent work relocates the problem from knowledge/control deficits to a "vulnerability gap" (Vallor & Vierkant 2024) or recasts it as a "control gap" met by a duty of moral control (Veluwenkamp & Hindriks 2024) — debates that refine, rather than weaken, the core principle that responsibility stays with humans.
+**High in principle, medium in practice.** The non-transferability of responsibility is settled in philosophy (Matthias 2004) and broadly endorsed in regulation (EU AI Act, GDPR, UNESCO Recommendation on AI Ethics). The design conditions for meaningful human control (Santoni de Sio & van den Hoven 2018) are influential but implementation standards vary across sectors. How responsibility distributes across developer/deployer/user chains in specific agentic contexts — where the system acts across many steps without per-action oversight — remains an active legal and governance question. The gap framing itself is being actively re-examined in current scholarship: recent work relocates the problem from knowledge/control deficits to a "vulnerability gap" (Vallor & Vierkant 2024) or recasts it as a "control gap" met by a duty of moral control (Veluwenkamp & Hindriks 2024) — debates that refine, rather than weaken, the core principle that responsibility stays with humans.
 
 ---
 
