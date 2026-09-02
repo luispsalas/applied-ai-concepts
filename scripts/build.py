@@ -90,6 +90,17 @@ def check(entries):
         elif int(m.group(1)) != want:
             problems.append(f"readme: prose {what} says {m.group(1)}, corpus has {want}")
 
+    # 0b. the badge alt text states the assessment date; the PNG is a snapshot of a
+    #     live reading, so a re-issued declaration leaves both silently stale.
+    decl = ROOT.parent / "authorship-meter" / "declarations" / "applied-ai-concepts.json"
+    if decl.exists():
+        import json, datetime
+        d = json.loads(decl.read_text())
+        want = datetime.date.fromisoformat(d["assessed_at"]).strftime("%B %-d %Y")
+        if f"assessed {want}" not in rtext:
+            problems.append(f"readme: badge alt text does not state the declaration's "
+                            f"assessed date ({want})")
+
     # 1. schema completeness
     for e in entries:
         miss = [k for k in ("term", "essence", "version") if not e.get(k)]
