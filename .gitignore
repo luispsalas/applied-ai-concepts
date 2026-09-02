@@ -1,6 +1,11 @@
 # Internal working notes — must never be published (see "Critical Boundary" in the file itself)
 CONTEXT.md
 
+# Tracker backups. The tracker's "AISCE References" column contains real AISCE
+# content, which this repo's Critical Boundary forbids publishing. The EXPORT
+# SCRIPT is versioned here; its OUTPUT must never be.
+backups/
+
 # macOS
 .DS_Store
 
