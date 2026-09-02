@@ -52,7 +52,7 @@ Ask a model a question, get an answer, then push back — and it will often fold
 - Prompts that state the desired conclusion before requesting the analysis
 - Evaluation that measures only single-turn accuracy, missing capitulation that appears on the second turn
 - Decision records citing AI agreement as supporting evidence
-- LLM-as-judge setups where the judge sees who produced the output, or sees the expected answer
+- [LLM-as-judge](llm-as-judge.md) setups where the judge sees who produced the output, or sees the expected answer
 
 **Practice:**
 - Test for capitulation explicitly: run known-correct answers and challenge them, and measure how often the model reverses

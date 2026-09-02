@@ -1,5 +1,31 @@
 # Changelog
 
+## v1.19 — September 2026
+
+**5 concepts published — the evaluation-integrity pair, the containment control, the auditable retrieval substrate, and the oldest argument in AI safety. Count 95 → 100.**
+
+- `data-leakage-model-evaluation` — v1.0 (the same name as an existing entry, the opposite failure)
+- `llm-as-judge` — v1.0 (the only evaluation that scales, and its self-enhancement bias)
+- `sandboxing` — v1.0 (bounding beats enumerating)
+- `knowledge-graphs` — v1.0 (declared relationships you can audit, versus learned proximity you can only measure)
+- `recursive-self-improvement` — v1.0 (a sound argument from 1965 whose premises remain unmet)
+
+**Data Leakage (Model Evaluation) resolves a name collision the corpus had already flagged.** The published *Data Leakage (AI Systems)* is about sensitive information **escaping** — a confidentiality failure. This one is about evaluation information **entering** — a measurement failure. Unrelated concepts, one name, and the existing entry had carried a standing pointer to it for weeks. The load-bearing property: **leakage errors only ever flatter**, so a surprisingly good result deserves more scrutiny than a disappointing one.
+
+**LLM-as-Judge is unusually clean to source, because the method and its limits arrived in the same paper.** Strong judges reach *"over 80% agreement, the same level of agreement between humans"* — and the same work names position, verbosity, self-enhancement and limited-reasoning bias. **Self-enhancement is the one with governance teeth:** a judge prefers output resembling its own, so grading a model with its own family is a conflict of interest built into the setup, not a correction factor. The deeper limit is that agreement is concordance, not correctness.
+
+**Sandboxing states the distinction the corpus needed.** Guardrails *enumerate* forbidden behavior and every enumeration is incomplete — which is why prompt injection and jailbreaks keep working. **A sandbox does not enumerate; it bounds.** The question stops being "can we stop it doing X?" and becomes "what could reaching everything available here do?" With the failure mode named: sandboxes erode by widening, one "just allow this so it works" at a time, and those are security decisions that rarely get recorded as such.
+
+**Knowledge Graphs is framed as an auditability trade, not a performance claim.** A wrong answer traces to one correctable triple; a wrong vector result is retuned and re-measured. That is a real advantage bought with real cost, and the entry declines to claim accuracy improvements from graph augmentation, which are workload-specific and mostly vendor-benchmarked. Its failure mode is **silent staleness** — a graph returns yesterday's relationship as confidently as today's.
+
+**Recursive Self-Improvement makes no forecast, and says so.** Good's 1965 formulation is quoted from the original chapter — *"the design of machines is one of these intellectual activities"* — because that clause is the whole argument. The structure is valid; the premises are unmet. **The entry's contribution is a reframing:** treated as a prediction this generates a debate nobody can settle, but treated as a present-tense property it is answerable — *does anything here modify itself, its training, or its successor without a human in the path?* The confidence level flags both directions as unsupported: claims it is underway, and claims it is impossible.
+
+**Source registry:** 5 added (SRC-241–245), 13 reused. Good (1965) was quoted only after extracting the text layer of a scanned copy of the original — the passage circulates widely in secondary sources and was not taken from any of them.
+
+**Two checks caught defects in this batch, both in work written the same day.** The alias gate found `LLM as judge` registered as an alias of *Scalable Oversight*, now colliding with a real entry title. The spelling sweep found `favours` three times in new prose — its first true positives, after being tuned down from 14 hits to 2 by excluding quoted material. A stale `LLM-as-judge` link pointing at `evaluation.md` was also retargeted: an anchor pointing at the *wrong existing entry* resolves perfectly and is invisible to link checking.
+
+---
+
 ## v1.18 — September 2026
 
 **8 concepts published — the missing mechanism layer, two organizational gaps, and the last two score-4 terms. Plus a term-status gate, and the rename it produced on its first real use.**

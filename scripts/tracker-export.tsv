@@ -94,6 +94,11 @@ Model Version & Update	yes	established
 Tokenization	yes	established	
 Pre-training	yes	established	
 Embeddings	yes	established	
+Knowledge Graphs	yes	established	
+LLM-as-Judge	yes	established	
+Recursive Self-Improvement	yes	established	
+Data Leakage (Model Evaluation)	yes	established	
+Sandboxing	yes	established	
 Temperature (LLMs)	yes	established	
 Reinforcement Learning (RL)	no	established	
 Agent Memory	no	established	
@@ -102,15 +107,10 @@ AI Benchmarking	no	established
 APIs (Application Programming Interfaces)	no	established	
 Context Framing	no	emerging	Framing effects are established in psychology; "context framing" as a prompting sub-skill is practitioner vocabulary and overlaps Context Engineering — check for redundancy before drafting.
 Instantiation (AI Systems)	no	emerging	Generic computing term applied to model sessions; the AI-specific sense is not standardised and may be better folded into Context (AI Systems).
-Knowledge Graphs	no	established	
-LLM-as-Judge	no	established	
-Recursive Self-Improvement	no	established	
 Synthetic Data	no	established	
 Zero-shot / Few-shot Learning	no	established	
 Transformers	no	established	
 NLP	no	established	
-Data Leakage (Model Evaluation)	no	established	
-Sandboxing	no	established	
 Flow Engineering	no	emerging	Originates with the AlphaCodium work (CodiumAI); adoption beyond that lineage is thin. Run check 2 — filter the originator's domains — before drafting.
 Mechanistic interpretability	no	established	
 Edge AI	no	established	

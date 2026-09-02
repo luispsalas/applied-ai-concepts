@@ -24,7 +24,7 @@ Evaluation is the systematic measurement of AI system performance against define
 - **Human evaluation** — human raters assess output quality on dimensions that resist automated measurement: coherence, usefulness, appropriateness. Expensive and slow; used selectively on high-stakes output dimensions.
 
 **Production evaluation**
-- **LLM-as-judge** — a second language model evaluates the outputs of the deployed model against defined criteria. Scalable but introduces a second model's biases and failure modes into the evaluation signal.
+- **[LLM-as-judge](llm-as-judge.md)** — a second language model evaluates the outputs of the deployed model against defined criteria. Scalable but introduces a second model's biases and failure modes into the evaluation signal.
 - **Sampling and spot-check pipelines** — a proportion of production outputs reviewed by humans or automated classifiers. Maintains a quality signal without full-coverage review.
 - **Drift detection** — continuous monitoring of output distributions to detect when production behavior diverges from evaluated behavior. Triggers re-evaluation when thresholds are crossed.
 

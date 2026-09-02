@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "count": 95,
+  "count": 100,
   "entries": [
     {
       "slug": "accountability-ai-systems",
@@ -1090,6 +1090,7 @@
       "updated": "August 2026",
       "related": [
         "audit-trail-ai",
+        "data-leakage-model-evaluation",
         "data-minimization",
         "knowledge-base",
         "memory-ai-systems",
@@ -1106,6 +1107,45 @@
         "SRC-161"
       ],
       "path": "concepts/data-leakage-ai-systems.md"
+    },
+    {
+      "slug": "data-leakage-model-evaluation",
+      "term": "Data Leakage (Model Evaluation)",
+      "category": "Reliability & Quality",
+      "essence": "When information the model should not have had reaches it before evaluation, so the score measures memory rather than capability — the single most common reason a system that tested well fails in production.",
+      "short": "When information from the test set reaches the model during training, so measured performance describes a exam the model had already seen — the most common cause of results that do not survive deployment",
+      "aliases": [
+        "train/test contamination",
+        "benchmark contamination",
+        "test set leakage",
+        "data contamination",
+        "why did accuracy drop in production",
+        "too good to be true results",
+        "leakage"
+      ],
+      "tags": [
+        "Evaluation",
+        "Data Governance"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "confidence-vs-accuracy",
+        "data-leakage-ai-systems",
+        "data-quality",
+        "evaluation",
+        "knowledge-cutoff",
+        "model-card-system-card",
+        "pre-training",
+        "training-data",
+        "verification"
+      ],
+      "sources": [
+        "SRC-065",
+        "SRC-228",
+        "SRC-243"
+      ],
+      "path": "concepts/data-leakage-model-evaluation.md"
     },
     {
       "slug": "data-minimization",
@@ -2025,6 +2065,48 @@
       "path": "concepts/knowledge-cutoff.md"
     },
     {
+      "slug": "knowledge-graphs",
+      "term": "Knowledge Graphs",
+      "category": "Knowledge & Memory",
+      "essence": "Facts and the relationships between them stored as an explicit network of entities and typed links — a retrieval substrate whose contents can be inspected and corrected, rather than one whose behavior can only be measured.",
+      "short": "Facts and their relationships stored as an explicit, inspectable network — the retrieval substrate you can audit, as opposed to one you can only measure",
+      "aliases": [
+        "knowledge graph",
+        "graph database",
+        "semantic network",
+        "ontology",
+        "triples",
+        "entity relationships",
+        "GraphRAG",
+        "graph RAG",
+        "structured retrieval"
+      ],
+      "tags": [
+        "Architecture",
+        "Data Governance"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "continuous-feedback-improvement",
+        "data-provenance-lineage",
+        "data-quality",
+        "embeddings",
+        "explainability-xai",
+        "grounding",
+        "knowledge-base",
+        "permission-model-ai",
+        "rag"
+      ],
+      "sources": [
+        "SRC-020",
+        "SRC-025",
+        "SRC-224",
+        "SRC-241"
+      ],
+      "path": "concepts/knowledge-graphs.md"
+    },
+    {
       "slug": "large-language-models",
       "term": "Large Language Models (LLMs)",
       "category": "Foundations",
@@ -2059,6 +2141,46 @@
         "SRC-143"
       ],
       "path": "concepts/large-language-models.md"
+    },
+    {
+      "slug": "llm-as-judge",
+      "term": "LLM-as-Judge",
+      "category": "Reliability & Quality",
+      "essence": "Using a language model to grade another model's output — the only evaluation method that scales to production volume, and one whose known biases mean its agreement with you is not the same as its correctness.",
+      "short": "Using one language model to grade another's output — the only way to evaluate at volume, with documented biases including a preference for its own writing",
+      "aliases": [
+        "LLM as a judge",
+        "model graded evaluation",
+        "AI grading AI",
+        "automated evaluation",
+        "model as evaluator",
+        "auto-eval",
+        "judge model"
+      ],
+      "tags": [
+        "Evaluation",
+        "AI Literacy"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "audit-trail-ai",
+        "automation-bias",
+        "confidence-vs-accuracy",
+        "data-leakage-model-evaluation",
+        "evaluation",
+        "model-version-update",
+        "reward-hacking",
+        "scalable-oversight",
+        "sycophancy-llms"
+      ],
+      "sources": [
+        "SRC-065",
+        "SRC-174",
+        "SRC-220",
+        "SRC-242"
+      ],
+      "path": "concepts/llm-as-judge.md"
     },
     {
       "slug": "local-llms",
@@ -2958,6 +3080,47 @@
       "path": "concepts/reasoning-models.md"
     },
     {
+      "slug": "recursive-self-improvement",
+      "term": "Recursive Self-Improvement",
+      "category": "Reliability & Quality",
+      "essence": "A system that improves its own capacity to improve, so each gain makes the next easier and progress compounds rather than accumulating — an argument first stated in 1965, whose structure is sound and whose premises remain largely unmet.",
+      "short": "A system improving its own ability to improve, so gains compound — a sixty-year-old argument whose premises are now partly testable and largely unmet",
+      "aliases": [
+        "self-improving AI",
+        "intelligence explosion",
+        "recursive improvement",
+        "AI improving itself",
+        "seed AI",
+        "takeoff",
+        "singularity",
+        "will AI improve itself"
+      ],
+      "tags": [
+        "Safety",
+        "AI Literacy"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "agency-ai-systems",
+        "alignment-ai-systems",
+        "continuous-feedback-improvement",
+        "frontier-ai",
+        "power-seeking",
+        "sandboxing",
+        "scalable-oversight",
+        "systemic-risk-ai",
+        "training-data"
+      ],
+      "sources": [
+        "SRC-001",
+        "SRC-084",
+        "SRC-143",
+        "SRC-244"
+      ],
+      "path": "concepts/recursive-self-improvement.md"
+    },
+    {
       "slug": "red-teaming",
       "term": "Red Teaming",
       "category": "Reliability & Quality",
@@ -3123,6 +3286,48 @@
       "path": "concepts/rlhf.md"
     },
     {
+      "slug": "sandboxing",
+      "term": "Sandboxing",
+      "category": "System Architecture",
+      "essence": "Running a system inside a deliberately bounded environment so the damage it can do is limited by construction rather than by good behavior — the control that holds even when the thing inside it is fully compromised.",
+      "short": "Running an untrusted system inside a bounded environment so that what it can reach is limited by construction — the control that does not depend on predicting what it will try",
+      "aliases": [
+        "sandbox",
+        "isolation",
+        "containment",
+        "confinement",
+        "safe execution environment",
+        "restricted environment",
+        "agent sandbox",
+        "running agents safely"
+      ],
+      "tags": [
+        "Security",
+        "Architecture"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "ai-agent",
+        "data-leakage-ai-systems",
+        "guardrails-ai-systems",
+        "human-in-the-loop",
+        "jailbreak",
+        "multi-agent-systems",
+        "operational-readiness-ai",
+        "permission-model-ai",
+        "prompt-injection",
+        "tool-use"
+      ],
+      "sources": [
+        "SRC-034",
+        "SRC-148",
+        "SRC-160",
+        "SRC-245"
+      ],
+      "path": "concepts/sandboxing.md"
+    },
+    {
       "slug": "scalability-ai-systems",
       "term": "Scalability (AI Systems)",
       "category": "Organizational Readiness",
@@ -3174,7 +3379,6 @@
       "short": "Using AI to supervise AI because the work has outrun direct human review — and the unresolved question of who checks the checker",
       "aliases": [
         "AI supervising AI",
-        "LLM as judge",
         "oversight at scale",
         "who checks the checker",
         "automated review",

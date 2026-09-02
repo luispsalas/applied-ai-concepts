@@ -4,7 +4,7 @@ Every term this wiki tracks, with its status — **including the ones that are n
 
 The field names things faster than it settles them, and a glossary that repeats every new label without comment is a list of buzzwords. So each term is judged on whether it is a *real term*. That is a separate question from how good the evidence is for the claims inside an entry, which each entry states for itself in its own confidence level.
 
-**132 terms tracked — 95 published, 37 not.** See [how terms are admitted](../CONTRIBUTING.md#term-status--the-admission-test).
+**132 terms tracked — 100 published, 32 not.** See [how terms are admitted](../CONTRIBUTING.md#term-status--the-admission-test).
 
 | Status | Meaning | Count |
 |---|---|---|
@@ -54,7 +54,7 @@ The field names things faster than it settles them, and a glossary that repeats 
 | [Copyright & AI Output](../concepts/copyright-ai-output.md) | `established` | yes |  |
 | [Curse of Knowledge (AI Context)](../concepts/curse-of-knowledge-ai-context.md) | `established` | yes |  |
 | [Data Leakage (AI Systems)](../concepts/data-leakage-ai-systems.md) | `established` | yes |  |
-| Data Leakage (Model Evaluation) | `established` | not yet |  |
+| [Data Leakage (Model Evaluation)](../concepts/data-leakage-model-evaluation.md) | `established` | yes |  |
 | [Data Minimization](../concepts/data-minimization.md) | `established` | yes |  |
 | [Data Provenance / Lineage](../concepts/data-provenance-lineage.md) | `established` | yes |  |
 | [Data Quality](../concepts/data-quality.md) | `established` | yes |  |
@@ -86,12 +86,12 @@ The field names things faster than it settles them, and a glossary that repeats 
 | [Jailbreak](../concepts/jailbreak.md) | `established` | yes |  |
 | [Knowledge Base](../concepts/knowledge-base.md) | `established` | yes |  |
 | [Knowledge Cutoff](../concepts/knowledge-cutoff.md) | `established` | yes |  |
-| Knowledge Graphs | `established` | not yet |  |
+| [Knowledge Graphs](../concepts/knowledge-graphs.md) | `established` | yes |  |
 | LangChain | `vendor` | not yet | ⚠️ A named open-source product, not a concept. `CONTRIBUTING` already excludes "vendor-specific features or product documentation" — this is a candidate to DECLINE outright rather than rename. Any general point worth keeping (chaining model calls, tools and memory into reusable workflows) belongs in Orchestration (AI Systems). |
 | [Large Language Models (LLMs)](../concepts/large-language-models.md) | `established` | yes |  |
 | Latency (AI Systems) | `established` | not yet |  |
 | LLM Mesh | `vendor` | not yet | Coined by Dataiku. Filtering the originator's own domains out of a search leaves only a vendor glossary, two personal posts and an agency blog — no peer-reviewed use and no independent standard. The phrase also collides with an unrelated hardware/network sense in the research literature (UB-Mesh, WaferLLM). NOT a decline: the concept underneath — a gateway giving one control point over many model providers, for cost, policy and switching — is a genuine corpus gap (grep for gateway/routing/abstraction layer returns nothing across 95 entries) and should be published under a vendor-neutral name, citing Dataiku as one implementation. ⚠️ Col F currently describes multi-model collaboration, which is a DIFFERENT concept already covered by Multi-Agent Systems and Orchestration — rewrite the essence when this is drafted. |
-| LLM-as-Judge | `established` | not yet |  |
+| [LLM-as-Judge](../concepts/llm-as-judge.md) | `established` | yes |  |
 | [Local LLMs](../concepts/local-llms.md) | `established` | yes |  |
 | Mechanistic interpretability | `established` | not yet |  |
 | [Memory (AI Systems)](../concepts/memory-ai-systems.md) | `established` | yes |  |
@@ -120,13 +120,13 @@ The field names things faster than it settles them, and a glossary that repeats 
 | [Prompt Injection](../concepts/prompt-injection.md) | `established` | yes |  |
 | [RACI](../concepts/raci.md) | `established` | yes |  |
 | [Reasoning Models / Test-Time Compute](../concepts/reasoning-models.md) | `established` | yes |  |
-| Recursive Self-Improvement | `established` | not yet |  |
+| [Recursive Self-Improvement](../concepts/recursive-self-improvement.md) | `established` | yes |  |
 | [Red Teaming](../concepts/red-teaming.md) | `established` | yes |  |
 | Reinforcement Learning (RL) | `established` | not yet |  |
 | [Retrieval-Augmented Generation (RAG)](../concepts/rag.md) | `established` | yes |  |
 | [Reward Hacking (Specification Gaming)](../concepts/reward-hacking.md) | `established` | yes |  |
 | [RLHF (Reinforcement Learning from Human Feedback)](../concepts/rlhf.md) | `established` | yes |  |
-| Sandboxing | `established` | not yet |  |
+| [Sandboxing](../concepts/sandboxing.md) | `established` | yes |  |
 | [Scalability (AI Systems)](../concepts/scalability-ai-systems.md) | `established` | yes |  |
 | [Scalable Oversight](../concepts/scalable-oversight.md) | `established` | yes |  |
 | [Shadow AI](../concepts/shadow-ai.md) | `established` | yes |  |

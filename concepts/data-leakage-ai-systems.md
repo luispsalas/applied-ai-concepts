@@ -84,7 +84,7 @@ Sometimes a model repeats things it shouldn't: fragments memorized from its trai
 - [Memory (AI Systems)](memory-ai-systems.md) — persistence across sessions creates cross-session exposure
 - [Audit Trail (AI)](audit-trail-ai.md) — disclosure is only investigable if inputs and outputs were recorded
 - [Permission Model (AI)](permission-model-ai.md) — the enforced boundary that decides what may enter context in the first place
-- Data Leakage (Model Evaluation) — the unrelated sense of the same term: train/test contamination inflating measured performance
+- [Data Leakage (Model Evaluation)](data-leakage-model-evaluation.md) — the unrelated sense of the same term: train/test contamination inflating measured performance
 
 ---
 

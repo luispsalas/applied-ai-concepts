@@ -1,7 +1,7 @@
 <!--meta
 category: Human Oversight
 short: Using AI to supervise AI because the work has outrun direct human review — and the unresolved question of who checks the checker
-aliases: [AI supervising AI, LLM as judge, oversight at scale, who checks the checker, automated review, AI-assisted oversight]
+aliases: [AI supervising AI, oversight at scale, who checks the checker, automated review, AI-assisted oversight]
 tags: [Safety, Evaluation, AI Literacy]
 established: established
 -->
@@ -31,7 +31,7 @@ The volume case is a resourcing question. The difficulty case is not solved by m
 
 **The complicating result, from a different task, is essential context and is usually omitted.** In deepfake detection, *"inaccurate model predictions often decrease participants' accuracy"* — a fallible assistant made reviewers **worse**. Compare the two honestly: **whether an unreliable assistant helps or harms appears to be task-dependent**, and nobody currently knows what predicts which. Deploying AI-assisted oversight on the strength of the first result while ignoring the second is exactly the mistake this entry exists to prevent.
 
-**The circularity is the open problem and does not have a solution.** If a model can judge output a human cannot, its judgment is itself unverifiable by that human. Every proposed answer — debate between models, decomposing a task into checkable parts, recursive supervision, [LLM-as-judge](evaluation.md) — pushes the trust question somewhere else rather than closing it. **This is an active research direction, not an available control.**
+**The circularity is the open problem and does not have a solution.** If a model can judge output a human cannot, its judgment is itself unverifiable by that human. Every proposed answer — debate between models, decomposing a task into checkable parts, recursive supervision, [LLM-as-judge](llm-as-judge.md) — pushes the trust question somewhere else rather than closing it. **This is an active research direction, not an available control.**
 
 **The near-term honest position:** AI-assisted oversight is a real productivity gain on tasks where a human can still adjudicate, and an unproven substitute for oversight where they cannot. The distinction is between using a model to *help you check* and using it to *check for you*, and only the first is currently defensible.
 
@@ -58,7 +58,7 @@ So the honest summary: using AI to *help you* review is often genuinely useful. 
 3. **The circularity has no solution yet.** If you cannot judge the output, you cannot judge the judge. Debate, decomposition and recursion relocate the trust question.
 4. **"Helps me check" and "checks for me" are different deployments.** The first is defensible today; the second is not, wherever the human could not have adjudicated.
 5. **An automated reviewer inherits the reviewed system's blind spots** — especially when both are the same model family, which is the common and least-examined configuration.
-6. **It is presented as a control more often than it is one.** An LLM-as-judge pipeline in a governance diagram looks like oversight; whether it functions as oversight depends entirely on whether a human could adjudicate a disagreement.
+6. **It is presented as a control more often than it is one.** An [LLM-as-judge](llm-as-judge.md) pipeline in a governance diagram looks like oversight; whether it functions as oversight depends entirely on whether a human could adjudicate a disagreement.
 7. **The failure is silent.** Oversight that has stopped working produces no alarm — it produces approvals.
 
 ---
