@@ -77,6 +77,8 @@ They vary independently. A settled term can rest on thin evidence, and a term in
 
 A fifth outcome — *not a term* — is a decline, recorded with its reason rather than silently dropped.
 
+**All of it is public.** Status lives in the term tracker and is published, for every tracked term, in the [term register](glossary/register.md) — what was admitted, what is queued, what is still unassessed, and what was coined by a vendor and so will not appear under that name. The register is generated from the tracker export, never hand-written, and `build.py check` fails the publish if the export and the entries disagree about whether a term is published or what its status is.
+
 **The status judges the concept, not the wording of the title.** Entry titles are editorial; many are descriptive compounds. The question a reader needs answered is whether the *thing* is real, not whether the exact phrase is a standard string.
 
 **It is machine-checked.** `established:` is a required field in each entry's metadata block, and `build.py check` fails the publish if it is missing, holds an unknown value, or disagrees with the visible line on the entry.

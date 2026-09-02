@@ -1,0 +1,134 @@
+# Term register export from the tracker sheet. Regenerate on every publish.
+# term	published	status	note
+Hallucination	yes	established	
+Human-in-the-Loop (HITL)	yes	established	
+Accountability (AI Systems)	yes	established	
+AI Agent	yes	established	
+AI Governance	yes	established	
+AI Literacy	yes	established	
+AI Use Case	yes	established	
+Audit Trail (AI)	yes	established	
+Bias (AI Systems)	yes	established	
+Black Box	yes	established	
+Compliance (AI Systems)	yes	established	
+Data Minimization	yes	established	
+Data Quality	yes	established	
+Evaluation (AI Systems)	yes	established	
+Explainability (XAI)	yes	established	
+Failure Modes (AI Systems)	yes	established	
+Grounding	yes	established	
+Guardrails (AI Systems)	yes	established	
+Human Responsibility in AI Use	yes	established	
+Ownership (AI Systems)	yes	established	
+Types of AI Systems	yes	established	
+Large Language Models (LLMs)	yes	established	
+Privacy (AI Systems)	yes	established	
+Prompt Injection	yes	established	
+Reasoning Models / Test-Time Compute	yes	established	
+Data Leakage (AI Systems)	yes	established	
+Permission Model (AI)	yes	established	
+AI Incident (Reporting)	yes	established	
+Jailbreak	yes	established	
+Human–AI Collaboration Model	yes	established	
+Model/Data Drift	yes	established	
+Operational Readiness (AI)	yes	established	
+RACI	yes	established	
+Sycophancy (LLMs)	yes	established	
+AI Management System (ISO 42001)	yes	established	
+Knowledge Cutoff	yes	established	
+Anthropomorphism (AI)	yes	established	
+Automation Bias	yes	established	
+Reward Hacking (Specification Gaming)	yes	established	
+Verification	yes	established	
+Harness Paradigm	yes	emerging	'Agent harness' is established in practitioner literature (Böckeler; Osmani); the paradigm framing itself is not yet settled across independent sources.
+Context Engineering	yes	established	
+Prompt Engineering	yes	established	
+Domain	yes	established	
+Knowledge Base	yes	established	
+Memory (AI Systems)	yes	established	
+Observability (AI Systems)	yes	established	
+Retrieval-Augmented Generation (RAG)	yes	established	
+Determinism vs Probabilism	yes	established	
+System Prompt	yes	established	
+Tool Use	yes	established	
+Multi-Agent Systems	yes	established	
+Red Teaming	yes	established	
+Small Language Models (SLMs)	yes	established	
+Deception (AI Systems)	yes	established	
+Confidence vs Accuracy	yes	established	
+Concealing Uncertainty	yes	established	
+Power Seeking	yes	established	
+Agency (AI Systems)	yes	established	
+Alignment (AI Systems)	yes	established	
+Context (AI Systems)	yes	established	
+Local LLMs	yes	established	
+Systemic Risk (AI)	yes	established	
+Data Provenance / Lineage	yes	established	
+Human–LLM Communication Skills	yes	emerging	Component competencies are well grounded, but there is no established assessment for the competency as a whole.
+Frontier AI (Frontier Model)	yes	established	
+Content Provenance & Watermarking (C2PA)	yes	established	
+Model Card / System Card	yes	established	
+Shadow AI	yes	established	
+Curse of Knowledge (AI Context)	yes	established	
+Training Data	yes	established	
+Bluewashing	yes	established	
+Fundamental Rights Impact Assessment (FRIA)	yes	established	
+Multimodal AI	yes	established	
+Copyright & AI Output	yes	established	
+Synthetic Media (Deepfakes)	yes	established	
+AI Disclosure (Attribution)	yes	established	
+Value Realization (AI)	yes	emerging	Standard business term; the AI-specific application rests on evidence from prior general-purpose technologies rather than from AI.
+Scalable Oversight	yes	established	
+Continuous Feedback & Improvement	yes	established	
+Tacit Knowledge	yes	established	
+Moral Crumple Zone	yes	established	
+Performativity (LLMs)	yes	emerging	Performativity is established in philosophy (Austin) and in ML as 'performative prediction' (Perdomo et al.); its application to LLM effects on human language is recent and still settling.
+Persistent Synthesis	yes	emerging	Rests on a widely validated practitioner insight; the extended framework carries known specification gaps.
+Context Window	yes	established	
+Orchestration (AI Systems)	yes	established	
+Scalability (AI Systems)	yes	established	
+Fine-tuning	yes	established	
+RLHF (Reinforcement Learning from Human Feedback)	yes	established	
+Cognitive Offloading & Deskilling	yes	established	
+Model Version & Update	yes	established	
+Tokenization	yes	established	
+Pre-training	yes	established	
+Embeddings	yes	established	
+Temperature (LLMs)	yes	established	
+Reinforcement Learning (RL)	no	unassessed	
+Agent Memory	no	unassessed	
+Agentic Design	no	unassessed	
+AI Benchmarking	no	unassessed	
+APIs (Application Programming Interfaces)	no	unassessed	
+Context Framing	no	unassessed	
+Instantiation (AI Systems)	no	unassessed	
+Knowledge Graphs	no	unassessed	
+LLM-as-Judge	no	unassessed	
+Recursive Self-Improvement	no	unassessed	
+Synthetic Data	no	unassessed	
+Zero-shot / Few-shot Learning	no	unassessed	
+Transformers	no	unassessed	
+NLP	no	unassessed	
+Data Leakage (Model Evaluation)	no	unassessed	
+Sandboxing	no	unassessed	
+Flow Engineering	no	unassessed	
+Mechanistic interpretability	no	unassessed	
+Edge AI	no	unassessed	
+Metaprompting	no	unassessed	
+Agent Interoperability (A2A)	no	unassessed	
+Environmental Cost of AI	no	unassessed	
+Agentic Pattern	no	unassessed	
+Compact	no	unassessed	
+Latency (AI Systems)	no	unassessed	
+Overfitting	no	unassessed	
+Prompt Chaining	no	unassessed	
+LangChain	no	unassessed	
+Underfitting	no	unassessed	
+Catastrophic forgetting	no	unassessed	
+Direct Preference Optimization	no	unassessed	
+Inference	no	unassessed	
+Hook	no	unassessed	
+Skill	no	unassessed	
+Model distillation	no	unassessed	
+Checkpointing	no	unassessed	
+LLM Mesh	no	vendor	Coined by Dataiku. Filtering the originator's own domains leaves only a vendor glossary, two personal posts and an agency blog — no peer-reviewed use and no independent standard. The phrase also collides with an unrelated hardware/network sense in the research literature. Not a decline: the concept underneath — a gateway giving one control point over many model providers — is a genuine gap in this wiki and should be published under a vendor-neutral name, citing Dataiku as one implementation.

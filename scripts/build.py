@@ -28,6 +28,30 @@ INDEX = ROOT / "search-index.json"
 SEARCH = ROOT / "search.html"
 TEMPLATE = ROOT / "scripts" / "search-template.html"
 CONCEPTS = ROOT / "concepts"
+REGISTER = ROOT / "glossary" / "register.md"
+EXPORT = ROOT / "scripts" / "tracker-export.tsv"
+
+TERM_STATUS = {
+    "established": "Recognized term of art, in independent use.",
+    "emerging":    "Real and in use, but definitions still vary between sources.",
+    "house":       "This wiki's own label; not citable as a term of art.",
+    "vendor":      "Coined by a single vendor \u2014 published, if at all, under a neutral name.",
+    "unassessed":  "Candidate not yet put through the term-status checks.",
+}
+
+
+def read_export():
+    """The tracker sheet's terms, as exported. Source of truth for the register."""
+    if not EXPORT.exists():
+        return []
+    rows = []
+    for line in EXPORT.read_text().splitlines():
+        if not line.strip() or line.startswith("#"):
+            continue
+        parts = (line.split("\t") + ["", "", ""])[:4]
+        rows.append({"term": parts[0], "published": parts[1] == "yes",
+                     "status": parts[2], "note": parts[3]})
+    return rows
 
 # Closed vocabulary. Pruned 26 -> 12 on Aug 31 2026; "LLM" was dropped outright
 # (25 of 81 entries — a tag that matches a third of the corpus discriminates nothing,
@@ -100,6 +124,30 @@ def check(entries):
         if f"assessed {want}" not in rtext:
             problems.append(f"readme: badge alt text does not state the declaration's "
                             f"assessed date ({want})")
+
+    # 0c. tracker export vs repo. The register is published from the export, so a stale
+    #     export becomes a false public claim -- the old hand-maintained list had drifted
+    #     to 13 already-published terms before this check existed.
+    rows = read_export()
+    if not rows:
+        problems.append(f"export: {EXPORT.relative_to(ROOT)} missing — the term register cannot be built")
+    else:
+        by_term = {e["term"]: e for e in entries}
+        exp = {r["term"]: r for r in rows}
+        for term, e in sorted(by_term.items()):
+            r = exp.get(term)
+            if not r:
+                problems.append(f"export: published entry '{term}' is absent from the tracker export")
+            elif not r["published"]:
+                problems.append(f"export: '{term}' is published but the export says it is not")
+            elif r["status"] != e.get("established"):
+                problems.append(f"export: '{term}' status '{r['status']}' != entry's "
+                                f"'{e.get('established')}'")
+        for term, r in sorted(exp.items()):
+            if r["published"] and term not in by_term:
+                problems.append(f"export: '{term}' marked published but no such entry exists")
+            if r["status"] not in TERM_STATUS:
+                problems.append(f"export: '{term}' has unknown status '{r['status']}'")
 
     # 1. schema completeness
     for e in entries:
@@ -289,6 +337,43 @@ def glossary_rows(entries):
             for e in sorted(entries, key=lambda e: e["term"].lower())]
 
 
+def register_page(entries):
+    """The public term register: EVERY tracked term with its status, published or not.
+
+    Generated, never authored -- the tracker sheet is the source, exported to
+    scripts/tracker-export.tsv. Its job is to make the curation filter visible:
+    a reader can see what was admitted, what is queued, and what was coined by a
+    vendor and so will not be published under that name.
+    """
+    rows = read_export()
+    by_term = {e["term"]: e for e in entries}
+    counts = Counter(r["status"] for r in rows)
+    n_pub = sum(1 for r in rows if r["published"])
+
+    out = ["# Term register", "",
+           "Every term this wiki tracks, with its status \u2014 **including the ones that are not "
+           "published, and the ones that will not be.**", "",
+           "The field names things faster than it settles them, and a glossary that repeats every new "
+           "label without comment is a list of buzzwords. So each term is judged on whether it is a "
+           "*real term*. That is a separate question from how good the evidence is for the claims "
+           "inside an entry, which each entry states for itself in its own confidence level.", "",
+           f"**{len(rows)} terms tracked \u2014 {n_pub} published, {len(rows) - n_pub} not.** "
+           "See [how terms are admitted](../CONTRIBUTING.md#term-status--the-admission-test).", "",
+           "| Status | Meaning | Count |", "|---|---|---|"]
+    for k in ("established", "emerging", "house", "vendor", "unassessed"):
+        if counts.get(k):
+            out.append(f"| `{k}` | {TERM_STATUS[k]} | {counts[k]} |")
+    out += ["", "---", "", "| Term | Status | Published | Notes |", "|---|---|---|---|"]
+    for r in sorted(rows, key=lambda r: r["term"].lower()):
+        e = by_term.get(r["term"])
+        name = f"[{r['term']}](../concepts/{e['slug']}.md)" if e else r["term"]
+        out.append(f"| {name} | `{r['status']}` | {'yes' if r['published'] else 'not yet'} "
+                   f"| {r['note'] or ''} |")
+    out += ["", "---", "",
+            "*Generated from the term tracker by `scripts/build.py write`. Do not edit by hand.*", ""]
+    return "\n".join(out)
+
+
 def write(entries):
     changed = []
     by_slug = {e["slug"]: e for e in entries}
@@ -359,6 +444,13 @@ def write(entries):
         if not SEARCH.exists() or SEARCH.read_text() != page:
             SEARCH.write_text(page)
             changed.append(f"search.html ({len(page)//1024} KB, self-contained)")
+
+    rows = read_export()
+    if rows:
+        page = register_page(entries)
+        if not REGISTER.exists() or REGISTER.read_text() != page:
+            REGISTER.write_text(page)
+            changed.append(f"glossary/register.md ({len(rows)} terms)")
     return changed
 
 
@@ -432,16 +524,16 @@ def report(entries):
     print("\n".join(pg) if pg else "  none — every Related-concepts bullet resolves")
 
     # gap report: unpublished candidate terms ranked by unlinked plain-text mentions
-    tracker = ROOT / "scripts" / "tracker-terms.txt"
+    rows = read_export()
     print("\n== Gap report ==")
-    if not tracker.exists():
-        print(f"(skipped — no {tracker.relative_to(ROOT)}; one candidate term per line)")
+    if not rows:
+        print(f"(skipped — no {EXPORT.relative_to(ROOT)})")
         return
     published = {e["term"] for e in entries}
     corpus = {p: p.read_text() for p in CONCEPTS.glob("*.md")}
     corpus.update({p: p.read_text() for p in (ROOT / "notes").glob("*.md")})
     scored = []
-    for term in (t.strip() for t in tracker.read_text().splitlines() if t.strip()):
+    for term in (r["term"] for r in rows if not r["published"]):
         if term in published:
             continue
         n = sum(1 for text in corpus.values()
