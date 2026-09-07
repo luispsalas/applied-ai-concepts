@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "count": 116,
+  "count": 117,
   "entries": [
     {
       "slug": "accountability-ai-systems",
@@ -215,6 +215,50 @@
         "SRC-269"
       ],
       "path": "concepts/agent-skills.md"
+    },
+    {
+      "slug": "agentic-design-patterns",
+      "term": "Agentic Design Patterns",
+      "category": "System Architecture",
+      "essence": "Reusable structures for arranging what an AI system decides at runtime versus what is fixed in code — and each arrangement puts the power to refuse in a different place.",
+      "short": "The named arrangements for splitting what a system decides at runtime from what is fixed in code — and each one puts the power to refuse somewhere different",
+      "aliases": [
+        "agentic design",
+        "agent design patterns",
+        "agentic patterns",
+        "reflection pattern",
+        "orchestrator-worker",
+        "evaluator-optimizer",
+        "planning pattern",
+        "how should I structure my agent"
+      ],
+      "tags": [
+        "Agents",
+        "Architecture",
+        "AI Literacy"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "agency-ai-systems",
+        "agent-hooks",
+        "ai-agent",
+        "failure-modes-ai-systems",
+        "human-in-the-loop",
+        "llm-as-judge",
+        "multi-agent-systems",
+        "orchestration-ai-systems",
+        "sandboxing",
+        "tool-use"
+      ],
+      "sources": [
+        "SRC-034",
+        "SRC-104",
+        "SRC-128",
+        "SRC-152",
+        "SRC-276"
+      ],
+      "path": "concepts/agentic-design-patterns.md"
     },
     {
       "slug": "ai-agent",
@@ -1155,7 +1199,9 @@
         "what to put in the prompt",
         "context management",
         "assembling context",
-        "beyond prompt engineering"
+        "beyond prompt engineering",
+        "Context Framing",
+        "how information is presented to the model"
       ],
       "tags": [
         "Prompting",
@@ -4428,7 +4474,10 @@
         "tool calling",
         "API calls from AI",
         "actions",
-        "MCP tools"
+        "MCP tools",
+        "APIs (Application Programming Interfaces)",
+        "API",
+        "integration layer"
       ],
       "tags": [
         "Agents",

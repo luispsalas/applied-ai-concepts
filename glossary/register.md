@@ -4,14 +4,14 @@ Every term this wiki tracks, with its status — **including the ones that are n
 
 The field names things faster than it settles them, and a glossary that repeats every new label without comment is a list of buzzwords. So each term is judged on whether it is a *real term*. That is a separate question from how good the evidence is for the claims inside an entry, which each entry states for itself in its own confidence level.
 
-**134 terms tracked — 116 published, 18 not.** See [how terms are admitted](../CONTRIBUTING.md#term-status--the-admission-test).
+**134 terms tracked — 117 published, 17 not.** See [how terms are admitted](../CONTRIBUTING.md#term-status--the-admission-test).
 
 | Status | Meaning | Count |
 |---|---|---|
-| `established` | Recognized term of art, in independent use. | 120 |
-| `emerging` | Real and in use, but definitions still vary between sources. | 10 |
+| `established` | Recognized term of art, in independent use. | 119 |
+| `emerging` | Real and in use, but definitions still vary between sources. | 9 |
 | `declined` | Considered and turned down — not a term this wiki will publish. | 1 |
-| `covered` | A real term, already covered by another entry — findable there as an alias. | 3 |
+| `covered` | A real term, already covered by another entry — findable there as an alias. | 5 |
 
 ---
 
@@ -23,7 +23,7 @@ The field names things faster than it settles them, and a glossary that repeats 
 | [Agent Interoperability (A2A)](../concepts/agent-interoperability-a2a.md) | `established` | yes |  |
 | Agent Memory | `covered` | **covered by [Memory (AI Systems)](../concepts/memory-ai-systems.md)** | COVERED by Memory (AI Systems) — decided Sep 7 2026 under admission check 4. A real established term, but that entry already is this one: it uses the in-trial / cross-trial distinction, covers externalized file-system state and agent memory-loss failure, and cites the agent-memory survey (SRC-137) as its source. A separate entry would be a near-duplicate. Resolved by alias rather than a split, so the term stays findable: agent memory, cross-session memory and what does the agent remember all resolve there. The register derives the pointer from that alias, so retargeting the alias moves the pointer. |
 | [Agent Skills](../concepts/agent-skills.md) | `established` | yes | RENAMED from "Skill" and published Sep 7 2026, resolving the vendor status — the bare word collided with Alexa Skills and with ordinary English. Cleared the gate ON USAGE rather than on governance: originated at Anthropic, released as an open standard, now implemented by roughly 45 clients including direct competitors (OpenAI Codex, Gemini CLI, GitHub Copilot, VS Code, Mistral, Cursor, Databricks, Snowflake). A different establishment route from A2A, which cleared on foundation governance with thin usage. |
-| Agentic Design | `emerging` | not yet | "Agentic" is now widespread, but "agentic design" as a named discipline is not settled — usage varies between practitioners and no standard formulation exists. |
+| [Agentic Design Patterns](../concepts/agentic-design-patterns.md) | `emerging` | yes | RENAMED from "Agentic Design" and published Sep 7 2026 as `emerging`. This row's caution was HALF right: "agentic design" is not a settled discipline, but "agentic design PATTERNS" is real vocabulary with two independent anchor catalogs — Ng's four (The Batch, Mar 2024) and Anthropic's workflow set. They do not match, and no canonical list exists, which is exactly why it ships emerging rather than established. Check 4: Orchestration holds the workflow-versus-agentic distinction but no pattern catalog, so this is a real gap. ⚠️ The oversight-profile table is the wiki's own framing, not a finding — no source organizes patterns by where refusal can occur. |
 | Agentic Pattern | `emerging` | not yet | "Agentic pattern" is used loosely as a synonym for agent design templates; no canonical catalogue exists. Likely redundant with Agentic Design — decide whether both are needed. |
 | [AI Agent](../concepts/ai-agent.md) | `established` | yes |  |
 | [AI Benchmarking](../concepts/ai-benchmarking.md) | `established` | yes |  |
@@ -36,7 +36,7 @@ The field names things faster than it settles them, and a glossary that repeats 
 | [AI Use Case](../concepts/ai-use-case.md) | `established` | yes |  |
 | [Alignment (AI Systems)](../concepts/alignment-ai-systems.md) | `established` | yes |  |
 | [Anthropomorphism (AI)](../concepts/anthropomorphism-ai.md) | `established` | yes |  |
-| APIs (Application Programming Interfaces) | `established` | not yet |  |
+| APIs (Application Programming Interfaces) | `covered` | **covered by [Tool Use](../concepts/tool-use.md)** | COVERED by Tool Use — decided Sep 7 2026. Also caught by CONTRIBUTING's scope exclusion: terms well-defined elsewhere that add no distinctive governance, literacy or design insight. APIs are general software vocabulary, exhaustively documented; the two AI-specific senses are already held — an AI calling out to an API is Tool Use (which already carried the alias "API calls from AI"), and calling a model provider's API is AI Gateway plus Inference. An entry would restate a textbook definition the corpus already covers in AI-specific form. Folded by alias. |
 | [Audit Trail (AI)](../concepts/audit-trail-ai.md) | `established` | yes |  |
 | [Automation Bias](../concepts/automation-bias.md) | `established` | yes |  |
 | [Bias (AI Systems)](../concepts/bias-ai-systems.md) | `established` | yes |  |
@@ -52,7 +52,7 @@ The field names things faster than it settles them, and a glossary that repeats 
 | [Context (AI Systems)](../concepts/context-ai-systems.md) | `established` | yes |  |
 | [Context Compaction](../concepts/context-compaction.md) | `established` | yes | RENAMED from "Compact" and published Sep 7 2026, resolving the vendor status. Compaction is documented as a first-class concept by Microsoft's Agent Framework and studied in named 2026 research, so the term is in independent use — it was only Anthropic's product vocabulary as the bare word "Compact". Published under the neutral name, citing implementations rather than any one product. |
 | [Context Engineering](../concepts/context-engineering.md) | `established` | yes |  |
-| Context Framing | `emerging` | not yet | Framing effects are established in psychology; "context framing" as a prompting sub-skill is practitioner vocabulary and overlaps Context Engineering — check for redundancy before drafting. |
+| Context Framing | `covered` | **covered by [Context Engineering](../concepts/context-engineering.md)** | COVERED by Context Engineering — decided Sep 7 2026, confirming this row's own caution. FAILS CHECK 2: filtering for independent use leaves a single LinkedIn post using "context framing" as a term, with an idiosyncratic definition unlike this row's essence; the field consolidated on CONTEXT ENGINEERING (Karpathy, June 2025) and the literature uses that. The concept — how presentation and structure shape behavior — is held between Context Engineering (the information environment) and Prompt Engineering (the form of instructions), with position effects in Context Window. ⚠️ Prompt Engineering carried a Related-concepts promise to this term; removed, since that entry already links Context Engineering with the same distinction one line above. |
 | [Context Window](../concepts/context-window.md) | `established` | yes |  |
 | [Continuous Feedback & Improvement](../concepts/continuous-feedback-improvement.md) | `established` | yes |  |
 | [Copyright & AI Output](../concepts/copyright-ai-output.md) | `established` | yes |  |

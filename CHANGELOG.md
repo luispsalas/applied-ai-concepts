@@ -1,5 +1,27 @@
 # Changelog
 
+## v1.26 — September 2026
+
+**Three terms requested; one published, two folded. Count 116 → 117.**
+
+- `agentic-design-patterns` — v1.0, **`emerging`** (was *Agentic Design*)
+- *APIs (Application Programming Interfaces)* → **`covered`** by Tool Use
+- *Context Framing* → **`covered`** by Context Engineering
+
+**Both terms carrying a tracker caution were right to carry one, and the cautions pointed in different directions.**
+
+*Context Framing* **failed check 2.** Filtering for independent use leaves a single post using the phrase as a term, with a definition unlike the tracker's own — while the field consolidated on **context engineering** in mid-2025 and the literature uses that. The concept is real and already held between Context Engineering (the information environment) and Prompt Engineering (the form of instructions). Prompt Engineering also carried a Related-concepts promise to it, which is now removed: the same entry already links Context Engineering one line above, with the same distinction. **The promise sweep drops from 4 to 3.**
+
+*Agentic Design* was **half right**. "Agentic design" is not a settled discipline — but **"agentic design patterns" is real vocabulary with two independent anchor catalogs**: Ng's four (*The Batch*, March 2024) and Anthropic's workflow set. They do not match, no canonical list exists, and later trade catalogs extend both without adding evidence. Hence the rename, and hence `emerging` rather than established.
+
+**The entry exists for a property the catalogs consistently omit: each pattern relocates the authority to refuse.** Reflection puts it nowhere outside the model. Evaluator–optimizer creates an internal grader whose standard nobody outside set. Orchestrator–workers concentrates it in one component; multi-agent distributes it until often nowhere identifiable. **That table is the wiki's own framing and says so** — no source consulted organizes patterns that way. The entry also carries the conservative advice, which is worth quoting precisely because it runs against its author's commercial interest: prefer the simplest arrangement whose paths you can enumerate.
+
+**APIs was declined on scope, not on redundancy alone.** CONTRIBUTING excludes *"terms well-defined elsewhere that add no distinctive governance, literacy, or design insight"* — and both AI-specific senses are already held: an AI calling out is Tool Use, calling a provider is AI Gateway plus Inference. An entry would restate a textbook definition.
+
+**Sources:** 1 added (SRC-276), 4 reused. **A stray non-Latin character was caught in new prose** by a post-write sweep, and the whole corpus was then checked for others — none.
+
+---
+
 ## v1.25 — September 2026
 
 **1 concept published — `ontology` v1.0. Count 115 → 116. It was nearly folded away instead, and that near-miss is the point.**
