@@ -2,7 +2,7 @@
   <img src="assets/robot.png" alt="Applied AI Concepts" width="120">
 </p>
 
-<h1 align="center">applied-ai-concepts</h1>
+<h1 align="center">Applied AI Concepts</h1>
 
 ---
 
