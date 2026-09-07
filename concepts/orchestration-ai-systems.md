@@ -1,7 +1,7 @@
 <!--meta
 category: System Architecture
 short: The control layer deciding what runs and in what order — where the failures hide in the seams and look like success
-aliases: [workflow, pipeline, coordinating AI components, agent orchestration, chaining steps]
+aliases: [workflow, pipeline, coordinating AI components, agent orchestration, chaining steps, Flow Engineering, agentic workflow, designing the steps]
 tags: [Agents, Architecture]
 established: established
 -->

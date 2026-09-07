@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "count": 109,
+  "count": 111,
   "entries": [
     {
       "slug": "accountability-ai-systems",
@@ -927,7 +927,11 @@
         "what the model sees",
         "input context",
         "the prompt plus everything else",
-        "what does it actually know"
+        "what does it actually know",
+        "Instantiation (AI Systems)",
+        "instantiation",
+        "session instance",
+        "does each session start fresh"
       ],
       "tags": [
         "Architecture",
@@ -2872,7 +2876,10 @@
         "pipeline",
         "coordinating AI components",
         "agent orchestration",
-        "chaining steps"
+        "chaining steps",
+        "Flow Engineering",
+        "agentic workflow",
+        "designing the steps"
       ],
       "tags": [
         "Agents",
@@ -4267,6 +4274,48 @@
       "path": "concepts/training-data.md"
     },
     {
+      "slug": "transformers",
+      "term": "Transformers",
+      "category": "Foundations",
+      "essence": "The neural network architecture underlying most modern AI systems — designed to process sequences by learning which parts to pay attention to, enabling the scale that powers LLMs.",
+      "short": "The architecture underneath almost everything — and the reason a weakness in one model is rarely local to it",
+      "aliases": [
+        "transformer",
+        "self-attention",
+        "attention mechanism",
+        "encoder decoder",
+        "attention is all you need",
+        "what architecture do LLMs use"
+      ],
+      "tags": [
+        "AI Literacy",
+        "Architecture",
+        "Model Behavior"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "context-window",
+        "embeddings",
+        "frontier-ai",
+        "inference",
+        "large-language-models",
+        "multimodal-ai",
+        "nlp",
+        "pre-training",
+        "recurrent-depth",
+        "systemic-risk-ai"
+      ],
+      "sources": [
+        "SRC-141",
+        "SRC-142",
+        "SRC-143",
+        "SRC-149",
+        "SRC-213"
+      ],
+      "path": "concepts/transformers.md"
+    },
+    {
       "slug": "types-of-ai-systems",
       "term": "Types of AI Systems",
       "category": "Foundations",
@@ -4383,6 +4432,50 @@
         "SRC-191"
       ],
       "path": "concepts/verification.md"
+    },
+    {
+      "slug": "zero-shot-few-shot-learning",
+      "term": "Zero-shot / Few-shot Learning",
+      "category": "Foundations",
+      "essence": "An AI model's ability to perform a task from no examples (zero-shot) or a handful of examples (few-shot) — without retraining the model.",
+      "short": "Getting a task done with no examples or a handful, without changing the model — and the measured finding that the examples do not teach it what you think",
+      "aliases": [
+        "zero-shot",
+        "few-shot",
+        "in-context learning",
+        "ICL",
+        "one-shot",
+        "learning from examples",
+        "giving it examples",
+        "no training needed"
+      ],
+      "tags": [
+        "AI Literacy",
+        "Model Behavior",
+        "Prompting"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "ai-use-case",
+        "bias-ai-systems",
+        "context-ai-systems",
+        "evaluation",
+        "fine-tuning",
+        "large-language-models",
+        "model-version-update",
+        "pre-training",
+        "prompt-engineering",
+        "reasoning-models"
+      ],
+      "sources": [
+        "SRC-013",
+        "SRC-041",
+        "SRC-142",
+        "SRC-259",
+        "SRC-260"
+      ],
+      "path": "concepts/zero-shot-few-shot-learning.md"
     }
   ]
 }

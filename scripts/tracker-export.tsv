@@ -107,16 +107,16 @@ NLP	yes	established
 Agent Interoperability (A2A)	yes	established	
 Mechanistic Interpretability	yes	established	
 Edge AI	yes	established	
+Zero-shot / Few-shot Learning	yes	established	
+Transformers	yes	established	
 Temperature (LLMs)	yes	established	
 Inference	yes	established	
 Agent Memory	no	covered	COVERED by Memory (AI Systems) — decided Sep 7 2026 under admission check 4. A real established term, but that entry already is this one: it uses the in-trial / cross-trial distinction, covers externalized file-system state and agent memory-loss failure, and cites the agent-memory survey (SRC-137) as its source. A separate entry would be a near-duplicate. Resolved by alias rather than a split, so the term stays findable: agent memory, cross-session memory and what does the agent remember all resolve there. The register derives the pointer from that alias, so retargeting the alias moves the pointer.
 Agentic Design	no	emerging	"Agentic" is now widespread, but "agentic design" as a named discipline is not settled — usage varies between practitioners and no standard formulation exists.
 APIs (Application Programming Interfaces)	no	established	
 Context Framing	no	emerging	Framing effects are established in psychology; "context framing" as a prompting sub-skill is practitioner vocabulary and overlaps Context Engineering — check for redundancy before drafting.
-Instantiation (AI Systems)	no	emerging	Generic computing term applied to model sessions; the AI-specific sense is not standardised and may be better folded into Context (AI Systems).
-Zero-shot / Few-shot Learning	no	established	
-Transformers	no	established	
-Flow Engineering	no	emerging	Originates with the AlphaCodium work (CodiumAI); adoption beyond that lineage is thin. Run check 2 — filter the originator's domains — before drafting.
+Instantiation (AI Systems)	no	covered	COVERED by Context (AI Systems) — decided Sep 7 2026, confirming the caution this row already carried. That entry states it directly: context is assembled fresh for every response, each generation starts from whatever was assembled for it, and apparent memory is context reconstructed and re-sent. That is this term's seed essence. A separate entry would restate it. Folded by alias, so the term stays findable.
+Flow Engineering	no	covered	COVERED by Orchestration (AI Systems) — decided Sep 7 2026. FAILS CHECK 2 as this row instructed: filtering the originator's domains leaves only the AlphaCodium paper itself, its repo, and blog write-ups of it; no independent group uses the term. The concept is thriving in 2026 under agentic workflows, and Orchestration already carries it — workflow, pipeline and chaining steps are its aliases, and it has the workflow-versus-agentic distinction. Folded by alias.
 Metaprompting	no	emerging	Meta-prompting appears in the literature but definitions vary; the tracker essence describes a narrower self-critique technique than most usage.
 Environmental Cost of AI	no	established	
 Agentic Pattern	no	emerging	"Agentic pattern" is used loosely as a synonym for agent design templates; no canonical catalogue exists. Likely redundant with Agentic Design — decide whether both are needed.

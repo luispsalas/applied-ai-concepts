@@ -4,15 +4,15 @@ Every term this wiki tracks, with its status — **including the ones that are n
 
 The field names things faster than it settles them, and a glossary that repeats every new label without comment is a list of buzzwords. So each term is judged on whether it is a *real term*. That is a separate question from how good the evidence is for the claims inside an entry, which each entry states for itself in its own confidence level.
 
-**133 terms tracked — 109 published, 24 not.** See [how terms are admitted](../CONTRIBUTING.md#term-status--the-admission-test).
+**133 terms tracked — 111 published, 22 not.** See [how terms are admitted](../CONTRIBUTING.md#term-status--the-admission-test).
 
 | Status | Meaning | Count |
 |---|---|---|
 | `established` | Recognized term of art, in independent use. | 115 |
-| `emerging` | Real and in use, but definitions still vary between sources. | 12 |
+| `emerging` | Real and in use, but definitions still vary between sources. | 10 |
 | `vendor` | Coined by a single vendor — published, if at all, under a neutral name. | 4 |
 | `declined` | Considered and turned down — not a term this wiki will publish. | 1 |
-| `covered` | A real term, already covered by another entry — findable there as an alias. | 1 |
+| `covered` | A real term, already covered by another entry — findable there as an alias. | 3 |
 
 ---
 
@@ -71,7 +71,7 @@ The field names things faster than it settles them, and a glossary that repeats 
 | [Explainability (XAI)](../concepts/explainability-xai.md) | `established` | yes |  |
 | [Failure Modes (AI Systems)](../concepts/failure-modes-ai-systems.md) | `established` | yes |  |
 | [Fine-tuning](../concepts/fine-tuning.md) | `established` | yes |  |
-| Flow Engineering | `emerging` | not yet | Originates with the AlphaCodium work (CodiumAI); adoption beyond that lineage is thin. Run check 2 — filter the originator's domains — before drafting. |
+| Flow Engineering | `covered` | **covered by [Orchestration (AI Systems)](../concepts/orchestration-ai-systems.md)** | COVERED by Orchestration (AI Systems) — decided Sep 7 2026. FAILS CHECK 2 as this row instructed: filtering the originator's domains leaves only the AlphaCodium paper itself, its repo, and blog write-ups of it; no independent group uses the term. The concept is thriving in 2026 under agentic workflows, and Orchestration already carries it — workflow, pipeline and chaining steps are its aliases, and it has the workflow-versus-agentic distinction. Folded by alias. |
 | [Frontier AI (Frontier Model)](../concepts/frontier-ai.md) | `established` | yes |  |
 | [Fundamental Rights Impact Assessment (FRIA)](../concepts/fundamental-rights-impact-assessment.md) | `established` | yes |  |
 | [Grounding](../concepts/grounding.md) | `established` | yes |  |
@@ -84,7 +84,7 @@ The field names things faster than it settles them, and a glossary that repeats 
 | [Human–AI Collaboration Model](../concepts/human-ai-collaboration-model.md) | `established` | yes |  |
 | [Human–LLM Communication Skills](../concepts/human-llm-communication-skills.md) | `emerging` | yes | Component competencies are well grounded, but there is no established assessment for the competency as a whole. |
 | [Inference](../concepts/inference.md) | `established` | yes |  |
-| Instantiation (AI Systems) | `emerging` | not yet | Generic computing term applied to model sessions; the AI-specific sense is not standardised and may be better folded into Context (AI Systems). |
+| Instantiation (AI Systems) | `covered` | **covered by [Context (AI Systems)](../concepts/context-ai-systems.md)** | COVERED by Context (AI Systems) — decided Sep 7 2026, confirming the caution this row already carried. That entry states it directly: context is assembled fresh for every response, each generation starts from whatever was assembled for it, and apparent memory is context reconstructed and re-sent. That is this term's seed essence. A separate entry would restate it. Folded by alias, so the term stays findable. |
 | [Jailbreak](../concepts/jailbreak.md) | `established` | yes |  |
 | [Knowledge Base](../concepts/knowledge-base.md) | `established` | yes |  |
 | [Knowledge Cutoff](../concepts/knowledge-cutoff.md) | `established` | yes |  |
@@ -145,12 +145,12 @@ The field names things faster than it settles them, and a glossary that repeats 
 | [Tokenization](../concepts/tokenization.md) | `established` | yes |  |
 | [Tool Use](../concepts/tool-use.md) | `established` | yes |  |
 | [Training Data](../concepts/training-data.md) | `established` | yes |  |
-| Transformers | `established` | not yet |  |
+| [Transformers](../concepts/transformers.md) | `established` | yes |  |
 | [Types of AI Systems](../concepts/types-of-ai-systems.md) | `established` | yes |  |
 | Underfitting | `established` | not yet |  |
 | [Value Realization (AI)](../concepts/value-realization-ai.md) | `emerging` | yes | Standard business term; the AI-specific application rests on evidence from prior general-purpose technologies rather than from AI. |
 | [Verification](../concepts/verification.md) | `established` | yes |  |
-| Zero-shot / Few-shot Learning | `established` | not yet |  |
+| [Zero-shot / Few-shot Learning](../concepts/zero-shot-few-shot-learning.md) | `established` | yes |  |
 
 ---
 

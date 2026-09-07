@@ -30,7 +30,7 @@ This wiki treats AI and data governance as closely connected. Alongside technica
 
 ### Looking a concept up
 
-Browse the [glossary index](glossary/index.md) — 109 terms alphabetically with their one-line essences — or use **`search.html`**, a self-contained search page covering every term plus 622 hand-written synonyms.
+Browse the [glossary index](glossary/index.md) — 111 terms alphabetically with their one-line essences — or use **`search.html`**, a self-contained search page covering every term plus 643 hand-written synonyms.
 
 It is built for concept lookup rather than text search, so describing the problem works: *"who is responsible when the AI does it"*, *"it used to work"*, *"why do I get different answers"*. Each result shows which synonym matched.
 
@@ -133,6 +133,8 @@ Every claim in this wiki is meant to trace back to a real, checkable source — 
 | [Reinforcement Learning (RL)](concepts/reinforcement-learning.md) | Learning by consequence rather than by example — the framework behind alignment and reasoning training, and the one whose central, unsolved problem is that a system optimizes what you measured rather than what you meant | ✅ v1.0 |
 | [Mechanistic Interpretability](concepts/mechanistic-interpretability.md) | Reverse-engineering what a model actually computes, rather than asking it to explain itself — the only route to knowing why that does not depend on the model's own account | ✅ v1.0 |
 | [Recurrent Depth](concepts/recurrent-depth.md) | Spending more compute by looping a model's own layers rather than by writing more tokens — capability without extra parameters, and thinking that produces nothing to read | ✅ v1.0 |
+| [Transformers](concepts/transformers.md) | The architecture underneath almost everything — and the reason a weakness in one model is rarely local to it | ✅ v1.0 |
+| [Zero-shot / Few-shot Learning](concepts/zero-shot-few-shot-learning.md) | Getting a task done with no examples or a handful, without changing the model — and the measured finding that the examples do not teach it what you think | ✅ v1.0 |
 
 ### Interaction & Design
 *How you work with models effectively*
@@ -331,7 +333,7 @@ See [CHANGELOG.md](CHANGELOG.md) for version history.
 ## Status
 
 **Phase 1 ✅ — foundation:** core concepts published and sourced, each with a governance-notes section; standalone [governance & observability notes](notes/governance-and-observability.md) doc live.
-**Phase 2 (current) — breadth & cross-linking:** 109 concepts across 8 categories, a [glossary index](glossary/index.md), client-side [search](search.html), and a cross-reference layer connecting related entries.
+**Phase 2 (current) — breadth & cross-linking:** 111 concepts across 8 categories, a [glossary index](glossary/index.md), client-side [search](search.html), and a cross-reference layer connecting related entries.
 **Phase 3 (planned):** audience-specific rendering, glossary automation, and a manifesto distilled from the wiki's principles.
 
 ---

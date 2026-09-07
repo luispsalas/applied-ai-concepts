@@ -1,7 +1,7 @@
 <!--meta
 category: Knowledge & Memory
 short: Everything the model receives before it answers — one bounded, undifferentiated stream, assembled fresh every time
-aliases: [context window contents, what the model sees, input context, the prompt plus everything else, what does it actually know]
+aliases: [context window contents, what the model sees, input context, the prompt plus everything else, what does it actually know, Instantiation (AI Systems), instantiation, session instance, does each session start fresh]
 tags: [Architecture, Prompting, Security]
 established: established
 -->

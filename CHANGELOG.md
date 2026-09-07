@@ -1,5 +1,24 @@
 # Changelog
 
+## v1.22 — September 2026
+
+**2 concepts published, 2 folded. Count 109 → 111.**
+
+- `transformers` — v1.0 (the architecture underneath almost everything, and why failures are correlated)
+- `zero-shot-few-shot-learning` — v1.0 (the examples do not teach it what you think)
+
+**Four terms were requested; two were already in the corpus under other names.** *Instantiation (AI Systems)* is what *Context (AI Systems)* already says — context is assembled fresh for every response, and apparent memory is context reconstructed and re-sent. *Flow Engineering* is what *Orchestration (AI Systems)* already covers, and it separately failed the independent-use check: filtering the originator's domains leaves the AlphaCodium paper, its repository, and blog write-ups of it. The concept is thriving in 2026 — under the name *agentic workflows*. **Both are now `covered`, with the register linking to the entry that holds them.** Two of the three `covered` terms so far were flagged as suspect in the tracker before drafting; the notes were right.
+
+**Transformers is filed for the homogenization argument, not the mechanism.** Attention and the removal of recurrence are textbook, and the entry says so briefly. What it exists to state is the consequence: when one architecture and a small number of base models underlie a field, **a defect in the foundation is inherited rather than isolated**, and multi-vendor procurement is not diversification if the vendors share a lineage. The entry marks that as a well-grounded structural expectation rather than a measured failure rate, because the inventories needed to measure it are not public.
+
+**Zero-shot / Few-shot Learning leads with a finding most practice contradicts.** Randomly replacing the labels in few-shot demonstrations **barely hurts performance** — tested across twelve models, peer-reviewed. What demonstrations convey is label space, input distribution and format, not correctness. So *"we showed it examples of correct handling"* is weak evidence of correct handling, and it is offered as strong evidence routinely. The entry states the scope limit the source states: measured on classification and multiple-choice, not open-ended generation.
+
+**Source registry:** 2 added (SRC-259–260), 7 reused. Both new rows carry the scope caveat in their risk column rather than only in the entry, so a future reuse inherits it.
+
+**The alias gate caught a duplicate of its own making:** `Flow Engineering` and `flow engineering` were both added to the same entry and normalize to one alias. Removed.
+
+---
+
 ## v1.21.1 — September 2026
 
 **A sixth term status: `covered`.** For a real term the corpus already covers under another name — the case *Agent Memory* raised and the previous release could only describe in prose.
