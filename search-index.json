@@ -3411,7 +3411,7 @@
         "Safety",
         "AI Literacy"
       ],
-      "version": "v1.0",
+      "version": "v1.1",
       "updated": "September 2026",
       "related": [
         "agency-ai-systems",
@@ -3428,7 +3428,10 @@
         "SRC-001",
         "SRC-084",
         "SRC-143",
-        "SRC-244"
+        "SRC-244",
+        "SRC-261",
+        "SRC-262",
+        "SRC-263"
       ],
       "path": "concepts/recursive-self-improvement.md"
     },

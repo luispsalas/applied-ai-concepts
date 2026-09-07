@@ -222,7 +222,7 @@ Every claim in this wiki is meant to trace back to a real, checkable source — 
 | [Model Version & Update](concepts/model-version-update.md) | The system you use today may not be the one you tested — providers change models underneath you, and reliable behavior can shift without notice | ✅ v1.0 |
 | [Data Leakage (Model Evaluation)](concepts/data-leakage-model-evaluation.md) | When information from the test set reaches the model during training, so measured performance describes a exam the model had already seen — the most common cause of results that do not survive deployment | ✅ v1.0 |
 | [LLM-as-Judge](concepts/llm-as-judge.md) | Using one language model to grade another's output — the only way to evaluate at volume, with documented biases including a preference for its own writing | ✅ v1.0 |
-| [Recursive Self-Improvement](concepts/recursive-self-improvement.md) | A system improving its own ability to improve, so gains compound — a sixty-year-old argument whose premises are now partly testable and largely unmet | ✅ v1.0 |
+| [Recursive Self-Improvement](concepts/recursive-self-improvement.md) | A system improving its own ability to improve, so gains compound — a sixty-year-old argument whose premises are now partly testable and largely unmet | ✅ v1.1 |
 | [AI Benchmarking](concepts/ai-benchmarking.md) | Standardized tests that let models be compared on the same task — indispensable for comparison, and routinely read as evidence of general capability they were never built to support | ✅ v1.0 |
 
 ### Observability & Governance
