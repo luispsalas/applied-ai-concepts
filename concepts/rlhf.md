@@ -104,7 +104,7 @@ Which is exactly why it is worth knowing about. A small number of people, follow
 - [Bias (AI Systems)](bias-ai-systems.md) — rater demographics and guidelines are a bias surface
 - [Human-in-the-Loop (HITL)](human-in-the-loop.md) — humans at training time rather than at decision time
 - [Scalable Oversight](scalable-oversight.md) — what happens when raters can no longer judge the output
-- Reinforcement Learning (RL) — the optimization framework underneath
+- [Reinforcement Learning (RL)](reinforcement-learning.md) — the optimization framework underneath
 
 ---
 

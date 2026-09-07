@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "count": 100,
+  "count": 106,
   "entries": [
     {
       "slug": "accountability-ai-systems",
@@ -86,6 +86,49 @@
       "path": "concepts/agency-ai-systems.md"
     },
     {
+      "slug": "agent-interoperability-a2a",
+      "term": "Agent Interoperability (A2A)",
+      "category": "System Architecture",
+      "essence": "Standards that let AI agents built on different platforms discover each other's capabilities and communicate directly — the connective layer between agents, as MCP is between an agent and its tools.",
+      "short": "Letting agents built by different parties discover and delegate to each other — the layer where accountability crosses an organizational boundary, usually before anyone has decided who holds it",
+      "aliases": [
+        "A2A",
+        "agent2agent",
+        "agent-to-agent",
+        "agent interop",
+        "agent communication protocol",
+        "cross-platform agents",
+        "agent discovery"
+      ],
+      "tags": [
+        "Agents",
+        "Architecture",
+        "Security"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "accountability-ai-systems",
+        "ai-agent",
+        "audit-trail-ai",
+        "multi-agent-systems",
+        "observability",
+        "orchestration-ai-systems",
+        "permission-model-ai",
+        "prompt-injection",
+        "sandboxing",
+        "tool-use"
+      ],
+      "sources": [
+        "SRC-060",
+        "SRC-103",
+        "SRC-128",
+        "SRC-152",
+        "SRC-252"
+      ],
+      "path": "concepts/agent-interoperability-a2a.md"
+    },
+    {
       "slug": "ai-agent",
       "term": "AI Agent",
       "category": "System Architecture",
@@ -122,6 +165,49 @@
         "SRC-118"
       ],
       "path": "concepts/ai-agent.md"
+    },
+    {
+      "slug": "ai-benchmarking",
+      "term": "AI Benchmarking",
+      "category": "Reliability & Quality",
+      "essence": "Standardized tests for measuring AI system performance — useful for comparison, limited as a proxy for real-world reliability or safety.",
+      "short": "Standardized tests that let models be compared on the same task — indispensable for comparison, and routinely read as evidence of general capability they were never built to support",
+      "aliases": [
+        "benchmarking",
+        "benchmarks",
+        "leaderboard",
+        "model comparison",
+        "standardized tests",
+        "SOTA",
+        "state of the art",
+        "which model is best"
+      ],
+      "tags": [
+        "Evaluation",
+        "AI Literacy"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "confidence-vs-accuracy",
+        "data-leakage-model-evaluation",
+        "evaluation",
+        "llm-as-judge",
+        "model-card-system-card",
+        "model-version-update",
+        "nlp",
+        "red-teaming",
+        "reward-hacking",
+        "verification"
+      ],
+      "sources": [
+        "SRC-065",
+        "SRC-115",
+        "SRC-242",
+        "SRC-243",
+        "SRC-251"
+      ],
+      "path": "concepts/ai-benchmarking.md"
     },
     {
       "slug": "ai-disclosure-attribution",
@@ -1423,7 +1509,6 @@
       "short": "The structured practice of measuring whether an AI system does what it is supposed to do — before deployment and continuously in production",
       "aliases": [
         "evals",
-        "benchmarking",
         "how do we know it works",
         "testing AI",
         "measuring performance"
@@ -1435,6 +1520,7 @@
       "version": "v1.1",
       "updated": "August 2026",
       "related": [
+        "ai-benchmarking",
         "hallucination",
         "human-in-the-loop",
         "observability",
@@ -1957,6 +2043,49 @@
       "path": "concepts/human-llm-communication-skills.md"
     },
     {
+      "slug": "inference",
+      "term": "Inference",
+      "category": "Foundations",
+      "essence": "The process of running a trained AI model to generate outputs — as distinct from training. Most production AI use is inference.",
+      "short": "Running a trained model to produce an output — the phase that carries almost all of a system's lifetime cost, latency and governance surface, and the one most often left out of AI budgets",
+      "aliases": [
+        "model inference",
+        "serving",
+        "running the model",
+        "prediction",
+        "inference time",
+        "test-time",
+        "deployment cost",
+        "why is the API bill so high"
+      ],
+      "tags": [
+        "AI Literacy",
+        "Architecture"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "context-window",
+        "determinism-vs-probabilism",
+        "fine-tuning",
+        "local-llms",
+        "pre-training",
+        "reasoning-models",
+        "scalability-ai-systems",
+        "small-language-models",
+        "temperature-llms",
+        "tokenization"
+      ],
+      "sources": [
+        "SRC-142",
+        "SRC-145",
+        "SRC-155",
+        "SRC-228",
+        "SRC-247"
+      ],
+      "path": "concepts/inference.md"
+    },
+    {
       "slug": "jailbreak",
       "term": "Jailbreak",
       "category": "System Architecture",
@@ -2450,7 +2579,7 @@
         "multiple agents",
         "agent teams",
         "agent collaboration",
-        "A2A"
+        "agent handoff"
       ],
       "tags": [
         "Agents",
@@ -2521,6 +2650,47 @@
         "SRC-213"
       ],
       "path": "concepts/multimodal-ai.md"
+    },
+    {
+      "slug": "nlp",
+      "term": "NLP",
+      "category": "Foundations",
+      "essence": "The field of AI focused on enabling computers to understand, process, and generate human language — the foundational discipline behind modern LLMs and conversational AI.",
+      "short": "The field concerned with making computers process human language — the discipline LLMs came out of, and the reason its older, unglamorous problems are still the ones that break production systems",
+      "aliases": [
+        "natural language processing",
+        "computational linguistics",
+        "language technology",
+        "text processing",
+        "NLP pipeline",
+        "how do computers understand language"
+      ],
+      "tags": [
+        "AI Literacy",
+        "Model Behavior"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "ai-benchmarking",
+        "anthropomorphism-ai",
+        "embeddings",
+        "evaluation",
+        "grounding",
+        "hallucination",
+        "large-language-models",
+        "multimodal-ai",
+        "pre-training",
+        "tokenization"
+      ],
+      "sources": [
+        "SRC-141",
+        "SRC-178",
+        "SRC-221",
+        "SRC-222",
+        "SRC-246"
+      ],
+      "path": "concepts/nlp.md"
     },
     {
       "slug": "observability",
@@ -3062,6 +3232,7 @@
         "evaluation",
         "explainability-xai",
         "hallucination",
+        "inference",
         "large-language-models",
         "prompt-engineering",
         "reward-hacking",
@@ -3158,6 +3329,50 @@
         "SRC-159"
       ],
       "path": "concepts/red-teaming.md"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "term": "Reinforcement Learning (RL)",
+      "category": "Foundations",
+      "essence": "A machine learning approach where an AI learns by receiving rewards or penalties for its actions — the foundation of techniques like RLHF used to align language models with human preferences.",
+      "short": "Learning by consequence rather than by example — the framework behind alignment and reasoning training, and the one whose central, unsolved problem is that a system optimizes what you measured rather than what you meant",
+      "aliases": [
+        "RL",
+        "reward learning",
+        "learning from rewards",
+        "reward function",
+        "agent training",
+        "trial and error learning",
+        "reward signal"
+      ],
+      "tags": [
+        "AI Literacy",
+        "Model Behavior",
+        "Safety"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "alignment-ai-systems",
+        "evaluation",
+        "fine-tuning",
+        "power-seeking",
+        "pre-training",
+        "reasoning-models",
+        "reward-hacking",
+        "rlhf",
+        "scalable-oversight",
+        "sycophancy-llms"
+      ],
+      "sources": [
+        "SRC-156",
+        "SRC-181",
+        "SRC-183",
+        "SRC-196",
+        "SRC-214",
+        "SRC-248"
+      ],
+      "path": "concepts/reinforcement-learning.md"
     },
     {
       "slug": "rag",
@@ -3270,6 +3485,7 @@
         "human-in-the-loop",
         "large-language-models",
         "model-version-update",
+        "reinforcement-learning",
         "reward-hacking",
         "scalable-oversight",
         "sycophancy-llms",
@@ -3533,6 +3749,50 @@
         "SRC-167"
       ],
       "path": "concepts/sycophancy-llms.md"
+    },
+    {
+      "slug": "synthetic-data",
+      "term": "Synthetic Data",
+      "category": "Knowledge & Memory",
+      "essence": "Data generated by AI rather than collected from the real world — useful when real data is scarce, sensitive, or legally restricted, with its own quality and bias risks.",
+      "short": "Data produced by a model rather than observed in the world — a genuine answer to scarcity, privacy and cost, and a genuine way to build a corpus that quietly stops describing reality",
+      "aliases": [
+        "artificial data",
+        "generated data",
+        "model-generated data",
+        "synthetic training data",
+        "fake data",
+        "data augmentation",
+        "model collapse"
+      ],
+      "tags": [
+        "Data Governance",
+        "Evaluation",
+        "Privacy"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "bias-ai-systems",
+        "data-leakage-ai-systems",
+        "data-leakage-model-evaluation",
+        "data-provenance-lineage",
+        "data-quality",
+        "model-card-system-card",
+        "model-data-drift",
+        "pre-training",
+        "privacy-ai-systems",
+        "training-data"
+      ],
+      "sources": [
+        "SRC-197",
+        "SRC-198",
+        "SRC-199",
+        "SRC-243",
+        "SRC-249",
+        "SRC-250"
+      ],
+      "path": "concepts/synthetic-data.md"
     },
     {
       "slug": "synthetic-media-deepfakes",
@@ -3806,6 +4066,7 @@
       "version": "v1.0",
       "updated": "August 2026",
       "related": [
+        "agent-interoperability-a2a",
         "ai-agent",
         "audit-trail-ai",
         "grounding",
@@ -3858,7 +4119,8 @@
         "local-llms",
         "model-card-system-card",
         "pre-training",
-        "privacy-ai-systems"
+        "privacy-ai-systems",
+        "synthetic-data"
       ],
       "sources": [
         "SRC-142",

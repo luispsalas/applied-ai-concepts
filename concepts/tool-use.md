@@ -85,7 +85,7 @@ On its own, a model can only produce text. Tools are how it does things — look
 - [Grounding](grounding.md) — retrieval tools are one way a model gets something real to reason from
 - [Multi-Agent Systems](multi-agent-systems.md) — agents coordinate by acting, and they act through tools
 - [Permission Model (AI)](permission-model-ai.md) — the rulebook determining which calls need authorization
-- Agent Interoperability (A2A) — the connective standard between agents, as MCP is between an agent and its tools
+- [Agent Interoperability (A2A)](agent-interoperability-a2a.md) — the connective standard between agents, as MCP is between an agent and its tools
 
 ---
 

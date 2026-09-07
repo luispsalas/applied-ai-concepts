@@ -1,5 +1,36 @@
 # Changelog
 
+## v1.20 — September 2026
+
+**6 concepts published — the field the corpus came from, the phase that carries the bill, the framework behind alignment, and three measurement and boundary gaps. Count 100 → 106.**
+
+- `nlp` — v1.0 (the discipline LLMs are a chapter of, and the observability it traded away)
+- `inference` — v1.0 (the forever cost, as against the one-time one)
+- `reinforcement-learning` — v1.0 (the system optimizes the proxy, always)
+- `synthetic-data` — v1.0 (collapse takes the tails first)
+- `ai-benchmarking` — v1.0 (comparative evidence read as predictive evidence)
+- `agent-interoperability-a2a` — v1.0 (accountability crosses the boundary; observability does not)
+
+**Selection was decided by two independent signals agreeing, not by score.** The score-4 tier has been empty since September 1, so candidates came from the promise sweep — Related-concepts bullets a published entry has already committed to — intersected with the gap report. Five of the six were promised by name in an existing entry. The sweep dropped from 8 open promises to 3; what remains is genuinely unpublished (*Orchestration drift*, *Context Framing*, *Latency (AI Systems)*).
+
+**NLP is the entry the corpus had been assuming.** It argues that the classical tasks did not disappear when general models absorbed them — they went *implicit*. A named entity recognizer with an F1 score became an unmeasured step inside a generation call. **Capability rose and observability fell in the same move**, which is the governance consequence, and it is stated as this entry's own inference rather than as a sourced finding. The ELIZA point anchors the corpus's oldest claim: fluency read as understanding was demonstrated in 1966.
+
+**Inference inverts an intuition most budgets encode.** Training is bounded and one-time; inference is unbounded and forever, and for any system with real usage it dominates. Two findings do the work: serving throughput is decided by KV-cache memory management rather than model quality, and **temperature zero does not guarantee identical outputs** — batching effects can change a result depending on what else was processed alongside it. Reproducibility is a property of the serving stack, and the entry says to verify it locally rather than accept it from any source, including itself.
+
+**Reinforcement Learning states the unsolved problem as definitional, not technical.** The system optimizes the specified reward and nothing else, so any gap between specification and intent is exploited rather than corrected — a property of optimizing a proxy, not a defect in a particular reward function. The entry's framing, flagged as its own argument: **the reward specification is the system's actual statement of intent, and it is routinely written by people with no mandate to set organizational intent.**
+
+**Synthetic Data leads with the affirmative case and then the measured limit.** Model collapse is peer-reviewed in *Nature*, and the load-bearing detail is *which* part degrades: the tails go first, so aggregate metrics stay healthy while the rare cases governance depends on disappear. Second point, less often made: **synthetic origin launders provenance** — a known limitation becomes an unmarked one, arriving with the appearance of a fresh independent dataset. The entry declines to name a safe synthetic proportion, because none is established.
+
+**AI Benchmarking resolves an alias collision as well as a gap.** `benchmarking` had been an alias of *Evaluation* and now belongs to the entry that is about it. The distinction is task versus construct: the number is real, and the thing it is taken to measure is not the thing it measures. **Contamination is treated as the default condition** — published tests and web-scraped training data overlap by construction — so a score used in a decision needs a contamination statement rather than the benefit of the doubt.
+
+**Agent Interoperability (A2A) cleared the term-status gate on governance, not on usage.** A2A originated at Google and was donated to the Linux Foundation in June 2025, with a Technical Steering Committee spanning eight major vendors — multi-vendor stewardship is what separates an interoperability standard from one company's integration surface, and it is why this is not filed as vendor-coined. The `A2A` alias moved off *Multi-Agent Systems*. Confidence is deliberately split: medium-high on the concept, medium on practice, with the governance analysis flagged as reasoned rather than observed, since no incident evidence exists yet to calibrate against.
+
+**Source registry:** 7 added (SRC-246–252), 24 reused. **Seven citation links in the new drafts were written from recall and disagreed with the registry** — SRC-065, SRC-103, SRC-128, SRC-152, SRC-156, SRC-178, SRC-197 and SRC-199 pointed at plausible but wrong or non-canonical URLs. All were caught by diffing every citation in the new files against the rest of the corpus before publishing, and corrected to the registered form. The rule that produced the error is the one already recorded: metadata comes from the registry, never from recall.
+
+**A pre-existing reverse-index gap surfaced in the same pass.** SRC-199 (*Datasheets for Datasets*) had an empty `Wiki Entries Used In` column while three published entries cited it. Filled to all four.
+
+---
+
 ## v1.19 — September 2026
 
 **5 concepts published — the evaluation-integrity pair, the containment control, the auditable retrieval substrate, and the oldest argument in AI safety. Count 95 → 100.**

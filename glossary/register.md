@@ -4,13 +4,14 @@ Every term this wiki tracks, with its status — **including the ones that are n
 
 The field names things faster than it settles them, and a glossary that repeats every new label without comment is a list of buzzwords. So each term is judged on whether it is a *real term*. That is a separate question from how good the evidence is for the claims inside an entry, which each entry states for itself in its own confidence level.
 
-**132 terms tracked — 100 published, 32 not.** See [how terms are admitted](../CONTRIBUTING.md#term-status--the-admission-test).
+**133 terms tracked — 106 published, 27 not.** See [how terms are admitted](../CONTRIBUTING.md#term-status--the-admission-test).
 
 | Status | Meaning | Count |
 |---|---|---|
 | `established` | Recognized term of art, in independent use. | 116 |
-| `emerging` | Real and in use, but definitions still vary between sources. | 11 |
-| `vendor` | Coined by a single vendor — published, if at all, under a neutral name. | 5 |
+| `emerging` | Real and in use, but definitions still vary between sources. | 12 |
+| `vendor` | Coined by a single vendor — published, if at all, under a neutral name. | 4 |
+| `declined` | Considered and turned down — not a term this wiki will publish. | 1 |
 
 ---
 
@@ -18,12 +19,12 @@ The field names things faster than it settles them, and a glossary that repeats 
 |---|---|---|---|
 | [Accountability (AI Systems)](../concepts/accountability-ai-systems.md) | `established` | yes |  |
 | [Agency (AI Systems)](../concepts/agency-ai-systems.md) | `established` | yes |  |
-| Agent Interoperability (A2A) | `established` | not yet |  |
+| [Agent Interoperability (A2A)](../concepts/agent-interoperability-a2a.md) | `established` | yes |  |
 | Agent Memory | `established` | not yet |  |
 | Agentic Design | `emerging` | not yet | "Agentic" is now widespread, but "agentic design" as a named discipline is not settled — usage varies between practitioners and no standard formulation exists. |
 | Agentic Pattern | `emerging` | not yet | "Agentic pattern" is used loosely as a synonym for agent design templates; no canonical catalogue exists. Likely redundant with Agentic Design — decide whether both are needed. |
 | [AI Agent](../concepts/ai-agent.md) | `established` | yes |  |
-| AI Benchmarking | `established` | not yet |  |
+| [AI Benchmarking](../concepts/ai-benchmarking.md) | `established` | yes |  |
 | [AI Disclosure (Attribution)](../concepts/ai-disclosure-attribution.md) | `established` | yes |  |
 | [AI Governance](../concepts/ai-governance.md) | `established` | yes |  |
 | [AI Incident (Reporting)](../concepts/ai-incident-reporting.md) | `established` | yes |  |
@@ -81,16 +82,16 @@ The field names things faster than it settles them, and a glossary that repeats 
 | [Human-in-the-Loop (HITL)](../concepts/human-in-the-loop.md) | `established` | yes |  |
 | [Human–AI Collaboration Model](../concepts/human-ai-collaboration-model.md) | `established` | yes |  |
 | [Human–LLM Communication Skills](../concepts/human-llm-communication-skills.md) | `emerging` | yes | Component competencies are well grounded, but there is no established assessment for the competency as a whole. |
-| Inference | `established` | not yet |  |
+| [Inference](../concepts/inference.md) | `established` | yes |  |
 | Instantiation (AI Systems) | `emerging` | not yet | Generic computing term applied to model sessions; the AI-specific sense is not standardised and may be better folded into Context (AI Systems). |
 | [Jailbreak](../concepts/jailbreak.md) | `established` | yes |  |
 | [Knowledge Base](../concepts/knowledge-base.md) | `established` | yes |  |
 | [Knowledge Cutoff](../concepts/knowledge-cutoff.md) | `established` | yes |  |
 | [Knowledge Graphs](../concepts/knowledge-graphs.md) | `established` | yes |  |
-| LangChain | `vendor` | not yet | ⚠️ A named open-source product, not a concept. `CONTRIBUTING` already excludes "vendor-specific features or product documentation" — this is a candidate to DECLINE outright rather than rename. Any general point worth keeping (chaining model calls, tools and memory into reusable workflows) belongs in Orchestration (AI Systems). |
+| LangChain | `declined` | **no — declined** | DECLINED Sep 6 2026 by the author. A named open-source product, not a concept — CONTRIBUTING already excludes product documentation. Unlike the vendor rows there is nothing to rename: chaining model calls, tools and memory is already covered by Orchestration (AI Systems). Row kept deliberately, so the rejection stays visible rather than silent. |
 | [Large Language Models (LLMs)](../concepts/large-language-models.md) | `established` | yes |  |
 | Latency (AI Systems) | `established` | not yet |  |
-| LLM Mesh | `vendor` | not yet | Coined by Dataiku. Filtering the originator's own domains out of a search leaves only a vendor glossary, two personal posts and an agency blog — no peer-reviewed use and no independent standard. The phrase also collides with an unrelated hardware/network sense in the research literature (UB-Mesh, WaferLLM). NOT a decline: the concept underneath — a gateway giving one control point over many model providers, for cost, policy and switching — is a genuine corpus gap (grep for gateway/routing/abstraction layer returns nothing across 95 entries) and should be published under a vendor-neutral name, citing Dataiku as one implementation. ⚠️ Col F currently describes multi-model collaboration, which is a DIFFERENT concept already covered by Multi-Agent Systems and Orchestration — rewrite the essence when this is drafted. |
+| LLM Mesh | `vendor` | not yet | Coined by Dataiku; filtering the originator's domains leaves only a vendor glossary, personal posts and an agency blog. Also collides with an unrelated hardware sense (UB-Mesh, WaferLLM). NOT a decline — the concept underneath, one control point over many model providers, is a real corpus gap: publish under a neutral name, citing Dataiku as one implementation. ⚠️ Col F describes multi-model collaboration, a DIFFERENT concept already covered by Multi-Agent Systems and Orchestration — rewrite the essence when drafting. |
 | [LLM-as-Judge](../concepts/llm-as-judge.md) | `established` | yes |  |
 | [Local LLMs](../concepts/local-llms.md) | `established` | yes |  |
 | Mechanistic interpretability | `established` | not yet |  |
@@ -103,7 +104,7 @@ The field names things faster than it settles them, and a glossary that repeats 
 | [Moral Crumple Zone](../concepts/moral-crumple-zone.md) | `established` | yes |  |
 | [Multi-Agent Systems](../concepts/multi-agent-systems.md) | `established` | yes |  |
 | [Multimodal AI](../concepts/multimodal-ai.md) | `established` | yes |  |
-| NLP | `established` | not yet |  |
+| [NLP](../concepts/nlp.md) | `established` | yes |  |
 | [Observability (AI Systems)](../concepts/observability.md) | `established` | yes |  |
 | [Operational Readiness (AI)](../concepts/operational-readiness-ai.md) | `established` | yes |  |
 | [Orchestration (AI Systems)](../concepts/orchestration-ai-systems.md) | `established` | yes |  |
@@ -120,9 +121,10 @@ The field names things faster than it settles them, and a glossary that repeats 
 | [Prompt Injection](../concepts/prompt-injection.md) | `established` | yes |  |
 | [RACI](../concepts/raci.md) | `established` | yes |  |
 | [Reasoning Models / Test-Time Compute](../concepts/reasoning-models.md) | `established` | yes |  |
+| Recurrent Depth | `emerging` | not yet | Spelling corrected from "Recurring Depth", which no source uses. Coined by Geiping et al. (NeurIPS 2025); independently used by a separate group (Recurrent-Depth VLA, 2026). Emerging rather than established on naming — recurrent depth / looped transformer / depth-recurrent compete for one mechanism. ⚠️ Do not state as fact that OpenAI's Astra uses it: press reporting, unconfirmed by OpenAI. Fills a real gap — reasoning moves into latent states with no trace to read. |
 | [Recursive Self-Improvement](../concepts/recursive-self-improvement.md) | `established` | yes |  |
 | [Red Teaming](../concepts/red-teaming.md) | `established` | yes |  |
-| Reinforcement Learning (RL) | `established` | not yet |  |
+| [Reinforcement Learning (RL)](../concepts/reinforcement-learning.md) | `established` | yes |  |
 | [Retrieval-Augmented Generation (RAG)](../concepts/rag.md) | `established` | yes |  |
 | [Reward Hacking (Specification Gaming)](../concepts/reward-hacking.md) | `established` | yes |  |
 | [RLHF (Reinforcement Learning from Human Feedback)](../concepts/rlhf.md) | `established` | yes |  |
@@ -133,7 +135,7 @@ The field names things faster than it settles them, and a glossary that repeats 
 | Skill | `vendor` | not yet | ⚠️ "Agent Skills" is Anthropic's product vocabulary (a SKILL.md folder loaded by progressive disclosure); "Skills" is also Amazon's for Alexa. NOT general AI terminology. The neutral concept — a packaged, reusable capability an agent invokes on demand — is real and belongs under a vendor-neutral name, or folded into Tool Use / Harness Paradigm. |
 | [Small Language Models (SLMs)](../concepts/small-language-models.md) | `established` | yes |  |
 | [Sycophancy (LLMs)](../concepts/sycophancy-llms.md) | `established` | yes |  |
-| Synthetic Data | `established` | not yet |  |
+| [Synthetic Data](../concepts/synthetic-data.md) | `established` | yes |  |
 | [Synthetic Media (Deepfakes)](../concepts/synthetic-media-deepfakes.md) | `established` | yes |  |
 | [System Prompt](../concepts/system-prompt.md) | `established` | yes |  |
 | [Systemic Risk (AI)](../concepts/systemic-risk-ai.md) | `established` | yes |  |

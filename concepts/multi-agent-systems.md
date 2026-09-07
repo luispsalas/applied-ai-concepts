@@ -1,7 +1,7 @@
 <!--meta
 category: System Architecture
 short: Multiple AI agents with different roles working together on a task — coordination and division of labor instead of one model doing everything
-aliases: [agent swarm, multiple agents, agent teams, agent collaboration, A2A]
+aliases: [agent swarm, multiple agents, agent teams, agent collaboration, agent handoff]
 tags: [Agents, Architecture]
 established: established
 -->

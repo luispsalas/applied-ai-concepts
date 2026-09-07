@@ -37,6 +37,7 @@ TERM_STATUS = {
     "house":       "This wiki's own label; not citable as a term of art.",
     "vendor":      "Coined by a single vendor \u2014 published, if at all, under a neutral name.",
     "unassessed":  "Candidate not yet put through the term-status checks.",
+    "declined":    "Considered and turned down \u2014 not a term this wiki will publish.",
 }
 
 
@@ -360,15 +361,22 @@ def register_page(entries):
            f"**{len(rows)} terms tracked \u2014 {n_pub} published, {len(rows) - n_pub} not.** "
            "See [how terms are admitted](../CONTRIBUTING.md#term-status--the-admission-test).", "",
            "| Status | Meaning | Count |", "|---|---|---|"]
-    for k in ("established", "emerging", "house", "vendor", "unassessed"):
+    for k in ("established", "emerging", "house", "vendor", "unassessed", "declined"):
         if counts.get(k):
             out.append(f"| `{k}` | {TERM_STATUS[k]} | {counts[k]} |")
     out += ["", "---", "", "| Term | Status | Published | Notes |", "|---|---|---|---|"]
     for r in sorted(rows, key=lambda r: r["term"].lower()):
         e = by_term.get(r["term"])
         name = f"[{r['term']}](../concepts/{e['slug']}.md)" if e else r["term"]
-        out.append(f"| {name} | `{r['status']}` | {'yes' if r['published'] else 'not yet'} "
-                   f"| {r['note'] or ''} |")
+        # "not yet" promises a future entry, which is false for a declined term --
+        # and the register exists precisely to show "the ones that will not be".
+        if r["published"]:
+            pub = "yes"
+        elif r["status"] == "declined":
+            pub = "**no \u2014 declined**"
+        else:
+            pub = "not yet"
+        out.append(f"| {name} | `{r['status']}` | {pub} | {r['note'] or ''} |")
     out += ["", "---", "",
             "*Generated from the term tracker by `scripts/build.py write`. Do not edit by hand.*", ""]
     return "\n".join(out)

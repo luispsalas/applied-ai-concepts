@@ -1,7 +1,7 @@
 <!--meta
 category: Reliability & Quality
 short: The structured practice of measuring whether an AI system does what it is supposed to do — before deployment and continuously in production
-aliases: [evals, benchmarking, how do we know it works, testing AI, measuring performance]
+aliases: [evals, how do we know it works, testing AI, measuring performance]
 tags: [Evaluation, Data Governance]
 established: established
 -->
@@ -88,7 +88,7 @@ Three things practitioners need to understand:
 - [Human-in-the-Loop (HITL)](human-in-the-loop.md) — human evaluation is the most reliable method for dimensions that resist automated measurement; HITL design decisions affect what can be evaluated
 - [Retrieval-Augmented Generation (RAG)](rag.md) — RAG systems require evaluation of both retrieval quality and generation quality as distinct dimensions
 - [Persistent Synthesis](persistent-synthesis.md) — evaluation findings should be synthesized into the knowledge base; accumulated evaluation results without synthesis produce noise, not signal
-- Benchmarking — the standardized test set methodology; HELM is the most comprehensive current framework
+- [AI Benchmarking](ai-benchmarking.md) — the standardized test set methodology; HELM is the most comprehensive current framework
 - [Red Teaming](red-teaming.md) — adversarial evaluation practice; identifies failure modes that benchmarks miss
 
 ---

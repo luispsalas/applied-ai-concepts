@@ -74,6 +74,7 @@ They vary independently. A settled term can rest on thin evidence, and a term in
 | `emerging` | Real and useful, definitions still vary | Publish with the status shown, and say what is unsettled |
 | `house` | This wiki's own label for something sources call other things | Publish only if the entry says so plainly and names what to cite instead |
 | `vendor` | Originated with one vendor | **Do not publish under the vendor's term.** Publish the concept under a neutral name, citing the vendor as one implementation |
+| `declined` | Not a term at all — a product name, a feature name, or a phrase with no stable meaning | **Do not publish, under any name.** The row stays in the register with the reason, so the decision is visible rather than silent |
 
 A fifth outcome — *not a term* — is a decline, recorded with its reason rather than silently dropped.
 
