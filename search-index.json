@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "count": 111,
+  "count": 115,
   "entries": [
     {
       "slug": "accountability-ai-systems",
@@ -86,6 +86,51 @@
       "path": "concepts/agency-ai-systems.md"
     },
     {
+      "slug": "agent-hooks",
+      "term": "Agent Hooks",
+      "category": "System Architecture",
+      "essence": "Event-triggered extension points in an agent runtime where custom code runs — before a model call, around a tool call, at session start — and the layer where a guardrail either stops an action or merely watches it.",
+      "short": "The points where custom code runs during an agent's execution — and the question that decides whether a guardrail is a control or just a camera",
+      "aliases": [
+        "hook",
+        "hooks",
+        "middleware",
+        "callbacks",
+        "lifecycle hooks",
+        "interceptors",
+        "event hooks",
+        "PreToolUse",
+        "where do guardrails attach"
+      ],
+      "tags": [
+        "Agents",
+        "Architecture",
+        "Safety"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "agent-skills",
+        "ai-agent",
+        "audit-trail-ai",
+        "guardrails-ai-systems",
+        "harness-paradigm",
+        "human-in-the-loop",
+        "observability",
+        "permission-model-ai",
+        "sandboxing",
+        "tool-use"
+      ],
+      "sources": [
+        "SRC-018",
+        "SRC-071",
+        "SRC-104",
+        "SRC-135",
+        "SRC-272"
+      ],
+      "path": "concepts/agent-hooks.md"
+    },
+    {
       "slug": "agent-interoperability-a2a",
       "term": "Agent Interoperability (A2A)",
       "category": "System Architecture",
@@ -127,6 +172,49 @@
         "SRC-252"
       ],
       "path": "concepts/agent-interoperability-a2a.md"
+    },
+    {
+      "slug": "agent-skills",
+      "term": "Agent Skills",
+      "category": "System Architecture",
+      "essence": "Packaged folders of instructions and resources that an AI agent loads on demand when a task matches them — a cross-vendor open format for giving agents procedural knowledge without retraining or rebuilding them.",
+      "short": "Folders of instructions an agent loads when it decides they are relevant — a cross-vendor standard whose discovery mechanism is also its attack surface",
+      "aliases": [
+        "skill",
+        "skills",
+        "SKILL.md",
+        "agent skill",
+        "progressive disclosure",
+        "packaged capability",
+        "teaching an agent a procedure"
+      ],
+      "tags": [
+        "Agents",
+        "Architecture",
+        "Security"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "agent-hooks",
+        "ai-agent",
+        "context-ai-systems",
+        "context-compaction",
+        "data-provenance-lineage",
+        "harness-paradigm",
+        "prompt-injection",
+        "sandboxing",
+        "shadow-ai",
+        "tool-use"
+      ],
+      "sources": [
+        "SRC-069",
+        "SRC-071",
+        "SRC-103",
+        "SRC-268",
+        "SRC-269"
+      ],
+      "path": "concepts/agent-skills.md"
     },
     {
       "slug": "ai-agent",
@@ -250,6 +338,51 @@
         "SRC-209"
       ],
       "path": "concepts/ai-disclosure-attribution.md"
+    },
+    {
+      "slug": "ai-gateway",
+      "term": "AI Gateway",
+      "category": "System Architecture",
+      "essence": "A layer sitting between an organization's applications and its model providers, through which every request passes — making it the one place where cost, policy, credentials and provider switching are actually enforced.",
+      "short": "One control point in front of every model provider — the only place organizational AI policy can actually be enforced, and the place every prompt now collects",
+      "aliases": [
+        "LLM gateway",
+        "model gateway",
+        "LLM proxy",
+        "model router",
+        "LLM routing",
+        "provider abstraction",
+        "AI proxy",
+        "LLM Mesh",
+        "one place to control AI usage"
+      ],
+      "tags": [
+        "Architecture",
+        "Data Governance",
+        "Privacy"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "data-leakage-ai-systems",
+        "inference",
+        "local-llms",
+        "model-version-update",
+        "observability",
+        "operational-readiness-ai",
+        "orchestration-ai-systems",
+        "privacy-ai-systems",
+        "shadow-ai",
+        "systemic-risk-ai"
+      ],
+      "sources": [
+        "SRC-001",
+        "SRC-063",
+        "SRC-105",
+        "SRC-126",
+        "SRC-273"
+      ],
+      "path": "concepts/ai-gateway.md"
     },
     {
       "slug": "ai-governance",
@@ -966,6 +1099,50 @@
         "SRC-149"
       ],
       "path": "concepts/context-ai-systems.md"
+    },
+    {
+      "slug": "context-compaction",
+      "term": "Context Compaction",
+      "category": "Knowledge & Memory",
+      "essence": "Reducing a growing conversation history so it keeps fitting the model's context window — and the governance point that what gets cut, and by what rule, decides what the system still knows.",
+      "short": "Shrinking a conversation so it keeps fitting — and the point at which what the system knows stops being something anyone chose",
+      "aliases": [
+        "compaction",
+        "compact",
+        "context compression",
+        "conversation summarization",
+        "history truncation",
+        "sliding window",
+        "auto-compact",
+        "what happened to the earlier conversation"
+      ],
+      "tags": [
+        "Architecture",
+        "Data Governance",
+        "Model Behavior"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "agent-skills",
+        "audit-trail-ai",
+        "context-ai-systems",
+        "context-window",
+        "data-minimization",
+        "failure-modes-ai-systems",
+        "hallucination",
+        "harness-paradigm",
+        "inference",
+        "memory-ai-systems"
+      ],
+      "sources": [
+        "SRC-069",
+        "SRC-137",
+        "SRC-149",
+        "SRC-270",
+        "SRC-271"
+      ],
+      "path": "concepts/context-compaction.md"
     },
     {
       "slug": "context-engineering",

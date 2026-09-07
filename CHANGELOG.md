@@ -1,5 +1,30 @@
 # Changelog
 
+## v1.24 — September 2026
+
+**The `vendor` tier is now empty. All four terms in it turned out to be publishable under neutral names. Count 111 → 115.**
+
+- `agent-skills` — v1.0 (was *Skill*)
+- `context-compaction` — v1.0 (was *Compact*)
+- `agent-hooks` — v1.0 (was *Hook*)
+- `ai-gateway` — v1.0 (was *LLM Mesh*)
+
+**`vendor` was a holding state, not a verdict** — which is what the admission gate's vendor outcome predicts: publish the concept under a neutral name, citing the vendor as one implementation. Four terms sat there; on assessment every one had an established vendor-neutral name and a real corpus gap behind it.
+
+**Agent Skills cleared the establishment gate on usage rather than on governance**, which is a different route from the last standard admitted here. A2A cleared because a neutral foundation and a multi-vendor steering committee govern it, despite thin deployment evidence. Agent Skills has thinner formal governance — an open repository, no standards body — but roughly **45 clients spanning direct competitors** implement the same `SKILL.md` format, including OpenAI's Codex, Gemini CLI, GitHub Copilot, VS Code, Mistral, Cursor, Databricks and Snowflake. **Competitors implementing one specification is the strongest available evidence of independent use.** Both routes satisfy the gate; the entry says which one applies to it.
+
+Its governance section rests on a measured finding rather than a worry: because skill discovery and selection run on the *natural-language description*, **the metadata is the attack surface**. Adversarial skills reached up to 86% pairwise win rate and 80% top-ten placement in retrieval, and semantic evasion defeated blocking in 36.5–100% of cases. A skill is an installed package that executes, with the trust model of a README.
+
+**Agent Hooks exists for one question most documentation buries: can the control refuse, or only watch?** LangChain callbacks discard handler return values and cannot block anything; CrewAI's event bus is observe-only; Semantic Kernel filters genuinely block. Event coverage ranges from 2 to 78 across frameworks, so controls do not port with the agent. And existing controls **fail open when they crash**. "We have guardrails" is, mechanically, a claim about this layer — and it is routinely made about handlers structurally incapable of refusing anything.
+
+**Context Compaction turns a performance setting into a records question.** Deleting keeps the words and loses the content; summarizing keeps the gist and invents the words. The finding that matters: operators have **no fine-grained control** over what a summarizer retains — prompt instructions are largely ignored — and retained information **fluctuates run to run**. Compaction is a behavior you inherit, not a setting you tune, and it is where information leaves a system without anyone making a deletion decision.
+
+**AI Gateway publishes the concept Dataiku markets as "LLM Mesh"** under the neutral name the field uses, evidenced by implementations independent of any model vendor. Its argument is symmetrical on purpose: the chokepoint that makes AI policy enforceable at all is also where every prompt in the organization now collects, and where all AI fails at once.
+
+**Sources:** 6 added (SRC-268–273), 12 reused. **A registry defect surfaced while cross-checking:** SRC-063's reverse index claimed three entries that do not cite it — the registry→file direction, and the second instance of this class. Corrected.
+
+---
+
 ## v1.23 — September 2026
 
 **One incident, three entries, three different readings. No new concepts.**

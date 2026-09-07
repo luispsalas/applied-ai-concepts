@@ -4,13 +4,12 @@ Every term this wiki tracks, with its status — **including the ones that are n
 
 The field names things faster than it settles them, and a glossary that repeats every new label without comment is a list of buzzwords. So each term is judged on whether it is a *real term*. That is a separate question from how good the evidence is for the claims inside an entry, which each entry states for itself in its own confidence level.
 
-**133 terms tracked — 111 published, 22 not.** See [how terms are admitted](../CONTRIBUTING.md#term-status--the-admission-test).
+**133 terms tracked — 115 published, 18 not.** See [how terms are admitted](../CONTRIBUTING.md#term-status--the-admission-test).
 
 | Status | Meaning | Count |
 |---|---|---|
-| `established` | Recognized term of art, in independent use. | 115 |
+| `established` | Recognized term of art, in independent use. | 119 |
 | `emerging` | Real and in use, but definitions still vary between sources. | 10 |
-| `vendor` | Coined by a single vendor — published, if at all, under a neutral name. | 4 |
 | `declined` | Considered and turned down — not a term this wiki will publish. | 1 |
 | `covered` | A real term, already covered by another entry — findable there as an alias. | 3 |
 
@@ -20,13 +19,16 @@ The field names things faster than it settles them, and a glossary that repeats 
 |---|---|---|---|
 | [Accountability (AI Systems)](../concepts/accountability-ai-systems.md) | `established` | yes |  |
 | [Agency (AI Systems)](../concepts/agency-ai-systems.md) | `established` | yes |  |
+| [Agent Hooks](../concepts/agent-hooks.md) | `established` | yes | RENAMED from "Hook" and published Sep 7 2026, resolving the vendor status. Every major agent runtime has independently converged on the pattern — Claude Code, OpenAI Codex CLI, LangChain/LangGraph, Google ADK, AutoGen, Semantic Kernel — so it is convergent, not proprietary. The entry's contribution is the distinction most documentation buries: can the hook BLOCK, or only observe? |
 | [Agent Interoperability (A2A)](../concepts/agent-interoperability-a2a.md) | `established` | yes |  |
 | Agent Memory | `covered` | **covered by [Memory (AI Systems)](../concepts/memory-ai-systems.md)** | COVERED by Memory (AI Systems) — decided Sep 7 2026 under admission check 4. A real established term, but that entry already is this one: it uses the in-trial / cross-trial distinction, covers externalized file-system state and agent memory-loss failure, and cites the agent-memory survey (SRC-137) as its source. A separate entry would be a near-duplicate. Resolved by alias rather than a split, so the term stays findable: agent memory, cross-session memory and what does the agent remember all resolve there. The register derives the pointer from that alias, so retargeting the alias moves the pointer. |
+| [Agent Skills](../concepts/agent-skills.md) | `established` | yes | RENAMED from "Skill" and published Sep 7 2026, resolving the vendor status — the bare word collided with Alexa Skills and with ordinary English. Cleared the gate ON USAGE rather than on governance: originated at Anthropic, released as an open standard, now implemented by roughly 45 clients including direct competitors (OpenAI Codex, Gemini CLI, GitHub Copilot, VS Code, Mistral, Cursor, Databricks, Snowflake). A different establishment route from A2A, which cleared on foundation governance with thin usage. |
 | Agentic Design | `emerging` | not yet | "Agentic" is now widespread, but "agentic design" as a named discipline is not settled — usage varies between practitioners and no standard formulation exists. |
 | Agentic Pattern | `emerging` | not yet | "Agentic pattern" is used loosely as a synonym for agent design templates; no canonical catalogue exists. Likely redundant with Agentic Design — decide whether both are needed. |
 | [AI Agent](../concepts/ai-agent.md) | `established` | yes |  |
 | [AI Benchmarking](../concepts/ai-benchmarking.md) | `established` | yes |  |
 | [AI Disclosure (Attribution)](../concepts/ai-disclosure-attribution.md) | `established` | yes |  |
+| [AI Gateway](../concepts/ai-gateway.md) | `established` | yes | RENAMED from "LLM Mesh" and published Sep 7 2026, resolving the vendor status exactly as this row's earlier note prescribed. The concept is implemented independently of any model vendor (LiteLLM, Kong, Envoy, APISIX, Portkey, Bifrost, Cloudflare, OpenRouter), so it publishes under the neutral name with Dataiku's LLM Mesh cited as one vendor's term for it. ⚠️ The old essence described multi-model collaboration — a different concept already held by Multi-Agent Systems — and has been rewritten, as the earlier note required. |
 | [AI Governance](../concepts/ai-governance.md) | `established` | yes |  |
 | [AI Incident (Reporting)](../concepts/ai-incident-reporting.md) | `established` | yes |  |
 | [AI Literacy](../concepts/ai-literacy.md) | `established` | yes |  |
@@ -43,12 +45,12 @@ The field names things faster than it settles them, and a glossary that repeats 
 | Catastrophic forgetting | `established` | not yet |  |
 | Checkpointing | `established` | not yet |  |
 | [Cognitive Offloading & Deskilling](../concepts/cognitive-offloading-deskilling.md) | `established` | yes |  |
-| Compact | `vendor` | not yet | ⚠️ Claude Agent SDK / Claude Code feature name for automatic context summarisation. NOT general AI terminology. The underlying concept — context compaction, and the governance point that what gets cut shapes what the system knows — is real and worth publishing under a neutral name such as Context Compaction, citing Anthropic as one implementation. |
 | [Compliance (AI Systems)](../concepts/compliance-ai-systems.md) | `established` | yes |  |
 | [Concealing Uncertainty](../concepts/concealing-uncertainty.md) | `established` | yes |  |
 | [Confidence vs Accuracy](../concepts/confidence-vs-accuracy.md) | `established` | yes |  |
 | [Content Provenance & Watermarking (C2PA)](../concepts/content-provenance-watermarking.md) | `established` | yes |  |
 | [Context (AI Systems)](../concepts/context-ai-systems.md) | `established` | yes |  |
+| [Context Compaction](../concepts/context-compaction.md) | `established` | yes | RENAMED from "Compact" and published Sep 7 2026, resolving the vendor status. Compaction is documented as a first-class concept by Microsoft's Agent Framework and studied in named 2026 research, so the term is in independent use — it was only Anthropic's product vocabulary as the bare word "Compact". Published under the neutral name, citing implementations rather than any one product. |
 | [Context Engineering](../concepts/context-engineering.md) | `established` | yes |  |
 | Context Framing | `emerging` | not yet | Framing effects are established in psychology; "context framing" as a prompting sub-skill is practitioner vocabulary and overlaps Context Engineering — check for redundancy before drafting. |
 | [Context Window](../concepts/context-window.md) | `established` | yes |  |
@@ -78,7 +80,6 @@ The field names things faster than it settles them, and a glossary that repeats 
 | [Guardrails (AI Systems)](../concepts/guardrails-ai-systems.md) | `established` | yes |  |
 | [Hallucination](../concepts/hallucination.md) | `established` | yes |  |
 | [Harness Paradigm](../concepts/harness-paradigm.md) | `emerging` | yes | The term "agent harness" is established in practitioner literature (Böckeler; Osmani); the paradigm framing itself is not yet settled across independent sources. |
-| Hook | `vendor` | not yet | ⚠️ In the AI-agent sense this is Claude Code vocabulary (PreToolUse, SessionStart, SubagentStop). The general software concept — an event-triggered extension point, as in git hooks or webhooks — IS established, so this is a rename rather than a decline: publish the harness-level idea inside Harness Paradigm, or under a neutral name, citing Anthropic as one implementation. |
 | [Human Responsibility in AI Use](../concepts/human-responsibility-in-ai-use.md) | `established` | yes |  |
 | [Human-in-the-Loop (HITL)](../concepts/human-in-the-loop.md) | `established` | yes |  |
 | [Human–AI Collaboration Model](../concepts/human-ai-collaboration-model.md) | `established` | yes |  |
@@ -92,7 +93,6 @@ The field names things faster than it settles them, and a glossary that repeats 
 | LangChain | `declined` | **no — declined** | DECLINED Sep 6 2026 by the author. A named open-source product, not a concept — CONTRIBUTING already excludes product documentation. Unlike the vendor rows there is nothing to rename: chaining model calls, tools and memory is already covered by Orchestration (AI Systems). Row kept deliberately, so the rejection stays visible rather than silent. |
 | [Large Language Models (LLMs)](../concepts/large-language-models.md) | `established` | yes |  |
 | Latency (AI Systems) | `established` | not yet |  |
-| LLM Mesh | `vendor` | not yet | Coined by Dataiku; filtering the originator's domains leaves only a vendor glossary, personal posts and an agency blog. Also collides with an unrelated hardware sense (UB-Mesh, WaferLLM). NOT a decline — the concept underneath, one control point over many model providers, is a real corpus gap: publish under a neutral name, citing Dataiku as one implementation. ⚠️ Col F describes multi-model collaboration, a DIFFERENT concept already covered by Multi-Agent Systems and Orchestration — rewrite the essence when drafting. |
 | [LLM-as-Judge](../concepts/llm-as-judge.md) | `established` | yes |  |
 | [Local LLMs](../concepts/local-llms.md) | `established` | yes |  |
 | [Mechanistic Interpretability](../concepts/mechanistic-interpretability.md) | `established` | yes |  |
@@ -133,7 +133,6 @@ The field names things faster than it settles them, and a glossary that repeats 
 | [Scalability (AI Systems)](../concepts/scalability-ai-systems.md) | `established` | yes |  |
 | [Scalable Oversight](../concepts/scalable-oversight.md) | `established` | yes |  |
 | [Shadow AI](../concepts/shadow-ai.md) | `established` | yes |  |
-| Skill | `vendor` | not yet | ⚠️ "Agent Skills" is Anthropic's product vocabulary (a SKILL.md folder loaded by progressive disclosure); "Skills" is also Amazon's for Alexa. NOT general AI terminology. The neutral concept — a packaged, reusable capability an agent invokes on demand — is real and belongs under a vendor-neutral name, or folded into Tool Use / Harness Paradigm. |
 | [Small Language Models (SLMs)](../concepts/small-language-models.md) | `established` | yes |  |
 | [Sycophancy (LLMs)](../concepts/sycophancy-llms.md) | `established` | yes |  |
 | [Synthetic Data](../concepts/synthetic-data.md) | `established` | yes |  |
