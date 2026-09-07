@@ -4,11 +4,11 @@ Every term this wiki tracks, with its status — **including the ones that are n
 
 The field names things faster than it settles them, and a glossary that repeats every new label without comment is a list of buzzwords. So each term is judged on whether it is a *real term*. That is a separate question from how good the evidence is for the claims inside an entry, which each entry states for itself in its own confidence level.
 
-**133 terms tracked — 115 published, 18 not.** See [how terms are admitted](../CONTRIBUTING.md#term-status--the-admission-test).
+**134 terms tracked — 116 published, 18 not.** See [how terms are admitted](../CONTRIBUTING.md#term-status--the-admission-test).
 
 | Status | Meaning | Count |
 |---|---|---|
-| `established` | Recognized term of art, in independent use. | 119 |
+| `established` | Recognized term of art, in independent use. | 120 |
 | `emerging` | Real and in use, but definitions still vary between sources. | 10 |
 | `declined` | Considered and turned down — not a term this wiki will publish. | 1 |
 | `covered` | A real term, already covered by another entry — findable there as an alias. | 3 |
@@ -107,6 +107,7 @@ The field names things faster than it settles them, and a glossary that repeats 
 | [Multimodal AI](../concepts/multimodal-ai.md) | `established` | yes |  |
 | [NLP](../concepts/nlp.md) | `established` | yes |  |
 | [Observability (AI Systems)](../concepts/observability.md) | `established` | yes |  |
+| [Ontology](../concepts/ontology.md) | `established` | yes | Published Sep 7 2026. Clears check 1 on a formal standard rather than on usage: OWL 2 is a W3C Recommendation, and Gruber (1993) is the canonical definition. ⚠️ CHECK 4 ALMOST SAID "COVERED" AND WOULD HAVE BEEN WRONG: `ontology` was already an alias of Knowledge Graphs, but that entry mentions a schema only three times, always as a prerequisite or a cost — it never defines one. An alias to an entry that merely MENTIONS a term conceals the gap instead of filling it, and hides it from both the promise sweep and the gap report. Alias moved here; Knowledge Graphs now carries a Related-concepts pointer stating the schema/instance layer split. Score deliberately blank — author's call. |
 | [Operational Readiness (AI)](../concepts/operational-readiness-ai.md) | `established` | yes |  |
 | [Orchestration (AI Systems)](../concepts/orchestration-ai-systems.md) | `established` | yes |  |
 | Overfitting | `established` | not yet |  |

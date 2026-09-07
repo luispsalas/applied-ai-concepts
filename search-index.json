@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "count": 115,
+  "count": 116,
   "entries": [
     {
       "slug": "accountability-ai-systems",
@@ -2431,7 +2431,6 @@
         "knowledge graph",
         "graph database",
         "semantic network",
-        "ontology",
         "triples",
         "entity relationships",
         "GraphRAG",
@@ -2452,6 +2451,7 @@
         "explainability-xai",
         "grounding",
         "knowledge-base",
+        "ontology",
         "permission-model-ai",
         "rag"
       ],
@@ -3004,6 +3004,51 @@
         "SRC-054"
       ],
       "path": "concepts/observability.md"
+    },
+    {
+      "slug": "ontology",
+      "term": "Ontology",
+      "category": "Knowledge & Memory",
+      "essence": "A formal, shared specification of the kinds of things that exist in a domain and the relationships they may have — the schema that decides what a system is able to record, and therefore what it can never say.",
+      "short": "The agreed list of what kinds of things exist and how they may relate — a schema that quietly decides what a system can never record",
+      "aliases": [
+        "ontologies",
+        "OWL",
+        "semantic model",
+        "domain model",
+        "taxonomy",
+        "controlled vocabulary",
+        "schema",
+        "classes and relations",
+        "what can the system represent"
+      ],
+      "tags": [
+        "Data Governance",
+        "Architecture",
+        "AI Literacy"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "ai-governance",
+        "bias-ai-systems",
+        "data-provenance-lineage",
+        "data-quality",
+        "domain",
+        "embeddings",
+        "knowledge-base",
+        "knowledge-graphs",
+        "model-card-system-card",
+        "rag"
+      ],
+      "sources": [
+        "SRC-025",
+        "SRC-121",
+        "SRC-241",
+        "SRC-274",
+        "SRC-275"
+      ],
+      "path": "concepts/ontology.md"
     },
     {
       "slug": "operational-readiness-ai",

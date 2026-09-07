@@ -1,7 +1,7 @@
 <!--meta
 category: Knowledge & Memory
 short: Facts and their relationships stored as an explicit, inspectable network — the retrieval substrate you can audit, as opposed to one you can only measure
-aliases: [knowledge graph, graph database, semantic network, ontology, triples, entity relationships, GraphRAG, graph RAG, structured retrieval]
+aliases: [knowledge graph, graph database, semantic network, triples, entity relationships, GraphRAG, graph RAG, structured retrieval]
 tags: [Architecture, Data Governance]
 established: established
 -->
@@ -102,6 +102,8 @@ The catch: a graph will confidently keep telling you something long after it sto
 ---
 
 ## Related concepts
+
+- [Ontology](ontology.md) — the schema this is the instance data for; a graph can exist without a formal one, and often does
 
 - [Knowledge Base](knowledge-base.md) — the broader container; a graph is one way to structure it
 - [RAG (Retrieval-Augmented Generation)](rag.md) — the retrieval architecture a graph augments or replaces

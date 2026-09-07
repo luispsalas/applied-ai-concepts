@@ -1,5 +1,25 @@
 # Changelog
 
+## v1.25 — September 2026
+
+**1 concept published — `ontology` v1.0. Count 115 → 116. It was nearly folded away instead, and that near-miss is the point.**
+
+`ontology` was **already an alias of Knowledge Graphs**, so the first read said *covered* — the fourth such fold in a week. It isn't. That entry mentions a schema exactly three times, and each time as a prerequisite or a cost: *"the roles of schema and identity"*, *"Needs: a schema"*, *"a graph needs a schema."* It never says what an ontology is, what classes and properties are, that OWL exists, or what deciding a schema commits you to.
+
+**An alias to an entry that merely mentions a term conceals the gap rather than filling it** — and it hides from the tooling too. The promise sweep only sees unlinked Related-concepts bullets; the gap report only counts unlinked prose mentions. An aliased term produces neither signal. It looks answered. The rule this refines is the standing preference for aliases over splits, which holds only when the target's **technical definition** actually explains the term. The three earlier folds were re-checked against that standard and all three hold.
+
+**The entry is filed as the schema layer, explicitly distinct from the instance layer.** An ontology says what kinds of things can exist; a knowledge graph holds the ones that do. You can have a graph with no formal ontology, and an ontology nothing has populated. Knowledge Graphs now carries a pointer saying so.
+
+Three governance angles the corpus had nowhere:
+
+- **A missing category is unsayable, not merely undocumented.** No field, no query, no later measurement — so the schema silently bounds which harms or attributes can ever be counted.
+- **Formal semantics buy inference**, meaning a store can hold assertions nobody wrote, indistinguishable from stated ones unless something marks them.
+- **Controlled vocabulary ≠ taxonomy ≠ ontology** — increasing expressiveness and cost, routinely conflated in requirements.
+
+**Sources:** 2 added (SRC-274 Gruber 1993, SRC-275 W3C OWL 2 Recommendation), 3 reused. Both quotations were verified against primary text rather than summaries — and the registry records that the famous short form *"an explicit specification of a conceptualization"* was **not** confirmed verbatim on the page consulted, so it is not presented as a quotation.
+
+---
+
 ## v1.24 — September 2026
 
 **The `vendor` tier is now empty. All four terms in it turned out to be publishable under neutral names. Count 111 → 115.**
