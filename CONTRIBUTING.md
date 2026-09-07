@@ -66,7 +66,7 @@ They vary independently. A settled term can rest on thin evidence, and a term in
 3. Is the meaning **stable** across independent uses, or does each source redefine it?
 4. Does this wiki already cover the concept under an established name?
 
-**Five outcomes:**
+**Six outcomes:**
 
 | Status | Meaning | What happens |
 |---|---|---|
@@ -75,6 +75,7 @@ They vary independently. A settled term can rest on thin evidence, and a term in
 | `house` | This wiki's own label for something sources call other things | Publish only if the entry says so plainly and names what to cite instead |
 | `vendor` | Originated with one vendor | **Do not publish under the vendor's term.** Publish the concept under a neutral name, citing the vendor as one implementation |
 | `declined` | Not a term at all — a product name, a feature name, or a phrase with no stable meaning | **Do not publish, under any name.** The row stays in the register with the reason, so the decision is visible rather than silent |
+| `covered` | A real term the corpus already covers under another name | **Do not publish separately.** Add it as an alias of the entry that covers it — the register then links there, so the term stays findable without duplicating the entry |
 
 A fifth outcome — *not a term* — is a decline, recorded with its reason rather than silently dropped.
 

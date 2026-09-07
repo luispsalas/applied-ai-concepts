@@ -1,5 +1,17 @@
 # Changelog
 
+## v1.21.1 — September 2026
+
+**A sixth term status: `covered`.** For a real term the corpus already covers under another name — the case *Agent Memory* raised and the previous release could only describe in prose.
+
+**The gap was in the rendering, not the store.** The register printed `not yet` for every unpublished term, so a term that will never be published under its own name read as one that is merely queued. `declined` fixed that for terms that are not terms; `covered` fixes it for terms that are real and simply live elsewhere. Both were invisible defects: nothing failed, and the presentation was the lie.
+
+**The pointer is derived, not authored.** A `covered` term is covered *because* it is an alias of a published entry, so the register resolves the destination from the alias index rather than restating it in the note. Retarget the alias and the register follows; there is no second copy to drift. *Agent Memory* now renders as **covered by Memory (AI Systems)** with a live link.
+
+**And the status has to earn itself.** `build.py check` fails if a term marked `covered` has no published entry carrying it as an alias — otherwise the status would be an unfalsifiable dismissal with nowhere to send the reader. The check was verified by removing the alias and confirming it fires, then restoring.
+
+---
+
 ## v1.21 — September 2026
 
 **3 concepts published — how to see inside a model, where inference physically runs, and reasoning that produces nothing to read. Count 106 → 109.**

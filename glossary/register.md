@@ -8,10 +8,11 @@ The field names things faster than it settles them, and a glossary that repeats 
 
 | Status | Meaning | Count |
 |---|---|---|
-| `established` | Recognized term of art, in independent use. | 116 |
+| `established` | Recognized term of art, in independent use. | 115 |
 | `emerging` | Real and in use, but definitions still vary between sources. | 12 |
 | `vendor` | Coined by a single vendor — published, if at all, under a neutral name. | 4 |
 | `declined` | Considered and turned down — not a term this wiki will publish. | 1 |
+| `covered` | A real term, already covered by another entry — findable there as an alias. | 1 |
 
 ---
 
@@ -20,7 +21,7 @@ The field names things faster than it settles them, and a glossary that repeats 
 | [Accountability (AI Systems)](../concepts/accountability-ai-systems.md) | `established` | yes |  |
 | [Agency (AI Systems)](../concepts/agency-ai-systems.md) | `established` | yes |  |
 | [Agent Interoperability (A2A)](../concepts/agent-interoperability-a2a.md) | `established` | yes |  |
-| Agent Memory | `established` | not yet | COVERED, not queued — decided Sep 7 2026 under admission check 4 (does the corpus already cover this under an established name?). A real term, but Memory (AI Systems) is already this entry: its technical definition uses the in-trial / cross-trial distinction, covers externalized file-system state and agent memory-loss failure, and cites the agent-memory survey (SRC-137) as its source. A separate entry would be a near-duplicate. Resolved by ALIAS rather than a split, per the standing rule: agent memory, cross-session memory and what does the agent remember now point at memory-ai-systems. ⚠️ The register still renders this row as "not yet", which is wrong — it will never be published under this name. Needs a covered-elsewhere state, the same gap that produced the declined status. |
+| Agent Memory | `covered` | **covered by [Memory (AI Systems)](../concepts/memory-ai-systems.md)** | COVERED by Memory (AI Systems) — decided Sep 7 2026 under admission check 4. A real established term, but that entry already is this one: it uses the in-trial / cross-trial distinction, covers externalized file-system state and agent memory-loss failure, and cites the agent-memory survey (SRC-137) as its source. A separate entry would be a near-duplicate. Resolved by alias rather than a split, so the term stays findable: agent memory, cross-session memory and what does the agent remember all resolve there. The register derives the pointer from that alias, so retargeting the alias moves the pointer. |
 | Agentic Design | `emerging` | not yet | "Agentic" is now widespread, but "agentic design" as a named discipline is not settled — usage varies between practitioners and no standard formulation exists. |
 | Agentic Pattern | `emerging` | not yet | "Agentic pattern" is used loosely as a synonym for agent design templates; no canonical catalogue exists. Likely redundant with Agentic Design — decide whether both are needed. |
 | [AI Agent](../concepts/ai-agent.md) | `established` | yes |  |

@@ -38,6 +38,7 @@ TERM_STATUS = {
     "vendor":      "Coined by a single vendor \u2014 published, if at all, under a neutral name.",
     "unassessed":  "Candidate not yet put through the term-status checks.",
     "declined":    "Considered and turned down \u2014 not a term this wiki will publish.",
+    "covered":     "A real term, already covered by another entry \u2014 findable there as an alias.",
 }
 
 
@@ -129,6 +130,7 @@ def check(entries):
     # 0c. tracker export vs repo. The register is published from the export, so a stale
     #     export becomes a false public claim -- the old hand-maintained list had drifted
     #     to 13 already-published terms before this check existed.
+    _home = alias_home(entries)
     rows = read_export()
     if not rows:
         problems.append(f"export: {EXPORT.relative_to(ROOT)} missing — the term register cannot be built")
@@ -149,6 +151,12 @@ def check(entries):
                 problems.append(f"export: '{term}' marked published but no such entry exists")
             if r["status"] not in TERM_STATUS:
                 problems.append(f"export: '{term}' has unknown status '{r['status']}'")
+            # `covered` asserts the term lives somewhere else. Without an alias resolving
+            # to a published entry that is an unfalsifiable dismissal, and the register
+            # would render it with no destination -- so require the alias to exist.
+            if r["status"] == "covered" and not _home.get(term.lower()):
+                problems.append(f"export: '{term}' is marked covered but no published entry "
+                                f"carries it as an alias — add the alias or change the status")
 
     # 1. schema completeness
     for e in entries:
@@ -338,6 +346,20 @@ def glossary_rows(entries):
             for e in sorted(entries, key=lambda e: e["term"].lower())]
 
 
+def alias_home(entries):
+    """-> {lowercased alias: entry} for every published entry's aliases.
+
+    Used to resolve where a `covered` term actually lives. The alias is the mechanism
+    by which the term is findable, so it is also the right thing to derive the pointer
+    from -- rather than restating the target in prose that can drift from it.
+    """
+    out = {}
+    for e in entries:
+        for a in e.get("aliases") or []:
+            out.setdefault(a.strip().lower(), e)
+    return out
+
+
 def register_page(entries):
     """The public term register: EVERY tracked term with its status, published or not.
 
@@ -361,19 +383,28 @@ def register_page(entries):
            f"**{len(rows)} terms tracked \u2014 {n_pub} published, {len(rows) - n_pub} not.** "
            "See [how terms are admitted](../CONTRIBUTING.md#term-status--the-admission-test).", "",
            "| Status | Meaning | Count |", "|---|---|---|"]
-    for k in ("established", "emerging", "house", "vendor", "unassessed", "declined"):
+    for k in ("established", "emerging", "house", "vendor", "unassessed", "declined", "covered"):
         if counts.get(k):
             out.append(f"| `{k}` | {TERM_STATUS[k]} | {counts[k]} |")
+    # A `covered` term is covered BECAUSE it is an alias of a published entry, so the
+    # pointer is derived from the alias index rather than authored a second time in the
+    # note. That makes the alias the single source of truth: retarget the alias and the
+    # register follows. `check` fails if a covered term has no alias to resolve to.
+    home = alias_home(entries)
     out += ["", "---", "", "| Term | Status | Published | Notes |", "|---|---|---|---|"]
     for r in sorted(rows, key=lambda r: r["term"].lower()):
         e = by_term.get(r["term"])
         name = f"[{r['term']}](../concepts/{e['slug']}.md)" if e else r["term"]
-        # "not yet" promises a future entry, which is false for a declined term --
-        # and the register exists precisely to show "the ones that will not be".
+        # "not yet" promises a future entry, which is false for a declined or covered
+        # term -- and the register exists precisely to show "the ones that will not be".
         if r["published"]:
             pub = "yes"
         elif r["status"] == "declined":
             pub = "**no \u2014 declined**"
+        elif r["status"] == "covered":
+            h = home.get(r["term"].lower())
+            pub = (f"**covered by [{h['term']}](../concepts/{h['slug']}.md)**" if h
+                   else "**no \u2014 covered elsewhere**")
         else:
             pub = "not yet"
         out.append(f"| {name} | `{r['status']}` | {pub} | {r['note'] or ''} |")
