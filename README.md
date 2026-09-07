@@ -165,7 +165,7 @@ Every claim in this wiki is meant to trace back to a real, checkable source — 
 | [Prompt Injection](concepts/prompt-injection.md) | A trick where malicious instructions hidden in text the AI reads hijack its behavior — the top-ranked LLM application security risk | ✅ v1.0 |
 | [Jailbreak](concepts/jailbreak.md) | Bypassing a model's safety training through crafted prompts rather than a technical flaw — getting it to do what it was trained to refuse | ✅ v1.0 |
 | [Embeddings](concepts/embeddings.md) | Turning text into coordinates so that similar meanings sit close together — the representation that makes semantic search work, and that carries the training data's biases as geometry | ✅ v1.0 |
-| [Sandboxing](concepts/sandboxing.md) | Running an untrusted system inside a bounded environment so that what it can reach is limited by construction — the control that does not depend on predicting what it will try | ✅ v1.0 |
+| [Sandboxing](concepts/sandboxing.md) | Running an untrusted system inside a bounded environment so that what it can reach is limited by construction — the control that does not depend on predicting what it will try | ✅ v1.1 |
 | [Agent Interoperability (A2A)](concepts/agent-interoperability-a2a.md) | Letting agents built by different parties discover and delegate to each other — the layer where accountability crosses an organizational boundary, usually before anyone has decided who holds it | ✅ v1.0 |
 | [Edge AI](concepts/edge-ai.md) | Inference running on the device where the data is, not in a datacenter — which stops data leaving and simultaneously stops you seeing what happened | ✅ v1.0 |
 
@@ -211,7 +211,7 @@ Every claim in this wiki is meant to trace back to a real, checkable source — 
 | [Evaluation (AI Systems)](concepts/evaluation.md) | The structured practice of measuring whether an AI system does what it is supposed to do — before deployment and continuously in production | ✅ v1.1 |
 | [Failure Modes (AI Systems)](concepts/failure-modes-ai-systems.md) | The specific ways an AI system can go wrong — each requiring a different detection-and-response control | ✅ v1.0 |
 | [Red Teaming](concepts/red-teaming.md) | Deliberately attacking your own AI system — probing for jailbreaks, data leaks, and harmful outputs before anyone else finds them | ✅ v1.0 |
-| [Deception (AI Systems)](concepts/deception-ai-systems.md) | Output that systematically induces false beliefs because something other than truth was being optimized for | ✅ v1.1 |
+| [Deception (AI Systems)](concepts/deception-ai-systems.md) | Output that systematically induces false beliefs because something other than truth was being optimized for | ✅ v1.2 |
 | [Concealing Uncertainty](concepts/concealing-uncertainty.md) | A tentative answer presented as settled — the caveats a calibrated response would surface, trained away | ✅ v1.0 |
 | [Synthetic Media (Deepfakes)](concepts/synthetic-media-deepfakes.md) | Generation scales and verification does not — and the documented harm is fraud and intimate imagery, not mainly politics | ✅ v1.0 |
 | [Reward Hacking (Specification Gaming)](concepts/reward-hacking.md) | The system satisfies the metric and defeats the point — and more capable models do it more, not less | ✅ v1.0 |
@@ -239,7 +239,7 @@ Every claim in this wiki is meant to trace back to a real, checkable source — 
 | [Data Minimization](concepts/data-minimization.md) | Collecting and keeping only the data a system actually needs — less data, less risk, lower cost | ✅ v1.0 |
 | [Privacy (AI Systems)](concepts/privacy-ai-systems.md) | The rights and obligations that govern how personal data is used in AI training and deployment — and the responsibility to uphold them | ✅ v1.0 |
 | [Data Leakage (AI Systems)](concepts/data-leakage-ai-systems.md) | When sensitive information from training data or context surfaces in model outputs — exposing what was never meant to be accessible | ✅ v1.0 |
-| [AI Incident (Reporting)](concepts/ai-incident-reporting.md) | A documented event where an AI system caused or nearly caused harm — now with legal deadlines to report it, not just fix it quietly | ✅ v1.0 |
+| [AI Incident (Reporting)](concepts/ai-incident-reporting.md) | A documented event where an AI system caused or nearly caused harm — now with legal deadlines to report it, not just fix it quietly | ✅ v1.1 |
 | [AI Management System (ISO 42001)](concepts/ai-management-system-iso-42001.md) | The certifiable standard for governing AI across its lifecycle — it certifies the process, not the product | ✅ v1.0 |
 | [Shadow AI](concepts/shadow-ai.md) | Unsanctioned AI use — invisible to the processes meant to govern it, and usually a signal about the sanctioned option | ✅ v1.0 |
 | [Model Card / System Card](concepts/model-card-system-card.md) | The transparency artifact — a scoping document whose job is to say where *not* to use a model | ✅ v1.0 |

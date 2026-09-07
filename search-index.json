@@ -307,8 +307,8 @@
         "Regulatory",
         "Safety"
       ],
-      "version": "v1.0",
-      "updated": "August 2026",
+      "version": "v1.1",
+      "updated": "September 2026",
       "related": [
         "accountability-ai-systems",
         "ai-governance",
@@ -325,7 +325,9 @@
         "SRC-130",
         "SRC-162",
         "SRC-163",
-        "SRC-164"
+        "SRC-164",
+        "SRC-264",
+        "SRC-265"
       ],
       "path": "concepts/ai-incident-reporting.md"
     },
@@ -1369,8 +1371,8 @@
         "Model Behavior",
         "Ethics"
       ],
-      "version": "v1.1",
-      "updated": "August 2026",
+      "version": "v1.2",
+      "updated": "September 2026",
       "related": [
         "alignment-ai-systems",
         "concealing-uncertainty",
@@ -1389,7 +1391,9 @@
         "SRC-010",
         "SRC-167",
         "SRC-170",
-        "SRC-179"
+        "SRC-179",
+        "SRC-264",
+        "SRC-265"
       ],
       "path": "concepts/deception-ai-systems.md"
     },
@@ -3665,7 +3669,7 @@
         "Security",
         "Architecture"
       ],
-      "version": "v1.0",
+      "version": "v1.1",
       "updated": "September 2026",
       "related": [
         "ai-agent",
@@ -3683,7 +3687,9 @@
         "SRC-034",
         "SRC-148",
         "SRC-160",
-        "SRC-245"
+        "SRC-245",
+        "SRC-264",
+        "SRC-265"
       ],
       "path": "concepts/sandboxing.md"
     },
