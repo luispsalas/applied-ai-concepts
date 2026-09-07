@@ -1,5 +1,27 @@
 # Changelog
 
+## v1.21 — September 2026
+
+**3 concepts published — how to see inside a model, where inference physically runs, and reasoning that produces nothing to read. Count 106 → 109.**
+
+- `mechanistic-interpretability` — v1.0 (the only evidence route that does not go through the model's own account)
+- `edge-ai` — v1.0 (stop the data leaving, stop seeing what happened)
+- `recurrent-depth` — v1.0, **`emerging`** (it thinks by looping, not by talking)
+
+**A fourth term was requested and is not here, because the corpus already covers it.** *Agent Memory* was checked against admission check 4 — *does the corpus already cover this under an established name?* — and `memory-ai-systems` is already that entry: its technical definition uses the in-trial / cross-trial distinction, covers externalized file-system state and memory-loss failure in agents, and cites the agent-memory survey as its source. Publishing a second entry would have produced a near-duplicate. **`agent memory` was added as an alias instead**, which preserves the curation decision and makes the term findable — the standing rule that aliases are preferred over splits.
+
+**The three entries share a spine, and it is the reason they were written together.** Mechanistic interpretability exists because a model's account of its own reasoning can be unfaithful to the computation that produced it. Recurrent depth is the sharper case: there is no account at all, because the reasoning never becomes text. And edge AI removes the third thing — the central log — so the system's behavior is unobservable for an entirely different reason. **Each entry names what evidence remains when a familiar one is gone.**
+
+**Edge AI is filed as topology, not model size.** Its two nearest neighbors are *Local LLMs* (infrastructure you own) and *Small Language Models* (model size); this one is about computation sited at the data source across a fleet you may not physically control. The trade the entry insists on: keeping raw data on-device is a genuine data-minimization advance, and the same move deletes the chokepoint through which everything was observed. Version fragmentation across a fleet, physical access to weights, and an update channel that becomes safety-critical all follow from that.
+
+**Recurrent Depth ships `emerging` on naming, not on evidence.** Its origin is peer-reviewed at NeurIPS and independent use by an unrelated group is verifiable — but *recurrent depth*, *looped transformer* and *depth-recurrent* still compete for one mechanism. The entry also declines a claim nearly every secondary source repeats: that a specific frontier model uses this architecture. The developer has not confirmed it, and a September 2026 publication from that developer discussing the model at length contains no mention of recurrent depth, looping or latent reasoning. **That is a checked absence, not an inference from silence** — and it is cited as such.
+
+**Source registry:** 5 added (SRC-254–258), 10 reused. One near-miss worth recording: a search summary merged **two different Satyanarayanan papers** — same author, same journal, same year — into a single citation with contradictory page numbers. Crossref separated them. The registry row now carries an explicit conflation warning and says to confirm by DOI rather than by title.
+
+**Checks that earned their keep this round.** The spelling sweep caught `programme` and `labelled` in new prose. The alias gate surfaced a *search* collision no build check would fail on: *Frontier AI* carried the alias `cutting edge AI`, which substring-matches a search for "edge AI" — renamed to `cutting-edge models`. And two anchor-text mislinks were caught by hand before commit, both pointing real text at the wrong existing file: *Latency* → `scalability-ai-systems`, *Transformers* → `large-language-models`. **A mislink of that kind resolves perfectly and is invisible to link checking.**
+
+---
+
 ## v1.20 — September 2026
 
 **6 concepts published — the field the corpus came from, the phase that carries the bill, the framework behind alignment, and three measurement and boundary gaps. Count 100 → 106.**

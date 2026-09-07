@@ -66,7 +66,7 @@ They vary independently. A settled term can rest on thin evidence, and a term in
 3. Is the meaning **stable** across independent uses, or does each source redefine it?
 4. Does this wiki already cover the concept under an established name?
 
-**Four outcomes:**
+**Five outcomes:**
 
 | Status | Meaning | What happens |
 |---|---|---|

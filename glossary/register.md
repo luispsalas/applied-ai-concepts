@@ -4,7 +4,7 @@ Every term this wiki tracks, with its status — **including the ones that are n
 
 The field names things faster than it settles them, and a glossary that repeats every new label without comment is a list of buzzwords. So each term is judged on whether it is a *real term*. That is a separate question from how good the evidence is for the claims inside an entry, which each entry states for itself in its own confidence level.
 
-**133 terms tracked — 106 published, 27 not.** See [how terms are admitted](../CONTRIBUTING.md#term-status--the-admission-test).
+**133 terms tracked — 109 published, 24 not.** See [how terms are admitted](../CONTRIBUTING.md#term-status--the-admission-test).
 
 | Status | Meaning | Count |
 |---|---|---|
@@ -20,7 +20,7 @@ The field names things faster than it settles them, and a glossary that repeats 
 | [Accountability (AI Systems)](../concepts/accountability-ai-systems.md) | `established` | yes |  |
 | [Agency (AI Systems)](../concepts/agency-ai-systems.md) | `established` | yes |  |
 | [Agent Interoperability (A2A)](../concepts/agent-interoperability-a2a.md) | `established` | yes |  |
-| Agent Memory | `established` | not yet |  |
+| Agent Memory | `established` | not yet | COVERED, not queued — decided Sep 7 2026 under admission check 4 (does the corpus already cover this under an established name?). A real term, but Memory (AI Systems) is already this entry: its technical definition uses the in-trial / cross-trial distinction, covers externalized file-system state and agent memory-loss failure, and cites the agent-memory survey (SRC-137) as its source. A separate entry would be a near-duplicate. Resolved by ALIAS rather than a split, per the standing rule: agent memory, cross-session memory and what does the agent remember now point at memory-ai-systems. ⚠️ The register still renders this row as "not yet", which is wrong — it will never be published under this name. Needs a covered-elsewhere state, the same gap that produced the declined status. |
 | Agentic Design | `emerging` | not yet | "Agentic" is now widespread, but "agentic design" as a named discipline is not settled — usage varies between practitioners and no standard formulation exists. |
 | Agentic Pattern | `emerging` | not yet | "Agentic pattern" is used loosely as a synonym for agent design templates; no canonical catalogue exists. Likely redundant with Agentic Design — decide whether both are needed. |
 | [AI Agent](../concepts/ai-agent.md) | `established` | yes |  |
@@ -63,7 +63,7 @@ The field names things faster than it settles them, and a glossary that repeats 
 | [Determinism vs Probabilism](../concepts/determinism-vs-probabilism.md) | `established` | yes |  |
 | Direct Preference Optimization | `established` | not yet |  |
 | [Domain](../concepts/domain.md) | `established` | yes |  |
-| Edge AI | `established` | not yet |  |
+| [Edge AI](../concepts/edge-ai.md) | `established` | yes |  |
 | [Embeddings](../concepts/embeddings.md) | `established` | yes |  |
 | Environmental Cost of AI | `established` | not yet |  |
 | [Evaluation (AI Systems)](../concepts/evaluation.md) | `established` | yes |  |
@@ -94,7 +94,7 @@ The field names things faster than it settles them, and a glossary that repeats 
 | LLM Mesh | `vendor` | not yet | Coined by Dataiku; filtering the originator's domains leaves only a vendor glossary, personal posts and an agency blog. Also collides with an unrelated hardware sense (UB-Mesh, WaferLLM). NOT a decline — the concept underneath, one control point over many model providers, is a real corpus gap: publish under a neutral name, citing Dataiku as one implementation. ⚠️ Col F describes multi-model collaboration, a DIFFERENT concept already covered by Multi-Agent Systems and Orchestration — rewrite the essence when drafting. |
 | [LLM-as-Judge](../concepts/llm-as-judge.md) | `established` | yes |  |
 | [Local LLMs](../concepts/local-llms.md) | `established` | yes |  |
-| Mechanistic interpretability | `established` | not yet |  |
+| [Mechanistic Interpretability](../concepts/mechanistic-interpretability.md) | `established` | yes |  |
 | [Memory (AI Systems)](../concepts/memory-ai-systems.md) | `established` | yes |  |
 | Metaprompting | `emerging` | not yet | Meta-prompting appears in the literature but definitions vary; the tracker essence describes a narrower self-critique technique than most usage. |
 | [Model Card / System Card](../concepts/model-card-system-card.md) | `established` | yes |  |
@@ -121,7 +121,7 @@ The field names things faster than it settles them, and a glossary that repeats 
 | [Prompt Injection](../concepts/prompt-injection.md) | `established` | yes |  |
 | [RACI](../concepts/raci.md) | `established` | yes |  |
 | [Reasoning Models / Test-Time Compute](../concepts/reasoning-models.md) | `established` | yes |  |
-| Recurrent Depth | `emerging` | not yet | Spelling corrected from "Recurring Depth", which no source uses. Coined by Geiping et al. (NeurIPS 2025); independently used by a separate group (Recurrent-Depth VLA, 2026). Emerging rather than established on naming — recurrent depth / looped transformer / depth-recurrent compete for one mechanism. ⚠️ Do not state as fact that OpenAI's Astra uses it: press reporting, unconfirmed by OpenAI. Fills a real gap — reasoning moves into latent states with no trace to read. |
+| [Recurrent Depth](../concepts/recurrent-depth.md) | `emerging` | yes | Spelling corrected from "Recurring Depth", which no source uses. Coined by Geiping et al. (NeurIPS 2025); independently used by a separate group (Recurrent-Depth VLA, 2026). Emerging rather than established on naming — recurrent depth / looped transformer / depth-recurrent compete for one mechanism. ⚠️ Do not state as fact that OpenAI's Astra uses it: press reporting, unconfirmed by OpenAI. Fills a real gap — reasoning moves into latent states with no trace to read. |
 | [Recursive Self-Improvement](../concepts/recursive-self-improvement.md) | `established` | yes |  |
 | [Red Teaming](../concepts/red-teaming.md) | `established` | yes |  |
 | [Reinforcement Learning (RL)](../concepts/reinforcement-learning.md) | `established` | yes |  |

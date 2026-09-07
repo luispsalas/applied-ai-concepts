@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "count": 106,
+  "count": 109,
   "entries": [
     {
       "slug": "accountability-ai-systems",
@@ -1455,6 +1455,49 @@
       "path": "concepts/domain.md"
     },
     {
+      "slug": "edge-ai",
+      "term": "Edge AI",
+      "category": "System Architecture",
+      "essence": "AI inference running on local devices rather than in the cloud — improving privacy and reducing latency, but shifting governance responsibility to the organization deploying the hardware.",
+      "short": "Inference running on the device where the data is, not in a datacenter — which stops data leaving and simultaneously stops you seeing what happened",
+      "aliases": [
+        "on-device AI",
+        "edge inference",
+        "edge computing",
+        "embedded AI",
+        "TinyML",
+        "offline AI",
+        "AI on the device",
+        "does the data leave the device"
+      ],
+      "tags": [
+        "Architecture",
+        "Privacy",
+        "Data Governance"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "audit-trail-ai",
+        "data-leakage-ai-systems",
+        "data-minimization",
+        "inference",
+        "local-llms",
+        "model-version-update",
+        "observability",
+        "privacy-ai-systems",
+        "small-language-models"
+      ],
+      "sources": [
+        "SRC-057",
+        "SRC-087",
+        "SRC-102",
+        "SRC-126",
+        "SRC-257"
+      ],
+      "path": "concepts/edge-ai.md"
+    },
+    {
       "slug": "embeddings",
       "term": "Embeddings",
       "category": "System Architecture",
@@ -1666,7 +1709,7 @@
         "frontier model",
         "state of the art model",
         "most capable models",
-        "cutting edge AI",
+        "cutting-edge models",
         "leading models"
       ],
       "tags": [
@@ -2356,6 +2399,51 @@
       "path": "concepts/local-llms.md"
     },
     {
+      "slug": "mechanistic-interpretability",
+      "term": "Mechanistic Interpretability",
+      "category": "Foundations",
+      "essence": "The effort to reverse-engineer what's actually happening inside a model — identifying which internal components produce which behaviors, not just what the model outputs.",
+      "short": "Reverse-engineering what a model actually computes, rather than asking it to explain itself — the only route to knowing why that does not depend on the model's own account",
+      "aliases": [
+        "mech interp",
+        "circuits",
+        "features and circuits",
+        "superposition",
+        "sparse autoencoders",
+        "dictionary learning",
+        "what is going on inside the model",
+        "opening the black box"
+      ],
+      "tags": [
+        "Model Behavior",
+        "Safety",
+        "Evaluation"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "alignment-ai-systems",
+        "black-box",
+        "deception-ai-systems",
+        "evaluation",
+        "explainability-xai",
+        "frontier-ai",
+        "reasoning-models",
+        "recurrent-depth",
+        "red-teaming",
+        "scalable-oversight"
+      ],
+      "sources": [
+        "SRC-023",
+        "SRC-123",
+        "SRC-125",
+        "SRC-240",
+        "SRC-255",
+        "SRC-256"
+      ],
+      "path": "concepts/mechanistic-interpretability.md"
+    },
+    {
       "slug": "memory-ai-systems",
       "term": "Memory (AI Systems)",
       "category": "Knowledge & Memory",
@@ -2366,7 +2454,10 @@
         "conversation history",
         "persistence",
         "session memory",
-        "long-term memory"
+        "long-term memory",
+        "agent memory",
+        "cross-session memory",
+        "what does the agent remember"
       ],
       "tags": [
         "Architecture",
@@ -3249,6 +3340,49 @@
         "SRC-240"
       ],
       "path": "concepts/reasoning-models.md"
+    },
+    {
+      "slug": "recurrent-depth",
+      "term": "Recurrent Depth",
+      "category": "Foundations",
+      "essence": "An architecture that adds reasoning effort by looping information through the same layers instead of by generating more text — more depth without more parameters, and reasoning that leaves no readable trace.",
+      "short": "Spending more compute by looping a model's own layers rather than by writing more tokens — capability without extra parameters, and thinking that produces nothing to read",
+      "aliases": [
+        "looped transformer",
+        "depth-recurrent",
+        "latent reasoning",
+        "weight-tied layers",
+        "recurrent block",
+        "thinking without tokens",
+        "reasoning with no trace"
+      ],
+      "tags": [
+        "Model Behavior",
+        "Safety",
+        "Architecture"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "audit-trail-ai",
+        "black-box",
+        "evaluation",
+        "explainability-xai",
+        "frontier-ai",
+        "inference",
+        "large-language-models",
+        "mechanistic-interpretability",
+        "reasoning-models",
+        "scalable-oversight"
+      ],
+      "sources": [
+        "SRC-155",
+        "SRC-240",
+        "SRC-253",
+        "SRC-254",
+        "SRC-258"
+      ],
+      "path": "concepts/recurrent-depth.md"
     },
     {
       "slug": "recursive-self-improvement",

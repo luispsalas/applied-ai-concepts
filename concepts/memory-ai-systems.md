@@ -1,7 +1,7 @@
 <!--meta
 category: Knowledge & Memory
 short: How an AI remembers — what it keeps in a conversation, what carries over to future sessions, and what it reuses as learned skill
-aliases: [does it remember me, conversation history, persistence, session memory, long-term memory]
+aliases: [does it remember me, conversation history, persistence, session memory, long-term memory, agent memory, cross-session memory, what does the agent remember]
 tags: [Architecture, Privacy]
 established: established
 -->
