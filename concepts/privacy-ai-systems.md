@@ -78,7 +78,7 @@ Privacy asks: what personal information does this AI system touch, and what happ
 |---|---|---|
 | SRC-150 | Carlini, N. et al. — *Extracting Training Data from Large Language Models* (USENIX Security, 2021) · [link](https://arxiv.org/abs/2012.07805) | LLMs memorize and can regurgitate verbatim training data including PII; risk scales with model size. |
 | SRC-126 | European Union — *GDPR Article 5(1)(c): Data Minimisation* (Reg. (EU) 2016/679) · [link](https://gdpr-info.eu/art-5-gdpr/) | The collection-side privacy principle already governing AI training/operational data. |
-| SRC-039 | European Parliament / Council of the EU — *General Data Protection Regulation* (2016) · [link](https://eur-lex.europa.eu/eli/reg/2016/679/oj) | The broader regulatory framework AI privacy obligations sit within. |
+| SRC-039 | European Parliament / Council of the EU — *General Data Protection Regulation (EU) 2016/679* · [link](https://eur-lex.europa.eu/eli/reg/2016/679/oj) | The broader regulatory framework AI privacy obligations sit within. |
 | SRC-151 | NIST — *Privacy Framework 1.1* (Initial Public Draft, 2025) · [link](https://www.nist.gov/privacy-framework) | Draft framework extending privacy risk management guidance to AI-specific risks across the AI lifecycle. Cited only for its general direction — no section numbers or exact wording are treated as settled. ⚠️ **Unfinalized draft:** public comment closed June 2025; NIST targeted Q4 2025 for final release; still not published as of this entry's publication (July 2026). **Review again** before the next major update of this entry — if a finalized version has shipped, replace this citation and update the entry accordingly. |
 
 ---

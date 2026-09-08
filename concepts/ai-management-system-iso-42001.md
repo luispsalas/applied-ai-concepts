@@ -102,7 +102,7 @@ Most organizations say they use AI responsibly. ISO 42001 is the standard that l
 | SRC-001 | NIST — *AI Risk Management Framework* · [link](https://www.nist.gov/itl/ai-risk-management-framework) | The voluntary, self-attested counterpart — the contrast that makes "certifiable" the operative distinction. |
 | SRC-129 | European Parliament / Council of the EU — *EU Artificial Intelligence Act (Regulation (EU) 2024/1689)* · [link](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689) | The legal obligations that certification does not discharge; conformity assessment under the Act is a separate mechanism. |
 | SRC-105 | Kausar, Rehan (CDO Magazine) — *AI Governance Roles: Who Owns What as AI Scales in the Enterprise* (2026) · [link](https://www.cdomagazine.tech/ai-governance/ai-governance-roles-who-owns-what-as-ai-scales-in-the-enterprise) | How role assignment actually lands in an organization, against the standard's requirement that responsibilities be defined. |
-| SRC-036 | Jobin, A.; Ienca, M.; Vayena, E. — *The global landscape of AI ethics guidelines* (2019) · [link](https://arxiv.org/abs/1906.11668) | The problem an auditable standard responds to: a proliferation of principles with no mechanism to verify anyone follows them. |
+| SRC-036 | Jobin, A.; Ienca, M.; Vayena, E. — *The global landscape of AI ethics guidelines* (Nature Machine Intelligence 1(9), pp. 389–399, 2019) · [link](https://doi.org/10.1038/s42256-019-0088-2) | The problem an auditable standard responds to: a proliferation of principles with no mechanism to verify anyone follows them. |
 
 ---
 

@@ -137,6 +137,10 @@ Nothing else can catch this. A wrong-but-well-formed URL resolves, so the link c
 
 A `NEW` line is not a defect; it means the ID is cited nowhere else, so the corpus cannot vouch for it — **verify that one against the registry by hand.**
 
+**`citecheck.py --all --substantive` is the periodic version**, and it answers a question that comes up whenever the raw drift number looks alarming: *which of these actually matter?* It reports only IDs whose variants point at a **different URL**, because that is the only difference that can mean a different document — a preprint cited over the published paper, or a superseded draft over the final edition. Both defects found this way in Sep 2026 were of exactly that kind.
+
+**Everything else is left alone deliberately.** Two citations sharing a URL cite the same document however differently they name it, and the corpus carries ~93 IDs with more than one rendered form for reasons that are purely presentational — a dropped subtitle, an expanded abbreviation, `&` for `;`. **Normalizing those is not worth a 130-file diff**: the ranking in the per-publish check already steers new citations to the dominant form, so the drift stops growing without a cleanup pass. The filter's calibration is the evidence — treating any title difference as substantive flagged 26 IDs, prefix-tolerance brought it to 13, keying on URL gives the handful that are real.
+
 ### Monthly — `python3 scripts/maintain.py offline`
 Report-only, no network. US-English sweep (quotations and Sources rows excluded), Sources-table completeness, and SRC-IDs cited in prose but missing from a Sources table.
 
