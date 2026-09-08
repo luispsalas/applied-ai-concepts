@@ -50,9 +50,9 @@ def read_export():
     for line in EXPORT.read_text().splitlines():
         if not line.strip() or line.startswith("#"):
             continue
-        parts = (line.split("\t") + ["", "", ""])[:4]
+        parts = (line.split("\t") + ["", "", "", ""])[:5]
         rows.append({"term": parts[0], "published": parts[1] == "yes",
-                     "status": parts[2], "note": parts[3]})
+                     "status": parts[2], "note": parts[3], "flag": parts[4]})
     return rows
 
 # Closed vocabulary. Pruned 26 -> 12 on Aug 31 2026; "LLM" was dropped outright
@@ -157,6 +157,31 @@ def check(entries):
             if r["status"] == "covered" and not _home.get(term.lower()):
                 problems.append(f"export: '{term}' is marked covered but no published entry "
                                 f"carries it as an alias — add the alias or change the status")
+            # The tracker's On Github Flag is HAND-MAINTAINED; the Pipeline State column
+            # beside it is DERIVED from Term Status. They agree today, and nothing stops
+            # them drifting -- so assert the correspondence.
+            #
+            # Deliberately NOT checked here: "published but status covered/declined". Three
+            # seeded faults confirmed the existing checks above already catch every case of
+            # that (via the status mismatch, or via 'no such entry exists'), so a rule for it
+            # would be dead code -- the failure this file's docstring warns about.
+            #
+            # What IS unchecked without the flag column: the sheet sorts into three blocks,
+            # and only the flag says which. A fold left as `TBD` derives the right state and
+            # publishes nothing wrong, so it is invisible to every other check -- while
+            # sitting in the wrong block in the sheet. That happened once (Pseudonymization,
+            # Sep 2026) and was found by hand.
+            if r["flag"] and r["flag"] not in ("X", "TBD", "N/A"):
+                problems.append(f"export: '{term}' has unknown On Github Flag '{r['flag']}' — "
+                                f"expected X (published), TBD (queued) or N/A (not publishing)")
+            elif r["status"] in ("covered", "declined") and r["flag"] != "N/A":
+                problems.append(f"export: '{term}' is '{r['status']}' but its flag is "
+                                f"'{r['flag']}' — a term that will not be published must be "
+                                f"flagged N/A, or it sorts into the wrong block")
+            elif r["flag"] == "N/A" and r["status"] not in ("covered", "declined"):
+                problems.append(f"export: '{term}' is flagged N/A but its status is "
+                                f"'{r['status']}' — flag says it will not be published, "
+                                f"status says it is still a candidate")
 
     # 1. schema completeness
     for e in entries:
