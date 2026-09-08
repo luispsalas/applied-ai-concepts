@@ -1,7 +1,7 @@
 <!--meta
 category: Foundations
 short: Describing, in terms a human can understand, why an AI system produced a specific output — a prerequisite for accountability
-aliases: [XAI, interpretability, why did it decide that, explainable AI, right to explanation]
+aliases: [XAI, interpretability, why did it decide that, explainable AI]
 tags: [Ethics, Regulatory, Evaluation]
 established: established
 -->
@@ -71,6 +71,7 @@ The catch with modern AI: a system can produce a confident, fluent explanation t
 ## Related concepts
 
 - [Black Box](black-box.md) — explainability is the set of techniques for working around opacity; the black box is the problem it responds to
+- [Automated Decision-Making](automated-decision-making.md) — the legal *right to explanation* is about the decision and the system's role in it, not the model's internals, so it is satisfiable without any technique on this page
 - [Hallucination](hallucination.md) — a model's self-explanation can itself be hallucinated, which is why faithfulness must be tested
 - [Confidence vs Accuracy](confidence-vs-accuracy.md) — a fluent, confident explanation is not evidence that it is the true reason
 - [Human Responsibility in AI Use](human-responsibility-in-ai-use.md) — explanation enables accountability but does not transfer it away from humans

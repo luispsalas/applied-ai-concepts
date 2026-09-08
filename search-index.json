@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "count": 123,
+  "count": 127,
   "entries": [
     {
       "slug": "accountability-ai-systems",
@@ -668,6 +668,50 @@
       "path": "concepts/alignment-ai-systems.md"
     },
     {
+      "slug": "anonymization-and-pseudonymization",
+      "term": "Anonymization and Pseudonymization",
+      "category": "Observability & Governance",
+      "essence": "Two different operations that are routinely confused: one removes data from the scope of data-protection law, the other does not — and almost everything called \"anonymized\" in practice is the second.",
+      "short": "Two words used interchangeably that mean opposite things in law — one takes data out of scope, the other does not",
+      "aliases": [
+        "anonymization",
+        "anonymisation",
+        "pseudonymization",
+        "pseudonymisation",
+        "de-identification",
+        "re-identification",
+        "k-anonymity",
+        "anonymized data",
+        "is this data still personal"
+      ],
+      "tags": [
+        "Privacy",
+        "Regulatory",
+        "Data Governance"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "compliance-ai-systems",
+        "data-leakage-ai-systems",
+        "data-minimization",
+        "data-provenance-lineage",
+        "data-quality",
+        "privacy-ai-systems",
+        "privacy-attacks-ai-models",
+        "synthetic-data",
+        "training-data"
+      ],
+      "sources": [
+        "SRC-039",
+        "SRC-161",
+        "SRC-295",
+        "SRC-296",
+        "SRC-299"
+      ],
+      "path": "concepts/anonymization-and-pseudonymization.md"
+    },
+    {
       "slug": "anthropomorphism-ai",
       "term": "Anthropomorphism (AI)",
       "category": "Interaction & Design",
@@ -741,6 +785,50 @@
         "SRC-130"
       ],
       "path": "concepts/audit-trail-ai.md"
+    },
+    {
+      "slug": "automated-decision-making",
+      "term": "Automated Decision-Making",
+      "category": "Human Oversight",
+      "essence": "A decision about a person produced without meaningful human involvement — the case where law grants specific rights to human intervention, explanation and contest.",
+      "short": "When a decision about a person is made without a human in it — the one place law already grants an individual the right to object, and the threshold most systems are quietly designed to sit under",
+      "aliases": [
+        "redress",
+        "automated decision",
+        "solely automated processing",
+        "profiling",
+        "right to contest",
+        "right to explanation",
+        "human intervention",
+        "GDPR Article 22",
+        "can I appeal an AI decision"
+      ],
+      "tags": [
+        "Regulatory",
+        "Ethics",
+        "Data Governance"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "accountability-ai-systems",
+        "ai-disclosure-attribution",
+        "audit-trail-ai",
+        "bias-ai-systems",
+        "compliance-ai-systems",
+        "explainability-xai",
+        "fundamental-rights-impact-assessment",
+        "human-in-the-loop",
+        "human-responsibility-in-ai-use",
+        "moral-crumple-zone"
+      ],
+      "sources": [
+        "SRC-024",
+        "SRC-039",
+        "SRC-297",
+        "SRC-298"
+      ],
+      "path": "concepts/automated-decision-making.md"
     },
     {
       "slug": "automation-bias",
@@ -1911,8 +1999,7 @@
         "XAI",
         "interpretability",
         "why did it decide that",
-        "explainable AI",
-        "right to explanation"
+        "explainable AI"
       ],
       "tags": [
         "Ethics",
@@ -1924,6 +2011,7 @@
       "related": [
         "accountability-ai-systems",
         "ai-governance",
+        "automated-decision-making",
         "black-box",
         "confidence-vs-accuracy",
         "hallucination",
@@ -1973,6 +2061,52 @@
         "SRC-128"
       ],
       "path": "concepts/failure-modes-ai-systems.md"
+    },
+    {
+      "slug": "false-positives-and-false-negatives",
+      "term": "False Positives and False Negatives",
+      "category": "Reliability & Quality",
+      "essence": "The two ways a classifier can be wrong — flagging something it should not, or missing something it should catch — and the balance between them is a policy choice, not a technical one.",
+      "short": "The two ways a system can be wrong — and the choice of which one to make more often is a policy decision that usually gets made by default",
+      "aliases": [
+        "false positive",
+        "false negative",
+        "false positives",
+        "false negatives",
+        "type I error",
+        "type II error",
+        "precision and recall",
+        "sensitivity and specificity",
+        "confusion matrix",
+        "base rate",
+        "threshold",
+        "what does 99% accurate mean"
+      ],
+      "tags": [
+        "Evaluation",
+        "Ethics",
+        "AI Literacy"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "accountability-ai-systems",
+        "ai-benchmarking",
+        "automation-bias",
+        "bias-ai-systems",
+        "confidence-vs-accuracy",
+        "evaluation",
+        "guardrails-ai-systems",
+        "human-in-the-loop",
+        "model-data-drift",
+        "overfitting"
+      ],
+      "sources": [
+        "SRC-121",
+        "SRC-122",
+        "SRC-300"
+      ],
+      "path": "concepts/false-positives-and-false-negatives.md"
     },
     {
       "slug": "fine-tuning",
@@ -3680,6 +3814,51 @@
         "SRC-151"
       ],
       "path": "concepts/privacy-ai-systems.md"
+    },
+    {
+      "slug": "privacy-attacks-ai-models",
+      "term": "Privacy Attacks (AI Models)",
+      "category": "Observability & Governance",
+      "essence": "Attacks that use ordinary query access to a deployed model to recover what it was built from — whether a record was in the training data, what that data contained, or the model itself.",
+      "short": "Querying a deployed model to get back what went into it — the training data, its members, or the model itself",
+      "aliases": [
+        "privacy attacks",
+        "membership inference",
+        "model inversion",
+        "data reconstruction",
+        "model extraction",
+        "model stealing",
+        "attacks on models",
+        "can someone steal our model"
+      ],
+      "tags": [
+        "Security",
+        "Privacy",
+        "Evaluation"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "ai-incident-reporting",
+        "anonymization-and-pseudonymization",
+        "data-leakage-ai-systems",
+        "fine-tuning",
+        "observability",
+        "overfitting",
+        "permission-model-ai",
+        "privacy-ai-systems",
+        "red-teaming",
+        "training-data"
+      ],
+      "sources": [
+        "SRC-150",
+        "SRC-161",
+        "SRC-291",
+        "SRC-292",
+        "SRC-293",
+        "SRC-294"
+      ],
+      "path": "concepts/privacy-attacks-ai-models.md"
     },
     {
       "slug": "prompt-chaining",

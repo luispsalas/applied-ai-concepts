@@ -1,5 +1,30 @@
 # Changelog
 
+## v1.29 — September 2026
+
+**Four consolidated entries, folding nine queued terms into four. Count 123 → 127.**
+
+- `false-positives-and-false-negatives` — v1.0, **`established`** (+ *False Negative*)
+- `anonymization-and-pseudonymization` — v1.0, **`established`** (+ *Pseudonymization*)
+- `privacy-attacks-ai-models` — v1.0, **`established`** (+ *Model Inversion*, *Model Extraction*)
+- `automated-decision-making` — v1.0, **`established`** (+ *Redress*)
+
+**These were the sets the vocabulary check surfaced as separate terms that only make sense together.** They could not be folded at triage: `covered` requires a *published* entry to carry the alias, so the fold had to wait for the entry to exist. Writing one entry per set rather than one per term is the answer to that ordering constraint.
+
+**Each consolidation is a claim that the terms are one concept, and each is argued rather than asserted.** False positives and false negatives are one axis with a threshold setting the exchange rate — no setting reduces both. Anonymization and pseudonymization only make sense side by side, because the entry's point is that they are confused and mean opposite things in law. Redress is not a separate concept from automated decision-making but the name for Article 22's three named safeguards. And the model attacks share a category **because a standards body says so** rather than because it was convenient.
+
+**That last one had a real objection at triage, recorded then and answered now.** Model extraction's victim is the model owner, not the data subject — grounds for keeping it separate. NIST's taxonomy defines privacy attacks as inferring information about the training data **or the ML model**, which settles it; the entry keeps the victim-shift as an explicit point rather than smoothing it away.
+
+**Two things the entries argue that the sources do not say outright**, both flagged in their confidence sections: that a rubber-stamp reviewer fails Article 22's human-intervention safeguard *in substance* (interpretation, not settled ruling), and that anonymizing a training corpus does not anonymize the model trained on it (follows from the memorization evidence, not yet settled in regulatory guidance).
+
+**The strongest single point across the four is the base-rate one.** At low prevalence a system working exactly as specified flags mostly false positives, and no better model fixes it. Paired with Chouldechova's impossibility result — a calibrated classifier cannot also equalize both error rates across groups with differing base rates — it makes "99% accurate" and "fair" both under-specified until someone supplies the missing quantity.
+
+**An alias was moved rather than dropped.** `right to explanation` sat on *Explainability (XAI)*, an entry that never mentions it — the "alias conceals a gap" pattern. It now belongs to *Automated Decision-Making*, which quotes AI Act Article 86, and Explainability gained a pointer recording the distinction: **the legal right is about the decision and the system's role in it, not the model's internals, so it is satisfiable without any XAI technique.**
+
+**Sources:** 10 added (SRC-291 – SRC-300), 6 reused. Article 86 and GDPR Article 22 were read from the primary texts rather than from summaries. **The citation diff caught one wrong ID and two form drifts**; the wrong one was a speculative citation that was dropped rather than replaced.
+
+---
+
 ## v1.28 — September 2026
 
 **Five terms requested; three published, two folded. Count 120 → 123.**

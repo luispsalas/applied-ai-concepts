@@ -30,7 +30,7 @@ This wiki treats AI and data governance as closely connected. Alongside technica
 
 ### Looking a concept up
 
-Browse the [glossary index](glossary/index.md) — 123 terms alphabetically with their one-line essences — or use **`search.html`**, a self-contained search page covering every term plus 745 hand-written synonyms.
+Browse the [glossary index](glossary/index.md) — 127 terms alphabetically with their one-line essences — or use **`search.html`**, a self-contained search page covering every term plus 782 hand-written synonyms.
 
 It is built for concept lookup rather than text search, so describing the problem works: *"who is responsible when the AI does it"*, *"it used to work"*, *"why do I get different answers"*. Each result shows which synonym matched.
 
@@ -211,6 +211,7 @@ Every claim in this wiki is meant to trace back to a real, checkable source — 
 | [RACI](concepts/raci.md) | Who does the work, who answers for it, who is consulted, who is informed — the system can be Responsible, only a person can be Accountable | ✅ v1.1 |
 | [Scalable Oversight](concepts/scalable-oversight.md) | Using AI to supervise AI because the work has outrun direct human review — and the unresolved question of who checks the checker | ✅ v1.0 |
 | [Moral Crumple Zone](concepts/moral-crumple-zone.md) | The human operator who absorbs blame when an automated system fails — protecting the system's integrity at the nearest person's expense, exactly as a car's crumple zone absorbs a crash | ✅ v1.0 |
+| [Automated Decision-Making](concepts/automated-decision-making.md) | When a decision about a person is made without a human in it — the one place law already grants an individual the right to object, and the threshold most systems are quietly designed to sit under | ✅ v1.0 |
 
 ### Reliability & Quality
 *Measuring and maintaining what AI systems actually do*
@@ -235,6 +236,7 @@ Every claim in this wiki is meant to trace back to a real, checkable source — 
 | [AI Benchmarking](concepts/ai-benchmarking.md) | Standardized tests that let models be compared on the same task — indispensable for comparison, and routinely read as evidence of general capability they were never built to support | ✅ v1.0 |
 | [Catastrophic Forgetting](concepts/catastrophic-forgetting.md) | Teaching a model something new can silently remove something it already knew — including behavior nobody re-tests | ✅ v1.0 |
 | [Overfitting](concepts/overfitting.md) | Learning the training set instead of the pattern — and the reason a model's reported score is not a promise about your data | ✅ v1.0 |
+| [False Positives and False Negatives](concepts/false-positives-and-false-negatives.md) | The two ways a system can be wrong — and the choice of which one to make more often is a policy decision that usually gets made by default | ✅ v1.0 |
 
 ### Observability & Governance
 *Making AI system behavior visible and accountable*
@@ -261,6 +263,8 @@ Every claim in this wiki is meant to trace back to a real, checkable source — 
 | [Systemic Risk (AI)](concepts/systemic-risk-ai.md) | A precise legal threshold for a few model providers — and an unregulated concentration risk carried by everyone else | ✅ v1.0 |
 | [Frontier AI (Frontier Model)](concepts/frontier-ai.md) | The leading edge — a category defined by capabilities being discovered after training, not by size | ✅ v1.0 |
 | [Environmental Cost of AI](concepts/environmental-cost-of-ai.md) | The energy, water and emissions behind model training and use — a rising reporting expectation that organizations cannot currently compute for themselves | ✅ v1.0 |
+| [Anonymization and Pseudonymization](concepts/anonymization-and-pseudonymization.md) | Two words used interchangeably that mean opposite things in law — one takes data out of scope, the other does not | ✅ v1.0 |
+| [Privacy Attacks (AI Models)](concepts/privacy-attacks-ai-models.md) | Querying a deployed model to get back what went into it — the training data, its members, or the model itself | ✅ v1.0 |
 
 ### Organizational Readiness
 *The human and organizational conditions for responsible AI adoption*
@@ -345,7 +349,7 @@ See [CHANGELOG.md](CHANGELOG.md) for version history.
 ## Status
 
 **Phase 1 ✅ — foundation:** core concepts published and sourced, each with a governance-notes section; standalone [governance & observability notes](notes/governance-and-observability.md) doc live.
-**Phase 2 (current) — breadth & cross-linking:** 123 concepts across 8 categories, a [glossary index](glossary/index.md), client-side [search](search.html), and a cross-reference layer connecting related entries.
+**Phase 2 (current) — breadth & cross-linking:** 127 concepts across 8 categories, a [glossary index](glossary/index.md), client-side [search](search.html), and a cross-reference layer connecting related entries.
 **Phase 3 (planned):** audience-specific rendering, glossary automation, and a manifesto distilled from the wiki's principles.
 
 ---
