@@ -134,3 +134,48 @@ def main():
 
 if __name__ == "__main__":
     sys.exit(main())
+
+# --- stray-script sweep -------------------------------------------------------
+# Twice in three releases a character from a non-Latin script reached content:
+# `决定` inside English entry prose (v1.26), and `问题` inside a registry cell
+# (v1.30). Both were caught by an ad-hoc grep after the fact -- the schema check,
+# the spelling sweep and the link checker are all blind to them, because the text
+# is structurally valid and correctly spelled in the language it happens to be in.
+#
+# HARD ranges only, chosen so a hit is a defect rather than a judgement call:
+# accented Latin (Tramèr, André), Greek (ε-differential privacy), punctuation and
+# symbols (—, ·, ⚠️, ≤, →) are all legitimate here and are NOT flagged. What is
+# flagged is a script this corpus has no business containing, plus the invisible
+# characters that survive copy-paste and ship verbatim.
+STRAY_RANGES = [
+    (0x0400, 0x04FF, "Cyrillic"),        # also the homoglyph risk: а vs a
+    (0x0590, 0x05FF, "Hebrew"),
+    (0x0600, 0x06FF, "Arabic"),
+    (0x0900, 0x097F, "Devanagari"),
+    (0x0E00, 0x0E7F, "Thai"),
+    (0x2E80, 0x2FDF, "CJK radicals"),
+    (0x3040, 0x30FF, "Kana"),
+    (0x3400, 0x4DBF, "CJK ext-A"),
+    (0x4E00, 0x9FFF, "CJK"),
+    (0xAC00, 0xD7AF, "Hangul"),
+    (0xF900, 0xFAFF, "CJK compat"),
+    (0xFF00, 0xFFEF, "Full-width forms"),
+]
+INVISIBLE = {0x00AD: "soft hyphen", 0x200B: "zero-width space",
+             0x200C: "zero-width non-joiner", 0x200D: "zero-width joiner",
+             0x2060: "word joiner", 0xFEFF: "byte-order mark"}
+
+
+def stray_scripts(text):
+    """-> [(char, codepoint, script name)] for characters that do not belong."""
+    out = []
+    for ch in text:
+        cp = ord(ch)
+        if cp in INVISIBLE:
+            out.append((ch, cp, INVISIBLE[cp]))
+            continue
+        for lo, hi, name in STRAY_RANGES:
+            if lo <= cp <= hi:
+                out.append((ch, cp, name))
+                break
+    return out

@@ -20,7 +20,7 @@ from collections import Counter, defaultdict
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from entry_meta import load, ROOT  # noqa: E402
+from entry_meta import load, ROOT, stray_scripts  # noqa: E402
 
 README = ROOT / "README.md"
 GLOSSARY = ROOT / "glossary" / "index.md"
@@ -182,6 +182,33 @@ def check(entries):
                 problems.append(f"export: '{term}' is flagged N/A but its status is "
                                 f"'{r['status']}' — flag says it will not be published, "
                                 f"status says it is still a candidate")
+
+    # 0d. stray scripts and invisible characters in anything published.
+    #     Blocking rather than advisory: a CJK character in English prose or a
+    #     Cyrillic homoglyph in a term is a defect, never a judgement call, and
+    #     the ranges are chosen so accented Latin, Greek and symbols never hit.
+    #     Two shipped-adjacent instances in three releases -- one in entry prose,
+    #     one in a registry cell -- and every other check was blind to both,
+    #     because the text is structurally valid and correctly spelled.
+    #     glossary/ is included deliberately even though it is generated: the
+    #     register renders the tracker's status notes verbatim, so sweeping it is
+    #     what catches a stray character that entered through a SHEET cell rather
+    #     than through a file. That is the path the v1.30 instance took.
+    for f in sorted(list(CONCEPTS.glob("*.md")) + list((ROOT / "notes").glob("*.md"))
+                    + list((ROOT / "glossary").glob("*.md"))
+                    + [ROOT / "README.md", ROOT / "CONTRIBUTING.md"]):
+        if not f.exists():
+            continue
+        text = f.read_text(encoding="utf-8")
+        seen = {}
+        for ch, cp, name in stray_scripts(text):
+            seen.setdefault((ch, cp, name), 0)
+            seen[(ch, cp, name)] += 1
+        for (ch, cp, name), n in sorted(seen.items()):
+            line = next((i for i, l in enumerate(text.splitlines(), 1) if ch in l), "?")
+            problems.append(f"charset: {f.name}:{line} contains {name} character "
+                            f"{ch!r} (U+{cp:04X}){'' if n == 1 else f', {n}x'} — "
+                            f"non-Latin script or invisible character in published content")
 
     # 1. schema completeness
     for e in entries:

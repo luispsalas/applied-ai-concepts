@@ -21,10 +21,40 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from entry_meta import stray_scripts  # noqa: E402
 
 SHEET_ID = "1AaMFKmkGjKyV9FOfkpGqc51K9bd0-mm8D9j3mIMXyAA"
 TAB = "AI Literacy Concepts"
+# The source registry. Not exported here -- swept, because a stray character in
+# a registry cell is invisible to `build.py check`: those cells reach the repo
+# only by being retyped into an entry, so nothing else looks at them. v1.30 put
+# `问题` in a risk-flags cell and it was found by an ad-hoc script, not a check.
+REGISTRY_ID = "1utge8R0fRhIdc5fOLIJDSkCC5ul3pY65alreZRNRcP4"
+REGISTRY_TAB = "Sources"
 TOKEN = Path.home() / ".config/gcp/sheets-token.json"
+
+
+def sweep_cells(rows, label):
+    """Report stray scripts / invisible characters in fetched sheet cells."""
+    hits = []
+    for n, row in enumerate(rows, start=1):
+        for ci, cell in enumerate(row):
+            for ch, cp, name in stray_scripts(str(cell)):
+                col = chr(65 + ci) if ci < 26 else f"col{ci+1}"
+                hits.append(f"    {label} {col}{n}: {name} {ch!r} (U+{cp:04X})")
+    seen, uniq = set(), []
+    for h in hits:
+        if h not in seen:
+            seen.add(h); uniq.append(h)
+    if uniq:
+        print(f"  \u26a0\ufe0f  {len(uniq)} stray-character cell(s) in {label} — fix in the sheet:")
+        print("\n".join(uniq[:25]))
+        if len(uniq) > 25:
+            print(f"    ... and {len(uniq)-25} more")
+    else:
+        print(f"  charset: {label} clean ({len(rows)} rows swept)")
+    return uniq
 
 
 def fetch(url, token=None, data=None):
@@ -110,6 +140,18 @@ def main():
     print(f"wrote {out}")
     print(f"  {len(rows)} rows x {width} cols  ({out.stat().st_size:,} bytes), read-back verified")
     print(f"  header: {', '.join(rows[0])}")
+
+    # Sweep both sheets for stray scripts. The tracker's notes render verbatim
+    # into the public register, so those also get caught by `build.py check`;
+    # the registry has no such downstream reader and is only covered here.
+    sweep_cells(rows, "tracker")
+    rng = urllib.parse.quote(f"{REGISTRY_TAB}!A1:P400")
+    reg = fetch(f"https://sheets.googleapis.com/v4/spreadsheets/{REGISTRY_ID}/values/{rng}"
+                f"?majorDimension=ROWS", token=tok["access_token"]).get("values", [])
+    if reg:
+        sweep_cells(reg, "registry")
+    else:
+        print("  \u26a0\ufe0f  registry returned no rows — sweep did NOT run")
 
 
 if __name__ == "__main__":

@@ -124,9 +124,18 @@ New entries must follow this schema in full.
 A corpus this size decays in ways that are invisible from inside a single entry. Three tiers, by what each check needs and how fast the thing it watches actually moves.
 
 ### Every publish — automatic, blocking
-`python3 scripts/build.py check` — fails the publish on schema gaps, README/glossary/count desync, unresolved links, alias collisions, unknown tags, a term status that disagrees with its visible line, an unparseable confidence rating, and any disagreement between the tracker export and the entries. Then the numbered steps in the publishing workflow: cross-reference sweep, tracker re-sort.
+`python3 scripts/build.py check` — fails the publish on schema gaps, README/glossary/count desync, unresolved links, alias collisions, unknown tags, a term status that disagrees with its visible line, an unparseable confidence rating, and any disagreement between the tracker export and the entries. **It also fails on a non-Latin script or invisible character anywhere in published content** — entries, notes, README, CONTRIBUTING and the generated glossary. Accented Latin, Greek and symbols are deliberately not flagged; CJK, Cyrillic (the homoglyph risk — U+0430 renders identically to a Latin `a`), Hebrew, Arabic, Devanagari, Thai, Hangul and zero-width characters are. Including the generated register is what catches a stray character that entered through a **sheet cell** rather than a file. `export-tracker.py` sweeps both sheets on every run for the same thing, because a registry cell reaches the repo only by being retyped and nothing else looks at it. Then the numbered steps in the publishing workflow: cross-reference sweep, tracker re-sort.
 
 **Most historical drift checks are gone rather than automated.** Essence, version and count drift used to need their own checks; those fields are now *derived* from entry front-matter, so there is nothing left to drift. Writing a check for them today would be dead code.
+
+### Every publish that cites a reused source — `python3 scripts/citecheck.py <new files>`
+**The only check that can catch a wrong *referent*.** It extracts every `| SRC-NNN | …` row from the files you name and compares each against how the same ID is rendered elsewhere in the corpus, reporting `DIFFERS` (exit 1) when the form is one the corpus has never used.
+
+Nothing else can catch this. A wrong-but-well-formed URL resolves, so the link checker passes it; a real-but-wrong ID exists in the registry, so the ID gate passes it; the schema is intact, so `build.py check` passes it. The failures it has caught were not typos but **misattributions** — an InfoQ article cited for a generalization paper, an ISO technical report cited for InstructGPT, a vendor blog cited for an evaluation paper. Each was plausible and pointed at a real but different source.
+
+**It ranks candidate forms by frequency, and that is the whole reason it is a script rather than a grep.** Older IDs carry several rendered forms — `citecheck.py --all` reports **96 of 262 IDs with more than one** — so comparing against whichever sorts first alphabetically produces false positives, and a false positive is how a check earns being skimmed. The *dominant* form is the corpus's actual convention.
+
+A `NEW` line is not a defect; it means the ID is cited nowhere else, so the corpus cannot vouch for it — **verify that one against the registry by hand.**
 
 ### Monthly — `python3 scripts/maintain.py offline`
 Report-only, no network. US-English sweep (quotations and Sources rows excluded), Sources-table completeness, and SRC-IDs cited in prose but missing from a Sources table.
