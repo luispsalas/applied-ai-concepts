@@ -144,7 +144,10 @@ def vocabulary(report):
         if not term or term.startswith("#"):
             continue
         t = term.lower()
-        if t in known or t in queued or t in prose:
+        # Substring against tracker terms too, so a row later renamed to a
+        # house title ("Supply Chain Risk (AI)") does not start re-reporting
+        # the plain term it was queued under.
+        if t in known or t in prose or any(t in q for q in queued):
             continue
         report.append(f"vocab     '{term}' — not an entry, not an alias, not in the tracker, "
                       f"and never mentioned in any entry")
