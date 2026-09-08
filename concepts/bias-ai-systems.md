@@ -1,7 +1,7 @@
 <!--meta
 category: Foundations
 short: Systematic errors that unfairly advantage or disadvantage certain groups — often inherited from training data, rarely visible in any single output
-aliases: [algorithmic bias, AI fairness, discrimination in AI, unfair outcomes, model bias]
+aliases: [algorithmic bias, AI fairness, discrimination in AI, unfair outcomes, sampling bias, selection bias, model bias]
 tags: [Ethics, Data Governance, Regulatory]
 established: established
 -->

@@ -1,7 +1,7 @@
 <!--meta
 category: Organizational Readiness
 short: The gap between what AI can do and what an organization gets from it — closed by complementary investment, not by better models
-aliases: [ROI on AI, why isn't AI paying off, business value, adoption gap, productivity paradox, pilot purgatory]
+aliases: [ROI on AI, why isn't AI paying off, business value, adoption gap, productivity paradox, total cost of ownership, pilot purgatory]
 tags: [Data Governance, Architecture, Evaluation]
 established: emerging
 -->

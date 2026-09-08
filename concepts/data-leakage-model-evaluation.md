@@ -1,7 +1,7 @@
 <!--meta
 category: Reliability & Quality
 short: When information from the test set reaches the model during training, so measured performance describes a exam the model had already seen — the most common cause of results that do not survive deployment
-aliases: [train/test contamination, benchmark contamination, test set leakage, data contamination, why did accuracy drop in production, too good to be true results, leakage]
+aliases: [train/test contamination, benchmark contamination, test set leakage, data contamination, why did accuracy drop in production, too good to be true results, cross-validation, leakage]
 tags: [Evaluation, Data Governance]
 established: established
 -->

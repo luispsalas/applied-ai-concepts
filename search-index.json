@@ -399,6 +399,7 @@
         "provider abstraction",
         "AI proxy",
         "LLM Mesh",
+        "vendor lock-in",
         "one place to control AI usage"
       ],
       "tags": [
@@ -792,6 +793,8 @@
         "AI fairness",
         "discrimination in AI",
         "unfair outcomes",
+        "sampling bias",
+        "selection bias",
         "model bias"
       ],
       "tags": [
@@ -1479,6 +1482,7 @@
         "data contamination",
         "why did accuracy drop in production",
         "too good to be true results",
+        "cross-validation",
         "leakage"
       ],
       "tags": [
@@ -1516,6 +1520,7 @@
         "least data",
         "GDPR minimization",
         "data reduction",
+        "data retention",
         "need to know"
       ],
       "tags": [
@@ -1982,6 +1987,7 @@
         "adapting a model",
         "custom model",
         "training on our own data",
+        "transfer learning",
         "domain adaptation"
       ],
       "tags": [
@@ -4898,6 +4904,7 @@
         "business value",
         "adoption gap",
         "productivity paradox",
+        "total cost of ownership",
         "pilot purgatory"
       ],
       "tags": [

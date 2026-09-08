@@ -1,7 +1,7 @@
 <!--meta
 category: System Architecture
 short: One control point in front of every model provider — the only place organizational AI policy can actually be enforced, and the place every prompt now collects
-aliases: [LLM gateway, model gateway, LLM proxy, model router, LLM routing, provider abstraction, AI proxy, LLM Mesh, one place to control AI usage]
+aliases: [LLM gateway, model gateway, LLM proxy, model router, LLM routing, provider abstraction, AI proxy, LLM Mesh, vendor lock-in, one place to control AI usage]
 tags: [Architecture, Data Governance, Privacy]
 established: established
 -->

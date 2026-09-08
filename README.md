@@ -30,7 +30,7 @@ This wiki treats AI and data governance as closely connected. Alongside technica
 
 ### Looking a concept up
 
-Browse the [glossary index](glossary/index.md) — 123 terms alphabetically with their one-line essences — or use **`search.html`**, a self-contained search page covering every term plus 738 hand-written synonyms.
+Browse the [glossary index](glossary/index.md) — 123 terms alphabetically with their one-line essences — or use **`search.html`**, a self-contained search page covering every term plus 745 hand-written synonyms.
 
 It is built for concept lookup rather than text search, so describing the problem works: *"who is responsible when the AI does it"*, *"it used to work"*, *"why do I get different answers"*. Each result shows which synonym matched.
 
