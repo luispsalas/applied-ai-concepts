@@ -30,7 +30,7 @@ This wiki treats AI and data governance as closely connected. Alongside technica
 
 ### Looking a concept up
 
-Browse the [glossary index](glossary/index.md) — 127 terms alphabetically with their one-line essences — or use **`search.html`**, a self-contained search page covering every term plus 782 hand-written synonyms.
+Browse the [glossary index](glossary/index.md) — 131 terms alphabetically with their one-line essences — or use **`search.html`**, a self-contained search page covering every term plus 813 hand-written synonyms.
 
 It is built for concept lookup rather than text search, so describing the problem works: *"who is responsible when the AI does it"*, *"it used to work"*, *"why do I get different answers"*. Each result shows which synonym matched.
 
@@ -136,6 +136,7 @@ Every claim in this wiki is meant to trace back to a real, checkable source — 
 | [Transformers](concepts/transformers.md) | The architecture underneath almost everything — and the reason a weakness in one model is rarely local to it | ✅ v1.0 |
 | [Zero-shot / Few-shot Learning](concepts/zero-shot-few-shot-learning.md) | Getting a task done with no examples or a handful, without changing the model — and the measured finding that the examples do not teach it what you think | ✅ v1.0 |
 | [Latency (AI Systems)](concepts/latency-ai-systems.md) | The wait between asking and being answered — and the constraint that quietly decides whether a human review step survives contact with the product | ✅ v1.0 |
+| [Mixture of Experts](concepts/mixture-of-experts.md) | Models where only a fraction of the parameters run for any given token — which quietly breaks parameter count as a way of comparing anything | ✅ v1.0 |
 
 ### Interaction & Design
 *How you work with models effectively*
@@ -265,6 +266,8 @@ Every claim in this wiki is meant to trace back to a real, checkable source — 
 | [Environmental Cost of AI](concepts/environmental-cost-of-ai.md) | The energy, water and emissions behind model training and use — a rising reporting expectation that organizations cannot currently compute for themselves | ✅ v1.0 |
 | [Anonymization and Pseudonymization](concepts/anonymization-and-pseudonymization.md) | Two words used interchangeably that mean opposite things in law — one takes data out of scope, the other does not | ✅ v1.0 |
 | [Privacy Attacks (AI Models)](concepts/privacy-attacks-ai-models.md) | Querying a deployed model to get back what went into it — the training data, its members, or the model itself | ✅ v1.0 |
+| [Dangerous Capability](concepts/dangerous-capability.md) | What a model could do if someone tried to make it — measured separately from whether it would, because the two need different evidence and different controls | ✅ v1.0 |
+| [Supply Chain Risk (AI)](concepts/supply-chain-risk-ai.md) | Everything in your AI system that you did not build and cannot inspect — and the point at which the law stops treating you as a user and starts treating you as the maker | ✅ v1.0 |
 
 ### Organizational Readiness
 *The human and organizational conditions for responsible AI adoption*
@@ -278,6 +281,7 @@ Every claim in this wiki is meant to trace back to a real, checkable source — 
 | [Value Realization (AI)](concepts/value-realization-ai.md) | The gap between what AI can do and what an organization gets from it — closed by complementary investment, not by better models | ✅ v1.0 |
 | [Continuous Feedback & Improvement](concepts/continuous-feedback-improvement.md) | Treating an AI system as something that must be watched and corrected for as long as it runs — a standing capability with an owner, not a post-launch intention | ✅ v1.0 |
 | [Tacit Knowledge](concepts/tacit-knowledge.md) | The expertise people have but cannot fully put into words — the hardest thing to give an AI system as context, and the first thing lost when people stop practicing | ✅ v1.0 |
+| [Service Level Objective](concepts/service-level-objective.md) | The number you commit to before anyone is angry — and the question of what it can even mean when the output is probabilistic rather than up-or-down | ✅ v1.0 |
 
 ---
 
@@ -349,7 +353,7 @@ See [CHANGELOG.md](CHANGELOG.md) for version history.
 ## Status
 
 **Phase 1 ✅ — foundation:** core concepts published and sourced, each with a governance-notes section; standalone [governance & observability notes](notes/governance-and-observability.md) doc live.
-**Phase 2 (current) — breadth & cross-linking:** 127 concepts across 8 categories, a [glossary index](glossary/index.md), client-side [search](search.html), and a cross-reference layer connecting related entries.
+**Phase 2 (current) — breadth & cross-linking:** 131 concepts across 8 categories, a [glossary index](glossary/index.md), client-side [search](search.html), and a cross-reference layer connecting related entries.
 **Phase 3 (planned):** audience-specific rendering, glossary automation, and a manifesto distilled from the wiki's principles.
 
 ---

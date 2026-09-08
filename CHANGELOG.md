@@ -1,5 +1,28 @@
 # Changelog
 
+## v1.30 — September 2026
+
+**The score-5 outstanding queue, cleared. Count 127 → 131.**
+
+- `supply-chain-risk-ai` — v1.0, **`established`** (renamed from *Supply Chain Risk*)
+- `dangerous-capability` — v1.0, **`emerging`**
+- `service-level-objective` — v1.0, **`established`**
+- `mixture-of-experts` — v1.0, **`established`**
+
+**One of these carried an instruction from its own triage note, and honoring it changed the outcome.** *Dangerous Capability* was flagged as possibly resolving to `vendor` if the only definitions turned out to be individual labs' frameworks. Check 1 was run before drafting: **Shevlane et al. is 21 authors spanning competing labs, academia and policy institutes, and uses the term directly** — independent use, cleared on usage. It is `emerging`, not `vendor`.
+
+**What stays unsettled there is the threshold, and the entry declines to supply one.** Each frontier developer publishes its own framework with its own trigger levels, no independent standard adjudicates, and the EU AI Act's adjacent *systemic risk* concept does not resolve it. What the entry does carry is the distinction the term exists for: **capability versus propensity** — what a model *can* do, tested separately from whether it *would*. A refusal is a behavioral layer over a capability, and fine-tuning can strip it without touching what lies underneath.
+
+**Supply Chain Risk's central point is legal rather than technical.** Conventional supply-chain practice transfers and then stops: you can verify a model file's hash and still have no idea how it behaves. Meanwhile **EU AI Act Article 25 makes you the *provider*** — with the maker's full obligations — if you put your name on a high-risk system, substantially modify it, or change its intended purpose. **Fine-tuning a base model and shipping it under your own brand can be all three.** So the inheritance runs both ways: risk you cannot inspect, and liability you did not plan to assume.
+
+**Service Level Objective exists for a question the SRE literature cannot answer.** The SLI/SLO/SLA definitions are quoted verbatim from the canonical source and transfer unchanged to availability and latency. **Output correctness does not, because it has no live ground truth** — you cannot compute "was that answer right" the way you compute a status code. Every quality objective is therefore a commitment about a *proxy*, and the honest form names which one. Two cautions follow: a percentage target is only meaningful against a fixed request distribution, and **whatever you target gets optimized**, which reintroduces the false-positive/false-negative trade under another name.
+
+**Mixture of Experts is filed for one literacy consequence: parameter count stopped having a single meaning.** Total and active parameters can differ by an order of magnitude, so every comparison using model size is ambiguous unless it says which number — and both readings are wrong in different directions. Two further corrections the entry makes: **sparsity buys compute, never memory** (all experts must be resident to serve), which is why MoE suits hosted serving and not local or edge deployment; and **"experts" are not interpretable specialists** — routing is learned, and nothing is consulting an expert on anything.
+
+**Sources:** 7 added (SRC-301 – SRC-307), 8 reused. Article 25 and the SRE definitions were read from the primary texts. **The citation diff produced two flags, both false positives** — it compares against the alphabetically-first variant rather than the most common one, and the corpus holds several rendered forms for older IDs.
+
+---
+
 ## v1.29 — September 2026
 
 **Four consolidated entries, folding nine queued terms into four. Count 123 → 127.**

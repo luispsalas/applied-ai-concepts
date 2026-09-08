@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "count": 127,
+  "count": 131,
   "entries": [
     {
       "slug": "accountability-ai-systems",
@@ -1519,6 +1519,48 @@
       "path": "concepts/curse-of-knowledge-ai-context.md"
     },
     {
+      "slug": "dangerous-capability",
+      "term": "Dangerous Capability",
+      "category": "Observability & Governance",
+      "essence": "A model ability that could enable serious harm if used — assessed for what the model *can* do, separately from whether it is inclined to do it.",
+      "short": "What a model could do if someone tried to make it — measured separately from whether it would, because the two need different evidence and different controls",
+      "aliases": [
+        "dangerous capabilities",
+        "dangerous capability evaluation",
+        "extreme risk",
+        "uplift",
+        "capability evaluation",
+        "CBRN uplift",
+        "what could this model be used for"
+      ],
+      "tags": [
+        "Safety",
+        "Regulatory",
+        "Evaluation"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "ai-incident-reporting",
+        "catastrophic-forgetting",
+        "evaluation",
+        "fine-tuning",
+        "frontier-ai",
+        "harness-paradigm",
+        "jailbreak",
+        "red-teaming",
+        "systemic-risk-ai",
+        "tool-use"
+      ],
+      "sources": [
+        "SRC-001",
+        "SRC-200",
+        "SRC-203",
+        "SRC-303"
+      ],
+      "path": "concepts/dangerous-capability.md"
+    },
+    {
       "slug": "data-leakage-ai-systems",
       "term": "Data Leakage (AI Systems)",
       "category": "Observability & Governance",
@@ -3020,6 +3062,49 @@
       "path": "concepts/metaprompting.md"
     },
     {
+      "slug": "mixture-of-experts",
+      "term": "Mixture of Experts",
+      "category": "Foundations",
+      "essence": "An architecture that activates only a fraction of its parameters for each input — decoupling a model's total size from the compute any single request actually uses.",
+      "short": "Models where only a fraction of the parameters run for any given token — which quietly breaks parameter count as a way of comparing anything",
+      "aliases": [
+        "MoE",
+        "sparse model",
+        "sparsely-gated",
+        "conditional computation",
+        "active parameters",
+        "total parameters",
+        "expert routing",
+        "why is this model so big but so fast"
+      ],
+      "tags": [
+        "Architecture",
+        "Model Behavior",
+        "AI Literacy"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "ai-benchmarking",
+        "determinism-vs-probabilism",
+        "edge-ai",
+        "environmental-cost-of-ai",
+        "inference",
+        "latency-ai-systems",
+        "local-llms",
+        "model-card-system-card",
+        "small-language-models",
+        "transformers"
+      ],
+      "sources": [
+        "SRC-141",
+        "SRC-305",
+        "SRC-306",
+        "SRC-307"
+      ],
+      "path": "concepts/mixture-of-experts.md"
+    },
+    {
       "slug": "model-card-system-card",
       "term": "Model Card / System Card",
       "category": "Observability & Governance",
@@ -4492,6 +4577,50 @@
       "path": "concepts/scalable-oversight.md"
     },
     {
+      "slug": "service-level-objective",
+      "term": "Service Level Objective",
+      "category": "Organizational Readiness",
+      "essence": "A target value for a measured aspect of service quality — and, for AI systems, the awkward question of what to promise when correctness is probabilistic rather than binary.",
+      "short": "The number you commit to before anyone is angry — and the question of what it can even mean when the output is probabilistic rather than up-or-down",
+      "aliases": [
+        "SLO",
+        "SLI",
+        "SLA",
+        "service level agreement",
+        "service level indicator",
+        "service level",
+        "error budget",
+        "uptime commitment",
+        "what can we promise"
+      ],
+      "tags": [
+        "Architecture",
+        "Evaluation",
+        "Data Governance"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "continuous-feedback-improvement",
+        "evaluation",
+        "false-positives-and-false-negatives",
+        "latency-ai-systems",
+        "llm-as-judge",
+        "model-data-drift",
+        "model-version-update",
+        "observability",
+        "operational-readiness-ai",
+        "scalability-ai-systems"
+      ],
+      "sources": [
+        "SRC-047",
+        "SRC-247",
+        "SRC-280",
+        "SRC-304"
+      ],
+      "path": "concepts/service-level-objective.md"
+    },
+    {
       "slug": "shadow-ai",
       "term": "Shadow AI",
       "category": "Observability & Governance",
@@ -4571,6 +4700,48 @@
         "SRC-143"
       ],
       "path": "concepts/small-language-models.md"
+    },
+    {
+      "slug": "supply-chain-risk-ai",
+      "term": "Supply Chain Risk (AI)",
+      "category": "Observability & Governance",
+      "essence": "The risk an organization inherits from the models, weights, datasets, and packages it did not build and usually cannot inspect.",
+      "short": "Everything in your AI system that you did not build and cannot inspect — and the point at which the law stops treating you as a user and starts treating you as the maker",
+      "aliases": [
+        "supply chain risk",
+        "AI supply chain",
+        "model provenance",
+        "third-party model risk",
+        "upstream risk",
+        "AI BOM",
+        "where did this model come from"
+      ],
+      "tags": [
+        "Security",
+        "Regulatory",
+        "Data Governance"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "compliance-ai-systems",
+        "data-provenance-lineage",
+        "fine-tuning",
+        "frontier-ai",
+        "model-card-system-card",
+        "model-version-update",
+        "prompt-injection",
+        "shadow-ai",
+        "systemic-risk-ai",
+        "training-data"
+      ],
+      "sources": [
+        "SRC-001",
+        "SRC-269",
+        "SRC-301",
+        "SRC-302"
+      ],
+      "path": "concepts/supply-chain-risk-ai.md"
     },
     {
       "slug": "sycophancy-llms",
