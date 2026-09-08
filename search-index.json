@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "count": 117,
+  "count": 123,
   "entries": [
     {
       "slug": "accountability-ai-systems",
@@ -225,6 +225,7 @@
       "aliases": [
         "agentic design",
         "agent design patterns",
+        "agentic pattern",
         "agentic patterns",
         "reflection pattern",
         "orchestrator-worker",
@@ -893,6 +894,48 @@
         "SRC-212"
       ],
       "path": "concepts/bluewashing.md"
+    },
+    {
+      "slug": "catastrophic-forgetting",
+      "term": "Catastrophic Forgetting",
+      "category": "Reliability & Quality",
+      "essence": "The tendency of neural networks to lose previously learned knowledge when trained on new data — a key constraint in continual learning and fine-tuning.",
+      "short": "Teaching a model something new can silently remove something it already knew — including behavior nobody re-tests",
+      "aliases": [
+        "catastrophic interference",
+        "forgetting",
+        "continual learning",
+        "stability-plasticity dilemma",
+        "why did fine-tuning break something else",
+        "capability regression"
+      ],
+      "tags": [
+        "Model Behavior",
+        "Evaluation",
+        "Safety"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "alignment-ai-systems",
+        "evaluation",
+        "fine-tuning",
+        "guardrails-ai-systems",
+        "model-data-drift",
+        "model-version-update",
+        "overfitting",
+        "rag",
+        "rlhf",
+        "training-data"
+      ],
+      "sources": [
+        "SRC-196",
+        "SRC-286",
+        "SRC-287",
+        "SRC-288",
+        "SRC-289"
+      ],
+      "path": "concepts/catastrophic-forgetting.md"
     },
     {
       "slug": "cognitive-offloading-deskilling",
@@ -1713,6 +1756,7 @@
         "data-leakage-ai-systems",
         "data-minimization",
         "inference",
+        "latency-ai-systems",
         "local-llms",
         "model-version-update",
         "observability",
@@ -1774,6 +1818,48 @@
         "SRC-227"
       ],
       "path": "concepts/embeddings.md"
+    },
+    {
+      "slug": "environmental-cost-of-ai",
+      "term": "Environmental Cost of AI",
+      "category": "Observability & Governance",
+      "essence": "Training and running models consumes significant energy and water — a real and often-invisible cost of the convenience, and an increasing reporting expectation.",
+      "short": "The energy, water and emissions behind model training and use — a rising reporting expectation that organizations cannot currently compute for themselves",
+      "aliases": [
+        "AI energy use",
+        "carbon footprint of AI",
+        "AI water usage",
+        "data center energy",
+        "sustainability of AI",
+        "is AI bad for the environment"
+      ],
+      "tags": [
+        "Data Governance",
+        "Regulatory",
+        "Ethics"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "ai-management-system-iso-42001",
+        "bluewashing",
+        "compliance-ai-systems",
+        "edge-ai",
+        "frontier-ai",
+        "inference",
+        "latency-ai-systems",
+        "model-card-system-card",
+        "small-language-models",
+        "value-realization-ai"
+      ],
+      "sources": [
+        "SRC-169",
+        "SRC-201",
+        "SRC-247",
+        "SRC-277",
+        "SRC-278"
+      ],
+      "path": "concepts/environmental-cost-of-ai.md"
     },
     {
       "slug": "evaluation",
@@ -2546,6 +2632,49 @@
       "path": "concepts/large-language-models.md"
     },
     {
+      "slug": "latency-ai-systems",
+      "term": "Latency (AI Systems)",
+      "category": "Foundations",
+      "essence": "The time between sending a request to an AI system and receiving a response — a performance constraint that shapes what real-time and user-facing applications can rely on.",
+      "short": "The wait between asking and being answered — and the constraint that quietly decides whether a human review step survives contact with the product",
+      "aliases": [
+        "latency",
+        "response time",
+        "time to first token",
+        "TTFT",
+        "tokens per second",
+        "speed",
+        "how fast is it",
+        "why is it slow"
+      ],
+      "tags": [
+        "AI Literacy",
+        "Architecture"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "agent-hooks",
+        "context-window",
+        "edge-ai",
+        "human-in-the-loop",
+        "inference",
+        "multi-agent-systems",
+        "observability",
+        "operational-readiness-ai",
+        "reasoning-models",
+        "scalability-ai-systems"
+      ],
+      "sources": [
+        "SRC-142",
+        "SRC-155",
+        "SRC-247",
+        "SRC-279",
+        "SRC-280"
+      ],
+      "path": "concepts/latency-ai-systems.md"
+    },
+    {
       "slug": "llm-as-judge",
       "term": "LLM-as-Judge",
       "category": "Reliability & Quality",
@@ -2710,6 +2839,45 @@
         "SRC-137"
       ],
       "path": "concepts/memory-ai-systems.md"
+    },
+    {
+      "slug": "metaprompting",
+      "term": "Metaprompting",
+      "category": "Interaction & Design",
+      "essence": "Prompting about prompting — using a model to write, refine or structure the instructions given to a model, a practice whose several meanings share one governance consequence.",
+      "short": "Prompting about prompting — three different practices share the name, and the governance question is the same for all of them",
+      "aliases": [
+        "meta prompting",
+        "prompt generation",
+        "prompt optimization",
+        "using AI to write prompts",
+        "self-improving prompts"
+      ],
+      "tags": [
+        "AI Literacy",
+        "Prompting"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "agentic-design-patterns",
+        "context-engineering",
+        "evaluation",
+        "guardrails-ai-systems",
+        "hallucination",
+        "human-in-the-loop",
+        "prompt-engineering",
+        "reasoning-models",
+        "system-prompt",
+        "zero-shot-few-shot-learning"
+      ],
+      "sources": [
+        "SRC-013",
+        "SRC-014",
+        "SRC-259",
+        "SRC-281"
+      ],
+      "path": "concepts/metaprompting.md"
     },
     {
       "slug": "model-card-system-card",
@@ -3185,6 +3353,50 @@
       "path": "concepts/orchestration-ai-systems.md"
     },
     {
+      "slug": "overfitting",
+      "term": "Overfitting",
+      "category": "Reliability & Quality",
+      "essence": "When a model learns its training material so well that it memorizes rather than generalizes — and fails on anything slightly different.",
+      "short": "Learning the training set instead of the pattern — and the reason a model's reported score is not a promise about your data",
+      "aliases": [
+        "underfitting",
+        "generalization",
+        "generalization gap",
+        "bias-variance trade-off",
+        "bias variance",
+        "double descent",
+        "why does it do well on tests but badly in practice"
+      ],
+      "tags": [
+        "Evaluation",
+        "Model Behavior",
+        "AI Literacy"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "ai-benchmarking",
+        "catastrophic-forgetting",
+        "data-leakage-ai-systems",
+        "data-leakage-model-evaluation",
+        "evaluation",
+        "fine-tuning",
+        "model-data-drift",
+        "model-version-update",
+        "synthetic-data",
+        "training-data"
+      ],
+      "sources": [
+        "SRC-150",
+        "SRC-161",
+        "SRC-282",
+        "SRC-283",
+        "SRC-284",
+        "SRC-285"
+      ],
+      "path": "concepts/overfitting.md"
+    },
+    {
       "slug": "ownership-ai-systems",
       "term": "Ownership (AI Systems)",
       "category": "Observability & Governance",
@@ -3462,6 +3674,49 @@
         "SRC-151"
       ],
       "path": "concepts/privacy-ai-systems.md"
+    },
+    {
+      "slug": "prompt-chaining",
+      "term": "Prompt Chaining",
+      "category": "Interaction & Design",
+      "essence": "Connecting multiple prompts in sequence so each output feeds the next — a technique for breaking complex tasks into manageable, auditable steps.",
+      "short": "Breaking one task into a sequence of prompts — which buys you inspectable intermediate steps, and costs you a path for errors to travel down",
+      "aliases": [
+        "chaining",
+        "LLM chaining",
+        "AI chains",
+        "multi-step prompting",
+        "task decomposition",
+        "breaking a task into steps",
+        "step-by-step prompts"
+      ],
+      "tags": [
+        "Prompting",
+        "Architecture",
+        "AI Literacy"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "agentic-design-patterns",
+        "ai-agent",
+        "audit-trail-ai",
+        "evaluation",
+        "failure-modes-ai-systems",
+        "human-in-the-loop",
+        "latency-ai-systems",
+        "orchestration-ai-systems",
+        "prompt-engineering",
+        "reasoning-models"
+      ],
+      "sources": [
+        "SRC-045",
+        "SRC-047",
+        "SRC-104",
+        "SRC-238",
+        "SRC-290"
+      ],
+      "path": "concepts/prompt-chaining.md"
     },
     {
       "slug": "prompt-engineering",
@@ -3883,6 +4138,7 @@
         "human feedback training",
         "RLAIF",
         "DPO",
+        "Direct Preference Optimization",
         "how models are made polite"
       ],
       "tags": [
@@ -3986,6 +4242,7 @@
         "evaluation",
         "human-in-the-loop",
         "knowledge-base",
+        "latency-ai-systems",
         "local-llms",
         "model-data-drift",
         "observability",

@@ -99,7 +99,7 @@ So the honest summary: edge AI is often the right choice, and it trades one kind
 - [Local LLMs](local-llms.md) — models on infrastructure you own; the sibling concept, distinguished by fleet control
 - [Small Language Models (SLMs)](small-language-models.md) — the model sizes that make edge deployment feasible
 - [Inference](inference.md) — the phase being relocated, and the cost profile that motivates it
-- Latency (AI Systems) — the constraint that most often forces the architecture
+- [Latency (AI Systems)](latency-ai-systems.md) — the constraint that most often forces the architecture
 - [Privacy (AI Systems)](privacy-ai-systems.md) — the benefit most often claimed for it
 - [Data Minimization](data-minimization.md) — the principle edge deployment can satisfy structurally
 - [Observability](observability.md) — what is lost when the central chokepoint disappears

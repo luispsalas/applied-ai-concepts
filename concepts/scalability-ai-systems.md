@@ -108,7 +108,7 @@ But the failure that actually causes harm is quieter. When volume rises, human r
 - [Model/Data Drift](model-data-drift.md) — the other silent degradation, on a different axis
 - [Local LLMs](local-llms.md) — fixed capacity is a different scaling constraint from metered elasticity
 - [Agency (AI Systems)](agency-ai-systems.md) — widening autonomy is the tempting answer to a throughput ceiling
-- Latency (AI Systems) — the performance constraint that bounds what real-time use can rely on
+- [Latency (AI Systems)](latency-ai-systems.md) — the performance constraint that bounds what real-time use can rely on
 
 ---
 

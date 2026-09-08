@@ -4,14 +4,14 @@ Every term this wiki tracks, with its status — **including the ones that are n
 
 The field names things faster than it settles them, and a glossary that repeats every new label without comment is a list of buzzwords. So each term is judged on whether it is a *real term*. That is a separate question from how good the evidence is for the claims inside an entry, which each entry states for itself in its own confidence level.
 
-**134 terms tracked — 117 published, 17 not.** See [how terms are admitted](../CONTRIBUTING.md#term-status--the-admission-test).
+**134 terms tracked — 123 published, 11 not.** See [how terms are admitted](../CONTRIBUTING.md#term-status--the-admission-test).
 
 | Status | Meaning | Count |
 |---|---|---|
-| `established` | Recognized term of art, in independent use. | 119 |
-| `emerging` | Real and in use, but definitions still vary between sources. | 9 |
+| `established` | Recognized term of art, in independent use. | 117 |
+| `emerging` | Real and in use, but definitions still vary between sources. | 8 |
 | `declined` | Considered and turned down — not a term this wiki will publish. | 1 |
-| `covered` | A real term, already covered by another entry — findable there as an alias. | 5 |
+| `covered` | A real term, already covered by another entry — findable there as an alias. | 8 |
 
 ---
 
@@ -24,7 +24,7 @@ The field names things faster than it settles them, and a glossary that repeats 
 | Agent Memory | `covered` | **covered by [Memory (AI Systems)](../concepts/memory-ai-systems.md)** | COVERED by Memory (AI Systems) — decided Sep 7 2026 under admission check 4. A real established term, but that entry already is this one: it uses the in-trial / cross-trial distinction, covers externalized file-system state and agent memory-loss failure, and cites the agent-memory survey (SRC-137) as its source. A separate entry would be a near-duplicate. Resolved by alias rather than a split, so the term stays findable: agent memory, cross-session memory and what does the agent remember all resolve there. The register derives the pointer from that alias, so retargeting the alias moves the pointer. |
 | [Agent Skills](../concepts/agent-skills.md) | `established` | yes | RENAMED from "Skill" and published Sep 7 2026, resolving the vendor status — the bare word collided with Alexa Skills and with ordinary English. Cleared the gate ON USAGE rather than on governance: originated at Anthropic, released as an open standard, now implemented by roughly 45 clients including direct competitors (OpenAI Codex, Gemini CLI, GitHub Copilot, VS Code, Mistral, Cursor, Databricks, Snowflake). A different establishment route from A2A, which cleared on foundation governance with thin usage. |
 | [Agentic Design Patterns](../concepts/agentic-design-patterns.md) | `emerging` | yes | RENAMED from "Agentic Design" and published Sep 7 2026 as `emerging`. This row's caution was HALF right: "agentic design" is not a settled discipline, but "agentic design PATTERNS" is real vocabulary with two independent anchor catalogs — Ng's four (The Batch, Mar 2024) and Anthropic's workflow set. They do not match, and no canonical list exists, which is exactly why it ships emerging rather than established. Check 4: Orchestration holds the workflow-versus-agentic distinction but no pattern catalog, so this is a real gap. ⚠️ The oversight-profile table is the wiki's own framing, not a finding — no source organizes patterns by where refusal can occur. |
-| Agentic Pattern | `emerging` | not yet | "Agentic pattern" is used loosely as a synonym for agent design templates; no canonical catalogue exists. Likely redundant with Agentic Design — decide whether both are needed. |
+| Agentic Pattern | `covered` | **covered by [Agentic Design Patterns](../concepts/agentic-design-patterns.md)** | COVERED by Agentic Design Patterns — decided Sep 7 2026, confirming this row's own caution that the two were likely redundant. That entry's technical definition literally defines this term, and it already carried "agentic patterns" as an alias; the exact singular form was added so it resolves. No separate entry: the reasons for filing the parent `emerging` — Ng's four-pattern catalog and Anthropic's do not match, and no canonical list exists — apply to this row unchanged. Folded by alias, so the term stays findable. |
 | [AI Agent](../concepts/ai-agent.md) | `established` | yes |  |
 | [AI Benchmarking](../concepts/ai-benchmarking.md) | `established` | yes |  |
 | [AI Disclosure (Attribution)](../concepts/ai-disclosure-attribution.md) | `established` | yes |  |
@@ -42,7 +42,7 @@ The field names things faster than it settles them, and a glossary that repeats 
 | [Bias (AI Systems)](../concepts/bias-ai-systems.md) | `established` | yes |  |
 | [Black Box](../concepts/black-box.md) | `established` | yes |  |
 | [Bluewashing](../concepts/bluewashing.md) | `established` | yes |  |
-| Catastrophic forgetting | `established` | not yet |  |
+| [Catastrophic Forgetting](../concepts/catastrophic-forgetting.md) | `established` | yes | ESTABLISHED — published Sep 8 2026. Named since McCloskey & Cohen 1989 (SRC-286); mechanism from French's stability-plasticity framing (SRC-287); mitigation and its cost from Kirkpatrick et al. (SRC-288). ⚠️ Term normalized to title case here so it matches the entry title — the export gate compares exact strings. Governance hook: a fine-tune is tested for what it was meant to add, never for what it may have removed, and refusals are learned behavior that can be forgotten. |
 | Checkpointing | `established` | not yet |  |
 | [Cognitive Offloading & Deskilling](../concepts/cognitive-offloading-deskilling.md) | `established` | yes |  |
 | [Compliance (AI Systems)](../concepts/compliance-ai-systems.md) | `established` | yes |  |
@@ -64,11 +64,11 @@ The field names things faster than it settles them, and a glossary that repeats 
 | [Data Quality](../concepts/data-quality.md) | `established` | yes |  |
 | [Deception (AI Systems)](../concepts/deception-ai-systems.md) | `established` | yes |  |
 | [Determinism vs Probabilism](../concepts/determinism-vs-probabilism.md) | `established` | yes |  |
-| Direct Preference Optimization | `established` | not yet |  |
+| Direct Preference Optimization | `covered` | **covered by [RLHF (Reinforcement Learning from Human Feedback)](../concepts/rlhf.md)** | COVERED by RLHF — decided Sep 8 2026. That entry's technical definition already explains DPO in mechanical terms (a similar result without a separate reward model) and states that the governance question — whose preferences — is identical across RLHF, DPO and RLAIF, which it treats as one family. It also revisits DPO in its confidence section. This clears the alias test: the target DEFINES the term rather than merely mentioning it. The full term was added to RLHF's aliases so it resolves. |
 | [Domain](../concepts/domain.md) | `established` | yes |  |
 | [Edge AI](../concepts/edge-ai.md) | `established` | yes |  |
 | [Embeddings](../concepts/embeddings.md) | `established` | yes |  |
-| Environmental Cost of AI | `established` | not yet |  |
+| [Environmental Cost of AI](../concepts/environmental-cost-of-ai.md) | `established` | yes | ESTABLISHED — published Sep 7 2026. Clears all four checks on independent use across intergovernmental, academic and press sources. ⚠️ SOURCING CAUTION, which is this entry's main hazard: published figures vary by large factors depending on boundary choices (power generation included or not, embodied hardware counted or not, training amortized or not), so numbers from different sources are frequently not comparable. Electricity figures from the IEA (SRC-277); water from Li et al. (SRC-278), which are ESTIMATES and must be cited as such. The entry's most confident claim is the structural one — that providers do not publish per-request energy, so an organization cannot compute its own footprint while reporting expectations rise. |
 | [Evaluation (AI Systems)](../concepts/evaluation.md) | `established` | yes |  |
 | [Explainability (XAI)](../concepts/explainability-xai.md) | `established` | yes |  |
 | [Failure Modes (AI Systems)](../concepts/failure-modes-ai-systems.md) | `established` | yes |  |
@@ -92,12 +92,12 @@ The field names things faster than it settles them, and a glossary that repeats 
 | [Knowledge Graphs](../concepts/knowledge-graphs.md) | `established` | yes |  |
 | LangChain | `declined` | **no — declined** | DECLINED Sep 6 2026 by the author. A named open-source product, not a concept — CONTRIBUTING already excludes product documentation. Unlike the vendor rows there is nothing to rename: chaining model calls, tools and memory is already covered by Orchestration (AI Systems). Row kept deliberately, so the rejection stays visible rather than silent. |
 | [Large Language Models (LLMs)](../concepts/large-language-models.md) | `established` | yes |  |
-| Latency (AI Systems) | `established` | not yet |  |
+| [Latency (AI Systems)](../concepts/latency-ai-systems.md) | `established` | yes | ESTABLISHED — published Sep 7 2026. A standard performance term across computing, with the AI-specific reading being that generation time scales with output length. The only DOUBLY-PROMISED term in the corpus: both Edge AI and Scalability (AI Systems) pointed at it before it existed. Human thresholds from Nielsen (SRC-279, attributing Miller 1968 and Card et al. 1991); the percentiles-over-means argument from Dean & Barroso, The Tail at Scale (SRC-280). Central governance hook: SPEED COMPETES WITH CHECKS — under latency pressure the first thing removed is always a check whose absence nobody sees. |
 | [LLM-as-Judge](../concepts/llm-as-judge.md) | `established` | yes |  |
 | [Local LLMs](../concepts/local-llms.md) | `established` | yes |  |
 | [Mechanistic Interpretability](../concepts/mechanistic-interpretability.md) | `established` | yes |  |
 | [Memory (AI Systems)](../concepts/memory-ai-systems.md) | `established` | yes |  |
-| Metaprompting | `emerging` | not yet | Meta-prompting appears in the literature but definitions vary; the tracker essence describes a narrower self-critique technique than most usage. |
+| [Metaprompting](../concepts/metaprompting.md) | `emerging` | yes | EMERGING, and the instability is in the term rather than the practice — published Sep 7 2026. Research found THREE competing senses in active use: (1) using a model to generate or refine a prompt, the practitioner-dominant sense behind vendor prompt-improver features; (2) structural scaffolding — supplying the shape of a solution rather than examples of one (Zhang, Yuan & Yao, arXiv 2311.11482, SRC-281), the only sense with a clear published definition; (3) self-critique loops, the weakest attachment to the name and better known as self-refinement. The entry names all three rather than picking one. ⚠️ This row's earlier essence described sense 3 only, as its own caution predicted; rewritten against the entry. Narrow this entry when the field consolidates, most likely on sense 1. |
 | [Model Card / System Card](../concepts/model-card-system-card.md) | `established` | yes |  |
 | Model distillation | `established` | not yet |  |
 | [Model Version & Update](../concepts/model-version-update.md) | `established` | yes |  |
@@ -110,7 +110,7 @@ The field names things faster than it settles them, and a glossary that repeats 
 | [Ontology](../concepts/ontology.md) | `established` | yes | Published Sep 7 2026. Clears check 1 on a formal standard rather than on usage: OWL 2 is a W3C Recommendation, and Gruber (1993) is the canonical definition. ⚠️ CHECK 4 ALMOST SAID "COVERED" AND WOULD HAVE BEEN WRONG: `ontology` was already an alias of Knowledge Graphs, but that entry mentions a schema only three times, always as a prerequisite or a cost — it never defines one. An alias to an entry that merely MENTIONS a term conceals the gap instead of filling it, and hides it from both the promise sweep and the gap report. Alias moved here; Knowledge Graphs now carries a Related-concepts pointer stating the schema/instance layer split. Score deliberately blank — author's call. |
 | [Operational Readiness (AI)](../concepts/operational-readiness-ai.md) | `established` | yes |  |
 | [Orchestration (AI Systems)](../concepts/orchestration-ai-systems.md) | `established` | yes |  |
-| Overfitting | `established` | not yet |  |
+| [Overfitting](../concepts/overfitting.md) | `established` | yes | ESTABLISHED — published Sep 8 2026, and the entry covers BOTH ends of the axis: UNDERFITTING is folded here as an alias, since Geman et al. (SRC-282) define the two as one bias/variance trade-off rather than separate faults. ⚠️ The entry deliberately gives no rule for when a large model will memorize, because double descent (SRC-283, SRC-284) breaks the size-implies-overfitting intuition in both directions. At LLM scale the live risk is memorization surfacing as privacy and copyright exposure (SRC-150), not a poor score. |
 | [Ownership (AI Systems)](../concepts/ownership-ai-systems.md) | `established` | yes |  |
 | [Performativity (LLMs)](../concepts/performativity-llms.md) | `emerging` | yes | Performativity is established in philosophy (Austin) and in ML as 'performative prediction' (Perdomo et al.); its application to LLM effects on human language is recent and still settling. |
 | [Permission Model (AI)](../concepts/permission-model-ai.md) | `established` | yes |  |
@@ -118,7 +118,7 @@ The field names things faster than it settles them, and a glossary that repeats 
 | [Power Seeking](../concepts/power-seeking.md) | `established` | yes |  |
 | [Pre-training](../concepts/pre-training.md) | `established` | yes |  |
 | [Privacy (AI Systems)](../concepts/privacy-ai-systems.md) | `established` | yes |  |
-| Prompt Chaining | `established` | not yet |  |
+| [Prompt Chaining](../concepts/prompt-chaining.md) | `established` | yes | ESTABLISHED — published Sep 8 2026. Not covered by Orchestration, which defines the control layer but never the technique; Agentic Design Patterns only names it in a list. Founding definition and the transparency finding from Wu, Terry & Cai (SRC-290, CHI 2022): people edited intermediate results rather than accepting one opaque answer. ⚠️ Distinct from CHAIN-OF-THOUGHT — separate calls with real artifacts, not generated reasoning text. Governance hook: decomposition adds failure points and no checks. |
 | [Prompt Engineering](../concepts/prompt-engineering.md) | `established` | yes |  |
 | [Prompt Injection](../concepts/prompt-injection.md) | `established` | yes |  |
 | [RACI](../concepts/raci.md) | `established` | yes |  |
@@ -147,7 +147,7 @@ The field names things faster than it settles them, and a glossary that repeats 
 | [Training Data](../concepts/training-data.md) | `established` | yes |  |
 | [Transformers](../concepts/transformers.md) | `established` | yes |  |
 | [Types of AI Systems](../concepts/types-of-ai-systems.md) | `established` | yes |  |
-| Underfitting | `established` | not yet |  |
+| Underfitting | `covered` | **covered by [Overfitting](../concepts/overfitting.md)** | COVERED by Overfitting — decided Sep 8 2026. Not redundancy but structure: Geman, Bienenstock & Doursat (SRC-282) define overfitting and underfitting as the two ends of ONE bias/variance axis, and the Overfitting entry's technical definition names and explains underfitting in those terms. Splitting them would mean two entries describing one dial. Underfitting is also the easy case — it fails visibly everywhere — which is why the axis is named for the dangerous end. Folded by alias. |
 | [Value Realization (AI)](../concepts/value-realization-ai.md) | `emerging` | yes | Standard business term; the AI-specific application rests on evidence from prior general-purpose technologies rather than from AI. |
 | [Verification](../concepts/verification.md) | `established` | yes |  |
 | [Zero-shot / Few-shot Learning](../concepts/zero-shot-few-shot-learning.md) | `established` | yes |  |

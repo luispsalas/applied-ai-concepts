@@ -1,7 +1,7 @@
 <!--meta
 category: System Architecture
 short: The named arrangements for splitting what a system decides at runtime from what is fixed in code — and each one puts the power to refuse somewhere different
-aliases: [agentic design, agent design patterns, agentic patterns, reflection pattern, orchestrator-worker, evaluator-optimizer, planning pattern, how should I structure my agent]
+aliases: [agentic design, agent design patterns, agentic pattern, agentic patterns, reflection pattern, orchestrator-worker, evaluator-optimizer, planning pattern, how should I structure my agent]
 tags: [Agents, Architecture, AI Literacy]
 established: emerging
 -->

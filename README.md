@@ -30,7 +30,7 @@ This wiki treats AI and data governance as closely connected. Alongside technica
 
 ### Looking a concept up
 
-Browse the [glossary index](glossary/index.md) — 117 terms alphabetically with their one-line essences — or use **`search.html`**, a self-contained search page covering every term plus 697 hand-written synonyms.
+Browse the [glossary index](glossary/index.md) — 123 terms alphabetically with their one-line essences — or use **`search.html`**, a self-contained search page covering every term plus 738 hand-written synonyms.
 
 It is built for concept lookup rather than text search, so describing the problem works: *"who is responsible when the AI does it"*, *"it used to work"*, *"why do I get different answers"*. Each result shows which synonym matched.
 
@@ -135,6 +135,7 @@ Every claim in this wiki is meant to trace back to a real, checkable source — 
 | [Recurrent Depth](concepts/recurrent-depth.md) | Spending more compute by looping a model's own layers rather than by writing more tokens — capability without extra parameters, and thinking that produces nothing to read | ✅ v1.0 |
 | [Transformers](concepts/transformers.md) | The architecture underneath almost everything — and the reason a weakness in one model is rarely local to it | ✅ v1.0 |
 | [Zero-shot / Few-shot Learning](concepts/zero-shot-few-shot-learning.md) | Getting a task done with no examples or a handful, without changing the model — and the measured finding that the examples do not teach it what you think | ✅ v1.0 |
+| [Latency (AI Systems)](concepts/latency-ai-systems.md) | The wait between asking and being answered — and the constraint that quietly decides whether a human review step survives contact with the product | ✅ v1.0 |
 
 ### Interaction & Design
 *How you work with models effectively*
@@ -148,6 +149,8 @@ Every claim in this wiki is meant to trace back to a real, checkable source — 
 | [Curse of Knowledge (AI Context)](concepts/curse-of-knowledge-ai-context.md) | You cannot un-know what you know, so you under-specify — and the model answers anyway instead of asking | ✅ v1.0 |
 | [Cognitive Offloading & Deskilling](concepts/cognitive-offloading-deskilling.md) | Delegating thinking to a system erodes the skill needed to judge its output — the long-run cost of convenience | ✅ v1.0 |
 | [Performativity (LLMs)](concepts/performativity-llms.md) | Language models do not just describe language, they change it — measurably shifting the words people use, with the influence running back from the machine into human culture | ✅ v1.0 |
+| [Metaprompting](concepts/metaprompting.md) | Prompting about prompting — three different practices share the name, and the governance question is the same for all of them | ✅ v1.0 |
+| [Prompt Chaining](concepts/prompt-chaining.md) | Breaking one task into a sequence of prompts — which buys you inspectable intermediate steps, and costs you a path for errors to travel down | ✅ v1.0 |
 
 ### System Architecture
 *The control layer that makes models governable*
@@ -230,6 +233,8 @@ Every claim in this wiki is meant to trace back to a real, checkable source — 
 | [LLM-as-Judge](concepts/llm-as-judge.md) | Using one language model to grade another's output — the only way to evaluate at volume, with documented biases including a preference for its own writing | ✅ v1.0 |
 | [Recursive Self-Improvement](concepts/recursive-self-improvement.md) | A system improving its own ability to improve, so gains compound — a sixty-year-old argument whose premises are now partly testable and largely unmet | ✅ v1.1 |
 | [AI Benchmarking](concepts/ai-benchmarking.md) | Standardized tests that let models be compared on the same task — indispensable for comparison, and routinely read as evidence of general capability they were never built to support | ✅ v1.0 |
+| [Catastrophic Forgetting](concepts/catastrophic-forgetting.md) | Teaching a model something new can silently remove something it already knew — including behavior nobody re-tests | ✅ v1.0 |
+| [Overfitting](concepts/overfitting.md) | Learning the training set instead of the pattern — and the reason a model's reported score is not a promise about your data | ✅ v1.0 |
 
 ### Observability & Governance
 *Making AI system behavior visible and accountable*
@@ -255,6 +260,7 @@ Every claim in this wiki is meant to trace back to a real, checkable source — 
 | [Fundamental Rights Impact Assessment (FRIA)](concepts/fundamental-rights-impact-assessment.md) | A deployer's pre-launch assessment of who is affected and what recourse they have — and it binds far fewer organizations than commonly claimed | ✅ v1.0 |
 | [Systemic Risk (AI)](concepts/systemic-risk-ai.md) | A precise legal threshold for a few model providers — and an unregulated concentration risk carried by everyone else | ✅ v1.0 |
 | [Frontier AI (Frontier Model)](concepts/frontier-ai.md) | The leading edge — a category defined by capabilities being discovered after training, not by size | ✅ v1.0 |
+| [Environmental Cost of AI](concepts/environmental-cost-of-ai.md) | The energy, water and emissions behind model training and use — a rising reporting expectation that organizations cannot currently compute for themselves | ✅ v1.0 |
 
 ### Organizational Readiness
 *The human and organizational conditions for responsible AI adoption*
@@ -339,7 +345,7 @@ See [CHANGELOG.md](CHANGELOG.md) for version history.
 ## Status
 
 **Phase 1 ✅ — foundation:** core concepts published and sourced, each with a governance-notes section; standalone [governance & observability notes](notes/governance-and-observability.md) doc live.
-**Phase 2 (current) — breadth & cross-linking:** 117 concepts across 8 categories, a [glossary index](glossary/index.md), client-side [search](search.html), and a cross-reference layer connecting related entries.
+**Phase 2 (current) — breadth & cross-linking:** 123 concepts across 8 categories, a [glossary index](glossary/index.md), client-side [search](search.html), and a cross-reference layer connecting related entries.
 **Phase 3 (planned):** audience-specific rendering, glossary automation, and a manifesto distilled from the wiki's principles.
 
 ---

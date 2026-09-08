@@ -1,7 +1,7 @@
 <!--meta
 category: Foundations
 short: Humans rank outputs, the model learns the ranking — the step that turns a raw model into an assistant, and imports whoever did the ranking
-aliases: [reinforcement learning from human feedback, preference optimization, human feedback training, RLAIF, DPO, how models are made polite]
+aliases: [reinforcement learning from human feedback, preference optimization, human feedback training, RLAIF, DPO, Direct Preference Optimization, how models are made polite]
 tags: [Model Behavior, Ethics, Evaluation]
 established: established
 -->

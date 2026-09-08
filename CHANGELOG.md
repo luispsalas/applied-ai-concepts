@@ -1,5 +1,62 @@
 # Changelog
 
+## v1.28 — September 2026
+
+**Five terms requested; three published, two folded. Count 120 → 123.**
+
+- `overfitting` — v1.0, **`established`**
+- `prompt-chaining` — v1.0, **`established`**
+- `catastrophic-forgetting` — v1.0, **`established`**
+- *Underfitting* → **`covered`** by Overfitting
+- *Direct Preference Optimization* → **`covered`** by RLHF
+
+**Neither fold is redundancy; both are structure.** *Underfitting* is not a separate fault — Geman, Bienenstock and Doursat define it and overfitting as the two ends of a single bias/variance axis, so two entries would describe one dial. *DPO* was already explained in RLHF's technical definition, which treats RLHF, DPO and RLAIF as one family and says why: **the governance question — whose preferences — is identical across all three.** Both cleared the alias test the corpus now applies: does the target's *technical definition* explain the term, or merely mention it?
+
+**Three terms with zero prior corpus coverage, which is itself the finding.** None of overfitting, underfitting or catastrophic forgetting appeared anywhere across 120 entries — not even in *Fine-tuning* or *Data Leakage (Model Evaluation)*, where they are the natural vocabulary. A corpus can be dense in governance language and empty of the machine-learning terms that governance language is about.
+
+**Overfitting refuses to give the rule everyone wants.** The classical account is settled, but **double descent** breaks it for large models: past the interpolation threshold test error falls *again* (Belkin et al.), and in deep networks there are regimes where more parameters and more data make things **worse** (Nakkiran et al.). So *"it's huge, therefore it memorizes"* is not a valid inference — and neither is its opposite. The entry states the classical relationship as established, double descent as observed, and declines to offer a rule, because there is not a reliable one.
+
+**What replaces the classical worry at LLM scale is memorization as a disclosure problem** — verbatim training data, including personal information, recovered from production models, with **alignment training not eliminating it** (Nasr et al.). Same mechanism as overfitting, surfacing as privacy and copyright rather than as a bad score.
+
+**Catastrophic forgetting's point is an asymmetry of attention, not a mechanism.** A fine-tune is tested for the capability it was meant to add; the capabilities it may have removed are the ones nobody re-measured — **and those include refusals and tone, which are trained behaviors and can be trained out.** Two counter-intuitive facts carried from the literature: mitigations *trade* capacity rather than solve the problem, and in the one systematic LLM study, **severity increased with model scale** across the 1B–7B range tested. The entry marks that as one observation, explicitly not a scaling law.
+
+**Prompt chaining is filed for its transparency, not its quality.** The founding CHI study found people **edited intermediate results** rather than accepting or rejecting one opaque answer — the intermediate artifacts are the governance value, and they exist whether or not quality improves. It is also distinguished from **chain-of-thought**, which the names invite confusing: one is generated reasoning text that need not reflect the process, the other a record of what was actually consumed by the next step. Its failure mode is propagation — **decomposition adds failure points and no checks.**
+
+**Latency's promise sweep debt cleared: 3 → 1.** Only *orchestration drift* remains, a house coinage with no tracker row.
+
+**Sources:** 9 added (SRC-282 – SRC-290), 8 reused. **The citation-form diff caught two more wrong IDs written from recall** — SRC-153 (an InfoQ article) cited for a generalization paper, and SRC-140 (an ISO technical report) cited for InstructGPT — plus three drifted title forms. Neither wrong ID reached the repo. Running total: **13 of 13**.
+
+---
+
+## v1.27 — September 2026
+
+**Four terms requested; three published, one folded. Count 117 → 120.**
+
+- `latency-ai-systems` — v1.0, **`established`**
+- `environmental-cost-of-ai` — v1.0, **`established`**
+- `metaprompting` — v1.0, **`emerging`**
+- *Agentic Pattern* → **`covered`** by Agentic Design Patterns
+
+**Latency was the only doubly-promised term in the corpus.** Both Edge AI and Scalability (AI Systems) pointed at it in their Related-concepts lists before it existed — two entries independently reaching for the same missing page is a stronger selection signal than either the promise sweep or the gap report gives alone. **The promise sweep drops from 3 to 1.**
+
+The entry's governance hook is that **speed competes with checks**. Latency is usually filed as a performance property, but the fastest thing to remove under latency pressure is always a check whose absence nobody sees — the human review step, the second-pass verification, the guardrail. It also carries the measurement point: a mean latency figure is close to useless, because in a fan-out architecture the slowest component determines the response (Dean & Barroso, *The Tail at Scale*), so percentiles are the honest unit.
+
+**The environmental entry declines to give a headline number, and says why.** Published figures vary by large factors depending on boundary choices — whether power generation is included, whether embodied hardware counts, whether training is amortized over usage — so numbers from different sources are frequently not comparable at all. Magnitudes are given with their sources attached instead: electricity from the IEA, water from Li et al., the latter explicitly as estimates.
+
+**Its most confident claim is structural rather than numeric: an organization consuming AI through an API cannot compute its own footprint, because providers do not publish per-request energy.** The reporting expectation is arriving ahead of the disclosure that would let anyone meet it honestly. The entry's practice section therefore treats **recording a provider's refusal** as evidence of the gap. Two further points the debate usually misses: **inference accumulates past training** for anything with real usage, so the number people argue about is the one that stopped growing; and **where you run matters more than which model you pick**, which is the largest available lever and the least often examined.
+
+**Metaprompting is `emerging` because the term is unstable, not the practice.** Research found three competing senses in active use — model-generated prompts (practitioner-dominant), structural scaffolding (Zhang, Yuan & Yao, the only sense with a clear published definition), and self-critique loops (weakest, better known as self-refinement). **The entry names all three rather than picking one.** The tracker's own essence described the third sense only, exactly as that row's caution had warned, and was rewritten against the entry.
+
+Senses 1 and 3 share the consequence the entry is built on: **when a model writes the prompt, the instruction layer stops being human-authored and reviewable by default.** The prompt is where policy usually lives — tone, refusals, scope limits — and a rewrite can regenerate the policy silently. Hence the practice: generate freely, pin what ships.
+
+**Agentic Pattern confirmed its own tracker caution** — *"likely redundant with Agentic Design"* — and folded into Agentic Design Patterns, whose technical definition already defines it. The singular alias was added so the exact term resolves.
+
+**A defect was found in the tooling that maintains the source registry's reverse index.** The `report` mode built that index from `concepts/` only, so any source cited solely from a `notes/` page appeared in no row — the same blind spot a recent audit found in 39 of 256 rows. The publish procedure had just been rewritten to regenerate the column *from this report*, which would have silently re-broken what the audit fixed. `report` now scans `notes/` too, with the reason recorded at the loop.
+
+**Sources:** 5 added (SRC-277 – SRC-281), 8 reused. **The citation-form diff caught three wrong source IDs** written from recall — two of them well-formed and pointing at real but different sources — plus three drifted title forms. None reached the repo.
+
+---
+
 ## v1.26 — September 2026
 
 **Three terms requested; one published, two folded. Count 116 → 117.**

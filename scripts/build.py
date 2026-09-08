@@ -523,13 +523,27 @@ def promise_gaps(entries):
 
 def report(entries):
     # reverse index for Wiki-Sources col L
+    #
+    # notes/ is scanned here deliberately. A Sep 2026 audit of col L found 39 of
+    # 256 rows factually wrong, systematically: 15 sources cited ONLY from a
+    # notes/ page appeared in no row at all, because nothing outside concepts/
+    # was ever looked at. Regenerating the column from this report is only safe
+    # while this loop stays in — dropping it silently reintroduces that gap.
     rev = defaultdict(list)
     for e in entries:
         for s in e["sources"]:
             rev[s].append(e["slug"])
+    notes_rev = defaultdict(set)
+    for p in sorted((ROOT / "notes").glob("*.md")):
+        for src in set(re.findall(r"\|\s*(SRC-\d+)\s*\|", p.read_text(encoding="utf-8"))):
+            notes_rev[src].add(p.stem)
     print("== Wiki-Sources reverse index (col L) ==")
-    for src in sorted(rev):
-        print(f"{src}\t{' · '.join(sorted(rev[src]))}")
+    for src in sorted(set(rev) | set(notes_rev)):
+        parts = []
+        if notes_rev.get(src):
+            parts.append("notes: " + " · ".join(sorted(notes_rev[src])))
+        parts += sorted(rev.get(src, []))
+        print(f"{src}\t{' · '.join(parts)}")
 
     rev_review = inline_anchor_review(entries)
     print(f"\n== Inline anchors to eyeball ({len(rev_review)}) — paraphrase is fine, a wrong target is not ==")
