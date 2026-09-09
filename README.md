@@ -30,7 +30,7 @@ This wiki treats AI and data governance as closely connected. Alongside technica
 
 ### Looking a concept up
 
-Browse the [glossary index](glossary/index.md) — 141 terms alphabetically with their one-line essences — or use **`search.html`**, a self-contained search page covering every term plus 901 hand-written synonyms.
+Browse the [glossary index](glossary/index.md) — 145 terms alphabetically with their one-line essences — or use **`search.html`**, a self-contained search page covering every term plus 931 hand-written synonyms.
 
 It is built for concept lookup rather than text search, so describing the problem works: *"who is responsible when the AI does it"*, *"it used to work"*, *"why do I get different answers"*. Each result shows which synonym matched.
 
@@ -179,6 +179,7 @@ Every claim in this wiki is meant to trace back to a real, checkable source — 
 | [Agentic Design Patterns](concepts/agentic-design-patterns.md) | The named arrangements for splitting what a system decides at runtime from what is fixed in code — and each one puts the power to refuse somewhere different | ✅ v1.0 |
 | [Data Poisoning](concepts/data-poisoning.md) | Corrupting what a model learns rather than what it is asked — an integrity attack on the training set that no amount of input filtering can reach | ✅ v1.0 |
 | [Federated Learning](concepts/federated-learning.md) | Training one model across data that never moves — which relocates the privacy problem into the model updates and trades away the ability to audit the training data at all | ✅ v1.0 |
+| [Structured Output](concepts/structured-output.md) | Making a model emit machine-parseable output that conforms to a schema — a guarantee about shape that is routinely mistaken for a guarantee about content | ✅ v1.0 |
 
 ### Knowledge & Memory
 *How knowledge persists, degrades, and stays fit for use*
@@ -201,6 +202,9 @@ Every claim in this wiki is meant to trace back to a real, checkable source — 
 | [Context Compaction](concepts/context-compaction.md) | Shrinking a conversation so it keeps fitting — and the point at which what the system knows stops being something anyone chose | ✅ v1.0 |
 | [Ontology](concepts/ontology.md) | The agreed list of what kinds of things exist and how they may relate — a schema that quietly decides what a system can never record | ✅ v1.0 |
 | [Data Labeling](concepts/data-labeling.md) | The human work that produces every label a model learns from and every benchmark it is judged against — undervalued in exactly the systems that depend on it most | ✅ v1.0 |
+| [Context Anxiety](concepts/context-anxiety.md) | A model cutting corners because it believes its context is nearly full — degrading on its own estimate of the budget rather than on the actual limit | ✅ v1.0 |
+| [Context Rot](concepts/context-rot.md) | Reliability falling as the input gets longer — the failure the context window does not warn you about, because everything still fits | ✅ v1.0 |
+| [Generated Variables](concepts/generated-variables.md) | Model output used as data in a later analysis — where high accuracy is not enough, because the errors are not noise and the second stage cannot see them | ✅ v1.0 |
 
 ### Human Oversight
 *Humans in control by design — not by assumption*
@@ -363,7 +367,7 @@ See [CHANGELOG.md](CHANGELOG.md) for version history.
 ## Status
 
 **Phase 1 ✅ — foundation:** core concepts published and sourced, each with a governance-notes section; standalone [governance & observability notes](notes/governance-and-observability.md) doc live.
-**Phase 2 (current) — breadth & cross-linking:** 141 concepts across 8 categories, a [glossary index](glossary/index.md), client-side [search](search.html), and a cross-reference layer connecting related entries.
+**Phase 2 (current) — breadth & cross-linking:** 145 concepts across 8 categories, a [glossary index](glossary/index.md), client-side [search](search.html), and a cross-reference layer connecting related entries.
 **Phase 3 (planned):** audience-specific rendering, glossary automation, and a manifesto distilled from the wiki's principles.
 
 ---

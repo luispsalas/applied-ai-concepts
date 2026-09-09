@@ -1,5 +1,28 @@
 # Changelog
 
+## v1.33 — September 2026
+
+**Four entries clearing the queue's own backlog of blocked and doubted terms. Count 141 → 145.**
+
+- `context-rot` — v1.0, **`emerging`**
+- `context-anxiety` — v1.0, **`emerging`** ⚠️ published against its own triage recommendation, see below
+- `generated-variables` — v1.0, **`emerging`**
+- `structured-output` — v1.0, **`established`**
+
+***Context Rot* is about the failure the context window does not warn you about.** The window is a *capacity*: it tells you the text fits. It tells you nothing about whether the model will attend to it, and there is no error, no truncation notice and no flag when it does not — the output is confident, well-formed and wrong. Measured across 18 frontier models from four competing vendors, with a peer-reviewed antecedent two years older than the name. The entry also declines the name it is filed under: **nothing rots**, the dependence is on length and position within a single forward pass.
+
+***Context Anxiety* was published against this wiki's own recommendation, and says so.** Yesterday's triage filed it as a watch item, not a draft candidate, because every apparently independent use traces back to one team's observation. **Re-testing the evidence did not improve that verdict** — so the entry carries the limitation in its status line, its confidence section and its literacy notes, along with a retirement condition: if no second group reports the behavior in a different model family, fold the content into *Context Window* and drop the term. It was written anyway because the behavior is specific, consequential, and constantly confused with context rot — which it now sits beside in a disambiguation table. **They are opposites: rot degrades the answer, anxiety truncates the task and reports it complete.** Two findings the re-test added: **"AI anxiety" is already an established term in psychology** for human apprehension toward AI, and the name is anthropomorphism — a word for a feeling naming a miscalibrated internal estimate.
+
+***Generated Variables* is the entry with the number worth memorizing.** Using model-generated labels directly in a downstream analysis produces **substantial bias and invalid confidence intervals even at 80–90% surrogate accuracy** — which is exactly the range where a practitioner checks a sample, sees it looks fine, and proceeds. **The reassuring accuracy is inside the failure region.** The problem is not new: econometrics named, analyzed and corrected it in 1984 as *generated regressors*. What is new is how cheap it has become to generate the variable.
+
+***Structured Output* cleared check 4 with room to spare.** *Tool Use* covers function calling, *Guardrails* covers post-hoc validation, and neither covers the general case — constrained decoding as a **generation-time** guarantee, where schema-breaking tokens are never sampled. Function calling is a special case of this, not the reverse. The governance point: **schema conformance is not correctness.** Structure eliminates parse failures — the errors that announced themselves — and leaves the invisible ones untouched, so a well-typed hallucination arrives looking like a database row. And format restriction measurably **degrades reasoning**, more so as constraints tighten; the trade is almost never measured, because nobody runs the unconstrained pipeline twice.
+
+**Sources:** 10 added (SRC-333 – SRC-342), 4 reused. **SRC-342 was registered purely as check-2 evidence** — independent journalism using "context rot" as a named phenomenon — which is what separates that term's status from Context Anxiety's.
+
+**Three verification catches, all before publication.** A DOI for the 1993 generated-regressors survey, written from memory, was **wrong by one digit** and resolved to an unrelated paper on business cycles. A URL for an already-registered source was written from recall as `/research/` when the registry says `/engineering/` — and it **redirects, so a link checker passes it**; the citation diff caught it instead. And the widely repeated "accuracy drops 30 points" figure attributed to *Lost in the Middle* **is not in that paper's abstract**: the yesterday's triage note had flagged it for verification, the verification failed, and the entry omits the number rather than repeating it.
+
+---
+
 ## v1.32 — September 2026
 
 **Five entries on measurement and privacy mechanics. Count 136 → 141.**

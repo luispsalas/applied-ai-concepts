@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "count": 141,
+  "count": 145,
   "entries": [
     {
       "slug": "acceptable-use-policy",
@@ -1456,6 +1456,46 @@
       "path": "concepts/context-ai-systems.md"
     },
     {
+      "slug": "context-anxiety",
+      "term": "Context Anxiety",
+      "category": "Knowledge & Memory",
+      "essence": "A model that can sense its context filling up starts cutting corners and closing tasks early — degrading on its *belief* about the budget remaining rather than on the actual limit.",
+      "short": "A model cutting corners because it believes its context is nearly full — degrading on its own estimate of the budget rather than on the actual limit",
+      "aliases": [
+        "context window anxiety",
+        "premature summarization",
+        "early task termination",
+        "model rushing to finish",
+        "running out of context behavior",
+        "wrapping up early"
+      ],
+      "tags": [
+        "Model Behavior",
+        "Agents",
+        "Evaluation"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "ai-agent",
+        "anthropomorphism-ai",
+        "concealing-uncertainty",
+        "context-compaction",
+        "context-rot",
+        "context-window",
+        "failure-modes-ai-systems",
+        "harness-paradigm",
+        "sycophancy-llms",
+        "verification"
+      ],
+      "sources": [
+        "SRC-263",
+        "SRC-333",
+        "SRC-334"
+      ],
+      "path": "concepts/context-anxiety.md"
+    },
+    {
       "slug": "context-compaction",
       "term": "Context Compaction",
       "category": "Knowledge & Memory",
@@ -1534,6 +1574,50 @@
         "SRC-012"
       ],
       "path": "concepts/context-engineering.md"
+    },
+    {
+      "slug": "context-rot",
+      "term": "Context Rot",
+      "category": "Knowledge & Memory",
+      "essence": "Model reliability falls as the input gets longer — the same task answered worse at a hundred thousand tokens than at one thousand — so \"it fits in the context window\" is not an assurance that the model will use what is in there.",
+      "short": "Reliability falling as the input gets longer — the failure the context window does not warn you about, because everything still fits",
+      "aliases": [
+        "context degradation",
+        "long context degradation",
+        "lost in the middle",
+        "position effect",
+        "degradation with input length",
+        "long context problem",
+        "why does it get worse with more context"
+      ],
+      "tags": [
+        "Model Behavior",
+        "Evaluation",
+        "Architecture"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "ai-agent",
+        "context-ai-systems",
+        "context-anxiety",
+        "context-compaction",
+        "context-engineering",
+        "context-window",
+        "evaluation",
+        "failure-modes-ai-systems",
+        "memory-ai-systems",
+        "prompt-chaining",
+        "rag",
+        "system-prompt"
+      ],
+      "sources": [
+        "SRC-104",
+        "SRC-149",
+        "SRC-333",
+        "SRC-342"
+      ],
+      "path": "concepts/context-rot.md"
     },
     {
       "slug": "context-window",
@@ -2640,6 +2724,51 @@
         "SRC-211"
       ],
       "path": "concepts/fundamental-rights-impact-assessment.md"
+    },
+    {
+      "slug": "generated-variables",
+      "term": "Generated Variables",
+      "category": "Knowledge & Memory",
+      "essence": "A variable that was produced by a model rather than observed, then used as though it were observed — which quietly breaks the analysis built on top of it, at accuracies most people would call good.",
+      "short": "Model output used as data in a later analysis — where high accuracy is not enough, because the errors are not noise and the second stage cannot see them",
+      "aliases": [
+        "generated regressors",
+        "surrogate labels",
+        "model-generated labels",
+        "LLM annotation as data",
+        "imputed variables",
+        "estimated variables",
+        "extraction used as measurement",
+        "machine-labeled data for analysis"
+      ],
+      "tags": [
+        "Evaluation",
+        "Data Governance",
+        "Model Behavior"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "automated-decision-making",
+        "bias-ai-systems",
+        "confidence-vs-accuracy",
+        "data-labeling",
+        "data-provenance-lineage",
+        "data-quality",
+        "evaluation",
+        "inter-rater-reliability",
+        "llm-as-judge",
+        "model-data-drift",
+        "synthetic-data"
+      ],
+      "sources": [
+        "SRC-308",
+        "SRC-335",
+        "SRC-336",
+        "SRC-337",
+        "SRC-338"
+      ],
+      "path": "concepts/generated-variables.md"
     },
     {
       "slug": "grounding",
@@ -5158,6 +5287,52 @@
         "SRC-143"
       ],
       "path": "concepts/small-language-models.md"
+    },
+    {
+      "slug": "structured-output",
+      "term": "Structured Output",
+      "category": "System Architecture",
+      "essence": "Getting a model to emit output a program can parse, conforming to a declared schema — which guarantees the shape of the answer and says nothing whatever about whether it is right.",
+      "short": "Making a model emit machine-parseable output that conforms to a schema — a guarantee about shape that is routinely mistaken for a guarantee about content",
+      "aliases": [
+        "structured generation",
+        "JSON mode",
+        "JSON output",
+        "schema-constrained output",
+        "constrained decoding",
+        "guided generation",
+        "grammar-constrained decoding",
+        "schema conformance",
+        "typed output"
+      ],
+      "tags": [
+        "Architecture",
+        "Evaluation",
+        "Prompting"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "agent-interoperability-a2a",
+        "concealing-uncertainty",
+        "confidence-vs-accuracy",
+        "data-provenance-lineage",
+        "determinism-vs-probabilism",
+        "evaluation",
+        "generated-variables",
+        "guardrails-ai-systems",
+        "hallucination",
+        "prompt-engineering",
+        "tool-use",
+        "verification"
+      ],
+      "sources": [
+        "SRC-104",
+        "SRC-339",
+        "SRC-340",
+        "SRC-341"
+      ],
+      "path": "concepts/structured-output.md"
     },
     {
       "slug": "supply-chain-risk-ai",
