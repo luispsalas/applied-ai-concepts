@@ -117,7 +117,7 @@ Finally: the schema is a contract, not a config detail. Everything downstream de
 - [Agent Interoperability (A2A)](agent-interoperability-a2a.md) — structured payloads between systems
 - [Determinism vs Probabilism](determinism-vs-probabilism.md) — why conformance had to be engineered rather than assumed
 - [Evaluation (AI Systems)](evaluation.md) — where the unconstrained baseline belongs
-- [Data Provenance / Lineage](data-provenance-lineage.md) — the schema version travelling with the data
+- [Data Provenance / Lineage](data-provenance-lineage.md) — the schema version traveling with the data
 
 ---
 
