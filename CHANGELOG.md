@@ -1,5 +1,33 @@
 # Changelog
 
+## v1.34 — September 2026
+
+**Five entries on assurance and its limits. Count 145 → 150.**
+
+- `dual-use` — v1.0, **`established`**
+- `overrefusal` — v1.0, **`emerging`**
+- `quantization` — v1.0, **`established`**
+- `third-party-audit` — v1.0, **`established`**
+- `whistleblowing` — v1.0, **`established`**
+
+All five were flagged in triage with the same phrase — *zero corpus mentions* — and four of them turn out to share a structure: **a mechanism widely relied on for assurance, whose actual guarantee is much narrower than its name suggests.**
+
+***Dual Use* is the risk that comes from the system working, not failing.** A failure mode is something a model does wrong and could do better; a dual-use risk is the model working exactly as designed, for someone else's purpose — which is why making it more capable makes it more capable at both uses. Urbina et al. supply the demonstration, and the figures were read from the **full text** because the abstract does not contain them: one toxicity objective inverted, and **forty thousand molecules in under six hours on an in-house server**, including VX and other known warfare agents the model rediscovered unprompted. The force of the result is how trivial the change was.
+
+***Overrefusal* is the failure that safety measures cause rather than prevent** — and the entry's point is that the two errors are not equally *visible*. A harmful completion gets screenshotted, logged and counted. **A wrongful refusal produces no artifact at all**: the user rephrases or gives up. So safety reporting quotes harm rates and almost never refusal rates, which is half a measurement presented as a whole one. Because refusals key on surface form rather than intent, the cost concentrates on people whose legitimate vocabulary resembles the blocked vocabulary — clinicians, security researchers, harm-reduction workers.
+
+***Quantization*: the cheap version is a different model.** Every benchmark result, red-team finding and model-card claim was measured on an artifact you are not running. The mechanism that makes this hard to catch is that **quantization error is concentrated, not spread** — a few outlier features carry the damage — so aggregate scores hold steady while specific behaviors move. Across 66 quantized variants and six methods, both post-training and quantization-aware families **can** degrade safety, and a model that has lost safety training still sounds fluent.
+
+***Third-Party Audit*: the important word is not "independent."** Independence stops an auditor having a reason to lie; it gives them nothing to look at. **Access is the variable** — black-box, white-box, or outside-the-box — and the operative conclusion is that **an audit report without an access statement is not assessable**. Two traps follow: high-risk under the EU AI Act does *not* imply external examination, since internal control is available for most Annex III systems; and the auditor is normally paid by the audited, who often also chooses the scope.
+
+***Whistleblowing* is the control that runs when every other one has failed** — and the finding here came from reading the law. **EU AI Act Article 87 is one sentence** that creates no regime: it applies Directive (EU) 2019/1937. The brevity is the point. That directive protects reporting **breaches of Union law**, so the protection covers reporting an infringement of the Regulation and **not** reporting a danger the Regulation does not make illegal. The *Right to Warn* signatories state the identical gap in one line, from inside it. The practice recommendation follows and needs no legislation: **scope the internal policy to risk, not to illegality.**
+
+**Sources:** 11 added (SRC-343 – SRC-353), 9 reused. Article 87, Recital 172 and the *Right to Warn* language were all read verbatim from the primary rather than from coverage.
+
+**A mass archive-lookup failure that was the checker, not the data.** All eleven Wayback lookups returned "unarchived" at once. The API was returning **HTTP 429**, and the helper's bare `except` was silently converting a rate-limited request into a negative result — it could not distinguish *no snapshot* from *no answer*. Rewritten to separate hit / miss / error and back off exponentially; **all eleven then resolved.** A checker that cannot tell failure from absence will report absence, and the tell was that it failed everywhere at once.
+
+---
+
 ## v1.33 — September 2026
 
 **Four entries clearing the queue's own backlog of blocked and doubted terms. Count 141 → 145.**

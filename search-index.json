@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "count": 145,
+  "count": 150,
   "entries": [
     {
       "slug": "acceptable-use-policy",
@@ -2257,6 +2257,49 @@
       "path": "concepts/domain.md"
     },
     {
+      "slug": "dual-use",
+      "term": "Dual Use",
+      "category": "Observability & Governance",
+      "essence": "The same capability serves both a legitimate and a harmful purpose — so the risk cannot be located in the technology, and cannot be removed by improving it.",
+      "short": "The same capability serving a legitimate and a harmful purpose — which means risk is not a property of the model, and no amount of inspecting it will settle the question",
+      "aliases": [
+        "dual use research",
+        "dual-use research of concern",
+        "DURC",
+        "misuse potential",
+        "same capability different purpose",
+        "beneficial and harmful use"
+      ],
+      "tags": [
+        "Safety",
+        "Regulatory",
+        "Ethics"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "acceptable-use-policy",
+        "alignment-ai-systems",
+        "dangerous-capability",
+        "failure-modes-ai-systems",
+        "fine-tuning",
+        "frontier-ai",
+        "human-responsibility-in-ai-use",
+        "jailbreak",
+        "overrefusal",
+        "permission-model-ai",
+        "red-teaming",
+        "systemic-risk-ai"
+      ],
+      "sources": [
+        "SRC-200",
+        "SRC-303",
+        "SRC-343",
+        "SRC-344"
+      ],
+      "path": "concepts/dual-use.md"
+    },
+    {
       "slug": "edge-ai",
       "term": "Edge AI",
       "category": "System Architecture",
@@ -4206,6 +4249,50 @@
       "path": "concepts/overfitting.md"
     },
     {
+      "slug": "overrefusal",
+      "term": "Overrefusal",
+      "category": "Reliability & Quality",
+      "essence": "A model declining a request that was entirely safe — the cost side of safety training, produced by the same mechanism that produces the benefit, and systematically less measured than the harms it trades against.",
+      "short": "A model refusing work that was perfectly safe — the failure safety measures cause rather than prevent, and the one almost nobody puts a number on",
+      "aliases": [
+        "over-refusal",
+        "false refusal",
+        "exaggerated safety",
+        "over-conservatism",
+        "overcautious refusal",
+        "refusing safe requests",
+        "false positive refusal",
+        "safety tax"
+      ],
+      "tags": [
+        "Evaluation",
+        "Safety",
+        "Model Behavior"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "alignment-ai-systems",
+        "bias-ai-systems",
+        "dual-use",
+        "evaluation",
+        "false-positives-and-false-negatives",
+        "guardrails-ai-systems",
+        "human-ai-collaboration-model",
+        "jailbreak",
+        "observability",
+        "rlhf",
+        "sycophancy-llms"
+      ],
+      "sources": [
+        "SRC-001",
+        "SRC-135",
+        "SRC-196",
+        "SRC-345"
+      ],
+      "path": "concepts/overrefusal.md"
+    },
+    {
       "slug": "ownership-ai-systems",
       "term": "Ownership (AI Systems)",
       "category": "Observability & Governance",
@@ -4637,6 +4724,56 @@
         "SRC-148"
       ],
       "path": "concepts/prompt-injection.md"
+    },
+    {
+      "slug": "quantization",
+      "term": "Quantization",
+      "category": "Foundations",
+      "essence": "Storing and computing a model's weights at lower numerical precision so it runs faster and on smaller hardware — which is not a deployment setting but a change to the model itself.",
+      "short": "Storing a model's weights at lower numerical precision to make it cheaper to run — which produces a different model, with its own evaluation status and its own safety behavior",
+      "aliases": [
+        "quantized model",
+        "quantisation",
+        "post-training quantization",
+        "PTQ",
+        "quantization-aware training",
+        "QAT",
+        "int8",
+        "4-bit",
+        "8-bit",
+        "low precision inference",
+        "model compression by precision",
+        "GGUF",
+        "bit width"
+      ],
+      "tags": [
+        "Architecture",
+        "Model Behavior",
+        "Evaluation"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "bias-ai-systems",
+        "checkpointing",
+        "edge-ai",
+        "environmental-cost-of-ai",
+        "evaluation",
+        "inference",
+        "local-llms",
+        "model-card-system-card",
+        "model-distillation",
+        "model-version-update",
+        "small-language-models",
+        "supply-chain-risk-ai"
+      ],
+      "sources": [
+        "SRC-201",
+        "SRC-346",
+        "SRC-347",
+        "SRC-348"
+      ],
+      "path": "concepts/quantization.md"
     },
     {
       "slug": "raci",
@@ -5667,6 +5804,53 @@
       "path": "concepts/temperature-llms.md"
     },
     {
+      "slug": "third-party-audit",
+      "term": "Third-Party Audit",
+      "category": "Observability & Governance",
+      "essence": "Examination of an AI system by a party with no stake in the result — a mechanism whose value depends far more on the access the auditor was granted than on their independence.",
+      "short": "Assurance by someone with no stake in the answer — whose value is set almost entirely by what access they were granted, not by their independence",
+      "aliases": [
+        "external audit",
+        "independent audit",
+        "algorithmic audit",
+        "AI audit",
+        "external assurance",
+        "auditor access",
+        "black-box audit",
+        "white-box audit",
+        "who audits the auditors"
+      ],
+      "tags": [
+        "Regulatory",
+        "Evaluation",
+        "Data Governance"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "accountability-ai-systems",
+        "ai-management-system-iso-42001",
+        "algorithmic-impact-assessment",
+        "audit-trail-ai",
+        "bluewashing",
+        "compliance-ai-systems",
+        "conformity-assessment-ai",
+        "evaluation",
+        "model-card-system-card",
+        "observability",
+        "red-teaming",
+        "whistleblowing"
+      ],
+      "sources": [
+        "SRC-169",
+        "SRC-201",
+        "SRC-312",
+        "SRC-349",
+        "SRC-350"
+      ],
+      "path": "concepts/third-party-audit.md"
+    },
+    {
       "slug": "tokenization",
       "term": "Tokenization",
       "category": "Foundations",
@@ -5959,6 +6143,50 @@
         "SRC-191"
       ],
       "path": "concepts/verification.md"
+    },
+    {
+      "slug": "whistleblowing",
+      "term": "Whistleblowing",
+      "category": "Observability & Governance",
+      "essence": "An insider reporting wrongdoing they encountered through their work, under protection from retaliation — the control that operates precisely when every internal control has already failed.",
+      "short": "Protected disclosure by an insider — the control that operates when every internal one has failed, and whose legal protection covers illegality rather than danger",
+      "aliases": [
+        "protected disclosure",
+        "whistleblower",
+        "whistleblower protection",
+        "reporting of infringements",
+        "right to warn",
+        "speaking up",
+        "internal reporting channel",
+        "retaliation protection"
+      ],
+      "tags": [
+        "Regulatory",
+        "Ethics",
+        "Safety"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "accountability-ai-systems",
+        "ai-governance",
+        "ai-incident-reporting",
+        "audit-trail-ai",
+        "compliance-ai-systems",
+        "dangerous-capability",
+        "frontier-ai",
+        "human-responsibility-in-ai-use",
+        "moral-crumple-zone",
+        "observability",
+        "third-party-audit"
+      ],
+      "sources": [
+        "SRC-264",
+        "SRC-351",
+        "SRC-352",
+        "SRC-353"
+      ],
+      "path": "concepts/whistleblowing.md"
     },
     {
       "slug": "zero-shot-few-shot-learning",

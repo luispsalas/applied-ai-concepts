@@ -30,7 +30,7 @@ This wiki treats AI and data governance as closely connected. Alongside technica
 
 ### Looking a concept up
 
-Browse the [glossary index](glossary/index.md) — 145 terms alphabetically with their one-line essences — or use **`search.html`**, a self-contained search page covering every term plus 931 hand-written synonyms.
+Browse the [glossary index](glossary/index.md) — 150 terms alphabetically with their one-line essences — or use **`search.html`**, a self-contained search page covering every term plus 975 hand-written synonyms.
 
 It is built for concept lookup rather than text search, so describing the problem works: *"who is responsible when the AI does it"*, *"it used to work"*, *"why do I get different answers"*. Each result shows which synonym matched.
 
@@ -138,6 +138,7 @@ Every claim in this wiki is meant to trace back to a real, checkable source — 
 | [Latency (AI Systems)](concepts/latency-ai-systems.md) | The wait between asking and being answered — and the constraint that quietly decides whether a human review step survives contact with the product | ✅ v1.0 |
 | [Mixture of Experts](concepts/mixture-of-experts.md) | Models where only a fraction of the parameters run for any given token — which quietly breaks parameter count as a way of comparing anything | ✅ v1.0 |
 | [Model Distillation](concepts/model-distillation.md) | Training a small model to reproduce a large one's behavior — and the fact that the only thing separating this from model theft is permission | ✅ v1.0 |
+| [Quantization](concepts/quantization.md) | Storing a model's weights at lower numerical precision to make it cheaper to run — which produces a different model, with its own evaluation status and its own safety behavior | ✅ v1.0 |
 
 ### Interaction & Design
 *How you work with models effectively*
@@ -248,6 +249,7 @@ Every claim in this wiki is meant to trace back to a real, checkable source — 
 | [False Positives and False Negatives](concepts/false-positives-and-false-negatives.md) | The two ways a system can be wrong — and the choice of which one to make more often is a policy decision that usually gets made by default | ✅ v1.0 |
 | [Checkpointing](concepts/checkpointing.md) | Saving state at known-good points so a long run can be resumed or undone — and the boundary where undo stops working, which is wherever the system already touched the world | ✅ v1.0 |
 | [Inter-Rater Reliability](concepts/inter-rater-reliability.md) | How much independent raters actually agree — the ceiling on what any evaluation built on their judgments can demonstrate, and almost never published beside the score it caps | ✅ v1.0 |
+| [Overrefusal](concepts/overrefusal.md) | A model refusing work that was perfectly safe — the failure safety measures cause rather than prevent, and the one almost nobody puts a number on | ✅ v1.0 |
 
 ### Observability & Governance
 *Making AI system behavior visible and accountable*
@@ -282,6 +284,9 @@ Every claim in this wiki is meant to trace back to a real, checkable source — 
 | [Algorithmic Impact Assessment](concepts/algorithmic-impact-assessment.md) | A structured assessment of what a system could do to people, completed before deployment — and, in the strongest implementations, published | ✅ v1.0 |
 | [Conformity Assessment (AI Systems)](concepts/conformity-assessment-ai.md) | How a high-risk AI system is certified before it goes on the EU market — and the fact that for most of them, the provider certifies itself | ✅ v1.0 |
 | [Differential Privacy](concepts/differential-privacy.md) | A mathematical guarantee that one person's presence in the data barely changes what comes out — a property of the computation, not a label on the dataset, and meaningless without its parameters | ✅ v1.0 |
+| [Dual Use](concepts/dual-use.md) | The same capability serving a legitimate and a harmful purpose — which means risk is not a property of the model, and no amount of inspecting it will settle the question | ✅ v1.0 |
+| [Third-Party Audit](concepts/third-party-audit.md) | Assurance by someone with no stake in the answer — whose value is set almost entirely by what access they were granted, not by their independence | ✅ v1.0 |
+| [Whistleblowing](concepts/whistleblowing.md) | Protected disclosure by an insider — the control that operates when every internal one has failed, and whose legal protection covers illegality rather than danger | ✅ v1.0 |
 
 ### Organizational Readiness
 *The human and organizational conditions for responsible AI adoption*
@@ -367,7 +372,7 @@ See [CHANGELOG.md](CHANGELOG.md) for version history.
 ## Status
 
 **Phase 1 ✅ — foundation:** core concepts published and sourced, each with a governance-notes section; standalone [governance & observability notes](notes/governance-and-observability.md) doc live.
-**Phase 2 (current) — breadth & cross-linking:** 145 concepts across 8 categories, a [glossary index](glossary/index.md), client-side [search](search.html), and a cross-reference layer connecting related entries.
+**Phase 2 (current) — breadth & cross-linking:** 150 concepts across 8 categories, a [glossary index](glossary/index.md), client-side [search](search.html), and a cross-reference layer connecting related entries.
 **Phase 3 (planned):** audience-specific rendering, glossary automation, and a manifesto distilled from the wiki's principles.
 
 ---
