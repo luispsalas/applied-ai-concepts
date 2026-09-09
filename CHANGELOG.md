@@ -1,5 +1,36 @@
 # Changelog
 
+## v1.31 — September 2026
+
+**The score-4 queue, cleared. Five published, one folded, one renamed. Count 131 → 136.**
+
+- `data-labeling` — v1.0, **`established`**
+- `data-poisoning` — v1.0, **`established`**
+- `algorithmic-impact-assessment` — v1.0, **`established`**
+- `conformity-assessment-ai` — v1.0, **`established`** (renamed from *Notified Body*)
+- `acceptable-use-policy` — v1.0, **`established`**
+- *Constitutional AI* → **`covered`** by RLHF — the vendor tier is empty again
+
+**Three of these carried instructions from their own triage notes, and all three changed the outcome.**
+
+***Notified Body* was the weakest keep, and reading Article 43 turned it into the strongest entry of the batch.** The Act gives providers of Annex III high-risk systems a choice between **internal control** and notified-body assessment, with the third-party route mandatory only where harmonised standards are missing or unapplied. So **"high-risk" does not mean "externally audited," and a CE mark on an AI system is usually the provider's own declaration.** That fact earns an entry; the institution alone did not. Renamed to the process, not the body.
+
+***Constitutional AI* stayed `vendor` and folded.** The research the note demanded gave a clean answer: the paper names its own method — *"we refer to the method as 'Constitutional AI'"* — while an independent group at Google describes RL from AI Feedback as *introduced in* Bai et al. and treats **RLAIF** as the general method. Vendor-neutral name, already in independent use. Rather than spawn a thin entry, RLHF gained what the constitutional variant actually adds: **a written list of principles makes the values readable and arguable, a transparency property plain RLHF lacks.**
+
+***Acceptable Use Policy* was judged against the scope exclusion and clears it on one fact:** two policies always govern an AI deployment and you wrote only one. **The provider's is revised unilaterally**, so a permitted use can become prohibited with no change on your side and no signal in your monitoring — unlike a normal dependency, where a change makes your software behave differently and your tests notice.
+
+**Data Poisoning was the strongest gap, and its point is that the controls are looking the wrong way.** Poisoning attacks training, not inference, so prompt filtering, output guardrails and rate limiting all operate after the defect is already in the weights. Backdoors **survive evaluation by construction**. Carlini et al. demonstrate web-scale poisoning as immediately practical against ten popular datasets, exploiting something mundane: datasets are URL lists, and web pages change.
+
+**Data Labeling exists for a measurement fact and a labor fact.** Inter-annotator agreement is the **ceiling** on what any evaluation can demonstrate and is almost never published alongside the accuracy figure it caps. And labeling conditions appear in no model documentation. Sambasivan et al. supply the mechanism: **data cascades reported by 92% of the practitioners interviewed**, traced to a culture that rewards model work over data work.
+
+**Algorithmic Impact Assessment is distinguished from FRIA rather than merged with it** — AIA is the generic instrument, FRIA is EU AI Act Article 27 for specific deployers. The generic aliases moved from FRIA to AIA on that basis. Canada's implementation supplies the detail: mandatory, 65 risk and 41 mitigation questions, open-licensed, and **completed assessments published and publicly searchable** — the main counterweight to self-assessment.
+
+**Sources:** 7 added (SRC-308 – SRC-314), 9 reused.
+
+**The citation diff found one real defect at commit time, which is what it is for.** SRC-214 was cited without its `(OpenAI / DeepMind)` affiliation in one entry and with it in another; the registry carries the affiliation, so the registry won. It also surfaced a **truncated standard title**: five entries rendered ISO/IEC 42001:2023 as *"Artificial intelligence — Management system"*, dropping the leading *"Information technology —"* that the registry and the ISO catalogue both carry. The truncated form was the **majority** form, 5 uses against 2 — which is the point worth keeping: **a citation check that ranks by frequency would have called the wrong form correct.** All six occurrences aligned to the registry. Substantive drift across the whole corpus is 0 of 91 — every remaining variation names the same document.
+
+---
+
 ## v1.30 — September 2026
 
 **The score-5 outstanding queue, cleared. Count 127 → 131.**

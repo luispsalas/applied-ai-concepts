@@ -1,7 +1,50 @@
 {
   "schema": 1,
-  "count": 131,
+  "count": 136,
   "entries": [
+    {
+      "slug": "acceptable-use-policy",
+      "term": "Acceptable Use Policy",
+      "category": "Observability & Governance",
+      "essence": "The document stating what a system may and may not be used for — and in AI there are always two of them, one you write and one your provider writes.",
+      "short": "The rules about what a system may be used for — one set written by you, and one written by your provider that changes without asking you",
+      "aliases": [
+        "AUP",
+        "usage policy",
+        "acceptable use",
+        "usage policies",
+        "permitted use",
+        "prohibited use",
+        "terms of use",
+        "what are we allowed to use it for"
+      ],
+      "tags": [
+        "Data Governance",
+        "Regulatory",
+        "Ethics"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "ai-governance",
+        "ai-literacy",
+        "compliance-ai-systems",
+        "data-minimization",
+        "guardrails-ai-systems",
+        "model-version-update",
+        "moral-crumple-zone",
+        "permission-model-ai",
+        "shadow-ai",
+        "supply-chain-risk-ai"
+      ],
+      "sources": [
+        "SRC-001",
+        "SRC-129",
+        "SRC-313",
+        "SRC-314"
+      ],
+      "path": "concepts/acceptable-use-policy.md"
+    },
     {
       "slug": "accountability-ai-systems",
       "term": "Accountability (AI Systems)",
@@ -621,6 +664,48 @@
       "path": "concepts/ai-use-case.md"
     },
     {
+      "slug": "algorithmic-impact-assessment",
+      "term": "Algorithmic Impact Assessment",
+      "category": "Observability & Governance",
+      "essence": "A structured, pre-deployment assessment of the risks an automated decision system poses to the people it affects — scored to an impact level that determines what safeguards apply.",
+      "short": "A structured assessment of what a system could do to people, completed before deployment — and, in the strongest implementations, published",
+      "aliases": [
+        "AIA",
+        "impact assessment",
+        "algorithmic impact assessments",
+        "AIA tool",
+        "impact level",
+        "pre-deployment assessment",
+        "impact assessment tool"
+      ],
+      "tags": [
+        "Regulatory",
+        "Ethics",
+        "Data Governance"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "accountability-ai-systems",
+        "ai-governance",
+        "ai-management-system-iso-42001",
+        "audit-trail-ai",
+        "automated-decision-making",
+        "bias-ai-systems",
+        "compliance-ai-systems",
+        "fundamental-rights-impact-assessment",
+        "model-version-update",
+        "operational-readiness-ai"
+      ],
+      "sources": [
+        "SRC-001",
+        "SRC-169",
+        "SRC-310",
+        "SRC-311"
+      ],
+      "path": "concepts/algorithmic-impact-assessment.md"
+    },
+    {
       "slug": "alignment-ai-systems",
       "term": "Alignment (AI Systems)",
       "category": "Reliability & Quality",
@@ -1186,6 +1271,50 @@
       "path": "concepts/confidence-vs-accuracy.md"
     },
     {
+      "slug": "conformity-assessment-ai",
+      "term": "Conformity Assessment (AI Systems)",
+      "category": "Observability & Governance",
+      "essence": "The procedure by which a high-risk AI system is shown to meet its legal requirements before being placed on the EU market — carried out either by the provider itself or, in defined cases, with a notified body.",
+      "short": "How a high-risk AI system is certified before it goes on the EU market — and the fact that for most of them, the provider certifies itself",
+      "aliases": [
+        "conformity assessment",
+        "notified body",
+        "CE marking",
+        "internal control",
+        "declaration of conformity",
+        "Annex VI",
+        "Annex VII",
+        "who certifies AI",
+        "third-party assessment"
+      ],
+      "tags": [
+        "Regulatory",
+        "Data Governance",
+        "Evaluation"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "accountability-ai-systems",
+        "ai-management-system-iso-42001",
+        "algorithmic-impact-assessment",
+        "audit-trail-ai",
+        "compliance-ai-systems",
+        "evaluation",
+        "fundamental-rights-impact-assessment",
+        "model-card-system-card",
+        "model-version-update",
+        "supply-chain-risk-ai"
+      ],
+      "sources": [
+        "SRC-001",
+        "SRC-129",
+        "SRC-169",
+        "SRC-312"
+      ],
+      "path": "concepts/conformity-assessment-ai.md"
+    },
+    {
       "slug": "content-provenance-watermarking",
       "term": "Content Provenance & Watermarking (C2PA)",
       "category": "Observability & Governance",
@@ -1561,6 +1690,50 @@
       "path": "concepts/dangerous-capability.md"
     },
     {
+      "slug": "data-labeling",
+      "term": "Data Labeling",
+      "category": "Knowledge & Memory",
+      "essence": "The human work of attaching labels to data — the process that produces the ground truth every model is trained toward and every evaluation is scored against.",
+      "short": "The human work that produces every label a model learns from and every benchmark it is judged against — undervalued in exactly the systems that depend on it most",
+      "aliases": [
+        "data labelling",
+        "annotation",
+        "data annotation",
+        "labeling",
+        "labelers",
+        "annotators",
+        "ground truth",
+        "data work",
+        "who labels the data"
+      ],
+      "tags": [
+        "Data Governance",
+        "Ethics",
+        "Evaluation"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "ai-benchmarking",
+        "bias-ai-systems",
+        "data-provenance-lineage",
+        "data-quality",
+        "evaluation",
+        "llm-as-judge",
+        "rlhf",
+        "supply-chain-risk-ai",
+        "synthetic-data",
+        "training-data"
+      ],
+      "sources": [
+        "SRC-121",
+        "SRC-196",
+        "SRC-201",
+        "SRC-308"
+      ],
+      "path": "concepts/data-labeling.md"
+    },
+    {
       "slug": "data-leakage-ai-systems",
       "term": "Data Leakage (AI Systems)",
       "category": "Observability & Governance",
@@ -1674,6 +1847,48 @@
         "SRC-129"
       ],
       "path": "concepts/data-minimization.md"
+    },
+    {
+      "slug": "data-poisoning",
+      "term": "Data Poisoning",
+      "category": "System Architecture",
+      "essence": "Deliberately corrupting a model's training data so the model itself learns the attacker's behavior — a failure introduced before deployment and invisible at the input.",
+      "short": "Corrupting what a model learns rather than what it is asked — an integrity attack on the training set that no amount of input filtering can reach",
+      "aliases": [
+        "poisoning",
+        "training data poisoning",
+        "dataset poisoning",
+        "backdoor attack",
+        "split-view poisoning",
+        "frontrunning poisoning",
+        "integrity attack"
+      ],
+      "tags": [
+        "Security",
+        "Data Governance",
+        "Safety"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "data-provenance-lineage",
+        "evaluation",
+        "fine-tuning",
+        "guardrails-ai-systems",
+        "permission-model-ai",
+        "privacy-attacks-ai-models",
+        "prompt-injection",
+        "rag",
+        "supply-chain-risk-ai",
+        "training-data"
+      ],
+      "sources": [
+        "SRC-198",
+        "SRC-269",
+        "SRC-291",
+        "SRC-309"
+      ],
+      "path": "concepts/data-poisoning.md"
     },
     {
       "slug": "data-provenance-lineage",
@@ -2252,8 +2467,7 @@
         "FRIA",
         "rights impact assessment",
         "Article 27",
-        "impact assessment",
-        "pre-deployment assessment"
+        "fundamental rights assessment"
       ],
       "tags": [
         "Regulatory",
@@ -4409,6 +4623,9 @@
         "RLAIF",
         "DPO",
         "Direct Preference Optimization",
+        "Constitutional AI",
+        "AI feedback",
+        "RL from AI Feedback",
         "how models are made polite"
       ],
       "tags": [

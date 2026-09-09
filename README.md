@@ -30,7 +30,7 @@ This wiki treats AI and data governance as closely connected. Alongside technica
 
 ### Looking a concept up
 
-Browse the [glossary index](glossary/index.md) — 131 terms alphabetically with their one-line essences — or use **`search.html`**, a self-contained search page covering every term plus 813 hand-written synonyms.
+Browse the [glossary index](glossary/index.md) — 136 terms alphabetically with their one-line essences — or use **`search.html`**, a self-contained search page covering every term plus 855 hand-written synonyms.
 
 It is built for concept lookup rather than text search, so describing the problem works: *"who is responsible when the AI does it"*, *"it used to work"*, *"why do I get different answers"*. Each result shows which synonym matched.
 
@@ -176,6 +176,7 @@ Every claim in this wiki is meant to trace back to a real, checkable source — 
 | [Agent Skills](concepts/agent-skills.md) | Folders of instructions an agent loads when it decides they are relevant — a cross-vendor standard whose discovery mechanism is also its attack surface | ✅ v1.0 |
 | [AI Gateway](concepts/ai-gateway.md) | One control point in front of every model provider — the only place organizational AI policy can actually be enforced, and the place every prompt now collects | ✅ v1.0 |
 | [Agentic Design Patterns](concepts/agentic-design-patterns.md) | The named arrangements for splitting what a system decides at runtime from what is fixed in code — and each one puts the power to refuse somewhere different | ✅ v1.0 |
+| [Data Poisoning](concepts/data-poisoning.md) | Corrupting what a model learns rather than what it is asked — an integrity attack on the training set that no amount of input filtering can reach | ✅ v1.0 |
 
 ### Knowledge & Memory
 *How knowledge persists, degrades, and stays fit for use*
@@ -197,6 +198,7 @@ Every claim in this wiki is meant to trace back to a real, checkable source — 
 | [Synthetic Data](concepts/synthetic-data.md) | Data produced by a model rather than observed in the world — a genuine answer to scarcity, privacy and cost, and a genuine way to build a corpus that quietly stops describing reality | ✅ v1.0 |
 | [Context Compaction](concepts/context-compaction.md) | Shrinking a conversation so it keeps fitting — and the point at which what the system knows stops being something anyone chose | ✅ v1.0 |
 | [Ontology](concepts/ontology.md) | The agreed list of what kinds of things exist and how they may relate — a schema that quietly decides what a system can never record | ✅ v1.0 |
+| [Data Labeling](concepts/data-labeling.md) | The human work that produces every label a model learns from and every benchmark it is judged against — undervalued in exactly the systems that depend on it most | ✅ v1.0 |
 
 ### Human Oversight
 *Humans in control by design — not by assumption*
@@ -268,6 +270,9 @@ Every claim in this wiki is meant to trace back to a real, checkable source — 
 | [Privacy Attacks (AI Models)](concepts/privacy-attacks-ai-models.md) | Querying a deployed model to get back what went into it — the training data, its members, or the model itself | ✅ v1.0 |
 | [Dangerous Capability](concepts/dangerous-capability.md) | What a model could do if someone tried to make it — measured separately from whether it would, because the two need different evidence and different controls | ✅ v1.0 |
 | [Supply Chain Risk (AI)](concepts/supply-chain-risk-ai.md) | Everything in your AI system that you did not build and cannot inspect — and the point at which the law stops treating you as a user and starts treating you as the maker | ✅ v1.0 |
+| [Acceptable Use Policy](concepts/acceptable-use-policy.md) | The rules about what a system may be used for — one set written by you, and one written by your provider that changes without asking you | ✅ v1.0 |
+| [Algorithmic Impact Assessment](concepts/algorithmic-impact-assessment.md) | A structured assessment of what a system could do to people, completed before deployment — and, in the strongest implementations, published | ✅ v1.0 |
+| [Conformity Assessment (AI Systems)](concepts/conformity-assessment-ai.md) | How a high-risk AI system is certified before it goes on the EU market — and the fact that for most of them, the provider certifies itself | ✅ v1.0 |
 
 ### Organizational Readiness
 *The human and organizational conditions for responsible AI adoption*
@@ -353,7 +358,7 @@ See [CHANGELOG.md](CHANGELOG.md) for version history.
 ## Status
 
 **Phase 1 ✅ — foundation:** core concepts published and sourced, each with a governance-notes section; standalone [governance & observability notes](notes/governance-and-observability.md) doc live.
-**Phase 2 (current) — breadth & cross-linking:** 131 concepts across 8 categories, a [glossary index](glossary/index.md), client-side [search](search.html), and a cross-reference layer connecting related entries.
+**Phase 2 (current) — breadth & cross-linking:** 136 concepts across 8 categories, a [glossary index](glossary/index.md), client-side [search](search.html), and a cross-reference layer connecting related entries.
 **Phase 3 (planned):** audience-specific rendering, glossary automation, and a manifesto distilled from the wiki's principles.
 
 ---

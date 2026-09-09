@@ -1,7 +1,7 @@
 <!--meta
 category: Foundations
 short: Humans rank outputs, the model learns the ranking — the step that turns a raw model into an assistant, and imports whoever did the ranking
-aliases: [reinforcement learning from human feedback, preference optimization, human feedback training, RLAIF, DPO, Direct Preference Optimization, how models are made polite]
+aliases: [reinforcement learning from human feedback, preference optimization, human feedback training, RLAIF, DPO, Direct Preference Optimization, Constitutional AI, AI feedback, RL from AI Feedback, how models are made polite]
 tags: [Model Behavior, Ethics, Evaluation]
 established: established
 -->
@@ -32,6 +32,8 @@ Post-training that optimizes a model against human preference rather than agains
 **Both come from the same mechanism: optimizing against approval, which is adjacent to truth but not the same thing.** Any behavior that pleases a rater more than accuracy does will be selected for. That is a structural property of the method, not a defect in a particular implementation.
 
 **Terminology.** *RLHF* names the classic three-stage pipeline. **DPO** (Direct Preference Optimization) reaches a similar result without a separate reward model, and **RLAIF** substitutes model-generated preferences for human ones. This entry treats them as one family — the governance questions are identical, and *whose preferences* is the question RLAIF makes sharper rather than resolves.
+
+**One variant of RLAIF answers *whose preferences* explicitly, and that is worth knowing.** Where the supervision signal is a **written list of principles** rather than accumulated labeler judgment — Anthropic's *Constitutional AI* is the published instance — the values become a document that can be read, quoted and argued with, instead of being implicit in a labeler pool and its guidelines. **That is a transparency property plain RLHF does not have**, and it is the reason to care about the distinction; the governance question does not go away, it becomes answerable. The generic name is **RLAIF**, used independently of its originator: a Google-authored comparison study describes RL from AI Feedback as *introduced in* Bai et al. while treating it as the general method.
 
 ---
 
@@ -112,7 +114,7 @@ Which is exactly why it is worth knowing about. A small number of people, follow
 
 | ID | Source | Contribution to this entry |
 |---|---|---|
-| SRC-214 | Christiano, P.; Leike, J.; Brown, T.B.; Martic, M.; Legg, S.; Amodei, D. — *Deep Reinforcement Learning from Human Preferences* (NeurIPS, 2017) · [link](https://arxiv.org/abs/1706.03741) | The originating method: pairwise comparison as a goal-specification channel, and its striking cheapness — under 1% of interactions, about an hour of human time. |
+| SRC-214 | Christiano, P.; Leike, J.; Brown, T.B.; Martic, M.; Legg, S.; Amodei, D. (OpenAI / DeepMind) — *Deep Reinforcement Learning from Human Preferences* (NeurIPS, 2017) · [link](https://arxiv.org/abs/1706.03741) | The originating method: pairwise comparison as a goal-specification channel, and its striking cheapness — under 1% of interactions, about an hour of human time. |
 | SRC-196 | Ouyang, L.; Wu, J.; Jiang, X. et al. (OpenAI) — *Training language models to follow instructions with human feedback* (NeurIPS, 2022) · [link](https://arxiv.org/abs/2203.02155) | The pipeline as applied to language models, and the capability-independence result: 1.3B aligned preferred over 175B unaligned. ⚠️ Vendor-authored, peer-reviewed. |
 | SRC-167 | Sharma, M.; Tong, M.; Korbak, T.; Duvenaud, D.; Askell, A.; Bowman, S.R. et al. (Anthropic) — *Towards Understanding Sycophancy in Language Models* (ICLR, 2024) · [link](https://arxiv.org/abs/2310.13548) | That a training objective produces truth-displacing behavior without anyone designing it — the first named side effect. ⚠️ Vendor-affiliated, peer-reviewed. |
 | SRC-172 | Zhou, K.; Hwang, J.D.; Ren, X.; Sap, M. — *Relying on the Unreliable: The Impact of Language Models' Reluctance to Express Uncertainty* (ACL, 2024) · [link](https://aclanthology.org/2024.acl-long.198/) | The measured bias against expressed uncertainty in preference data — the second side effect, and evidence it originates in the rating step. |
