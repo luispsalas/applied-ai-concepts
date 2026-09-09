@@ -30,7 +30,7 @@ This wiki treats AI and data governance as closely connected. Alongside technica
 
 ### Looking a concept up
 
-Browse the [glossary index](glossary/index.md) — 136 terms alphabetically with their one-line essences — or use **`search.html`**, a self-contained search page covering every term plus 855 hand-written synonyms.
+Browse the [glossary index](glossary/index.md) — 141 terms alphabetically with their one-line essences — or use **`search.html`**, a self-contained search page covering every term plus 901 hand-written synonyms.
 
 It is built for concept lookup rather than text search, so describing the problem works: *"who is responsible when the AI does it"*, *"it used to work"*, *"why do I get different answers"*. Each result shows which synonym matched.
 
@@ -137,6 +137,7 @@ Every claim in this wiki is meant to trace back to a real, checkable source — 
 | [Zero-shot / Few-shot Learning](concepts/zero-shot-few-shot-learning.md) | Getting a task done with no examples or a handful, without changing the model — and the measured finding that the examples do not teach it what you think | ✅ v1.0 |
 | [Latency (AI Systems)](concepts/latency-ai-systems.md) | The wait between asking and being answered — and the constraint that quietly decides whether a human review step survives contact with the product | ✅ v1.0 |
 | [Mixture of Experts](concepts/mixture-of-experts.md) | Models where only a fraction of the parameters run for any given token — which quietly breaks parameter count as a way of comparing anything | ✅ v1.0 |
+| [Model Distillation](concepts/model-distillation.md) | Training a small model to reproduce a large one's behavior — and the fact that the only thing separating this from model theft is permission | ✅ v1.0 |
 
 ### Interaction & Design
 *How you work with models effectively*
@@ -177,6 +178,7 @@ Every claim in this wiki is meant to trace back to a real, checkable source — 
 | [AI Gateway](concepts/ai-gateway.md) | One control point in front of every model provider — the only place organizational AI policy can actually be enforced, and the place every prompt now collects | ✅ v1.0 |
 | [Agentic Design Patterns](concepts/agentic-design-patterns.md) | The named arrangements for splitting what a system decides at runtime from what is fixed in code — and each one puts the power to refuse somewhere different | ✅ v1.0 |
 | [Data Poisoning](concepts/data-poisoning.md) | Corrupting what a model learns rather than what it is asked — an integrity attack on the training set that no amount of input filtering can reach | ✅ v1.0 |
+| [Federated Learning](concepts/federated-learning.md) | Training one model across data that never moves — which relocates the privacy problem into the model updates and trades away the ability to audit the training data at all | ✅ v1.0 |
 
 ### Knowledge & Memory
 *How knowledge persists, degrades, and stays fit for use*
@@ -240,6 +242,8 @@ Every claim in this wiki is meant to trace back to a real, checkable source — 
 | [Catastrophic Forgetting](concepts/catastrophic-forgetting.md) | Teaching a model something new can silently remove something it already knew — including behavior nobody re-tests | ✅ v1.0 |
 | [Overfitting](concepts/overfitting.md) | Learning the training set instead of the pattern — and the reason a model's reported score is not a promise about your data | ✅ v1.0 |
 | [False Positives and False Negatives](concepts/false-positives-and-false-negatives.md) | The two ways a system can be wrong — and the choice of which one to make more often is a policy decision that usually gets made by default | ✅ v1.0 |
+| [Checkpointing](concepts/checkpointing.md) | Saving state at known-good points so a long run can be resumed or undone — and the boundary where undo stops working, which is wherever the system already touched the world | ✅ v1.0 |
+| [Inter-Rater Reliability](concepts/inter-rater-reliability.md) | How much independent raters actually agree — the ceiling on what any evaluation built on their judgments can demonstrate, and almost never published beside the score it caps | ✅ v1.0 |
 
 ### Observability & Governance
 *Making AI system behavior visible and accountable*
@@ -273,6 +277,7 @@ Every claim in this wiki is meant to trace back to a real, checkable source — 
 | [Acceptable Use Policy](concepts/acceptable-use-policy.md) | The rules about what a system may be used for — one set written by you, and one written by your provider that changes without asking you | ✅ v1.0 |
 | [Algorithmic Impact Assessment](concepts/algorithmic-impact-assessment.md) | A structured assessment of what a system could do to people, completed before deployment — and, in the strongest implementations, published | ✅ v1.0 |
 | [Conformity Assessment (AI Systems)](concepts/conformity-assessment-ai.md) | How a high-risk AI system is certified before it goes on the EU market — and the fact that for most of them, the provider certifies itself | ✅ v1.0 |
+| [Differential Privacy](concepts/differential-privacy.md) | A mathematical guarantee that one person's presence in the data barely changes what comes out — a property of the computation, not a label on the dataset, and meaningless without its parameters | ✅ v1.0 |
 
 ### Organizational Readiness
 *The human and organizational conditions for responsible AI adoption*
@@ -358,7 +363,7 @@ See [CHANGELOG.md](CHANGELOG.md) for version history.
 ## Status
 
 **Phase 1 ✅ — foundation:** core concepts published and sourced, each with a governance-notes section; standalone [governance & observability notes](notes/governance-and-observability.md) doc live.
-**Phase 2 (current) — breadth & cross-linking:** 136 concepts across 8 categories, a [glossary index](glossary/index.md), client-side [search](search.html), and a cross-reference layer connecting related entries.
+**Phase 2 (current) — breadth & cross-linking:** 141 concepts across 8 categories, a [glossary index](glossary/index.md), client-side [search](search.html), and a cross-reference layer connecting related entries.
 **Phase 3 (planned):** audience-specific rendering, glossary automation, and a manifesto distilled from the wiki's principles.
 
 ---

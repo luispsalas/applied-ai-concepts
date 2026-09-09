@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "count": 136,
+  "count": 141,
   "entries": [
     {
       "slug": "acceptable-use-policy",
@@ -700,8 +700,8 @@
       "sources": [
         "SRC-001",
         "SRC-169",
-        "SRC-310",
-        "SRC-311"
+        "SRC-211",
+        "SRC-310"
       ],
       "path": "concepts/algorithmic-impact-assessment.md"
     },
@@ -1112,6 +1112,54 @@
         "SRC-289"
       ],
       "path": "concepts/catastrophic-forgetting.md"
+    },
+    {
+      "slug": "checkpointing",
+      "term": "Checkpointing",
+      "category": "Reliability & Quality",
+      "essence": "Saving a system's state at known-good points so work can be resumed or rolled back — which turns an all-or-nothing run into a recoverable one, up to the boundary where the system has already acted on the world.",
+      "short": "Saving state at known-good points so a long run can be resumed or undone — and the boundary where undo stops working, which is wherever the system already touched the world",
+      "aliases": [
+        "checkpoint",
+        "model checkpoint",
+        "training checkpoint",
+        "save point",
+        "restore point",
+        "state snapshot",
+        "snapshotting",
+        "resume from checkpoint",
+        "checkpoint and restore"
+      ],
+      "tags": [
+        "Architecture",
+        "Security",
+        "Agents"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "agency-ai-systems",
+        "ai-agent",
+        "audit-trail-ai",
+        "context-compaction",
+        "data-poisoning",
+        "failure-modes-ai-systems",
+        "human-in-the-loop",
+        "memory-ai-systems",
+        "model-version-update",
+        "observability",
+        "sandboxing",
+        "supply-chain-risk-ai",
+        "tool-use",
+        "verification"
+      ],
+      "sources": [
+        "SRC-001",
+        "SRC-130",
+        "SRC-319",
+        "SRC-320"
+      ],
+      "path": "concepts/checkpointing.md"
     },
     {
       "slug": "cognitive-offloading-deskilling",
@@ -2047,6 +2095,52 @@
       "path": "concepts/determinism-vs-probabilism.md"
     },
     {
+      "slug": "differential-privacy",
+      "term": "Differential Privacy",
+      "category": "Observability & Governance",
+      "essence": "A formal guarantee that whatever the system publishes, it would have been almost exactly as likely to publish had any one individual never been in the data at all.",
+      "short": "A mathematical guarantee that one person's presence in the data barely changes what comes out — a property of the computation, not a label on the dataset, and meaningless without its parameters",
+      "aliases": [
+        "differentially private",
+        "DP",
+        "epsilon differential privacy",
+        "privacy budget",
+        "privacy loss parameter",
+        "DP-SGD",
+        "differentially private training",
+        "epsilon"
+      ],
+      "tags": [
+        "Privacy",
+        "Data Governance",
+        "Regulatory"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "ai-governance",
+        "anonymization-and-pseudonymization",
+        "bluewashing",
+        "compliance-ai-systems",
+        "data-leakage-ai-systems",
+        "data-minimization",
+        "federated-learning",
+        "privacy-ai-systems",
+        "privacy-attacks-ai-models",
+        "synthetic-data",
+        "training-data"
+      ],
+      "sources": [
+        "SRC-292",
+        "SRC-295",
+        "SRC-324",
+        "SRC-325",
+        "SRC-326",
+        "SRC-327"
+      ],
+      "path": "concepts/differential-privacy.md"
+    },
+    {
       "slug": "domain",
       "term": "Domain",
       "category": "Knowledge & Memory",
@@ -2364,6 +2458,54 @@
         "SRC-300"
       ],
       "path": "concepts/false-positives-and-false-negatives.md"
+    },
+    {
+      "slug": "federated-learning",
+      "term": "Federated Learning",
+      "category": "System Architecture",
+      "essence": "Training a shared model across many parties without collecting their data in one place — only the model updates travel, which is a genuine architectural change and a much weaker privacy claim than it sounds.",
+      "short": "Training one model across data that never moves — which relocates the privacy problem into the model updates and trades away the ability to audit the training data at all",
+      "aliases": [
+        "FL",
+        "federated averaging",
+        "FedAvg",
+        "decentralized training",
+        "distributed training on local data",
+        "cross-device learning",
+        "cross-silo learning",
+        "on-device training",
+        "training without centralizing data"
+      ],
+      "tags": [
+        "Architecture",
+        "Privacy",
+        "Data Governance"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "bias-ai-systems",
+        "data-minimization",
+        "data-poisoning",
+        "data-quality",
+        "differential-privacy",
+        "edge-ai",
+        "local-llms",
+        "model-data-drift",
+        "ownership-ai-systems",
+        "privacy-ai-systems",
+        "privacy-attacks-ai-models",
+        "training-data"
+      ],
+      "sources": [
+        "SRC-257",
+        "SRC-328",
+        "SRC-329",
+        "SRC-330",
+        "SRC-331",
+        "SRC-332"
+      ],
+      "path": "concepts/federated-learning.md"
     },
     {
       "slug": "fine-tuning",
@@ -2840,6 +2982,55 @@
         "SRC-247"
       ],
       "path": "concepts/inference.md"
+    },
+    {
+      "slug": "inter-rater-reliability",
+      "term": "Inter-Rater Reliability",
+      "category": "Reliability & Quality",
+      "essence": "The degree to which independent people applying the same instructions to the same items reach the same judgment — which sets a hard ceiling on what any evaluation scored against those judgments can prove.",
+      "short": "How much independent raters actually agree — the ceiling on what any evaluation built on their judgments can demonstrate, and almost never published beside the score it caps",
+      "aliases": [
+        "interrater reliability",
+        "inter-annotator agreement",
+        "inter-annotator reliability",
+        "rater agreement",
+        "annotator agreement",
+        "agreement rate",
+        "Cohen's kappa",
+        "kappa statistic",
+        "Fleiss kappa",
+        "Krippendorff's alpha",
+        "how much do reviewers agree"
+      ],
+      "tags": [
+        "Evaluation",
+        "Data Governance",
+        "AI Literacy"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "ai-benchmarking",
+        "bias-ai-systems",
+        "confidence-vs-accuracy",
+        "data-labeling",
+        "determinism-vs-probabilism",
+        "evaluation",
+        "false-positives-and-false-negatives",
+        "human-in-the-loop",
+        "llm-as-judge",
+        "red-teaming",
+        "rlhf",
+        "verification"
+      ],
+      "sources": [
+        "SRC-196",
+        "SRC-308",
+        "SRC-321",
+        "SRC-322",
+        "SRC-323"
+      ],
+      "path": "concepts/inter-rater-reliability.md"
     },
     {
       "slug": "jailbreak",
@@ -3362,6 +3553,56 @@
         "SRC-201"
       ],
       "path": "concepts/model-card-system-card.md"
+    },
+    {
+      "slug": "model-distillation",
+      "term": "Model Distillation",
+      "category": "Foundations",
+      "essence": "Training a smaller model to reproduce a larger model's behavior — transferring capability at a fraction of the cost, and transferring things nobody intended along with it.",
+      "short": "Training a small model to reproduce a large one's behavior — and the fact that the only thing separating this from model theft is permission",
+      "aliases": [
+        "knowledge distillation",
+        "distillation",
+        "distilled model",
+        "teacher-student",
+        "teacher model",
+        "student model",
+        "model compression",
+        "dark knowledge",
+        "distill a model"
+      ],
+      "tags": [
+        "Architecture",
+        "Model Behavior",
+        "Safety"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "acceptable-use-policy",
+        "edge-ai",
+        "environmental-cost-of-ai",
+        "fine-tuning",
+        "frontier-ai",
+        "inference",
+        "jailbreak",
+        "local-llms",
+        "mixture-of-experts",
+        "model-card-system-card",
+        "pre-training",
+        "privacy-attacks-ai-models",
+        "small-language-models",
+        "supply-chain-risk-ai"
+      ],
+      "sources": [
+        "SRC-294",
+        "SRC-301",
+        "SRC-315",
+        "SRC-316",
+        "SRC-317",
+        "SRC-318"
+      ],
+      "path": "concepts/model-distillation.md"
     },
     {
       "slug": "model-version-update",

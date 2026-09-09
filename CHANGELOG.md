@@ -1,5 +1,35 @@
 # Changelog
 
+## v1.32 — September 2026
+
+**Five entries on measurement and privacy mechanics. Count 136 → 141.**
+
+- `model-distillation` — v1.0, **`established`**
+- `checkpointing` — v1.0, **`established`**
+- `inter-rater-reliability` — v1.0, **`established`**
+- `differential-privacy` — v1.0, **`established`**
+- `federated-learning` — v1.0, **`established`**
+
+**Four of the five turn on the same shape: a claim that sounds like a guarantee and is not one.**
+
+***Distillation and model extraction are the same technique.*** Querying a model you do not own and training on its answers is how a distillation set is built and how a model is stolen. Nothing in the method distinguishes them — **the line is drawn by a contract**, which means "where did this model's capability come from" cannot be answered by inspecting the model. Angell et al. supply the second half: increasing student–teacher similarity **through benign-only distillation causally increases jailbreak transfer**, so a student trained on entirely harmless outputs inherits the teacher's attack surface without necessarily inheriting its safety training.
+
+***Rollback restores the agent, never the world.*** Checkpointing's governance content is the boundary, not the mechanism: an agent's context can be restored, but the refund it issued and the email it sent cannot. **A resumed run therefore starts with the agent's beliefs and reality out of step**, and every side-effecting call becomes a candidate for duplication. Two further points the word "checkpoint" hides — a checkpoint is *not* an audit trail (state, not the sequence of decisions, which is what Article 12 requires), and **loading one executes code**: PickleBall measures **44.9%** of popular Hugging Face models still on the pickle format, downloaded over 400 million times a month, with **15%** unable to use the safe loader at all.
+
+***"Differentially private" without an epsilon is not a claim.*** The entry pins the definition where it belongs — a property of the **algorithm**, not a label on a dataset, which is exactly why it survives an attacker's outside information where k-anonymity does not. It cleared check 1 on the **governance route**, unusually for a technical term: NIST published a whole Special Publication on how to *evaluate* a differential-privacy claim. The demand the entry makes is three-part — epsilon, the unit of privacy (event or user), and the composition accounting — and epsilon is the one parameter no expert can choose for you.
+
+***Federated learning trades auditability for locality*** — the point the seed note did not anticipate and the best governance content in the batch. The known correction is that the data stays put while the updates leak, evidenced by **two independent groups** recovering training inputs from shared gradients. The less-discussed cost is that **you cannot inspect data you never received**: quality, bias, provenance and poisoning all become structurally unobservable to whoever owns the model. The architecture that keeps regulators' concerns off your servers keeps your own assurance off them too.
+
+***Inter-rater reliability is the ceiling nobody prints.*** An accuracy figure is a comparison against someone's answer key; if the people who wrote it agreed with each other seven times in ten, the score cannot mean what it looks like. Two corrections the entry carries: the famous *substantial / almost perfect* bands are **an arbitrary convention** the authors scoped to one table in one paper, and a low kappa with one dominant category is **a known paradox**, not evidence of bad rating — which is precisely the rare-class regime most safety evaluation lives in.
+
+**Sources:** 18 added (SRC-315 – SRC-332), 9 reused.
+
+**A duplicate registration was found and retired.** SRC-311 and SRC-211 both held EU AI Act Article 27, at the same URL — registered twice in v1.31 because the duplicate check was run against the article *title wording*, which differed between the two rows. The one citing entry was repointed to SRC-211 and SRC-311 retired. **The citation checker could not have caught it**: it compares the rendered forms of one ID against each other, so many IDs naming one document is invisible to it. It flagged both as "NEW — verify against the registry," each verification passed alone, and nothing compared them to each other.
+
+**Archive capture, and a rule that paid for itself.** Nine of eighteen new sources returned no snapshot under their DOI. Retrying at the **publisher URL** recovered seven of the remaining eight — ACM, SAGE, JSTOR and Now Publishers all archive their own pages while the DOI redirect archives nothing. One source (Feinstein & Cicchetti, Elsevier) is genuinely unarchived after four URL forms, and the registry records that rather than leaving the cell empty.
+
+---
+
 ## v1.31 — September 2026
 
 **The score-4 queue, cleared. Five published, one folded, one renamed. Count 131 → 136.**
