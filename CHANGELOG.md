@@ -1,5 +1,30 @@
 # Changelog
 
+## v1.35 — September 2026
+
+**Four entries enriched from one source. No new entries; count stays at 150.**
+
+- `harness-paradigm` — v1.3 → **v1.4**
+- `evaluation` — v1.1 → **v1.2**
+- `llm-as-judge` — v1.0 → **v1.1**
+- `sycophancy-llms` — v1.0 → **v1.1**
+
+**SRC-354 is the first video source ever cited in this corpus.** The house video-citation standard — APA 7th, `Last Name, F. [Channel]. (Year, Month Day). Title [Video]. YouTube. URL` — has existed since May 2026 with **zero instances**. SRC-033 is the only other video row in the registry and has sat `Pending` and uncited for nearly four months; SRC-035 was a video that was registered and later demoted. So this release exercises a four-month-old untested convention, and it does not fit perfectly: **the `(Author, Year, MM:SS)` half could not be applied**, because the working copy carries no timestamps.
+
+***Harness Paradigm* gains the claim that the harness does not shrink as models improve — it moves.** The cycle is: find where the model is weak, fill the gap with scaffolding, let the next generation absorb it, then **delete that part of the harness**. The worked example is the valuable half — components forcing a context reset between sessions, and decomposing work into sprints, were necessary for one model generation and deliberately removed for the next. **That makes a harness component dated to a model generation**, and it reframes what a harness review is for: the obvious failure is not building the scaffolding, the less obvious one is keeping it after the gap it patched has closed.
+
+***LLM-as-Judge* gains the reason the pattern works**, which the entry previously described without explaining: **tuning a standalone critic to be harsh is tractable; tuning a builder to critique its own work is not.** The judge is not a cheaper rater, it is a different job the same model does better when it is not also the author. Three practices follow — keep the roles genuinely separate, **do not feed the judge the generator's traces**, and expect the untuned model to be too generous.
+
+***Evaluation* gains the contract-before-building pattern**: builder and evaluator agree what "done" means *before* work starts, as a durable artifact, and the result is graded against that agreement rather than the original brief. Granular criteria produce actionable critiques; vague criteria produce vague ones.
+
+***Sycophancy (LLMs)* gains the coding case, which is the form people fail to recognize as sycophancy at all** — a half-built feature declared done, a button shipped with no backend. Nobody is being flattered, so it reads as a capability problem; the mechanism is the same one.
+
+**Every one of these is a vendor engineering account, and all four entries say so twice** — inline and in their Confidence sections. **No self-reported performance figure from the talk is cited anywhere** (run length 1h→12h at 50% task completion, ~30h runs, ~$200 for a 6h build), by design. **Nothing is quoted verbatim**: the working copy is a summary, and several phrases sit inside quotation marks there without having been checked against the recording.
+
+**An archive lookup that was left unresolved rather than guessed.** Wayback returned HTTP 429 on every attempt, including after exponential backoff. The archive column is **empty and labeled could-not-determine** — not "unarchived" — which is the distinction added to the workspace guardrails this morning, firing on its own author the same day.
+
+---
+
 ## v1.34 — September 2026
 
 **Five entries on assurance and its limits. Count 145 → 150.**

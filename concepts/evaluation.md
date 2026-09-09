@@ -30,6 +30,15 @@ Evaluation is the systematic measurement of AI system performance against define
 
 **Evaluation is not observability.** Observability tells you what a system is doing; evaluation tells you how well it is doing it. Both are necessary; neither substitutes for the other.
 
+**Where quality is subjective, the criteria have to be written down before the work starts — and the granularity of the criteria sets the usefulness of the critique.** Practitioners running long agent builds report a pattern worth borrowing outside agents: the builder and the evaluator **agree what "done" means before building begins**, recording it as a durable artifact, and the result is then graded against *that agreed contract* rather than against the original brief. The evaluator is expected to push back at that stage — on scope, on weak tests, on missed edge cases — which is the step that makes the later grade meaningful rather than a rubber stamp.
+
+Two consequences they report:
+
+- **Granular criteria produce actionable critiques; vague criteria produce vague ones.** A rubric is not a checklist to be satisfied but the vocabulary the critique will be written in.
+- **Subjective quality is gradable if someone is willing to write down a strong opinion.** Calibrating an evaluator against a handful of reference examples is what converts "does this look good" from an unmeasurable property into a scored one — which is the same move as publishing the [inter-rater agreement](inter-rater-reliability.md) behind a human reference set.
+
+⚠️ A first-party engineering account rather than a study (see Confidence level).
+
 ---
 
 ## Plain-language version
@@ -77,7 +86,7 @@ Three things practitioners need to understand:
 
 ## Confidence level
 
-**High on pre-deployment practice, medium on production evaluation.** Pre-deployment benchmarking and human evaluation are stable practices. Production evaluation methods — LLM-as-judge, drift detection, automated pipelines — are active development areas with known limitations. Evaluation methodology is a fast-moving field; specific techniques and benchmarks should be treated as current best practice, not fixed standards. The limits of benchmarking itself are also better documented than they were: the strongest recent statements of what evaluation cannot establish come from the labs producing the evaluations, in their own limitations sections.
+**High on pre-deployment practice, medium on production evaluation.** Pre-deployment benchmarking and human evaluation are stable practices. Production evaluation methods — LLM-as-judge, drift detection, automated pipelines — are active development areas with known limitations. Evaluation methodology is a fast-moving field; specific techniques and benchmarks should be treated as current best practice, not fixed standards. The limits of benchmarking itself are also better documented than they were: the strongest recent statements of what evaluation cannot establish come from the labs producing the evaluations, in their own limitations sections. ⚠️ **The contract-before-building pattern added in v1.2 is a first-party engineering account** from a vendor describing its own agent products, with no published method, sample or baseline. It is cited for the *practice* and for the criteria-granularity observation, both of which are testable on any evaluation you run; nothing in it establishes that the pattern outperforms an alternative.
 
 ---
 
@@ -100,6 +109,7 @@ Three things practitioners need to understand:
 | SRC-065 | Liang, P. et al. — *Holistic Evaluation of Language Models (HELM)* (TMLR, 2023) · [link](https://arxiv.org/abs/2211.09110) | Comprehensive benchmarking framework: 30+ metrics across accuracy, calibration, robustness, fairness, efficiency; multi-scenario evaluation methodology; distinction between capability and deployment readiness. Peer-reviewed. |
 | SRC-132 | DoorDash Engineering — *How DoorDash Efficiently Scales LLM-based Order Item Recommendations* (2024) · [link](https://doordash.engineering/2024/09/17/how-doordash-efficiently-scales-llm-based-order-item-recommendations/) | Production evaluation at scale: LLM-as-judge implementation, offline/online evaluation split, sampling pipeline, performance drift monitoring in a live recommendation system. Industry case study. |
 | SRC-131 | LangChain — *LangSmith Documentation: Evaluation* (2024) · [link](https://docs.smith.langchain.com/evaluation) | Practical evaluation tooling patterns: automated evaluators, human review workflows, production monitoring integration, evaluation dataset management. Vendor-produced — use as background reference for tooling patterns; not cited as methodological authority. |
+| SRC-354 | Prabaker, A., & Wilson, A. [AI Engineer]. (2026, May 18). *Anthropic Workshop: Build Agents That Run for Hours* [Video]. YouTube. · [link](https://www.youtube.com/watch?v=mR-WAvEPRwE) | The **contract-before-building** pattern: generator and evaluator agree what "done" means, as a durable artifact, and grade against that rather than the original brief — plus the two reported consequences, that granular criteria yield actionable critiques and that subjective quality becomes gradable once someone writes down a strong opinion and calibrates against reference examples. ⚠️ **VENDOR** (Anthropic engineers on Anthropic products); an engineering account with no published method, sample or baseline. ⚠️ Summarized working copy, so nothing is quoted verbatim. |
 | SRC-179 | Chen, Y.-H.; Wen, J.; Kirchner, J.H. (Anthropic) — *Automated Researchers Can Reliably Mitigate Alignment Failures* (Alignment Science Blog, 2026) · [link](https://alignment.anthropic.com/2026/automated-alignment-researchers/) | A first-party statement of what benchmark evaluation cannot establish — proxies for real-world behavior, no benchmark at all for rare or recent failures, unmeasured capability degradation in accepted methods. Also a working case of AI-supervised AI: a monitoring agent reviewed every proposed method and caught cheating in 2.4% of ~1,600 transcripts. ⚠️ Vendor-authored, not peer-reviewed; cited for its limitations and method, not its effect sizes. |
 
 ---
@@ -115,4 +125,4 @@ Three things practitioners need to understand:
 
 ---
 
-*Last updated: v1.1 · August 2026*
+*Last updated: v1.2 · September 2026*

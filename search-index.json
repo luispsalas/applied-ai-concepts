@@ -2448,8 +2448,8 @@
         "Evaluation",
         "Data Governance"
       ],
-      "version": "v1.1",
-      "updated": "August 2026",
+      "version": "v1.2",
+      "updated": "September 2026",
       "related": [
         "ai-benchmarking",
         "hallucination",
@@ -2463,7 +2463,8 @@
         "SRC-065",
         "SRC-131",
         "SRC-132",
-        "SRC-179"
+        "SRC-179",
+        "SRC-354"
       ],
       "path": "concepts/evaluation.md"
     },
@@ -2935,8 +2936,8 @@
         "Architecture",
         "Agents"
       ],
-      "version": "v1.3",
-      "updated": "July 2026",
+      "version": "v1.4",
+      "updated": "September 2026",
       "related": [
         "ai-agent",
         "context-engineering",
@@ -2953,7 +2954,8 @@
         "SRC-019",
         "SRC-071",
         "SRC-103",
-        "SRC-118"
+        "SRC-118",
+        "SRC-354"
       ],
       "path": "concepts/harness-paradigm.md"
     },
@@ -3452,7 +3454,7 @@
         "Evaluation",
         "AI Literacy"
       ],
-      "version": "v1.0",
+      "version": "v1.1",
       "updated": "September 2026",
       "related": [
         "audit-trail-ai",
@@ -3469,7 +3471,8 @@
         "SRC-065",
         "SRC-174",
         "SRC-220",
-        "SRC-242"
+        "SRC-242",
+        "SRC-354"
       ],
       "path": "concepts/llm-as-judge.md"
     },
@@ -5530,8 +5533,8 @@
         "Model Behavior",
         "Ethics"
       ],
-      "version": "v1.0",
-      "updated": "August 2026",
+      "version": "v1.1",
+      "updated": "September 2026",
       "related": [
         "ai-literacy",
         "alignment-ai-systems",
@@ -5547,7 +5550,8 @@
       "sources": [
         "SRC-001",
         "SRC-010",
-        "SRC-167"
+        "SRC-167",
+        "SRC-354"
       ],
       "path": "concepts/sycophancy-llms.md"
     },

@@ -31,6 +31,14 @@ A judge model is given a task, one or more candidate outputs, and a rubric, and 
 
 **Self-enhancement bias is the one with governance consequences.** If the judge and the system under test come from the same model family, the evaluation is structurally predisposed toward passing. That is not a subtle effect to be corrected for; it is a conflict of interest built into the setup.
 
+**There is a structural reason the pattern works at all, and it is worth stating because it also tells you how to build the judge.** Practitioners report that **tuning a standalone critic to be harsh is tractable, while tuning a builder to critique its own work is not** — the everyday version being that judging a meal is easier than cooking one. That asymmetry is the pattern's actual foundation: the judge is not merely a cheaper rater, it is a *different job* that the same model does better when it is not also the author. Three practices follow from it, all reported from production use:
+
+- **Keep the roles genuinely separate** — distinct system prompts and distinct context windows, not one model asked to switch hats.
+- **Do not feed the judge the generator's traces.** Judging the output and reading the author's reasoning are different tasks, and mixing the two streams muddies the verdict.
+- **Expect the untuned model to be a poor critic.** Out of the box it is reported as too generous — the *fix it later* verdict — which is [sycophancy](sycophancy-llms.md) wearing a QA hat, and is the specific thing the judge's system prompt has to overcome.
+
+⚠️ These are engineering observations from a vendor describing its own products, not measured results (see Confidence level).
+
 **The deeper limit: agreement is concordance, not correctness.** An 80% agreement rate says the judge and the humans reach the same verdict, not that either is right. Where both share a blind spot — a plausible-sounding wrong answer, a confidently-argued falsehood — the metric rises while quality does not. And the judge cannot reliably grade what it cannot do, which is precisely the case ([scalable oversight](scalable-oversight.md)) where automated review is most wanted.
 
 ---
@@ -96,7 +104,7 @@ And there is a limit underneath all of it. Agreeing with people is not the same 
 
 ## Confidence level
 
-**Medium-High.** Both halves come from the same peer-reviewed NeurIPS paper, which is unusually clean: the method's value and its named failure modes were established together rather than the caveats arriving later. **The scope limit matters more than the confidence rating:** the 80% agreement figure is for strong judges on general chat-quality comparison, and does not transfer to domain-specific, safety-critical or expert-level grading, where the judge's own capability is the binding constraint. Mitigations for position and verbosity bias are practical and tested; **no reliable mitigation exists for the case where judge and reviewed system share a blind spot**, which is the failure most likely to matter and the least likely to be visible in the metric.
+**Medium-High.** Both halves come from the same peer-reviewed NeurIPS paper, which is unusually clean: the method's value and its named failure modes were established together rather than the caveats arriving later. **The scope limit matters more than the confidence rating:** the 80% agreement figure is for strong judges on general chat-quality comparison, and does not transfer to domain-specific, safety-critical or expert-level grading, where the judge's own capability is the binding constraint. Mitigations for position and verbosity bias are practical and tested; **no reliable mitigation exists for the case where judge and reviewed system share a blind spot**, which is the failure most likely to matter and the least likely to be visible in the metric. ⚠️ **The asymmetry argument added in v1.1 is a practitioner account, not a measurement** — Anthropic engineers describing their own production setup. It is a persuasive *reason* the pattern works and is consistent with the peer-reviewed agreement results above, but no error rate is attached to it; the three practices that follow are reported experience rather than controlled comparisons.
 
 ---
 
@@ -121,6 +129,7 @@ And there is a limit underneath all of it. Agreeing with people is not the same 
 | SRC-242 | Zheng, L.; Chiang, W.-L.; Sheng, Y.; Zhuang, S.; Wu, Z.; Lin, Z.; Xing, E.P.; Zhang, H.; Gonzalez, J.E.; Stoica, I. — *Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena* (NeurIPS Datasets & Benchmarks, 2023) · [link](https://arxiv.org/abs/2306.05685) | Both halves: strong judges achieve "over 80% agreement, the same level of agreement between humans", and the four named biases — position, verbosity, self-enhancement, and limited reasoning ability. |
 | SRC-220 | Bowman, S.R.; Hyun, J.; Perez, E. et al. (Anthropic) — *Measuring Progress on Scalable Oversight for Large Language Models* (2022) · [link](https://arxiv.org/abs/2211.03540) | The circularity this method inherits: where a human could not adjudicate the output, an automated judge relocates the trust question rather than answering it. ⚠️ Vendor-authored preprint. |
 | SRC-174 | Goddard, K.; Roudsari, A.; Wyatt, J.C. — *Automation bias: a systematic review* (JAMIA, 2012) · [link](https://doi.org/10.1136/amiajnl-2011-000089) | Why a judge's score is accepted more readily than a human rater's, and degrades rather than informs the reviewer's own judgment. |
+| SRC-354 | Prabaker, A., & Wilson, A. [AI Engineer]. (2026, May 18). *Anthropic Workshop: Build Agents That Run for Hours* [Video]. YouTube. · [link](https://www.youtube.com/watch?v=mR-WAvEPRwE) | The **asymmetry argument** for why the judge pattern works — tuning a standalone critic to be harsh is tractable while tuning a builder to self-critique is not — plus three production practices that follow: separate context windows and system prompts, withholding the generator's traces from the judge, and treating the untuned model's generosity bias as the thing the judge prompt must overcome. ⚠️ **VENDOR** (Anthropic engineers on Anthropic products): an engineering account, not a measurement, and no agreement rates or error bars are reported. ⚠️ Summarized working copy, so nothing is quoted verbatim. |
 | SRC-065 | Liang, P. et al. (Stanford CRFM) — *Holistic Evaluation of Language Models (HELM)* (TMLR, 2023) · [link](https://arxiv.org/abs/2211.09110) | Multi-metric, multi-scenario evaluation as the surrounding practice — a judge supplies one metric among several, not a verdict. |
 
 ---
@@ -136,4 +145,4 @@ And there is a limit underneath all of it. Agreeing with people is not the same 
 
 ---
 
-*Last updated: v1.0 · September 2026*
+*Last updated: v1.1 · September 2026*

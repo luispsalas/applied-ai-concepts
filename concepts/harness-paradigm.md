@@ -33,6 +33,10 @@ Key harness components:
 
 The distinction matters: the harness paradigm is the architectural claim (intelligence and control are separate layers), while harness engineering is the practice of designing, versioning, and iterating that control layer over time.
 
+**The harness does not shrink as models improve — it moves, and the parts it leaves behind are a maintenance liability.** Practitioners building long-running agents describe the cycle explicitly: find where the model is weak, fill the gap with scaffolding, let the next model generation absorb that capability, then **delete that part of the harness**. Their own worked example is the useful half — components built to force a context reset between sessions, and to decompose work into sprints, were *necessary* for one model generation and *removed* for the next, which held a long continuous build coherently on its own.
+
+**That makes a harness component dated to a model generation**, and it reframes what a harness review is for. The obvious failure is not having built the scaffolding; **the less obvious one is keeping it after the gap it patched has closed** — paying its cost, and constraining the model with a workaround for a weakness it no longer has. ⚠️ Treat this as an engineering account rather than a measured finding: it is a first-party report from a vendor describing its own products (see Confidence level).
+
 ---
 
 ## Plain-language version
@@ -82,7 +86,7 @@ Four implications:
 
 ## Confidence level
 
-**Medium-High.** The paradigm is well-established in production AI engineering (2023–present), and *harness engineering* has since been named and treated as a discipline in practitioner literature (Böckeler; Osmani), with systematic academic treatment of harness components. Its application to governance and organizational design is newer and still developing.
+**Medium-High.** The paradigm is well-established in production AI engineering (2023–present), and *harness engineering* has since been named and treated as a discipline in practitioner literature (Böckeler; Osmani), with systematic academic treatment of harness components. Its application to governance and organizational design is newer and still developing. ⚠️ **The co-evolution claim added in v1.4 is a first-party engineering account** — Anthropic engineers describing their own harness around their own models, at a third-party conference. It is cited for the *practice pattern* (build scaffolding for a gap, delete it when the gap closes) and for their worked example of components they removed; **the run-length and cost figures in the same talk are self-reported with no published method and are not cited here.** Treat the pattern as a hypothesis worth testing on your own stack rather than as a measured result.
 
 ---
 
@@ -108,6 +112,7 @@ Four implications:
 | SRC-019 | Multiple authors — *Architectural Design Decisions in AI Agent Harnesses* (arXiv:2604.18071, 2026) · [link](https://arxiv.org/html/2604.18071v1) | Systematic academic treatment of harness components: state/persistence, security/governance, orchestration/tool use, memory, observability, and evals. Provides peer-reviewed grounding for the harness component list in the technical definition. |
 | SRC-071 | Osmani, Addy — *Agent Harness Engineering* (O'Reilly Radar, 2026) · [link](https://www.oreilly.com/radar/agent-harness-engineering/) | Names harness engineering as a discipline and frames the *agent = model + harness* formulation: the observed gap between model capability and system behavior is largely a harness gap. Source for the failure-driven ratchet — constraints earned from observed failures, each rule traceable to a specific thing that went wrong. |
 | SRC-103 | Model Context Protocol — *What is the Model Context Protocol (MCP)?* (official documentation, 2024) · [link](https://modelcontextprotocol.io/docs/getting-started/intro) | MCP as the standardization layer for tool interfaces: an open standard ("a USB-C port for AI applications") giving AI applications a uniform way to connect to external tools and data sources, so integrations are build-once / integrate-everywhere — grounds the claim that tool contracts are converging on a shared interface standard. |
+| SRC-354 | Prabaker, A., & Wilson, A. [AI Engineer]. (2026, May 18). *Anthropic Workshop: Build Agents That Run for Hours* [Video]. YouTube. · [link](https://www.youtube.com/watch?v=mR-WAvEPRwE) | Practitioner account of harness/model **co-evolution**: the cycle of finding a model gap, filling it with scaffolding, training the model on it and then removing that part of the harness — with the worked example of context-reset and sprint-decomposition components that were necessary for one model generation and deliberately deleted for the next. ⚠️ **VENDOR** (Anthropic engineers on Anthropic products, presented at a third-party conference): an engineering account, not a measurement. Every run-length and cost figure in the talk is self-reported with no published method. ⚠️ The wiki's working copy is a summary, not a verbatim transcript, so nothing here is quoted. |
 | SRC-118 | Sutter, Michal — *Claude Code Guide 2026: 25 Features with Examples + Demo* (MarkTechPost, 2026) · [link](https://www.marktechpost.com/2026/06/14/claude-code-guide-2026-25-features-with-examples-demo/) | Third-party analysis of a deployed agentic system's harness-layer primitives: persistent context (CLAUDE.md), reusable behaviors (skills), subagent delegation, hooks, and MCP server integrations. Illustrates that governance and control are harness-layer design choices in a concrete, production system — not model-level properties. |
 
 ---
@@ -123,4 +128,4 @@ Four implications:
 
 ---
 
-*Last updated: v1.3 · July 2026*
+*Last updated: v1.4 · September 2026*
