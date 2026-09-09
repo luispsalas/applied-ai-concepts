@@ -16,7 +16,7 @@ scores that the public projection deliberately omits. `backups/` is gitignored
 Credentials are read from ~/.config/gcp/ and are NEVER embedded here or in the
 output. If the token has expired this refreshes it in place.
 """
-import csv, json, sys, urllib.parse, urllib.request
+import csv, json, re, sys, urllib.parse, urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -55,6 +55,64 @@ def sweep_cells(rows, label):
     else:
         print(f"  charset: {label} clean ({len(rows)} rows swept)")
     return uniq
+
+
+# Markers that mean "a lookup RAN and found nothing" as against "no lookup is
+# recorded". Deliberately prose-matched rather than tokenised: retrofitting a
+# token into 300+ existing rows would cost more than it buys, and the failure
+# direction is safe -- a note this misses falls into `no-record`, which is the
+# bucket a human reads, never the bucket that says everything is fine.
+_CHECKED_NEGATIVE = re.compile(
+    r"none archived|no (?:wayback )?snapshot|not archived|unarchived|"
+    r"checked \w+ (?:url )?forms", re.I)
+# Markers that mean the lookup could not be completed -- rate limit, error,
+# never run to conclusion. THIS IS NOT THE SAME AS 'no snapshot' and the whole
+# point of the check is to keep the two apart.
+_UNRESOLVED = re.compile(
+    r"lookup not completed|could[- ]not[- ]determine|could not be determined|"
+    r"not verified|429|rate[- ]limit", re.I)
+
+
+def write_archive_state(reg):
+    """Project ONE machine-readable line per source: is it archived, and if not,
+    was that a completed check or an unfinished one?
+
+    Only three short fields are projected. The registry's assessment prose
+    (contribution, credibility, risk flags, version notes) stays INTERNAL --
+    this repo is public, and those columns are not published today. Widening
+    that would be a decision, not a side effect of adding a check.
+    """
+    hdr = {name: i for i, name in enumerate(reg[0])}
+    # BOTH note columns are read. Found Sep 9 2026 by pointing this reader at the
+    # registry for the first time: the "checked N forms, none archived" record lives in
+    # RISK FLAGS on some rows and in VERSION/COMMIT on others, and nothing documents
+    # which. Reading only one column classified every such row as `no-record`.
+    need = ("ID", "Archive URL", "Version / Commit", "Risk Flags")
+    missing = [n for n in need if n not in hdr]
+    if missing:
+        print(f"  \u26a0\ufe0f  registry archive export SKIPPED - no such column(s): {missing}")
+        return
+    out = ROOT / "scripts" / "registry-archive.tsv"
+    lines = ["# Archive coverage projected from the Sources registry. GENERATED - do not edit.",
+             "# id\tarchived\tcheck_state"]
+    for r in reg[1:]:
+        r = r + [""] * (len(hdr) - len(r))
+        sid = str(r[hdr["ID"]]).strip()
+        if not sid.startswith("SRC-"):
+            continue
+        archived = bool(str(r[hdr["Archive URL"]]).strip())
+        note = str(r[hdr["Version / Commit"]]) + " " + str(r[hdr["Risk Flags"]])
+        if archived:
+            state = "archived"
+        elif _UNRESOLVED.search(note):
+            state = "unresolved"        # a lookup was attempted and did not conclude
+        elif _CHECKED_NEGATIVE.search(note):
+            state = "absent"            # a lookup ran and there is genuinely nothing
+        else:
+            state = "no-record"         # nothing says a lookup ever happened
+        lines.append(f"{sid}\t{'yes' if archived else 'no'}\t{state}")
+    out.write_text("\n".join(lines) + "\n")
+    print(f"  wrote {out.relative_to(ROOT)} ({len(lines)-2} sources)")
 
 
 def fetch(url, token=None, data=None):
@@ -150,6 +208,7 @@ def main():
                 f"?majorDimension=ROWS", token=tok["access_token"]).get("values", [])
     if reg:
         sweep_cells(reg, "registry")
+        write_archive_state(reg)
     else:
         print("  \u26a0\ufe0f  registry returned no rows — sweep did NOT run")
 

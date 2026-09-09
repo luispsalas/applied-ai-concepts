@@ -3,6 +3,8 @@
 Periodic maintenance checks — the ones GENERATION DOES NOT MAKE UNNECESSARY.
 
     maintain.py offline    no network, no sheets. Safe to run any time.
+                           (includes the archive-state check, which reads the
+                            generated scripts/registry-archive.tsv)
     maintain.py links      + source URL liveness (network, slow, rate-limited)
     maintain.py vocab      coverage against scripts/vocabulary.txt (semi-annual)
 
@@ -25,6 +27,7 @@ CONCEPTS = ROOT / "concepts"
 NOTES = ROOT / "notes"
 VOCABULARY = ROOT / "scripts" / "vocabulary.txt"
 EXPORT = ROOT / "scripts" / "tracker-export.tsv"
+ARCHIVE = ROOT / "scripts" / "registry-archive.tsv"
 
 # Publishers that return 4xx/5xx to automated clients while loading fine in a
 # browser. Confirmed, not guessed. Without this list every audit re-raises them.
@@ -153,6 +156,46 @@ def vocabulary(report):
                       f"and never mentioned in any entry")
 
 
+def archive(report):
+    """Sources whose archive lookup NEVER CONCLUDED — which is not the same as
+    sources with no snapshot, and that distinction is the whole point.
+
+    A rate-limited or errored lookup and a genuine "nothing is archived" look
+    identical in an empty cell. One needs re-running; the other is a finished
+    answer. Written Sep 2026 after a Wayback 429 nearly recorded eleven archived
+    sources as unarchived, and after SRC-354 shipped with a deliberately empty
+    archive column that nothing would otherwise have brought back.
+
+    Only `unresolved` is reported as work. `no-record` is 52% of the registry
+    and is a COVERAGE number, not a worklist — listing it would make this a
+    check nobody reads. Classification comes from export-tracker.py, which reads
+    the registry's own note columns; regenerate with `export-tracker.py`.
+    """
+    if not ARCHIVE.exists():
+        # A missing input must never read as a clean result. Same rule the check
+        # itself exists to enforce: no answer is not the same as no.
+        report.append(f"archive  COULD NOT RUN — {ARCHIVE.name} is missing; "
+                      f"run export-tracker.py (this is NOT a clean result)")
+        return
+    counts, unresolved = {}, []
+    for line in ARCHIVE.read_text(encoding="utf-8").splitlines():
+        if line.startswith("#") or not line.strip():
+            continue
+        parts = line.split("\t")
+        if len(parts) != 3:
+            continue
+        sid, _, state = parts
+        counts[state] = counts.get(state, 0) + 1
+        if state == "unresolved":
+            unresolved.append(sid)
+    for sid in unresolved:
+        report.append(f"archive  {sid}  lookup never concluded — re-run before "
+                      f"trusting the empty archive cell")
+    print(f"  (archive coverage: {counts.get('archived',0)} archived, "
+          f"{counts.get('absent',0)} confirmed absent, "
+          f"{counts.get('no-record',0)} with no record of a check)", file=sys.stderr)
+
+
 def collect_urls():
     urls = {}
     for f in _files():
@@ -198,6 +241,7 @@ def main():
     spelling(report)
     source_links(report)
     orphan_sources(report)
+    archive(report)
     if mode == "links":
         liveness(report)
     if mode == "vocab":
