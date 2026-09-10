@@ -1,5 +1,27 @@
 # Changelog
 
+## v1.37 — September 2026
+
+**One new entry. Count 150 → 151.**
+
+- `open-source-ai` — **v1.0**, Observability & Governance
+
+**Seven published entries already leaned on "open source" or "open weights" and none defined it.** The concept was load-bearing across the corpus with no home, which is why this entry exists — and why it was written as a term decision rather than filed as a source note against an approximate host.
+
+**The organizing distinction is that open weights is not open source.** The Open Source Initiative's definition grants four freedoms — use, study, modify, share — but attaches a precondition: access to the *preferred form to make modifications*, which is three elements, not one. Parameters are the third. A release that publishes weights has supplied one of three, which is a real and useful thing and is not the same claim.
+
+**The provision almost everyone misreads is the first one, and the entry turns on it: data information is not the data.** The definition does not require publishing the training set. It requires describing it thoroughly enough that a skilled person could build a substantially equivalent system — provenance, selection, labeling, filtering, plus what is publicly available and what must be bought — and it **explicitly allows unshareable data to be described rather than released.** That compromise is what made the definition shippable, and it is simultaneously why one part of the community rejects it as too weak and another as unworkably strict.
+
+**Openness is composite and gradient, which makes the usual shortcut wrong.** A peer-reviewed survey scoring more than 45 generative AI systems across fourteen dimensions found the term widely used while many models are "open weight" at best. Its conclusion is the one the entry is built on: judging a model open or closed by any single feature — usually the license — is a category error. **The useful question is never whether something is open source, but which specific things were granted and whether they cover what you need to do.**
+
+**The entry documents the dispute and refuses to settle it**, and that posture is sourced rather than assumed: a multi-sectoral participatory study finds four tensions that recur whenever agreement about openness meets concrete action — purpose, scope, and operation — and concludes that responsible openness is a negotiated sociotechnical project rather than a singular technical solution.
+
+**No statutory provision is cited anywhere in this entry, deliberately.** The point that open systems are regulated differently — which is what makes the label consequential rather than cosmetic — rests on the peer-reviewed premise, because **every EUR-Lex endpoint tried at drafting time returned an empty response, including the archived copy.** Rather than reproduce an article number from memory, the entry states none and says so in its confidence section. That is a worse entry than one with the citation and a more honest one.
+
+**One source in this release was deliberately left unregistered for a day.** It was identified as the strongest item in a batch of auto-ingested papers, and the queue row was converted into an explicit instruction to register it *at drafting time* — the practice that keeps a registry from filling with sources no entry cites. Two earlier instructions of exactly that form had silently failed. This one fired, because the registration and the drafting were scheduled as one piece of work rather than left to be noticed later.
+
+---
+
 ## v1.36 — September 2026
 
 **Four entries enriched from four sources. No new entries; count stays at 150.**

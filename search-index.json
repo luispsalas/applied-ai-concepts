@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "count": 150,
+  "count": 151,
   "entries": [
     {
       "slug": "acceptable-use-policy",
@@ -403,8 +403,8 @@
         "Regulatory",
         "AI Literacy"
       ],
-      "version": "v1.0",
-      "updated": "August 2026",
+      "version": "v1.1",
+      "updated": "September 2026",
       "related": [
         "accountability-ai-systems",
         "ai-literacy",
@@ -423,7 +423,8 @@
         "SRC-204",
         "SRC-205",
         "SRC-208",
-        "SRC-209"
+        "SRC-209",
+        "SRC-358"
       ],
       "path": "concepts/ai-disclosure-attribution.md"
     },
@@ -2790,7 +2791,7 @@
         "Data Governance",
         "Model Behavior"
       ],
-      "version": "v1.0",
+      "version": "v1.1",
       "updated": "September 2026",
       "related": [
         "automated-decision-making",
@@ -2810,7 +2811,8 @@
         "SRC-335",
         "SRC-336",
         "SRC-337",
-        "SRC-338"
+        "SRC-338",
+        "SRC-355"
       ],
       "path": "concepts/generated-variables.md"
     },
@@ -3843,8 +3845,8 @@
         "Data Governance",
         "Evaluation"
       ],
-      "version": "v1.0",
-      "updated": "August 2026",
+      "version": "v1.1",
+      "updated": "September 2026",
       "related": [
         "confidence-vs-accuracy",
         "continuous-feedback-improvement",
@@ -3860,7 +3862,8 @@
         "SRC-001",
         "SRC-028",
         "SRC-165",
-        "SRC-166"
+        "SRC-166",
+        "SRC-357"
       ],
       "path": "concepts/model-data-drift.md"
     },
@@ -4118,6 +4121,55 @@
         "SRC-275"
       ],
       "path": "concepts/ontology.md"
+    },
+    {
+      "slug": "open-source-ai",
+      "term": "Open Source AI",
+      "category": "Observability & Governance",
+      "essence": "A model release that grants the freedoms to use, study, modify and share it — a defined standard requiring data information, code and parameters, and one that publishing weights alone does not meet.",
+      "short": "A model release granting the freedoms to use, study, modify and share it — a defined standard requiring data information, code and parameters, which a weights-only release does not meet however often the label is applied to it",
+      "aliases": [
+        "open source model",
+        "open weights",
+        "open-weight model",
+        "open weight",
+        "OSAID",
+        "Open Source AI Definition",
+        "open model",
+        "openly available model",
+        "open-washing",
+        "openness in AI",
+        "weights available"
+      ],
+      "tags": [
+        "Data Governance",
+        "Regulatory",
+        "AI Literacy"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "ai-governance",
+        "black-box",
+        "bluewashing",
+        "copyright-ai-output",
+        "data-provenance-lineage",
+        "dual-use",
+        "fine-tuning",
+        "frontier-ai",
+        "local-llms",
+        "model-card-system-card",
+        "supply-chain-risk-ai",
+        "third-party-audit",
+        "training-data"
+      ],
+      "sources": [
+        "SRC-198",
+        "SRC-359",
+        "SRC-360",
+        "SRC-361"
+      ],
+      "path": "concepts/open-source-ai.md"
     },
     {
       "slug": "operational-readiness-ai",
@@ -5450,7 +5502,7 @@
         "Evaluation",
         "Prompting"
       ],
-      "version": "v1.0",
+      "version": "v1.1",
       "updated": "September 2026",
       "related": [
         "agent-interoperability-a2a",
@@ -5470,7 +5522,8 @@
         "SRC-104",
         "SRC-339",
         "SRC-340",
-        "SRC-341"
+        "SRC-341",
+        "SRC-356"
       ],
       "path": "concepts/structured-output.md"
     },
