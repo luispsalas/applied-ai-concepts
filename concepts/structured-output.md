@@ -29,6 +29,10 @@ Structured output is the practice of constraining a model's generation so the re
 
 **The governance point, and the reason the entry exists: schema conformance is not correctness.** A response that validates perfectly against its schema can be entirely fabricated. **Structure eliminates parse failures, which were the visible errors, and leaves the invisible ones untouched** — a well-typed hallucination arrives looking like a database row ([hallucination](hallucination.md)). Worse, a schema field named `confidence` produces a number that is generated like every other token and is not a measurement of anything ([confidence vs accuracy](confidence-vs-accuracy.md), [concealing uncertainty](concealing-uncertainty.md)).
 
+**Schema size is itself a cause of wrong content, and this is where the gap between shape and truth opens widest.** A single call asked to produce a large or nested object must decide *what belongs in the output* and *extract each field's value* in one generation — several decisions coordinated at once, which a smaller model coordinates worse. Guo's worked demonstration is a clean instance: asked to build a scheduling object from household notes, a small locally-run model returned perfectly valid JSON that included a device the notes explicitly said needed no further action. **Schema-valid, and wrong.** Splitting the work into two calls — first decide the scope, then fill the fields for the items chosen — produced a correct object from the same model on the same notes ([prompt chaining](prompt-chaining.md)).
+
+**The practical consequence: when a small model fails a large schema, the schema is a candidate cause.** Adding retries or tightening the prompt treats the symptom of a task that was too big to do in one pass — and because the failure is a content error inside valid structure, nothing in the validation layer will point at it.
+
 **And the format is not free.** Tam et al., comparing models restricted to structured formats against free-form generation on the same tasks, report **a significant decline in reasoning ability under format restrictions, with stricter constraints producing greater degradation.** Machine-readability is purchased with reasoning quality. The trade is rarely measured, because the constrained pipeline is usually the only one anyone runs ([evaluation](evaluation.md)).
 
 **The schema is a governed artifact.** It is a versioned contract between a model and everything downstream: change a field's meaning and every consumer silently reinterprets history. JSON Schema is an open specification with its own draft history — which is why the version belongs in the record ([data provenance and lineage](data-provenance-lineage.md)).
@@ -64,6 +68,7 @@ Finally: the schema is a contract, not a config detail. Everything downstream de
 7. **It is not a guardrail** — one constrains generation, the other inspects a result.
 8. **The schema is a versioned contract** with everything downstream.
 9. **JSON Schema is an open standard** with its own draft history; name the version.
+10. **A big schema asks for many decisions at once** — decomposing the task can fix content errors that no amount of schema tightening will.
 
 ---
 
@@ -80,6 +85,7 @@ Finally: the schema is a contract, not a config detail. Everything downstream de
 - Enum fields that force a category on inputs that fit none, converting "unknown" into a confident label
 - No representation for absence or refusal in the schema, so the model must invent a value
 - Retry-on-parse-failure loops that mask a systematically failing prompt ([observability](observability.md))
+- One call asked to select, extract and assemble at once, where a wrong field is read as a model-quality problem rather than a task-design one
 - Structured output used to satisfy an interface while the underlying uncertainty is discarded at the boundary ([concealing uncertainty](concealing-uncertainty.md))
 
 **Practice:**
@@ -91,6 +97,7 @@ Finally: the schema is a contract, not a config detail. Everything downstream de
 - Do not model confidence as a schema field unless it is derived from something measurable; prefer omitting it to inviting misreading
 - Validate at the consumer boundary as well as at generation — the schema is a contract, and contracts are checked at both ends
 - **Log conformance failures rather than silently retrying**, so a degrading prompt or model is visible ([observability](observability.md))
+- **When the structure is valid but the content is wrong, try decomposing before tightening** — split selection from extraction and check the intermediate result, which is also the only place the error is visible ([prompt chaining](prompt-chaining.md))
 
 **Key accountability owner:** whoever owns the schema — because the schema decides what the system is permitted to say, including whether it can say "I do not know," and that is a design decision with consequences no downstream consumer can undo.
 
@@ -129,6 +136,7 @@ Finally: the schema is a contract, not a config detail. Everything downstream de
 | SRC-340 | Tam, Zhi Rui; Wu, Cheng-Kuang; Tsai, Yi-Lin; Lin, Chieh-Yen; Lee, Hung-yi; Chen, Yun-Nung — *Let Me Speak Freely? A Study on the Impact of Format Restrictions on Performance of Large Language Models* (EMNLP Industry Track, 2024) · [link](https://arxiv.org/abs/2408.02442) | The cost: comparing structured-format generation against free-form on the same tasks, **a significant decline in reasoning ability under format restrictions, with stricter constraints producing greater degradation.** ⚠️ 2024 models and reasoning tasks specifically — cite the direction and re-measure the magnitude on your own models. |
 | SRC-341 | JSON Schema project — *JSON Schema Specification (version 2020-12)* · [link](https://json-schema.org/specification) | The vendor-neutral contract language, registered so the entry describes schemas through an open standard rather than any provider's API — which is what makes a structured-output contract a reviewable, versioned artifact. ⚠️ A living specification with a draft history; record the version cited. |
 | SRC-104 | Anthropic — *Building Effective AI Agents* (2024) · [link](https://www.anthropic.com/engineering/building-effective-agents) | Practitioner grounding for structured output as the interface between an agent's reasoning and the systems around it, and for the retry and validation patterns built on it. ⚠️ Vendor-produced — used for the architectural framing only. |
+| SRC-356 | Guo, Shuai (Towards Data Science) — *How to Implement Structured Output with Local LLMs* (2026) · [link](https://towardsdatascience.com/structured-output-with-local-llms/) | The worked demonstration behind this entry's schema-complexity point: a small locally-run model, constrained by a nested schema, returns valid JSON containing an item the source material explicitly excluded — **conformance and correctness coming apart in a concrete case** — and decomposing the call into scope-then-extract fixes it with no change of model. Also the non-vendor practitioner grounding for the ask-and-validate route. ⚠️ A single demonstration on one small model with no baseline or repetition: evidence that the failure occurs and that decomposition addressed it here, never of prevalence or rate. ⚠️ Names specific tooling and model versions that will date. |
 
 ---
 
@@ -143,4 +151,4 @@ Finally: the schema is a contract, not a config detail. Everything downstream de
 
 ---
 
-*Last updated: v1.0 · September 2026*
+*Last updated: v1.1 · September 2026*

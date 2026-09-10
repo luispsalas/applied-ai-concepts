@@ -180,7 +180,7 @@ Every claim in this wiki is meant to trace back to a real, checkable source — 
 | [Agentic Design Patterns](concepts/agentic-design-patterns.md) | The named arrangements for splitting what a system decides at runtime from what is fixed in code — and each one puts the power to refuse somewhere different | ✅ v1.0 |
 | [Data Poisoning](concepts/data-poisoning.md) | Corrupting what a model learns rather than what it is asked — an integrity attack on the training set that no amount of input filtering can reach | ✅ v1.0 |
 | [Federated Learning](concepts/federated-learning.md) | Training one model across data that never moves — which relocates the privacy problem into the model updates and trades away the ability to audit the training data at all | ✅ v1.0 |
-| [Structured Output](concepts/structured-output.md) | Making a model emit machine-parseable output that conforms to a schema — a guarantee about shape that is routinely mistaken for a guarantee about content | ✅ v1.0 |
+| [Structured Output](concepts/structured-output.md) | Making a model emit machine-parseable output that conforms to a schema — a guarantee about shape that is routinely mistaken for a guarantee about content | ✅ v1.1 |
 
 ### Knowledge & Memory
 *How knowledge persists, degrades, and stays fit for use*
@@ -205,7 +205,7 @@ Every claim in this wiki is meant to trace back to a real, checkable source — 
 | [Data Labeling](concepts/data-labeling.md) | The human work that produces every label a model learns from and every benchmark it is judged against — undervalued in exactly the systems that depend on it most | ✅ v1.0 |
 | [Context Anxiety](concepts/context-anxiety.md) | A model cutting corners because it believes its context is nearly full — degrading on its own estimate of the budget rather than on the actual limit | ✅ v1.0 |
 | [Context Rot](concepts/context-rot.md) | Reliability falling as the input gets longer — the failure the context window does not warn you about, because everything still fits | ✅ v1.0 |
-| [Generated Variables](concepts/generated-variables.md) | Model output used as data in a later analysis — where high accuracy is not enough, because the errors are not noise and the second stage cannot see them | ✅ v1.0 |
+| [Generated Variables](concepts/generated-variables.md) | Model output used as data in a later analysis — where high accuracy is not enough, because the errors are not noise and the second stage cannot see them | ✅ v1.1 |
 
 ### Human Oversight
 *Humans in control by design — not by assumption*
@@ -238,7 +238,7 @@ Every claim in this wiki is meant to trace back to a real, checkable source — 
 | [Power Seeking](concepts/power-seeking.md) | Capability is useful for almost any goal, so optimization drifts toward more access and more room to operate — no motive required | ✅ v1.0 |
 | [Alignment (AI Systems)](concepts/alignment-ai-systems.md) | Making a system's behavior match what was actually intended — and the prior question of whose intentions those are | ✅ v1.0 |
 | [Verification](concepts/verification.md) | Checking this output against ground truth before trusting it — and the finding that people check least on the problems that most need it | ✅ v1.0 |
-| [Model/Data Drift](concepts/model-data-drift.md) | The quiet decay of a deployed system as the world moves away from its training data — nothing breaks, accuracy just slides | ✅ v1.0 |
+| [Model/Data Drift](concepts/model-data-drift.md) | The quiet decay of a deployed system as the world moves away from its training data — nothing breaks, accuracy just slides | ✅ v1.1 |
 | [Model Version & Update](concepts/model-version-update.md) | The system you use today may not be the one you tested — providers change models underneath you, and reliable behavior can shift without notice | ✅ v1.0 |
 | [Data Leakage (Model Evaluation)](concepts/data-leakage-model-evaluation.md) | When information from the test set reaches the model during training, so measured performance describes a exam the model had already seen — the most common cause of results that do not survive deployment | ✅ v1.0 |
 | [LLM-as-Judge](concepts/llm-as-judge.md) | Using one language model to grade another's output — the only way to evaluate at volume, with documented biases including a preference for its own writing | ✅ v1.1 |
@@ -270,7 +270,7 @@ Every claim in this wiki is meant to trace back to a real, checkable source — 
 | [Shadow AI](concepts/shadow-ai.md) | Unsanctioned AI use — invisible to the processes meant to govern it, and usually a signal about the sanctioned option | ✅ v1.0 |
 | [Model Card / System Card](concepts/model-card-system-card.md) | The transparency artifact — a scoping document whose job is to say where *not* to use a model | ✅ v1.0 |
 | [Content Provenance & Watermarking (C2PA)](concepts/content-provenance-watermarking.md) | Signed labels and invisible marks on generated content — a positive detection means something, a negative one does not | ✅ v1.0 |
-| [AI Disclosure (Attribution)](concepts/ai-disclosure-attribution.md) | Saying AI was used — a human practice, distinct from machine marking, and only one of them satisfies the law | ✅ v1.0 |
+| [AI Disclosure (Attribution)](concepts/ai-disclosure-attribution.md) | Saying AI was used — a human practice, distinct from machine marking, and only one of them satisfies the law | ✅ v1.1 |
 | [Bluewashing](concepts/bluewashing.md) | Responsible-AI claims with nothing behind them — the test is whether anything can constrain a decision | ✅ v1.0 |
 | [Fundamental Rights Impact Assessment (FRIA)](concepts/fundamental-rights-impact-assessment.md) | A deployer's pre-launch assessment of who is affected and what recourse they have — and it binds far fewer organizations than commonly claimed | ✅ v1.0 |
 | [Systemic Risk (AI)](concepts/systemic-risk-ai.md) | A precise legal threshold for a few model providers — and an unregulated concentration risk carried by everyone else | ✅ v1.0 |

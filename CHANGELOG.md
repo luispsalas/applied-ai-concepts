@@ -1,5 +1,32 @@
 # Changelog
 
+## v1.36 — September 2026
+
+**Four entries enriched from four sources. No new entries; count stays at 150.**
+
+- `generated-variables` — v1.0 → **v1.1**
+- `structured-output` — v1.0 → **v1.1**
+- `model-data-drift` — v1.0 → **v1.1**
+- `ai-disclosure-attribution` — v1.0 → **v1.1**
+
+**Two of these four sources were supposed to have been cited a release ago.** Both were named in the source queue with an instruction to register them at drafting time, both entries were drafted, and neither instruction was carried out — the entries shipped in v1.33 without them. One failed in a way worth naming: it asked for *two* things to be registered, the peer-reviewed anchor was registered and the accompanying article was not, so the entry visibly carried what the instruction demanded and looked complete. **A half-executed instruction is harder to notice than an ignored one.** Nothing detected either; both were found by sweeping the queue by hand.
+
+***Generated Variables* gains the half it was missing: what the variable is doing in the analysis, and who is in the data at all.** The entry already covered understated uncertainty and systematic error. It now covers **selection** — a model-extracted label exists only because somebody produced text, so filling the empty rows with zero silently redefines the population before the analysis begins — along with **timing** (text produced before, during, or after the thing being evaluated plays three different roles) and **differential error** (an intervention that changes how people write also changes how the extractor reads them, so accuracy can differ across the very groups being compared). And the point that ties them together: **the role is not a property of the column.** The supporting article argues its case with a synthetic simulation, so it is cited for the mechanism and the diagnostic questions, never as evidence of frequency.
+
+***Structured Output* gains schema complexity as a cause of wrong content.** The entry already held that conformance is not correctness; what it lacked was *why a valid object comes back wrong* and what to do about it. A single call asked to decide what belongs in the output and extract every field at once is coordinating several decisions in one generation, and a smaller model coordinates them worse — demonstrated by a local model returning perfectly valid JSON containing an item its source material explicitly excluded. **Splitting the call into scope-then-extract fixed it with no change of model.** So when a small model fails a large schema, the schema is a candidate cause, and adding retries treats the symptom of a task too big to do in one pass.
+
+***Model & Data Drift* gains the reason monitoring inputs is not enough.** The entry already recommended watching inputs separately. It now says what that has to mean: **read the signal, not the record of it.** In the cited study, scans differing only in one acquisition parameter carried identical values in the metadata field naming that parameter, while features computed from the pixels recovered the difference reliably. **The input had shifted; the field that was supposed to say so had not.** The same study shows one output signal cannot stand in for another — the change moved the model's measurements enough to flip a clinical category while its detection confidence held steady, so a monitor watching confidence would have reported a healthy system. Drift metrics now have to name which output property they watch.
+
+***AI Disclosure (Attribution)* gains a second profession reaching the same answer independently.** The entry's worked example was scholarly publishing, where authorship rests on answerability rather than on who produced the text. Open-source software governance never debated AI authorship at all, yet its machinery assumes the same thing: contributor agreements and review norms presuppose a person who can attest to provenance and answer a reviewer's questions. **Two professions with nothing in common landing on answerability is evidence that it is the load-bearing principle, not a convention of publishing.** It also shows disclosure used as a harder instrument — a **gate** that conditions acceptance rather than a note attached to finished work — and as only one of six dimensions such policies must cover, of which **maintainer workload** is the one most easily missed: a disclosure rule with no provision for the review cost it creates relocates the burden rather than managing it.
+
+**Three of the four sources are preprints, and all three say so in the entry.** Only abstract-level claims are cited from them, their figures are marked as properties of one study rather than general rates, and the two proposed frameworks among them are cited as their authors' proposals, never as standards.
+
+**The archive lookup left unresolved in v1.35 has been resolved.** It was recorded then as *could-not-determine* rather than *unarchived*, which turned out to be the right call: the endpoint that kept refusing was rate-limited independently of a second endpoint that answered immediately and found the snapshot. **One endpoint's refusal was not the service's answer** — and had the earlier release guessed, the record would have been wrong in a way nothing would have revisited.
+
+**A maintenance check misfired on a note about itself.** The archive-coverage check added in v1.35 classifies sources by reading their registry notes; it flagged an accurate note as a failed lookup because that note mentioned the error code it had worked around. The check was reordered so an explicit statement of outcome outranks an error code mentioned in passing. **The tempting fix — rewording the note — would have degraded an accurate record to keep a tool quiet.**
+
+---
+
 ## v1.35 — September 2026
 
 **Four entries enriched from one source. No new entries; count stays at 150.**

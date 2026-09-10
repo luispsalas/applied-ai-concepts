@@ -27,6 +27,10 @@ A statement, by the person or organization responsible for a work, about how AI 
 
 **The clearest worked example of a profession settling this is scholarly publishing**, and its reasoning transfers well beyond it. The ICMJE position: *"Chatbots (such as ChatGPT) should not be listed as authors because they cannot be responsible for the accuracy, integrity, and originality of the work."* **Authorship is grounded in answerability, not in who produced the text** — which is why the question "should the AI be credited?" has a principled answer rather than an etiquette answer. Disclosure is then required and placed *by function*: writing assistance in acknowledgments, data collection or analysis in methods. And the governing principle: *"Humans are responsible for any submitted material that included the use of AI-assisted technologies."*
 
+**A second profession has reached the same answer from the opposite direction.** Open-source software governance never debated AI authorship, yet its machinery rests on the identical assumption: contributor agreements, codes of conduct and review norms all presuppose a legally accountable person who can attest to provenance and answer a reviewer's questions. Agents that plan changes and submit pull requests strain that assumption directly, and **the convergence is the point** — two professions with nothing in common landed on answerability, which is evidence that it is the load-bearing principle rather than a convention of publishing.
+
+**It also shows disclosure being used as a harder instrument.** In scholarly publishing disclosure is a norm attached to a finished work; in a contribution policy it is a **gate**, which can reject or condition the contribution before it enters. And a comparison of six major open-source organizations finds disclosure is only one of six dimensions such policies must cover — alongside responsibility, human oversight, licensing, enforcement, and **maintainer workload**. That last one is the governance consideration most easily missed: AI-assisted contribution volume lands on human reviewers, so **a disclosure rule with no workload provision relocates the burden rather than managing it** ([human in the loop](human-in-the-loop.md)).
+
 **Where regulation has arrived.** Art. 50(1) requires telling people they are interacting with an AI system unless obvious. Art. 50(4) requires deployers to disclose deepfakes — narrowed for artistic, creative and satirical work — and requires disclosure for AI-generated text published on matters of public interest, **unless it underwent human editorial review.** That carve-out is doing real work: editorial review substitutes for disclosure, which tells you the obligation is about accountability for content, not about purity of process.
 
 **The hard part is not whether to disclose but what to disclose.** "AI was used" spans proofreading and wholesale generation. A disclosure that does not distinguish degree conveys almost nothing, which is why the useful formats state *stage* and *extent* rather than a binary.
@@ -69,6 +73,8 @@ The practical difficulty is degree. A disclosure that does not say *how much* te
 - Disclosure framed as a confession, which suppresses it — and drives the behavior toward non-disclosure rather than toward honesty
 - Client and contractual expectations unstated, so disclosure decisions get made after a question is asked rather than before
 - Blanket disclaimers applied everywhere, which is over-disclosure and carries no information
+- A disclosure requirement written with no enforcement path, so it binds only the people who were going to disclose anyway
+- Disclosure rules that increase reviewer or approver load with no corresponding provision for that cost ([human in the loop](human-in-the-loop.md))
 
 **Practice:**
 - Define the trigger: **disclose where AI use would change how a reasonable person reads or relies on the work.** That test is more useful than a tool-based or percentage-based rule
@@ -78,6 +84,8 @@ The practical difficulty is degree. A disclosure that does not say *how much* te
 - Separate the marking obligation from the disclosure practice as distinct line items with distinct owners
 - Agree expectations with clients and partners in advance rather than at the point of challenge
 - Make disclosing normal — a routine metadata field rather than a caveat — since a format that reads as an apology will be avoided
+- **Decide whether disclosure is a norm or a gate.** A statement attached to finished work and a declaration that conditions acceptance are different instruments with different enforcement needs
+- **Budget the review cost the policy creates.** Where disclosure exists to let a human check something, name who checks it and what happens when the volume exceeds them
 
 **Key accountability owner:** whoever owns publication or delivery of the work, since disclosure attaches to the output rather than to the system. The Art. 50 marking duty is a separate obligation with a separate owner and does not transfer here.
 
@@ -114,8 +122,9 @@ The practical difficulty is degree. A disclosure that does not say *how much* te
 | SRC-209 | International Committee of Medical Journal Editors — *Recommendations: Defining the Role of Authors and Contributors* (AI provisions) · [link](https://www.icmje.org/recommendations/browse/roles-and-responsibilities/defining-the-role-of-authors-and-contributors.html) | Authorship grounded in answerability, disclosure placed by function, and the principle that humans remain responsible for AI-assisted material. ⚠️ Domain-specific and revised periodically — check the current version. |
 | SRC-204 | European Parliament / Council of the EU — *EU AI Act, Article 50: Transparency obligations* (2024) · [link](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689) | The binding duties: AI-interaction notice, machine-readable marking of synthetic output, deepfake disclosure, and the public-interest text duty with its human-editorial-review exemption. |
 | SRC-205 | Coalition for Content Provenance and Authenticity — *C2PA Technical Specification v2.4* (2026) · [link](https://spec.c2pa.org/specifications/specifications/2.4/specs/C2PA_Specification.html) | The machine-marking mechanism this practice is complementary to, and its stated limits. ⚠️ Industry consortium standard; versions rapidly. |
-| SRC-208 | United States Copyright Office — *Copyright and Artificial Intelligence, Part 2: Copyrightability* (2025) · [link](https://www.copyright.gov/ai/Copyright-and-Artificial-Intelligence-Part-2-Copyrightability-Report.pdf) | Why the extent of human contribution is a substantive question rather than an etiquette one — it carries legal consequences beyond disclosure. ⚠️ US only. |
-| SRC-119 | Vallor, S.; Vierkant, T. — *Find the Gap: AI, Responsible Agency and Vulnerability* (2024) · [link](https://doi.org/10.1007/s11023-024-09674-0) | Why responsibility for AI-assisted work stays with the human, which is the principle a disclosure states rather than transfers. |
+| SRC-208 | United States Copyright Office — *Copyright and Artificial Intelligence, Part 2: Copyrightability* (January 2025) · [link](https://www.copyright.gov/ai/Copyright-and-Artificial-Intelligence-Part-2-Copyrightability-Report.pdf) | Why the extent of human contribution is a substantive question rather than an etiquette one — it carries legal consequences beyond disclosure. ⚠️ US only. |
+| SRC-119 | Vallor, S. & Vierkant, T. — *Find the Gap: AI, Responsible Agency and Vulnerability* (Minds and Machines, 2024) · [link](https://doi.org/10.1007/s11023-024-09674-0) | Why responsibility for AI-assisted work stays with the human, which is the principle a disclosure states rather than transfers. |
+| SRC-358 | Manita, Jassem; Amari, Aziz — *Regulating the Machine Contributor: Governance and Policy Alignment in Open Source* (arXiv:2606.14594, 2026) · [link](https://arxiv.org/abs/2606.14594) | The second-profession parallel: open-source contribution governance presupposes **a legally accountable person who can attest to provenance and answer reviewer questions** — the same answerability principle the ICMJE reaches in publishing, arrived at independently. Supplies the norm-versus-gate distinction and the six dimensions a contribution policy must cover (disclosure, responsibility, human oversight, licensing, enforcement, maintainer workload), from a comparison of six named organizations. ⚠️ Preprint, not peer-reviewed; n=6 and the taxonomy is a proposal, not a standard — cited for the dimensions and the parallel, never as evidence of how common any policy pattern is. |
 
 ---
 
@@ -130,4 +139,4 @@ The practical difficulty is degree. A disclosure that does not say *how much* te
 
 ---
 
-*Last updated: v1.0 · August 2026*
+*Last updated: v1.1 · September 2026*

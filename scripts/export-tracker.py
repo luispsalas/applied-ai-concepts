@@ -104,10 +104,12 @@ def write_archive_state(reg):
         note = str(r[hdr["Version / Commit"]]) + " " + str(r[hdr["Risk Flags"]])
         if archived:
             state = "archived"
+        elif _CHECKED_NEGATIVE.search(note):
+            # An explicit statement of the OUTCOME wins over an error code mentioned
+            # in passing: a note may well say why a lookup succeeded DESPITE a 429.
+            state = "absent"            # a lookup ran and there is genuinely nothing
         elif _UNRESOLVED.search(note):
             state = "unresolved"        # a lookup was attempted and did not conclude
-        elif _CHECKED_NEGATIVE.search(note):
-            state = "absent"            # a lookup ran and there is genuinely nothing
         else:
             state = "no-record"         # nothing says a lookup ever happened
         lines.append(f"{sid}\t{'yes' if archived else 'no'}\t{state}")

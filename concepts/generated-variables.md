@@ -29,6 +29,14 @@ A generated variable is any quantity in an analysis that was *estimated* rather 
 
 **Corrections exist and are not free.** Design-based approaches recover valid inference by combining the cheap generated labels with a **human-labeled probability sample**, using the sample to characterize the error structure and correct the estimate. The practical consequence: **generated variables do not remove the need for human labels — they change what the human labels are for.** They stop being the dataset and become the instrument that makes the dataset usable.
 
+**A third defect, which neither of the first two covers: what the variable is doing in the analysis, and who is in the data at all.** Where a generated variable comes from text, it exists only because somebody produced text — and the consequences are concrete:
+
+- **Selection.** A theme exists for a person because that person called, complained or replied, and whatever drove that behavior is rarely unrelated to what is being measured. **The damage is usually done by one line of preprocessing:** filling the rows with no text as zero, or as "no issue mentioned," converts *did not produce text* into *did not experience the thing* — silently redefining the population the analysis describes, before the analysis begins.
+- **Timing.** Text produced *before* an intervention can serve as a control; text produced *during* it is part of the intervention; text produced *after* it is partly a consequence of it, and using that as a control is a textbook error. **A flat joined table shows none of this.**
+- **Differential error.** The sharpest form of "the errors are systematic": an intervention that changes how people write also changes how the extraction model reads them, so **the label's accuracy can differ between the very groups being compared.** The error is then correlated with the comparison itself, and cannot be assumed to wash out.
+
+**And the role is not a property of the column.** Whether a generated variable is acting as a control, a mediator, an outcome or a plain description is decided by the causal structure being assumed — not by the field's name. The same variable can be sound in one analysis and a source of bias in the next.
+
 **Three places this shows up outside social science:**
 
 - **Product and operations metrics.** "72% of tickets were resolved on first contact," where *resolved* was decided by a model ([evaluation](evaluation.md)).
@@ -66,6 +74,9 @@ Worth knowing, finally, that this is not a new AI problem with a new AI answer. 
 7. **An LLM-as-judge score is a generated variable** and inherits all of this.
 8. **The problem was named and solved in econometrics in 1984** as generated regressors.
 9. **It compounds when generated variables feed the next model's training.**
+10. **A blank is not a zero** — how the missing rows are filled decides who the analysis is actually about.
+11. **When the text was produced** relative to the thing being evaluated decides what the variable may be used for.
+12. **LLM labels do not look noisy**, which removes the instinct that protected analysts from cruder text output.
 
 ---
 
@@ -83,6 +94,9 @@ Worth knowing, finally, that this is not a new AI problem with a new AI answer. 
 - Model-labeled data used to train a successor with no independent validation ([synthetic data](synthetic-data.md))
 - An [LLM-as-judge](llm-as-judge.md) leaderboard treated as measurement rather than as estimation
 - Dashboards where the generated origin of a field is invisible downstream ([data provenance and lineage](data-provenance-lineage.md))
+- Missing values in a model-derived field filled with a default, turning absence of evidence into evidence of absence
+- A model-derived field used as a control with no record of whether it was produced before or after the thing being evaluated
+- Group comparisons where the intervention itself may have changed how the labeler performs on each arm
 
 **Practice:**
 - **Mark generated fields as generated, in the schema and on the dashboard** — provenance that survives to the point of use is the precondition for everything else
@@ -92,6 +106,9 @@ Worth knowing, finally, that this is not a new AI problem with a new AI answer. 
 - **State the accuracy and the correction alongside any figure derived from generated variables**, the way an agreement figure belongs beside an accuracy claim ([inter-rater reliability](inter-rater-reliability.md))
 - Re-validate whenever the labeling model changes — a model upgrade silently changes every historical comparison ([model version and update](model-version-update.md))
 - Where no correction is feasible, **report the quantity as an estimate with its known limitations rather than as a measurement**
+- **Write down what role the generated field plays before it enters the analysis** — control, outcome, or description — and state it, because the field name will not
+- **State the missing-data assumption explicitly.** Filled, dropped, or modeled: each is a different claim about everyone who left no record
+- **Re-run the analysis without the generated variable as a stress test.** If the headline result depends on it, it is not strong enough to carry the claim by itself
 - Do not chain generated variables into further generated variables without re-validating at each step
 
 **Key accountability owner:** whoever publishes the figure — because the generation step is invisible by the time a number reaches a slide, and the person presenting it is the last one able to say that a model, not a measurement, produced it.
@@ -102,7 +119,7 @@ Worth knowing, finally, that this is not a new AI problem with a new AI answer. 
 
 ## Confidence level
 
-**High.** The statistical result is old, settled and peer-reviewed on the econometrics side, and the LLM-specific demonstration is a NeurIPS paper with a stated algorithm and guarantees. The 80–90% figure is quoted from that paper's own abstract. **Two scope limits.** The correction method is framed for computational social science and interpretable regression; **the bias mechanism generalizes to any downstream inference on model-generated variables, but the specific algorithm assumes a design — including a probability sample — that many teams do not have.** And the econometrics sources are about macroeconomic models, cited here for the structure of the problem and the maturity of the literature, not for any AI-specific claim. ⚠️ **A DOI for the 1993 survey written from memory during drafting was wrong by one digit and resolved to an unrelated paper on business cycles**; it was corrected against Crossref before entering this entry, which is the reason the verification rule exists.
+**High.** The statistical result is old, settled and peer-reviewed on the econometrics side, and the LLM-specific demonstration is a NeurIPS paper with a stated algorithm and guarantees. The 80–90% figure is quoted from that paper's own abstract. **Two scope limits.** The correction method is framed for computational social science and interpretable regression; **the bias mechanism generalizes to any downstream inference on model-generated variables, but the specific algorithm assumes a design — including a probability sample — that many teams do not have.** And the econometrics sources are about macroeconomic models, cited here for the structure of the problem and the maturity of the literature, not for any AI-specific claim. ⚠️ **A DOI for the 1993 survey written from memory during drafting was wrong by one digit and resolved to an unrelated paper on business cycles**; it was corrected against Crossref before entering this entry, which is the reason the verification rule exists. ⚠️ **The practitioner source added in v1.1 argues its case with a SYNTHETIC simulation** — it demonstrates that a control of this kind can flip a result's sign under a stated mechanism, and is cited here for the mechanism and the diagnostic questions, never as evidence of how often this happens in practice.
 
 ---
 
@@ -131,6 +148,7 @@ Worth knowing, finally, that this is not a new AI problem with a new AI answer. 
 | SRC-336 | Oxley, Les; McAleer, Michael — *Econometric Issues in Macroeconomic Models with Generated Regressors* (Journal of Economic Surveys 7(1), pp. 1–40, 1993) · [link](https://doi.org/10.1111/j.1467-6419.1993.tb00158.x) | The survey establishing generated regressors as a settled literature rather than a single result — registered as the evidence that the concept clears on an established anchor. ⚠️ Macroeconomics; cite for maturity of the literature, not for an AI claim. ⚠️ No archive snapshot after four URL forms. |
 | SRC-338 | Gilardi, Fabrizio; Alizadeh, Meysam; Kubli, Maël (University of Zurich) — *ChatGPT outperforms crowd workers for text-annotation tasks* (PNAS 120(30), 2023) · [link](https://doi.org/10.1073/pnas.2305016120) | The source of the temptation, cited so the entry names what makes the practice attractive before explaining its cost. ⚠️ A claim about **annotation accuracy** — never evidence that generated labels are safe to compute on. SRC-337 shows that inference fails at exactly this accuracy range. |
 | SRC-308 | Sambasivan, Nithya; Kapania, Shivani; Highfill, Hannah; Akrong, Diana; Paritosh, Praveen; Aroyo, Lora M. (Google Research) — *"Everyone wants to do the model work, not the data work": Data Cascades in High-Stakes AI* (CHI, 2021) · [link](https://doi.org/10.1145/3411764.3445518) | The cascade pattern that describes how this defect propagates: data-origin problems surface late, far from their cause, with opaque diagnosis — which is exactly how a generated variable's bias behaves downstream. ⚠️ Its 92% figure describes the studied population, not an industry rate. |
+| SRC-355 | Gieng, William (Towards Data Science) — *LLM Themes Are Not Observations* (2026) · [link](https://towardsdatascience.com/llm-themes-are-not-observations/) | The **role, timing and selection** half of this entry: a practitioner account of how a model-extracted label enters an analysis, naming the zero-fill that redefines the population, the before/during/after distinction that decides what the variable may be used for, and **differential error** — an intervention that changes how people write changes how the extractor reads them, so accuracy can differ across the arms being compared. Also the observation that fluent labels do not *look* noisy, which removes the distrust cruder text output used to earn. ⚠️ Practitioner article, not peer-reviewed, and its worked example is a **synthetic simulation** — cited for the mechanism and the diagnostic, with the statistical claims anchored on SRC-335, SRC-336 and SRC-337. |
 
 ---
 
@@ -145,4 +163,4 @@ Worth knowing, finally, that this is not a new AI problem with a new AI answer. 
 
 ---
 
-*Last updated: v1.0 · September 2026*
+*Last updated: v1.1 · September 2026*

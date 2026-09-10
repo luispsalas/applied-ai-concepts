@@ -27,6 +27,10 @@ Drift is further characterized by its shape over time — **sudden** (a discrete
 
 Critically, drift is a property of a **changing world**, not a defect introduced by the model. A model that was correct at deployment and is wrong a year later has not broken; the ground beneath it moved. This is why detection depends on monitoring rather than testing: it cannot be found before release.
 
+**Detecting data drift requires reading the input itself, not the record of it.** The practice of monitoring inputs separately is only as good as the descriptor being monitored — and a descriptor can stay constant while the thing it describes changes. In a medical-imaging study, scans differing **only** in reconstruction kernel carried *identical* values in the metadata field naming that kernel, while a small set of features computed from the pixels recovered which reconstruction had been used with high accuracy. **The input had shifted; the field that was supposed to say so had not.**
+
+**And one output signal cannot stand in for another.** In the same study the kernel change moved the model's *measurements* enough to flip a clinical size category in a minority of cases, while its *detection confidence* was statistically unchanged — a monitor watching confidence would have reported a healthy system. Under controlled perturbation the two failure modes separated cleanly: added noise degraded detection but not measurement, and changed frequency content corrupted measurement but not detection. **Drift monitoring therefore has to name which output property it is watching**, because the properties fail independently ([observability](observability.md)).
+
 For LLM-based systems the classical framing needs two extensions. The model is often frozen behind a vendor API, so the organization cannot retrain — and the vendor may itself change the model underneath, producing behavior change with no corresponding change in the deployment. And in retrieval systems, drift can live in the **corpus** rather than the model: the knowledge base ages while the model stays constant.
 
 ---
@@ -57,10 +61,14 @@ A model learns from the world as it was when it was trained. The world keeps mov
 - Detection dependent on user complaints, which means detection is late and biased toward the loudest cases
 - No owner for the question "is this still accurate?", so nobody asks it
 - Vendor model updates absorbed silently, with no re-evaluation triggered
+- Input monitoring implemented against metadata fields, with no check that those fields actually vary when the underlying data does
+- A single output metric treated as the health of the whole system, where a different and unmonitored property is the one that carries the harm
 
 **Practice:**
 - Define drift metrics and thresholds *before* deployment, alongside the go-live criteria — retrofitting a baseline after the fact is guesswork
 - Monitor inputs and outputs separately: input distribution shift is an early warning, output quality decay is the harm
+- **Monitor the input signal, not only its metadata.** A recorded descriptor can remain constant across a genuine change in the data, so a monitor reading the label sees a stable stream that is not stable ([data quality](data-quality.md))
+- **Say which output property each drift metric watches**, and check whether the ones you care about can fail independently of it — a healthy confidence score is not evidence that everything else held
 - Set a scheduled re-evaluation cadence rather than relying on incident-driven review
 - Treat a vendor model version change as a change requiring re-evaluation, exactly like a change of your own
 - For retrieval systems, track corpus freshness as a first-class metric alongside model performance
@@ -99,6 +107,7 @@ A model learns from the world as it was when it was trained. The world keeps mov
 | SRC-166 | Sculley, D. et al. (Google) — *Hidden Technical Debt in Machine Learning Systems* (NIPS, 2015) · [link](https://papers.nips.cc/paper/5656-hidden-technical-debt-in-machine-learning-systems) | Why monitoring is structurally necessary: the world changes underneath a deployed model, and the surrounding system — not the model — is where that has to be caught. |
 | SRC-001 | NIST — *AI Risk Management Framework* · [link](https://www.nist.gov/itl/ai-risk-management-framework) | Places post-deployment monitoring inside a recognized risk-management lifecycle rather than treating it as optional maintenance. |
 | SRC-028 | Alexander, Emmimal P. — *RAG Is Blind to Time* (Towards Data Science, 2026) · [link](https://towardsdatascience.com/rag-is-blind-to-time-i-built-a-temporal-layer-to-fix-it-in-production/) | The retrieval-side case: a stable model over an aging corpus produces confidently outdated answers. |
+| SRC-357 | Soliman, Daniel — *Acquisition state behaves as a structured, measurable variable governing lung-nodule AI* (arXiv:2606.12824v2, 2026) · [link](https://arxiv.org/abs/2606.12824) | The demonstration that input-side monitoring can miss a shift entirely: scans differing only in reconstruction kernel flipped a clinical size category in **5.2% (8 of 155)** of nodules while detection confidence was unchanged (**p=0.22**), the two failure modes dissociated by axis under controlled perturbation (noise degraded detection, frequency corrupted measurement), and the metadata tag naming the kernel was uninformative where a 4-feature pixel fingerprint recovered it at ~0.95 AUC. ⚠️ Single-author preprint, not peer-reviewed; one clinical domain and one model, so the figures are properties of that setup — cited here for the mechanism, not as rates that transfer. |
 
 ---
 
@@ -113,4 +122,4 @@ A model learns from the world as it was when it was trained. The world keeps mov
 
 ---
 
-*Last updated: v1.0 · August 2026*
+*Last updated: v1.1 · September 2026*
