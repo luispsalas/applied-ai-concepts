@@ -1,5 +1,21 @@
 # Changelog
 
+## v1.38 — September 2026
+
+**One new entry. Count 151 → 152.**
+
+- `metadata` — **v1.0**, Knowledge & Memory
+
+**Twelve published entries used the word and none defined it.** It was doing real work in them — provenance marks that strip, skill descriptions that decide what an agent loads, a monitoring field that never changed — which is what separated it from general data-management vocabulary this wiki has declined before.
+
+**The organizing claim: metadata is a claim about data, stored apart from the data, and nothing forces the two to agree.** Every system that filters, routes or trusts by metadata is acting on the claim rather than on the thing, and the entry documents four ways they come apart. It gets **lost in transit** — the provenance standard itself carries a second binding because metadata separates from the asset. It is **wrong at source** — license information on public datasets was missing or incorrect far more often than not. It goes **stale while the data moves** — a field describing how an image was produced stayed identical across images produced differently. And it gets **written by an attacker** — where an agent chooses tools by reading their descriptions, the description is the attack surface.
+
+**Signing proves who wrote a label, never that the label is true.** Cryptographic provenance makes tampering detectable and authorship verifiable, and its own specification declines to judge whether the data it protects is accurate. That distinction replaced a weaker claim in the triage note — that metadata is easily forged — which no source supported.
+
+**Two consequences specific to AI systems.** A retrieval system knows what is current, authoritative or permitted only through metadata, because the embedding space represents meaning and nothing else. And model cards and datasheets are metadata too: they describe the version they were written for, and nothing makes them follow the artifact when it changes.
+
+---
+
 ## v1.37 — September 2026
 
 **One new entry. Count 150 → 151.**

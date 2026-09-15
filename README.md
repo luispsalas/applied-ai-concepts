@@ -30,7 +30,7 @@ This wiki treats AI and data governance as closely connected. Alongside technica
 
 ### Looking a concept up
 
-Browse the [glossary index](glossary/index.md) — 151 terms alphabetically with their one-line essences — or use **`search.html`**, a self-contained search page covering every term plus 986 hand-written synonyms.
+Browse the [glossary index](glossary/index.md) — 152 terms alphabetically with their one-line essences — or use **`search.html`**, a self-contained search page covering every term plus 996 hand-written synonyms.
 
 It is built for concept lookup rather than text search, so describing the problem works: *"who is responsible when the AI does it"*, *"it used to work"*, *"why do I get different answers"*. Each result shows which synonym matched.
 
@@ -206,6 +206,7 @@ Every claim in this wiki is meant to trace back to a real, checkable source — 
 | [Context Anxiety](concepts/context-anxiety.md) | A model cutting corners because it believes its context is nearly full — degrading on its own estimate of the budget rather than on the actual limit | ✅ v1.0 |
 | [Context Rot](concepts/context-rot.md) | Reliability falling as the input gets longer — the failure the context window does not warn you about, because everything still fits | ✅ v1.0 |
 | [Generated Variables](concepts/generated-variables.md) | Model output used as data in a later analysis — where high accuracy is not enough, because the errors are not noise and the second stage cannot see them | ✅ v1.1 |
+| [Metadata](concepts/metadata.md) | Data that describes other data — and which AI systems act on without checking, although it strips in transit, is often wrong at source, can stay unchanged while the data changes, and can be written by an attacker | ✅ v1.0 |
 
 ### Human Oversight
 *Humans in control by design — not by assumption*
@@ -373,7 +374,7 @@ See [CHANGELOG.md](CHANGELOG.md) for version history.
 ## Status
 
 **Phase 1 ✅ — foundation:** core concepts published and sourced, each with a governance-notes section; standalone [governance & observability notes](notes/governance-and-observability.md) doc live.
-**Phase 2 (current) — breadth & cross-linking:** 151 concepts across 8 categories, a [glossary index](glossary/index.md), client-side [search](search.html), and a cross-reference layer connecting related entries.
+**Phase 2 (current) — breadth & cross-linking:** 152 concepts across 8 categories, a [glossary index](glossary/index.md), client-side [search](search.html), and a cross-reference layer connecting related entries.
 **Phase 3 (planned):** audience-specific rendering, glossary automation, and a manifesto distilled from the wiki's principles.
 
 ---

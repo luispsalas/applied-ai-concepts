@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "count": 151,
+  "count": 152,
   "entries": [
     {
       "slug": "acceptable-use-policy",
@@ -3603,6 +3603,56 @@
         "SRC-137"
       ],
       "path": "concepts/memory-ai-systems.md"
+    },
+    {
+      "slug": "metadata",
+      "term": "Metadata",
+      "category": "Knowledge & Memory",
+      "essence": "Data that describes other data — its origin, format, meaning and permitted use — which AI systems read and act on as though it were reliable, although nothing guarantees that it is.",
+      "short": "Data that describes other data — and which AI systems act on without checking, although it strips in transit, is often wrong at source, can stay unchanged while the data changes, and can be written by an attacker",
+      "aliases": [
+        "data about data",
+        "descriptive metadata",
+        "structural metadata",
+        "metadata schema",
+        "file metadata",
+        "EXIF",
+        "dataset metadata",
+        "model metadata",
+        "metadata stripping",
+        "dataset documentation"
+      ],
+      "tags": [
+        "Data Governance",
+        "Security",
+        "AI Literacy"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "agent-skills",
+        "content-provenance-watermarking",
+        "data-provenance-lineage",
+        "data-quality",
+        "embeddings",
+        "model-card-system-card",
+        "model-data-drift",
+        "ontology",
+        "privacy-ai-systems",
+        "rag",
+        "supply-chain-risk-ai",
+        "training-data"
+      ],
+      "sources": [
+        "SRC-198",
+        "SRC-199",
+        "SRC-201",
+        "SRC-205",
+        "SRC-269",
+        "SRC-357",
+        "SRC-362"
+      ],
+      "path": "concepts/metadata.md"
     },
     {
       "slug": "metaprompting",
