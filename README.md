@@ -30,7 +30,7 @@ This wiki treats AI and data governance as closely connected. Alongside technica
 
 ### Looking a concept up
 
-Browse the [glossary index](glossary/index.md) — 152 terms alphabetically with their one-line essences — or use **`search.html`**, a self-contained search page covering every term plus 996 hand-written synonyms.
+Browse the [glossary index](glossary/index.md) — 153 terms alphabetically with their one-line essences — or use **`search.html`**, a self-contained search page covering every term plus 1009 hand-written synonyms.
 
 It is built for concept lookup rather than text search, so describing the problem works: *"who is responsible when the AI does it"*, *"it used to work"*, *"why do I get different answers"*. Each result shows which synonym matched.
 
@@ -139,6 +139,7 @@ Every claim in this wiki is meant to trace back to a real, checkable source — 
 | [Mixture of Experts](concepts/mixture-of-experts.md) | Models where only a fraction of the parameters run for any given token — which quietly breaks parameter count as a way of comparing anything | ✅ v1.0 |
 | [Model Distillation](concepts/model-distillation.md) | Training a small model to reproduce a large one's behavior — and the fact that the only thing separating this from model theft is permission | ✅ v1.0 |
 | [Quantization](concepts/quantization.md) | Storing a model's weights at lower numerical precision to make it cheaper to run — which produces a different model, with its own evaluation status and its own safety behavior | ✅ v1.0 |
+| [World Models](concepts/world-models.md) | A learned simulation of how an environment responds to actions, which an agent plans inside before acting — so its decisions are only as sound as the simulation, and an optimizer will find exactly where the simulation is wrong | ✅ v1.0 |
 
 ### Interaction & Design
 *How you work with models effectively*
@@ -374,7 +375,7 @@ See [CHANGELOG.md](CHANGELOG.md) for version history.
 ## Status
 
 **Phase 1 ✅ — foundation:** core concepts published and sourced, each with a governance-notes section; standalone [governance & observability notes](notes/governance-and-observability.md) doc live.
-**Phase 2 (current) — breadth & cross-linking:** 152 concepts across 8 categories, a [glossary index](glossary/index.md), client-side [search](search.html), and a cross-reference layer connecting related entries.
+**Phase 2 (current) — breadth & cross-linking:** 153 concepts across 8 categories, a [glossary index](glossary/index.md), client-side [search](search.html), and a cross-reference layer connecting related entries.
 **Phase 3 (planned):** audience-specific rendering, glossary automation, and a manifesto distilled from the wiki's principles.
 
 ---

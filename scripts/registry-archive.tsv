@@ -36,7 +36,7 @@ SRC-040	no	no-record
 SRC-041	no	no-record
 SRC-042	no	no-record
 SRC-043	no	no-record
-SRC-044	no	no-record
+SRC-044	yes	archived
 SRC-045	no	no-record
 SRC-046	no	no-record
 SRC-047	no	no-record
@@ -345,3 +345,8 @@ SRC-359	yes	archived
 SRC-360	yes	archived
 SRC-361	yes	archived
 SRC-362	yes	archived
+SRC-363	yes	archived
+SRC-364	no	absent
+SRC-365	yes	archived
+SRC-366	yes	archived
+SRC-367	yes	archived

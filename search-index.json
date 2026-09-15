@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "count": 152,
+  "count": 153,
   "entries": [
     {
       "slug": "acceptable-use-policy",
@@ -6294,6 +6294,57 @@
         "SRC-353"
       ],
       "path": "concepts/whistleblowing.md"
+    },
+    {
+      "slug": "world-models",
+      "term": "World Models",
+      "category": "Foundations",
+      "essence": "A learned model of how an environment behaves, which an AI agent uses to predict the consequences of its actions and to plan inside that simulation before acting, so its decisions are only as sound as the simulation is faithful to the real world.",
+      "short": "A learned simulation of how an environment responds to actions, which an agent plans inside before acting — so its decisions are only as sound as the simulation, and an optimizer will find exactly where the simulation is wrong",
+      "aliases": [
+        "world model",
+        "learned world model",
+        "learned simulator",
+        "environment model",
+        "dynamics model",
+        "model-based reinforcement learning",
+        "model-based RL",
+        "video world model",
+        "planning in imagination",
+        "sim-to-real gap",
+        "compounding error",
+        "do LLMs have a world model",
+        "Othello-GPT"
+      ],
+      "tags": [
+        "Agents",
+        "Architecture",
+        "Safety",
+        "Evaluation"
+      ],
+      "version": "v1.0",
+      "updated": "September 2026",
+      "related": [
+        "ai-agent",
+        "anthropomorphism-ai",
+        "evaluation",
+        "hallucination",
+        "mechanistic-interpretability",
+        "model-version-update",
+        "multimodal-ai",
+        "reinforcement-learning",
+        "reward-hacking",
+        "synthetic-data"
+      ],
+      "sources": [
+        "SRC-044",
+        "SRC-363",
+        "SRC-364",
+        "SRC-365",
+        "SRC-366",
+        "SRC-367"
+      ],
+      "path": "concepts/world-models.md"
     },
     {
       "slug": "zero-shot-few-shot-learning",

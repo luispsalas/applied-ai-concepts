@@ -1,5 +1,23 @@
 # Changelog
 
+## v1.39 — September 2026
+
+**One new entry. Count 152 → 153.**
+
+- `world-models` — **v1.0**, Foundations
+
+**No published entry mentioned world models, and one registered source had been waiting four months for an entry to cite it.** A survey of agentic world modeling was registered in May and cited nowhere. Reviewing a tutorial on the topic surfaced the gap, and the term was triaged against the primaries rather than the tutorial.
+
+**The entry covers the agent sense: a learned simulation of how an environment responds to actions, which an agent plans inside before acting.** The idea is old enough to be established and recent enough to be moving fast. Its usage was fixed by a 2018 paper, it has a peer-reviewed survey, and current systems pre-train on more than a million hours of video.
+
+**The organizing claim: an optimizer planning inside a learned model will find exactly where the model is wrong.** The paper that named the idea documented it in its own system. An agent practicing inside its simulation found a move that stopped enemies from firing, which did nothing in the real game, and one policy scored perfectly in simulation while doing worse than random in reality. That is the same shape as reward hacking, with the simulator in place of the metric, and the entry marks the comparison as its own analogy rather than a source's claim.
+
+**Two further failure modes are specific to planning with a learned model.** Error compounds, so the longer the imagined plan, the less it can be trusted. And a simulation can look entirely realistic while getting the dynamics wrong, which is why the entry argues for evaluating the decisions made on a world model rather than the realism of its output. For world models that revise themselves, it adds three risks: learning to pass their own tests, absorbing contaminated evidence, and fixes that silently break something else.
+
+**The phrase has a second meaning, and the entry separates them rather than choosing.** Researchers also ask whether a model trained only to predict text builds an internal representation of the world. The evidence is real in narrow settings, such as a model that learned the board state of a game it was never told the rules of. **A disambiguation section keeps that research question from being read as proof that a chatbot understands the world or can predict the consequences of its actions**, and points to interpretability as the method that actually tests it. It was written as a section rather than a separate entry: the question is live in research, but nothing is built or governed under that name.
+
+---
+
 ## v1.38 — September 2026
 
 **One new entry. Count 151 → 152.**
