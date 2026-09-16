@@ -92,7 +92,7 @@ A jailbreak is talking a model into something it was trained to refuse — with 
 |---|---|---|
 | SRC-157 | Wei, A.; Haghtalab, N.; Steinhardt, J. (UC Berkeley) — *Jailbroken: How Does LLM Safety Training Fail?* (NeurIPS, 2023) · [link](https://papers.nips.cc/paper_files/paper/2023/hash/fd6613131889a4b656206c50a8bd7790-Abstract-Conference.html) | The two structural failure modes — competing objectives and mismatched generalization — and evidence they defeat frontier models. |
 | SRC-148 | OWASP Foundation (GenAI Security Project) — *OWASP Top 10 for LLM Applications* (2025) · [link](https://owasp.org/www-project-top-10-for-large-language-model-applications/) | Industry-standard framing of model-behavior attacks and layered mitigation in application security terms. |
-| SRC-060 | He, Yifeng et al. (UC Davis) — *Security of AI Agents* (2026) · [link](https://arxiv.org/abs/2406.08689) | Why agent capability determines the consequence of a safety bypass; separates agent security from model security. |
+| SRC-060 | He, Yifeng et al. (UC Davis) — *Security of AI Agents* (2024) · [link](https://arxiv.org/abs/2406.08689) | Why agent capability determines the consequence of a safety bypass; separates agent security from model security. |
 
 ---
 

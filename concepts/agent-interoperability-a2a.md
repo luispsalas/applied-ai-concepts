@@ -118,7 +118,7 @@ That is the real question here, and it is not a technical one. It is: when an ag
 | SRC-103 | Model Context Protocol project (Anthropic) — *What is the Model Context Protocol (MCP)?* (2024) · [link](https://modelcontextprotocol.io/docs/getting-started/intro) | The agent-to-tool layer against which agent-to-agent interoperability is defined. ⚠️ Vendor-originated specification. |
 | SRC-152 | Guo, T.; Chen, X.; Wang, Y.; Chang, R.; Pei, S.; Chawla, N.V.; Wiest, O.; Zhang, X. — *Large Language Model based Multi-Agents: A Survey of Progress and Challenges* (IJCAI, 2024) · [link](https://www.ijcai.org/proceedings/2024/890) | Documented coordination and error-propagation failure modes in multi-agent systems, which interoperability extends across organizational boundaries. |
 | SRC-128 | Shah, M.B.; Morovati, M.M.; Rahman, M.M.; Khomh, F. — *Characterizing Faults in Agentic AI: A Taxonomy of Types, Symptoms, and Root Causes* (2026) · [link](https://arxiv.org/abs/2603.06847) | Fault taxonomy underlying the watch-for list, including coordination faults and the difficulty of attributing a failure across agents. |
-| SRC-060 | He, Yifeng et al. (UC Davis) — *Security of AI Agents* (2026) · [link](https://arxiv.org/abs/2406.08689) | The security dimension of agent-to-agent channels, supporting treatment of inbound agent traffic as untrusted regardless of channel. |
+| SRC-060 | He, Yifeng et al. (UC Davis) — *Security of AI Agents* (2024) · [link](https://arxiv.org/abs/2406.08689) | The security dimension of agent-to-agent channels, supporting treatment of inbound agent traffic as untrusted regardless of channel. |
 
 ---
 

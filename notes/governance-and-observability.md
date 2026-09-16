@@ -308,7 +308,7 @@ Cross-cutting questions to ask before deploying or operating any AI system cover
 | SRC-039 | European Parliament / Council of the EU — *General Data Protection Regulation (EU) 2016/679* · [link](https://eur-lex.europa.eu/eli/reg/2016/679/oj) | Erasure and minimization duties that attach regardless of whether a model can technically comply — the basis for the deletion-propagation practice. |
 | SRC-169 | ISO/IEC JTC 1/SC 42 — *ISO/IEC 42001:2023 — Information technology — Artificial intelligence — Management system* (2023) · [link](https://www.iso.org/standard/81230.html) | Certifiable management-system obligations, and the distinction this note keeps explicit: the standard certifies process, not the behavior of any given system. |
 | SRC-162 | European Parliament / Council of the EU — *EU Artificial Intelligence Act, Article 73: Reporting of serious incidents* (2024) · [link](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689) | Fixed reporting deadlines that begin at awareness — the reason the incident path has to be established before an incident. |
-| SRC-060 | He, Yifeng et al. (UC Davis) — *Security of AI Agents* (arXiv:2406.08689, 2026) · [link](https://arxiv.org/abs/2406.08689) | Systematic taxonomy of agent vulnerabilities (confidentiality, integrity, availability) and defenses — locates adversarial-input defense at the agent/harness layer, distinct from model-level security. |
+| SRC-060 | He, Yifeng et al. (UC Davis) — *Security of AI Agents* (arXiv:2406.08689, 2024) · [link](https://arxiv.org/abs/2406.08689) | Systematic taxonomy of agent vulnerabilities (confidentiality, integrity, availability) and defenses — locates adversarial-input defense at the agent/harness layer, distinct from model-level security. |
 
 ---
 
