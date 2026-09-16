@@ -1223,8 +1223,8 @@
         "Regulatory",
         "Data Governance"
       ],
-      "version": "v1.0",
-      "updated": "June 2026",
+      "version": "v1.1",
+      "updated": "September 2026",
       "related": [
         "accountability-ai-systems",
         "ai-governance",
@@ -1236,7 +1236,8 @@
         "SRC-001",
         "SRC-108",
         "SRC-109",
-        "SRC-129"
+        "SRC-129",
+        "SRC-368"
       ],
       "path": "concepts/compliance-ai-systems.md"
     },

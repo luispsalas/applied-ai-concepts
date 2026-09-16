@@ -23,7 +23,9 @@ The primary compliance frameworks for AI systems include:
 - **EU AI Act** — the most comprehensive binding AI regulation globally: risk-tiered obligations (minimal, limited, high, unacceptable risk), conformity assessments, CE marking, prohibited practices, mandatory logging and transparency requirements for high-risk systems
 - **GDPR and data protection law** — lawful processing basis for training data and inference inputs; rights of data subjects; privacy-by-design and accountability obligations
 - **NIST AI RMF** — a voluntary US framework structured around Govern/Map/Measure/Manage functions; increasingly referenced in public sector procurement and sector-specific regulation
-- **Sector-specific frameworks** — financial services (SR 11-7 model risk management), healthcare (FDA AI/ML software guidance), critical infrastructure
+- **Sector-specific frameworks** — financial services (US bank model risk management guidance, SR 26-2), healthcare (FDA AI/ML software guidance), critical infrastructure
+
+**A sector framework's scope has to be checked, not assumed — and the leading US banking example now excludes the systems most organizations are asking about.** In April 2026 the Federal Reserve, OCC and FDIC issued revised model risk management guidance that *"supersedes and replaces"* SR 11-7, the 2011 guidance long treated as the reference for model governance in banking. It states that *"Generative AI and agentic AI models are novel and rapidly evolving. As such, they are not within the scope of this guidance."* Its principles apply to traditional statistical and quantitative models and to non-generative, non-agentic AI, while governance for anything outside that scope is left to each institution's own risk management and governance practices. **So a bank that satisfies model risk guidance has not thereby addressed its generative or agentic AI** — those systems need obligations mapped from somewhere else.
 
 Compliance is often conflated with governance, but they are distinct:
 - **Governance** defines who decides and who is answerable — the organizational structure of oversight
@@ -62,6 +64,7 @@ Three things practitioners need to understand:
 **Watch for:**
 - Compliance documented in policy but not operationalized in practice: ethics principles that do not change procurement criteria, deployment decisions, or monitoring design
 - Compliance treated as static: regulations are in force and actively revised; a compliance posture assessed in 2023 requires reassessment against 2025 and 2026 obligations (EU AI Act high-risk provisions are phasing in)
+- Scope assumed rather than read: a sector framework treated as covering generative or agentic AI when its text excludes them — as US bank model risk guidance (SR 26-2) explicitly does — or a citation to guidance that has since been superseded
 - Compliance theater in HITL: oversight required by policy but performed by reviewers who lack the information, authority, or recourse path to act on what they see — the form of oversight without the substance
 
 **Practice:**
@@ -99,6 +102,7 @@ Three things practitioners need to understand:
 | SRC-109 | Green, Ben — *The Flaws of Policies Requiring Human Oversight of Government Algorithms* (Computer Law & Security Review, 2022) · [link](https://doi.org/10.1016/j.clsr.2022.105681) | Compliance theater in human oversight: mandated review policies can legitimize rather than govern algorithmic decisions when oversight is structurally ineffective. Grounds the distinction between the form and substance of compliance. |
 | SRC-129 | European Parliament — *EU Artificial Intelligence Act* (2024) · [link](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689) | Primary compliance framework: risk-tiered obligations, conformity assessments, prohibited practices, mandatory logging and transparency requirements. The binding regulatory reference for EU-market AI deployment. |
 | SRC-001 | NIST — *Artificial Intelligence Risk Management Framework (AI RMF 1.0)* (2023) · [link](https://www.nist.gov/itl/ai-risk-management-framework) | Voluntary compliance framework: Govern/Map/Measure/Manage functions as a structured approach to AI risk and compliance posture; widely referenced in public sector procurement and risk management. |
+| SRC-368 | Board of Governors of the Federal Reserve System; OCC; FDIC — *SR 26-2: Revised Guidance on Model Risk Management* (2026) · [link](https://www.federalreserve.gov/supervisionreg/srletters/SR2602.htm) | The current US bank model risk management guidance, which supersedes and replaces SR 11-7 (2011). Grounds the scope point: generative and agentic AI models are stated to be outside the guidance, which applies to traditional statistical and quantitative models and non-generative, non-agentic AI. ⚠️ Supervisory guidance, not a regulation; most relevant to banking organizations with over $30 billion in total assets. |
 
 ---
 
@@ -113,4 +117,4 @@ Three things practitioners need to understand:
 
 ---
 
-*Last updated: v1.0 · June 2026*
+*Last updated: v1.1 · September 2026*

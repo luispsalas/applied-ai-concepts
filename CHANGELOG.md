@@ -1,5 +1,17 @@
 # Changelog
 
+## v1.40 — September 2026
+
+**One entry corrected and enriched. No new entries; count stays at 153.**
+
+- `compliance-ai-systems` — v1.0 → **v1.1**
+
+**The entry cited guidance that no longer exists.** It named SR 11-7 as the financial-services framework for model risk management. In April 2026 the US banking agencies issued revised guidance that supersedes and replaces it. The link would have kept working and no checker would have flagged it: **regulatory citations go out of date by being replaced, not by breaking.** The problem was found by reading the newer letter, which an article in the source queue had cited incorrectly.
+
+**The correction carries a fact the entry now states: the replacement guidance puts generative and agentic AI out of scope.** Its principles cover traditional statistical and quantitative models and non-generative, non-agentic AI. For anything outside that scope, it leaves governance to each bank's own risk management practices. **So satisfying model risk guidance does not address an institution's generative or agentic AI**, which needs its obligations mapped from somewhere else. The entry's governance notes gain a matching warning: read a framework's scope rather than assuming it, and check whether cited guidance has been superseded.
+
+---
+
 ## v1.39 — September 2026
 
 **One new entry. Count 152 → 153.**
