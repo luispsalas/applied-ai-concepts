@@ -12,3 +12,8 @@ backups/
 # Generated caches
 __pycache__/
 *.pyc
+
+# Downloaded source PDFs/articles held for reading while drafting.
+# COPYRIGHTED third-party material — never publishable. The Outstanding tab
+# holds the citable URL; these local copies are a reading convenience only.
+source-articles/
