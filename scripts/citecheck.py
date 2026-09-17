@@ -3,6 +3,7 @@
 Citation-form diff — the only check that can catch a WRONG REFERENT.
 
     citecheck.py concepts/new-entry.md [more.md ...]   compare these against the corpus
+    citecheck.py --verbose concepts/new-entry.md ...   also list wording-only drift (same URL)
     citecheck.py --all                                 every ID, every rendered form
     citecheck.py --all --substantive                   only drift that could hide a different document
 
@@ -19,12 +20,27 @@ link checker passes it; a real-but-wrong ID exists in the registry, so the ID ga
 passes it; the schema is intact, so `build.py check` passes it. Comparing the
 rendered form against how the SAME ID is written elsewhere is the only signal.
 
-RANKING BY FREQUENCY IS THE POINT, and it is why this is a script rather than a
-grep. Older IDs have several rendered forms in the corpus (SRC-039 has four,
-SRC-141 three). Comparing against whichever sorts first alphabetically produced
-two false positives in one batch -- and a false positive is how a check earns
-being skimmed. The dominant form is the corpus's actual convention; that is what
-a new citation should match.
+WHAT A PUBLISH RUN REPORTS, AND WHAT IT DELIBERATELY DOES NOT. A citation is
+compared against every form of the same ID elsewhere in the corpus by REFERENT
+(see same_referent): the URL decides, and the title decides only when no form
+carries a link. Two outcomes matter:
+
+  DIFFERS  the citation points at a different document than some other citation
+           of the same ID. Blocks (exit 1). Every URL the corpus uses for that ID
+           is listed, and NONE is recommended: confirm the right one against the
+           registry (Sources, Link column).
+  NEW      the ID is cited nowhere else, so the corpus cannot vouch for it.
+
+Wording-only drift -- same URL, different title/author rendering -- is counted
+but not listed (pass --verbose to see it). CONTRIBUTING.md leaves that class alone
+deliberately, and reporting it on every publish made this a check nobody read:
+a routine five-file publish on 2026-09-15 reported 5 "differ", all presentational.
+
+THERE IS NO "DOMINANT FORM" RECOMMENDATION, on purpose. Earlier versions ranked
+forms by frequency and suggested aligning to the most common one. On 2026-09-10
+the most common form was wrong in BOTH cases checked, and the minority form matched
+the registry. A count is evidence of agreement, not of correctness, so the check
+lists the candidates and leaves the verdict to the registry.
 """
 import re, sys
 from collections import Counter
@@ -148,34 +164,39 @@ def main():
     baseline = forms([f for f in corpus_files() if f.resolve() not in {t.resolve() for t in targets}])
     new = forms(targets)
 
-    problems = new_ids = matches = 0
+    verbose = "--verbose" in sys.argv[1:]
+    problems = new_ids = matches = wording = 0
     for sid in sorted(new):
         for form in new[sid]:
             if sid not in baseline:
                 print(f"NEW      {sid}  (not cited elsewhere — verify against the registry)")
                 new_ids += 1
                 continue
-            # The DOMINANT form is the corpus convention. Ties break toward the
-            # longer form, which carries more verifiable detail.
-            top, n = max(baseline[sid].items(), key=lambda kv: (kv[1], len(kv[0])))
-            if form == top:
+            if form in baseline[sid]:
                 matches += 1
                 continue
-            if form in baseline[sid]:
-                print(f"variant  {sid}  matches a less common form "
-                      f"({baseline[sid][form]}x vs {n}x dominant) — consider aligning")
-                print(f"           yours: {form[:130]}")
-                print(f"           domin: {top[:130]}")
-                matches += 1
+            mine = referent(form)
+            if all(same_referent(mine, referent(b)) for b in baseline[sid]):
+                # Same document, named differently: tolerated per CONTRIBUTING.md.
+                wording += 1
+                if verbose:
+                    print(f"wording  {sid}  same URL, different rendering (informational)")
+                    print(f"           yours: {form[:150]}")
                 continue
             problems += 1
-            print(f"DIFFERS  {sid}")
-            print(f"           yours: {form[:150]}")
-            print(f"           domin: {top[:150]}  ({n}x)")
-    print(f"\n{matches} match · {new_ids} new · {problems} differ"
-          + ("" if not problems else "  <- verify each against the registry before publishing"))
+            print(f"DIFFERS  {sid}  points at a different document than other citations of this ID")
+            print(f"           yours: {mine[0] or '(no link)'}  —  {form[:110]}")
+            urls = {}
+            for b, n in baseline[sid].items():
+                u = referent(b)[0] or "(no link)"
+                urls[u] = urls.get(u, 0) + n
+            for u, n in sorted(urls.items()):
+                print(f"           corpus: {u}  ({n}x)")
+            print(f"           -> confirm which is right against the registry (Sources, Link column); "
+                  f"no form is recommended")
+    print(f"\n{matches} match · {new_ids} new · {wording} wording-only (same URL, not listed) · "
+          f"{problems} differ" + ("" if not problems else "  <- different document: check the registry"))
     sys.exit(1 if problems else 0)
-
 
 if __name__ == "__main__":
     main()
