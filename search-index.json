@@ -3457,7 +3457,7 @@
         "Evaluation",
         "AI Literacy"
       ],
-      "version": "v1.1",
+      "version": "v1.2",
       "updated": "September 2026",
       "related": [
         "audit-trail-ai",
@@ -3475,7 +3475,8 @@
         "SRC-174",
         "SRC-220",
         "SRC-242",
-        "SRC-354"
+        "SRC-354",
+        "SRC-369"
       ],
       "path": "concepts/llm-as-judge.md"
     },
@@ -4150,7 +4151,7 @@
         "Architecture",
         "AI Literacy"
       ],
-      "version": "v1.0",
+      "version": "v1.1",
       "updated": "September 2026",
       "related": [
         "ai-governance",
@@ -4169,7 +4170,9 @@
         "SRC-121",
         "SRC-241",
         "SRC-274",
-        "SRC-275"
+        "SRC-275",
+        "SRC-370",
+        "SRC-371"
       ],
       "path": "concepts/ontology.md"
     },

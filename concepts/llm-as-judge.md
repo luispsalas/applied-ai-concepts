@@ -31,6 +31,14 @@ A judge model is given a task, one or more candidate outputs, and a rubric, and 
 
 **Self-enhancement bias is the one with governance consequences.** If the judge and the system under test come from the same model family, the evaluation is structurally predisposed toward passing. That is not a subtle effect to be corrected for; it is a conflict of interest built into the setup.
 
+**The structural countermeasure is a panel of judges from different model families, and in testing it beat the single strong judge.** Verga et al. (2024) built a *Panel of LLM evaluators* (PoLL) from three smaller models drawn from three disparate model families. Scores were aggregated by majority vote for binary correct/incorrect judgments and by averaging for 1–5 ratings. Across three judge settings and six datasets, the panel had the highest agreement with human annotators (Cohen's κ), ranked chatbot models closer to the crowd-sourced Chatbot Arena ordering than a single GPT-4 judge did, and cost over seven times less. Three of its findings bear directly on how a single judge fails:
+
+- **Self-preference, measured.** Scoring against human annotators, *"the highest positive delta for each individual model being scored occurs when it is judged by itself."* The panel had the smallest spread in scores.
+- **The judge choice changes the answer.** On one QA dataset, *"rankings of model performance change drastically depending on which LLM is used as the judge"*, so a leaderboard built on one judge partly reports that judge.
+- **The strongest model was not the best judge.** GPT-4, the most capable judge tested, was the weakest on the QA evaluations and shifted with minor prompt changes, and the authors report *"there is not a single 'best' judge across all settings."*
+
+⚠️ Three settings and a few panel compositions only, explicitly not tested on math or reasoning evaluation. All nine authors are from Cohere, one of whose models sits on the panel (see Confidence level).
+
 **There is a structural reason the pattern works at all, and it is worth stating because it also tells you how to build the judge.** Practitioners report that **tuning a standalone critic to be harsh is tractable, while tuning a builder to critique its own work is not** — the everyday version being that judging a meal is easier than cooking one. That asymmetry is the pattern's actual foundation: the judge is not merely a cheaper rater, it is a *different job* that the same model does better when it is not also the author. Three practices follow from it, all reported from production use:
 
 - **Keep the roles genuinely separate** — distinct system prompts and distinct context windows, not one model asked to switch hats.
@@ -69,7 +77,9 @@ And there is a limit underneath all of it. Agreeing with people is not the same 
 5. **Position bias is testable and cheap to control** — swap the order and see whether the verdict follows the position.
 6. **A judge cannot grade what it cannot do**, which is exactly the hard case automated review is wanted for.
 7. **A rubric is part of the instrument.** Vague criteria produce plausible scores with no defined meaning.
-8. **Judges drift with model versions.** A score series that spans a provider update is not one series ([model version & update](model-version-update.md)).
+8. **A panel of judges from different model families outperformed a single strong judge** in the one systematic comparison cited here, and it did so more cheaply.
+9. **Which judge you pick can reorder a leaderboard.** A ranking produced by one judge is partly a property of that judge.
+10. **Judges drift with model versions.** A score series that spans a provider update is not one series ([model version & update](model-version-update.md)).
 
 ---
 
@@ -79,6 +89,7 @@ And there is a limit underneath all of it. Agreeing with people is not the same 
 
 **Watch for:**
 - Judge and system-under-test drawn from the same model family, with no acknowledgement of self-enhancement bias
+- A model or vendor selection decided by a single judge's ranking, when a different judge could reorder it
 - Judge agreement with humans reported as accuracy ([confidence vs accuracy](confidence-vs-accuracy.md))
 - No held-out human-rated sample, so there is nothing to detect judge drift against
 - A judge used as a quality *gate* on tasks its own capability does not cover ([scalable oversight](scalable-oversight.md))
@@ -89,6 +100,7 @@ And there is a limit underneath all of it. Agreeing with people is not the same 
 
 **Practice:**
 - **Use a different model family for the judge than for the system under test**, and say so in the evaluation record
+- **Where the verdict carries weight, use a panel of judges from different model families and aggregate their scores**, rather than trusting one large judge; it reduced self-preference and cost less in the cited comparison
 - **Randomize or swap candidate order** and check the verdict does not follow position — the cheapest bias control available
 - Keep a standing human-rated sample and re-measure judge–human agreement periodically; a judge that has drifted looks identical to one that has not
 - Control for length, or measure whether the judge's preference tracks it
@@ -104,7 +116,7 @@ And there is a limit underneath all of it. Agreeing with people is not the same 
 
 ## Confidence level
 
-**Medium-High.** Both halves come from the same peer-reviewed NeurIPS paper, which is unusually clean: the method's value and its named failure modes were established together rather than the caveats arriving later. **The scope limit matters more than the confidence rating:** the 80% agreement figure is for strong judges on general chat-quality comparison, and does not transfer to domain-specific, safety-critical or expert-level grading, where the judge's own capability is the binding constraint. Mitigations for position and verbosity bias are practical and tested; **no reliable mitigation exists for the case where judge and reviewed system share a blind spot**, which is the failure most likely to matter and the least likely to be visible in the metric. ⚠️ **The asymmetry argument added in v1.1 is a practitioner account, not a measurement** — Anthropic engineers describing their own production setup. It is a persuasive *reason* the pattern works and is consistent with the peer-reviewed agreement results above, but no error rate is attached to it; the three practices that follow are reported experience rather than controlled comparisons.
+**Medium-High.** Both halves come from the same peer-reviewed NeurIPS paper, which is unusually clean: the method's value and its named failure modes were established together rather than the caveats arriving later. **The scope limit matters more than the confidence rating:** the 80% agreement figure is for strong judges on general chat-quality comparison, and does not transfer to domain-specific, safety-critical or expert-level grading, where the judge's own capability is the binding constraint. Mitigations for position and verbosity bias are practical and tested; **no reliable mitigation exists for the case where judge and reviewed system share a blind spot**, which is the failure most likely to matter and the least likely to be visible in the metric. ⚠️ **The asymmetry argument added in v1.1 is a practitioner account, not a measurement** — Anthropic engineers describing their own production setup. It is a persuasive *reason* the pattern works and is consistent with the peer-reviewed agreement results above, but no error rate is attached to it; the three practices that follow are reported experience rather than controlled comparisons. ⚠️ **The panel-of-judges finding added in v1.2 is a preprint by vendor authors**: all nine authors are from Cohere, and a Cohere model is one of the three panel members. The self-preference measurement and the judge-dependent rankings are the reasons it is cited; the headline advantage covers three evaluation settings and was not tested on math or reasoning.
 
 ---
 
@@ -130,6 +142,7 @@ And there is a limit underneath all of it. Agreeing with people is not the same 
 | SRC-220 | Bowman, S.R.; Hyun, J.; Perez, E. et al. (Anthropic) — *Measuring Progress on Scalable Oversight for Large Language Models* (2022) · [link](https://arxiv.org/abs/2211.03540) | The circularity this method inherits: where a human could not adjudicate the output, an automated judge relocates the trust question rather than answering it. ⚠️ Vendor-authored preprint. |
 | SRC-174 | Goddard, K.; Roudsari, A.; Wyatt, J.C. — *Automation bias: a systematic review of frequency, effect mediators, and mitigators* (JAMIA, 2012) · [link](https://doi.org/10.1136/amiajnl-2011-000089) | Why a judge's score is accepted more readily than a human rater's, and degrades rather than informs the reviewer's own judgment. |
 | SRC-354 | Prabaker, A., & Wilson, A. [AI Engineer]. (2026, May 18). *Anthropic Workshop: Build Agents That Run for Hours* [Video]. YouTube. · [link](https://www.youtube.com/watch?v=mR-WAvEPRwE) | The **asymmetry argument** for why the judge pattern works — tuning a standalone critic to be harsh is tractable while tuning a builder to self-critique is not — plus three production practices that follow: separate context windows and system prompts, withholding the generator's traces from the judge, and treating the untuned model's generosity bias as the thing the judge prompt must overcome. ⚠️ **VENDOR** (Anthropic engineers on Anthropic products): an engineering account, not a measurement, and no agreement rates or error bars are reported. ⚠️ Summarized working copy, so nothing is quoted verbatim. |
+| SRC-369 | Verga, P.; Hofstätter, S.; Althammer, S.; Su, Y.; Piktus, A.; Arkhangorodsky, A.; Xu, M.; White, N.; Lewis, P. (Cohere) — *Replacing Judges with Juries: Evaluating LLM Generations with a Panel of Diverse Models* (2024) · [link](https://arxiv.org/abs/2404.18796) | The **panel-of-judges** countermeasure: three smaller judges from disparate model families, aggregated by majority vote or average, had the highest agreement with human annotators, less intra-model bias and over seven times lower cost than a single GPT-4 judge. Also the direct measurement that each judge's largest upward deviation came when scoring its own model, and that rankings changed drastically with the choice of judge. ⚠️ **Preprint by vendor authors** (all Cohere, with a Cohere model on the panel); three evaluation settings, not math or reasoning. Read in full. |
 | SRC-065 | Liang, P. et al. (Stanford CRFM) — *Holistic Evaluation of Language Models (HELM)* (TMLR, 2023) · [link](https://arxiv.org/abs/2211.09110) | Multi-metric, multi-scenario evaluation as the surrounding practice — a judge supplies one metric among several, not a verdict. |
 
 ---
@@ -145,4 +158,4 @@ And there is a limit underneath all of it. Agreeing with people is not the same 
 
 ---
 
-*Last updated: v1.1 · September 2026*
+*Last updated: v1.2 · September 2026*

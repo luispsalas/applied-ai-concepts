@@ -1,5 +1,20 @@
 # Changelog
 
+## v1.41 — September 2026
+
+**Two entries enriched. No new entries; count stays at 153.**
+
+- `llm-as-judge` — v1.1 → **v1.2**
+- `ontology` — v1.0 → **v1.1**
+
+**Both came out of decisions not to publish a term.** One proposed term named a real pattern under a name with little independent use; another was a real concept with no AI-specific content of its own. In both cases the useful part belonged inside an existing entry, and that is where it has gone.
+
+***LLM-as-Judge* gains its structural countermeasure: a panel of judges instead of one.** The entry already warned that a model grading output from its own family is predisposed to approve it. A systematic comparison now puts numbers behind that warning and tests the fix. Three smaller judges from different model families, with their scores pooled, agreed with human annotators better than a single large judge did, and cost over seven times less. **The same study measured self-preference directly:** each judge's largest upward deviation from human scores came when it was grading its own model's output. It also showed that the ranking of a set of models can change drastically depending on which model does the judging, so **a leaderboard built on one judge is partly a report about that judge.** And the most capable model tested was not the best judge. The source is a preprint by authors from a model vendor whose own model sat on the panel, and the entry says so.
+
+***Ontology* gains the rung above the ontology: the language it is written in.** The entry's ladder ran from controlled vocabulary to taxonomy to ontology and stopped. Above it sits the **metamodel**, which fixes what kinds of element any ontology written in that language can contain. OWL 2's own specification defines that structure in UML, with notation compatible with the modeling standard built for defining metamodels. **The entry's central argument, that a schema decides what can never be said, therefore applies one level higher as well.** One trap is flagged: inside OWL itself, *metamodeling* means something narrower, using one identifier as both a class and an individual.
+
+---
+
 ## v1.40 — September 2026
 
 **One entry corrected and enriched. No new entries; count stays at 153.**
