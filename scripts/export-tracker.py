@@ -32,7 +32,8 @@ TAB = "AI Literacy Concepts"
 # `问题` in a risk-flags cell and it was found by an ad-hoc script, not a check.
 REGISTRY_ID = "1utge8R0fRhIdc5fOLIJDSkCC5ul3pY65alreZRNRcP4"
 REGISTRY_TAB = "Sources"
-TOKEN = Path.home() / ".config/gcp/sheets-token.json"
+# Read-only credential (spreadsheets.readonly): this script only reads Sheets.
+TOKEN = Path.home() / ".config/gcp/sheets-readonly-token.json"
 
 
 def sweep_cells(rows, label):
