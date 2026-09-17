@@ -5,7 +5,7 @@
   </picture>
 </p>
 
-Plain-language explanations of how AI systems work, how they fail, and who answers for them, for the people who build, buy and oversee them. **Every entry is sourced, and every entry ends with governance notes.**
+Technical and plain-language explanations of how AI systems work, how they fail, and who answers for them, for the people who build, buy and oversee them. **Every entry is sourced, and every entry ends with governance notes.**
 
 | Look it up | Put it to work |
 |---|---|
