@@ -22,7 +22,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from entry_meta import stray_scripts  # noqa: E402
+from entry_meta import stray_scripts, load  # noqa: E402
 
 SHEET_ID = "1AaMFKmkGjKyV9FOfkpGqc51K9bd0-mm8D9j3mIMXyAA"
 TAB = "AI Literacy Concepts"
@@ -32,6 +32,9 @@ TAB = "AI Literacy Concepts"
 # `问题` in a risk-flags cell and it was found by an ad-hoc script, not a check.
 REGISTRY_ID = "1utge8R0fRhIdc5fOLIJDSkCC5ul3pY65alreZRNRcP4"
 REGISTRY_TAB = "Sources"
+# The read range must stay well above the registry size: a fixed A1:P400 would have
+# silently stopped seeing new sources at row 400 (355 rows on 2026-09-17).
+REGISTRY_MAX_ROWS = 2000
 # Read-only credential (spreadsheets.readonly): this script only reads Sheets.
 TOKEN = Path.home() / ".config/gcp/sheets-readonly-token.json"
 
@@ -206,14 +209,89 @@ def main():
     # into the public register, so those also get caught by `build.py check`;
     # the registry has no such downstream reader and is only covered here.
     sweep_cells(rows, "tracker")
-    rng = urllib.parse.quote(f"{REGISTRY_TAB}!A1:P400")
+    rng = urllib.parse.quote(f"{REGISTRY_TAB}!A1:P{REGISTRY_MAX_ROWS}")
     reg = fetch(f"https://sheets.googleapis.com/v4/spreadsheets/{REGISTRY_ID}/values/{rng}"
                 f"?majorDimension=ROWS", token=tok["access_token"]).get("values", [])
     if reg:
+        if len(reg) >= REGISTRY_MAX_ROWS:
+            print(f"  \u26a0\ufe0f  registry read hit the {REGISTRY_MAX_ROWS}-row limit — rows beyond it were NOT "
+                  f"swept or checked; raise REGISTRY_MAX_ROWS")
         sweep_cells(reg, "registry")
         write_archive_state(reg)
+        registry_usage_check(reg)
     else:
         print("  \u26a0\ufe0f  registry returned no rows — sweep did NOT run")
+
+
+def actual_citations():
+    """-> {SRC-ID: set of pages that cite it}, defined EXACTLY as `build.py report`
+    builds column L: an ID anywhere in a concepts/ entry, or in a Sources-table row
+    of a notes/ page. A different definition would make this check disagree with the
+    generator it is checking."""
+    out = {}
+    for e in load():
+        for s in e["sources"]:
+            out.setdefault(s, set()).add(e["slug"])
+    for p in sorted((ROOT / "notes").glob("*.md")):
+        for s in set(re.findall(r"\|\s*(SRC-\d+)\s*\|", p.read_text(encoding="utf-8"))):
+            out.setdefault(s, set()).add(p.stem)
+    return out
+
+
+def registry_usage_check(reg):
+    """Does each source's Status, and its column L ('Wiki Entries Used In'), agree
+    with the pages that actually cite it?
+
+    A source REGISTERED BUT NEVER CITED used to be invisible: `maintain.py`'s orphan
+    check looks the other way (an ID in prose but missing from the entry's own
+    table), and SRC-044 sat uncited for four months. Measuring before building
+    showed a plain uncited list would be noise: 26 of 28 uncited sources on
+    2026-09-17 were queued (Pending/Backlog) as intended, and 2 were Active with
+    their use outside the wiki noted in column L. So only disagreements are
+    reported, and the queue is a count.
+
+    Findings are PRINTED, never written to the repo: column L can name work outside
+    the wiki, and this repo is public.
+    """
+    hdr = {name: i for i, name in enumerate(reg[0])}
+    need = ("ID", "Status", "Wiki Entries Used In")
+    if any(n not in hdr for n in need):
+        print(f"  \u26a0\ufe0f  registry usage check SKIPPED - missing column(s): "
+              f"{[n for n in need if n not in hdr]} (this is NOT a clean result)")
+        return
+    cited = actual_citations()
+    pages = {e["slug"] for e in load()} | {p.stem for p in (ROOT / "notes").glob("*.md")}
+    problems, queued = [], 0
+    for r in reg[1:]:
+        r = r + [""] * (len(hdr) - len(r))
+        sid = str(r[hdr["ID"]]).strip()
+        if not sid.startswith("SRC-"):
+            continue
+        status = str(r[hdr["Status"]]).strip()
+        tokens = [x.strip() for x in str(r[hdr["Wiki Entries Used In"]]).replace("notes:", "·").split("·")]
+        tokens = [x for x in tokens if x]
+        listed = {x for x in tokens if x in pages}
+        outside = [x for x in tokens if x not in pages]  # e.g. a note of use outside the wiki
+        actual = cited.get(sid, set())
+        if actual and status != "Active":
+            problems.append(f"status    {sid}: cited by {len(actual)} page(s) but Status is '{status or '(blank)'}'")
+        if not actual and status == "Active" and not outside:
+            problems.append(f"uncited   {sid}: Active, cited nowhere, and no use outside the wiki is noted")
+        if not actual and status != "Active":
+            queued += 1
+        if listed != actual:
+            gone, new = sorted(listed - actual), sorted(actual - listed)
+            problems.append(f"column L  {sid}: " + "; ".join(
+                ([f"lists {', '.join(gone)} (no longer cites it)"] if gone else []) +
+                ([f"missing {', '.join(new)} (cites it)"] if new else [])))
+    missing = sorted(set(cited) - {str(r[0]).strip() for r in reg[1:] if r})
+    for sid in missing:
+        problems.append(f"registry  {sid}: cited by {', '.join(sorted(cited[sid]))} but not in the registry")
+    print(f"  registry usage: {len(problems)} finding(s); {queued} uncited source(s) queued as Pending/Backlog (expected)")
+    for line in problems:
+        print(f"    {line}")
+    if any(p.startswith("column L") for p in problems):
+        print("    -> regenerate column L from `build.py report`, write only the flagged rows, read back by ID")
 
 
 if __name__ == "__main__":
