@@ -3,7 +3,7 @@
 Generate and check the wiki's derived artifacts.
 
     build.py check     report every inconsistency, change nothing (exit 1 if any)
-    build.py write     regenerate glossary + search-index.json, sync README rows
+    build.py write     regenerate glossary + search-index.json, sync README rows and counts
     build.py report    reverse index for Wiki-Sources col L, and the gap report
 
 Design notes worth keeping:
@@ -78,6 +78,19 @@ ROW_RE = re.compile(r"^\|\s*\[([^\]]+)\]\(concepts/([a-z0-9-]+)\.md\)\s*\|\s*(.*
 SECTION_RE = re.compile(r"^### (.+)$")
 COUNT_RE = re.compile(r"(\*\*Phase 2 \(current\)[^*]*\*\*\s*)(\d+)( concepts)")
 
+# README prose counts that live in running text rather than in a table row.
+# (label, pattern with the number as group 2, value from the corpus). Shared by
+# write() and check(), so the writer and the assertion cannot disagree about
+# which sentence or which number they mean. They drifted to 81/405 at a corpus
+# of 95/507 while hand-maintained; write() now owns them and check() confirms.
+def _alias_count(entries):
+    return len({a for e in entries for a in (e.get("aliases") or [])})
+
+PROSE_COUNTS = (
+    ("glossary term count", re.compile(r"(— )(\d+)( terms alphabetically)"), len),
+    ("alias count", re.compile(r"(plus )(\d+)( hand-written synonyms)"), _alias_count),
+)
+
 
 # ---------- README parsing ----------
 
@@ -104,17 +117,16 @@ def check(entries):
     by_slug = {e["slug"]: e for e in entries}
     lines, rrows, rorder = read_readme_rows()
 
-    # 0. README prose counts that the row-sync does not touch (they drifted to 81/405
-    #    while the corpus was at 95/507 — invisible to every other check here)
+    # 0. README prose counts. write() sets them; this confirms the result, and
+    #    catches a reworded sentence the writer can no longer find.
     rtext = README.read_text()
-    n_alias = len({a for e in entries for a in (e.get("aliases") or [])})
-    for pat, want, what in ((r"— (\d+) terms alphabetically", len(entries), "glossary term count"),
-                            (r"plus (\d+) hand-written synonyms", n_alias, "alias count")):
-        m = re.search(pat, rtext)
+    for what, pat, value in PROSE_COUNTS:
+        m = pat.search(rtext)
+        want = value(entries)
         if not m:
             problems.append(f"readme: prose {what} sentence not found")
-        elif int(m.group(1)) != want:
-            problems.append(f"readme: prose {what} says {m.group(1)}, corpus has {want}")
+        elif int(m.group(2)) != want:
+            problems.append(f"readme: prose {what} says {m.group(2)}, corpus has {want} (run `build.py write`)")
 
     # 0b. the badge alt text states the assessment date; the PNG is a snapshot of a
     #     live reading, so a re-issued declaration leaves both silently stale.
@@ -501,6 +513,13 @@ def write(entries):
         edits += 1
     text = "\n".join(lines) + "\n"
     text = COUNT_RE.sub(lambda m: f"{m.group(1)}{len(entries)}{m.group(3)}", text)
+    for what, pat, value in PROSE_COUNTS:
+        n = value(entries)
+        text, hits = pat.subn(lambda m, n=n: f"{m.group(1)}{n}{m.group(3)}", text)
+        if hits != 1:
+            # Loud, never silent: a sentence that was reworded would otherwise
+            # simply stop being maintained.
+            changed.append(f"!! README prose {what}: expected 1 sentence, found {hits} — fix by hand")
     if text != README.read_text():
         README.write_text(text)
         changed.append(f"README.md ({edits} row(s) synced, count -> {len(entries)})")
