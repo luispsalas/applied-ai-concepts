@@ -1,393 +1,108 @@
 <p align="center">
-  <img src="assets/robot.png" alt="Applied AI Concepts" width="120">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
+    <img src="assets/banner-light.svg" alt="Applied AI Concepts — The AI Literacy Wiki" width="760">
+  </picture>
 </p>
 
-<h1 align="center">Applied AI Concepts</h1>
+Plain-language explanations of how AI systems work, how they fail, and who answers for them, for the people who build, buy and oversee them. **Every entry is sourced, and every entry ends with governance notes.**
 
----
-
-## What is this?
-
-This repository is an [AI literacy](concepts/ai-literacy.md) resource that explains the concepts behind designing, using, and governing AI systems. It is written for practitioners, governance teams, and anyone responsible for AI-related decisions and outcomes in their organization.
-
-### Why it matters
-
-Most organizations are deploying AI systems faster than they can understand and govern them. The language for talking clearly about how these systems work, where they fail, and who is accountable is scattered across research papers, vendor blogs, and regulation. This wiki gathers that language in one place, in plain terms — so an engineer, a product manager, and a compliance lead can use the same words for the same ideas, and make better decisions because of it.
-
-### How it works
-
-This wiki is continuously refined over time. New source materials are integrated into existing entries instead of simply added on top. Definitions evolve, links between concepts become clearer, and conflicting perspectives are identified and documented rather than ignored.
-
-**Every entry declares what kind of term it is**, in a line directly under its title: whether it is an established term of art, one still `emerging` with definitions that vary between sources, one this wiki has `named itself`, or one coined by a single vendor. The field invents vocabulary faster than it settles it, and a reference that repeats every new label without comment is a list of buzzwords. This is a separate judgment from each entry's confidence level — that rates the *evidence*; this rates the *term*. Both are stated, because they vary independently. Every tracked term and its status is public in the [term register](glossary/register.md) — including the ones not published, and the ones that will not be. See [CONTRIBUTING](CONTRIBUTING.md#term-status--the-admission-test) for the test itself.
-
-Content is AI-assisted and human-reviewed, and this wiki declares exactly how — stage by stage, from who had the idea to who verified the sources — in a published [authorship declaration](https://luispsalas.github.io/authorship-meter/declarations/applied-ai-concepts.html). Each published entry is validated and supported by maintained source references.
-
-### Data governance perspective
-
-This wiki treats AI and data governance as closely connected. Alongside technical explanations, entries also highlight accountability, auditability, risk, observability, and control considerations relevant to real-world organizations.
-
-→ [Governance & Observability Notes](notes/governance-and-observability.md)
-
-### Looking a concept up
-
-Browse the [glossary index](glossary/index.md) — 153 terms alphabetically with their one-line essences — or use **`search.html`**, a self-contained search page covering every term plus 1009 hand-written synonyms.
-
-It is built for concept lookup rather than text search, so describing the problem works: *"who is responsible when the AI does it"*, *"it used to work"*, *"why do I get different answers"*. Each result shows which synonym matched.
-
-**→ [Search the wiki](https://luispsalas.github.io/applied-ai-concepts/search.html)**
-
-The page is self-contained, so cloning the repo and opening `search.html` works identically offline. The same data is published as [`search-index.json`](search-index.json) for tooling and AI retrieval.
-
-### Using the glossary in projects
-
-The glossary can also be downloaded as a context package for AI and governance-related projects. It can help support governance-aware implementations, best practices, observability initiatives, and shared terminology across teams.
-
-→ See the [Using this as context](#using-this-as-context) section for setup instructions.
+| Look it up | Put it to work |
+|---|---|
+| **[Glossary →](glossary/index.md)**<br>153 terms, A–Z, each with a one-line definition. | **[Use as project context →](#use-it-as-project-context)**<br>Load the wiki into Claude, ChatGPT, Cursor or a RAG pipeline. |
+| **[Search →](https://luispsalas.github.io/applied-ai-concepts/search.html)**<br>Describe the problem in plain words. Matches 1009 synonyms. | **[Governance & Observability Notes →](notes/governance-and-observability.md)**<br>What to control, monitor and answer for across the core concepts. |
 
 ---
 
 ## Start here
 
-New here? Every entry explains one concept in layers — a **plain-language version** for decision-makers, a **technical definition** for practitioners, and **governance notes** on accountability and risk — so the same page works whether you build AI systems or answer for them.
+Five entries that explain the foundations, in order:
 
-**A short path through the foundations:**
-
-1. [Large Language Models (LLMs)](concepts/large-language-models.md) — what the models underneath everything actually are
-2. [Determinism vs Probabilism](concepts/determinism-vs-probabilism.md) — why they don't give the same answer twice, and why that matters
-3. [Hallucination](concepts/hallucination.md) → [Grounding](concepts/grounding.md) — how they fail, and the main way to keep them honest
-4. [Harness Paradigm](concepts/harness-paradigm.md) — why control lives around the model, not inside it
-5. [AI Governance](concepts/ai-governance.md) — who decides how a system behaves, and who is answerable when it doesn't
-
-**Or browse everything:** the [glossary](glossary/index.md) lists all published terms with one-line definitions.
-
----
-
-## Design philosophy
-
-> <img src="https://www.readmecodegen.com/api/social-icon?name=flask&size=16&color=%23f59e0b" height="16"> **Persistent synthesis over retrieval.**  
-> New sources are synthesized into existing entries, not appended. The wiki is the output; source documents are inputs. Inspired by Karpathy's LLM Wiki model — *stop re-deriving, start compiling.*
-
-> <img src="https://www.readmecodegen.com/api/social-icon?name=flask&size=16&color=%23f59e0b" height="16"> **Context as leverage.**  
-> The quality of any AI interaction is bounded by the quality of context it receives. Understanding *why* changes how you design systems, not just how you prompt them.
-
-> <img src="https://www.readmecodegen.com/api/social-icon?name=flask&size=16&color=%23f59e0b" height="16"> **Governance lives in the design.**  
-> Every entry surfaces the control, accountability, and oversight implications of a concept — AI literacy without governance awareness is incomplete.
-
-> <img src="https://www.readmecodegen.com/api/social-icon?name=flask&size=16&color=%23f59e0b" height="16"> **Explicit over implicit.**  
-> Assumptions, confidence levels, and knowledge gaps are surfaced in every entry. Uncertainty is documented, not hidden.
-
----
-
-## How are entries written?
-
-Each concept is explained through several complementary "lenses" within a single entry, so readers can understand both the idea itself and its practical implications.
-
-- **One-line essence:** A short, memorable explanation of the concept designed for quick understanding and easy reference.
-
-- **Technical definition:** A more precise explanation of how the concept works, using accurate terminology and clarifying differences between related concepts.
-
-- **Plain-language version:** The same idea explained in simpler, non-technical language for business teams, decision-makers, and non-engineering audiences.
-
-- **AI literacy notes:** Practical guidance on why the concept matters in real organizations. It includes common misunderstandings, workflow impacts, and what teams should pay attention to when adopting AI.
-
-- **Governance notes:** The accountability, oversight, risk, and control considerations connected to the concept. Entries highlight key governance questions, common failure modes, recommended practices, and the organizational roles typically responsible for oversight.
-
----
-
-## How sources are handled
-
-Every claim in this wiki is meant to trace back to a real, checkable source — not "general consensus" or an unlinked paraphrase. Each entry's Sources table cites a specific paper, standard, or article with a stable ID (`SRC-###`) tracked in a maintained registry; vendor-authored sources are flagged as such rather than presented as neutral authority; and where no adequate source exists yet, the gap is marked openly with `⚠️ Source needed` instead of papered over.
-
-→ See [CONTRIBUTING.md](CONTRIBUTING.md) for the full sourcing standard.
-
----
-
-## Concepts
-
-### Foundations
-*How models behave — and why that behavior matters*
-
-| Concept | One-line essence | Status |
-|---|---|---|
-| [Large Language Models (LLMs)](concepts/large-language-models.md) | Neural networks trained on vast text corpora that generate language by predicting what comes next — the foundation of most modern AI tools and agents | ✅ v1.0 |
-| [Small Language Models (SLMs)](concepts/small-language-models.md) | Language models small enough to run cheaply, locally, or at the edge — often the better fit for narrow, repetitive tasks | ✅ v1.0 |
-| [Local LLMs](concepts/local-llms.md) | Models run on your own infrastructure — the data stays in, and every duty the provider was carrying becomes yours | ✅ v1.0 |
-| [Determinism vs Probabilism](concepts/determinism-vs-probabilism.md) | Why AI models generate statistically likely outputs rather than fixed answers — the same input can produce different results | ✅ v1.0 |
-| [Reasoning Models / Test-Time Compute](concepts/reasoning-models.md) | Models that spend extra computation "thinking" through a problem step by step before answering — trading speed for higher accuracy on hard tasks | ✅ v1.1 |
-| [Multimodal AI](concepts/multimodal-ai.md) | Text, images, audio and video in one system — every text risk carried across, with weaker tooling to detect it | ✅ v1.0 |
-| [Sycophancy (LLMs)](concepts/sycophancy-llms.md) | Models agreeing with users rather than being accurate — a behavior the training signal rewards, not an incidental bug | ✅ v1.1 |
-| [Confidence vs Accuracy](concepts/confidence-vs-accuracy.md) | How sure a model sounds is not evidence of how right it is — tone is generated independently of correctness | ✅ v1.0 |
-| [Knowledge Cutoff](concepts/knowledge-cutoff.md) | Every model was trained up to a fixed date and knows nothing after it — and cannot reliably tell you when a question falls outside what it knows | ✅ v1.0 |
-| [Hallucination](concepts/hallucination.md) | AI models generate plausible-sounding content that is factually incorrect — confidently and without warning | ✅ v1.2 |
-| [Black Box](concepts/black-box.md) | An AI system whose internal reasoning process cannot be observed or interpreted — even when its outputs can | ✅ v1.1 |
-| [Bias (AI Systems)](concepts/bias-ai-systems.md) | Systematic errors that unfairly advantage or disadvantage certain groups — often inherited from training data, rarely visible in any single output | ✅ v1.0 |
-| [Explainability (XAI)](concepts/explainability-xai.md) | Describing, in terms a human can understand, why an AI system produced a specific output — a prerequisite for accountability | ✅ v1.0 |
-| [Types of AI Systems](concepts/types-of-ai-systems.md) | A taxonomy of AI by capability and autonomy — from narrow task tools to general-purpose models — that determines governance, risk, and oversight | ✅ v1.1 |
-| [Fine-tuning](concepts/fine-tuning.md) | Adapting a model on your own data — cheap enough to be routine, and it can silently strip the safety behavior you were relying on | ✅ v1.0 |
-| [RLHF (Reinforcement Learning from Human Feedback)](concepts/rlhf.md) | Humans rank outputs, the model learns the ranking — the step that turns a raw model into an assistant, and imports whoever did the ranking | ✅ v1.0 |
-| [Pre-training](concepts/pre-training.md) | The first and largest training stage, where a model learns language and world knowledge from a huge corpus — the stage that fixes what it knows and that nobody can undo afterwards | ✅ v1.0 |
-| [Temperature (LLMs)](concepts/temperature-llms.md) | The sampling knob that tunes how varied a model's output is — widely believed to be an accuracy control, and measurably not one | ✅ v1.0 |
-| [Tokenization](concepts/tokenization.md) | How text is chopped into the units a model actually processes — the same units you are billed for, and the reason cost and context differ by language | ✅ v1.0 |
-| [Inference](concepts/inference.md) | Running a trained model to produce an output — the phase that carries almost all of a system's lifetime cost, latency and governance surface, and the one most often left out of AI budgets | ✅ v1.0 |
-| [NLP](concepts/nlp.md) | The field concerned with making computers process human language — the discipline LLMs came out of, and the reason its older, unglamorous problems are still the ones that break production systems | ✅ v1.0 |
-| [Reinforcement Learning (RL)](concepts/reinforcement-learning.md) | Learning by consequence rather than by example — the framework behind alignment and reasoning training, and the one whose central, unsolved problem is that a system optimizes what you measured rather than what you meant | ✅ v1.0 |
-| [Mechanistic Interpretability](concepts/mechanistic-interpretability.md) | Reverse-engineering what a model actually computes, rather than asking it to explain itself — the only route to knowing why that does not depend on the model's own account | ✅ v1.0 |
-| [Recurrent Depth](concepts/recurrent-depth.md) | Spending more compute by looping a model's own layers rather than by writing more tokens — capability without extra parameters, and thinking that produces nothing to read | ✅ v1.0 |
-| [Transformers](concepts/transformers.md) | The architecture underneath almost everything — and the reason a weakness in one model is rarely local to it | ✅ v1.0 |
-| [Zero-shot / Few-shot Learning](concepts/zero-shot-few-shot-learning.md) | Getting a task done with no examples or a handful, without changing the model — and the measured finding that the examples do not teach it what you think | ✅ v1.0 |
-| [Latency (AI Systems)](concepts/latency-ai-systems.md) | The wait between asking and being answered — and the constraint that quietly decides whether a human review step survives contact with the product | ✅ v1.0 |
-| [Mixture of Experts](concepts/mixture-of-experts.md) | Models where only a fraction of the parameters run for any given token — which quietly breaks parameter count as a way of comparing anything | ✅ v1.0 |
-| [Model Distillation](concepts/model-distillation.md) | Training a small model to reproduce a large one's behavior — and the fact that the only thing separating this from model theft is permission | ✅ v1.0 |
-| [Quantization](concepts/quantization.md) | Storing a model's weights at lower numerical precision to make it cheaper to run — which produces a different model, with its own evaluation status and its own safety behavior | ✅ v1.0 |
-| [World Models](concepts/world-models.md) | A learned simulation of how an environment responds to actions, which an agent plans inside before acting — so its decisions are only as sound as the simulation, and an optimizer will find exactly where the simulation is wrong | ✅ v1.0 |
-
-### Interaction & Design
-*How you work with models effectively*
-
-| Concept | One-line essence | Status |
-|---|---|---|
-| [Context Engineering](concepts/context-engineering.md) | Designing what an AI model receives is as important as the model itself | ✅ v1.1 |
-| [Prompt Engineering](concepts/prompt-engineering.md) | Structuring inputs to consistently elicit useful, accurate, and safe model outputs | ✅ v1.1 |
-| [Anthropomorphism (AI)](concepts/anthropomorphism-ai.md) | Reading fluent language as understanding, intent or care — the reflex underneath most other misconceptions about AI | ✅ v1.0 |
-| [Human–LLM Communication Skills](concepts/human-llm-communication-skills.md) | Working well with a model is mostly noticing what you left unstated — and knowing when not to trust the answer | ✅ v1.0 |
-| [Curse of Knowledge (AI Context)](concepts/curse-of-knowledge-ai-context.md) | You cannot un-know what you know, so you under-specify — and the model answers anyway instead of asking | ✅ v1.0 |
-| [Cognitive Offloading & Deskilling](concepts/cognitive-offloading-deskilling.md) | Delegating thinking to a system erodes the skill needed to judge its output — the long-run cost of convenience | ✅ v1.0 |
-| [Performativity (LLMs)](concepts/performativity-llms.md) | Language models do not just describe language, they change it — measurably shifting the words people use, with the influence running back from the machine into human culture | ✅ v1.0 |
-| [Metaprompting](concepts/metaprompting.md) | Prompting about prompting — three different practices share the name, and the governance question is the same for all of them | ✅ v1.0 |
-| [Prompt Chaining](concepts/prompt-chaining.md) | Breaking one task into a sequence of prompts — which buys you inspectable intermediate steps, and costs you a path for errors to travel down | ✅ v1.0 |
-
-### System Architecture
-*The control layer that makes models governable*
-
-| Concept | One-line essence | Status |
-|---|---|---|
-| [Harness Paradigm](concepts/harness-paradigm.md) | Intelligence and control are separate layers — governance lives in the harness | ✅ v1.4 |
-| [AI Agent](concepts/ai-agent.md) | A language model that doesn't just respond — it plans, acts, and iterates across multiple steps | ✅ v1.2 |
-| [Tool Use](concepts/tool-use.md) | How an AI model acts on the world rather than just describing it — calling external functions, APIs, and data sources | ✅ v1.0 |
-| [Multi-Agent Systems](concepts/multi-agent-systems.md) | Multiple AI agents with different roles working together on a task — coordination and division of labor instead of one model doing everything | ✅ v1.0 |
-| [Orchestration (AI Systems)](concepts/orchestration-ai-systems.md) | The control layer deciding what runs and in what order — where the failures hide in the seams and look like success | ✅ v1.0 |
-| [Retrieval-Augmented Generation (RAG)](concepts/rag.md) | A technique that grounds model outputs in retrieved, verifiable information | ✅ v1.2 |
-| [Guardrails (AI Systems)](concepts/guardrails-ai-systems.md) | Technical and policy constraints that prevent an AI system from producing outputs or taking actions outside defined boundaries | ✅ v1.0 |
-| [System Prompt](concepts/system-prompt.md) | The behind-the-scenes instructions that set how an AI behaves before you interact with it — a soft control, not a hard boundary | ✅ v1.0 |
-| [Prompt Injection](concepts/prompt-injection.md) | A trick where malicious instructions hidden in text the AI reads hijack its behavior — the top-ranked LLM application security risk | ✅ v1.0 |
-| [Jailbreak](concepts/jailbreak.md) | Bypassing a model's safety training through crafted prompts rather than a technical flaw — getting it to do what it was trained to refuse | ✅ v1.0 |
-| [Embeddings](concepts/embeddings.md) | Turning text into coordinates so that similar meanings sit close together — the representation that makes semantic search work, and that carries the training data's biases as geometry | ✅ v1.0 |
-| [Sandboxing](concepts/sandboxing.md) | Running an untrusted system inside a bounded environment so that what it can reach is limited by construction — the control that does not depend on predicting what it will try | ✅ v1.1 |
-| [Agent Interoperability (A2A)](concepts/agent-interoperability-a2a.md) | Letting agents built by different parties discover and delegate to each other — the layer where accountability crosses an organizational boundary, usually before anyone has decided who holds it | ✅ v1.0 |
-| [Edge AI](concepts/edge-ai.md) | Inference running on the device where the data is, not in a datacenter — which stops data leaving and simultaneously stops you seeing what happened | ✅ v1.0 |
-| [Agent Hooks](concepts/agent-hooks.md) | The points where custom code runs during an agent's execution — and the question that decides whether a guardrail is a control or just a camera | ✅ v1.0 |
-| [Agent Skills](concepts/agent-skills.md) | Folders of instructions an agent loads when it decides they are relevant — a cross-vendor standard whose discovery mechanism is also its attack surface | ✅ v1.0 |
-| [AI Gateway](concepts/ai-gateway.md) | One control point in front of every model provider — the only place organizational AI policy can actually be enforced, and the place every prompt now collects | ✅ v1.0 |
-| [Agentic Design Patterns](concepts/agentic-design-patterns.md) | The named arrangements for splitting what a system decides at runtime from what is fixed in code — and each one puts the power to refuse somewhere different | ✅ v1.0 |
-| [Data Poisoning](concepts/data-poisoning.md) | Corrupting what a model learns rather than what it is asked — an integrity attack on the training set that no amount of input filtering can reach | ✅ v1.0 |
-| [Federated Learning](concepts/federated-learning.md) | Training one model across data that never moves — which relocates the privacy problem into the model updates and trades away the ability to audit the training data at all | ✅ v1.0 |
-| [Structured Output](concepts/structured-output.md) | Making a model emit machine-parseable output that conforms to a schema — a guarantee about shape that is routinely mistaken for a guarantee about content | ✅ v1.1 |
-
-### Knowledge & Memory
-*How knowledge persists, degrades, and stays fit for use*
-
-| Concept | One-line essence | Status |
-|---|---|---|
-| [Persistent Synthesis](concepts/persistent-synthesis.md) | Knowledge compounds when contradictions are resolved, not accumulated | ✅ v1.2 |
-| [Data Quality](concepts/data-quality.md) | The fitness of data for its intended use — and the upstream constraint on every AI system built on it | ✅ v1.0 |
-| [Data Provenance / Lineage](concepts/data-provenance-lineage.md) | Where the data came from and what has happened to it since — the record that answers "can we actually use this?" | ✅ v1.1 |
-| [Training Data](concepts/training-data.md) | What the model learned from — where its knowledge, gaps, blind spots and biases all come from, and which is rarely disclosed | ✅ v1.0 |
-| [Copyright & AI Output](concepts/copyright-ai-output.md) | Who owns what a model makes, and whether training was lawful — two questions, one with a US answer and one genuinely open | ✅ v1.0 |
-| [Grounding](concepts/grounding.md) | Anchoring model outputs to specific, verifiable sources — reducing hallucination by giving the model something real to reason from | ✅ v1.0 |
-| [Knowledge Base](concepts/knowledge-base.md) | The collection of documents an AI can look up when answering — the quality of the library determines the quality of the answers | ✅ v1.0 |
-| [Memory (AI Systems)](concepts/memory-ai-systems.md) | How an AI remembers — what it keeps in a conversation, what carries over to future sessions, and what it reuses as learned skill | ✅ v1.0 |
-| [Domain](concepts/domain.md) | The specific field the AI is working in — what counts as a "good" or "wrong" answer depends entirely on the domain | ✅ v1.0 |
-| [Context Window](concepts/context-window.md) | The maximum amount of text an AI model can consider at once — a hard limit on what it can reason about | ✅ v1.0 |
-| [Context (AI Systems)](concepts/context-ai-systems.md) | Everything the model receives before it answers — one bounded, undifferentiated stream, assembled fresh every time | ✅ v1.0 |
-| [Knowledge Graphs](concepts/knowledge-graphs.md) | Facts and their relationships stored as an explicit, inspectable network — the retrieval substrate you can audit, as opposed to one you can only measure | ✅ v1.0 |
-| [Synthetic Data](concepts/synthetic-data.md) | Data produced by a model rather than observed in the world — a genuine answer to scarcity, privacy and cost, and a genuine way to build a corpus that quietly stops describing reality | ✅ v1.0 |
-| [Context Compaction](concepts/context-compaction.md) | Shrinking a conversation so it keeps fitting — and the point at which what the system knows stops being something anyone chose | ✅ v1.0 |
-| [Ontology](concepts/ontology.md) | The agreed list of what kinds of things exist and how they may relate — a schema that quietly decides what a system can never record | ✅ v1.1 |
-| [Data Labeling](concepts/data-labeling.md) | The human work that produces every label a model learns from and every benchmark it is judged against — undervalued in exactly the systems that depend on it most | ✅ v1.0 |
-| [Context Anxiety](concepts/context-anxiety.md) | A model cutting corners because it believes its context is nearly full — degrading on its own estimate of the budget rather than on the actual limit | ✅ v1.0 |
-| [Context Rot](concepts/context-rot.md) | Reliability falling as the input gets longer — the failure the context window does not warn you about, because everything still fits | ✅ v1.0 |
-| [Generated Variables](concepts/generated-variables.md) | Model output used as data in a later analysis — where high accuracy is not enough, because the errors are not noise and the second stage cannot see them | ✅ v1.1 |
-| [Metadata](concepts/metadata.md) | Data that describes other data — and which AI systems act on without checking, although it strips in transit, is often wrong at source, can stay unchanged while the data changes, and can be written by an attacker | ✅ v1.0 |
-
-### Human Oversight
-*Humans in control by design — not by assumption*
-
-| Concept | One-line essence | Status |
-|---|---|---|
-| [Human-in-the-Loop (HITL)](concepts/human-in-the-loop.md) | A design pattern that keeps humans as decision authorities at critical points | ✅ v1.1 |
-| [Human Responsibility in AI Use](concepts/human-responsibility-in-ai-use.md) | The obligation to oversee AI decisions does not transfer to the system — it remains with the humans who deploy and use it | ✅ v1.1 |
-| [Permission Model (AI)](concepts/permission-model-ai.md) | What an AI may do on its own, what needs human approval, and what is always off-limits — enforced, not requested | ✅ v1.0 |
-| [Agency (AI Systems)](concepts/agency-ai-systems.md) | How much a system may do without asking — granted by an organization, not possessed by the model | ✅ v1.0 |
-| [Human–AI Collaboration Model](concepts/human-ai-collaboration-model.md) | The explicit design of how people and AI systems divide work, hand over, and resolve disagreement — documented, not assumed | ✅ v1.0 |
-| [Automation Bias](concepts/automation-bias.md) | People stop checking a system that is usually right — which is how a rare wrong answer becomes a bad decision | ✅ v1.0 |
-| [RACI](concepts/raci.md) | Who does the work, who answers for it, who is consulted, who is informed — the system can be Responsible, only a person can be Accountable | ✅ v1.1 |
-| [Scalable Oversight](concepts/scalable-oversight.md) | Using AI to supervise AI because the work has outrun direct human review — and the unresolved question of who checks the checker | ✅ v1.0 |
-| [Moral Crumple Zone](concepts/moral-crumple-zone.md) | The human operator who absorbs blame when an automated system fails — protecting the system's integrity at the nearest person's expense, exactly as a car's crumple zone absorbs a crash | ✅ v1.0 |
-| [Automated Decision-Making](concepts/automated-decision-making.md) | When a decision about a person is made without a human in it — the one place law already grants an individual the right to object, and the threshold most systems are quietly designed to sit under | ✅ v1.0 |
-
-### Reliability & Quality
-*Measuring and maintaining what AI systems actually do*
-
-| Concept | One-line essence | Status |
-|---|---|---|
-| [Evaluation (AI Systems)](concepts/evaluation.md) | The structured practice of measuring whether an AI system does what it is supposed to do — before deployment and continuously in production | ✅ v1.2 |
-| [Failure Modes (AI Systems)](concepts/failure-modes-ai-systems.md) | The specific ways an AI system can go wrong — each requiring a different detection-and-response control | ✅ v1.0 |
-| [Red Teaming](concepts/red-teaming.md) | Deliberately attacking your own AI system — probing for jailbreaks, data leaks, and harmful outputs before anyone else finds them | ✅ v1.0 |
-| [Deception (AI Systems)](concepts/deception-ai-systems.md) | Output that systematically induces false beliefs because something other than truth was being optimized for | ✅ v1.2 |
-| [Concealing Uncertainty](concepts/concealing-uncertainty.md) | A tentative answer presented as settled — the caveats a calibrated response would surface, trained away | ✅ v1.0 |
-| [Synthetic Media (Deepfakes)](concepts/synthetic-media-deepfakes.md) | Generation scales and verification does not — and the documented harm is fraud and intimate imagery, not mainly politics | ✅ v1.0 |
-| [Reward Hacking (Specification Gaming)](concepts/reward-hacking.md) | The system satisfies the metric and defeats the point — and more capable models do it more, not less | ✅ v1.0 |
-| [Power Seeking](concepts/power-seeking.md) | Capability is useful for almost any goal, so optimization drifts toward more access and more room to operate — no motive required | ✅ v1.0 |
-| [Alignment (AI Systems)](concepts/alignment-ai-systems.md) | Making a system's behavior match what was actually intended — and the prior question of whose intentions those are | ✅ v1.0 |
-| [Verification](concepts/verification.md) | Checking this output against ground truth before trusting it — and the finding that people check least on the problems that most need it | ✅ v1.0 |
-| [Model/Data Drift](concepts/model-data-drift.md) | The quiet decay of a deployed system as the world moves away from its training data — nothing breaks, accuracy just slides | ✅ v1.1 |
-| [Model Version & Update](concepts/model-version-update.md) | The system you use today may not be the one you tested — providers change models underneath you, and reliable behavior can shift without notice | ✅ v1.0 |
-| [Data Leakage (Model Evaluation)](concepts/data-leakage-model-evaluation.md) | When information from the test set reaches the model during training, so measured performance describes a exam the model had already seen — the most common cause of results that do not survive deployment | ✅ v1.0 |
-| [LLM-as-Judge](concepts/llm-as-judge.md) | Using one language model to grade another's output — the only way to evaluate at volume, with documented biases including a preference for its own writing | ✅ v1.2 |
-| [Recursive Self-Improvement](concepts/recursive-self-improvement.md) | A system improving its own ability to improve, so gains compound — a sixty-year-old argument whose premises are now partly testable and largely unmet | ✅ v1.1 |
-| [AI Benchmarking](concepts/ai-benchmarking.md) | Standardized tests that let models be compared on the same task — indispensable for comparison, and routinely read as evidence of general capability they were never built to support | ✅ v1.0 |
-| [Catastrophic Forgetting](concepts/catastrophic-forgetting.md) | Teaching a model something new can silently remove something it already knew — including behavior nobody re-tests | ✅ v1.0 |
-| [Overfitting](concepts/overfitting.md) | Learning the training set instead of the pattern — and the reason a model's reported score is not a promise about your data | ✅ v1.0 |
-| [False Positives and False Negatives](concepts/false-positives-and-false-negatives.md) | The two ways a system can be wrong — and the choice of which one to make more often is a policy decision that usually gets made by default | ✅ v1.0 |
-| [Checkpointing](concepts/checkpointing.md) | Saving state at known-good points so a long run can be resumed or undone — and the boundary where undo stops working, which is wherever the system already touched the world | ✅ v1.0 |
-| [Inter-Rater Reliability](concepts/inter-rater-reliability.md) | How much independent raters actually agree — the ceiling on what any evaluation built on their judgments can demonstrate, and almost never published beside the score it caps | ✅ v1.0 |
-| [Overrefusal](concepts/overrefusal.md) | A model refusing work that was perfectly safe — the failure safety measures cause rather than prevent, and the one almost nobody puts a number on | ✅ v1.0 |
-
-### Observability & Governance
-*Making AI system behavior visible and accountable*
-
-| Concept | One-line essence | Status |
-|---|---|---|
-| [Observability (AI Systems)](concepts/observability.md) | The ability to understand what an AI system is doing — and reconstruct why — from the outside | ✅ v1.0 |
-| [AI Governance](concepts/ai-governance.md) | The frameworks, policies, and accountability structures that determine who decides how AI systems behave — and who is answerable when they don't | ✅ v1.1 |
-| [Ownership (AI Systems)](concepts/ownership-ai-systems.md) | Explicit assignment of accountability for an AI system's outputs, data, and governance — defining who is responsible, not just who built it | ✅ v1.0 |
-| [Accountability (AI Systems)](concepts/accountability-ai-systems.md) | The principle that someone can be held answerable for an AI system's behavior — and that answerable means explain, justify, and face consequences | ✅ v1.0 |
-| [Audit Trail (AI)](concepts/audit-trail-ai.md) | The structured record of what an AI system received, decided, and did — enabling accountability and governance review after the fact | ✅ v1.0 |
-| [Compliance (AI Systems)](concepts/compliance-ai-systems.md) | Meeting defined AI obligations — and being answerable for whether they were actually met, not just documented | ✅ v1.1 |
-| [Data Minimization](concepts/data-minimization.md) | Collecting and keeping only the data a system actually needs — less data, less risk, lower cost | ✅ v1.0 |
-| [Privacy (AI Systems)](concepts/privacy-ai-systems.md) | The rights and obligations that govern how personal data is used in AI training and deployment — and the responsibility to uphold them | ✅ v1.0 |
-| [Data Leakage (AI Systems)](concepts/data-leakage-ai-systems.md) | When sensitive information from training data or context surfaces in model outputs — exposing what was never meant to be accessible | ✅ v1.0 |
-| [AI Incident (Reporting)](concepts/ai-incident-reporting.md) | A documented event where an AI system caused or nearly caused harm — now with legal deadlines to report it, not just fix it quietly | ✅ v1.1 |
-| [AI Management System (ISO 42001)](concepts/ai-management-system-iso-42001.md) | The certifiable standard for governing AI across its lifecycle — it certifies the process, not the product | ✅ v1.0 |
-| [Shadow AI](concepts/shadow-ai.md) | Unsanctioned AI use — invisible to the processes meant to govern it, and usually a signal about the sanctioned option | ✅ v1.0 |
-| [Model Card / System Card](concepts/model-card-system-card.md) | The transparency artifact — a scoping document whose job is to say where *not* to use a model | ✅ v1.0 |
-| [Open Source AI](concepts/open-source-ai.md) | A model release granting the freedoms to use, study, modify and share it — a defined standard requiring data information, code and parameters, which a weights-only release does not meet however often the label is applied to it | ✅ v1.0 |
-| [Content Provenance & Watermarking (C2PA)](concepts/content-provenance-watermarking.md) | Signed labels and invisible marks on generated content — a positive detection means something, a negative one does not | ✅ v1.0 |
-| [AI Disclosure (Attribution)](concepts/ai-disclosure-attribution.md) | Saying AI was used — a human practice, distinct from machine marking, and only one of them satisfies the law | ✅ v1.1 |
-| [Bluewashing](concepts/bluewashing.md) | Responsible-AI claims with nothing behind them — the test is whether anything can constrain a decision | ✅ v1.0 |
-| [Fundamental Rights Impact Assessment (FRIA)](concepts/fundamental-rights-impact-assessment.md) | A deployer's pre-launch assessment of who is affected and what recourse they have — and it binds far fewer organizations than commonly claimed | ✅ v1.0 |
-| [Systemic Risk (AI)](concepts/systemic-risk-ai.md) | A precise legal threshold for a few model providers — and an unregulated concentration risk carried by everyone else | ✅ v1.0 |
-| [Frontier AI (Frontier Model)](concepts/frontier-ai.md) | The leading edge — a category defined by capabilities being discovered after training, not by size | ✅ v1.0 |
-| [Environmental Cost of AI](concepts/environmental-cost-of-ai.md) | The energy, water and emissions behind model training and use — a rising reporting expectation that organizations cannot currently compute for themselves | ✅ v1.0 |
-| [Anonymization and Pseudonymization](concepts/anonymization-and-pseudonymization.md) | Two words used interchangeably that mean opposite things in law — one takes data out of scope, the other does not | ✅ v1.0 |
-| [Privacy Attacks (AI Models)](concepts/privacy-attacks-ai-models.md) | Querying a deployed model to get back what went into it — the training data, its members, or the model itself | ✅ v1.0 |
-| [Dangerous Capability](concepts/dangerous-capability.md) | What a model could do if someone tried to make it — measured separately from whether it would, because the two need different evidence and different controls | ✅ v1.0 |
-| [Supply Chain Risk (AI)](concepts/supply-chain-risk-ai.md) | Everything in your AI system that you did not build and cannot inspect — and the point at which the law stops treating you as a user and starts treating you as the maker | ✅ v1.0 |
-| [Acceptable Use Policy](concepts/acceptable-use-policy.md) | The rules about what a system may be used for — one set written by you, and one written by your provider that changes without asking you | ✅ v1.0 |
-| [Algorithmic Impact Assessment](concepts/algorithmic-impact-assessment.md) | A structured assessment of what a system could do to people, completed before deployment — and, in the strongest implementations, published | ✅ v1.0 |
-| [Conformity Assessment (AI Systems)](concepts/conformity-assessment-ai.md) | How a high-risk AI system is certified before it goes on the EU market — and the fact that for most of them, the provider certifies itself | ✅ v1.0 |
-| [Differential Privacy](concepts/differential-privacy.md) | A mathematical guarantee that one person's presence in the data barely changes what comes out — a property of the computation, not a label on the dataset, and meaningless without its parameters | ✅ v1.0 |
-| [Dual Use](concepts/dual-use.md) | The same capability serving a legitimate and a harmful purpose — which means risk is not a property of the model, and no amount of inspecting it will settle the question | ✅ v1.0 |
-| [Third-Party Audit](concepts/third-party-audit.md) | Assurance by someone with no stake in the answer — whose value is set almost entirely by what access they were granted, not by their independence | ✅ v1.0 |
-| [Whistleblowing](concepts/whistleblowing.md) | Protected disclosure by an insider — the control that operates when every internal one has failed, and whose legal protection covers illegality rather than danger | ✅ v1.0 |
-
-### Organizational Readiness
-*The human and organizational conditions for responsible AI adoption*
-
-| Concept | One-line essence | Status |
-|---|---|---|
-| [AI Literacy](concepts/ai-literacy.md) | The competencies required to engage with, use, and govern AI systems responsibly — at an individual, team, and organizational level | ✅ v1.1 |
-| [AI Use Case](concepts/ai-use-case.md) | A defined, bounded application of AI to a specific problem — the unit of design, risk assessment, and governance accountability | ✅ v1.0 |
-| [Operational Readiness (AI)](concepts/operational-readiness-ai.md) | Whether the organization can actually run an AI system — data, infrastructure, skills, process, governance — not whether the model works | ✅ v1.0 |
-| [Scalability (AI Systems)](concepts/scalability-ai-systems.md) | Volume scales, review capacity does not — and nothing alarms when a governed tool becomes an unreviewed pipeline | ✅ v1.0 |
-| [Value Realization (AI)](concepts/value-realization-ai.md) | The gap between what AI can do and what an organization gets from it — closed by complementary investment, not by better models | ✅ v1.0 |
-| [Continuous Feedback & Improvement](concepts/continuous-feedback-improvement.md) | Treating an AI system as something that must be watched and corrected for as long as it runs — a standing capability with an owner, not a post-launch intention | ✅ v1.0 |
-| [Tacit Knowledge](concepts/tacit-knowledge.md) | The expertise people have but cannot fully put into words — the hardest thing to give an AI system as context, and the first thing lost when people stop practicing | ✅ v1.0 |
-| [Service Level Objective](concepts/service-level-objective.md) | The number you commit to before anyone is angry — and the question of what it can even mean when the output is probabilistic rather than up-or-down | ✅ v1.0 |
+1. [Large Language Models (LLMs)](concepts/large-language-models.md): what the models underneath everything actually are
+2. [Determinism vs Probabilism](concepts/determinism-vs-probabilism.md): why they don't give the same answer twice, and why that matters
+3. [Hallucination](concepts/hallucination.md) → [Grounding](concepts/grounding.md): how they fail, and the main way to keep them honest
+4. [Harness Paradigm](concepts/harness-paradigm.md): why control lives around the model, not inside it
+5. [AI Governance](concepts/ai-governance.md): who decides how a system behaves, and who is answerable when it doesn't
 
 ---
 
 ## Governance & Observability Notes
 
-Practical notes on what to control, monitor, and be accountable for — organized by theme across the core concepts.
+Understanding a concept is not enough: you also need to know what to control, what to monitor, and who is accountable. Every entry ends with governance notes, and this companion reference brings them together across four themes: **verification**, **context governance**, **system control**, and an **accountability checklist**.
 
-| Note | Covers |
-|---|---|
-| [Governance & Observability](notes/governance-and-observability.md) | Verification · Context governance · System control · Accountability checklist |
+→ **[Read the Governance & Observability Notes](notes/governance-and-observability.md)**
 
 ---
 
-## Using this as context
+## Concepts
 
-<p align="center">
-  <img src="assets/concept-graph.svg" alt="Concept relationship graph" width="400">
-</p>
+The terms other entries rely on most, in each category. Browse [every term A–Z](glossary/index.md), or the [term register](glossary/register.md), which also lists terms considered and not published, and why.
 
-The concepts in this wiki are designed to be used as structured context within AI projects, not just read as reference material. Each entry is self-contained, consistently structured, and written to support both human understanding and machine processing.
+<!-- key-terms:start (generated by scripts/build.py write; edit glossary/categories.md, not this block) -->
 
-**Clone or download**
+| Category | Key terms | Browse |
+|---|---|---|
+| **Foundations**<br>*How models behave — and why that behavior matters* | [Large Language Models (LLMs)](concepts/large-language-models.md) · [Hallucination](concepts/hallucination.md) · [Bias (AI Systems)](concepts/bias-ai-systems.md) · [Confidence vs Accuracy](concepts/confidence-vs-accuracy.md) | [All&nbsp;31&nbsp;→](glossary/categories.md#foundations) |
+| **Interaction & Design**<br>*How you work with models effectively* | [Context Engineering](concepts/context-engineering.md) · [Prompt Engineering](concepts/prompt-engineering.md) · [Anthropomorphism (AI)](concepts/anthropomorphism-ai.md) · [Cognitive Offloading & Deskilling](concepts/cognitive-offloading-deskilling.md) | [All&nbsp;9&nbsp;→](glossary/categories.md#interaction--design) |
+| **System Architecture**<br>*The control layer that makes models governable* | [Guardrails (AI Systems)](concepts/guardrails-ai-systems.md) · [Harness Paradigm](concepts/harness-paradigm.md) · [AI Agent](concepts/ai-agent.md) · [Retrieval-Augmented Generation (RAG)](concepts/rag.md) | [All&nbsp;21&nbsp;→](glossary/categories.md#system-architecture) |
+| **Knowledge & Memory**<br>*How knowledge persists, degrades, and stays fit for use* | [Data Provenance / Lineage](concepts/data-provenance-lineage.md) · [Training Data](concepts/training-data.md) · [Data Quality](concepts/data-quality.md) · [Grounding](concepts/grounding.md) | [All&nbsp;20&nbsp;→](glossary/categories.md#knowledge--memory) |
+| **Human Oversight**<br>*Humans in control by design — not by assumption* | [Human-in-the-Loop (HITL)](concepts/human-in-the-loop.md) · [Permission Model (AI)](concepts/permission-model-ai.md) · [Human Responsibility in AI Use](concepts/human-responsibility-in-ai-use.md) · [Automation Bias](concepts/automation-bias.md) | [All&nbsp;10&nbsp;→](glossary/categories.md#human-oversight) |
+| **Reliability & Quality**<br>*Measuring and maintaining what AI systems actually do* | [Evaluation (AI Systems)](concepts/evaluation.md) · [Model Version & Update](concepts/model-version-update.md) · [Failure Modes (AI Systems)](concepts/failure-modes-ai-systems.md) · [Verification](concepts/verification.md) | [All&nbsp;22&nbsp;→](glossary/categories.md#reliability--quality) |
+| **Observability & Governance**<br>*Making AI system behavior visible and accountable* | [Audit Trail (AI)](concepts/audit-trail-ai.md) · [Compliance (AI Systems)](concepts/compliance-ai-systems.md) · [Observability (AI Systems)](concepts/observability.md) · [AI Governance](concepts/ai-governance.md) | [All&nbsp;32&nbsp;→](glossary/categories.md#observability--governance) |
+| **Organizational Readiness**<br>*The human and organizational conditions for responsible AI adoption* | [AI Literacy](concepts/ai-literacy.md) · [Operational Readiness (AI)](concepts/operational-readiness-ai.md) · [AI Use Case](concepts/ai-use-case.md) · [Scalability (AI Systems)](concepts/scalability-ai-systems.md) | [All&nbsp;8&nbsp;→](glossary/categories.md#organizational-readiness) |
+
+<!-- key-terms:end -->
+
+---
+
+## Use it as project context
+
+Every entry is a self-contained Markdown file with the same structure, so the wiki works as context for AI tools as well as reading material.
+
 ```bash
 git clone https://github.com/luispsalas/applied-ai-concepts.git
 ```
-Or download as a ZIP from the repository's main page (Code → Download ZIP).
 
-- **Obsidian** — Copy the `/concepts/` and `/glossary/` directories into your Obsidian vault. Entries use standard markdown and will render as-is. Internal links resolve within the vault. Useful as a reference layer alongside your own project notes.
+| Tool | How to use it |
+|---|---|
+| **Claude Projects** | Upload `/concepts/`, or individual entries, as project knowledge. |
+| **ChatGPT custom GPTs** | Add entries as knowledge. `glossary/index.md` works as a light single-file option. |
+| **Cursor, Windsurf and other AI editors** | Add `/concepts/` to the workspace. |
+| **RAG pipelines** (LangChain, LlamaIndex…) | Use `/concepts/` as the document collection; each file is one clean chunk. |
+| **Obsidian, LogSeq** | Copy `/concepts/` and `/glossary/` into a vault or graph; links resolve as-is. |
 
-- **LogSeq** — Import the `/concepts/` directory into a LogSeq graph. Entries are flat markdown files with no proprietary syntax — they will load without modification.
-
-- **Claude Projects** — Upload individual concept files or the full `/concepts/` directory as project knowledge. The model will use the shared vocabulary and governance framing as context across your conversations.
-
-- **ChatGPT (custom GPTs)** — Add concept files as knowledge sources when configuring a custom GPT. The `glossary/index.md` file is particularly useful as a lightweight single-file attachment for non-technical audiences.
-
-- **Cursor / Windsurf / AI-assisted editors** — Add the `/concepts/` directory to your project workspace. These editors will index the files and make them available as context when generating or reviewing code that involves AI system design decisions.
-
-- **RAG pipelines (LangChain, LlamaIndex, etc.)** — The `/concepts/` directory works as a document collection out of the box. Each file is a discrete, well-structured chunk — no pre-processing required before embedding.
+The search data is also published as [`search-index.json`](search-index.json) for tooling.
 
 ---
 
-## Can I suggest a term or a correction?
+## How this wiki works
 
-Yes — and that includes disagreeing with what's already here. If a concept is missing, an entry is wrong or out of date, or you have a real source that could close a `⚠️ Source needed` flag, open a GitHub Issue with one of these labels:
+**Term status.** Every entry says what kind of term it is: an established term of art, an emerging one, a label this wiki coined, or one coined by a single vendor. That is judged separately from how strong the evidence is. → [Term register](glossary/register.md) · [The admission test](CONTRIBUTING.md#term-status--the-admission-test)
 
-- **`new-term`** — a concept that belongs here isn't covered yet
-- **`correction`** — an error, a broken link, or a citation that has gone stale
-- **`source`** — a source that supports or replaces a flagged gap
-- **`discussion`** — a question about scope, framing, or accuracy
+**Sources.** Every claim traces to a checkable source with a registered ID. Vendor material is flagged, and a gap is marked `⚠️ Source needed` rather than papered over. → [Sourcing standard](CONTRIBUTING.md)
 
-Nothing is merged automatically. Every change is reviewed by a human before it lands, and every new claim needs a source like any other.
+**Entry structure.** One-line essence · technical definition · plain-language version · AI literacy notes · governance notes · confidence level · sources.
 
-→ [CONTRIBUTING.md](CONTRIBUTING.md) explains what to include in each kind of issue.
+**Design principles.** [Persistent synthesis](concepts/persistent-synthesis.md) over retrieval: new sources are merged into existing entries, and conflicts are resolved or documented. [Context as leverage](concepts/context-engineering.md): what a model is given bounds what it can do. [Governance lives in the design](concepts/harness-paradigm.md): control belongs in the system around the model. Explicit over implicit: confidence and gaps are stated, not hidden.
 
 ---
 
-## Versioning
+## Contribute
 
-Each entry carries a version number and last-updated date. The repository follows a simple model:
-
-- `v1.x` — initial publication and refinements
-- `v2.x` — cross-reference layer and additional concepts
-- `v3.x` — audience rendering and glossary automation
-
-See [CHANGELOG.md](CHANGELOG.md) for version history.
-
----
-
-## Status
-
-**Phase 1 ✅ — foundation:** core concepts published and sourced, each with a governance-notes section; standalone [governance & observability notes](notes/governance-and-observability.md) doc live.
-**Phase 2 (current) — breadth & cross-linking:** 153 concepts across 8 categories, a [glossary index](glossary/index.md), client-side [search](search.html), and a cross-reference layer connecting related entries.
-**Phase 3 (planned):** audience-specific rendering, glossary automation, and a manifesto distilled from the wiki's principles.
+Missing a concept, spotted an error, or have a source that closes a `⚠️ Source needed` gap? Open an issue labeled `new-term`, `correction`, `source` or `discussion`. Disagreement is welcome. Every change is reviewed by a person, and every new claim needs a source. → [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ---
 
 ## Authorship
 
-This wiki is made by a human working with AI models, and it says so in the same structured way it asks of any other AI-assisted work. The declaration below breaks the contribution down across five stages — conception, structure, production, curation, verification — rather than reducing it to a single "AI-generated" label.
+Made by a human working with AI models, and declared stage by stage (conception, structure, production, curation, verification) rather than with a single "AI-generated" label.
 
 <a href="https://luispsalas.github.io/authorship-meter/declarations/applied-ai-concepts.html">
   <img src="assets/authorship-meter.png" width="460" alt="Authorship Meter for applied-ai-concepts: Co-created — 45% human, 55% AI, LLM-assisted, assessed September 2 2026. Click for the interactive version with the per-stage breakdown.">
 </a>
 
-→ **[View the interactive declaration](https://luispsalas.github.io/authorship-meter/declarations/applied-ai-concepts.html)** — assessed with the [Authorship Meter](https://github.com/luispsalas/authorship-meter) format.
+→ **[View the interactive declaration](https://luispsalas.github.io/authorship-meter/declarations/applied-ai-concepts.html)**, assessed with the [Authorship Meter](https://github.com/luispsalas/authorship-meter) format and re-assessed at each minor release.
 
-It covers the wiki as a whole at the release version named in the declaration, not any single entry — individual entries carry their own version line — and is re-assessed at each minor release.
+---
+
+**Status:** Phase 2 — 153 concepts across 8 categories, cross-linked, with a glossary and search. Each entry carries its own version; history is in the [CHANGELOG](CHANGELOG.md). Planned next: audience-specific rendering and a manifesto.
