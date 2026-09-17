@@ -16,7 +16,7 @@ A taxonomy of AI by capability and autonomy — from narrow task tools to genera
 
 ## Technical definition
 
-Classification of AI systems along the axes that determine governance treatment: capability breadth (narrow task-specific systems vs general-purpose models), autonomy (predictive/classification systems → generative models → tool-using agents → multi-agent systems), and risk (the EU AI Act's tiers: prohibited, high-risk, limited-risk, minimal-risk, plus general-purpose AI obligations).
+Classification of AI systems along the axes that determine governance treatment: capability breadth (narrow task-specific systems vs general-purpose models), autonomy (predictive/classification systems → generative models → tool-using agents → multi-agent systems), and risk (the EU AI Act's tiers: prohibited, high-risk, limited-risk, minimal-risk, plus general-purpose AI obligations). Google's *Introduction to Agents* draws the autonomy axis as five levels, from a language model reasoning alone (Level 0), through tool-connected, strategic and multi-agent systems, to self-evolving ones (Level 4). OpenAI's guide makes the matching point from the other end: agents suit workflows *"where traditional deterministic and rule-based approaches fall short"*, and otherwise *"a deterministic solution may suffice."*
 
 Within this taxonomy, **general-purpose AI (GPAI)** is a distinct regulatory category: the EU AI Act's term for a model trained on broad data at scale, displaying significant generality, and capable of performing a wide range of distinct tasks (Art. 3(63)), with obligations — technical documentation, training-data summaries, and systemic-risk assessment for the most capable models — that scale with the model's capability rather than attaching to a specific use case, the way the Act's other risk tiers do.
 
@@ -82,6 +82,8 @@ Not all AI is the same kind of thing. A spam filter, a chatbot, and an agent tha
 | SRC-134 | OECD — *Framework for the Classification of AI Systems* (2022) · [link](https://www.oecd.org/en/publications/oecd-framework-for-the-classification-of-ai-systems_cb6d9eca-en.html) | Five-dimension operational classification tool. |
 | SRC-129 | European Parliament — *EU Artificial Intelligence Act* (2024) · [link](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689) | Risk-tier taxonomy (prohibited / high / limited / minimal) plus general-purpose AI category. |
 | SRC-104 | Anthropic — *Building Effective AI Agents* (2024) · [link](https://www.anthropic.com/engineering/building-effective-agents) | Workflow vs agent distinction; the autonomy spectrum in engineering practice. |
+| SRC-372 | OpenAI — *A practical guide to building agents* (2025) · [link](https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf) | When an agent is warranted at all: agents suit workflows where deterministic and rule-based approaches fall short; otherwise a deterministic solution may suffice. ⚠️ Vendor-authored. |
+| SRC-374 | Blount, A.; Gulli, A.; Saboo, S.; Zimmermann, M.; Vuskovic, V. (Google) — *Introduction to Agents* (Kaggle whitepaper, updated May 2026) · [link](https://www.kaggle.com/whitepaper-introduction-to-agents) | A five-level taxonomy of agentic systems: core reasoning system, connected problem-solver, strategic problem-solver, collaborative multi-agent system, self-evolving system. ⚠️ Vendor-authored. |
 
 ---
 
@@ -96,4 +98,4 @@ Not all AI is the same kind of thing. A spam filter, a chatbot, and an agent tha
 
 ---
 
-*Last updated: v1.1 · July 2026*
+*Last updated: v1.2 · September 2026*

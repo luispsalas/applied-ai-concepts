@@ -67,7 +67,7 @@ def sweep_cells(rows, label):
 # direction is safe -- a note this misses falls into `no-record`, which is the
 # bucket a human reads, never the bucket that says everything is fine.
 _CHECKED_NEGATIVE = re.compile(
-    r"none archived|no (?:wayback )?snapshot|not archived|unarchived|"
+    r"none archived|no (?:wayback )?snapshot|not (?:usably )?archived|unarchived|"
     r"checked \w+ (?:url )?forms", re.I)
 # Markers that mean the lookup could not be completed -- rate limit, error,
 # never run to conclusion. THIS IS NOT THE SAME AS 'no snapshot' and the whole

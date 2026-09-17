@@ -24,7 +24,7 @@ Looking for one term? Use the [alphabetical glossary](index.md) or [search](../s
 | [Black Box](../concepts/black-box.md) | An AI system whose internal reasoning process cannot be observed or interpreted — even when its outputs can | ✅ v1.1 |
 | [Bias (AI Systems)](../concepts/bias-ai-systems.md) | Systematic errors that unfairly advantage or disadvantage certain groups — often inherited from training data, rarely visible in any single output | ✅ v1.0 |
 | [Explainability (XAI)](../concepts/explainability-xai.md) | Describing, in terms a human can understand, why an AI system produced a specific output — a prerequisite for accountability | ✅ v1.0 |
-| [Types of AI Systems](../concepts/types-of-ai-systems.md) | A taxonomy of AI by capability and autonomy — from narrow task tools to general-purpose models — that determines governance, risk, and oversight | ✅ v1.1 |
+| [Types of AI Systems](../concepts/types-of-ai-systems.md) | A taxonomy of AI by capability and autonomy — from narrow task tools to general-purpose models — that determines governance, risk, and oversight | ✅ v1.2 |
 | [Fine-tuning](../concepts/fine-tuning.md) | Adapting a model on your own data — cheap enough to be routine, and it can silently strip the safety behavior you were relying on | ✅ v1.0 |
 | [RLHF (Reinforcement Learning from Human Feedback)](../concepts/rlhf.md) | Humans rank outputs, the model learns the ranking — the step that turns a raw model into an assistant, and imports whoever did the ranking | ✅ v1.0 |
 | [Pre-training](../concepts/pre-training.md) | The first and largest training stage, where a model learns language and world knowledge from a huge corpus — the stage that fixes what it knows and that nobody can undo afterwards | ✅ v1.0 |
@@ -56,7 +56,7 @@ Looking for one term? Use the [alphabetical glossary](index.md) or [search](../s
 | [Cognitive Offloading & Deskilling](../concepts/cognitive-offloading-deskilling.md) | Delegating thinking to a system erodes the skill needed to judge its output — the long-run cost of convenience | ✅ v1.0 |
 | [Performativity (LLMs)](../concepts/performativity-llms.md) | Language models do not just describe language, they change it — measurably shifting the words people use, with the influence running back from the machine into human culture | ✅ v1.0 |
 | [Metaprompting](../concepts/metaprompting.md) | Prompting about prompting — three different practices share the name, and the governance question is the same for all of them | ✅ v1.0 |
-| [Prompt Chaining](../concepts/prompt-chaining.md) | Breaking one task into a sequence of prompts — which buys you inspectable intermediate steps, and costs you a path for errors to travel down | ✅ v1.0 |
+| [Prompt Chaining](../concepts/prompt-chaining.md) | Breaking one task into a sequence of prompts — which buys you inspectable intermediate steps, and costs you a path for errors to travel down | ✅ v1.1 |
 
 ### System Architecture
 *The control layer that makes models governable*
@@ -64,10 +64,10 @@ Looking for one term? Use the [alphabetical glossary](index.md) or [search](../s
 | Concept | One-line essence | Status |
 |---|---|---|
 | [Harness Paradigm](../concepts/harness-paradigm.md) | Intelligence and control are separate layers — governance lives in the harness | ✅ v1.4 |
-| [AI Agent](../concepts/ai-agent.md) | A language model that doesn't just respond — it plans, acts, and iterates across multiple steps | ✅ v1.2 |
-| [Tool Use](../concepts/tool-use.md) | How an AI model acts on the world rather than just describing it — calling external functions, APIs, and data sources | ✅ v1.0 |
-| [Multi-Agent Systems](../concepts/multi-agent-systems.md) | Multiple AI agents with different roles working together on a task — coordination and division of labor instead of one model doing everything | ✅ v1.0 |
-| [Orchestration (AI Systems)](../concepts/orchestration-ai-systems.md) | The control layer deciding what runs and in what order — where the failures hide in the seams and look like success | ✅ v1.0 |
+| [AI Agent](../concepts/ai-agent.md) | A language model that doesn't just respond — it plans, acts, and iterates across multiple steps | ✅ v1.3 |
+| [Tool Use](../concepts/tool-use.md) | How an AI model acts on the world rather than just describing it — calling external functions, APIs, and data sources | ✅ v1.1 |
+| [Multi-Agent Systems](../concepts/multi-agent-systems.md) | Multiple AI agents with different roles working together on a task — coordination and division of labor instead of one model doing everything | ✅ v1.1 |
+| [Orchestration (AI Systems)](../concepts/orchestration-ai-systems.md) | The control layer deciding what runs and in what order — where the failures hide in the seams and look like success | ✅ v1.1 |
 | [Retrieval-Augmented Generation (RAG)](../concepts/rag.md) | A technique that grounds model outputs in retrieved, verifiable information | ✅ v1.2 |
 | [Guardrails (AI Systems)](../concepts/guardrails-ai-systems.md) | Technical and policy constraints that prevent an AI system from producing outputs or taking actions outside defined boundaries | ✅ v1.0 |
 | [System Prompt](../concepts/system-prompt.md) | The behind-the-scenes instructions that set how an AI behaves before you interact with it — a soft control, not a hard boundary | ✅ v1.0 |
@@ -80,7 +80,7 @@ Looking for one term? Use the [alphabetical glossary](index.md) or [search](../s
 | [Agent Hooks](../concepts/agent-hooks.md) | The points where custom code runs during an agent's execution — and the question that decides whether a guardrail is a control or just a camera | ✅ v1.0 |
 | [Agent Skills](../concepts/agent-skills.md) | Folders of instructions an agent loads when it decides they are relevant — a cross-vendor standard whose discovery mechanism is also its attack surface | ✅ v1.0 |
 | [AI Gateway](../concepts/ai-gateway.md) | One control point in front of every model provider — the only place organizational AI policy can actually be enforced, and the place every prompt now collects | ✅ v1.0 |
-| [Agentic Design Patterns](../concepts/agentic-design-patterns.md) | The named arrangements for splitting what a system decides at runtime from what is fixed in code — and each one puts the power to refuse somewhere different | ✅ v1.0 |
+| [Agentic Design Patterns](../concepts/agentic-design-patterns.md) | The named arrangements for splitting what a system decides at runtime from what is fixed in code — and each one puts the power to refuse somewhere different | ✅ v1.1 |
 | [Data Poisoning](../concepts/data-poisoning.md) | Corrupting what a model learns rather than what it is asked — an integrity attack on the training set that no amount of input filtering can reach | ✅ v1.0 |
 | [Federated Learning](../concepts/federated-learning.md) | Training one model across data that never moves — which relocates the privacy problem into the model updates and trades away the ability to audit the training data at all | ✅ v1.0 |
 | [Structured Output](../concepts/structured-output.md) | Making a model emit machine-parseable output that conforms to a schema — a guarantee about shape that is routinely mistaken for a guarantee about content | ✅ v1.1 |

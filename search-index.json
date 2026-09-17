@@ -281,7 +281,7 @@
         "Architecture",
         "AI Literacy"
       ],
-      "version": "v1.0",
+      "version": "v1.1",
       "updated": "September 2026",
       "related": [
         "agency-ai-systems",
@@ -300,7 +300,10 @@
         "SRC-104",
         "SRC-128",
         "SRC-152",
-        "SRC-276"
+        "SRC-276",
+        "SRC-372",
+        "SRC-373",
+        "SRC-374"
       ],
       "path": "concepts/agentic-design-patterns.md"
     },
@@ -321,8 +324,8 @@
         "Agents",
         "Architecture"
       ],
-      "version": "v1.2",
-      "updated": "June 2026",
+      "version": "v1.3",
+      "updated": "September 2026",
       "related": [
         "context-engineering",
         "harness-paradigm",
@@ -338,7 +341,9 @@
         "SRC-045",
         "SRC-055",
         "SRC-104",
-        "SRC-118"
+        "SRC-118",
+        "SRC-372",
+        "SRC-374"
       ],
       "path": "concepts/ai-agent.md"
     },
@@ -3985,8 +3990,8 @@
         "Agents",
         "Architecture"
       ],
-      "version": "v1.0",
-      "updated": "August 2026",
+      "version": "v1.1",
+      "updated": "September 2026",
       "related": [
         "ai-agent",
         "audit-trail-ai",
@@ -4003,7 +4008,10 @@
         "SRC-104",
         "SRC-128",
         "SRC-152",
-        "SRC-153"
+        "SRC-153",
+        "SRC-372",
+        "SRC-373",
+        "SRC-374"
       ],
       "path": "concepts/multi-agent-systems.md"
     },
@@ -4286,8 +4294,8 @@
         "Agents",
         "Architecture"
       ],
-      "version": "v1.0",
-      "updated": "August 2026",
+      "version": "v1.1",
+      "updated": "September 2026",
       "related": [
         "agency-ai-systems",
         "ai-agent",
@@ -4309,7 +4317,9 @@
         "SRC-103",
         "SRC-104",
         "SRC-128",
-        "SRC-152"
+        "SRC-152",
+        "SRC-372",
+        "SRC-373"
       ],
       "path": "concepts/orchestration-ai-systems.md"
     },
@@ -4745,7 +4755,7 @@
         "Architecture",
         "AI Literacy"
       ],
-      "version": "v1.0",
+      "version": "v1.1",
       "updated": "September 2026",
       "related": [
         "agentic-design-patterns",
@@ -4764,7 +4774,9 @@
         "SRC-047",
         "SRC-104",
         "SRC-238",
-        "SRC-290"
+        "SRC-290",
+        "SRC-373",
+        "SRC-374"
       ],
       "path": "concepts/prompt-chaining.md"
     },
@@ -6025,8 +6037,8 @@
         "Architecture",
         "Security"
       ],
-      "version": "v1.0",
-      "updated": "August 2026",
+      "version": "v1.1",
+      "updated": "September 2026",
       "related": [
         "agent-interoperability-a2a",
         "ai-agent",
@@ -6044,7 +6056,10 @@
         "SRC-022",
         "SRC-103",
         "SRC-104",
-        "SRC-154"
+        "SRC-154",
+        "SRC-375",
+        "SRC-376",
+        "SRC-377"
       ],
       "path": "concepts/tool-use.md"
     },
@@ -6153,8 +6168,8 @@
         "Architecture",
         "Regulatory"
       ],
-      "version": "v1.1",
-      "updated": "July 2026",
+      "version": "v1.2",
+      "updated": "September 2026",
       "related": [
         "ai-agent",
         "ai-governance",
@@ -6166,7 +6181,9 @@
         "SRC-112",
         "SRC-129",
         "SRC-133",
-        "SRC-134"
+        "SRC-134",
+        "SRC-372",
+        "SRC-374"
       ],
       "path": "concepts/types-of-ai-systems.md"
     },

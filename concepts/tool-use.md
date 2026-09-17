@@ -18,7 +18,7 @@ How an AI model acts on the world rather than just describing it — calling ext
 
 The mechanism by which a language model invokes external capabilities it does not itself possess. The model is given a set of **tool definitions** — each a name, a description, and a typed parameter schema — and, rather than emitting prose, emits a structured request naming a tool and its arguments. That request is executed outside the model; the result is returned into the context, and generation continues with the result available. This request-emission step is what is meant by **function calling**: the model selects the function and binds its parameters, but does not execute anything.
 
-Execution is always external, and where it happens matters for governance: a tool may run **client-side** (the application receives the request, executes it, and returns the result) or **server-side** (the provider executes it on the model's behalf). The distinction determines who holds the credentials and where the audit boundary falls.
+Execution is always external, and where it happens matters for governance: a tool may run **client-side** (the application receives the request, executes it, and returns the result) or **server-side** (the provider executes it on the model's behalf). The distinction determines who holds the credentials and where the audit boundary falls. **Vendors document the same boundary in the same terms.** Meta's API documentation states that *"The model does not execute developer-defined tools itself"*, while its built-in web search runs server-side. Mistral's says *"it is the developer's responsibility to execute these functions"*, with separate server-side tools for its Agents API. xAI's puts the client-side loop in one line: *"The model requests the call, you execute it locally, and return the result."*
 
 Tool use is the action half of the reason–act loop introduced by ReAct, in which a model interleaves reasoning traces with actions and observations rather than reasoning in one pass — the pattern underneath most agent architectures.
 
@@ -97,6 +97,9 @@ On its own, a model can only produce text. Tools are how it does things — look
 | SRC-021 | Yao, S. et al. — *ReAct: Synergizing Reasoning and Acting in Language Models* (2022) · [link](https://arxiv.org/abs/2210.03629) | The reason–act–observe loop: interleaving reasoning traces with actions, and the evidence that it improves multi-step reliability. |
 | SRC-103 | Model Context Protocol project (Anthropic) — *What is the Model Context Protocol (MCP)?* (2024) · [link](https://modelcontextprotocol.io/docs/getting-started/intro) | MCP as an open standard for tool interfaces; build-once / integrate-everywhere framing. ⚠️ Vendor-originated standard. |
 | SRC-104 | Anthropic — *Building Effective AI Agents* (2024) · [link](https://www.anthropic.com/engineering/building-effective-agents) | Tool use within agent workflow patterns; guardrails and sandboxed testing. ⚠️ Vendor-authored. |
+| SRC-375 | Mistral AI — *Function Calling* (documentation, 2026) · [link](https://docs.mistral.ai/studio/conversations/function-calling) | Client-side execution: the model returns the function name and arguments, and executing the function is the developer's responsibility; server-side tools are offered separately for the Agents API. ⚠️ Vendor-authored. |
+| SRC-376 | xAI — *Function Calling* (documentation, 2026) · [link](https://docs.x.ai/docs/guides/function-calling) | Client-side execution in one line: the model requests the call, you execute it locally and return the result; built-in tools run on the provider's servers. ⚠️ Vendor-authored. |
+| SRC-377 | Meta — *Tool calling* (Meta Model API documentation, 2026) · [link](https://dev.meta.ai/docs/features/tool-calling/) | The execution boundary stated explicitly: the model does not execute developer-defined tools itself, while built-in web search runs server-side and returns results to the model. ⚠️ Vendor-authored. |
 | SRC-154 | Olumide, Shittu — *The Complete Guide to Tool Selection in AI Agents* (Machine Learning Mastery, 2026) · [link](https://machinelearningmastery.com/the-complete-guide-to-tool-selection-in-ai-agents/) | Tool-selection degradation at catalog scale; gating, retrieval, routing, planning, fallback, and benchmarking as mitigations. |
 
 ---
@@ -112,4 +115,4 @@ On its own, a model can only produce text. Tools are how it does things — look
 
 ---
 
-*Last updated: v1.0 · August 2026*
+*Last updated: v1.1 · September 2026*

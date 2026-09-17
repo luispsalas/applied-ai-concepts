@@ -1,5 +1,29 @@
 # Changelog
 
+## v1.42 — September 2026
+
+**Seven entries rebalanced across vendors. No new entries; count stays at 153.**
+
+- `agentic-design-patterns` — v1.0 → **v1.1**
+- `multi-agent-systems` — v1.0 → **v1.1**
+- `orchestration-ai-systems` — v1.0 → **v1.1**
+- `prompt-chaining` — v1.0 → **v1.1**
+- `tool-use` — v1.0 → **v1.1**
+- `ai-agent` — v1.2 → **v1.3**
+- `types-of-ai-systems` — v1.1 → **v1.2**
+
+**A review of vendor balance found one vendor as the only source of practical agent guidance in these seven entries.** Across the whole wiki, sources from AI vendors are about a fifth of the total and no single vendor dominates. Practical guidance on building agents was different: one vendor's engineering guidance was the only vendor voice on agent design, orchestration, tool use and prompt chaining, and a single post was cited in eleven entries. This release adds equivalent guidance from Google, Microsoft, OpenAI, Mistral, xAI and Meta, each quoted from its own documentation.
+
+**The main finding is convergence.** Vendors describe the same agent shapes under different names. What one calls orchestrator–workers, another calls a manager pattern and a third a coordinator. Prompt chaining appears as sequential orchestration and as a sequential pattern. *Agentic Design Patterns* now says so directly, because the names differ far more than the shapes, and reasoning from a single catalog's names treats one vocabulary as the field.
+
+**The conservative advice is not one vendor's position either.** OpenAI recommends getting everything possible out of a single agent before adding more, and Microsoft recommends the lowest level of complexity that reliably meets the requirements. *Orchestration* and *Multi-Agent Systems* now show that agreement across vendors.
+
+***Tool Use* now has the execution boundary in four vendors' own words.** Meta, Mistral and xAI each state that the model requests a tool call and the application executes it, and that tools the provider runs on its own servers are the exception. That line decides who holds the credentials and where the audit trail ends.
+
+Every added source is vendor-authored and flagged as such. The guidance is cited as agreement in practice, not as independent authority.
+
+---
+
 ## v1.41 — September 2026
 
 **Two entries enriched. No new entries; count stays at 153.**
