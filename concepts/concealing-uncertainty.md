@@ -5,6 +5,8 @@ aliases: [hidden uncertainty, no hedging, it didn't say it was unsure, suppresse
 tags: [Model Behavior, Evaluation]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Reliability & Quality](../glossary/categories.md#reliability--quality) › Concealing Uncertainty
+
 # Concealing Uncertainty
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

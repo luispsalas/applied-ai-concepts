@@ -5,6 +5,8 @@ aliases: [opaque model, uninterpretable AI, can't see inside the model, opacity]
 tags: [Ethics, Evaluation]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Foundations](../glossary/categories.md#foundations) › Black Box
+
 # Black Box
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

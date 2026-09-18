@@ -5,6 +5,8 @@ aliases: [AI supervising AI, oversight at scale, who checks the checker, automat
 tags: [Safety, Evaluation, AI Literacy]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Human Oversight](../glossary/categories.md#human-oversight) › Scalable Oversight
+
 # Scalable Oversight
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

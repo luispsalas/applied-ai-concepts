@@ -5,6 +5,8 @@ aliases: [use case definition, AI application, scoping an AI project, where shou
 tags: [Data Governance, Architecture]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Organizational Readiness](../glossary/categories.md#organizational-readiness) › AI Use Case
+
 # AI Use Case
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

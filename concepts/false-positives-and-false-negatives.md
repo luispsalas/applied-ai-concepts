@@ -5,6 +5,8 @@ aliases: [false positive, false negative, false positives, false negatives, type
 tags: [Evaluation, Ethics, AI Literacy]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Reliability & Quality](../glossary/categories.md#reliability--quality) › False Positives and False Negatives
+
 # False Positives and False Negatives
 
 > **Term status — Established.** Recognized terms of art, in independent use across statistics, medicine, security and machine learning long before AI.

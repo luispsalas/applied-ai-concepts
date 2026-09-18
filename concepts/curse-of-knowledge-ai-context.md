@@ -5,6 +5,8 @@ aliases: [assumed context, unstated context, underspecified prompt, why doesn't 
 tags: [AI Literacy, Prompting]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Interaction & Design](../glossary/categories.md#interaction--design) › Curse of Knowledge (AI Context)
+
 # Curse of Knowledge (AI Context)
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

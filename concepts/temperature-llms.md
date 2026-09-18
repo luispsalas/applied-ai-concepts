@@ -5,6 +5,8 @@ aliases: [temperature setting, temp, sampling temperature, creativity slider, to
 tags: [Model Behavior, AI Literacy]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Foundations](../glossary/categories.md#foundations) › Temperature (LLMs)
+
 # Temperature (LLMs)
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

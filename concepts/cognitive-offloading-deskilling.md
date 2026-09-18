@@ -5,6 +5,8 @@ aliases: [deskilling, skill atrophy, losing the ability to do it myself, depende
 tags: [AI Literacy, Model Behavior, Evaluation]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Interaction & Design](../glossary/categories.md#interaction--design) › Cognitive Offloading & Deskilling
+
 # Cognitive Offloading & Deskilling
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

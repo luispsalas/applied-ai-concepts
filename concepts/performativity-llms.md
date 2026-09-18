@@ -5,6 +5,8 @@ aliases: [performative, delve, LLM influence on language, linguistic homogenizat
 tags: [Model Behavior, Ethics]
 established: emerging
 -->
+[Applied AI Concepts](../README.md) › [Interaction & Design](../glossary/categories.md#interaction--design) › Performativity (LLMs)
+
 # Performativity (LLMs)
 
 > **Term status — Emerging.** In active use and genuinely useful, but not yet settled — definitions still vary between sources. Read the Confidence level before relying on the term in a formal document.

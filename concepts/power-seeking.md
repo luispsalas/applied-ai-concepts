@@ -5,6 +5,8 @@ aliases: [instrumental convergence, resource acquisition, scope creep by AI, sel
 tags: [Safety, Agents]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Reliability & Quality](../glossary/categories.md#reliability--quality) › Power Seeking
+
 # Power Seeking
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

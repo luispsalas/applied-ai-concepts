@@ -5,6 +5,8 @@ aliases: [talking to AI, how to work with AI, AI communication, getting better a
 tags: [AI Literacy, Prompting]
 established: emerging
 -->
+[Applied AI Concepts](../README.md) › [Interaction & Design](../glossary/categories.md#interaction--design) › Human–LLM Communication Skills
+
 # Human–LLM Communication Skills
 
 > **Term status — Emerging.** In active use and genuinely useful, but not yet settled — definitions still vary between sources. Read the Confidence level before relying on the term in a formal document.

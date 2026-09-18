@@ -5,6 +5,8 @@ aliases: [AI taxonomy, kinds of AI, narrow vs general AI, AI classification, wha
 tags: [Architecture, Regulatory]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Foundations](../glossary/categories.md#foundations) › Types of AI Systems
+
 # Types of AI Systems
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

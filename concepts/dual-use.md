@@ -5,6 +5,8 @@ aliases: [dual use research, dual-use research of concern, DURC, misuse potentia
 tags: [Safety, Regulatory, Ethics]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Observability & Governance](../glossary/categories.md#observability--governance) › Dual Use
+
 # Dual Use
 
 > **Term status — Established.** A term of art in export control, biosecurity and research-ethics policy for decades, adopted into AI governance without modification and used identically across regulators, academic literature and industry. Independent of any vendor.

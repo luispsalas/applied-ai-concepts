@@ -5,6 +5,8 @@ aliases: [redress, automated decision, solely automated processing, profiling, r
 tags: [Regulatory, Ethics, Data Governance]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Human Oversight](../glossary/categories.md#human-oversight) › Automated Decision-Making
+
 # Automated Decision-Making
 
 > **Term status — Established.** A defined legal concept under GDPR Article 22 and addressed directly by EU AI Act Article 86, in independent use across regulators, courts and practice.

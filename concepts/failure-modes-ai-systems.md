@@ -5,6 +5,8 @@ aliases: [what can go wrong, AI failures, error modes, risk taxonomy, ways AI br
 tags: [Evaluation, Safety]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Reliability & Quality](../glossary/categories.md#reliability--quality) › Failure Modes (AI Systems)
+
 # Failure Modes (AI Systems)
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

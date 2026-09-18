@@ -5,6 +5,8 @@ aliases: [looped transformer, depth-recurrent, latent reasoning, weight-tied lay
 tags: [Model Behavior, Safety, Architecture]
 established: emerging
 -->
+[Applied AI Concepts](../README.md) › [Foundations](../glossary/categories.md#foundations) › Recurrent Depth
+
 # Recurrent Depth
 
 > **Term status — Emerging.** Real and in use, but definitions still vary between sources — see the confidence level for what is unsettled.

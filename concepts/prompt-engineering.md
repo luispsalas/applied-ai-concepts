@@ -5,6 +5,8 @@ aliases: [prompting, prompt design, how to write prompts, prompt patterns, promp
 tags: [Prompting]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Interaction & Design](../glossary/categories.md#interaction--design) › Prompt Engineering
+
 # Prompt Engineering
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

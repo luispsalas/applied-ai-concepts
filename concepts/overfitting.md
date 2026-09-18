@@ -5,6 +5,8 @@ aliases: [underfitting, generalization, generalization gap, bias-variance trade-
 tags: [Evaluation, Model Behavior, AI Literacy]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Reliability & Quality](../glossary/categories.md#reliability--quality) › Overfitting
+
 # Overfitting
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

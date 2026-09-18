@@ -5,6 +5,8 @@ aliases: [agentic AI, autonomous agent, AI that takes actions, agent, multi-step
 tags: [Agents, Architecture]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [System Architecture](../glossary/categories.md#system-architecture) › AI Agent
+
 # AI Agent
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

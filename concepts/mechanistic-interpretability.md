@@ -5,6 +5,8 @@ aliases: [mech interp, circuits, features and circuits, superposition, sparse au
 tags: [Model Behavior, Safety, Evaluation]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Foundations](../glossary/categories.md#foundations) › Mechanistic Interpretability
+
 # Mechanistic Interpretability
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

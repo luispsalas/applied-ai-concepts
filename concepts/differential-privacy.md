@@ -5,6 +5,8 @@ aliases: [differentially private, DP, epsilon differential privacy, privacy budg
 tags: [Privacy, Data Governance, Regulatory]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Observability & Governance](../glossary/categories.md#observability--governance) › Differential Privacy
+
 # Differential Privacy
 
 > **Term status — Established.** Defined in a 2006 cryptography paper, developed in a large peer-reviewed literature, deployed in national statistical systems, and — the decisive evidence for this entry — the subject of a dedicated NIST Special Publication on how to evaluate a claim of it. Cleared on the **governance route**: a national standards body treats it as a term with a checkable meaning.

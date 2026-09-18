@@ -5,6 +5,8 @@ aliases: [interrater reliability, inter-annotator agreement, inter-annotator rel
 tags: [Evaluation, Data Governance, AI Literacy]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Reliability & Quality](../glossary/categories.md#reliability--quality) › Inter-Rater Reliability
+
 # Inter-Rater Reliability
 
 > **Term status — Established.** A standard measurement concept across statistics, medicine, social science and machine learning since 1960, with a mature literature including its own critiques. Independent of any vendor or field.

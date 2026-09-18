@@ -5,6 +5,8 @@ aliases: [C2PA, Content Credentials, watermarking, was this made by AI, AI detec
 tags: [Regulatory, Security, Ethics]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Observability & Governance](../glossary/categories.md#observability--governance) › Content Provenance & Watermarking (C2PA)
+
 # Content Provenance & Watermarking (C2PA)
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

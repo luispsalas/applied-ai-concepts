@@ -5,6 +5,8 @@ aliases: [chaining, LLM chaining, AI chains, multi-step prompting, task decompos
 tags: [Prompting, Architecture, AI Literacy]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Interaction & Design](../glossary/categories.md#interaction--design) › Prompt Chaining
+
 # Prompt Chaining
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator — named in peer-reviewed HCI research and in multiple vendors' architecture guidance.

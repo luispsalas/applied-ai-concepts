@@ -5,6 +5,8 @@ aliases: [responsibility gap, who is to blame, the AI did it, moral responsibili
 tags: [Ethics, AI Literacy]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Human Oversight](../glossary/categories.md#human-oversight) › Human Responsibility in AI Use
+
 # Human Responsibility in AI Use
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

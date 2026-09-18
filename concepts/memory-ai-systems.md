@@ -5,6 +5,8 @@ aliases: [does it remember me, conversation history, persistence, session memory
 tags: [Architecture, Privacy]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Knowledge & Memory](../glossary/categories.md#knowledge--memory) › Memory (AI Systems)
+
 # Memory (AI Systems)
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

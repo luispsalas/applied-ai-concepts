@@ -5,6 +5,8 @@ aliases: [context design, what to put in the prompt, context management, assembl
 tags: [Prompting, Architecture]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Interaction & Design](../glossary/categories.md#interaction--design) › Context Engineering
+
 # Context Engineering
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

@@ -5,6 +5,8 @@ aliases: [system message, instructions before the chat, preamble, system instruc
 tags: [Prompting, Architecture, Security]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [System Architecture](../glossary/categories.md#system-architecture) › System Prompt
+
 # System Prompt
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

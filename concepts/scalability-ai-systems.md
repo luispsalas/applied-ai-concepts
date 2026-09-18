@@ -5,6 +5,8 @@ aliases: [scaling AI, volume growth, does this work at scale, cost at scale, cap
 tags: [Architecture, Evaluation]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Organizational Readiness](../glossary/categories.md#organizational-readiness) › Scalability (AI Systems)
+
 # Scalability (AI Systems)
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

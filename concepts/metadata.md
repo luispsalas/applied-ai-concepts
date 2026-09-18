@@ -5,6 +5,8 @@ aliases: [data about data, descriptive metadata, structural metadata, metadata s
 tags: [Data Governance, Security, AI Literacy]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Knowledge & Memory](../glossary/categories.md#knowledge--memory) › Metadata
+
 # Metadata
 
 > **Term status — Established.** Defined by NIST across several publications and in universal use throughout computing, archives and data management, independent of any vendor.

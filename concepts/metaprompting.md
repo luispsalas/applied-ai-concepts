@@ -5,6 +5,8 @@ aliases: [meta prompting, prompt generation, prompt optimization, using AI to wr
 tags: [AI Literacy, Prompting]
 established: emerging
 -->
+[Applied AI Concepts](../README.md) › [Interaction & Design](../glossary/categories.md#interaction--design) › Metaprompting
+
 # Metaprompting
 
 > **Term status — Emerging.** In active use, but the term is not yet stable: it is used for at least three distinct practices, and this entry names them rather than picking one.

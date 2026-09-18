@@ -5,6 +5,8 @@ aliases: [autonomy, how much can it do on its own, scope of action, levels of au
 tags: [Agents, Regulatory, Security]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Human Oversight](../glossary/categories.md#human-oversight) › Agency (AI Systems)
+
 # Agency (AI Systems)
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

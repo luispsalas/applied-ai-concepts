@@ -5,6 +5,8 @@ aliases: [deepfake, AI-generated video, voice cloning, fake audio, manipulated m
 tags: [Security, Ethics, Regulatory]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Reliability & Quality](../glossary/categories.md#reliability--quality) › Synthetic Media (Deepfakes)
+
 # Synthetic Media (Deepfakes)
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

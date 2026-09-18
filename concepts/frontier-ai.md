@@ -5,6 +5,8 @@ aliases: [frontier model, state of the art model, most capable models, cutting-e
 tags: [Regulatory, Safety]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Observability & Governance](../glossary/categories.md#observability--governance) › Frontier AI (Frontier Model)
+
 # Frontier AI (Frontier Model)
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

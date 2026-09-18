@@ -5,6 +5,8 @@ aliases: [adversarial testing, attacking your own system, penetration testing AI
 tags: [Security, Evaluation, Safety]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Reliability & Quality](../glossary/categories.md#reliability--quality) › Red Teaming
+
 # Red Teaming
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

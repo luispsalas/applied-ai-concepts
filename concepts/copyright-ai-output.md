@@ -5,6 +5,8 @@ aliases: [who owns AI output, AI copyright, intellectual property, can I copyrig
 tags: [Regulatory, Ethics, AI Literacy]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Knowledge & Memory](../glossary/categories.md#knowledge--memory) › Copyright & AI Output
+
 # Copyright & AI Output
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

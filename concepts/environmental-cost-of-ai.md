@@ -5,6 +5,8 @@ aliases: [AI energy use, carbon footprint of AI, AI water usage, data center ene
 tags: [Data Governance, Regulatory, Ethics]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Observability & Governance](../glossary/categories.md#observability--governance) › Environmental Cost of AI
+
 # Environmental Cost of AI
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

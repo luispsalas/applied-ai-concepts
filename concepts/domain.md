@@ -5,6 +5,8 @@ aliases: [subject area, field, vertical, domain expertise, what counts as a good
 tags: [Data Governance]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Knowledge & Memory](../glossary/categories.md#knowledge--memory) › Domain
+
 # Domain
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

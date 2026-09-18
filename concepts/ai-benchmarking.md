@@ -5,6 +5,8 @@ aliases: [benchmarking, benchmarks, leaderboard, model comparison, standardized 
 tags: [Evaluation, AI Literacy]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Reliability & Quality](../glossary/categories.md#reliability--quality) › AI Benchmarking
+
 # AI Benchmarking
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

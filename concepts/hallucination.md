@@ -5,6 +5,8 @@ aliases: [confabulation, making things up, fabricated facts, invented citations,
 tags: [Model Behavior, Evaluation]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Foundations](../glossary/categories.md#foundations) › Hallucination
+
 # Hallucination
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

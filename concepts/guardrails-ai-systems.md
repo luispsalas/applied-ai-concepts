@@ -5,6 +5,8 @@ aliases: [safety filters, content filtering, constraints, boundaries, policy enf
 tags: [Security, Architecture, Safety]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [System Architecture](../glossary/categories.md#system-architecture) › Guardrails (AI Systems)
+
 # Guardrails (AI Systems)
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

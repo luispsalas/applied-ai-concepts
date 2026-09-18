@@ -5,6 +5,8 @@ aliases: [MoE, sparse model, sparsely-gated, conditional computation, active par
 tags: [Architecture, Model Behavior, AI Literacy]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Foundations](../glossary/categories.md#foundations) › Mixture of Experts
+
 # Mixture of Experts
 
 > **Term status — Established.** A recognized architecture with a 1991 founding paper, in independent use across research groups and model providers.

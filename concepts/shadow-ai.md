@@ -5,6 +5,8 @@ aliases: [shadow IT, unsanctioned AI, ungoverned AI, unapproved AI tools, rogue 
 tags: [Security, Data Governance, Regulatory]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Observability & Governance](../glossary/categories.md#observability--governance) › Shadow AI
+
 # Shadow AI
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

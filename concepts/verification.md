@@ -5,6 +5,8 @@ aliases: [fact checking AI output, checking the answer, should I trust this, val
 tags: [Evaluation, AI Literacy]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Reliability & Quality](../glossary/categories.md#reliability--quality) › Verification
+
 # Verification
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

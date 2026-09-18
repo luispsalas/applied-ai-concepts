@@ -5,6 +5,8 @@ aliases: [model inference, serving, running the model, prediction, inference tim
 tags: [AI Literacy, Architecture]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Foundations](../glossary/categories.md#foundations) › Inference
+
 # Inference
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

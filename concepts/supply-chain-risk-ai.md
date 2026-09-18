@@ -5,6 +5,8 @@ aliases: [supply chain risk, AI supply chain, model provenance, third-party mode
 tags: [Security, Regulatory, Data Governance]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Observability & Governance](../glossary/categories.md#observability--governance) › Supply Chain Risk (AI)
+
 # Supply Chain Risk (AI)
 
 > **Term status — Established.** Supply-chain risk management is a defined discipline with its own NIST standard; the AI-specific form is in independent use across regulators, standards bodies and security research.

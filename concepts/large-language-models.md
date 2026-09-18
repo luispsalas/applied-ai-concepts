@@ -5,6 +5,8 @@ aliases: [LLM, foundation model, language model, GPT, chatbot model]
 tags: [Architecture]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Foundations](../glossary/categories.md#foundations) › Large Language Models (LLMs)
+
 # Large Language Models (LLMs)
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

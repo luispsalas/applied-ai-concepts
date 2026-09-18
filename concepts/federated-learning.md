@@ -5,6 +5,8 @@ aliases: [FL, federated averaging, FedAvg, decentralized training, distributed t
 tags: [Architecture, Privacy, Data Governance]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [System Architecture](../glossary/categories.md#system-architecture) › Federated Learning
+
 # Federated Learning
 
 > **Term status — Established.** Named in a 2017 paper and surveyed four years later by 58 authors across 25 institutions, which is the independence evidence: the term and its taxonomy are in use across competing organizations and in regulated sectors, not inside one vendor's documentation. Cleared on the **usage route**.

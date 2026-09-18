@@ -5,6 +5,8 @@ aliases: [responsible AI, AI oversight, AI policy, governing AI, AI risk managem
 tags: [Data Governance, Regulatory, Ethics]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Observability & Governance](../glossary/categories.md#observability--governance) › AI Governance
+
 # AI Governance
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

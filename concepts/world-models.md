@@ -5,6 +5,8 @@ aliases: [world model, learned world model, learned simulator, environment model
 tags: [Agents, Architecture, Safety, Evaluation]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Foundations](../glossary/categories.md#foundations) › World Models
+
 # World Models
 
 > **Term status — Established.** Named in a 2018 paper that fixed the modern usage, reviewed in *ACM Computing Surveys*, and used across model-based reinforcement learning, robotics, video generation and agent research, independent of any vendor.

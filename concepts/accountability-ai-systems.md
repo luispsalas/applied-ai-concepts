@@ -5,6 +5,8 @@ aliases: [answerability, who is accountable, responsibility for AI, liability, w
 tags: [Ethics, Data Governance, Regulatory]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Observability & Governance](../glossary/categories.md#observability--governance) › Accountability (AI Systems)
+
 # Accountability (AI Systems)
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

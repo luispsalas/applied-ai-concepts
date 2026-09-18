@@ -5,6 +5,8 @@ aliases: [AI skills, AI education, AI competency, understanding AI, AI training 
 tags: [AI Literacy]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Organizational Readiness](../glossary/categories.md#organizational-readiness) › AI Literacy
+
 # AI Literacy
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

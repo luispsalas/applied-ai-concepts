@@ -5,6 +5,8 @@ aliases: [LLM gateway, model gateway, LLM proxy, model router, LLM routing, prov
 tags: [Architecture, Data Governance, Privacy]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [System Architecture](../glossary/categories.md#system-architecture) › AI Gateway
+
 # AI Gateway
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

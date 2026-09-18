@@ -5,6 +5,8 @@ aliases: [conformity assessment, notified body, CE marking, internal control, de
 tags: [Regulatory, Data Governance, Evaluation]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Observability & Governance](../glossary/categories.md#observability--governance) › Conformity Assessment (AI Systems)
+
 # Conformity Assessment (AI Systems)
 
 > **Term status — Established.** A defined procedure in EU product law and in the AI Act, with a named institutional apparatus behind it.

@@ -5,6 +5,8 @@ aliases: [ontologies, OWL, semantic model, domain model, taxonomy, controlled vo
 tags: [Data Governance, Architecture, AI Literacy]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Knowledge & Memory](../glossary/categories.md#knowledge--memory) › Ontology
+
 # Ontology
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

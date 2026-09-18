@@ -5,6 +5,8 @@ aliases: [fitness for purpose, garbage in garbage out, data readiness, clean dat
 tags: [Data Governance]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Knowledge & Memory](../glossary/categories.md#knowledge--memory) › Data Quality
+
 # Data Quality
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

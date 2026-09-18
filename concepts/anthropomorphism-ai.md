@@ -5,6 +5,8 @@ aliases: [ELIZA effect, treating AI like a person, does it understand me, attrib
 tags: [AI Literacy, Model Behavior]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Interaction & Design](../glossary/categories.md#interaction--design) › Anthropomorphism (AI)
+
 # Anthropomorphism (AI)
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

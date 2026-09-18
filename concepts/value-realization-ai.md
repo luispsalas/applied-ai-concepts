@@ -5,6 +5,8 @@ aliases: [ROI on AI, why isn't AI paying off, business value, adoption gap, prod
 tags: [Data Governance, Architecture, Evaluation]
 established: emerging
 -->
+[Applied AI Concepts](../README.md) › [Organizational Readiness](../glossary/categories.md#organizational-readiness) › Value Realization (AI)
+
 # Value Realization (AI)
 
 > **Term status — Emerging.** In active use and genuinely useful, but not yet settled — definitions still vary between sources. Read the Confidence level before relying on the term in a formal document.

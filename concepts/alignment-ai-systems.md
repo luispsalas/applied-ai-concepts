@@ -5,6 +5,8 @@ aliases: [AI alignment, aligned with human values, deceptive alignment, alignmen
 tags: [Safety, Model Behavior, Ethics]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Reliability & Quality](../glossary/categories.md#reliability--quality) › Alignment (AI Systems)
+
 # Alignment (AI Systems)
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

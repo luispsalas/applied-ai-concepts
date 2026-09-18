@@ -5,6 +5,8 @@ aliases: [vision language model, image and text AI, VLM, AI that sees, cross-mod
 tags: [Architecture, Security]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Foundations](../glossary/categories.md#foundations) › Multimodal AI
+
 # Multimodal AI
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

@@ -5,6 +5,8 @@ aliases: [structured generation, JSON mode, JSON output, schema-constrained outp
 tags: [Architecture, Evaluation, Prompting]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [System Architecture](../glossary/categories.md#system-architecture) › Structured Output
+
 # Structured Output
 
 > **Term status — Established.** In independent use across every major model provider, across open-source inference libraries, and in peer-reviewed research that studies it as a named technique. Cleared on the **usage route**: the mechanism is implemented independently in competing systems and the schema language it depends on is an open specification owned by no vendor.

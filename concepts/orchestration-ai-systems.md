@@ -5,6 +5,8 @@ aliases: [workflow, pipeline, coordinating AI components, agent orchestration, c
 tags: [Agents, Architecture]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [System Architecture](../glossary/categories.md#system-architecture) › Orchestration (AI Systems)
+
 # Orchestration (AI Systems)
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

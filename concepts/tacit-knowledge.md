@@ -5,6 +5,8 @@ aliases: [know-how, unwritten knowledge, Polanyi's paradox, we can know more tha
 tags: [AI Literacy]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Organizational Readiness](../glossary/categories.md#organizational-readiness) › Tacit Knowledge
+
 # Tacit Knowledge
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

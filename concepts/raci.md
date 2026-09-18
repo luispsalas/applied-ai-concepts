@@ -5,6 +5,8 @@ aliases: [responsibility matrix, RACI matrix, responsible accountable consulted 
 tags: [Ethics, Data Governance]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Human Oversight](../glossary/categories.md#human-oversight) › RACI
+
 # RACI
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

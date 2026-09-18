@@ -5,6 +5,8 @@ aliases: [who owns this system, system owner, accountable owner, stewardship, as
 tags: [Data Governance, Ethics]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Observability & Governance](../glossary/categories.md#observability--governance) › Ownership (AI Systems)
+
 # Ownership (AI Systems)
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

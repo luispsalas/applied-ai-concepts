@@ -5,6 +5,8 @@ aliases: [algorithmic bias, AI fairness, discrimination in AI, unfair outcomes, 
 tags: [Ethics, Data Governance, Regulatory]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Foundations](../glossary/categories.md#foundations) › Bias (AI Systems)
+
 # Bias (AI Systems)
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

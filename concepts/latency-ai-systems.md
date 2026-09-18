@@ -5,6 +5,8 @@ aliases: [latency, response time, time to first token, TTFT, tokens per second, 
 tags: [AI Literacy, Architecture]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Foundations](../glossary/categories.md#foundations) › Latency (AI Systems)
+
 # Latency (AI Systems)
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

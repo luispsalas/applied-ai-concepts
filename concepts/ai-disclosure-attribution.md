@@ -5,6 +5,8 @@ aliases: [declaring AI use, AI attribution, should I say I used AI, AI-assisted 
 tags: [Ethics, Regulatory, AI Literacy]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Observability & Governance](../glossary/categories.md#observability--governance) › AI Disclosure (Attribution)
+
 # AI Disclosure (Attribution)
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

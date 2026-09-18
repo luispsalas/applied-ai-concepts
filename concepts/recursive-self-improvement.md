@@ -5,6 +5,8 @@ aliases: [self-improving AI, intelligence explosion, recursive improvement, AI i
 tags: [Safety, AI Literacy]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Reliability & Quality](../glossary/categories.md#reliability--quality) › Recursive Self-Improvement
+
 # Recursive Self-Improvement
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

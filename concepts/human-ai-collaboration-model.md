@@ -5,6 +5,8 @@ aliases: [division of labor with AI, who does what, handoff design, human AI tea
 tags: [Architecture, Ethics]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Human Oversight](../glossary/categories.md#human-oversight) › Human–AI Collaboration Model
+
 # Human–AI Collaboration Model
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

@@ -5,6 +5,8 @@ aliases: [on-premises AI, self-hosted LLM, offline model, open weights deploymen
 tags: [Architecture, Privacy, Security]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Foundations](../glossary/categories.md#foundations) › Local LLMs
+
 # Local LLMs
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

@@ -5,6 +5,8 @@ aliases: [memorization, training data extraction, it leaked our data, PII in out
 tags: [Security, Privacy]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Observability & Governance](../glossary/categories.md#observability--governance) › Data Leakage (AI Systems)
+
 # Data Leakage (AI Systems)
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

@@ -5,6 +5,8 @@ aliases: [prompt jailbreaking, bypassing safety, getting it to break its rules, 
 tags: [Security, Safety]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [System Architecture](../glossary/categories.md#system-architecture) › Jailbreak
+
 # Jailbreak
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

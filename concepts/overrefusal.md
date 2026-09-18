@@ -5,6 +5,8 @@ aliases: [over-refusal, false refusal, exaggerated safety, over-conservatism, ov
 tags: [Evaluation, Safety, Model Behavior]
 established: emerging
 -->
+[Applied AI Concepts](../README.md) › [Reliability & Quality](../glossary/categories.md#reliability--quality) › Overrefusal
+
 # Overrefusal
 
 > **Term status — Emerging.** The phenomenon is well documented and benchmarked in peer-reviewed work, but the naming has not settled — *overrefusal*, *over-refusal*, *false refusal* and *exaggerated safety* all circulate for the same behavior, and the benchmark that defined it uses a different phrase again. Filed `emerging` on the naming, not on the evidence.

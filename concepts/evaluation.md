@@ -5,6 +5,8 @@ aliases: [evals, how do we know it works, testing AI, measuring performance]
 tags: [Evaluation, Data Governance]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Reliability & Quality](../glossary/categories.md#reliability--quality) › Evaluation (AI Systems)
+
 # Evaluation (AI Systems)
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

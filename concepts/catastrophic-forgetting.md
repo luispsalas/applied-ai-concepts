@@ -5,6 +5,8 @@ aliases: [catastrophic interference, forgetting, continual learning, stability-p
 tags: [Model Behavior, Evaluation, Safety]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Reliability & Quality](../glossary/categories.md#reliability--quality) › Catastrophic Forgetting
+
 # Catastrophic Forgetting
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator, named in the peer-reviewed literature since 1989.

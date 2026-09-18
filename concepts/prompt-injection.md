@@ -5,6 +5,8 @@ aliases: [indirect prompt injection, hidden instructions, prompt hijacking, inje
 tags: [Security, Prompting]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [System Architecture](../glossary/categories.md#system-architecture) › Prompt Injection
+
 # Prompt Injection
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

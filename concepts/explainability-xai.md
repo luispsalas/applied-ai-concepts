@@ -5,6 +5,8 @@ aliases: [XAI, interpretability, why did it decide that, explainable AI]
 tags: [Ethics, Regulatory, Evaluation]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Foundations](../glossary/categories.md#foundations) › Explainability (XAI)
+
 # Explainability (XAI)
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

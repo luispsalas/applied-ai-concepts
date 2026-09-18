@@ -5,6 +5,8 @@ aliases: [RAG, retrieval augmented generation, search plus generation, document 
 tags: [Architecture, Data Governance]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [System Architecture](../glossary/categories.md#system-architecture) › Retrieval-Augmented Generation (RAG)
+
 # Retrieval-Augmented Generation (RAG)
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

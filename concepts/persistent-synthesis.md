@@ -5,6 +5,8 @@ aliases: [knowledge compounding, integrating sources, compile don't re-derive, l
 tags: [Architecture, Data Governance]
 established: emerging
 -->
+[Applied AI Concepts](../README.md) › [Knowledge & Memory](../glossary/categories.md#knowledge--memory) › Persistent Synthesis
+
 # Persistent Synthesis
 
 > **Term status — Emerging.** In active use and genuinely useful, but not yet settled — definitions still vary between sources. Read the Confidence level before relying on the term in a formal document.

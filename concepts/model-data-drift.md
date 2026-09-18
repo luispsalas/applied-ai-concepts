@@ -5,6 +5,8 @@ aliases: [concept drift, model decay, it used to work, performance degradation, 
 tags: [Model Behavior, Data Governance, Evaluation]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Reliability & Quality](../glossary/categories.md#reliability--quality) › Model/Data Drift
+
 # Model/Data Drift
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

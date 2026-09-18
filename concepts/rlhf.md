@@ -5,6 +5,8 @@ aliases: [reinforcement learning from human feedback, preference optimization, h
 tags: [Model Behavior, Ethics, Evaluation]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Foundations](../glossary/categories.md#foundations) › RLHF (Reinforcement Learning from Human Feedback)
+
 # RLHF (Reinforcement Learning from Human Feedback)
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

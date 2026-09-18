@@ -5,6 +5,8 @@ aliases: [quantized model, quantisation, post-training quantization, PTQ, quanti
 tags: [Architecture, Model Behavior, Evaluation]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Foundations](../glossary/categories.md#foundations) › Quantization
+
 # Quantization
 
 > **Term status — Established.** Standard terminology in numerical computing long before machine learning, and in continuous use across every model-serving stack, hardware vendor and open-weights community. Independent of any vendor.

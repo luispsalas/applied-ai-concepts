@@ -5,6 +5,8 @@ aliases: [context window contents, what the model sees, input context, the promp
 tags: [Architecture, Prompting, Security]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Knowledge & Memory](../glossary/categories.md#knowledge--memory) › Context (AI Systems)
+
 # Context (AI Systems)
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

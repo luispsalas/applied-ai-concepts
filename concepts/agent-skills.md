@@ -5,6 +5,8 @@ aliases: [skill, skills, SKILL.md, agent skill, progressive disclosure, packaged
 tags: [Agents, Architecture, Security]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [System Architecture](../glossary/categories.md#system-architecture) › Agent Skills
+
 # Agent Skills
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

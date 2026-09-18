@@ -5,6 +5,8 @@ aliases: [model card, system card, model documentation, what does this model do,
 tags: [Regulatory, Evaluation, Data Governance]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Observability & Governance](../glossary/categories.md#observability--governance) › Model Card / System Card
+
 # Model Card / System Card
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

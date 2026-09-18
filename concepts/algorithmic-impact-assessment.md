@@ -5,6 +5,8 @@ aliases: [AIA, impact assessment, algorithmic impact assessments, AIA tool, impa
 tags: [Regulatory, Ethics, Data Governance]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Observability & Governance](../glossary/categories.md#observability--governance) › Algorithmic Impact Assessment
+
 # Algorithmic Impact Assessment
 
 > **Term status — Established.** A mandatory instrument in at least one national government's policy framework, with an open published tool and a public register of completed assessments.

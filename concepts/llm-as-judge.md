@@ -5,6 +5,8 @@ aliases: [LLM as a judge, model graded evaluation, AI grading AI, automated eval
 tags: [Evaluation, AI Literacy]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Reliability & Quality](../glossary/categories.md#reliability--quality) › LLM-as-Judge
+
 # LLM-as-Judge
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

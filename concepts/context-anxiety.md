@@ -5,6 +5,8 @@ aliases: [context window anxiety, premature summarization, early task terminatio
 tags: [Model Behavior, Agents, Evaluation]
 established: emerging
 -->
+[Applied AI Concepts](../README.md) › [Knowledge & Memory](../glossary/categories.md#knowledge--memory) › Context Anxiety
+
 # Context Anxiety
 
 > **Term status — Emerging.** ⚠️ **And thinly evidenced.** Coined by one engineering team in 2025 and repeated since, but **every apparently independent use traces back to that single observation** — the term has commentary, not adoption. It is documented here because the underlying behavior is specific, consequential and easy to mistake for something else; it is filed `emerging` with that limitation stated rather than presented as settled vocabulary. ⚠️ **Do not confuse it with "AI anxiety,"** an established and unrelated term in psychology for *human* apprehension toward AI, which has its own peer-reviewed literature.

@@ -5,6 +5,8 @@ aliases: [overreliance, complacency, trusting the machine too much, rubber stamp
 tags: [AI Literacy, Evaluation]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Human Oversight](../glossary/categories.md#human-oversight) › Automation Bias
+
 # Automation Bias
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

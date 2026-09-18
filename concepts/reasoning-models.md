@@ -5,6 +5,8 @@ aliases: [test-time compute, thinking models, chain of thought, extended reasoni
 tags: [Architecture, Model Behavior]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Foundations](../glossary/categories.md#foundations) › Reasoning Models / Test-Time Compute
+
 # Reasoning Models / Test-Time Compute
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

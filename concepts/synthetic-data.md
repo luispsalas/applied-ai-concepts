@@ -5,6 +5,8 @@ aliases: [artificial data, generated data, model-generated data, synthetic train
 tags: [Data Governance, Evaluation, Privacy]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Knowledge & Memory](../glossary/categories.md#knowledge--memory) › Synthetic Data
+
 # Synthetic Data
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

@@ -5,6 +5,8 @@ aliases: [vector embeddings, word embeddings, sentence embeddings, vectors, vect
 tags: [Architecture, AI Literacy]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [System Architecture](../glossary/categories.md#system-architecture) › Embeddings
+
 # Embeddings
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

@@ -5,6 +5,8 @@ aliases: [document corpus, reference library, the documents it searches, KB, kno
 tags: [Architecture, Data Governance]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Knowledge & Memory](../glossary/categories.md#knowledge--memory) › Knowledge Base
+
 # Knowledge Base
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

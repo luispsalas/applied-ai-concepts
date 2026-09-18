@@ -5,6 +5,8 @@ aliases: [checkpoint, model checkpoint, training checkpoint, save point, restore
 tags: [Architecture, Security, Agents]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Reliability & Quality](../glossary/categories.md#reliability--quality) › Checkpointing
+
 # Checkpointing
 
 > **Term status — Established.** A standard term in distributed systems since the 1980s and in machine learning practice throughout, used identically across frameworks, cloud providers and research literature. Independent of any vendor.

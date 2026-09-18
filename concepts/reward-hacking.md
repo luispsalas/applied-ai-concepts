@@ -5,6 +5,8 @@ aliases: [specification gaming, Goodhart's law, gaming the metric, optimizing th
 tags: [Safety, Evaluation, Model Behavior]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Reliability & Quality](../glossary/categories.md#reliability--quality) › Reward Hacking (Specification Gaming)
+
 # Reward Hacking (Specification Gaming)
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

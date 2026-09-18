@@ -5,6 +5,8 @@ aliases: [external audit, independent audit, algorithmic audit, AI audit, extern
 tags: [Regulatory, Evaluation, Data Governance]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Observability & Governance](../glossary/categories.md#observability--governance) › Third-Party Audit
+
 # Third-Party Audit
 
 > **Term status — Established.** A standard governance mechanism across finance, safety-critical engineering and data protection, applied to AI systems in a peer-reviewed literature with its own field scan and its own critiques. Independent of any vendor.

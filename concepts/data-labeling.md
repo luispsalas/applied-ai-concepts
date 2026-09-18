@@ -5,6 +5,8 @@ aliases: [data labelling, annotation, data annotation, labeling, labelers, annot
 tags: [Data Governance, Ethics, Evaluation]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Knowledge & Memory](../glossary/categories.md#knowledge--memory) › Data Labeling
+
 # Data Labeling
 
 > **Term status — Established.** A recognized term of art across machine learning practice and research, in independent use well beyond any single originator.

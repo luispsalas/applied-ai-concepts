@@ -105,4 +105,8 @@ Made by a human working with AI models, and declared stage by stage (conception,
 
 ---
 
+**Companion project:** [Autonomous AI Casebook](https://github.com/luispsalas/autonomous-ai-casebook) reconstructs real security incidents where an AI system acted on its own, built from primary sources.
+
+---
+
 **Status:** Phase 2 — 153 concepts across 8 categories, cross-linked, with a glossary and search. Each entry carries its own version; history is in the [CHANGELOG](CHANGELOG.md). Planned next: audience-specific rendering and a manifesto.

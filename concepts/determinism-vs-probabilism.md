@@ -5,6 +5,8 @@ aliases: [nondeterminism, why do I get different answers, randomness, temperatur
 tags: [Model Behavior]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Foundations](../glossary/categories.md#foundations) › Determinism vs Probabilism
+
 # Determinism vs Probabilism
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

@@ -5,6 +5,8 @@ aliases: [transformer, self-attention, attention mechanism, encoder decoder, att
 tags: [AI Literacy, Architecture, Model Behavior]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Foundations](../glossary/categories.md#foundations) › Transformers
+
 # Transformers
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

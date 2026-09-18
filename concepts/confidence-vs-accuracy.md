@@ -5,6 +5,8 @@ aliases: [overconfidence, calibration, why does it sound so sure, confident but 
 tags: [Model Behavior, AI Literacy]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Foundations](../glossary/categories.md#foundations) › Confidence vs Accuracy
+
 # Confidence vs Accuracy
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

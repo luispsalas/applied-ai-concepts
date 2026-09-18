@@ -5,6 +5,8 @@ aliases: [agent harness, scaffolding, the layer around the model, control layer,
 tags: [Architecture, Agents]
 established: emerging
 -->
+[Applied AI Concepts](../README.md) › [System Architecture](../glossary/categories.md#system-architecture) › Harness Paradigm
+
 # Harness Paradigm
 
 > **Term status — Emerging.** In active use and genuinely useful, but not yet settled — definitions still vary between sources. Read the Confidence level before relying on the term in a formal document.

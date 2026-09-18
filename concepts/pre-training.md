@@ -5,6 +5,8 @@ aliases: [pretraining, pre-trained model, base model, foundation model training,
 tags: [AI Literacy, Data Governance]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Foundations](../glossary/categories.md#foundations) › Pre-training
+
 # Pre-training
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

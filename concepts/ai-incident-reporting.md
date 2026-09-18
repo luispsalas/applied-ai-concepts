@@ -5,6 +5,8 @@ aliases: [AI incident, near miss, when something goes wrong, serious incident re
 tags: [Regulatory, Safety]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Observability & Governance](../glossary/categories.md#observability--governance) › AI Incident (Reporting)
+
 # AI Incident (Reporting)
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

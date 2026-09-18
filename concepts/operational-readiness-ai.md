@@ -5,6 +5,8 @@ aliases: [are we ready, deployment readiness, AI maturity, production readiness,
 tags: [Architecture, Data Governance]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Organizational Readiness](../glossary/categories.md#organizational-readiness) › Operational Readiness (AI)
+
 # Operational Readiness (AI)
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

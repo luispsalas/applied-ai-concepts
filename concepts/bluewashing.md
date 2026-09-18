@@ -5,6 +5,8 @@ aliases: [ethics washing, AI washing, responsible AI theater, greenwashing for A
 tags: [Ethics, Regulatory]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Observability & Governance](../glossary/categories.md#observability--governance) › Bluewashing
+
 # Bluewashing
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

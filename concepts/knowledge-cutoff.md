@@ -5,6 +5,8 @@ aliases: [training cutoff, why doesn't it know about recent events, out of date 
 tags: [Model Behavior, AI Literacy]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Foundations](../glossary/categories.md#foundations) › Knowledge Cutoff
+
 # Knowledge Cutoff
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

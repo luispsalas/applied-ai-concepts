@@ -5,6 +5,8 @@ aliases: [continuous improvement, feedback loop, closing the loop, iterate, post
 tags: [Evaluation, Data Governance]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Organizational Readiness](../glossary/categories.md#organizational-readiness) › Continuous Feedback & Improvement
+
 # Continuous Feedback & Improvement
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

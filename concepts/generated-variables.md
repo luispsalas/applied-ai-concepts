@@ -5,6 +5,8 @@ aliases: [generated regressors, surrogate labels, model-generated labels, LLM an
 tags: [Evaluation, Data Governance, Model Behavior]
 established: emerging
 -->
+[Applied AI Concepts](../README.md) › [Knowledge & Memory](../glossary/categories.md#knowledge--memory) › Generated Variables
+
 # Generated Variables
 
 > **Term status — Emerging.** The LLM-era naming is unsettled — *surrogate labels*, *generated regressors*, *model-generated variables* all appear — which is why this is filed `emerging` rather than `established`. **The underlying concept is not new or contested**: it was named, analyzed and solved in econometrics in 1984 as *generated regressors*, with a survey literature by 1993. This entry uses the broader name because the problem is no longer confined to regression.

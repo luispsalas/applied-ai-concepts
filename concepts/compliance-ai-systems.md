@@ -5,6 +5,8 @@ aliases: [regulatory compliance, EU AI Act obligations, meeting requirements, co
 tags: [Regulatory, Data Governance]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Observability & Governance](../glossary/categories.md#observability--governance) › Compliance (AI Systems)
+
 # Compliance (AI Systems)
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

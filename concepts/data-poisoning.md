@@ -5,6 +5,8 @@ aliases: [poisoning, training data poisoning, dataset poisoning, backdoor attack
 tags: [Security, Data Governance, Safety]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [System Architecture](../glossary/categories.md#system-architecture) › Data Poisoning
+
 # Data Poisoning
 
 > **Term status — Established.** A named attack class in NIST's adversarial-machine-learning taxonomy, with a peer-reviewed literature well beyond any single group.

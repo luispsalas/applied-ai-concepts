@@ -5,6 +5,8 @@ aliases: [on-device AI, edge inference, edge computing, embedded AI, TinyML, off
 tags: [Architecture, Privacy, Data Governance]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [System Architecture](../glossary/categories.md#system-architecture) › Edge AI
+
 # Edge AI
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

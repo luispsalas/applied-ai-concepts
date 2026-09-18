@@ -5,6 +5,8 @@ aliases: [anonymization, anonymisation, pseudonymization, pseudonymisation, de-i
 tags: [Privacy, Regulatory, Data Governance]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Observability & Governance](../glossary/categories.md#observability--governance) › Anonymization and Pseudonymization
+
 # Anonymization and Pseudonymization
 
 > **Term status — Established.** Both are defined terms in data-protection law, in independent use across regulators, standards bodies and the re-identification literature.

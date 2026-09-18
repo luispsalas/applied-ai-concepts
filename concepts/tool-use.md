@@ -5,6 +5,8 @@ aliases: [function calling, tool calling, API calls from AI, actions, MCP tools,
 tags: [Agents, Architecture, Security]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [System Architecture](../glossary/categories.md#system-architecture) › Tool Use
+
 # Tool Use
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

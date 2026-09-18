@@ -91,7 +91,7 @@ def read_entry(path):
     if m:
         e.update(parse_meta(m.group(1)))
         body = text[m.end():]
-        first = body.lstrip().splitlines()[0] if body.strip() else ""
+        first = next((l for l in body.splitlines() if l.startswith("#")), "")
     e["authored"] = bool(m)
 
     e["term"] = first.lstrip("# ").strip() if first.startswith("#") else None

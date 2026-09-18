@@ -5,6 +5,8 @@ aliases: [least privilege, what is the AI allowed to do, access control for AI, 
 tags: [Security, Agents, Data Governance]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Human Oversight](../glossary/categories.md#human-oversight) › Permission Model (AI)
+
 # Permission Model (AI)
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

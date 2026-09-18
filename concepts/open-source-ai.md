@@ -5,6 +5,8 @@ aliases: [open source model, open weights, open-weight model, open weight, OSAID
 tags: [Data Governance, Regulatory, AI Literacy]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Observability & Governance](../glossary/categories.md#observability--governance) › Open Source AI
+
 # Open Source AI
 
 > **Term status — Established.** Defined by a neutral standards body — the Open Source Initiative, which has defined "open source" for software for decades — in a formal, versioned document, and in overwhelming independent use across labs, regulators, press and practitioners. What is contested is the **threshold**, not the existence of the term.

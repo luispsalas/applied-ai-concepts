@@ -5,6 +5,8 @@ aliases: [train/test contamination, benchmark contamination, test set leakage, d
 tags: [Evaluation, Data Governance]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Reliability & Quality](../glossary/categories.md#reliability--quality) › Data Leakage (Model Evaluation)
+
 # Data Leakage (Model Evaluation)
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

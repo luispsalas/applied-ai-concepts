@@ -5,6 +5,8 @@ aliases: [source anchoring, citations, factual grounding, evidence-backed output
 tags: [Data Governance, Evaluation]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Knowledge & Memory](../glossary/categories.md#knowledge--memory) › Grounding
+
 # Grounding
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

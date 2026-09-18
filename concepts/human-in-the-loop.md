@@ -5,6 +5,8 @@ aliases: [HITL, human review, human oversight, approval step, human in the loop]
 tags: [Ethics, Agents]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Human Oversight](../glossary/categories.md#human-oversight) › Human-in-the-Loop (HITL)
+
 # Human-in-the-Loop (HITL)
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

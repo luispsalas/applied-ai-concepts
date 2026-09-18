@@ -5,6 +5,8 @@ aliases: [dangerous capabilities, dangerous capability evaluation, extreme risk,
 tags: [Safety, Regulatory, Evaluation]
 established: emerging
 -->
+[Applied AI Concepts](../README.md) › [Observability & Governance](../glossary/categories.md#observability--governance) › Dangerous Capability
+
 # Dangerous Capability
 
 > **Term status — Emerging.** In real and independent use — including a 21-author paper spanning competing labs, academia and policy institutes — but what counts as a dangerous capability is still specified differently by each organization's own framework. See the confidence level.

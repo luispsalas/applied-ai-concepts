@@ -5,6 +5,8 @@ aliases: [model updates, version pinning, deprecation, it changed without tellin
 tags: [Model Behavior, Evaluation, Regulatory]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Reliability & Quality](../glossary/categories.md#reliability--quality) › Model Version & Update
+
 # Model Version & Update
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

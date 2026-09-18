@@ -5,6 +5,8 @@ aliases: [agreeableness, it just agrees with me, flattery, caving under pushback
 tags: [Model Behavior, Ethics]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Foundations](../glossary/categories.md#foundations) › Sycophancy (LLMs)
+
 # Sycophancy (LLMs)
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

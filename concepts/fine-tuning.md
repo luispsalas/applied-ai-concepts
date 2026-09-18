@@ -5,6 +5,8 @@ aliases: [LoRA, PEFT, parameter-efficient fine-tuning, adapting a model, custom 
 tags: [Architecture, Data Governance, Security]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Foundations](../glossary/categories.md#foundations) › Fine-tuning
+
 # Fine-tuning
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

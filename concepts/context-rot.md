@@ -5,6 +5,8 @@ aliases: [context degradation, long context degradation, lost in the middle, pos
 tags: [Model Behavior, Evaluation, Architecture]
 established: emerging
 -->
+[Applied AI Concepts](../README.md) › [Knowledge & Memory](../glossary/categories.md#knowledge--memory) › Context Rot
+
 # Context Rot
 
 > **Term status — Emerging.** Named in a 2025 cross-vendor technical report and picked up independently by engineering teams and technology journalism within months. Filed `emerging` rather than `established` because the naming is recent and no standards body has adopted it — **the underlying effect, however, is established**, documented in peer-reviewed work two years earlier under a different name.

@@ -5,6 +5,8 @@ aliases: [SLM, compact model, on-device model, efficient model, smaller model]
 tags: [Architecture]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Foundations](../glossary/categories.md#foundations) › Small Language Models (SLMs)
+
 # Small Language Models (SLMs)
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

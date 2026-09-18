@@ -5,6 +5,8 @@ aliases: [compaction, compact, context compression, conversation summarization, 
 tags: [Architecture, Data Governance, Model Behavior]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Knowledge & Memory](../glossary/categories.md#knowledge--memory) › Context Compaction
+
 # Context Compaction
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

@@ -5,6 +5,8 @@ aliases: [AUP, usage policy, acceptable use, usage policies, permitted use, proh
 tags: [Data Governance, Regulatory, Ethics]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Observability & Governance](../glossary/categories.md#observability--governance) › Acceptable Use Policy
+
 # Acceptable Use Policy
 
 > **Term status — Established.** A long-standing term of art in IT and telecommunications governance, applied to AI without redefinition.

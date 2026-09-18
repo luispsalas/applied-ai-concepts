@@ -5,6 +5,8 @@ aliases: [privacy attacks, membership inference, model inversion, data reconstru
 tags: [Security, Privacy, Evaluation]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Observability & Governance](../glossary/categories.md#observability--governance) › Privacy Attacks (AI Models)
+
 # Privacy Attacks (AI Models)
 
 > **Term status — Established.** NIST's adversarial-machine-learning taxonomy uses *privacy attacks* as a top-level category alongside evasion and poisoning, and each specific attack named here has its own peer-reviewed founding paper.

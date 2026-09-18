@@ -5,6 +5,8 @@ aliases: [ISO 42001, ISO/IEC 42001, AIMS, AI management system, AI certification
 tags: [Regulatory, Data Governance]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Observability & Governance](../glossary/categories.md#observability--governance) › AI Management System (ISO 42001)
+
 # AI Management System (ISO 42001)
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

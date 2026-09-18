@@ -5,6 +5,8 @@ aliases: [misleading output, AI deception, did it lie to me, systematic misleadi
 tags: [Safety, Model Behavior, Ethics]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Reliability & Quality](../glossary/categories.md#reliability--quality) › Deception (AI Systems)
+
 # Deception (AI Systems)
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

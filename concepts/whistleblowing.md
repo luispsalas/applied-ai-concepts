@@ -5,6 +5,8 @@ aliases: [protected disclosure, whistleblower, whistleblower protection, reporti
 tags: [Regulatory, Ethics, Safety]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Observability & Governance](../glossary/categories.md#observability--governance) › Whistleblowing
+
 # Whistleblowing
 
 > **Term status — Established.** A legal term of art with dedicated EU legislation, national statutes across most jurisdictions, and an explicit article in the EU AI Act. Independent of any vendor.

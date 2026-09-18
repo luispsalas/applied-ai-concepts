@@ -5,6 +5,8 @@ aliases: [sandbox, isolation, containment, confinement, safe execution environme
 tags: [Security, Architecture]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [System Architecture](../glossary/categories.md#system-architecture) › Sandboxing
+
 # Sandboxing
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

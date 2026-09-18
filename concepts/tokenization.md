@@ -5,6 +5,8 @@ aliases: [tokens, what is a token, token count, BPE, byte pair encoding, subword
 tags: [AI Literacy, Architecture]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Foundations](../glossary/categories.md#foundations) › Tokenization
+
 # Tokenization
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

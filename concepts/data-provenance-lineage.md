@@ -5,6 +5,8 @@ aliases: [data lineage, provenance, dataset provenance, data origin, where did t
 tags: [Data Governance, Regulatory]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Knowledge & Memory](../glossary/categories.md#knowledge--memory) › Data Provenance / Lineage
+
 # Data Provenance / Lineage
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

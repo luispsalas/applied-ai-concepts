@@ -5,6 +5,8 @@ aliases: [RL, reward learning, learning from rewards, reward function, agent tra
 tags: [AI Literacy, Model Behavior, Safety]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Foundations](../glossary/categories.md#foundations) › Reinforcement Learning (RL)
+
 # Reinforcement Learning (RL)
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

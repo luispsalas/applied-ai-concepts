@@ -5,6 +5,8 @@ aliases: [what was it trained on, training corpus, pretraining data, the data be
 tags: [Data Governance, Ethics, AI Literacy]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Knowledge & Memory](../glossary/categories.md#knowledge--memory) › Training Data
+
 # Training Data
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

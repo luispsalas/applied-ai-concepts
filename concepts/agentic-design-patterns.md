@@ -5,6 +5,8 @@ aliases: [agentic design, agent design patterns, agentic pattern, agentic patter
 tags: [Agents, Architecture, AI Literacy]
 established: emerging
 -->
+[Applied AI Concepts](../README.md) › [System Architecture](../glossary/categories.md#system-architecture) › Agentic Design Patterns
+
 # Agentic Design Patterns
 
 > **Term status — Emerging.** Real and in use, but definitions still vary between sources — see the confidence level for what is unsettled.

@@ -5,6 +5,8 @@ aliases: [agent swarm, multiple agents, agent teams, agent collaboration, agent 
 tags: [Agents, Architecture]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [System Architecture](../glossary/categories.md#system-architecture) › Multi-Agent Systems
+
 # Multi-Agent Systems
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

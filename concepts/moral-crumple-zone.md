@@ -5,6 +5,8 @@ aliases: [custodial agency, moral crumple zones, blame the operator, human in th
 tags: [Ethics, AI Literacy]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Human Oversight](../glossary/categories.md#human-oversight) › Moral Crumple Zone
+
 # Moral Crumple Zone
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

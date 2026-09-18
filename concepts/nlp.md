@@ -5,6 +5,8 @@ aliases: [natural language processing, computational linguistics, language techn
 tags: [AI Literacy, Model Behavior]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Foundations](../glossary/categories.md#foundations) › NLP
+
 # NLP
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

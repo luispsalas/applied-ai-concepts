@@ -5,6 +5,8 @@ aliases: [token limit, how much can it read, input length limit, maximum context
 tags: [Architecture]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Knowledge & Memory](../glossary/categories.md#knowledge--memory) › Context Window
+
 # Context Window
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

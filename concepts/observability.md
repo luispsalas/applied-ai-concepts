@@ -5,6 +5,8 @@ aliases: [monitoring, telemetry, can I see what it's doing, instrumentation, vis
 tags: [Architecture, Evaluation]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Observability & Governance](../glossary/categories.md#observability--governance) › Observability (AI Systems)
+
 # Observability (AI Systems)
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.

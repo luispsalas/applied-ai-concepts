@@ -5,6 +5,8 @@ aliases: [knowledge distillation, distillation, distilled model, teacher-student
 tags: [Architecture, Model Behavior, Safety]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Foundations](../glossary/categories.md#foundations) › Model Distillation
+
 # Model Distillation
 
 > **Term status — Established.** In continuous use across machine learning research and practice since 2015, named in a paper that itself refines a technique published in 2006. Independent of any vendor: the term appears in the documentation and research of every major model provider and in the open-weights ecosystem alike.

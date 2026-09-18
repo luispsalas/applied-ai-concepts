@@ -5,6 +5,8 @@ aliases: [zero-shot, few-shot, in-context learning, ICL, one-shot, learning from
 tags: [AI Literacy, Model Behavior, Prompting]
 established: established
 -->
+[Applied AI Concepts](../README.md) › [Foundations](../glossary/categories.md#foundations) › Zero-shot / Few-shot Learning
+
 # Zero-shot / Few-shot Learning
 
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
