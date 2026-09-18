@@ -1,0 +1,48 @@
+<!-- Theme toggle for the GitHub Pages site: Auto (follow the OS) → Dark → Light.
+     Sets data-theme on <html> for assets/css/style.scss, and points the README
+     banner's <picture> at the matching variant. The choice is kept per browser. -->
+<script>
+(function () {
+  var KEY = "theme";
+  var OS_DARK = "(prefers-color-scheme: dark)";
+  var ORDER = ["auto", "dark", "light"];
+  var LABEL = { auto: "◐ Auto", dark: "● Dark", light: "○ Light" };
+  var root = document.documentElement;
+
+  function load() {
+    try { var v = localStorage.getItem(KEY); return ORDER.indexOf(v) >= 0 ? v : "auto"; }
+    catch (e) { return "auto"; }
+  }
+  function save(v) { try { localStorage.setItem(KEY, v); } catch (e) {} }
+
+  function apply(mode) {
+    if (mode === "auto") root.removeAttribute("data-theme");
+    else root.setAttribute("data-theme", mode);
+    var media = mode === "dark" ? "all" : mode === "light" ? "not all" : OS_DARK;
+    document.querySelectorAll('picture source[srcset*="banner-dark"]').forEach(function (s) {
+      s.setAttribute("media", media);
+    });
+    var b = document.querySelector(".theme-toggle");
+    if (b) {
+      b.textContent = LABEL[mode];
+      b.setAttribute("aria-label", "Color theme: " + mode + ". Click to change.");
+    }
+  }
+
+  var mode = load();
+  apply(mode);  // before the body renders, so the page does not flash
+
+  document.addEventListener("DOMContentLoaded", function () {
+    var b = document.createElement("button");
+    b.type = "button";
+    b.className = "theme-toggle";
+    document.body.appendChild(b);
+    b.addEventListener("click", function () {
+      mode = ORDER[(ORDER.indexOf(mode) + 1) % ORDER.length];
+      save(mode);
+      apply(mode);
+    });
+    apply(mode);
+  });
+})();
+</script>
