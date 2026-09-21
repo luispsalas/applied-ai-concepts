@@ -103,7 +103,7 @@ Looking for one term? Use the [alphabetical glossary](index.md) or [search](../s
 | [Context (AI Systems)](../concepts/context-ai-systems.md) | Everything the model receives before it answers — one bounded, undifferentiated stream, assembled fresh every time | ✅ v1.0 |
 | [Knowledge Graphs](../concepts/knowledge-graphs.md) | Facts and their relationships stored as an explicit, inspectable network — the retrieval substrate you can audit, as opposed to one you can only measure | ✅ v1.0 |
 | [Synthetic Data](../concepts/synthetic-data.md) | Data produced by a model rather than observed in the world — a genuine answer to scarcity, privacy and cost, and a genuine way to build a corpus that quietly stops describing reality | ✅ v1.0 |
-| [Context Compaction](../concepts/context-compaction.md) | Shrinking a conversation so it keeps fitting — and the point at which what the system knows stops being something anyone chose | ✅ v1.0 |
+| [Context Compaction](../concepts/context-compaction.md) | Shrinking a conversation so it keeps fitting — and the point at which what the system knows stops being something anyone chose | ✅ v1.1 |
 | [Ontology](../concepts/ontology.md) | The agreed list of what kinds of things exist and how they may relate — a schema that quietly decides what a system can never record | ✅ v1.1 |
 | [Data Labeling](../concepts/data-labeling.md) | The human work that produces every label a model learns from and every benchmark it is judged against — undervalued in exactly the systems that depend on it most | ✅ v1.0 |
 | [Context Anxiety](../concepts/context-anxiety.md) | A model cutting corners because it believes its context is nearly full — degrading on its own estimate of the budget rather than on the actual limit | ✅ v1.0 |
@@ -169,7 +169,7 @@ Looking for one term? Use the [alphabetical glossary](index.md) or [search](../s
 | [Data Minimization](../concepts/data-minimization.md) | Collecting and keeping only the data a system actually needs — less data, less risk, lower cost | ✅ v1.0 |
 | [Privacy (AI Systems)](../concepts/privacy-ai-systems.md) | The rights and obligations that govern how personal data is used in AI training and deployment — and the responsibility to uphold them | ✅ v1.0 |
 | [Data Leakage (AI Systems)](../concepts/data-leakage-ai-systems.md) | When sensitive information from training data or context surfaces in model outputs — exposing what was never meant to be accessible | ✅ v1.0 |
-| [AI Incident (Reporting)](../concepts/ai-incident-reporting.md) | A documented event where an AI system caused or nearly caused harm — now with legal deadlines to report it, not just fix it quietly | ✅ v1.1 |
+| [AI Incident (Reporting)](../concepts/ai-incident-reporting.md) | A documented event where an AI system caused or nearly caused harm — now with legal deadlines to report it, not just fix it quietly | ✅ v1.2 |
 | [AI Management System (ISO 42001)](../concepts/ai-management-system-iso-42001.md) | The certifiable standard for governing AI across its lifecycle — it certifies the process, not the product | ✅ v1.0 |
 | [Shadow AI](../concepts/shadow-ai.md) | Unsanctioned AI use — invisible to the processes meant to govern it, and usually a signal about the sanctioned option | ✅ v1.0 |
 | [Model Card / System Card](../concepts/model-card-system-card.md) | The transparency artifact — a scoping document whose job is to say where *not* to use a model | ✅ v1.0 |

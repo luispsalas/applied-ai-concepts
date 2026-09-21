@@ -535,7 +535,7 @@
         "Regulatory",
         "Safety"
       ],
-      "version": "v1.1",
+      "version": "v1.2",
       "updated": "September 2026",
       "related": [
         "accountability-ai-systems",
@@ -555,7 +555,8 @@
         "SRC-163",
         "SRC-164",
         "SRC-264",
-        "SRC-265"
+        "SRC-265",
+        "SRC-379"
       ],
       "path": "concepts/ai-incident-reporting.md"
     },
@@ -1523,7 +1524,7 @@
         "Data Governance",
         "Model Behavior"
       ],
-      "version": "v1.0",
+      "version": "v1.1",
       "updated": "September 2026",
       "related": [
         "agent-skills",
@@ -1542,7 +1543,9 @@
         "SRC-137",
         "SRC-149",
         "SRC-270",
-        "SRC-271"
+        "SRC-271",
+        "SRC-380",
+        "SRC-381"
       ],
       "path": "concepts/context-compaction.md"
     },
