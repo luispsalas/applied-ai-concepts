@@ -24,6 +24,8 @@ The most common production pattern is **orchestrator–workers**: a central mode
 
 Multi-agent is a design choice with a cost, not a default upgrade. The decision framework in practice: use multiple agents when a task has genuinely separable sub-problems, requires distinct tool sets or permissions per role, or benefits from an adversarial arrangement (one agent generating, another critiquing). Keep a single agent when the coordination overhead — extra latency, token cost, and failure surface — exceeds the benefit of specialization. Vendor guidance agrees on the default: OpenAI's is *"to maximize a single agent's capabilities first"*, and Microsoft's adds multiple agents only when a single agent cannot reliably handle a task because of prompt complexity, tool overload or security requirements.
 
+**Which models go in the system is itself a design choice, and where it has been measured rather than assumed, more is not better.** A study of model-pool selection across 23 models (six architecture families, 2B to 1.6T parameters) on three science-reasoning benchmarks tested eight ways of choosing the pool — by size, by architectural family, by an LLM's recommendation, by measured accuracy, by correct-answer diversity, by error diversity, and by two accuracy-weighted combinations — across a routing system and two answer-combining systems (majority vote and an LLM judge). Its result: *"more models nearly always decreases performance"*, and most deliberate groupings scored below the best single model in the pool and often below a randomly chosen set. Grouping models from one family did best, though in most cases that meant *"the least detriment to performance rather than a large improvement"*. The same study found that domain-specialized models did not outperform the generalist they were fine-tuned from, even in their own specialty, so a pool cannot be assembled from model cards alone. Two caveats bound the result: the degradation is specific to **heterogeneous** pools — the study's baseline systems built from instances of one model still improved as they grew more complex — and tool use and retrieval were disabled so the models could be compared, which removes a capability most deployed systems have.
+
 Note that "multi-agent system" is an established term in distributed AI that long predates LLMs; the LLM-based variety inherits the name but not the formal coordination guarantees of the classical literature.
 
 ---
@@ -39,7 +41,8 @@ Instead of asking one AI to do a whole complicated job, you split the job across
 1. **More agents means more failure surface, not more reliability.** An empirical fault taxonomy of agentic AI found that failures concentrate in orchestration, state handling, and environment interaction — not in the model itself. Adding agents adds exactly those three things. Reliability also compounds downward: a chain of steps each individually reliable can still fail often overall, because the per-step success rates multiply.
 2. **Specialization is a governance tool, not just a performance one.** Giving each agent the narrowest role and the smallest tool set it needs is the multi-agent form of least privilege — it bounds what any single compromised or malfunctioning agent can do.
 3. **Accountability blurs exactly where it matters most.** When several agents contribute to an outcome, "which agent decided this?" becomes a real question — and it is the question an audit will ask. Red-team studies of autonomous agents in live environments have documented unauthorized compliance, identity spoofing, and partial system takeover; attributing those events requires per-agent logging designed in from the start.
-4. **The word is doing a lot of work.** Vendors describe as "multi-agent" everything from a genuinely dynamic orchestrator to a hard-coded three-step script. Ask what decides the decomposition — a model at runtime, or a developer in advance. Only the first is meaningfully multi-agent.
+4. **A bigger roster is not a better system.** The intuition that adding a model adds a perspective does not survive measurement: in the pool-selection study above, enlarging the candidate pool usually made the system worse than its own best member, and the gap between what a pool *could* achieve if it always picked the right answer and what it actually achieved was wide. Treat the choice of models as a decision to test, not to reason about.
+5. **The word is doing a lot of work.** Vendors describe as "multi-agent" everything from a genuinely dynamic orchestrator to a hard-coded three-step script. Ask what decides the decomposition — a model at runtime, or a developer in advance. Only the first is meaningfully multi-agent.
 
 ---
 
@@ -51,12 +54,14 @@ Instead of asking one AI to do a whole complicated job, you split the job across
 - Per-agent actions that are not individually logged, making post-hoc attribution impossible
 - Agents inheriting a shared, over-broad set of credentials instead of role-scoped permissions
 - Coordination complexity adopted for its own sake, where a single agent or a fixed workflow would do
+- A roster of models chosen from model cards, vendor claims or an LLM's recommendation, with no measurement of what the combination actually does
 - Failures that are silent because one agent's degraded output is accepted as input by the next
 
 **Practice:**
 - Log agent identity, inputs, tool calls, and outputs at each hop — the [audit trail](audit-trail-ai.md) must be per-agent, not per-system
 - Scope tools and credentials per role; treat every agent as a separate principal
 - Set explicit stop conditions and budgets — step limits, token limits, wall-clock limits — so a coordination loop cannot run indefinitely
+- Measure the system against the best single model in it, and keep that comparison as a release gate — a multi-agent system that loses to one of its own members is a cost with no benefit
 - Require a single named owner for the system as a whole, regardless of how many agents it contains
 
 **Key accountability owner:** the system owner — accountability does not distribute across agents just because work does.
@@ -67,7 +72,7 @@ Instead of asking one AI to do a whole complicated job, you split the job across
 
 ## Confidence level
 
-**Medium.** The architectural patterns and their trade-offs are documented in peer-reviewed surveys and primary engineering sources, and the failure evidence is empirical. But the field is young and moving: coordination protocols are unsettled, production evidence is still mostly case studies rather than controlled comparison, and claims about when multi-agent beats single-agent remain contested.
+**Medium.** The architectural patterns and their trade-offs are documented in peer-reviewed surveys and primary engineering sources, and the failure evidence is empirical. Controlled comparison has now started to arrive — the pool-selection study above measures the single-versus-multi question rather than asserting it — but it covers science-reasoning benchmarks with tool use disabled, on three simple architectures, so it bounds a claim rather than settling one. The field is young and moving: coordination protocols are unsettled, production evidence is still mostly case studies, and claims about when multi-agent beats single-agent remain contested.
 
 ---
 
@@ -89,6 +94,7 @@ Instead of asking one AI to do a whole complicated job, you split the job across
 | ID | Source | Contribution to this entry |
 |---|---|---|
 | SRC-152 | Guo, T.; Chen, X.; Wang, Y.; Chang, R.; Pei, S.; Chawla, N.V.; Wiest, O.; Zhang, X. — *Large Language Model based Multi-Agents: A Survey of Progress and Challenges* (IJCAI 2024) · [link](https://www.ijcai.org/proceedings/2024/890) | Peer-reviewed anchor: the four-axis characterization (environment, profiling, communication, capability acquisition) and open challenges. |
+| SRC-378 | Marjanović, S.V.; Xu, J.; Laptev, A.; Nalbandyan, G.; Arakelyan, E.; Bakhaturina, E. — *Mo' Models, Mo' Problems: How to best select model pools when designing Multi-Agent Systems* (preprint, 2026) · [link](https://arxiv.org/abs/2609.17306) | Controlled comparison of eight model-pool selection strategies across routing, majority-vote and LLM-judge architectures: enlarging a heterogeneous pool usually degrades performance below the best single model; same-family pools fare best; fine-tuned specialists did not beat their generalist base model. ⚠️ Five of six authors are at NVIDIA; the benchmarks are science-reasoning only and tool use was disabled. |
 | SRC-104 | Anthropic — *Building Effective AI Agents* (2024) · [link](https://www.anthropic.com/engineering/building-effective-agents) | Orchestrator–workers pattern; the workflow-vs-agent distinction that separates dynamic from pre-written decomposition. ⚠️ Vendor-authored. |
 | SRC-372 | OpenAI — *A practical guide to building agents* (2025) · [link](https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf) | The manager pattern (a central model orchestrating specialized agents through tool calls) and the decentralized pattern (agents handing off to one another); the recommendation to maximize a single agent's capabilities first. ⚠️ Vendor-authored. |
 | SRC-373 | Microsoft — *AI Agent Orchestration Patterns* (Azure Architecture Center, 2026) · [link](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/ai-agent-design-patterns) | Multi-agent orchestration patterns and when the added complexity is justified: prompt complexity, tool overload or security requirements a single agent cannot handle. ⚠️ Vendor-authored. |
@@ -111,4 +117,4 @@ Instead of asking one AI to do a whole complicated job, you split the job across
 
 ---
 
-*Last updated: v1.1 · September 2026*
+*Last updated: v1.2 · September 2026*

@@ -3990,7 +3990,7 @@
         "Agents",
         "Architecture"
       ],
-      "version": "v1.1",
+      "version": "v1.2",
       "updated": "September 2026",
       "related": [
         "ai-agent",
@@ -4011,7 +4011,8 @@
         "SRC-153",
         "SRC-372",
         "SRC-373",
-        "SRC-374"
+        "SRC-374",
+        "SRC-378"
       ],
       "path": "concepts/multi-agent-systems.md"
     },

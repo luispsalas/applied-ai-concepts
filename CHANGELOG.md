@@ -1,5 +1,17 @@
 # Changelog
 
+## v1.43 — September 2026
+
+**One enrichment. No new entries; count stays at 153.**
+
+- `multi-agent-systems` — v1.1 → **v1.2**
+
+**The wiki said a multi-agent system is not automatically better than one model. That claim now rests on measurement rather than on architecture talk.** A study of model-pool selection tested eight ways of choosing which models to combine — by size, by family, by an LLM's recommendation, by accuracy, by two kinds of answer diversity, and by two accuracy-weighted mixes — across a routing system, a majority vote and an LLM judge, on three science-reasoning benchmarks. Enlarging the pool usually left the system worse than the best single model inside it, and often worse than a random selection. Pools drawn from one model family did best, mostly by losing the least.
+
+**Two findings change advice rather than confirm it.** Models fine-tuned for a domain did not beat the generalist they were fine-tuned from, even in that domain, so a pool cannot be assembled by reading model cards. And the entry now carries a release gate: compare the system against the best single model in it, because a multi-agent system that loses to one of its own members is a cost with no benefit.
+
+**The limits are stated in the entry, not filed away.** The degradation is specific to systems mixing different models; the study's own single-model baselines still improved as they grew. Tool use and retrieval were switched off so the models could be compared, which removes something most deployed systems have. Five of the six authors work for a hardware vendor. The confidence note now says controlled comparison has started to arrive without claiming the question is settled.
+
 ## v1.42 — September 2026
 
 **Seven entries rebalanced across vendors. No new entries; count stays at 153.**
