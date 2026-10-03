@@ -1,0 +1,11 @@
+# Site settings for GitHub Pages. Added for link previews (LinkedIn, Slack):
+# without a title here, Jekyll used the repository name "applied-ai-concepts"
+# as the page title and the share title on every page.
+theme: jekyll-theme-primer   # the theme GitHub Pages already applies by default; stated so this file changes nothing else
+title: Applied AI Concepts
+description: A persistently maintained AI literacy resource covering the foundational concepts behind designing, deploying, and governing AI systems.
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/og/applied-ai-concepts.png
