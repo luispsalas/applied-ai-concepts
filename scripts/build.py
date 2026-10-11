@@ -6,6 +6,8 @@ Generate and check the wiki's derived artifacts.
     build.py write     regenerate glossary + search-index.json, sync category rows,
                        the README key-terms block, and README counts
     build.py report    reverse index for Wiki-Sources col L, and the gap report
+    build.py dashes    prose em dashes per entry, worst first (house style:
+                       none in prose); `dashes <slug>` lists the lines
 
 Design notes worth keeping:
 
@@ -693,6 +695,63 @@ def key_terms_block(entries):
 
 # ---------- reports ----------
 
+DASH = "—"
+
+
+def prose_dashes(text):
+    """-> [(line_no, count, line)] for every line holding an em dash in PROSE.
+
+    House style (Oct 2026): no em dashes in prose. These stay, so they are
+    not counted:
+      * the Related concepts separator, `- [Term](x.md) — description`
+      * the whole author/title cell of a Sources row (citation data, copied
+        from the registry, titles included)
+      * the generated `> **Term status — X.**` banner
+      * anything inside a quotation or a code span (verbatim beats style)
+    Everything else counts, including the meta block's `short:` line, which
+    is rendered into the category tables, and the notes cell of a Sources row.
+    """
+    hits, section = [], ""
+    for n, line in enumerate(text.splitlines(), 1):
+        if line.startswith("## "):
+            section = line[3:].strip()
+        if DASH not in line:
+            continue
+        s = line
+        if s.startswith(f"> **Term status {DASH}"):
+            s = s.replace(DASH, "", 1)
+        if section == "Related concepts":
+            # linked bullets, and the unlinked ones promise_gaps() reports
+            s = re.sub(rf"^(\s*- (?:\[[^\]]*\]\([^)]*\)|[^\[{DASH}]+?)) {DASH}", r"\1", s)
+        if s.startswith("| SRC-"):
+            cells = s.split("|")
+            cells[2] = ""
+            s = "|".join(cells)
+        s = re.sub(r"`[^`]*`", "", s)
+        s = re.sub(r"\"[^\"\n]*\"|“[^”\n]*”", "", s)
+        if s.count(DASH):
+            hits.append((n, s.count(DASH), line))
+    return hits
+
+
+def dashes(entries, slug=None):
+    """Prose em dashes per entry, worst first; with a slug, the lines themselves."""
+    if slug:
+        for n, k, line in prose_dashes((CONCEPTS / f"{slug}.md").read_text(encoding="utf-8")):
+            print(f"{n:4d}  ({k})  {line.strip()[:160]}")
+        return
+    counts = sorted(((sum(k for _, k, _ in prose_dashes(
+        (CONCEPTS / f"{e['slug']}.md").read_text(encoding="utf-8"))), e["slug"])
+        for e in entries), reverse=True)
+    for k, s in counts:
+        if k:
+            print(f"{k:4d}  {s}")
+    # say how many entries were inspected, so a run that looked at nothing
+    # cannot pass for a clean one
+    print(f"\n{sum(k for k, _ in counts)} prose em dashes in "
+          f"{sum(1 for k, _ in counts if k)} of {len(counts)} entries inspected")
+
+
 def promise_gaps(entries):
     """Unlinked bullets in a Related concepts section.
 
@@ -815,6 +874,9 @@ def main():
         return 0
     if cmd == "report":
         report(entries)
+        return 0
+    if cmd == "dashes":
+        dashes(entries, sys.argv[2] if len(sys.argv) > 2 else None)
         return 0
     print(__doc__)
     return 2
