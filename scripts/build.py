@@ -2,9 +2,11 @@
 """
 Generate and check the wiki's derived artifacts.
 
-    build.py check     report every inconsistency, change nothing (exit 1 if any)
+    build.py check     report every inconsistency, change nothing (exit 1 if any),
+                       including any entry above its prose em dash allowance
     build.py write     regenerate glossary + search-index.json, sync category rows,
-                       the README key-terms block, and README counts
+                       the README key-terms block, and README counts; lower the
+                       em dash allowances to match (never raises them)
     build.py report    reverse index for Wiki-Sources col L, and the gap report
     build.py dashes    prose em dashes per entry, worst first (house style:
                        none in prose); `dashes <slug>` lists the lines
@@ -47,6 +49,11 @@ TEMPLATE = ROOT / "scripts" / "search-template.html"
 CONCEPTS = ROOT / "concepts"
 REGISTER = ROOT / "glossary" / "register.md"
 EXPORT = ROOT / "scripts" / "tracker-export.tsv"
+# Prose em dashes each entry may still hold (house style since Oct 2026: none).
+# A ratchet: check fails if an entry goes above its number, and an entry not
+# listed is allowed none, so new entries start clean. write() only ever LOWERS
+# a number, and drops it at zero. Never raise one by hand.
+DASH_BASELINE = ROOT / "scripts" / "dash-baseline.tsv"
 
 TERM_STATUS = {
     "established": "Recognized term of art, in independent use.",
@@ -321,7 +328,47 @@ def check(entries):
 
     # 8. breadcrumbs
     problems += breadcrumb_problems(entries, read_readme_rows()[2])
+
+    # 9. prose em dash ratchet
+    problems += dash_problems(entries)
     return problems
+
+
+def read_dash_baseline():
+    """-> {slug: allowed}, or None if the file is missing."""
+    if not DASH_BASELINE.exists():
+        return None
+    out = {}
+    for line in DASH_BASELINE.read_text(encoding="utf-8").splitlines():
+        if line and not line.startswith("#"):
+            slug, n = line.split("\t")
+            out[slug] = int(n)
+    return out
+
+
+def dash_counts(entries):
+    return {e["slug"]: sum(k for _, k, _ in prose_dashes(
+        (CONCEPTS / f"{e['slug']}.md").read_text(encoding="utf-8"))) for e in entries}
+
+
+def dash_problems(entries):
+    base = read_dash_baseline()
+    if base is None:
+        return [f"dashes: {DASH_BASELINE.relative_to(ROOT)} missing; restore it from git "
+                f"(write() will not recreate it, since that would reset the ratchet)"]
+    out = []
+    for slug, n in sorted(dash_counts(entries).items()):
+        allowed = base.get(slug, 0)
+        if n > allowed:
+            out.append(f"dashes: {slug} has {n} prose em dashes, allowed {allowed} "
+                       f"(house style: none in prose; `build.py dashes {slug}` lists them)")
+        elif n < allowed:
+            out.append(f"dashes: {slug} is down to {n} from {allowed} "
+                       f"(run `build.py write` to lock it in)")
+    known = {e["slug"] for e in entries}
+    for slug in sorted(set(base) - known):
+        out.append(f"dashes: baseline lists {slug}, which is not an entry (run `build.py write`)")
+    return out
 
 
 def page_problems():
@@ -613,7 +660,26 @@ def write(entries):
         if not REGISTER.exists() or REGISTER.read_text() != page:
             REGISTER.write_text(page)
             changed.append(f"glossary/register.md ({len(rows)} terms)")
+
+    # prose em dash ratchet: only ever lowered, never raised or recreated
+    base = read_dash_baseline()
+    if base is not None:
+        counts = dash_counts(entries)
+        new = {s: min(n, counts[s]) for s, n in base.items() if s in counts}
+        new = {s: n for s, n in new.items() if n}
+        if new != base:
+            write_dash_baseline(new)
+            changed.append(f"{DASH_BASELINE.relative_to(ROOT)} "
+                           f"({sum(new.values())} prose em dashes left in {len(new)} entries)")
     return changed
+
+
+def write_dash_baseline(allowed):
+    head = ["# Prose em dashes each entry may still hold. Generated: lowered by "
+            "`build.py write`, never raised.",
+            "# An entry not listed is allowed none. slug<TAB>allowed"]
+    DASH_BASELINE.write_text("\n".join(head + [f"{s}\t{n}" for s, n in sorted(allowed.items())]) + "\n",
+                             encoding="utf-8")
 
 
 def _reparse(lines):
