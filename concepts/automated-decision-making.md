@@ -86,7 +86,7 @@ And here is the catch that undoes all of it in practice: **you cannot ask for an
 
 **Key accountability owner:** the **deployer** — the organization using the system to decide about people. Both rights described here attach there rather than to the model's builder, and this is the most commonly misassigned obligation in the area.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

@@ -68,7 +68,7 @@ Three things practitioners need to understand:
 
 **Key accountability owner:** Knowledge base owner — the role responsible for the quality, currency, and access governance of the material the grounding layer retrieves from.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

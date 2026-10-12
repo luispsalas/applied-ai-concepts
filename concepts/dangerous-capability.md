@@ -90,7 +90,7 @@ Different labs publish different thresholds for what counts as dangerous enough 
 
 **Key accountability owner:** whoever accepts a model into a deployment that adds tools or reach — because the provider assessed a model, and what you are fielding is a system, and no upstream evaluation covers the difference.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

@@ -69,7 +69,7 @@ Red teaming is attacking your own system on purpose, before someone else does. Y
 
 **Key accountability owner:** the security function, jointly with the system owner who must accept or remediate each finding.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

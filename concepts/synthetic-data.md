@@ -87,7 +87,7 @@ Used deliberately — to cover a specific gap, with its origin written down, che
 
 **Key accountability owner:** whoever owns the training corpus — because the risk is not that synthetic data is used, but that its proportion and origin stop being recorded, and after that no one can answer what the model actually learned from.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

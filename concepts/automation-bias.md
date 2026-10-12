@@ -76,7 +76,7 @@ When something answers reliably enough, for long enough, people stop checking it
 
 **Key accountability owner:** the process owner for the workflow — because the remedy is process and interface design, not a better model.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

@@ -87,7 +87,7 @@ That is the real question here, and it is not a technical one. It is: when an ag
 
 **Key accountability owner:** whoever holds the relationship with the counterparty organization — because this is a contractual and liability question wearing a protocol's clothing, and the party that can actually fix it is the one who signed the agreement, not the one who wrote the integration.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

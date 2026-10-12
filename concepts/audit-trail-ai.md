@@ -76,7 +76,7 @@ Three things practitioners need to understand:
 
 **Key accountability owner:** System auditor — the role responsible for defining what the audit trail captures, ensuring it is implemented at the harness layer, and maintaining accessibility for governance review.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

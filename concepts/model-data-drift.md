@@ -77,7 +77,7 @@ A model learns from the world as it was when it was trained. The world keeps mov
 
 **Key accountability owner:** the system owner, with the data owner for input-side monitoring.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

@@ -61,7 +61,7 @@ It runs against the instinct of modern AI, which is "collect everything, you mig
 
 **Key accountability owner:** the data/privacy owner for the system is accountable for purpose specification, retention limits, and the disparate-impact check.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

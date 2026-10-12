@@ -66,7 +66,7 @@ Grounding strategies (RAG, retrieval from verified sources, tool use) reduce hal
 
 **Key accountability owner:** Output quality owner — the role responsible for verifying AI outputs before they reach downstream use or decision-making.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

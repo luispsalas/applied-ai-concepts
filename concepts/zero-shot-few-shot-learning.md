@@ -86,7 +86,7 @@ There is a second consequence. Because the model will attempt almost anything as
 
 **Key accountability owner:** whoever approves the task the system is used for — because zero-shot capability makes scope a policy decision rather than a technical limit, and nothing in the system will refuse a task simply because nobody authorized it.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

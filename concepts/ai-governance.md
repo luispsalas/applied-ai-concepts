@@ -69,7 +69,7 @@ Three things practitioners need to understand:
 
 **Key accountability owner:** AI governance owner — the role (individual or function) responsible for maintaining the organization's AI governance framework, system inventory, and compliance posture.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

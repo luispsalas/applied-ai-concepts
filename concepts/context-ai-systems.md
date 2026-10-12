@@ -76,7 +76,7 @@ The practical consequence is that most disappointing AI output is a context prob
 
 **Key accountability owner:** the system owner, specifically for what the assembly layer is permitted to pull in — because retrieval scope and untrusted-content handling are both decided there, not in the model.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

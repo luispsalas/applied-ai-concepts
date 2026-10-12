@@ -83,7 +83,7 @@ The uncomfortable part is that provenance degrades by default. Data gets copied,
 
 **Key accountability owner:** the data owner for each source, with the AI system owner accountable for the *composite* — the assembled training set or retrieval corpus is itself an asset that needs an owner, and it usually has none.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

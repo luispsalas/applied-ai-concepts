@@ -66,7 +66,7 @@ Instead of asking one AI to do a whole complicated job, you split the job across
 
 **Key accountability owner:** the system owner — accountability does not distribute across agents just because work does.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

@@ -80,7 +80,7 @@ Two things to keep in mind. First, closeness means "about the same thing" — no
 
 **Key accountability owner:** the data owner of the *source* corpus — because the vector store is a derivative of their material, and the common failure is that ownership does not follow the data into its embedded form.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

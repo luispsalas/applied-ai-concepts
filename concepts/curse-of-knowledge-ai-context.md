@@ -77,7 +77,7 @@ The frustrating part is that expertise makes this worse. The more you know a sub
 
 **Key accountability owner:** whoever owns AI enablement — because the fix is a shared checklist and a diagnostic habit, both of which are program-level artifacts rather than individual virtues.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

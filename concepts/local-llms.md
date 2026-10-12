@@ -83,7 +83,7 @@ Everything else you were quietly getting from the provider now belongs to you: k
 
 **Key accountability owner:** the system owner, who now also holds the operational duties the provider previously carried — this should be named explicitly at the deployment decision, because it is the part that is routinely unassigned.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

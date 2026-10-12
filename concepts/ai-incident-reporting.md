@@ -84,7 +84,7 @@ An AI incident is when an AI system actually hurt someone or something — and a
 
 **Key accountability owner:** the system owner, jointly with the compliance function for the notification duty.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

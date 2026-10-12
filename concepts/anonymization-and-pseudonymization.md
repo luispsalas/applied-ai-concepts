@@ -84,7 +84,7 @@ And one thing specific to AI: **anonymizing the training data does not make the 
 
 **Key accountability owner:** whoever signs the lawful-basis or scope determination — because an "anonymized" label decides whether the whole of data-protection law applies, and it is routinely applied by people describing a technique rather than making that determination.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

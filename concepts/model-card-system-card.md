@@ -77,7 +77,7 @@ There is also a distinction worth holding onto. A model card describes the model
 
 **Key accountability owner:** whoever owns the deployed system — because the artifact that matters for governance is the *system* card, and no provider will write it for you.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

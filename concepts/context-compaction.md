@@ -91,7 +91,7 @@ This is why "it forgot what we agreed" is often not a memory problem at all. The
 
 **Key accountability owner:** whoever owns the retention and audit obligations for the conversation — because compaction is where information leaves the system without a deletion decision, and it is currently configured by engineers as a cost setting rather than by anyone treating it as a records question.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

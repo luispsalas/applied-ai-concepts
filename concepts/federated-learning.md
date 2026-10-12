@@ -93,7 +93,7 @@ There are fixes. One scrambles the contributions so the server only ever sees th
 
 **Key accountability owner:** whoever owns the resulting model — because the architecture moves the data out of reach while leaving the consequences of what it contained exactly where they were, and the decision to accept unauditable training data is a risk acceptance, not an engineering detail.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

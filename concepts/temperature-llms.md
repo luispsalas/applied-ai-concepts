@@ -82,7 +82,7 @@ And the most common misunderstanding: setting temperature to zero does **not** g
 
 **Key accountability owner:** whoever signs off the system's evaluation evidence — because the failure mode is a setting entering a control narrative on folklore rather than on measurement.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

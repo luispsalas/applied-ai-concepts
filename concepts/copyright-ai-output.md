@@ -91,7 +91,7 @@ The honest summary is that this is genuinely unsettled — not that the answer e
 
 **Key accountability owner:** legal or contracts, with the system owner accountable for the evidence — because whether human contribution can be *demonstrated* is an operational question that legal cannot answer after the fact.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

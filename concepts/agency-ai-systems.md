@@ -81,7 +81,7 @@ That is the useful reframe: agency is not something a system *has*, it is someth
 
 **Key accountability owner:** whoever authorizes the scope of action — typically the system owner, and for high-risk systems under the EU AI Act, a named natural person assigned oversight. Not the builder, and never the system.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

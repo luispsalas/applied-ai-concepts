@@ -82,7 +82,7 @@ One risk deserves specific mention. Hidden instructions can be embedded in an im
 
 **Key accountability owner:** the system owner, with the specific duty of confirming that **each accepted modality is covered by the controls designed for text** — because the failure mode here is not a missing control, it is a control that exists and silently covers only one input type.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

@@ -56,7 +56,7 @@ Not all AI is the same kind of thing. A spam filter, a chatbot, and an agent tha
 
 **Key accountability owner:** the AI governance function.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

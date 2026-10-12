@@ -65,7 +65,7 @@ Three implications:
 
 **Key accountability owner:** System auditor — the role responsible for defining what observable evidence is captured at the harness layer to enable accountability in the absence of model-internal transparency.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

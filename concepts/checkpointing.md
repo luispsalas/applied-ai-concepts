@@ -99,7 +99,7 @@ Two more things people are surprised by.
 
 **Key accountability owner:** the owner of the process being checkpointed — because the decision that actually matters is where the rollback boundary falls, and that is a design and risk decision about the process, not a storage decision for the platform team.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

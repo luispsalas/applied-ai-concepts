@@ -53,7 +53,7 @@ Privacy asks: what personal information does this AI system touch, and what happ
 
 **Key accountability owner:** the privacy officer, with the system owner for AI-specific implementation.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

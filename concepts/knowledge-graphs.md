@@ -93,7 +93,7 @@ The catch: a graph will confidently keep telling you something long after it sto
 
 **Key accountability owner:** the owner of the underlying business facts — supplier relationships, contract terms, org structure — not the team that built the graph, because staleness is a domain fact going out of date, and only that owner will notice.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

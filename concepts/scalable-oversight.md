@@ -89,7 +89,7 @@ So the honest summary: using AI to *help you* review is often genuinely useful. 
 
 **Key accountability owner:** whoever owns the control that automated review is standing in for — because the failure mode is a *substitution* nobody approved: a human checkpoint replaced by a model, with the control's owner unchanged and unaware.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

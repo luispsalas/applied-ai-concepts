@@ -86,7 +86,7 @@ And there is a harm that needs no fake at all. Once everyone knows convincing fa
 
 **Key accountability owner:** security and fraud prevention for the authentication exposure — which is where the measurable harm concentrates — with communications owning the response to fabricated content about the organization. **Not the AI team**, which owns neither the trust path nor the response.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

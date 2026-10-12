@@ -69,7 +69,7 @@ Ask a model a question, get an answer, then push back — and it will often fold
 
 **Key accountability owner:** the system owner, jointly with whoever designed the workflow that consumes the model's judgment.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

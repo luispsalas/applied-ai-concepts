@@ -76,7 +76,7 @@ None of this makes the models unusable. It means that when a model is unreliable
 
 **Key accountability owner:** for third-party models, whoever owns model selection — because "we do not know what it was trained on" is a decision to accept a risk, and it should be made by someone with authority to accept it. For internal fine-tuning, the data owner, with the same duties as any training set.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

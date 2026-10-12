@@ -94,7 +94,7 @@ So the real controls sit somewhere less satisfying: who is allowed to use it, un
 
 **Key accountability owner:** whoever authorizes release — because dual use cannot be delegated to the people building the capability, whose job is to make it work, and the only point where the misuse case can still be acted on is before it is available.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

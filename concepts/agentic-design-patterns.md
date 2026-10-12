@@ -97,7 +97,7 @@ One more thing worth hearing, because it cuts against what vendors say: the stro
 
 **Key accountability owner:** whoever chose the architecture — because the pattern decides where refusal can happen, and it is normally selected on engineering grounds by someone who was never asked where accountability should sit.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

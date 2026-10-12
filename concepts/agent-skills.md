@@ -91,7 +91,7 @@ Worse, researchers showed that the *description* is what an agent uses to decide
 
 **Key accountability owner:** whoever approves software dependencies — because a skill is functionally a dependency that executes, and it is currently being adopted through documentation and prompt-engineering channels where no dependency review exists.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

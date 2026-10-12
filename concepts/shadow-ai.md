@@ -80,7 +80,7 @@ The consequence for governance is uncomfortable. Every policy an organization ha
 
 **Key accountability owner:** the AI governance owner for the program, but the practical lever sits with whoever owns the **sanctioned toolset** — because supply, not enforcement, is what determines the size of the shadow.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

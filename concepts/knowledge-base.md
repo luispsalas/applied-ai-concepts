@@ -53,7 +53,7 @@ A knowledge base is the reference library you give the AI — the documents it c
 
 **Key accountability owner:** the data steward / knowledge manager.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

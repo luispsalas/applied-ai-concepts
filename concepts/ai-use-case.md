@@ -55,7 +55,7 @@ An AI use case is the specific job you're asking AI to do — "summarize custome
 
 **Key accountability owner:** the product/business owner, with AI governance sign-off.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

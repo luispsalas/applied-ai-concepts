@@ -71,7 +71,7 @@ Most organizations say they use AI responsibly. ISO 42001 is the standard that l
 
 **Key accountability owner:** top management, which the standard makes explicit — leadership commitment is a clause requirement, not a courtesy.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

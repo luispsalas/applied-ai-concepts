@@ -53,7 +53,7 @@ Memory is what the AI keeps: what it holds during one conversation, what carries
 
 **Key accountability owner:** the system owner, with privacy officer sign-off.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

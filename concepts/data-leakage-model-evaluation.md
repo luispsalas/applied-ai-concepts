@@ -82,7 +82,7 @@ With today's large models there is a newer version: they were trained on huge am
 
 **Key accountability owner:** whoever signs off that a system is fit to deploy — because leakage is invisible in the metric they are being shown, and the only defense is demanding to know how the number was produced.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

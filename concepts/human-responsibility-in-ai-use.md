@@ -70,7 +70,7 @@ Three things practitioners need to understand:
 
 **Key accountability owner:** AI decision owner — the named role accountable for the decisions made with a specific AI system's assistance, with the oversight capacity to remain genuinely responsible for outcomes.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

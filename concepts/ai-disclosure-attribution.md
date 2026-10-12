@@ -91,7 +91,7 @@ The practical difficulty is degree. A disclosure that does not say *how much* te
 
 **Key accountability owner:** whoever owns publication or delivery of the work, since disclosure attaches to the output rather than to the system. The Art. 50 marking duty is a separate obligation with a separate owner and does not transfer here.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

@@ -95,7 +95,7 @@ Two traps worth knowing:
 
 **Key accountability owner:** whoever signs the customer-facing commitment — because the gap between a quality *objective* measured on a proxy and a quality *agreement* enforced by contract is where an unmeasurable property quietly becomes an obligation.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

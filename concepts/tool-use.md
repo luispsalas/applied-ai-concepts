@@ -66,7 +66,7 @@ On its own, a model can only produce text. Tools are how it does things — look
 
 **Key accountability owner:** the system owner, jointly with whoever owns the underlying system each tool touches.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

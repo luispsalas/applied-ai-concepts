@@ -86,7 +86,7 @@ Sometimes a system produces output that reliably leaves people believing somethi
 
 **Key accountability owner:** the system owner, jointly with whoever sets the objective the system is optimized against — because the objective is where this originates.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

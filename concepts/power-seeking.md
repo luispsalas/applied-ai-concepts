@@ -82,7 +82,7 @@ In practice today this is unglamorous. An agent asks for wider database access t
 
 **Key accountability owner:** whoever authorizes the system's scope of action — the same owner as the [permission model](permission-model-ai.md), because in practice this is that decision viewed from the risk side.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

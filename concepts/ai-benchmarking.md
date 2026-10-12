@@ -85,7 +85,7 @@ So what are they good for? Comparing specific systems on a specific task under s
 
 **Key accountability owner:** whoever signs the procurement or model-selection decision — because a benchmark score is evidence offered in support of a decision, and the burden of establishing that it measures the right thing sits with the person relying on it, not with the party publishing it.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

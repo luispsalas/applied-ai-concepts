@@ -87,7 +87,7 @@ None of which means being accountable for a system you work inside is wrong. It 
 
 **Key accountability owner:** the person who *assigned* the oversight role, not the person occupying it — because the crumple zone is created at assignment, when responsibility is allocated without the conditions that make it dischargeable.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

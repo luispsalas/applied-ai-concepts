@@ -65,7 +65,7 @@ A jailbreak is talking a model into something it was trained to refuse — with 
 
 **Key accountability owner:** the system owner, with the security function.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

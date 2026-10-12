@@ -84,7 +84,7 @@ And it cuts a third way. When someone reviews AI output and says "this is wrong,
 
 **Key accountability owner:** the process or function owner, not the AI team — because the knowledge in question is theirs, its absence is invisible from outside the function, and no one else is positioned to notice that what the system was given is not what the work actually requires.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

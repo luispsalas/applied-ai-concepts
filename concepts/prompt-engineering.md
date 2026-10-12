@@ -70,7 +70,7 @@ That said, prompt engineering is a genuine high-leverage skill at the practition
 
 **Key accountability owner:** System prompt owner — the role responsible for authoring, versioning, and reviewing the baseline instructions that govern model behavior in production.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

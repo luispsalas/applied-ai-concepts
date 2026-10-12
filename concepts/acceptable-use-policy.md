@@ -86,7 +86,7 @@ Last thing, and it matters: **a policy is not a control.** It states intent and 
 
 **Key accountability owner:** whoever owns the vendor relationship — because the provider's AUP is the half of this that changes without notice, and the half nobody is usually watching.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

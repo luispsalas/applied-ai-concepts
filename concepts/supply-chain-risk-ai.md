@@ -86,7 +86,7 @@ So you are inheriting two things at once: risk you cannot inspect, and possibly 
 
 **Key accountability owner:** whoever signs the deployment into production — because Article 25 attaches to acts (branding, modifying, repurposing) that are usually taken as engineering or product decisions, and the obligation arrives whether or not anyone noticed the threshold.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

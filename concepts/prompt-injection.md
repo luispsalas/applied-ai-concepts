@@ -53,7 +53,7 @@ Prompt injection is a trick where someone hides instructions inside text an AI r
 
 **Key accountability owner:** the harness/security owner.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

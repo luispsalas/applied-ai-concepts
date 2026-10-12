@@ -86,7 +86,7 @@ So the honest summary: edge AI is often the right choice, and it trades one kind
 
 **Key accountability owner:** whoever owns the device fleet and its update channel — because on the edge, the ability to fix, withdraw, or even observe the system is a property of fleet management, and it usually sits with a team that was never told it now owns an AI control.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

@@ -86,7 +86,7 @@ Finally, the part that is not technical at all: this work is often contracted ou
 
 **Key accountability owner:** whoever owns the dataset or benchmark — because the labeling guideline is where the organization's definition of "correct" is actually written, and it is usually authored by whoever had the task rather than by whoever owns the consequence.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

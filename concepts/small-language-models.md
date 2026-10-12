@@ -64,7 +64,7 @@ Not every job needs the biggest model. A lot of what AI systems do all day is sm
 
 **Key accountability owner:** the system owner — and, for self-hosted deployments, whoever owns the infrastructure it runs on.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

@@ -72,7 +72,7 @@ Three things practitioners need to understand:
 
 **Key accountability owner:** Knowledge base owner — the role responsible for the quality, currency, and access controls of the document corpus the retrieval system draws from.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

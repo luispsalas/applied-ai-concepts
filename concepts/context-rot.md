@@ -94,7 +94,7 @@ One caution about the name. Nothing is actually rotting. The model is not forget
 
 **Key accountability owner:** whoever owns the evaluation — because the defining property of this failure is that it produces confident, well-formed, wrong output with no operational signal, so the only place it can be caught is in a test designed to look for it.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

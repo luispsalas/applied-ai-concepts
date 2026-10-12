@@ -84,7 +84,7 @@ Now the catch, and it is a real one. **A chain does not check itself.** If step 
 
 **Key accountability owner:** whoever owns the workflow's output — because decomposition distributes the work across steps while leaving responsibility for the result undivided, and only retained intermediates make that responsibility discharge-able.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

@@ -84,7 +84,7 @@ One more, and it matters when someone promises a fair system: **you generally ca
 
 **Key accountability owner:** whoever owns the consequence of the errors — not the team that set the threshold, unless those are deliberately the same people. **Where they differ, the threshold has been delegated to someone who does not experience being wrong.**
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

@@ -74,7 +74,7 @@ Verification is the step where you find out: run the code instead of reading it,
 
 **Key accountability owner:** the person who acts on the output. Verification is the operational form of [human responsibility](human-responsibility-in-ai-use.md), which does not transfer to the system — but the *organization* owns making it affordable, and an unaffordable check is an unperformed one.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

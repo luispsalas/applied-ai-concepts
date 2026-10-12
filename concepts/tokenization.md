@@ -89,7 +89,7 @@ It also explains a famous embarrassment. When a model miscounts the letters in a
 
 **Key accountability owner:** whoever owns the commercial and capacity forecast for the service — because the disparity lands as a budget and fairness outcome, not as a technical defect anyone will file.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

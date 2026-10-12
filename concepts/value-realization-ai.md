@@ -91,7 +91,7 @@ And watch what gets counted. Prompts sent and licenses bought measure usage. The
 
 **Key accountability owner:** the business owner of the process the system serves — **not the AI team**, which owns whether the system works and cannot own whether the organization changed around it. This split is the single most useful thing to make explicit, because in most organizations neither party currently owns the gap.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

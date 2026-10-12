@@ -83,7 +83,7 @@ That is the part worth remembering. You are not warned. The model still looks li
 
 **Key accountability owner:** whoever fine-tunes becomes the model owner — not the provider, and not the person who approved the base model. That transfer is the thing to make explicit, because it happens by default and is almost never stated.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

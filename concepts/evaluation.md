@@ -82,7 +82,7 @@ Three things practitioners need to understand:
 
 **Key accountability owner:** Evaluation owner — the role responsible for defining performance criteria, commissioning pre-deployment testing, and maintaining the production monitoring signal for each AI system.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

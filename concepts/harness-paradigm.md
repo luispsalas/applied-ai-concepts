@@ -82,7 +82,7 @@ Four implications:
 
 **Key accountability owner:** Harness owner — the role or team responsible for configuring, versioning, and reviewing the control layer that sits between the model and the world.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

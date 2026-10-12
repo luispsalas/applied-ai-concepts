@@ -66,7 +66,7 @@ Agents represent a qualitative shift in what AI systems do — from generating t
 
 **Key accountability owner:** Agent owner — the role responsible for the agent's permission model, HITL checkpoint design, and the harness configuration that mediates between the agent and the world.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

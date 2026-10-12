@@ -88,7 +88,7 @@ That is not an argument against the technique, which genuinely produces better p
 
 **Key accountability owner:** whoever owns the system's behavior in production — because a generated prompt moves the instruction layer out of review by default, and only a deliberate pin-and-review step puts it back.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

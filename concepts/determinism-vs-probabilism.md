@@ -53,7 +53,7 @@ Give a calculator "2+2" and you get "4" every time — that is deterministic. As
 
 **Key accountability owner:** the system owner, with the evaluation owner for reliability measurement.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

@@ -52,7 +52,7 @@ A large language model is the engine behind tools like ChatGPT and Claude. It wa
 
 **Key accountability owner:** the system owner who selects and deploys the model.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

@@ -108,7 +108,7 @@ Finally, the thing that makes this different from every other control: **most go
 
 **Key accountability owner:** the board, or the highest body not operationally responsible for the products being reported on — because a channel owned by the people it might implicate is not a channel, and this is the one control whose whole purpose is to work when management is the problem.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

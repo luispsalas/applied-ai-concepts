@@ -86,7 +86,7 @@ What you *can* control is what you add: the examples you fine-tune on, the docum
 
 **Key accountability owner:** whoever approves the data a model learns or retrieves from — because unlike most security decisions this one is made once, upstream, by people who may never see the deployed system, and no downstream control reaches back to it.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

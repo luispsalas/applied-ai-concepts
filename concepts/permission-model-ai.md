@@ -67,7 +67,7 @@ Before an AI system can act, someone has to decide what it may do by itself, wha
 
 **Key accountability owner:** the system owner, jointly with the owner of each system the AI is permitted to touch.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

@@ -53,7 +53,7 @@ Guardrails are the fences around an AI system: rules that check what goes in and
 
 **Key accountability owner:** platform/security engineering, with governance sign-off.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

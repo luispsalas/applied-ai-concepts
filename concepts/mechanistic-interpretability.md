@@ -82,7 +82,7 @@ The honest limit is that nobody has a full explanation of any deployed model, an
 
 **Key accountability owner:** whoever signs off that a model is understood well enough to deploy — because that sign-off is routinely supported by explanations the model generated about itself, and this is the field that exists to say why that is not sufficient.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

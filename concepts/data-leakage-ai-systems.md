@@ -66,7 +66,7 @@ Sometimes a model repeats things it shouldn't: fragments memorized from its trai
 
 **Key accountability owner:** the data owner, jointly with the system owner and (where personal data is involved) the privacy function.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

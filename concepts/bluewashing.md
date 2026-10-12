@@ -88,7 +88,7 @@ There is a second, subtler failure that comes from over-correcting. Concluding t
 
 **Key accountability owner:** whoever signs off external claims about AI practice — usually communications or legal — held jointly with the governance owner, because the failure is a mismatch between two functions that rarely check each other.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

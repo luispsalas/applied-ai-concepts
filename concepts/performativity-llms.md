@@ -86,7 +86,7 @@ What is worth worrying about here is not any one conversation. It is the aggrega
 
 **Key accountability owner:** whoever owns the organization's language and knowledge assets — communications, editorial, or knowledge management — because this is a slow drift in institutional voice and vocabulary, and it will not appear as an incident, a metric, or anything an AI risk owner is looking for.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

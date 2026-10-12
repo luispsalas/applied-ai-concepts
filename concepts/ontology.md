@@ -90,7 +90,7 @@ The honest catch: ontologies are hard to change once anything depends on them. S
 
 **Key accountability owner:** whoever owns the domain the ontology describes — because the class list is a claim about what exists in that domain and what may be said about it, and it is routinely written by people who were never asked to make that call and would not have accepted it if asked.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

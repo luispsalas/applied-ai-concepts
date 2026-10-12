@@ -78,7 +78,7 @@ The third is judgment about when to rely on it at all — which tasks it does we
 
 **Key accountability owner:** whoever owns the AI literacy or enablement program — with the system owner accountable for stating what the deployment is fit for, since trust cannot be calibrated against an unstated purpose.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

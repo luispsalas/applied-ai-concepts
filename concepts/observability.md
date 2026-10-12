@@ -74,7 +74,7 @@ Three implications:
 
 **Key accountability owner:** Observability owner — the role responsible for defining what is logged, ensuring logs are structured for audit review, and maintaining the telemetry infrastructure that makes AI system behavior accountable.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

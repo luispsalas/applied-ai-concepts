@@ -91,7 +91,7 @@ The part that gives it teeth is unglamorous: you have to say what happens when s
 
 **Key accountability owner:** the deployer's system owner, jointly with whoever owns fundamental-rights or compliance obligations — and, because the assessment concerns people outside the organization, it should be reviewable by someone who does not own the system's success.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

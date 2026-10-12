@@ -81,7 +81,7 @@ Most models answer immediately, like someone blurting out the first thing that c
 
 **Key accountability owner:** the system owner, jointly with whoever controls model configuration and inference budget.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

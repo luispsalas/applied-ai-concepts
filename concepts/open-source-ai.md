@@ -101,7 +101,7 @@ The useful question is never "is it open source?" It is **"which of these specif
 
 **Key accountability owner:** whoever signs the compliance or procurement determination. The label is what triggers different treatment and the marketing claim arrives upstream of them, so they are the last person positioned to ask which elements were actually granted before an obligation is assumed or waived.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

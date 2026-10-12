@@ -92,7 +92,7 @@ Two things about this number are worth knowing, and both are routinely got wrong
 
 **Key accountability owner:** whoever signs off the evaluation — because the agreement figure is what makes an evaluation result a measurement rather than an assertion, and the decision to publish a score without it is made at sign-off, not by the people doing the rating.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

@@ -115,7 +115,7 @@ Worth knowing, finally, that this is not a new AI problem with a new AI answer. 
 
 **Key accountability owner:** whoever publishes the figure — because the generation step is invisible by the time a number reaches a slide, and the person presenting it is the last one able to say that a model, not a measurement, produced it.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

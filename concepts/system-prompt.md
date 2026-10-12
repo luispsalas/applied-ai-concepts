@@ -53,7 +53,7 @@ Before you type anything, the AI has usually already been given a set of instruc
 
 **Key accountability owner:** the harness/system owner.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

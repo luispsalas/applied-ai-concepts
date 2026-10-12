@@ -88,7 +88,7 @@ Now the honest part. If you use AI through somebody else's service, **you almost
 
 **Key accountability owner:** whoever signs the organization's sustainability disclosure — because they are accountable for a figure the AI supply chain does not currently give them the data to produce, and the honest response to that is a stated limitation rather than a confident estimate.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

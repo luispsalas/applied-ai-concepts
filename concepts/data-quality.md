@@ -73,7 +73,7 @@ Three implications:
 
 **Key accountability owner:** Data quality owner — the role responsible for defining quality standards relative to the AI use case, monitoring quality signals over time, and authorizing data as fit for use in AI systems.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

@@ -75,7 +75,7 @@ Getting an AI system to work in a demo is the easy part. Running it is the commi
 
 **Key accountability owner:** the system owner, with the accountable executive who authorizes deployment.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

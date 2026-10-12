@@ -80,7 +80,7 @@ One more thing worth knowing: none of this works equally well in every language.
 
 **Key accountability owner:** whoever owns the system's quality metrics — because the risk here is not that a step performs badly, but that it stopped being measured when it stopped being a separate component.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

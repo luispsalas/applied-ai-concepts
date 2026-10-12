@@ -88,7 +88,7 @@ Two limits to remember. This is about the **provider** putting a system on the m
 
 **Key accountability owner:** the provider placing the system on the market — and, where an organization rebrands or substantially modifies someone else's system, that organization, which may not realize the obligation has moved to it.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

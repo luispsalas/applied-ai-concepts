@@ -86,7 +86,7 @@ But the failure that actually causes harm is quieter. When volume rises, human r
 
 **Key accountability owner:** the system owner, jointly with whoever owns the review capacity — because the failure is a mismatch between two things that are usually owned by different people and never compared.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

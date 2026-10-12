@@ -103,7 +103,7 @@ Finally: the schema is a contract, not a config detail. Everything downstream de
 
 **Key accountability owner:** whoever owns the schema — because the schema decides what the system is permitted to say, including whether it can say "I do not know," and that is a design decision with consequences no downstream consumer can undo.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

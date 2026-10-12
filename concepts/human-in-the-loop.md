@@ -70,7 +70,7 @@ A practical tension: human review does not scale at the same rate as AI throughp
 
 **Key accountability owner:** Review role owner — the specific function authorized to approve, modify, or reject AI outputs at each defined checkpoint.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

@@ -73,7 +73,7 @@ Four letters against every task: who does it, who answers for it, who gets asked
 
 **Key accountability owner:** whoever owns the governance framework — and, recursively, someone must be accountable for the matrix itself being current.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

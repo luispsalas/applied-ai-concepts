@@ -84,7 +84,7 @@ Which is exactly why it is worth knowing about. A small number of people, follow
 
 **Key accountability owner:** whoever owns model selection, for vendor-trained behavior — and for any in-house preference tuning, whoever signs off the rater guidelines, since that document *is* the objective the model gets optimized against.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

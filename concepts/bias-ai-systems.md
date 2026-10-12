@@ -64,7 +64,7 @@ You usually can't see bias by looking at one decision. It hides in the pattern a
 
 **Key accountability owner:** the model/decision owner is accountable for bias measurement and the fairness-definition choice — it cannot be delegated to the tool or the vendor.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

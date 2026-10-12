@@ -106,7 +106,7 @@ Two further things worth knowing.
 
 **Key accountability owner:** whoever commissions the audit — because the commissioner sets access, scope and publication rights, and those three decisions determine the audit's value before any auditing happens.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

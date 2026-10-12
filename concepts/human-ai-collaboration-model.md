@@ -68,7 +68,7 @@ Most teams never actually decide who does what when a person and an AI system sh
 
 **Key accountability owner:** the process owner for the workflow, jointly with the system owner.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

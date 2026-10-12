@@ -80,7 +80,7 @@ Three implications:
 
 **Key accountability owner:** Knowledge base owner — the role responsible for maintaining synthesis cadence, enforcing the schema, and ensuring that entries reflect current understanding rather than historical accumulation.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

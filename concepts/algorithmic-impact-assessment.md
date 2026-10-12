@@ -86,7 +86,7 @@ Two ways this goes wrong, both common and both leaving the paperwork intact. Doi
 
 **Key accountability owner:** the business owner deploying the system, not the assessment's author — the questionnaire produces obligations, and someone with authority over the deployment has to accept them for the instrument to bind anything.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

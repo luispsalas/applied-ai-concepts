@@ -74,7 +74,7 @@ Accountability is the governance concept that most often fails silently. Three t
 
 **Key accountability owner:** AI accountability owner — the named role responsible for explaining and justifying the behavior and outputs of a specific AI system to its designated oversight forum.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

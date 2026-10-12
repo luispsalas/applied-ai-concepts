@@ -51,7 +51,7 @@ The domain is the world the AI works in — medicine, law, music, finance. The s
 
 **Key accountability owner:** the domain lead / subject-matter expert.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

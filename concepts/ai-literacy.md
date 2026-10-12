@@ -75,7 +75,7 @@ Three things practitioners need to understand:
 
 **Key accountability owner:** AI literacy owner — the role (individual or function) responsible for defining organizational literacy requirements, designing and delivering programs, and maintaining the capability as AI systems and regulatory context evolve.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

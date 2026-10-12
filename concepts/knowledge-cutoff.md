@@ -68,7 +68,7 @@ A model learned from a snapshot of the world that ends on a particular date. Ask
 
 **Key accountability owner:** the system owner, with the data owner for whatever supplies current information.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

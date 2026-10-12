@@ -53,7 +53,7 @@ The context window is how much text an AI can "hold in mind" at once — your co
 
 **Key accountability owner:** the harness/context owner.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

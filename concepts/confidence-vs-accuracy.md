@@ -67,7 +67,7 @@ An AI system sounding certain tells you nothing about whether it is right. The c
 
 **Key accountability owner:** the system owner, jointly with whoever designs the interface where confidence is presented.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

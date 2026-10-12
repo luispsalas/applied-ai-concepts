@@ -87,7 +87,7 @@ Two things are worth understanding about what they can actually tell you. A vali
 
 **Key accountability owner:** for generated content, whoever owns the publishing pipeline — because the failure is usually stripping in transit rather than a mark never applied. The Art. 50(4) deployer disclosure duty needs its own named owner and does not transfer to the model provider.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

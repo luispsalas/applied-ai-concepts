@@ -86,7 +86,7 @@ The word itself is a moving target. Whatever counts as frontier today will be or
 
 **Medium.** The defining properties are well argued and widely adopted, and the influence on subsequent regulation is traceable. **Three caveats worth stating.** The foundational source is a preprint and explicitly advocacy — it argues for a regulatory approach, and several authors are affiliated with frontier labs, which is a genuine interest in where the boundary is drawn. **The category has no agreed measurement**; compute thresholds are administrative proxies, and capability benchmarks are the very instruments the category exists because we do not trust. And the term is definitionally unstable — this entry is written to be about the properties precisely because anything written about the membership will date fast.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

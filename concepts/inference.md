@@ -80,7 +80,7 @@ Two things surprise people. First, the same question can produce different answe
 
 **Key accountability owner:** whoever owns the serving budget — because per-request cost, latency and retry policy are all set there, and each is a quality and governance decision arriving disguised as an infrastructure one.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

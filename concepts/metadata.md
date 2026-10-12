@@ -88,7 +88,7 @@ None of this makes metadata bad. It makes it a claim, and the useful habit is to
 
 **Key accountability owner:** whoever owns the decision that reads the metadata — because metadata is usually produced by someone else, often upstream and out of reach, and the only party positioned to decide how far to trust it is the one about to act on it.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

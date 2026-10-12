@@ -96,7 +96,7 @@ None of this is an argument against quantization. It is an argument for treating
 
 **Key accountability owner:** whoever approved the deployment — because quantization is usually performed downstream as an infrastructure optimization, by people whose remit is cost and latency, while the assurance being invalidated belongs to whoever signed off the model.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

@@ -97,7 +97,7 @@ One more thing worth knowing, because it is the most common way a real guarantee
 
 **Key accountability owner:** whoever owns the data being protected — because ε is a decision about acceptable risk to the people in that data, and it is the one parameter in this entire mechanism that no mathematician can choose for you.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

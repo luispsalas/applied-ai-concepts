@@ -76,7 +76,7 @@ Ask a model something it half-knows and you will usually get a clean, complete-s
 
 **Key accountability owner:** the system owner, jointly with whoever designs the interface — because an interface with no way to express doubt guarantees this outcome regardless of the model.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

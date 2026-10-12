@@ -68,7 +68,7 @@ The most dangerous failures are the quiet ones: the system keeps running and loo
 
 **Key accountability owner:** the system/agent owner is accountable for failure-mode enumeration and the control mapping; per-mode detection cannot be left implicit.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

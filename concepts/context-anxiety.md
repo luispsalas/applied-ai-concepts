@@ -91,7 +91,7 @@ And the name is doing something questionable. Calling it anxiety makes it memora
 
 **Key accountability owner:** whoever accepts the output of a long-running task — because the failure is indistinguishable from success at the point of delivery, and the only place it can be caught is a completion check that does not rely on the system's own report.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

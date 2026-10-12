@@ -85,7 +85,7 @@ Two consequences do most of the work in practice.
 
 **Key accountability owner:** whoever owns vendor and third-party risk for the system — because pre-training decisions are made entirely outside the deploying organization, and the only available control point is the procurement and disclosure relationship.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

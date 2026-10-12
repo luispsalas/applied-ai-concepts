@@ -82,7 +82,7 @@ The uncomfortable part is that this is not a mistake you can avoid by writing a 
 
 **Key accountability owner:** whoever sets the objective — not whoever builds the system. This originates in the specification, so the person who chose the metric owns the gap between it and the intent.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

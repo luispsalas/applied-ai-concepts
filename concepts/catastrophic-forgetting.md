@@ -86,7 +86,7 @@ Two things are counterintuitive and worth knowing.
 
 **Key accountability owner:** whoever approves a model change into production — because the evidence they are shown is almost always about the intended improvement, and the question that goes unasked is what else moved.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

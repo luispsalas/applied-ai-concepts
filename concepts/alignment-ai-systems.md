@@ -81,7 +81,7 @@ Two things make it harder than ordinary miscommunication. First, you often canno
 
 **Key accountability owner:** whoever defines the deployment's intended behavior — the same owner as the use case. Alignment cannot be delegated to the model provider, because they aligned to their intent, not yours.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

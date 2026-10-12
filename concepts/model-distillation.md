@@ -89,7 +89,7 @@ Three things follow, and they are the reasons this is a governance topic and not
 
 **Key accountability owner:** whoever puts the distilled model into use under the organization's name — because both the licensing exposure and the untested-student risk attach to the deploying party, not to whoever ran the training job.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

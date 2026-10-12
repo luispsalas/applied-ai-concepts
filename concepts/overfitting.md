@@ -88,7 +88,7 @@ The thing to carry away: **a published accuracy figure is a measurement on one p
 
 **Key accountability owner:** whoever signs off that a model is fit for its intended use — because that judgment is a claim about *unseen* data, and the only evidence for it is a gap measured on data the model genuinely never saw.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

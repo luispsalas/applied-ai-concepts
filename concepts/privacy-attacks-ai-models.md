@@ -94,7 +94,7 @@ And for language models the line is genuinely blurry. Getting training data out 
 
 **Key accountability owner:** whoever approves the model's exposure — because the decision that creates this risk is the decision to publish an interface, and it is usually taken as a product or integration call rather than a privacy one.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

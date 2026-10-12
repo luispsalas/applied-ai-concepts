@@ -83,7 +83,7 @@ There is a trap worth naming too. If you improve the system using data the syste
 
 **Key accountability owner:** the system owner as an operating asset — deliberately *not* the delivery team, whose mandate ends at launch and whose disappearance is precisely how the loop goes quiet.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

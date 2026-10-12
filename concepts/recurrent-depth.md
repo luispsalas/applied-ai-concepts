@@ -84,7 +84,7 @@ That is not an argument against the technique — it is faster and cheaper, and 
 
 **Key accountability owner:** whoever owns the model-selection decision — because whether reasoning is emitted or latent is fixed by the architecture chosen, is rarely stated in procurement, and silently determines which oversight controls remain available for the system's lifetime.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

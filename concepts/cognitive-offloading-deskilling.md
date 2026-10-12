@@ -85,7 +85,7 @@ The useful question is not whether to use these tools. It is which skills your o
 
 **Key accountability owner:** whoever owns capability and training, jointly with the system owner — because the risk lands on the *organization's* ability to oversee, not on any single system, and neither owner sees it alone.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

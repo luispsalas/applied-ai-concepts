@@ -83,7 +83,7 @@ The second is more flexible and much harder to govern, and it is reached for far
 
 **Key accountability owner:** the system owner, who owns the *composition* — because every individual component can be sound while the assembled behavior is not, and no component owner is accountable for the sequence.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

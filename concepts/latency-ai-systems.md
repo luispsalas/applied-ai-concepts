@@ -88,7 +88,7 @@ The part worth carrying into a decision: **speed competes with checks.** A revie
 
 **Key accountability owner:** whoever owns the user experience — because latency pressure is felt there first, and the fastest thing to remove is always a check whose absence nobody sees.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

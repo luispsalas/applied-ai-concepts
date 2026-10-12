@@ -86,7 +86,7 @@ There is a cost, and it deserves saying plainly. Once everything goes through on
 
 **Key accountability owner:** whoever is answerable for AI policy across the organization — because the gateway is the only place their policy can actually take effect, and it is almost always owned by a platform team scoped to keep it running rather than to decide what it permits.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

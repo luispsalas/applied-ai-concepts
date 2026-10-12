@@ -66,7 +66,7 @@ Ownership is more often assumed than assigned. Naming an owner forces three thin
 
 **Key accountability owner:** System owner — the single named role accountable for an AI system's governance posture across its full lifecycle (intake, approval, monitoring, decommissioning); responsible for integrating data, model-risk, legal, security, and business concerns and for ensuring a clear RACI assignment exists.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

@@ -91,7 +91,7 @@ And the attachment points vary enormously between frameworks — one offers two,
 
 **Key accountability owner:** whoever signs the statement that the system has controls — because that statement is, underneath, a claim that specific code can refuse specific actions, and it is routinely made about handlers that are structurally incapable of refusing anything.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

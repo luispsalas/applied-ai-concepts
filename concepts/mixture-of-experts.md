@@ -85,7 +85,7 @@ Finally, a caution about the word *expert*. It suggests a panel of specialists �
 
 **Key accountability owner:** whoever signs off model selection or capacity planning — because both decisions usually rest on a size figure, and for a sparse model that figure means two different things depending on which one was quoted.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

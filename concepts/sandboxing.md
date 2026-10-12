@@ -95,7 +95,7 @@ Two honest caveats. A sandbox limits damage; it does not make the system right �
 
 **Key accountability owner:** whoever owns the credentials and network scope the agent runs with — because the boundary is defined by what was granted, and grants are made by people who are frequently not the ones running the agent.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

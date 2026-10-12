@@ -60,7 +60,7 @@ The catch with modern AI: a system can produce a confident, fluent explanation t
 
 **Key accountability owner:** the decision owner is accountable for producing faithful, audience-appropriate explanations; explainability tooling supports this duty but does not discharge it.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

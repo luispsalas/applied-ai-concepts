@@ -112,7 +112,7 @@ And there is a limit underneath all of it. Agreeing with people is not the same 
 
 **Key accountability owner:** whoever owns the evaluation evidence for the system — because a judge is an instrument, and the person relying on a measurement owns the question of whether the instrument is calibrated.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

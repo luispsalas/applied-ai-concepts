@@ -88,7 +88,7 @@ And the burden is not spread evenly. The people who get refused are disproportio
 
 **Key accountability owner:** whoever sets the refusal threshold — because it is a single decision that allocates error between two populations, one of which files incident reports and one of which silently gives up, and only an explicit owner will weigh the side that does not complain.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

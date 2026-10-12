@@ -88,7 +88,7 @@ The practical point is not that updates are bad. It is that **your testing has a
 
 **Key accountability owner:** the system owner for the pin and the regression set; **jointly with whoever holds the compliance artifacts**, because the failure mode is a technically-managed update silently invalidating a governance record nobody re-checked.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

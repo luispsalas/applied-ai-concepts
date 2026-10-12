@@ -89,7 +89,7 @@ Treated as a prediction, this is an argument nobody can win. Treated as a questi
 
 **Key accountability owner:** whoever approves changes to the training and deployment pipeline — because the tractable version of this risk is not a system waking up, it is a **loop closing without anyone deciding it should.**
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

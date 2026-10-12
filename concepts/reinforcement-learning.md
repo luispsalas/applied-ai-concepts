@@ -80,7 +80,7 @@ Anyone who has run an organization on targets already knows this shape. Reward c
 
 **Key accountability owner:** whoever signs off the reward specification or the preference-collection protocol — because that document, and not the model architecture, is where the system's actual objective is set, and it is routinely written by people with no mandate to set organizational intent.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

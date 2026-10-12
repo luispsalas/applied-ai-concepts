@@ -76,7 +76,7 @@ Something that talks like a person feels like a person, and that reaction happen
 
 **Key accountability owner:** the product or system owner, jointly with whoever designs the interaction — because persona is a design decision with a trust consequence.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

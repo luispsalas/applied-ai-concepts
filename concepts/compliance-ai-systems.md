@@ -76,7 +76,7 @@ Three things practitioners need to understand:
 
 **Key accountability owner:** Compliance owner — the role responsible for mapping regulatory obligations to the AI system inventory, maintaining evidence of compliance, and escalating when obligations are not met.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

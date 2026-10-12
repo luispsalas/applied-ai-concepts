@@ -62,7 +62,7 @@ Context engineering is also where governance enters. Decisions about what contex
 
 **Key accountability owner:** Context owner — the role responsible for defining what information the model is given access to, in what form, and under what access controls.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

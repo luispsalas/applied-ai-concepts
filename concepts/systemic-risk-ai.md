@@ -76,7 +76,7 @@ Outside the legal sense, the phrase describes something the law does not cover a
 
 **Key accountability owner:** for a model provider, the party carrying Art. 55 duties. **For everyone else — which is almost everyone — this belongs with whoever owns third-party and continuity risk**, not with the AI team, because the exposure is a supplier-dependency question wearing AI vocabulary.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 

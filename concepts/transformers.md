@@ -82,7 +82,7 @@ One thing worth knowing that rarely gets said: because nearly everything is buil
 
 **Key accountability owner:** whoever maintains the AI system inventory — because homogenization only becomes visible when someone can say which systems share a foundation, and that question is almost never asked at purchase time, when each decision still looks independent.
 
-*→ [Governance & Observability Notes](../notes/governance-and-observability.md) — observability signals and cross-cutting accountability checklist.*
+*→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
 ---
 
