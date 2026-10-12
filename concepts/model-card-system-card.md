@@ -1,6 +1,6 @@
 <!--meta
 category: Observability & Governance
-short: The transparency artifact — a scoping document whose job is to say where *not* to use a model
+short: The transparency artifact, a scoping document whose job is to say where *not* to use a model
 aliases: [model card, system card, model documentation, what does this model do, transparency artifact]
 tags: [Regulatory, Evaluation, Data Governance]
 established: established
@@ -12,21 +12,21 @@ established: established
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
-A standardized document describing a model's capabilities, limitations, training data, and evaluation results — the transparency artifact regulators and users increasingly expect before trusting a system.
+A standardized document describing a model's capabilities, limitations, training data, and evaluation results, the transparency artifact regulators and users increasingly expect before trusting a system.
 
 ---
 
 ## Technical definition
 
-A structured disclosure accompanying a released model. The originating proposal frames the purpose precisely, and the framing is more useful than any template: model cards exist to *"clarify the intended use cases of machine learning models and minimize their usage in contexts for which they are not well suited."* **It is a scoping instrument, not a spec sheet** — its job is to tell you where *not* to use something.
+A structured disclosure accompanying a released model. The originating proposal frames the purpose precisely, and the framing is more useful than any template: model cards exist to *"clarify the intended use cases of machine learning models and minimize their usage in contexts for which they are not well suited."* **It is a scoping instrument, not a spec sheet**. Its job is to tell you where *not* to use something.
 
 **The requirement that makes it do governance work is disaggregated evaluation.** Not a single headline accuracy figure, but performance reported across *"different cultural, demographic, or phenotypic groups"* and intersectional groups. An aggregate number conceals exactly the failures a card exists to surface: a model at 94% overall can be at 71% for one group, and only the disaggregated report shows it. **A card without disaggregation is a marketing document with sections.**
 
-**Model card versus system card.** A *model card* documents the model — capabilities, evaluations, limitations, training data. A *system card* documents the deployed system: the model plus its [guardrails](guardrails-ai-systems.md), retrieval layer, [tools](tool-use.md), [system prompt](system-prompt.md), and human oversight. The distinction matters because **you deploy systems, not models** — the model card describes a component, and most of what determines behavior in production sits outside it.
+**Model card versus system card.** A *model card* documents the model, covering capabilities, evaluations, limitations and training data. A *system card* documents the deployed system: the model plus its [guardrails](guardrails-ai-systems.md), retrieval layer, [tools](tool-use.md), [system prompt](system-prompt.md), and human oversight. The distinction matters because **you deploy systems, not models**. The model card describes a component, and most of what determines behavior in production sits outside it.
 
-**Where it sits in the documentation family.** Datasheets — covered under [Data Provenance / Lineage](data-provenance-lineage.md) — document the *dataset*; model cards document the *model*; system cards document the *deployment*. Same lineage — the same authors are on both foundational papers — and the same underlying argument: a component released without documented operating characteristics puts the burden of discovering them on whoever uses it.
+**Where it sits in the documentation family.** Datasheets (covered under [Data Provenance / Lineage](data-provenance-lineage.md)) document the *dataset*; model cards document the *model*; system cards document the *deployment*. They share a lineage (the same authors are on both foundational papers) and the same underlying argument: a component released without documented operating characteristics puts the burden of discovering them on whoever uses it.
 
-**Increasingly a duty rather than a courtesy.** The EU AI Act requires technical documentation for high-risk systems and a sufficiently detailed summary of training content from general-purpose model providers. The card is the recognized shape that documentation has converged on — but note what regulation obliges is *documentation*, not specifically a model card, and the two are not automatically the same artifact.
+**Increasingly a duty rather than a courtesy.** The EU AI Act requires technical documentation for high-risk systems and a sufficiently detailed summary of training content from general-purpose model providers. The card is the recognized shape that documentation has converged on, but note what regulation obliges is *documentation*, not specifically a model card, and the two are not automatically the same artifact.
 
 ---
 
@@ -34,11 +34,11 @@ A structured disclosure accompanying a released model. The originating proposal 
 
 When a company releases an AI model, a model card is the document that says what it does, how well, on what, and where it should not be used.
 
-The idea came from electronics: a component ships with a datasheet giving its operating range and test results, so an engineer can tell whether it suits the job. A model card is that, for a model — and the most valuable part is the same part. It is the limits section, not the capabilities section.
+The idea came from electronics: a component ships with a datasheet giving its operating range and test results, so an engineer can tell whether it suits the job. A model card is that, for a model, and the most valuable part is the same part. It is the limits section, not the capabilities section.
 
 The single feature that separates a real card from a brochure is whether performance is broken down by group. "94% accurate" can hide being much worse for one set of people, and only a card that reports the breakdown will show you.
 
-There is also a distinction worth holding onto. A model card describes the model. A *system card* describes what you actually deploy — the model plus the filters, the retrieval, the instructions, the human review. You never deploy a bare model, so the model card is only ever part of the picture.
+There is also a distinction worth holding onto. A model card describes the model. A *system card* describes what you actually deploy, meaning the model plus the filters, the retrieval, the instructions and the human review. You never deploy a bare model, so the model card is only ever part of the picture.
 
 ---
 
@@ -46,10 +46,10 @@ There is also a distinction worth holding onto. A model card describes the model
 
 1. **It is a scoping document.** Its stated purpose is to *reduce* use in contexts a model is not suited to. If it reads as promotional, it is not doing its job.
 2. **Read the limitations first.** They are the section with information you cannot get anywhere else. Capabilities are discoverable by testing; limits usually are not.
-3. **Disaggregation is the test of seriousness.** Aggregate metrics only, and the card is hiding the thing it exists to reveal — whether or not anyone intended that.
+3. **Disaggregation is the test of seriousness.** Aggregate metrics only, and the card is hiding the thing it exists to reveal, whether or not anyone intended that.
 4. **A card is a claim, not a certification.** Self-published, self-evaluated, with no conformance test. It tells you what the provider chose to disclose and measure.
 5. **Model card ≠ system card.** You deploy the system. Guardrails, retrieval, prompts and oversight determine most production behavior and appear in neither the model's card nor its benchmarks.
-6. **Absence is information.** A missing section — training data composition, evaluation on your population, known failure modes — tells you something, and "not disclosed" should be recorded as a finding rather than skipped over.
+6. **Absence is information.** A missing section (training data composition, evaluation on your population, known failure modes) tells you something, and "not disclosed" should be recorded as a finding rather than skipped over.
 7. **You may need to write one.** If you fine-tune, adapt, or assemble a system, you have created something whose operating characteristics nobody has documented, and the burden has moved to you.
 
 ---
@@ -62,20 +62,20 @@ There is also a distinction worth holding onto. A model card describes the model
 - A card's existence accepted as evidence of diligence, without anyone reading the limitations
 - Aggregate-only metrics, which conceal precisely the disparities the format was designed to expose
 - Provider evaluation populations that do not resemble your users, treated as transferable
-- No system card for internally assembled systems — the model is documented and the deployment is not
+- No system card for internally assembled systems, where the model is documented and the deployment is not
 - Fine-tuned and adapted models inheriting the base model's card, which no longer describes them
 - Cards treated as launch artifacts and never revised, while the model behind an API changes (see Model Version & Update, and [model/data drift](model-data-drift.md))
 - Regulatory technical documentation and a model card treated as the same deliverable when the obligation may require more
 
 **Practice:**
-- Make card review a gate in model selection, with the limitations section read and its gaps recorded — including "not disclosed," which is a finding
+- Make card review a gate in model selection, with the limitations section read and its gaps recorded, including "not disclosed," which is a finding
 - **Write a system card for anything you assemble**, covering the components the model card cannot: guardrails, retrieval scope, prompts, tools, oversight, and known failure modes in *your* context
 - Re-evaluate on your own population rather than accepting the provider's disaggregation as covering your users
-- Version the card with the system, and set a re-issue trigger on material change — a card that describes an earlier version is worse than none, because it is trusted
+- Version the card with the system, and set a re-issue trigger on material change. A card that describes an earlier version is worse than none, because it is trusted
 - Where you fine-tune, document the adaptation set and re-run the evaluations that the base card reports
 - Check the card against your regulatory documentation duty rather than assuming it satisfies it
 
-**Key accountability owner:** whoever owns the deployed system — because the artifact that matters for governance is the *system* card, and no provider will write it for you.
+**Key accountability owner:** whoever owns the deployed system, because the artifact that matters for governance is the *system* card, and no provider will write it for you.
 
 *→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
@@ -83,7 +83,7 @@ There is also a distinction worth holding onto. A model card describes the model
 
 ## Confidence level
 
-**Medium-High.** The format, its purpose and the disaggregation requirement are peer-reviewed and the pattern is now embedded in regulation and platform norms. **The weakness is enforcement, and it is structural:** cards are self-published, self-evaluated and voluntary in most jurisdictions, with no conformance test and no independent verification — so quality varies enormously and a card's presence says little on its own. **System card practice is markedly less mature than model card practice**; there is no established template for documenting an assembled deployment, and the guidance above is a reasoned extension of the model-card argument rather than a settled standard.
+**Medium-High.** The format, its purpose and the disaggregation requirement are peer-reviewed and the pattern is now embedded in regulation and platform norms. **The weakness is enforcement, and it is structural:** cards are self-published, self-evaluated and voluntary in most jurisdictions, with no conformance test and no independent verification, so quality varies enormously and a card's presence says little on its own. **System card practice is markedly less mature than model card practice**; there is no established template for documenting an assembled deployment, and the guidance above is a reasoned extension of the model-card argument rather than a settled standard.
 
 ---
 
@@ -123,7 +123,7 @@ There is also a distinction worth holding onto. A model card describes the model
 | Audience | Relevance |
 |---|---|
 | **Technical / Professional** | Read limitations first; check for disaggregation; write a system card for anything you assemble, since no provider documents your guardrails, retrieval and prompts. |
-| **Organizational** | A card is a self-published claim, not a certification. Its presence is not diligence — reading it and recording its gaps, including "not disclosed," is. |
+| **Organizational** | A card is a self-published claim, not a certification. Its presence is not diligence. Reading it and recording its gaps, including "not disclosed," is. |
 | **Client-facing** | Explains what documentation to ask a vendor for and what a good answer looks like: the limits section and per-group results, not the headline number. |
 | **LLM-native** | Model card describes a component; you deploy a system. Most production behavior comes from the layer neither the card nor the benchmarks cover. |
 

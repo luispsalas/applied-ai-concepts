@@ -1,6 +1,6 @@
 <!--meta
 category: Organizational Readiness
-short: The competencies required to engage with, use, and govern AI systems responsibly — at an individual, team, and organizational level
+short: The competencies required to engage with, use, and govern AI systems responsibly, at an individual, team, and organizational level
 aliases: [AI skills, AI education, AI competency, understanding AI, AI training for staff]
 tags: [AI Literacy]
 established: established
@@ -12,7 +12,7 @@ established: established
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
-The competencies required to engage with, use, and govern AI systems responsibly — at an individual, team, and organizational level.
+The competencies required to engage with, use, and govern AI systems responsibly, at an individual, team, and organizational level.
 
 ---
 
@@ -22,17 +22,17 @@ AI literacy is the ensemble of knowledge, skills, and critical capacities that a
 
 The OECD/EC AI Literacy Framework (2025) defines four domains:
 
-1. **Engage with AI** — understanding what AI is and how it works at a conceptual level; recognizing AI-generated content; maintaining critical judgment when interacting with AI outputs
-2. **Create with AI** — using AI tools effectively for tasks; prompting, iterating, and evaluating outputs; understanding the limits of model capability
-3. **Manage with AI** — integrating AI into workflows and decision-making; understanding organizational implications; governance and accountability awareness
-4. **Design AI** — technical and system-level competencies for those who build, configure, or deploy AI systems
+1. **Engage with AI:** understanding what AI is and how it works at a conceptual level; recognizing AI-generated content; maintaining critical judgment when interacting with AI outputs
+2. **Create with AI:** using AI tools effectively for tasks; prompting, iterating, and evaluating outputs; understanding the limits of model capability
+3. **Manage with AI:** integrating AI into workflows and decision-making; understanding organizational implications; governance and accountability awareness
+4. **Design AI:** technical and system-level competencies for those who build, configure, or deploy AI systems
 
 Long & Magerko (2020) identified five competency clusters that map across these domains: understanding AI capabilities and limitations, understanding how AI learns, understanding the societal implications of AI, critically evaluating AI outputs, and designing or working with AI systems. These clusters have been foundational to AI literacy curriculum design.
 
 At an organizational level, literacy operates at three tiers:
-- **Awareness literacy** — sufficient understanding to use AI tools safely and recognize their limitations; required for all staff using AI tools
-- **Operational literacy** — the competencies required to integrate AI into professional workflows, evaluate outputs, and make AI-assisted decisions; required for practitioners and knowledge workers
-- **Governance literacy** — understanding of AI risk, accountability structures, regulatory context, and organizational control mechanisms; required for leaders, governance functions, and risk owners
+- **Awareness literacy:** sufficient understanding to use AI tools safely and recognize their limitations; required for all staff using AI tools
+- **Operational literacy:** the competencies required to integrate AI into professional workflows, evaluate outputs, and make AI-assisted decisions; required for practitioners and knowledge workers
+- **Governance literacy:** understanding of AI risk, accountability structures, regulatory context, and organizational control mechanisms; required for leaders, governance functions, and risk owners
 
 AI literacy is the complement to technical capability: a technically capable AI system deployed without organizationally literate users produces unreliable outcomes. The gap between model capability and user understanding is where most organizational AI failures originate.
 
@@ -40,9 +40,9 @@ AI literacy is the complement to technical capability: a technically capable AI 
 
 ## Plain-language version
 
-AI literacy is what people need to understand to work with AI well — not just to use the tools, but to use them correctly, to spot when they're wrong, and to understand what it means for the organization that they're using them at all.
+AI literacy is what people need to understand to work with AI well. That means using the tools correctly, spotting when they're wrong, and understanding what it means for the organization that they're using them at all.
 
-It is not the same as knowing how to use a specific AI product. A person can use an AI tool fluently and still lack AI literacy — if they don't understand when to verify outputs, why confidence is not a reliability signal, or what governance questions their use of the tool raises.
+It is not the same as knowing how to use a specific AI product. A person can use an AI tool fluently and still lack AI literacy, if they don't understand when to verify outputs, why confidence is not a reliability signal, or what governance questions their use of the tool raises.
 
 Literacy is what makes AI adoption durable: when users understand the technology at a working level, the organization can set appropriate expectations, catch failures, and course-correct.
 
@@ -50,19 +50,19 @@ Literacy is what makes AI adoption durable: when users understand the technology
 
 ## AI literacy notes
 
-AI literacy is the precondition that most organizations skip, and the failure point most organizations encounter. Deploying capable AI tools into an organization without a baseline literacy program is not technology adoption — it is risk transfer to users who do not know they are accepting it.
+AI literacy is the precondition that most organizations skip, and the failure point most organizations encounter. Deploying capable AI tools into an organization without a baseline literacy program is not technology adoption. It is risk transfer to users who do not know they are accepting it.
 
 Three things practitioners need to understand:
 
-1. **Literacy is tiered — and different roles need different tiers.** A customer service representative using an AI drafting tool needs awareness literacy: they need to know outputs require review, not the mechanics of transformer architecture. A data steward designing a knowledge base for a RAG system needs operational literacy. A Chief Risk Officer approving AI deployment needs governance literacy. One-size-fits-all literacy programs address none of these adequately.
+1. **Literacy is tiered, and different roles need different tiers.** A customer service representative using an AI drafting tool needs awareness literacy: they need to know outputs require review, not the mechanics of transformer architecture. A data steward designing a knowledge base for a RAG system needs operational literacy. A Chief Risk Officer approving AI deployment needs governance literacy. One-size-fits-all literacy programs address none of these adequately.
 2. **AI literacy changes what people do, not just what they know.** The test of literacy is behavioral: does a user verify AI outputs before using them in a consequential decision? Do they recognize hallucinated confidence? Do they know when to escalate a governance question? Literacy programs that produce knowledge without changing behavior have not produced literacy.
-3. **The labor market is restructuring around AI competency — and the timeline is compressing.** Research on AI and labor market impact suggests that AI literacy is becoming a baseline employment competency, not a specialist credential. Organizations that do not build this capability are building an organizational deficit that will compound.
+3. **The labor market is restructuring around AI competency, and the timeline is compressing.** Research on AI and labor market impact suggests that AI literacy is becoming a baseline employment competency, not a specialist credential. Organizations that do not build this capability are building an organizational deficit that will compound.
 
 ---
 
 ## Governance notes
 
-**Core question:** Does your organization have a named owner for AI literacy — someone responsible for defining what different roles need to understand, assessing current capability gaps, and building the program to close them?
+**Core question:** Does your organization have a named owner for AI literacy, someone responsible for defining what different roles need to understand, assessing current capability gaps, and building the program to close them?
 
 **Watch for:**
 - AI deployment outpacing AI literacy: tools in production before users have the competencies to use them responsibly. The gap appears as unrealistic expectations, poor output verification, and unrecognized governance exposure.
@@ -73,7 +73,7 @@ Three things practitioners need to understand:
 - Define minimum literacy requirements by role tier: what every employee using AI tools must understand, what practitioners integrating AI into workflows must understand, and what leaders approving AI deployment must understand.
 - Treat literacy as a continuous program: update content as models, tools, and regulatory requirements evolve; assess baseline literacy before major AI deployments; measure behavioral outcomes, not completion rates.
 
-**Key accountability owner:** AI literacy owner — the role (individual or function) responsible for defining organizational literacy requirements, designing and delivering programs, and maintaining the capability as AI systems and regulatory context evolve.
+**Key accountability owner:** AI literacy owner, the role (individual or function) responsible for defining organizational literacy requirements, designing and delivering programs, and maintaining the capability as AI systems and regulatory context evolve.
 
 *→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
@@ -100,10 +100,10 @@ Three things practitioners need to understand:
 
 | ID | Source | Contribution to this entry |
 |---|---|---|
-| SRC-067 | OECD / European Commission — *Empowering Learners for the Age of AI: An AI Literacy Framework for Primary and Secondary Education* (OECD Publishing, 2026) · [link](https://doi.org/10.1787/65cd27d4-en) | Four-domain framework (Engage/Create/Manage/Design); institutional definition of AI literacy competencies. Joint OECD/EC publication — authoritative institutional source. ⚠️ Scope: **primary and secondary education**, per the full subtitle — strong evidence of what institutions mean by AI literacy, but not a workforce or organizational source. ⚠️ The four domains were read from the **May 2025 review draft**; re-confirm against the final June 2026 edition now cited. |
+| SRC-067 | OECD / European Commission — *Empowering Learners for the Age of AI: An AI Literacy Framework for Primary and Secondary Education* (OECD Publishing, 2026) · [link](https://doi.org/10.1787/65cd27d4-en) | Four-domain framework (Engage/Create/Manage/Design); institutional definition of AI literacy competencies. Joint OECD/EC publication and an authoritative institutional source. ⚠️ Scope: **primary and secondary education**, per the full subtitle. It is strong evidence of what institutions mean by AI literacy, but not a workforce or organizational source. ⚠️ The four domains were read from the **May 2025 review draft**; re-confirm against the final June 2026 edition now cited. |
 | SRC-068 | Long, D. & Magerko, B. — *What is AI Literacy? Competencies and Design Considerations* (CHI 2020) · [link](https://dl.acm.org/doi/10.1145/3313831.3376727) | Foundational competency cluster taxonomy (capabilities, learning, societal implications, critical evaluation, design); widely cited baseline for AI literacy curriculum design. Peer-reviewed. |
-| SRC-056 | Massenkoff, M. & McCrory, P. (Anthropic) — *Labor Market Impacts of AI: A New Measure and Early Evidence* (2026) · [link](https://www.anthropic.com/research/labor-market-impacts) | AI literacy as an emerging baseline employment competency; structural shift in labor market requirements; organizational implications of literacy deficits at workforce scale. Anthropic-affiliated research — use as background reference for labor market framing; not cited as an independent authority. |
-| SRC-115 | Stanford HAI — *AI Index Report* (annual, 2026 ed.) · [link](https://hai.stanford.edu/ai-index) | Annual data on AI adoption rates, labor market restructuring, and organizational competency gaps. Supports the AI literacy note that literacy is becoming a baseline employment competency — and that organizations not building this capability are compounding an organizational deficit. |
+| SRC-056 | Massenkoff, M. & McCrory, P. (Anthropic) — *Labor Market Impacts of AI: A New Measure and Early Evidence* (2026) · [link](https://www.anthropic.com/research/labor-market-impacts) | AI literacy as an emerging baseline employment competency; structural shift in labor market requirements; organizational implications of literacy deficits at workforce scale. Anthropic-affiliated research, so use it as background reference for labor market framing; not cited as an independent authority. |
+| SRC-115 | Stanford HAI — *AI Index Report* (annual, 2026 ed.) · [link](https://hai.stanford.edu/ai-index) | Annual data on AI adoption rates, labor market restructuring, and organizational competency gaps. Supports the AI literacy note that literacy is becoming a baseline employment competency, and that organizations not building this capability are compounding an organizational deficit. |
 
 ---
 
@@ -114,7 +114,7 @@ Three things practitioners need to understand:
 | **Technical / Professional** | Relevant in two directions: as a concept to understand (what does literacy mean, who needs what), and as a design constraint (systems must be designed for the literacy level of their actual users). |
 | **Organizational** | The entry most directly addressed to organizational leaders. AI adoption without literacy planning produces predictable failures. Literacy ownership is a governance question with a named answer. |
 | **Client-facing** | Foundational for any client conversation about AI readiness. "Is your organization AI-ready?" is a literacy question as much as a technology question. |
-| **LLM-native** | Provides the framing for why concepts in this wiki are structured the way they are — each entry is designed to build a specific tier of literacy for a specific audience. |
+| **LLM-native** | Provides the framing for why concepts in this wiki are structured the way they are. Each entry is designed to build a specific tier of literacy for a specific audience. |
 
 ---
 
