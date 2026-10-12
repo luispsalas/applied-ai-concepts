@@ -4192,8 +4192,8 @@
       "slug": "open-source-ai",
       "term": "Open Source AI",
       "category": "Observability & Governance",
-      "essence": "A model release that grants the freedoms to use, study, modify and share it — a defined standard requiring data information, code and parameters, and one that publishing weights alone does not meet.",
-      "short": "A model release granting the freedoms to use, study, modify and share it — a defined standard requiring data information, code and parameters, which a weights-only release does not meet however often the label is applied to it",
+      "essence": "A model release that grants the freedoms to use, study, modify and share it. The defined standard requires data information, code and parameters, and publishing weights alone does not meet it.",
+      "short": "A model release granting the freedoms to use, study, modify and share it. The defined standard requires data information, code and parameters, so a weights-only release does not meet it, however often the label is applied",
       "aliases": [
         "open source model",
         "open weights",
