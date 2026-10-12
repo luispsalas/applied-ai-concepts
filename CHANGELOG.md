@@ -1,5 +1,17 @@
 # Changelog
 
+## v1.45 — October 2026
+
+**One enrichment. No new entries; count stays at 153.**
+
+- `guardrails-ai-systems` — v1.0 → **v1.1**
+
+**The entry said guardrails are probabilistic. That is now a formal result as well as an observation.** A NIST analysis adapts Gödel's incompleteness theorem to guardrail policies and shows that any policy built from a finite set of rules can be evaded by some adversarial prompt, including in real systems with finite context windows. A separate result, with proofs checked by machine, shows that a wrapper which rewrites prompts before the model sees them cannot treat similar prompts similarly, pass safe prompts unchanged and make every output safe at the same time.
+
+**The entry carries the limits of both results with the results.** Neither measures how often guardrails fail in production. The NIST proof gives attackers no recipe, so a policy that keeps absorbing newly found attacks still raises their cost, and the entry now recommends exactly that. The wrapper result covers input rewriting only, is a preprint, and its authors state that it leaves room for alignment training and architectural defenses.
+
+**A new literacy note treats guardrails as a setting that someone can turn down.** Capability evaluations run models with safeguards deliberately reduced. A policy brief names these developer-only and partner-only uses "privileged deployment" and points out that a proposed US bill does not say what security should apply while guardrails are rolled back. The UK AI Security Institute's incident report, already cited in *Sandboxing*, shows what that gap cost. Two new governance practices follow: record who approved a rollback and what containment replaced it, and feed attacks found in red teaming and incidents back into the policy.
+
 ## v1.44 — September 2026
 
 **Two enrichments. No new entries; count stays at 153.**

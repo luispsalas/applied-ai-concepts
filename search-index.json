@@ -2877,21 +2877,28 @@
         "Architecture",
         "Safety"
       ],
-      "version": "v1.0",
-      "updated": "July 2026",
+      "version": "v1.1",
+      "updated": "October 2026",
       "related": [
         "audit-trail-ai",
         "compliance-ai-systems",
         "failure-modes-ai-systems",
         "harness-paradigm",
-        "human-in-the-loop"
+        "human-in-the-loop",
+        "prompt-injection",
+        "red-teaming",
+        "sandboxing"
       ],
       "sources": [
         "SRC-001",
         "SRC-032",
         "SRC-085",
         "SRC-129",
-        "SRC-135"
+        "SRC-135",
+        "SRC-264",
+        "SRC-382",
+        "SRC-383",
+        "SRC-384"
       ],
       "path": "concepts/guardrails-ai-systems.md"
     },
