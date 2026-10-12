@@ -1,6 +1,6 @@
 <!--meta
 category: Observability & Governance
-short: Meeting defined AI obligations — and being answerable for whether they were actually met, not just documented
+short: Meeting defined AI obligations, and being answerable for whether they were actually met, not just documented
 aliases: [regulatory compliance, EU AI Act obligations, meeting requirements, conformity, legal obligations]
 tags: [Regulatory, Data Governance]
 established: established
@@ -12,40 +12,40 @@ established: established
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
-Meeting defined obligations for how AI systems are built, deployed, and operated — and being answerable for whether those obligations were actually met, not just documented.
+Meeting defined obligations for how AI systems are built, deployed, and operated, and being answerable for whether those obligations were actually met, not just documented.
 
 ---
 
 ## Technical definition
 
-Compliance in AI systems refers to the active demonstration that an organization's AI practices conform to applicable legal, regulatory, and standards-based obligations — across the full system lifecycle from design and development through deployment, monitoring, and decommissioning.
+Compliance in AI systems refers to the active demonstration that an organization's AI practices conform to applicable legal, regulatory, and standards-based obligations, across the full system lifecycle from design and development through deployment, monitoring, and decommissioning.
 
 The primary compliance frameworks for AI systems include:
 
-- **EU AI Act** — the most comprehensive binding AI regulation globally: risk-tiered obligations (minimal, limited, high, unacceptable risk), conformity assessments, CE marking, prohibited practices, mandatory logging and transparency requirements for high-risk systems
-- **GDPR and data protection law** — lawful processing basis for training data and inference inputs; rights of data subjects; privacy-by-design and accountability obligations
-- **NIST AI RMF** — a voluntary US framework structured around Govern/Map/Measure/Manage functions; increasingly referenced in public sector procurement and sector-specific regulation
-- **Sector-specific frameworks** — financial services (US bank model risk management guidance, SR 26-2), healthcare (FDA AI/ML software guidance), critical infrastructure
+- **EU AI Act:** the most comprehensive binding AI regulation globally, with risk-tiered obligations (minimal, limited, high, unacceptable risk), conformity assessments, CE marking, prohibited practices, mandatory logging and transparency requirements for high-risk systems
+- **GDPR and data protection law:** lawful processing basis for training data and inference inputs; rights of data subjects; privacy-by-design and accountability obligations
+- **NIST AI RMF:** a voluntary US framework structured around Govern/Map/Measure/Manage functions; increasingly referenced in public sector procurement and sector-specific regulation
+- **Sector-specific frameworks:** financial services (US bank model risk management guidance, SR 26-2), healthcare (FDA AI/ML software guidance), critical infrastructure
 
-**A sector framework's scope has to be checked, not assumed — and the leading US banking example now excludes the systems most organizations are asking about.** In April 2026 the Federal Reserve, OCC and FDIC issued revised model risk management guidance that *"supersedes and replaces"* SR 11-7, the 2011 guidance long treated as the reference for model governance in banking. It states that *"Generative AI and agentic AI models are novel and rapidly evolving. As such, they are not within the scope of this guidance."* Its principles apply to traditional statistical and quantitative models and to non-generative, non-agentic AI, while governance for anything outside that scope is left to each institution's own risk management and governance practices. **So a bank that satisfies model risk guidance has not thereby addressed its generative or agentic AI** — those systems need obligations mapped from somewhere else.
+**A sector framework's scope has to be checked, not assumed, and the leading US banking example now excludes the systems most organizations are asking about.** In April 2026 the Federal Reserve, OCC and FDIC issued revised model risk management guidance that *"supersedes and replaces"* SR 11-7, the 2011 guidance long treated as the reference for model governance in banking. It states that *"Generative AI and agentic AI models are novel and rapidly evolving. As such, they are not within the scope of this guidance."* Its principles apply to traditional statistical and quantitative models and to non-generative, non-agentic AI, while governance for anything outside that scope is left to each institution's own risk management and governance practices. **So a bank that satisfies model risk guidance has not thereby addressed its generative or agentic AI**. Those systems need obligations mapped from somewhere else.
 
 Compliance is often conflated with governance, but they are distinct:
-- **Governance** defines who decides and who is answerable — the organizational structure of oversight
-- **Compliance** meets specific, externally defined obligations — the content of what must be demonstrated
+- **Governance** defines who decides and who is answerable, which is the organizational structure of oversight
+- **Compliance** meets specific, externally defined obligations, which is the content of what must be demonstrated
 
-A critical distinction (Hagendorff 2022): many organizations publish AI ethics principles that map to compliance vocabulary — fairness, transparency, accountability — but do not change actual practice. Compliance that is documented but not operationalized is a liability, not an asset: it creates a record of commitments that are not honored.
+A critical distinction (Hagendorff 2022): many organizations publish AI ethics principles that map to compliance vocabulary (fairness, transparency, accountability) but do not change actual practice. Compliance that is documented but not operationalized is a liability, not an asset: it creates a record of commitments that are not honored.
 
-Green (2022) identifies a related failure mode — compliance theater — in human oversight policies: when required oversight is performed by individuals who cannot effectively evaluate what they are reviewing, compliance becomes a legitimizing ritual rather than a control. The form of oversight exists; the substance does not.
+Green (2022) identifies a related failure mode, compliance theater, in human oversight policies: when required oversight is performed by individuals who cannot effectively evaluate what they are reviewing, compliance becomes a legitimizing ritual rather than a control. The form of oversight exists; the substance does not.
 
 ---
 
 ## Plain-language version
 
-Compliance is not a checkbox. It is the ability to show — with evidence — that you did what you said you would do.
+Compliance is not a checkbox. It is the ability to show, with evidence, that you did what you said you would do.
 
 For AI systems, that means: if your AI use falls under the EU AI Act, you can demonstrate which risk tier each system falls into and what controls are in place. If GDPR applies, you can show a lawful processing basis for every dataset. If you have committed to responsible AI principles, you can show how those principles changed your actual practices.
 
-The failure mode is not ignorance of obligations — it is compliance theater: documented frameworks that do not change what people actually do, written policies that no one follows, and oversight processes that exist on paper but not in practice.
+The failure mode is not ignorance of obligations. It is compliance theater: documented frameworks that do not change what people actually do, written policies that no one follows, and oversight processes that exist on paper but not in practice.
 
 ---
 
@@ -53,7 +53,7 @@ The failure mode is not ignorance of obligations — it is compliance theater: d
 
 Three things practitioners need to understand:
 
-1. **Compliance obligations are not optional — and they are expanding.** The EU AI Act is in force. High-risk provisions apply to any system deployed into the EU market regardless of where the deploying organization is headquartered. Treating AI regulation as a future concern is already a compliance gap.
+1. **Compliance obligations are not optional, and they are expanding.** The EU AI Act is in force. High-risk provisions apply to any system deployed into the EU market regardless of where the deploying organization is headquartered. Treating AI regulation as a future concern is already a compliance gap.
 2. **Compliance and governance are not the same thing.** Governance defines accountability structures; compliance meets specific external obligations. An organization can have good governance with incomplete compliance (accountability structures exist but regulatory requirements are not fully met), or documented compliance without real governance (policies exist but no one is accountable for them). Both are failures.
 3. **Compliance theater is a specific and common failure mode.** When oversight is required but the humans performing it cannot meaningfully evaluate what they review, oversight legitimizes rather than governs. Green (2022) documents this in government algorithm oversight: mandated human review that produces no meaningful scrutiny creates false assurance while the underlying risk remains.
 
@@ -61,20 +61,20 @@ Three things practitioners need to understand:
 
 ## Governance notes
 
-**Core question:** For each AI system subject to regulatory or policy obligations, can your organization demonstrate — with evidence — that those obligations are actively met, not just documented?
+**Core question:** For each AI system subject to regulatory or policy obligations, can your organization demonstrate, with evidence, that those obligations are actively met, not just documented?
 
 **Watch for:**
 - Compliance documented in policy but not operationalized in practice: ethics principles that do not change procurement criteria, deployment decisions, or monitoring design
 - Compliance treated as static: regulations are in force and actively revised; a compliance posture assessed in 2023 requires reassessment against 2025 and 2026 obligations (EU AI Act high-risk provisions are phasing in)
-- Scope assumed rather than read: a sector framework treated as covering generative or agentic AI when its text excludes them — as US bank model risk guidance (SR 26-2) explicitly does — or a citation to guidance that has since been superseded
-- Compliance theater in HITL: oversight required by policy but performed by reviewers who lack the information, authority, or recourse path to act on what they see — the form of oversight without the substance
+- Scope assumed rather than read: a sector framework treated as covering generative or agentic AI when its text excludes them, as US bank model risk guidance (SR 26-2) explicitly does, or a citation to guidance that has since been superseded
+- Compliance theater in HITL: oversight required by policy but performed by reviewers who lack the information, authority, or recourse path to act on what they see, which gives the form of oversight without the substance
 
 **Practice:**
-- Map obligations to evidence: for each regulatory requirement, identify what evidence would demonstrate compliance — not just which policy addresses it
+- Map obligations to evidence: for each regulatory requirement, identify what evidence would demonstrate compliance, not just which policy addresses it
 - Assign compliance ownership per system per regulatory regime: who is accountable for demonstrating EU AI Act conformity for this system? GDPR processing basis? Internal acceptable-use policy?
-- Design oversight with the ability to act: reviewers need access to the information, authority, and recourse path required to flag and escalate non-compliance — otherwise the oversight step exists but does not function
+- Design oversight with the ability to act: reviewers need access to the information, authority, and recourse path required to flag and escalate non-compliance. Otherwise the oversight step exists but does not function
 
-**Key accountability owner:** Compliance owner — the role responsible for mapping regulatory obligations to the AI system inventory, maintaining evidence of compliance, and escalating when obligations are not met.
+**Key accountability owner:** Compliance owner, the role responsible for mapping regulatory obligations to the AI system inventory, maintaining evidence of compliance, and escalating when obligations are not met.
 
 *→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
@@ -112,10 +112,10 @@ Three things practitioners need to understand:
 
 | Audience | Relevance |
 |---|---|
-| **Technical / Professional** | Defines what must be designed in — logging, conformity assessments, access controls — to support compliance demonstration. Technical teams are often where compliance requirements become (or fail to become) real. |
-| **Organizational** | The concept that explains why "we have an AI ethics policy" is not sufficient — and what demonstrating compliance actually requires: evidence, ownership, and oversight that functions. |
-| **Client-facing** | Directly addresses "are you compliant with AI regulations?" with a structured answer distinguishing documented policy from operational evidence — and the organizational conditions that distinguish one from the other. |
-| **LLM-native** | Grounds the governance design choices (audit trails, HITL checkpoints, permission models) in their regulatory motivation — these are not optional best practices but compliance infrastructure. |
+| **Technical / Professional** | Defines what must be designed in (logging, conformity assessments, access controls) to support compliance demonstration. Technical teams are often where compliance requirements become (or fail to become) real. |
+| **Organizational** | The concept that explains why "we have an AI ethics policy" is not sufficient, and what demonstrating compliance actually requires: evidence, ownership, and oversight that functions. |
+| **Client-facing** | Directly addresses "are you compliant with AI regulations?" with a structured answer distinguishing documented policy from operational evidence, and the organizational conditions that distinguish one from the other. |
+| **LLM-native** | Grounds the governance design choices (audit trails, HITL checkpoints, permission models) in their regulatory motivation. These are compliance infrastructure, not optional best practices. |
 
 ---
 

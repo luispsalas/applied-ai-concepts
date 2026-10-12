@@ -1,6 +1,6 @@
 <!--meta
 category: System Architecture
-short: Making a model emit machine-parseable output that conforms to a schema — a guarantee about shape that is routinely mistaken for a guarantee about content
+short: Making a model emit machine-parseable output that conforms to a schema. The guarantee is about shape, and it is routinely mistaken for one about content
 aliases: [structured generation, JSON mode, JSON output, schema-constrained output, constrained decoding, guided generation, grammar-constrained decoding, schema conformance, typed output]
 tags: [Architecture, Evaluation, Prompting]
 established: established
@@ -12,48 +12,48 @@ established: established
 > **Term status — Established.** In independent use across every major model provider, across open-source inference libraries, and in peer-reviewed research that studies it as a named technique. Cleared on the **usage route**: the mechanism is implemented independently in competing systems and the schema language it depends on is an open specification owned by no vendor.
 
 ## One-line essence
-Getting a model to emit output a program can parse, conforming to a declared schema — which guarantees the shape of the answer and says nothing whatever about whether it is right.
+Getting a model to emit output a program can parse, conforming to a declared schema. That guarantees the shape of the answer and says nothing whatever about whether it is right.
 
 ---
 
 ## Technical definition
 
-Structured output is the practice of constraining a model's generation so the result conforms to a machine-readable format — most often JSON against a JSON Schema, sometimes XML, a grammar, or a regular expression.
+Structured output is the practice of constraining a model's generation so the result conforms to a machine-readable format, most often JSON against a JSON Schema, sometimes XML, a grammar, or a regular expression.
 
 **There are two fundamentally different ways to get it, and the difference matters for what you may rely on:**
 
 - **Ask and validate.** Instruct the model to produce JSON, parse the result, and retry or repair on failure. Conformance is probabilistic; the failure mode is a parse error, which is at least visible.
-- **Constrain the decoding.** At each generation step, mask the vocabulary so only tokens that keep the output valid can be sampled. Willard and Louf reformulate this as transitions between the states of a finite-state machine, allowing an index over the model's vocabulary — a model-agnostic approach that adds little overhead and **guarantees** the structure of the generated text.
+- **Constrain the decoding.** At each generation step, mask the vocabulary so only tokens that keep the output valid can be sampled. Willard and Louf reformulate this as transitions between the states of a finite-state machine, allowing an index over the model's vocabulary. It is a model-agnostic approach that adds little overhead and **guarantees** the structure of the generated text.
 
 **Constrained decoding is a generation-time guarantee, which is categorically different from validation after the fact.** It is not a [guardrail](guardrails-ai-systems.md): a guardrail inspects an output and decides whether to allow it, while constrained decoding makes the invalid output unreachable. Both are useful; only one can be described as a guarantee.
 
-**Structured output is the general case of which [function calling](tool-use.md) is one application.** A tool call is a structured object naming a function and binding its parameters — the same machinery, pointed at an action rather than at a datum. The concept is broader than tools: extraction, classification, scoring and inter-service payloads all use it with no tool involved ([agent interoperability](agent-interoperability-a2a.md)).
+**Structured output is the general case of which [function calling](tool-use.md) is one application.** A tool call is a structured object naming a function and binding its parameters. It is the same machinery, pointed at an action rather than at a datum. The concept is broader than tools: extraction, classification, scoring and inter-service payloads all use it with no tool involved ([agent interoperability](agent-interoperability-a2a.md)).
 
-**The governance point, and the reason the entry exists: schema conformance is not correctness.** A response that validates perfectly against its schema can be entirely fabricated. **Structure eliminates parse failures, which were the visible errors, and leaves the invisible ones untouched** — a well-typed hallucination arrives looking like a database row ([hallucination](hallucination.md)). Worse, a schema field named `confidence` produces a number that is generated like every other token and is not a measurement of anything ([confidence vs accuracy](confidence-vs-accuracy.md), [concealing uncertainty](concealing-uncertainty.md)).
+**The governance point, and the reason the entry exists: schema conformance is not correctness.** A response that validates perfectly against its schema can be entirely fabricated. **Structure eliminates parse failures, which were the visible errors, and leaves the invisible ones untouched.** A well-typed hallucination arrives looking like a database row ([hallucination](hallucination.md)). Worse, a schema field named `confidence` produces a number that is generated like every other token and is not a measurement of anything ([confidence vs accuracy](confidence-vs-accuracy.md), [concealing uncertainty](concealing-uncertainty.md)).
 
-**Schema size is itself a cause of wrong content, and this is where the gap between shape and truth opens widest.** A single call asked to produce a large or nested object must decide *what belongs in the output* and *extract each field's value* in one generation — several decisions coordinated at once, which a smaller model coordinates worse. Guo's worked demonstration is a clean instance: asked to build a scheduling object from household notes, a small locally-run model returned perfectly valid JSON that included a device the notes explicitly said needed no further action. **Schema-valid, and wrong.** Splitting the work into two calls — first decide the scope, then fill the fields for the items chosen — produced a correct object from the same model on the same notes ([prompt chaining](prompt-chaining.md)).
+**Schema size is itself a cause of wrong content, and this is where the gap between shape and truth opens widest.** A single call asked to produce a large or nested object must decide *what belongs in the output* and *extract each field's value* in one generation. That means several decisions coordinated at once, which a smaller model coordinates worse. Guo's worked demonstration is a clean instance: asked to build a scheduling object from household notes, a small locally-run model returned perfectly valid JSON that included a device the notes explicitly said needed no further action. **Schema-valid, and wrong.** Splitting the work into two calls, first deciding the scope and then filling the fields for the items chosen, produced a correct object from the same model on the same notes ([prompt chaining](prompt-chaining.md)).
 
-**The practical consequence: when a small model fails a large schema, the schema is a candidate cause.** Adding retries or tightening the prompt treats the symptom of a task that was too big to do in one pass — and because the failure is a content error inside valid structure, nothing in the validation layer will point at it.
+**The practical consequence: when a small model fails a large schema, the schema is a candidate cause.** Adding retries or tightening the prompt treats the symptom of a task that was too big to do in one pass. And because the failure is a content error inside valid structure, nothing in the validation layer will point at it.
 
 **And the format is not free.** Tam et al., comparing models restricted to structured formats against free-form generation on the same tasks, report **a significant decline in reasoning ability under format restrictions, with stricter constraints producing greater degradation.** Machine-readability is purchased with reasoning quality. The trade is rarely measured, because the constrained pipeline is usually the only one anyone runs ([evaluation](evaluation.md)).
 
-**The schema is a governed artifact.** It is a versioned contract between a model and everything downstream: change a field's meaning and every consumer silently reinterprets history. JSON Schema is an open specification with its own draft history — which is why the version belongs in the record ([data provenance and lineage](data-provenance-lineage.md)).
+**The schema is a governed artifact.** It is a versioned contract between a model and everything downstream: change a field's meaning and every consumer silently reinterprets history. JSON Schema is an open specification with its own draft history, which is why the version belongs in the record ([data provenance and lineage](data-provenance-lineage.md)).
 
 ---
 
 ## Plain-language version
 
-Models produce prose. Programs need fields. Structured output is how you get the second from the first: you declare the shape you want — these keys, these types, this one must be present — and the model returns something a program can read directly instead of text a human has to interpret.
+Models produce prose. Programs need fields. Structured output is how you get the second from the first: you declare the shape you want (these keys, these types, this one must be present), and the model returns something a program can read directly instead of text a human has to interpret.
 
-There are two ways to do it, and they are not equally strong. You can *ask* for the shape and check what comes back, retrying when it is malformed. Or you can *constrain the model as it writes*, so that at every step only the characters that keep the result valid are even available to it. The second cannot produce an invalid result — not "rarely does," cannot.
+There are two ways to do it, and they are not equally strong. You can *ask* for the shape and check what comes back, retrying when it is malformed. Or you can *constrain the model as it writes*, so that at every step only the characters that keep the result valid are even available to it. The second cannot produce an invalid result. Not "rarely does," cannot.
 
 That sounds like a solved problem, and here is where it goes wrong.
 
-**Getting the shape right is not getting the answer right.** A perfectly formed record with every required field present can be completely made up. What structure removes is the *visible* class of errors — the ones that used to crash your parser and get noticed. What remains is the invisible class: confident, well-typed, wrong. **You have not reduced the errors; you have removed the ones that announced themselves.**
+**Getting the shape right is not getting the answer right.** A perfectly formed record with every required field present can be completely made up. What structure removes is the *visible* class of errors, the ones that used to crash your parser and get noticed. What remains is the invisible class: confident, well-typed, wrong. **You have not reduced the errors; you have removed the ones that announced themselves.**
 
 The sharpest version of this is a field called something like `confidence`. It looks like the model telling you how sure it is. It is a number the model generated the same way it generated everything else, and it is not a measurement.
 
-**There is also a cost that surprises people.** Researchers compared models answering freely against the same models forced into structured formats, and found reasoning got measurably worse under the constraint — and worse still as the constraint got tighter. Making the output easy for a machine to read makes the thinking behind it a little worse. That is usually a trade worth making. It is not usually a trade anyone measures, because once the pipeline is built, nobody runs the unconstrained version again.
+**There is also a cost that surprises people.** Researchers compared models answering freely against the same models forced into structured formats, and found reasoning got measurably worse under the constraint, and worse still as the constraint got tighter. Making the output easy for a machine to read makes the thinking behind it a little worse. That is usually a trade worth making. It is not usually a trade anyone measures, because once the pipeline is built, nobody runs the unconstrained version again.
 
 Finally: the schema is a contract, not a config detail. Everything downstream depends on what a field means. Change that meaning quietly and every consumer keeps reading old data with new assumptions.
 
@@ -62,21 +62,21 @@ Finally: the schema is a contract, not a config detail. Everything downstream de
 ## AI literacy notes
 
 1. **Constrained decoding makes invalid output unreachable**; asking and validating only makes it rarer.
-2. **Schema conformance is not correctness** — a valid object can be entirely fabricated.
+2. **Schema conformance is not correctness.** A valid object can be entirely fabricated.
 3. **Structure removes the visible errors** and leaves the invisible ones in place.
 4. **A `confidence` field is a generated token**, not a measurement.
 5. **Format restriction measurably degrades reasoning**, and stricter formats degrade more.
 6. **Function calling is a special case** of structured output, not the other way round.
-7. **It is not a guardrail** — one constrains generation, the other inspects a result.
+7. **It is not a guardrail.** One constrains generation, the other inspects a result.
 8. **The schema is a versioned contract** with everything downstream.
 9. **JSON Schema is an open standard** with its own draft history; name the version.
-10. **A big schema asks for many decisions at once** — decomposing the task can fix content errors that no amount of schema tightening will.
+10. **A big schema asks for many decisions at once.** Decomposing the task can fix content errors that no amount of schema tightening will.
 
 ---
 
 ## Governance notes
 
-**Core question:** What is actually guaranteed about this output — that it parses, or that it is true — and does anyone downstream know the difference?
+**Core question:** What is actually guaranteed about this output, that it parses or that it is true? And does anyone downstream know the difference?
 
 **Watch for:**
 - Schema validation described or treated as quality assurance ([verification](verification.md))
@@ -93,15 +93,15 @@ Finally: the schema is a contract, not a config detail. Everything downstream de
 **Practice:**
 - **Say which guarantee you have.** Constrained decoding guarantees shape; nothing in the pipeline guarantees content, and that distinction belongs in the documentation
 - **Design the schema to permit honesty**: nullable fields, an explicit `unknown`, a refusal path. A schema with no way to say "not present" compels fabrication
-- **Measure field-level accuracy separately from conformance rate** — a 100% conformance rate is compatible with any accuracy at all
+- **Measure field-level accuracy separately from conformance rate.** A 100% conformance rate is compatible with any accuracy at all
 - **Run the unconstrained baseline at least once** and record the difference, so the reasoning cost of the format is a known quantity rather than an assumption
 - Version the schema, record the version with the data, and treat a change to a field's meaning as a breaking change ([model version and update](model-version-update.md))
 - Do not model confidence as a schema field unless it is derived from something measurable; prefer omitting it to inviting misreading
-- Validate at the consumer boundary as well as at generation — the schema is a contract, and contracts are checked at both ends
+- Validate at the consumer boundary as well as at generation, because the schema is a contract, and contracts are checked at both ends
 - **Log conformance failures rather than silently retrying**, so a degrading prompt or model is visible ([observability](observability.md))
-- **When the structure is valid but the content is wrong, try decomposing before tightening** — split selection from extraction and check the intermediate result, which is also the only place the error is visible ([prompt chaining](prompt-chaining.md))
+- **When the structure is valid but the content is wrong, try decomposing before tightening.** Split selection from extraction and check the intermediate result, which is also the only place the error is visible ([prompt chaining](prompt-chaining.md))
 
-**Key accountability owner:** whoever owns the schema — because the schema decides what the system is permitted to say, including whether it can say "I do not know," and that is a design decision with consequences no downstream consumer can undo.
+**Key accountability owner:** whoever owns the schema, because the schema decides what the system is permitted to say, including whether it can say "I do not know," and that is a design decision with consequences no downstream consumer can undo.
 
 *→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
@@ -109,7 +109,7 @@ Finally: the schema is a contract, not a config detail. Everything downstream de
 
 ## Confidence level
 
-**High.** The mechanism is well documented with a widely used open implementation, the schema language is an open specification, and the format-cost finding is peer-reviewed at an EMNLP industry track with a direct constrained-versus-free comparison. **Two limits.** The degradation result is measured on a **2024 model generation and on reasoning tasks specifically** — the direction is the durable finding, the magnitude is not, and models trained more heavily on structured output may behave differently, so this entry states the trade without quoting a size. And the constrained-decoding paper is an arXiv preprint whose authors maintain the library it introduces, so its performance comparisons are an author's evaluation of their own system; the structural guarantee, which is what this entry relies on, follows from the method rather than from the benchmark. ⚠️ **A widely circulated "0% to 100%" improvement figure for a structured-output control layer was deliberately excluded**: it is n=10 against a mock model configured to fail most first attempts, so the baseline is guaranteed by construction.
+**High.** The mechanism is well documented with a widely used open implementation, the schema language is an open specification, and the format-cost finding is peer-reviewed at an EMNLP industry track with a direct constrained-versus-free comparison. **Two limits.** The degradation result is measured on a **2024 model generation and on reasoning tasks specifically**. The direction is the durable finding, the magnitude is not, and models trained more heavily on structured output may behave differently, so this entry states the trade without quoting a size. And the constrained-decoding paper is an arXiv preprint whose authors maintain the library it introduces, so its performance comparisons are an author's evaluation of their own system; the structural guarantee, which is what this entry relies on, follows from the method rather than from the benchmark. ⚠️ **A widely circulated "0% to 100%" improvement figure for a structured-output control layer was deliberately excluded**: it is n=10 against a mock model configured to fail most first attempts, so the baseline is guaranteed by construction.
 
 ---
 
@@ -134,11 +134,11 @@ Finally: the schema is a contract, not a config detail. Everything downstream de
 
 | ID | Source | Contribution to this entry |
 |---|---|---|
-| SRC-339 | Willard, Brandon T.; Louf, Rémi — *Efficient Guided Generation for Large Language Models* (arXiv, 2023) · [link](https://arxiv.org/abs/2307.09702) | The mechanism and the entry's central distinction: reformulating generation as transitions between finite-state-machine states allows an index over the vocabulary, so schema-breaking tokens are never sampled — a **generation-time guarantee of shape**, model-agnostic and low-overhead. ⚠️ Preprint; the authors maintain the library it introduces. It guarantees shape only. |
-| SRC-340 | Tam, Zhi Rui; Wu, Cheng-Kuang; Tsai, Yi-Lin; Lin, Chieh-Yen; Lee, Hung-yi; Chen, Yun-Nung — *Let Me Speak Freely? A Study on the Impact of Format Restrictions on Performance of Large Language Models* (EMNLP Industry Track, 2024) · [link](https://arxiv.org/abs/2408.02442) | The cost: comparing structured-format generation against free-form on the same tasks, **a significant decline in reasoning ability under format restrictions, with stricter constraints producing greater degradation.** ⚠️ 2024 models and reasoning tasks specifically — cite the direction and re-measure the magnitude on your own models. |
-| SRC-341 | JSON Schema project — *JSON Schema Specification (version 2020-12)* · [link](https://json-schema.org/specification) | The vendor-neutral contract language, registered so the entry describes schemas through an open standard rather than any provider's API — which is what makes a structured-output contract a reviewable, versioned artifact. ⚠️ A living specification with a draft history; record the version cited. |
-| SRC-104 | Anthropic — *Building Effective AI Agents* (2024) · [link](https://www.anthropic.com/engineering/building-effective-agents) | Practitioner grounding for structured output as the interface between an agent's reasoning and the systems around it, and for the retry and validation patterns built on it. ⚠️ Vendor-produced — used for the architectural framing only. |
-| SRC-356 | Guo, Shuai (Towards Data Science) — *How to Implement Structured Output with Local LLMs* (2026) · [link](https://towardsdatascience.com/structured-output-with-local-llms/) | The worked demonstration behind this entry's schema-complexity point: a small locally-run model, constrained by a nested schema, returns valid JSON containing an item the source material explicitly excluded — **conformance and correctness coming apart in a concrete case** — and decomposing the call into scope-then-extract fixes it with no change of model. Also the non-vendor practitioner grounding for the ask-and-validate route. ⚠️ A single demonstration on one small model with no baseline or repetition: evidence that the failure occurs and that decomposition addressed it here, never of prevalence or rate. ⚠️ Names specific tooling and model versions that will date. |
+| SRC-339 | Willard, Brandon T.; Louf, Rémi — *Efficient Guided Generation for Large Language Models* (arXiv, 2023) · [link](https://arxiv.org/abs/2307.09702) | The mechanism and the entry's central distinction: reformulating generation as transitions between finite-state-machine states allows an index over the vocabulary, so schema-breaking tokens are never sampled, giving a **generation-time guarantee of shape**, model-agnostic and low-overhead. ⚠️ Preprint; the authors maintain the library it introduces. It guarantees shape only. |
+| SRC-340 | Tam, Zhi Rui; Wu, Cheng-Kuang; Tsai, Yi-Lin; Lin, Chieh-Yen; Lee, Hung-yi; Chen, Yun-Nung — *Let Me Speak Freely? A Study on the Impact of Format Restrictions on Performance of Large Language Models* (EMNLP Industry Track, 2024) · [link](https://arxiv.org/abs/2408.02442) | The cost: comparing structured-format generation against free-form on the same tasks, **a significant decline in reasoning ability under format restrictions, with stricter constraints producing greater degradation.** ⚠️ 2024 models and reasoning tasks specifically, so cite the direction and re-measure the magnitude on your own models. |
+| SRC-341 | JSON Schema project — *JSON Schema Specification (version 2020-12)* · [link](https://json-schema.org/specification) | The vendor-neutral contract language, registered so the entry describes schemas through an open standard rather than any provider's API, which is what makes a structured-output contract a reviewable, versioned artifact. ⚠️ A living specification with a draft history; record the version cited. |
+| SRC-104 | Anthropic — *Building Effective AI Agents* (2024) · [link](https://www.anthropic.com/engineering/building-effective-agents) | Practitioner grounding for structured output as the interface between an agent's reasoning and the systems around it, and for the retry and validation patterns built on it. ⚠️ Vendor-produced, and used for the architectural framing only. |
+| SRC-356 | Guo, Shuai (Towards Data Science) — *How to Implement Structured Output with Local LLMs* (2026) · [link](https://towardsdatascience.com/structured-output-with-local-llms/) | The worked demonstration behind this entry's schema-complexity point: a small locally-run model, constrained by a nested schema, returns valid JSON containing an item the source material explicitly excluded, with **conformance and correctness coming apart in a concrete case**, and decomposing the call into scope-then-extract fixes it with no change of model. Also the non-vendor practitioner grounding for the ask-and-validate route. ⚠️ A single demonstration on one small model with no baseline or repetition: evidence that the failure occurs and that decomposition addressed it here, never of prevalence or rate. ⚠️ Names specific tooling and model versions that will date. |
 
 ---
 
@@ -148,7 +148,7 @@ Finally: the schema is a contract, not a config detail. Everything downstream de
 |---|---|
 | **Technical / Professional** | Measure field accuracy separately from conformance rate, run the unconstrained baseline once to price the format, and give the schema a way to say "unknown." |
 | **Organizational** | Valid output is not correct output. Structure removes the errors that used to announce themselves and leaves the rest. |
-| **Client-facing** | Explains why a tidy, complete-looking record from an AI system still needs checking — the tidiness was guaranteed, the content was not. |
+| **Client-facing** | Explains why a tidy, complete-looking record from an AI system still needs checking, because the tidiness was guaranteed and the content was not. |
 | **LLM-native** | Function calling is a special case of this. A `confidence` field is a generated token. Constraining the format costs reasoning, and almost nobody measures how much. |
 
 ---

@@ -1,6 +1,6 @@
 <!--meta
 category: System Architecture
-short: Intelligence and control are separate layers — governance lives in the harness
+short: Intelligence and control are separate layers, and governance lives in the harness
 aliases: [agent harness, scaffolding, the layer around the model, control layer, harness engineering]
 tags: [Architecture, Agents]
 established: emerging
@@ -9,10 +9,10 @@ established: emerging
 
 # Harness Paradigm
 
-> **Term status — Emerging.** In active use and genuinely useful, but not yet settled — definitions still vary between sources. Read the Confidence level before relying on the term in a formal document.
+> **Term status — Emerging.** In active use and genuinely useful, but not yet settled, and definitions still vary between sources. Read the Confidence level before relying on the term in a formal document.
 
 ## One-line essence
-Intelligence and control are separate layers — governance lives in the harness, not the model.
+Intelligence and control are separate layers, and governance lives in the harness, not the model.
 
 ---
 
@@ -20,24 +20,24 @@ Intelligence and control are separate layers — governance lives in the harness
 
 The harness paradigm describes the architectural separation between a language model (the intelligence layer) and the surrounding infrastructure that makes it operational and governable (the control layer). The harness encompasses everything that mediates between the model and the world: tool access, permission systems, memory management, context injection, output routing, logging, and human-in-the-loop checkpoints.
 
-In this paradigm, the model is not the system — it is a component of the system. Its capabilities are defined by what the harness permits it to access and do. A model with no harness is a raw capability; a model with a well-designed harness is a governed system.
+In this paradigm, the model is not the system. It is a component of the system. Its capabilities are defined by what the harness permits it to access and do. A model with no harness is a raw capability; a model with a well-designed harness is a governed system.
 
 Key harness components:
 
-- **System prompt** — baseline context and behavioral constraints defined before any user interaction
-- **Tool contracts** — explicit definitions of what external actions the model can invoke, with what parameters, and under what conditions
-- **Permission model** — role- and context-based rules governing what the system can access or modify
-- **Memory layer** — management of what the model retains, for how long, and across which sessions
-- **Routing layer** — logic that determines which model, which prompt variant, or which workflow handles a given input
-- **Logging and audit** — structured records of model inputs, outputs, and tool calls for review and accountability
+- **System prompt:** baseline context and behavioral constraints defined before any user interaction
+- **Tool contracts:** explicit definitions of what external actions the model can invoke, with what parameters, and under what conditions
+- **Permission model:** role- and context-based rules governing what the system can access or modify
+- **Memory layer:** management of what the model retains, for how long, and across which sessions
+- **Routing layer:** logic that determines which model, which prompt variant, or which workflow handles a given input
+- **Logging and audit:** structured records of model inputs, outputs, and tool calls for review and accountability
 
-**Harness engineering** is the corresponding practice: treating that scaffolding as a first-class engineering artifact rather than incidental glue. Its working formulation is *agent = model + harness*, and the claim that follows is that much of the gap between what a model can do and what it is observed doing is a harness gap rather than a capability gap — so a capable model with a poorly built harness can be outperformed by a weaker model with a well-built one (Osmani). Böckeler's formulation for coding agents names the two control surfaces the discipline works with: *guides* — feedforward controls that steer before the agent acts — and *sensors* — feedback controls that observe after.
+**Harness engineering** is the corresponding practice: treating that scaffolding as a first-class engineering artifact rather than incidental glue. Its working formulation is *agent = model + harness*, and the claim that follows is that much of the gap between what a model can do and what it is observed doing is a harness gap rather than a capability gap, so a capable model with a poorly built harness can be outperformed by a weaker model with a well-built one (Osmani). Böckeler's formulation for coding agents names the two control surfaces the discipline works with: *guides*, feedforward controls that steer before the agent acts, and *sensors*, feedback controls that observe after.
 
 The distinction matters: the harness paradigm is the architectural claim (intelligence and control are separate layers), while harness engineering is the practice of designing, versioning, and iterating that control layer over time.
 
-**The harness does not shrink as models improve — it moves, and the parts it leaves behind are a maintenance liability.** Practitioners building long-running agents describe the cycle explicitly: find where the model is weak, fill the gap with scaffolding, let the next model generation absorb that capability, then **delete that part of the harness**. Their own worked example is the useful half — components built to force a context reset between sessions, and to decompose work into sprints, were *necessary* for one model generation and *removed* for the next, which held a long continuous build coherently on its own.
+**The harness does not shrink as models improve. It moves, and the parts it leaves behind are a maintenance liability.** Practitioners building long-running agents describe the cycle explicitly: find where the model is weak, fill the gap with scaffolding, let the next model generation absorb that capability, then **delete that part of the harness**. Their own worked example is the useful half. Components built to force a context reset between sessions, and to decompose work into sprints, were *necessary* for one model generation and *removed* for the next, which held a long continuous build coherently on its own.
 
-**That makes a harness component dated to a model generation**, and it reframes what a harness review is for. The obvious failure is not having built the scaffolding; **the less obvious one is keeping it after the gap it patched has closed** — paying its cost, and constraining the model with a workaround for a weakness it no longer has. ⚠️ Treat this as an engineering account rather than a measured finding: it is a first-party report from a vendor describing its own products (see Confidence level).
+**That makes a harness component dated to a model generation**, and it reframes what a harness review is for. The obvious failure is not having built the scaffolding; **the less obvious one is keeping it after the gap it patched has closed**, paying its cost and constraining the model with a workaround for a weakness it no longer has. ⚠️ Treat this as an engineering account rather than a measured finding: it is a first-party report from a vendor describing its own products (see Confidence level).
 
 ---
 
@@ -45,7 +45,7 @@ The distinction matters: the harness paradigm is the architectural claim (intell
 
 Think of the model as an engine and the harness as everything else in the vehicle: the steering, the brakes, the instruments, the rules about who can drive and where.
 
-A powerful engine with no controls is not a safe vehicle. The engine's power doesn't determine whether the vehicle is safe — the design of the controls does.
+A powerful engine with no controls is not a safe vehicle. The engine's power doesn't determine whether the vehicle is safe. The design of the controls does.
 
 The same logic applies to AI systems. A capable model deployed without a well-designed harness is not a governed system. The harness is where you answer the questions that actually matter for responsible deployment: What can this system do? Who authorized it? What can it not touch? What happens when it fails? Who reviews the outputs?
 
@@ -57,30 +57,30 @@ The harness paradigm resolves a common confusion in AI governance: treating the 
 
 Four implications:
 
-1. **Governance is an architecture decision.** Policies that are not implemented in the harness are not enforced — they are aspirations. If a rule about data access isn't encoded in the permission layer, it doesn't exist operationally.
+1. **Governance is an architecture decision.** Policies that are not implemented in the harness are not enforced. They are aspirations. If a rule about data access isn't encoded in the permission layer, it doesn't exist operationally.
 2. **Capability ≠ permission.** A model that *can* do something is not the same as a model that *should* be allowed to do it in a given context. The harness is where that distinction is made real.
-3. **Harness design requires domain knowledge.** Effective harness configuration requires understanding the use case, the risk profile, and the data landscape — not just the model's technical specifications. This is a human governance task.
+3. **Harness design requires domain knowledge.** Effective harness configuration requires understanding the use case, the risk profile, and the data landscape, not just the model's technical specifications. This is a human governance task.
 4. **The harness is where accountability lives.** Logging, audit trails, and HITL checkpoints are harness-layer decisions. A system without a harness cannot be audited.
-5. **Harness engineering is failure-driven, not anticipatory.** The discipline's characteristic method is a ratchet: constraints are added once a real failure has been observed, so each rule in the configuration is traceable to a specific thing that went wrong (Osmani). This makes the harness a living artifact that accumulates institutional memory about how the system fails — which is precisely why it needs versioning and change review rather than ad-hoc edits.
+5. **Harness engineering is failure-driven, not anticipatory.** The discipline's characteristic method is a ratchet: constraints are added once a real failure has been observed, so each rule in the configuration is traceable to a specific thing that went wrong (Osmani). This makes the harness a living artifact that accumulates institutional memory about how the system fails, which is precisely why it needs versioning and change review rather than ad-hoc edits.
 
 ---
 
 ## Governance notes
 
-**Core question:** Who owns the harness configuration — and is it governed like a production artifact?
+**Core question:** Who owns the harness configuration, and is it governed like a production artifact?
 
 **Watch for:**
-- Governance attention focused on model selection while harness configuration remains informal or undefined. The model doesn't enforce policies — the harness does.
+- Governance attention focused on model selection while harness configuration remains informal or undefined. The model doesn't enforce policies. The harness does.
 - Capability treated as permission by default: if the model can access a tool or data source, it does, because no one specified otherwise.
 - System prompts and permission models that are not versioned, not owned, and not subject to change review.
-- Constraints added speculatively and never revisited, so no one can say which rule prevents which failure — the configuration accretes instead of ratcheting.
+- Constraints added speculatively and never revisited, so no one can say which rule prevents which failure, and the configuration accretes instead of ratcheting.
 
 **Practice:**
 - Treat harness configuration (permission model, tool contracts, system prompt, logging setup) as a governed artifact: versioned, owned, and change-reviewed the same way as any production configuration.
 - Separate capability assessment ("can it do X?") from permission design ("should it be allowed to, for whom, under what conditions?"). These are different questions answered by different people.
 - Tie each harness constraint to the observed failure that motivated it, so the control layer accumulates reviewable institutional memory instead of undocumented accretion.
 
-**Key accountability owner:** Harness owner — the role or team responsible for configuring, versioning, and reviewing the control layer that sits between the model and the world.
+**Key accountability owner:** Harness owner, the role or team responsible for configuring, versioning, and reviewing the control layer that sits between the model and the world.
 
 *→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
@@ -88,7 +88,7 @@ Four implications:
 
 ## Confidence level
 
-**Medium-High.** The paradigm is well-established in production AI engineering (2023–present), and *harness engineering* has since been named and treated as a discipline in practitioner literature (Böckeler; Osmani), with systematic academic treatment of harness components. Its application to governance and organizational design is newer and still developing. ⚠️ **The co-evolution claim added in v1.4 is a first-party engineering account** — Anthropic engineers describing their own harness around their own models, at a third-party conference. It is cited for the *practice pattern* (build scaffolding for a gap, delete it when the gap closes) and for their worked example of components they removed; **the run-length and cost figures in the same talk are self-reported with no published method and are not cited here.** Treat the pattern as a hypothesis worth testing on your own stack rather than as a measured result.
+**Medium-High.** The paradigm is well-established in production AI engineering (2023–present), and *harness engineering* has since been named and treated as a discipline in practitioner literature (Böckeler; Osmani), with systematic academic treatment of harness components. Its application to governance and organizational design is newer and still developing. ⚠️ **The co-evolution claim added in v1.4 is a first-party engineering account**, from Anthropic engineers describing their own harness around their own models, at a third-party conference. It is cited for the *practice pattern* (build scaffolding for a gap, delete it when the gap closes) and for their worked example of components they removed; **the run-length and cost figures in the same talk are self-reported with no published method and are not cited here.** Treat the pattern as a hypothesis worth testing on your own stack rather than as a measured result.
 
 ---
 
@@ -112,10 +112,10 @@ Four implications:
 |---|---|---|
 | SRC-018 | Böckeler, Birgitta — *Harness engineering for coding agent users* (martinfowler.com, 2026) · [link](https://martinfowler.com/articles/harness-engineering.html) | Authoritative definition of the harness as the infrastructure surrounding the model. Introduces guides (feedforward controls that steer before the agent acts) vs sensors (feedback controls that observe after). Direct grounding for the core claim that intelligence and control are separate architectural layers. |
 | SRC-019 | Multiple authors — *Architectural Design Decisions in AI Agent Harnesses* (arXiv:2604.18071, 2026) · [link](https://arxiv.org/html/2604.18071v1) | Systematic academic treatment of harness components: state/persistence, security/governance, orchestration/tool use, memory, observability, and evals. Provides peer-reviewed grounding for the harness component list in the technical definition. |
-| SRC-071 | Osmani, Addy — *Agent Harness Engineering* (O'Reilly Radar, 2026) · [link](https://www.oreilly.com/radar/agent-harness-engineering/) | Names harness engineering as a discipline and frames the *agent = model + harness* formulation: the observed gap between model capability and system behavior is largely a harness gap. Source for the failure-driven ratchet — constraints earned from observed failures, each rule traceable to a specific thing that went wrong. |
-| SRC-103 | Model Context Protocol — *What is the Model Context Protocol (MCP)?* (official documentation, 2024) · [link](https://modelcontextprotocol.io/docs/getting-started/intro) | MCP as the standardization layer for tool interfaces: an open standard ("a USB-C port for AI applications") giving AI applications a uniform way to connect to external tools and data sources, so integrations are build-once / integrate-everywhere — grounds the claim that tool contracts are converging on a shared interface standard. |
-| SRC-354 | Prabaker, A., & Wilson, A. [AI Engineer]. (2026, May 18). *Anthropic Workshop: Build Agents That Run for Hours* [Video]. YouTube. · [link](https://www.youtube.com/watch?v=mR-WAvEPRwE) | Practitioner account of harness/model **co-evolution**: the cycle of finding a model gap, filling it with scaffolding, training the model on it and then removing that part of the harness — with the worked example of context-reset and sprint-decomposition components that were necessary for one model generation and deliberately deleted for the next. ⚠️ **VENDOR** (Anthropic engineers on Anthropic products, presented at a third-party conference): an engineering account, not a measurement. Every run-length and cost figure in the talk is self-reported with no published method. ⚠️ The wiki's working copy is a summary, not a verbatim transcript, so nothing here is quoted. |
-| SRC-118 | Sutter, Michal — *Claude Code Guide 2026: 25 Features with Examples + Demo* (MarkTechPost, 2026) · [link](https://www.marktechpost.com/2026/06/14/claude-code-guide-2026-25-features-with-examples-demo/) | Third-party analysis of a deployed agentic system's harness-layer primitives: persistent context (CLAUDE.md), reusable behaviors (skills), subagent delegation, hooks, and MCP server integrations. Illustrates that governance and control are harness-layer design choices in a concrete, production system — not model-level properties. |
+| SRC-071 | Osmani, Addy — *Agent Harness Engineering* (O'Reilly Radar, 2026) · [link](https://www.oreilly.com/radar/agent-harness-engineering/) | Names harness engineering as a discipline and frames the *agent = model + harness* formulation: the observed gap between model capability and system behavior is largely a harness gap. Source for the failure-driven ratchet, in which constraints are earned from observed failures and each rule is traceable to a specific thing that went wrong. |
+| SRC-103 | Model Context Protocol — *What is the Model Context Protocol (MCP)?* (official documentation, 2024) · [link](https://modelcontextprotocol.io/docs/getting-started/intro) | MCP as the standardization layer for tool interfaces: an open standard ("a USB-C port for AI applications") giving AI applications a uniform way to connect to external tools and data sources, so integrations are build-once / integrate-everywhere. It grounds the claim that tool contracts are converging on a shared interface standard. |
+| SRC-354 | Prabaker, A., & Wilson, A. [AI Engineer]. (2026, May 18). *Anthropic Workshop: Build Agents That Run for Hours* [Video]. YouTube. · [link](https://www.youtube.com/watch?v=mR-WAvEPRwE) | Practitioner account of harness/model **co-evolution**: the cycle of finding a model gap, filling it with scaffolding, training the model on it and then removing that part of the harness, with the worked example of context-reset and sprint-decomposition components that were necessary for one model generation and deliberately deleted for the next. ⚠️ **VENDOR** (Anthropic engineers on Anthropic products, presented at a third-party conference): an engineering account, not a measurement. Every run-length and cost figure in the talk is self-reported with no published method. ⚠️ The wiki's working copy is a summary, not a verbatim transcript, so nothing here is quoted. |
+| SRC-118 | Sutter, Michal — *Claude Code Guide 2026: 25 Features with Examples + Demo* (MarkTechPost, 2026) · [link](https://www.marktechpost.com/2026/06/14/claude-code-guide-2026-25-features-with-examples-demo/) | Third-party analysis of a deployed agentic system's harness-layer primitives: persistent context (CLAUDE.md), reusable behaviors (skills), subagent delegation, hooks, and MCP server integrations. Illustrates that governance and control are harness-layer design choices in a concrete, production system, not model-level properties. |
 
 ---
 
@@ -123,9 +123,9 @@ Four implications:
 
 | Audience | Relevance |
 |---|---|
-| **Technical / Professional** | Core architectural frame for any AI system deployment. Defines the design space for governance implementation — logging, permissions, tool contracts, routing. |
+| **Technical / Professional** | Core architectural frame for any AI system deployment. Defines the design space for governance implementation, including logging, permissions, tool contracts and routing. |
 | **Organizational** | Reframes the governance question: not "which model is safe?" but "how is this system controlled?" Shifts accountability from the vendor to the deployer. |
-| **Client-facing** | Explains why two organizations using the same AI model can produce very different outcomes — and why implementation decisions matter as much as model choice. |
+| **Client-facing** | Explains why two organizations using the same AI model can produce very different outcomes, and why implementation decisions matter as much as model choice. |
 | **LLM-native** | The paradigm that clarifies the relationship between model capability and system governance. Every other governance concept in this wiki is implemented at the harness layer. |
 
 ---
