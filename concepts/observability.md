@@ -1,6 +1,6 @@
 <!--meta
 category: Observability & Governance
-short: The ability to understand what an AI system is doing — and reconstruct why — from the outside
+short: The ability to understand what an AI system is doing, and reconstruct why, from the outside
 aliases: [monitoring, telemetry, can I see what it's doing, instrumentation, visibility]
 tags: [Architecture, Evaluation]
 established: established
@@ -12,7 +12,7 @@ established: established
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
-The ability to understand what an AI system is doing — and reconstruct why — by examining what goes in, what comes out, and every action in between.
+The ability to understand what an AI system is doing, and reconstruct why, by examining what goes in, what comes out, and every action in between.
 
 ---
 
@@ -22,18 +22,18 @@ Observability is the property of a system that allows its internal state to be i
 
 The three canonical observability signals (from distributed systems engineering) apply directly to AI:
 
-- **Logs** — discrete, timestamped records of events: inputs sent to the model, outputs received, tool calls made, errors encountered
-- **Metrics** — aggregated, time-series measurements: latency, token counts, error rates, evaluation scores across production traffic
-- **Traces** — end-to-end records of a request's journey through a system: for agents, the complete chain of reasoning steps, tool invocations, retrievals, and intermediate outputs
+- **Logs:** discrete, timestamped records of events: inputs sent to the model, outputs received, tool calls made, errors encountered
+- **Metrics:** aggregated, time-series measurements: latency, token counts, error rates, evaluation scores across production traffic
+- **Traces:** end-to-end records of a request's journey through a system: for agents, the complete chain of reasoning steps, tool invocations, retrievals, and intermediate outputs
 
 AI systems extend these standard signals with domain-specific observability needs:
 
-- **Prompt and context logs** — what system prompt was active, what retrieved documents were injected, what user input was received
-- **Tool call traces** — which tools an agent invoked, with what parameters, and what responses were returned
-- **Evaluation scores** — structured assessments of output quality, factuality, or task completion run against production samples
-- **Model version and configuration** — which model, which harness configuration, and which prompt version produced a given output
+- **Prompt and context logs:** what system prompt was active, what retrieved documents were injected, what user input was received
+- **Tool call traces:** which tools an agent invoked, with what parameters, and what responses were returned
+- **Evaluation scores:** structured assessments of output quality, factuality, or task completion run against production samples
+- **Model version and configuration:** which model, which harness configuration, and which prompt version produced a given output
 
-Observability is distinct from explainability. Explainability attempts to interpret the model's internal reasoning. Observability accepts that the model is a black box and instead makes the observable boundary — inputs, context, outputs, actions — fully instrumented and traceable.
+Observability is distinct from explainability. Explainability attempts to interpret the model's internal reasoning. Observability accepts that the model is a black box and instead makes the observable boundary (inputs, context, outputs, actions) fully instrumented and traceable.
 
 ---
 
@@ -41,7 +41,7 @@ Observability is distinct from explainability. Explainability attempts to interp
 
 You can't see inside an AI model. But you can observe everything that goes in and comes out. Observability is the practice of instrumenting that boundary systematically, so you can answer three questions at any time: what did the system receive, what did it do, and what did it produce?
 
-For a simple chat application, this might just be input/output logging. For an agent taking multi-step actions across external systems, observability means tracing every tool call, every retrieved document, every intermediate result — because when something goes wrong, the final output alone won't tell you how you got there.
+For a simple chat application, this might just be input/output logging. For an agent taking multi-step actions across external systems, observability means tracing every tool call, every retrieved document, every intermediate result, because when something goes wrong, the final output alone won't tell you how you got there.
 
 Observability doesn't solve the black box problem. It works around it: if the interior is opaque, make the exterior fully transparent.
 
@@ -49,13 +49,13 @@ Observability doesn't solve the black box problem. It works around it: if the in
 
 ## AI literacy notes
 
-Observability is often treated as a performance monitoring concern — something for engineering teams to add after deployment. In AI governance, it is a precondition for accountability.
+Observability is often treated as a performance monitoring concern, something for engineering teams to add after deployment. In AI governance, it is a precondition for accountability.
 
 Three implications:
 
-1. **Observability is the auditable layer.** Since the model's internal reasoning is opaque, the observable boundary — inputs, context, outputs, tool calls — is the only artifact that can be audited, reviewed, or used to reconstruct what happened. An AI system without observability is an unauditable system. Governance policies that require human accountability for AI outputs cannot be enforced without it.
+1. **Observability is the auditable layer.** Since the model's internal reasoning is opaque, the observable boundary (inputs, context, outputs, tool calls) is the only artifact that can be audited, reviewed, or used to reconstruct what happened. An AI system without observability is an unauditable system. Governance policies that require human accountability for AI outputs cannot be enforced without it.
 2. **Agent observability is qualitatively harder.** A single model call produces one input-output pair. An agent acting across multiple steps produces an execution trace: a sequence of decisions, tool calls, retrieved documents, and intermediate states. Full observability of agents requires capturing the complete trace, not just the terminal output.
-3. **Observability enables improvement loops.** Production telemetry is the input to evaluation pipelines, fine-tuning decisions, and prompt refinement. Without it, model improvement is reactive — driven by user complaints rather than systematic quality signals.
+3. **Observability enables improvement loops.** Production telemetry is the input to evaluation pipelines, fine-tuning decisions, and prompt refinement. Without it, model improvement is reactive, driven by user complaints rather than systematic quality signals.
 
 ---
 
@@ -70,9 +70,9 @@ Three implications:
 
 **Practice:**
 - Define the minimum observable artifact before deployment: at minimum, log the full input (including injected context and system prompt version), the model's output, and any tool calls made. This is the floor for auditability.
-- Structure observability for two distinct audiences: engineering (performance, error rates, latency, system health) and governance (input-output pairs, context injections, tool traces, evaluation scores, model version). These have different retention periods, access controls, and format requirements — design for both from the start.
+- Structure observability for two distinct audiences: engineering (performance, error rates, latency, system health) and governance (input-output pairs, context injections, tool traces, evaluation scores, model version). These have different retention periods, access controls, and format requirements, so design for both from the start.
 
-**Key accountability owner:** Observability owner — the role responsible for defining what is logged, ensuring logs are structured for audit review, and maintaining the telemetry infrastructure that makes AI system behavior accountable.
+**Key accountability owner:** Observability owner, the role responsible for defining what is logged, ensuring logs are structured for audit review, and maintaining the telemetry infrastructure that makes AI system behavior accountable.
 
 *→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
@@ -80,7 +80,7 @@ Three implications:
 
 ## Confidence level
 
-**High.** Observability is a mature concept from distributed systems engineering with stable tooling (OpenTelemetry) and frameworks (DORA). Its application to AI systems is well-established (2023–present), with a growing ecosystem of AI-specific observability tools. The governance framing — observability as the auditable layer for black-box systems — is consolidating as a standard position in responsible AI and MLOps literature.
+**High.** Observability is a mature concept from distributed systems engineering with stable tooling (OpenTelemetry) and frameworks (DORA). Its application to AI systems is well-established (2023–present), with a growing ecosystem of AI-specific observability tools. The governance framing, with observability as the auditable layer for black-box systems, is consolidating as a standard position in responsible AI and MLOps literature.
 
 ---
 
@@ -102,9 +102,9 @@ Three implications:
 |---|---|---|
 | SRC-026 | OpenTelemetry (CNCF) — *What is observability?* (documentation, ongoing) · [link](https://opentelemetry.io/docs/concepts/observability-primer/) | Industry-standard definition of observability and the three canonical signal types: logs, metrics, and traces. OpenTelemetry is the CNCF standard for instrumentation across distributed systems, and the vocabulary AI observability tooling has adopted. |
 | SRC-027 | Sridharan, Cindy — *Distributed Systems Observability* (O'Reilly, 2018) · [link](https://www.oreilly.com/library/view/distributed-systems-observability/9781492033431/) | Foundational framing of observability as distinct from monitoring: monitoring tells you when something is wrong; observability lets you understand why. Establishes the logs/metrics/traces model and the principle that observability must be designed in, not added after. |
-| SRC-024 | European Parliament — *EU AI Act, Article 13* (2024) · [link](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689) | Observability as the auditable layer for black-box systems: high-risk AI must be designed so deployers can interpret and audit outputs — the regulatory basis for treating the observable layer as where accountability lives. |
+| SRC-024 | European Parliament — *EU AI Act, Article 13* (2024) · [link](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689) | Observability as the auditable layer for black-box systems: high-risk AI must be designed so deployers can interpret and audit outputs, the regulatory basis for treating the observable layer as where accountability lives. |
 | SRC-034 | Chase, Harrison (LangChain) — *The Agent Development Lifecycle* (2026) · [link](https://www.langchain.com/blog/the-agent-development-lifecycle) | Agent execution traces as the minimum artifact: establishes that "an agent can return a technically successful response and still fail the task," requiring comprehensive tracing to diagnose behavior. |
-| SRC-054 | Schubmehl & Kuppuswamy (IDC) — *IDC MarketScape: Worldwide Unified AI Governance Platforms 2025–2026* (2025) · [link](https://my.idc.com/getdoc.jsp?containerId=US53514825) | Two-audience observability (engineering vs. governance): governance platforms add model registries, compliance automation, drift detection, and audit trails on top of engineering telemetry — observability serves a distinct governance audience alongside engineers. |
+| SRC-054 | Schubmehl & Kuppuswamy (IDC) — *IDC MarketScape: Worldwide Unified AI Governance Platforms 2025–2026* (2025) · [link](https://my.idc.com/getdoc.jsp?containerId=US53514825) | Two-audience observability (engineering vs. governance): governance platforms add model registries, compliance automation, drift detection, and audit trails on top of engineering telemetry, so observability serves a distinct governance audience alongside engineers. |
 
 ---
 
@@ -113,8 +113,8 @@ Three implications:
 | Audience | Relevance |
 |---|---|
 | **Technical / Professional** | Defines the instrumentation requirements for deployed AI systems. Informs logging architecture, telemetry design, evaluation pipeline integration, and agent trace capture. The engineering prerequisite for everything governance requires. |
-| **Organizational** | The concept that explains what "accountability for AI outputs" requires in practice — and why "the system is working fine" (measured by uptime and latency) is not the same as "the system is producing acceptable outputs." |
-| **Client-facing** | Answers "how do you know if the AI is working correctly?" — with a concrete answer: systematic logging, evaluation scores, and human review workflows, not just absence of errors. |
+| **Organizational** | The concept that explains what "accountability for AI outputs" requires in practice, and why "the system is working fine" (measured by uptime and latency) is not the same as "the system is producing acceptable outputs." |
+| **Client-facing** | Answers "how do you know if the AI is working correctly?" with a concrete answer: systematic logging, evaluation scores, and human review workflows, not just absence of errors. |
 | **LLM-native** | The infrastructure layer that makes governance real. Every HITL checkpoint, every audit, every evaluation pipeline depends on observability being in place. Design it first. |
 
 ---

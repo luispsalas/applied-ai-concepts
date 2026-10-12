@@ -1,6 +1,6 @@
 <!--meta
 category: Knowledge & Memory
-short: The fitness of data for its intended use — and the upstream constraint on every AI system built on it
+short: The fitness of data for its intended use, and the upstream constraint on every AI system built on it
 aliases: [fitness for purpose, garbage in garbage out, data readiness, clean data, data fitness]
 tags: [Data Governance]
 established: established
@@ -12,7 +12,7 @@ established: established
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
-The fitness of data for its intended use — and the upstream constraint that determines the reliability of every AI system built on it.
+The fitness of data for its intended use, and the upstream constraint that determines the reliability of every AI system built on it.
 
 ---
 
@@ -20,47 +20,47 @@ The fitness of data for its intended use — and the upstream constraint that de
 
 Data quality refers to the degree to which data is fit for the purposes it is used for. It is assessed across multiple dimensions, each measuring a different property of the data relative to its intended use:
 
-- **Accuracy** — data correctly represents the real-world entity or event it describes
-- **Completeness** — required data is present; records and fields are not missing
-- **Consistency** — data does not contradict itself across systems, records, or time periods
-- **Timeliness** — data is current enough for its intended use; not stale relative to the decisions it informs
-- **Validity** — data conforms to defined formats, ranges, and business rules
-- **Uniqueness** — records are not duplicated across the dataset
+- **Accuracy:** data correctly represents the real-world entity or event it describes
+- **Completeness:** required data is present; records and fields are not missing
+- **Consistency:** data does not contradict itself across systems, records, or time periods
+- **Timeliness:** data is current enough for its intended use; not stale relative to the decisions it informs
+- **Validity:** data conforms to defined formats, ranges, and business rules
+- **Uniqueness:** records are not duplicated across the dataset
 
 In AI systems, data quality operates as a constraint at multiple layers:
-- **Training data** — quality determines what the model learns; biases, gaps, and errors in training data become systematic model behaviors
-- **Knowledge base / RAG corpus** — quality determines what the retrieval system surfaces; stale or inconsistent documents produce stale or inconsistent answers
-- **Context engineering inputs** — structured data injected into prompts carries the same quality requirements as any other data asset
+- **Training data:** quality determines what the model learns; biases, gaps, and errors in training data become systematic model behaviors
+- **Knowledge base / RAG corpus:** quality determines what the retrieval system surfaces; stale or inconsistent documents produce stale or inconsistent answers
+- **Context engineering inputs:** structured data injected into prompts carries the same quality requirements as any other data asset
 
-Poor data quality does not merely degrade output quality in proportion — it can introduce systematic errors and biases that are invisible to downstream users, because the model presents outputs with the same fluency regardless of the quality of the underlying data.
+Poor data quality does not merely degrade output quality in proportion. It can introduce systematic errors and biases that are invisible to downstream users, because the model presents outputs with the same fluency regardless of the quality of the underlying data.
 
 ---
 
 ## Plain-language version
 
-AI systems are built on data. Whatever errors, gaps, inconsistencies, or biases exist in that data will appear in the AI's outputs — often invisibly, and often stated with more confidence than the underlying data deserves.
+AI systems are built on data. Whatever errors, gaps, inconsistencies, or biases exist in that data will appear in the AI's outputs, often invisibly, and often stated with more confidence than the underlying data deserves.
 
-This is the "garbage in, garbage out" principle extended: data quality isn't just a database concern. It is a constraint on every AI system that uses data — including RAG systems that retrieve from knowledge bases, models trained on organizational datasets, and context-engineered workflows that inject structured information into prompts.
+This is the "garbage in, garbage out" principle extended: data quality isn't just a database concern. It is a constraint on every AI system that uses data, including RAG systems that retrieve from knowledge bases, models trained on organizational datasets, and context-engineered workflows that inject structured information into prompts.
 
-Three data quality failures are especially consequential in AI contexts: outdated data presented as current (timeliness failure), missing records that skew patterns (completeness failure), and inconsistent definitions across systems that produce contradictory signals (consistency failure). None of these announce themselves in the output — the model doesn't know the data is wrong.
+Three data quality failures are especially consequential in AI contexts: outdated data presented as current (timeliness failure), missing records that skew patterns (completeness failure), and inconsistent definitions across systems that produce contradictory signals (consistency failure). None of these announce themselves in the output, because the model doesn't know the data is wrong.
 
 ---
 
 ## AI literacy notes
 
-Data quality is often treated as a data engineering concern — something to solve before AI work begins. In practice, it is a continuous governance responsibility that runs alongside AI deployment.
+Data quality is often treated as a data engineering concern, something to solve before AI work begins. In practice, it is a continuous governance responsibility that runs alongside AI deployment.
 
 Three implications:
 
-1. **Data quality problems become model behavior.** Poor training data becomes systematic model error. Poor knowledge base data becomes confidently wrong retrieval. The model doesn't flag data quality problems — it incorporates them into outputs that look indistinguishable from correct ones.
-2. **Quality is always relative to use.** Data that is high quality for one purpose may be unfit for another. Assessing data quality requires knowing what the AI system will do with it — not just checking whether data exists and conforms to a schema.
-3. **Data quality governance cannot be delegated to the AI.** AI systems can help identify quality issues (anomaly detection, deduplication, completeness checks), but the governing decisions — what counts as accurate, who resolves conflicts, what completeness threshold is acceptable — require human domain knowledge and accountability.
+1. **Data quality problems become model behavior.** Poor training data becomes systematic model error. Poor knowledge base data becomes confidently wrong retrieval. The model doesn't flag data quality problems. It incorporates them into outputs that look indistinguishable from correct ones.
+2. **Quality is always relative to use.** Data that is high quality for one purpose may be unfit for another. Assessing data quality requires knowing what the AI system will do with it, not just checking whether data exists and conforms to a schema.
+3. **Data quality governance cannot be delegated to the AI.** AI systems can help identify quality issues (anomaly detection, deduplication, completeness checks), but the governing decisions (what counts as accurate, who resolves conflicts, what completeness threshold is acceptable) require human domain knowledge and accountability.
 
 ---
 
 ## Governance notes
 
-**Core question:** Are data quality requirements defined relative to the AI use case — and is quality monitored continuously, not just assessed at ingestion?
+**Core question:** Are data quality requirements defined relative to the AI use case? And is quality monitored continuously, not just assessed at ingestion?
 
 **Watch for:**
 - Quality assessed once at ingestion and not revisited: data quality degrades over time as source systems change, business rules evolve, and records become stale. A one-time quality check creates false confidence in data that is continuously changing.
@@ -69,9 +69,9 @@ Three implications:
 
 **Practice:**
 - Define data quality requirements by use case: specify which dimensions matter (accuracy, completeness, timeliness, etc.), at what threshold, for the specific AI task. A customer service knowledge base has different requirements than a financial reporting dataset.
-- Build quality monitoring into the data pipeline continuously: freshness indicators, completeness metrics, and consistency checks belong in the observability stack alongside model performance metrics — not as a pre-deployment gate that is then forgotten.
+- Build quality monitoring into the data pipeline continuously: freshness indicators, completeness metrics, and consistency checks belong in the observability stack alongside model performance metrics, not as a pre-deployment gate that is then forgotten.
 
-**Key accountability owner:** Data quality owner — the role responsible for defining quality standards relative to the AI use case, monitoring quality signals over time, and authorizing data as fit for use in AI systems.
+**Key accountability owner:** Data quality owner, the role responsible for defining quality standards relative to the AI use case, monitoring quality signals over time, and authorizing data as fit for use in AI systems.
 
 *→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
@@ -100,8 +100,8 @@ Three implications:
 | ID | Source | Contribution to this entry |
 |---|---|---|
 | SRC-025 | DAMA International — *DAMA-DMBOK: Data Management Body of Knowledge* (2nd ed., 2017) · [link](https://www.dama.org/cpages/body-of-knowledge) | Canonical framework for data quality dimensions and data management practice. Authoritative definitions for accuracy, completeness, consistency, timeliness, validity, and uniqueness as the standard quality dimension set. Industry reference for data governance roles and responsibilities. |
-| SRC-051 | Perrone, Paolo — *How DoorDash Built Their RAG System* (The AI Engineer, 2026) · [link](https://theaiengineer.substack.com/p/how-doordash-built-their-rag-system) | Data quality as a continuous, upstream constraint on system behavior: production RAG used layered verification and a simulation flywheel to keep retrieved-content quality high over time — quality governance as an ongoing responsibility, not a pre-deployment gate. |
-| SRC-052 | Karunakaran Ponon, Nidhin (Towards Data Science) — *How to Build an Efficient Knowledge Base for AI Models* (2026) · [link](https://towardsdatascience.com/how-to-build-an-efficient-knowledge-base-for-ai-models/) | "Garbage in, garbage out" extended to knowledge bases and context inputs: chunking, metadata, and access design determine downstream answer quality — poor input quality propagates directly into model and RAG behavior. |
+| SRC-051 | Perrone, Paolo — *How DoorDash Built Their RAG System* (The AI Engineer, 2026) · [link](https://theaiengineer.substack.com/p/how-doordash-built-their-rag-system) | Data quality as a continuous, upstream constraint on system behavior: production RAG used layered verification and a simulation flywheel to keep retrieved-content quality high over time, treating quality governance as an ongoing responsibility, not a pre-deployment gate. |
+| SRC-052 | Karunakaran Ponon, Nidhin (Towards Data Science) — *How to Build an Efficient Knowledge Base for AI Models* (2026) · [link](https://towardsdatascience.com/how-to-build-an-efficient-knowledge-base-for-ai-models/) | "Garbage in, garbage out" extended to knowledge bases and context inputs: chunking, metadata, and access design determine downstream answer quality, and poor input quality propagates directly into model and RAG behavior. |
 
 ---
 
@@ -110,8 +110,8 @@ Three implications:
 | Audience | Relevance |
 |---|---|
 | **Technical / Professional** | Defines the data requirements that must be met before AI systems can be trusted. Informs knowledge base design, RAG pipeline governance, training data curation, and context injection validation. |
-| **Organizational** | The concept that explains why "we have the data" is not sufficient — and why data fitness for purpose, not mere availability, is what determines AI system reliability. Essential for any AI adoption roadmap. |
-| **Client-facing** | Answers "why is the AI giving us wrong information about our own products/policies?" — and points to the data, not the model, as the likely root cause. |
+| **Organizational** | The concept that explains why "we have the data" is not sufficient, and why data fitness for purpose, not mere availability, is what determines AI system reliability. Essential for any AI adoption roadmap. |
+| **Client-facing** | Answers "why is the AI giving us wrong information about our own products/policies?", and points to the data, not the model, as the likely root cause. |
 | **LLM-native** | The upstream constraint that bounds everything downstream. No context engineering, RAG architecture, or harness design compensates for data that is inaccurate, incomplete, or stale. |
 
 ---
