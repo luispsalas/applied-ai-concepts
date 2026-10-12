@@ -14,7 +14,7 @@ Looking for one term? Use the [alphabetical glossary](index.md) or [search](../s
 | [Large Language Models (LLMs)](../concepts/large-language-models.md) | Neural networks trained on vast text corpora that generate language by predicting what comes next, the foundation of most modern AI tools and agents | ✅ v1.0 |
 | [Small Language Models (SLMs)](../concepts/small-language-models.md) | Language models small enough to run cheaply, locally, or at the edge, and often the better fit for narrow, repetitive tasks | ✅ v1.0 |
 | [Local LLMs](../concepts/local-llms.md) | Models run on your own infrastructure. The data stays in, and every duty the provider was carrying becomes yours | ✅ v1.0 |
-| [Determinism vs Probabilism](../concepts/determinism-vs-probabilism.md) | Why AI models generate statistically likely outputs rather than fixed answers — the same input can produce different results | ✅ v1.0 |
+| [Determinism vs Probabilism](../concepts/determinism-vs-probabilism.md) | Why AI models generate statistically likely outputs rather than fixed answers, so the same input can produce different results | ✅ v1.0 |
 | [Reasoning Models / Test-Time Compute](../concepts/reasoning-models.md) | Models that spend extra computation "thinking" through a problem step by step before answering, trading speed for higher accuracy on hard tasks | ✅ v1.1 |
 | [Multimodal AI](../concepts/multimodal-ai.md) | Text, images, audio and video in one system, with every text risk carried across and weaker tooling to detect it | ✅ v1.0 |
 | [Sycophancy (LLMs)](../concepts/sycophancy-llms.md) | Models agreeing with users rather than being accurate. It is a behavior the training signal rewards, not an incidental bug | ✅ v1.1 |
@@ -23,7 +23,7 @@ Looking for one term? Use the [alphabetical glossary](index.md) or [search](../s
 | [Hallucination](../concepts/hallucination.md) | AI models generate plausible-sounding content that is factually incorrect, confidently and without warning | ✅ v1.2 |
 | [Black Box](../concepts/black-box.md) | An AI system whose internal reasoning process cannot be observed or interpreted, even when its outputs can | ✅ v1.1 |
 | [Bias (AI Systems)](../concepts/bias-ai-systems.md) | Systematic errors that unfairly advantage or disadvantage certain groups. They are often inherited from training data and rarely visible in any single output | ✅ v1.0 |
-| [Explainability (XAI)](../concepts/explainability-xai.md) | Describing, in terms a human can understand, why an AI system produced a specific output — a prerequisite for accountability | ✅ v1.0 |
+| [Explainability (XAI)](../concepts/explainability-xai.md) | Describing, in terms a human can understand, why an AI system produced a specific output, a prerequisite for accountability | ✅ v1.0 |
 | [Types of AI Systems](../concepts/types-of-ai-systems.md) | A taxonomy of AI by capability and autonomy (from narrow task tools to general-purpose models) that determines governance, risk, and oversight | ✅ v1.2 |
 | [Fine-tuning](../concepts/fine-tuning.md) | Adapting a model on your own data. It is cheap enough to be routine, and it can silently strip the safety behavior you were relying on | ✅ v1.0 |
 | [RLHF (Reinforcement Learning from Human Feedback)](../concepts/rlhf.md) | Humans rank outputs, the model learns the ranking. It is the step that turns a raw model into an assistant, and imports whoever did the ranking | ✅ v1.0 |
@@ -41,7 +41,7 @@ Looking for one term? Use the [alphabetical glossary](index.md) or [search](../s
 | [Mixture of Experts](../concepts/mixture-of-experts.md) | Models where only a fraction of the parameters run for any given token, which quietly breaks parameter count as a way of comparing anything | ✅ v1.0 |
 | [Model Distillation](../concepts/model-distillation.md) | Training a small model to reproduce a large one's behavior, and the fact that the only thing separating this from model theft is permission | ✅ v1.0 |
 | [Quantization](../concepts/quantization.md) | Storing a model's weights at lower numerical precision to make it cheaper to run, which produces a different model, with its own evaluation status and its own safety behavior | ✅ v1.0 |
-| [World Models](../concepts/world-models.md) | A learned simulation of how an environment responds to actions, which an agent plans inside before acting — so its decisions are only as sound as the simulation, and an optimizer will find exactly where the simulation is wrong | ✅ v1.0 |
+| [World Models](../concepts/world-models.md) | A learned simulation of how an environment responds to actions, which an agent plans inside before acting, so its decisions are only as sound as the simulation, and an optimizer will find exactly where the simulation is wrong | ✅ v1.0 |
 
 ### Interaction & Design
 *How you work with models effectively*
@@ -96,10 +96,10 @@ Looking for one term? Use the [alphabetical glossary](index.md) or [search](../s
 | [Training Data](../concepts/training-data.md) | What the model learned from, which is where its knowledge, gaps, blind spots and biases all come from, and which is rarely disclosed | ✅ v1.0 |
 | [Copyright & AI Output](../concepts/copyright-ai-output.md) | Who owns what a model makes, and whether training was lawful. These are two questions, one with a US answer and one genuinely open | ✅ v1.0 |
 | [Grounding](../concepts/grounding.md) | Anchoring model outputs to specific, verifiable sources, reducing hallucination by giving the model something real to reason from | ✅ v1.0 |
-| [Knowledge Base](../concepts/knowledge-base.md) | The collection of documents an AI can look up when answering — the quality of the library determines the quality of the answers | ✅ v1.0 |
-| [Memory (AI Systems)](../concepts/memory-ai-systems.md) | How an AI remembers — what it keeps in a conversation, what carries over to future sessions, and what it reuses as learned skill | ✅ v1.0 |
-| [Domain](../concepts/domain.md) | The specific field the AI is working in — what counts as a "good" or "wrong" answer depends entirely on the domain | ✅ v1.0 |
-| [Context Window](../concepts/context-window.md) | The maximum amount of text an AI model can consider at once — a hard limit on what it can reason about | ✅ v1.0 |
+| [Knowledge Base](../concepts/knowledge-base.md) | The collection of documents an AI can look up when answering. The quality of the library determines the quality of the answers | ✅ v1.0 |
+| [Memory (AI Systems)](../concepts/memory-ai-systems.md) | How an AI remembers, covering what it keeps in a conversation, what carries over to future sessions, and what it reuses as learned skill | ✅ v1.0 |
+| [Domain](../concepts/domain.md) | The specific field the AI is working in. What counts as a "good" or "wrong" answer depends entirely on the domain | ✅ v1.0 |
+| [Context Window](../concepts/context-window.md) | The maximum amount of text an AI model can consider at once, a hard limit on what it can reason about | ✅ v1.0 |
 | [Context (AI Systems)](../concepts/context-ai-systems.md) | Everything the model receives before it answers. It is one bounded, undifferentiated stream, assembled fresh every time | ✅ v1.0 |
 | [Knowledge Graphs](../concepts/knowledge-graphs.md) | Facts and their relationships stored as an explicit, inspectable network. It is the retrieval substrate you can audit, as opposed to one you can only measure | ✅ v1.0 |
 | [Synthetic Data](../concepts/synthetic-data.md) | Data produced by a model rather than observed in the world. It is a genuine answer to scarcity, privacy and cost, and a genuine way to build a corpus that quietly stops describing reality | ✅ v1.0 |
@@ -134,7 +134,7 @@ Looking for one term? Use the [alphabetical glossary](index.md) or [search](../s
 |---|---|---|
 | [Evaluation (AI Systems)](../concepts/evaluation.md) | The structured practice of measuring whether an AI system does what it is supposed to do, before deployment and continuously in production | ✅ v1.2 |
 | [Failure Modes (AI Systems)](../concepts/failure-modes-ai-systems.md) | The specific ways an AI system can go wrong, each requiring a different detection-and-response control | ✅ v1.0 |
-| [Red Teaming](../concepts/red-teaming.md) | Deliberately attacking your own AI system — probing for jailbreaks, data leaks, and harmful outputs before anyone else finds them | ✅ v1.0 |
+| [Red Teaming](../concepts/red-teaming.md) | Deliberately attacking your own AI system, probing for jailbreaks, data leaks, and harmful outputs before anyone else finds them | ✅ v1.0 |
 | [Deception (AI Systems)](../concepts/deception-ai-systems.md) | Output that systematically induces false beliefs because something other than truth was being optimized for | ✅ v1.2 |
 | [Concealing Uncertainty](../concepts/concealing-uncertainty.md) | A tentative answer presented as settled, with the caveats a calibrated response would surface trained away | ✅ v1.0 |
 | [Synthetic Media (Deepfakes)](../concepts/synthetic-media-deepfakes.md) | Generation scales and verification does not, and the documented harm is fraud and intimate imagery, not mainly politics | ✅ v1.0 |
@@ -166,7 +166,7 @@ Looking for one term? Use the [alphabetical glossary](index.md) or [search](../s
 | [Accountability (AI Systems)](../concepts/accountability-ai-systems.md) | The principle that someone can be held answerable for an AI system's behavior, and that answerable means explain, justify, and face consequences | ✅ v1.0 |
 | [Audit Trail (AI)](../concepts/audit-trail-ai.md) | The structured record of what an AI system received, decided, and did, enabling accountability and governance review after the fact | ✅ v1.0 |
 | [Compliance (AI Systems)](../concepts/compliance-ai-systems.md) | Meeting defined AI obligations, and being answerable for whether they were actually met, not just documented | ✅ v1.1 |
-| [Data Minimization](../concepts/data-minimization.md) | Collecting and keeping only the data a system actually needs — less data, less risk, lower cost | ✅ v1.0 |
+| [Data Minimization](../concepts/data-minimization.md) | Collecting and keeping only the data a system actually needs. Less data means less risk and lower cost | ✅ v1.0 |
 | [Privacy (AI Systems)](../concepts/privacy-ai-systems.md) | The rights and obligations that govern how personal data is used in AI training and deployment, and the responsibility to uphold them | ✅ v1.0 |
 | [Data Leakage (AI Systems)](../concepts/data-leakage-ai-systems.md) | When sensitive information from training data or context surfaces in model outputs, exposing what was never meant to be accessible | ✅ v1.0 |
 | [AI Incident (Reporting)](../concepts/ai-incident-reporting.md) | A documented event where an AI system caused or nearly caused harm. There are now legal deadlines to report it, not just fix it quietly | ✅ v1.2 |
@@ -199,7 +199,7 @@ Looking for one term? Use the [alphabetical glossary](index.md) or [search](../s
 | Concept | One-line essence | Status |
 |---|---|---|
 | [AI Literacy](../concepts/ai-literacy.md) | The competencies required to engage with, use, and govern AI systems responsibly, at an individual, team, and organizational level | ✅ v1.1 |
-| [AI Use Case](../concepts/ai-use-case.md) | A defined, bounded application of AI to a specific problem — the unit of design, risk assessment, and governance accountability | ✅ v1.0 |
+| [AI Use Case](../concepts/ai-use-case.md) | A defined, bounded application of AI to a specific problem, the unit of design, risk assessment, and governance accountability | ✅ v1.0 |
 | [Operational Readiness (AI)](../concepts/operational-readiness-ai.md) | Whether the organization can actually run an AI system (data, infrastructure, skills, process, governance), not whether the model works | ✅ v1.0 |
 | [Scalability (AI Systems)](../concepts/scalability-ai-systems.md) | Volume scales, review capacity does not, and nothing alarms when a governed tool becomes an unreviewed pipeline | ✅ v1.0 |
 | [Value Realization (AI)](../concepts/value-realization-ai.md) | The gap between what AI can do and what an organization gets from it, closed by complementary investment, not by better models | ✅ v1.0 |

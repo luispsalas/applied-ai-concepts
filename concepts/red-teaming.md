@@ -1,6 +1,6 @@
 <!--meta
 category: Reliability & Quality
-short: Deliberately attacking your own AI system — probing for jailbreaks, data leaks, and harmful outputs before anyone else finds them
+short: Deliberately attacking your own AI system, probing for jailbreaks, data leaks, and harmful outputs before anyone else finds them
 aliases: [adversarial testing, attacking your own system, penetration testing AI, stress testing, safety testing]
 tags: [Security, Evaluation, Safety]
 established: established
@@ -12,22 +12,22 @@ established: established
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
-Deliberately attacking your own AI system — probing for jailbreaks, data leaks, and harmful outputs before adversaries or users find them.
+Deliberately attacking your own AI system, probing for jailbreaks, data leaks, and harmful outputs before adversaries or users find them.
 
 ---
 
 ## Technical definition
 
-The structured adversarial evaluation of an AI system: deliberately attempting to elicit the behavior the system is supposed to prevent, and treating what succeeds as findings to be fixed. It is distinct from ordinary [evaluation](evaluation.md), which measures whether a system does what it should on representative inputs. Red teaming asks the opposite question — what can be made to happen on hostile ones.
+The structured adversarial evaluation of an AI system: deliberately attempting to elicit the behavior the system is supposed to prevent, and treating what succeeds as findings to be fixed. It is distinct from ordinary [evaluation](evaluation.md), which measures whether a system does what it should on representative inputs. Red teaming asks the opposite question, which is what can be made to happen on hostile ones.
 
 Two complementary modes, established in the foundational literature:
 
-- **Manual red teaming** — human testers probe the system, producing a dataset of successful attacks alongside operational lessons. Scaling studies across model sizes and training regimes found that harmlessness training changes attack success substantially, and that the resulting attack data is itself a reusable asset.
-- **Automated red teaming** — one language model generates test cases designed to elicit harmful behavior from another, then a classifier scores the responses. This converts red teaming from a periodic manual exercise into a repeatable, scalable process that can run continuously and cover far more of the input space than humans can.
+- **Manual red teaming:** human testers probe the system, producing a dataset of successful attacks alongside operational lessons. Scaling studies across model sizes and training regimes found that harmlessness training changes attack success substantially, and that the resulting attack data is itself a reusable asset.
+- **Automated red teaming:** one language model generates test cases designed to elicit harmful behavior from another, then a classifier scores the responses. This converts red teaming from a periodic manual exercise into a repeatable, scalable process that can run continuously and cover far more of the input space than humans can.
 
 Neither replaces the other: automated methods provide coverage and regression testing; human testers find the framings and contexts a generator does not think to produce.
 
-Scope has widened as systems have. Red teaming a model means probing outputs. Red teaming a *system* means probing the whole surface — [tool](tool-use.md) permissions, retrieval sources, the [system prompt](system-prompt.md), and the boundaries between [agents](multi-agent-systems.md) — because that is where real consequences live.
+Scope has widened as systems have. Red teaming a model means probing outputs. Red teaming a *system* means probing the whole surface ([tool](tool-use.md) permissions, retrieval sources, the [system prompt](system-prompt.md), and the boundaries between [agents](multi-agent-systems.md)), because that is where real consequences live.
 
 Critically, findings are only meaningful against a specific deployment. A model provider's red teaming was not run against your prompts, your tools, your data, or your users.
 
@@ -42,7 +42,7 @@ Red teaming is attacking your own system on purpose, before someone else does. Y
 ## AI literacy notes
 
 1. **Red teaming answers a different question than evaluation.** Evaluation asks "does it work?"; red teaming asks "what can I make it do?" A system can score well on every benchmark and fail immediately under adversarial pressure. You need both.
-2. **The vendor's red teaming is not yours.** Providers test base model behavior. They did not test your system prompt, your tool permissions, your retrieval corpus, or your users' incentives — which is where deployment-specific failures live.
+2. **The vendor's red teaming is not yours.** Providers test base model behavior. They did not test your system prompt, your tool permissions, your retrieval corpus, or your users' incentives, which is where deployment-specific failures live.
 3. **Findings expire.** A red-team result describes one system state. A new model version, a changed prompt, or an added tool invalidates it. Treat red teaming as a recurring activity tied to change, not a launch-day certificate.
 4. **Automate for coverage, use humans for imagination.** Generated attacks cover volume and catch regressions; human testers find the socially or contextually creative framings that a generator wouldn't produce.
 5. **The output is a fix list, not a score.** A red-team exercise that produces a reassuring number and no remediated findings has been run as theater.
@@ -51,7 +51,7 @@ Red teaming is attacking your own system on purpose, before someone else does. Y
 
 ## Governance notes
 
-**Core question:** Has anyone genuinely tried to break *this* system, in *this* configuration — and what happened to what they found?
+**Core question:** Has anyone genuinely tried to break *this* system, in *this* configuration? And what happened to what they found?
 
 **Watch for:**
 - The provider's model-level safety testing cited as evidence that the deployment is safe
@@ -61,9 +61,9 @@ Red teaming is attacking your own system on purpose, before someone else does. Y
 - Red teaming conducted by the team that built the system, with no independent perspective
 
 **Practice:**
-- Trigger a red-team pass on change, not on the calendar — new model version, new tool, new data source, new user population
+- Trigger a red-team pass on change, not on the calendar, such as a new model version, new tool, new data source or new user population
 - Test the system, not just the model: tool permissions, retrieval sources, prompt hierarchy, agent boundaries
-- Track findings like security defects — owner, severity, remediation, retest
+- Track findings like security defects, with owner, severity, remediation and retest
 - Keep and reuse successful attacks as a regression suite, so old failures cannot return silently
 - Define rules of engagement in advance, including how genuinely harmful generated content is handled and stored
 
@@ -110,7 +110,7 @@ Red teaming is attacking your own system on purpose, before someone else does. Y
 |---|---|
 | **Technical / Professional** | Adversarial testing belongs in the delivery pipeline, with successful attacks kept as a regression suite. |
 | **Organizational** | The question to ask before approving a deployment: has anyone tried to break this specific configuration, and what was fixed? |
-| **Client-facing** | Distinguishes "the vendor says it's safe" from "we tested it in our context" — a meaningful assurance difference. |
+| **Client-facing** | Distinguishes "the vendor says it's safe" from "we tested it in our context", a meaningful assurance difference. |
 | **LLM-native** | Model and prompt changes invalidate prior findings; red teaming is continuous, not a launch gate. |
 
 ---

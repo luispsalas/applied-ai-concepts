@@ -1,6 +1,6 @@
 <!--meta
 category: Knowledge & Memory
-short: How an AI remembers — what it keeps in a conversation, what carries over to future sessions, and what it reuses as learned skill
+short: How an AI remembers, covering what it keeps in a conversation, what carries over to future sessions, and what it reuses as learned skill
 aliases: [does it remember me, conversation history, persistence, session memory, long-term memory, agent memory, cross-session memory, what does the agent remember]
 tags: [Architecture, Privacy]
 established: established
@@ -12,21 +12,21 @@ established: established
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
-How an AI remembers things — what it keeps during a conversation, what carries over to future sessions, and what it can reuse as a learned skill.
+How an AI remembers things, including what it keeps during a conversation, what carries over to future sessions, and what it can reuse as a learned skill.
 
 ---
 
 ## Technical definition
 
-Mechanisms by which an AI system retains and reuses information beyond a single model call. The survey literature distinguishes in-trial memory (within a task or session — the context window) from cross-trial memory (persisting across sessions), and analyzes memory by its sources, forms, and operations — what is stored, in what representation, and how it is written, read, and forgotten (Zhang et al.).
+Mechanisms by which an AI system retains and reuses information beyond a single model call. The survey literature distinguishes in-trial memory (within a task or session, which is the context window) from cross-trial memory (persisting across sessions), and analyzes memory by its sources, forms, and operations, meaning what is stored, in what representation, and how it is written, read, and forgotten (Zhang et al.).
 
-In practice this spans in-context/session memory, persistent memory (files, databases, learned preferences), and externalized state (file-system-as-memory patterns). Memory failure is a leading cause of enterprise agent failure — systems that don't retain learning repeat their errors — and unmanaged memory growth also degrades retrieval precision without a management layer. Distinct from a knowledge base (curated reference content): memory is accumulated operational state.
+In practice this spans in-context/session memory, persistent memory (files, databases, learned preferences), and externalized state (file-system-as-memory patterns). Memory failure is a leading cause of enterprise agent failure (systems that don't retain learning repeat their errors), and unmanaged memory growth also degrades retrieval precision without a management layer. Distinct from a knowledge base (curated reference content): memory is accumulated operational state.
 
 ---
 
 ## Plain-language version
 
-Memory is what the AI keeps: what it holds during one conversation, what carries over to the next, and what it learns about how you work. Without memory it starts from zero every time; with it, corrections compound into something useful — but errors and sensitive data can compound the same way.
+Memory is what the AI keeps: what it holds during one conversation, what carries over to the next, and what it learns about how you work. Without memory it starts from zero every time; with it, corrections compound into something useful, but errors and sensitive data can compound the same way.
 
 ---
 
@@ -40,7 +40,7 @@ Memory is what the AI keeps: what it holds during one conversation, what carries
 
 ## Governance notes
 
-**Core question:** What is this system allowed to remember — and who can inspect or erase it?
+**Core question:** What is this system allowed to remember? And who can inspect or erase it?
 
 **Watch for:**
 - Sensitive data persisting in memory beyond its lawful or intended lifetime
@@ -90,8 +90,8 @@ Memory is what the AI keeps: what it holds during one conversation, what carries
 |---|---|
 | **Technical / Professional** | Memory architecture (session vs persistent vs externalized) and retention/erasure rules are design decisions with governance consequences. |
 | **Organizational** | Where AI privacy exposure concentrates: what systems remember about people and processes must be inventoried and owned. |
-| **Client-facing** | Answers "what does it remember about me?" — and whether that memory can be inspected and erased. |
-| **LLM-native** | The difference between a tool and a collaborator: memory is what lets corrections compound — for better and worse. |
+| **Client-facing** | Answers "what does it remember about me?", and whether that memory can be inspected and erased. |
+| **LLM-native** | The difference between a tool and a collaborator: memory is what lets corrections compound, for better and worse. |
 
 ---
 

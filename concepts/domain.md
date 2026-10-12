@@ -1,6 +1,6 @@
 <!--meta
 category: Knowledge & Memory
-short: The specific field the AI is working in — what counts as a "good" or "wrong" answer depends entirely on the domain
+short: The specific field the AI is working in. What counts as a "good" or "wrong" answer depends entirely on the domain
 aliases: [subject area, field, vertical, domain expertise, what counts as a good answer here]
 tags: [Data Governance]
 established: established
@@ -12,25 +12,25 @@ established: established
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
-The specific field or world the AI is working in — healthcare, legal, finance, architecture. What counts as a "good" or "wrong" answer depends entirely on the domain.
+The specific field or world the AI is working in, such as healthcare, legal, finance or architecture. What counts as a "good" or "wrong" answer depends entirely on the domain.
 
 ---
 
 ## Technical definition
 
-The bounded field of knowledge, practice, and standards within which an AI system operates — determining terminology, valid reasoning patterns, quality criteria, and error severity. Domain conditions everything downstream: data semantics and stewardship (the data-domain framing of DAMA-DMBOK), evaluation validity (HELM's scenario-based evaluation shows model performance is domain- and scenario-specific and does not transfer), and adaptation strategy — the domain-specialization literature taxonomizes how general-purpose models are adapted to fields where they underperform: external augmentation (retrieval), prompting, and fine-tuning (Ling et al.).
+The bounded field of knowledge, practice, and standards within which an AI system operates, determining terminology, valid reasoning patterns, quality criteria, and error severity. Domain conditions everything downstream: data semantics and stewardship (the data-domain framing of DAMA-DMBOK), evaluation validity (HELM's scenario-based evaluation shows model performance is domain- and scenario-specific and does not transfer), and adaptation strategy. The domain-specialization literature taxonomizes how general-purpose models are adapted to fields where they underperform: external augmentation (retrieval), prompting, and fine-tuning (Ling et al.).
 
 ---
 
 ## Plain-language version
 
-The domain is the world the AI works in — medicine, law, music, finance. The same answer can be brilliant in one domain and dangerous in another; what "correct" means, and how bad a mistake is, depends entirely on the field.
+The domain is the world the AI works in, such as medicine, law, music or finance. The same answer can be brilliant in one domain and dangerous in another; what "correct" means, and how bad a mistake is, depends entirely on the field.
 
 ---
 
 ## AI literacy notes
 
-1. **Model performance does not transfer across domains.** A benchmark score in one field says little about yours — evaluation has to happen in-domain (HELM).
+1. **Model performance does not transfer across domains.** A benchmark score in one field says little about yours, so evaluation has to happen in-domain (HELM).
 2. **Domain expertise is what makes evaluation possible.** Only someone who knows the field can judge whether the output is actually right. High-stakes domains (health, legal, finance) also carry their own regulatory overlays on top of AI rules.
 3. **The standard adaptation pattern is generic model plus domain context.** Retrieval (RAG), fine-tuning, and curated knowledge bases are the three main routes for making a general-purpose model domain-competent.
 
@@ -86,8 +86,8 @@ The domain is the world the AI works in — medicine, law, music, finance. The s
 | Audience | Relevance |
 |---|---|
 | **Technical / Professional** | Adaptation strategy (RAG vs fine-tuning vs prompting) and evaluation design are domain decisions before they are technical ones. |
-| **Organizational** | Explains why "it worked for them" doesn't transfer — and why domain experts belong in every AI evaluation loop. |
-| **Client-facing** | Answers "does this AI know our field?" — the honest answer depends on what domain context it was given. |
+| **Organizational** | Explains why "it worked for them" doesn't transfer, and why domain experts belong in every AI evaluation loop. |
+| **Client-facing** | Answers "does this AI know our field?" The honest answer depends on what domain context it was given. |
 | **LLM-native** | General-purpose models make domain framing more important, not less: capability breadth without domain grounding produces confident out-of-field errors. |
 
 ---

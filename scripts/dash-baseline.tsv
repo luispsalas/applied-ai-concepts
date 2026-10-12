@@ -1,14 +1,2 @@
 # Prose em dashes each entry may still hold. Generated: lowered by `build.py write`, never raised.
 # An entry not listed is allowed none. slug<TAB>allowed
-ai-use-case	11
-context-engineering	11
-context-window	11
-data-minimization	13
-determinism-vs-probabilism	13
-domain	8
-explainability-xai	13
-guardrails-ai-systems	8
-knowledge-base	8
-memory-ai-systems	10
-red-teaming	12
-world-models	1

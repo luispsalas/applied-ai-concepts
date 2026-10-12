@@ -1,6 +1,6 @@
 <!--meta
 category: Observability & Governance
-short: Collecting and keeping only the data a system actually needs — less data, less risk, lower cost
+short: Collecting and keeping only the data a system actually needs. Less data means less risk and lower cost
 aliases: [collect only what you need, least data, GDPR minimization, data reduction, data retention, need to know]
 tags: [Privacy, Regulatory, Data Governance]
 established: established
@@ -12,7 +12,7 @@ established: established
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
-Only giving the AI the data it actually needs — nothing extra. Less data means less risk of privacy problems, lower cost, and a more focused system.
+Only giving the AI the data it actually needs, and nothing extra. Less data means less risk of privacy problems, lower cost, and a more focused system.
 
 ---
 
@@ -20,13 +20,13 @@ Only giving the AI the data it actually needs — nothing extra. Less data means
 
 Data minimization is the principle that a system should collect, process, and retain only the personal data that is adequate, relevant, and limited to what is necessary for a specified purpose. It is codified in GDPR Article 5(1)(c) and is one of the foundational data-protection principles. Minimization operates along several axes: collection (don't gather what you don't need), granularity (collect at the coarsest resolution that serves the purpose), retention (delete when the purpose is fulfilled), and access (expose data only to the processes and people that require it).
 
-In AI systems the principle is in structural tension with the prevailing "more data is better" engineering instinct. The EU AI Act's data-governance provisions extend minimization-adjacent obligations to training and operational data for high-risk systems. Crucially, minimization is not always free: empirical work shows that reducing data can leave aggregate model performance largely intact while disparately degrading performance for some user groups (Biega et al. 2020) — so minimization decisions are themselves subject to fairness scrutiny.
+In AI systems the principle is in structural tension with the prevailing "more data is better" engineering instinct. The EU AI Act's data-governance provisions extend minimization-adjacent obligations to training and operational data for high-risk systems. Crucially, minimization is not always free: empirical work shows that reducing data can leave aggregate model performance largely intact while disparately degrading performance for some user groups (Biega et al. 2020), so minimization decisions are themselves subject to fairness scrutiny.
 
 ---
 
 ## Plain-language version
 
-Data minimization means: don't give the AI — or the company running it — more personal information than the job actually requires. If a system only needs your age range, don't give it your birth date. If it only needs data for a month, don't keep it for a year.
+Data minimization means: don't give the AI (or the company running it) more personal information than the job actually requires. If a system only needs your age range, don't give it your birth date. If it only needs data for a month, don't keep it for a year.
 
 The logic is simple risk math. Data you never collected can't leak, can't be subpoenaed, can't be misused, and doesn't cost anything to secure. Every extra field and every extra month of retention is a liability you're choosing to carry. Minimization is the discipline of carrying as little as possible.
 
@@ -36,7 +36,7 @@ It runs against the instinct of modern AI, which is "collect everything, you mig
 
 ## AI literacy notes
 
-1. **Minimization is a default, not an afterthought.** The principle is "necessary for a stated purpose" — which means you need the purpose first, then the data. "We might find a use for it" is precisely the reasoning the principle exists to block.
+1. **Minimization is a default, not an afterthought.** The principle is "necessary for a stated purpose", which means you need the purpose first, then the data. "We might find a use for it" is precisely the reasoning the principle exists to block.
 2. **Less data is often a feature, not a sacrifice.** Smaller, purpose-scoped datasets reduce attack surface, lower storage and compute cost, simplify compliance, and frequently improve model focus. Minimization and performance are not always opposed.
 3. **But minimization can have distributional effects.** Cutting data can hurt some user groups more than others (sparse-data users, minorities). Minimization decisions should be checked for disparate impact, not assumed neutral (Biega et al. 2020).
 
@@ -44,7 +44,7 @@ It runs against the instinct of modern AI, which is "collect everything, you mig
 
 ## Governance notes
 
-**Core question:** For each piece of personal data this system collects or retains, can you state the specific purpose it serves — and the date it will be deleted?
+**Core question:** For each piece of personal data this system collects or retains, can you state the specific purpose it serves, and the date it will be deleted?
 
 **Watch for:**
 - Data collected "in case it's useful later"
@@ -67,7 +67,7 @@ It runs against the instinct of modern AI, which is "collect everything, you mig
 
 ## Confidence level
 
-**High (legal), medium (AI practice).** The principle is settled law under GDPR Article 5(1)(c) and echoed across global privacy regimes. Its application to large-scale AI training — where data appetite is enormous and purpose specification is loose — is an active and contested area. The fairness implications of minimization are documented but not yet standardized in practice (Biega et al. 2020).
+**High (legal), medium (AI practice).** The principle is settled law under GDPR Article 5(1)(c) and echoed across global privacy regimes. Its application to large-scale AI training, where data appetite is enormous and purpose specification is loose, is an active and contested area. The fairness implications of minimization are documented but not yet standardized in practice (Biega et al. 2020).
 
 ---
 
@@ -96,10 +96,10 @@ It runs against the instinct of modern AI, which is "collect everything, you mig
 
 | Audience | Relevance |
 |---|---|
-| **Technical / Professional** | Informs schema design, retention policies, feature selection, and access scoping. Minimization is implemented in collection, granularity, retention, and access controls — not in a policy document alone. |
-| **Organizational** | The cheapest risk reduction available — data not held cannot be breached. A GDPR compliance requirement and a defensible cost-control argument simultaneously. |
-| **Client-facing** | Answers "what data do you take and why?" — and lets you demonstrate that you collect against purpose, not by default. |
-| **LLM-native** | Directly relevant to RAG corpora, fine-tuning datasets, and prompt/inference logging — each is a data-collection decision that should be purpose-scoped and retention-bounded. |
+| **Technical / Professional** | Informs schema design, retention policies, feature selection, and access scoping. Minimization is implemented in collection, granularity, retention, and access controls, not in a policy document alone. |
+| **Organizational** | The cheapest risk reduction available, since data not held cannot be breached. A GDPR compliance requirement and a defensible cost-control argument simultaneously. |
+| **Client-facing** | Answers "what data do you take and why?", and lets you demonstrate that you collect against purpose, not by default. |
+| **LLM-native** | Directly relevant to RAG corpora, fine-tuning datasets, and prompt/inference logging, each of which is a data-collection decision that should be purpose-scoped and retention-bounded. |
 
 ---
 

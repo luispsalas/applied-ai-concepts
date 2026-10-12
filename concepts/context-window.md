@@ -1,6 +1,6 @@
 <!--meta
 category: Knowledge & Memory
-short: The maximum amount of text an AI model can consider at once — a hard limit on what it can reason about
+short: The maximum amount of text an AI model can consider at once, a hard limit on what it can reason about
 aliases: [token limit, how much can it read, input length limit, maximum context, context size]
 tags: [Architecture]
 established: established
@@ -12,34 +12,34 @@ established: established
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
-The maximum amount of text an AI model can consider at once — a hard limit on what it can reason about when generating any given response.
+The maximum amount of text an AI model can consider at once, a hard limit on what it can reason about when generating any given response.
 
 ---
 
 ## Technical definition
 
-The context window is the maximum number of tokens a model can process in a single forward pass — the system prompt, conversation history, retrieved content, and the model's own output all draw from this shared, finite budget. Attention computation scales with the square of sequence length (SRC-141), which historically bounded window size; even as windows have grown to hundreds of thousands or millions of tokens, models do not use that capacity uniformly: performance degrades for information placed in the middle of a long context, with strongest recall for content near the start or end (SRC-149, the "lost in the middle" effect). A model's effective context — how much it can actually use reliably — is therefore often smaller than its advertised window.
+The context window is the maximum number of tokens a model can process in a single forward pass. The system prompt, conversation history, retrieved content, and the model's own output all draw from this shared, finite budget. Attention computation scales with the square of sequence length (SRC-141), which historically bounded window size; even as windows have grown to hundreds of thousands or millions of tokens, models do not use that capacity uniformly: performance degrades for information placed in the middle of a long context, with strongest recall for content near the start or end (SRC-149, the "lost in the middle" effect). A model's effective context (how much it can actually use reliably) is therefore often smaller than its advertised window.
 
 ---
 
 ## Plain-language version
 
-The context window is how much text an AI can "hold in mind" at once — your conversation so far, any documents it's been given, and its own instructions all share this one limited space. When it fills up, older or excess content gets dropped or summarized, and the AI can lose track of things you said earlier — "hit its limit" or "forgot" is usually this. And even within a window that isn't full, information buried in the middle of a long document tends to get less attention than what's at the start or end — so a bigger window isn't the same as reading everything equally well.
+The context window is how much text an AI can "hold in mind" at once. Your conversation so far, any documents it's been given, and its own instructions all share this one limited space. When it fills up, older or excess content gets dropped or summarized, and the AI can lose track of things you said earlier, and "hit its limit" or "forgot" is usually this. And even within a window that isn't full, information buried in the middle of a long document tends to get less attention than what's at the start or end, so a bigger window isn't the same as reading everything equally well.
 
 ---
 
 ## AI literacy notes
 
 1. **"Hit the limit" and "forgot" are the same failure.** When people say an AI "forgot" something from earlier, it's frequently the context window: that information is no longer in the window, not erased from some deeper memory (see [Memory (AI Systems)](memory-ai-systems.md)).
-2. **A bigger window is not the same as reliable recall.** Models retrieve content near the start and end of a long context far better than content buried in the middle — so pasting in more text is not a substitute for good context design (see [Context Engineering](context-engineering.md)).
-3. **Everything competes for the same budget.** System prompt, conversation history, retrieved documents, and tool outputs all draw from one shared window — a bloated system prompt or an oversized retrieval leaves less room for everything else.
+2. **A bigger window is not the same as reliable recall.** Models retrieve content near the start and end of a long context far better than content buried in the middle, so pasting in more text is not a substitute for good context design (see [Context Engineering](context-engineering.md)).
+3. **Everything competes for the same budget.** System prompt, conversation history, retrieved documents, and tool outputs all draw from one shared window, so a bloated system prompt or an oversized retrieval leaves less room for everything else.
 4. **Advertised size ≠ effective size.** A model's stated window (e.g. 1M tokens) is a ceiling, not a guarantee of uniform performance across that whole range.
 
 ---
 
 ## Governance notes
 
-**Core question:** Does the system's design account for the window being finite and unevenly used — not just "big enough"?
+**Core question:** Does the system's design account for the window being finite and unevenly used, not just "big enough"?
 
 **Watch for:**
 - Assuming a larger advertised window solves recall problems

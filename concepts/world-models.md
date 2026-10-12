@@ -1,6 +1,6 @@
 <!--meta
 category: Foundations
-short: A learned simulation of how an environment responds to actions, which an agent plans inside before acting — so its decisions are only as sound as the simulation, and an optimizer will find exactly where the simulation is wrong
+short: A learned simulation of how an environment responds to actions, which an agent plans inside before acting, so its decisions are only as sound as the simulation, and an optimizer will find exactly where the simulation is wrong
 aliases: [world model, learned world model, learned simulator, environment model, dynamics model, model-based reinforcement learning, model-based RL, video world model, planning in imagination, sim-to-real gap, compounding error, do LLMs have a world model, Othello-GPT]
 tags: [Agents, Architecture, Safety, Evaluation]
 established: established

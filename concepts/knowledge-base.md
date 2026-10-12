@@ -1,6 +1,6 @@
 <!--meta
 category: Knowledge & Memory
-short: The collection of documents an AI can look up when answering — the quality of the library determines the quality of the answers
+short: The collection of documents an AI can look up when answering. The quality of the library determines the quality of the answers
 aliases: [document corpus, reference library, the documents it searches, KB, knowledge repository]
 tags: [Architecture, Data Governance]
 established: established
@@ -12,13 +12,13 @@ established: established
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
-The collection of documents and information an AI can look up when answering questions — like a reference library it can search. The quality and governance of the library directly determines the quality and trustworthiness of the answers.
+The collection of documents and information an AI can look up when answering questions, like a reference library it can search. The quality and governance of the library directly determines the quality and trustworthiness of the answers.
 
 ---
 
 ## Technical definition
 
-A curated, governed collection of documents and structured information made available for an AI system to retrieve at inference time — the retrieval substrate for RAG and grounding. Distinct from model weights (parametric knowledge) and from memory (session-accumulated state): a knowledge base is externally maintained, versionable, and auditable.
+A curated, governed collection of documents and structured information made available for an AI system to retrieve at inference time, the retrieval substrate for RAG and grounding. Distinct from model weights (parametric knowledge) and from memory (session-accumulated state): a knowledge base is externally maintained, versionable, and auditable.
 
 The RAG survey literature frames external knowledge quality as the determinant of output quality across the retrieval–generation–augmentation triad (Gao et al.); construction practice covers collection, chunking, vectorization, and storage with iterative refinement; and its governance inherits established data-management discipline (DAMA-DMBOK).
 
@@ -26,25 +26,25 @@ The RAG survey literature frames external knowledge quality as the determinant o
 
 ## Plain-language version
 
-A knowledge base is the reference library you give the AI — the documents it can look up instead of relying only on what it "remembers" from training. The AI's answers are only as good as the library: outdated, wrong, or missing documents become confident wrong answers.
+A knowledge base is the reference library you give the AI, the documents it can look up instead of relying only on what it "remembers" from training. The AI's answers are only as good as the library: outdated, wrong, or missing documents become confident wrong answers.
 
 ---
 
 ## AI literacy notes
 
 1. **Knowledge-base quality is the ceiling for RAG quality.** Many "hallucinations" trace back to retrieval and content gaps, not the model.
-2. **A knowledge base is governable in a way model weights are not.** You can audit it, correct it, version it, and delete from it — which is exactly why regulated deployments lean on retrieval over fine-tuning.
+2. **A knowledge base is governable in a way model weights are not.** You can audit it, correct it, version it, and delete from it, which is exactly why regulated deployments lean on retrieval over fine-tuning.
 3. **Curation is ongoing, not one-time.** Stale content is a quiet form of drift. And access control matters: whatever is in the knowledge base defines what the AI can expose.
 
 ---
 
 ## Governance notes
 
-**Core question:** Who curates the knowledge base — and who answers for what's in it?
+**Core question:** Who curates the knowledge base? And who answers for what's in it?
 
 **Watch for:**
 - Stale content silently degrading answers
-- Missing provenance — a wrong answer that can't be traced to its source document
+- Missing provenance, leaving a wrong answer that can't be traced to its source document
 - Permissive ingestion exposing sensitive documents through retrieval
 
 **Practice:**
@@ -90,7 +90,7 @@ A knowledge base is the reference library you give the AI — the documents it c
 |---|---|
 | **Technical / Professional** | The construction pipeline (collection, chunking, vectorization, storage) and retrieval logging are the implementation surface. |
 | **Organizational** | The most governable part of an AI system: content ownership and review cadence are assignable in a way model behavior is not. |
-| **Client-facing** | Answers "where do the AI's answers come from?" — with document-level traceability when retrieval is logged. |
+| **Client-facing** | Answers "where do the AI's answers come from?", with document-level traceability when retrieval is logged. |
 | **LLM-native** | The practical alternative to fine-tuning for domain knowledge: auditable, correctable, and deletable. |
 
 ---

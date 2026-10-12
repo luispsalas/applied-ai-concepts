@@ -1,6 +1,6 @@
 <!--meta
 category: Foundations
-short: Describing, in terms a human can understand, why an AI system produced a specific output — a prerequisite for accountability
+short: Describing, in terms a human can understand, why an AI system produced a specific output, a prerequisite for accountability
 aliases: [XAI, interpretability, why did it decide that, explainable AI]
 tags: [Ethics, Regulatory, Evaluation]
 established: established
@@ -12,15 +12,15 @@ established: established
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
-The ability to describe, in terms a human can understand, why an AI system produced a specific output — a prerequisite for accountability in high-stakes decisions.
+The ability to describe, in terms a human can understand, why an AI system produced a specific output, a prerequisite for accountability in high-stakes decisions.
 
 ---
 
 ## Technical definition
 
-Explainability (Explainable AI, XAI) is the capacity to render an AI system's behavior — a specific output or its general logic — understandable to a relevant human audience. It is often distinguished from interpretability: interpretability concerns how intrinsically transparent a model's mechanism is; explainability concerns whether a usable account of a decision can be produced, including post-hoc. Doshi-Velez & Kim (2017) note there is no single agreed definition or metric, and propose evaluating explanations by whether they serve their purpose for their audience rather than by an abstract standard.
+Explainability (Explainable AI, XAI) is the capacity to render an AI system's behavior (a specific output or its general logic) understandable to a relevant human audience. It is often distinguished from interpretability: interpretability concerns how intrinsically transparent a model's mechanism is; explainability concerns whether a usable account of a decision can be produced, including post-hoc. Doshi-Velez & Kim (2017) note there is no single agreed definition or metric, and propose evaluating explanations by whether they serve their purpose for their audience rather than by an abstract standard.
 
-Approaches span intrinsically interpretable models (linear models, decision trees), post-hoc attribution methods (feature importance, SHAP, LIME, saliency), and example/counterfactual-based explanations. The DARPA XAI program (Gunning & Aha 2019) framed the goal as systems whose decisions can be understood and appropriately trusted by end users, requiring advances in explainable models, explanation interfaces, and the psychology of explanation. For large language models the terrain shifts again: LLMs can generate fluent natural-language self-explanations at scale, but these can be plausible and wrong — explanation and faithfulness are not the same thing (Singh et al. 2024).
+Approaches span intrinsically interpretable models (linear models, decision trees), post-hoc attribution methods (feature importance, SHAP, LIME, saliency), and example/counterfactual-based explanations. The DARPA XAI program (Gunning & Aha 2019) framed the goal as systems whose decisions can be understood and appropriately trusted by end users, requiring advances in explainable models, explanation interfaces, and the psychology of explanation. For large language models the terrain shifts again: LLMs can generate fluent natural-language self-explanations at scale, but these can be plausible and wrong. Explanation and faithfulness are not the same thing (Singh et al. 2024).
 
 ---
 
@@ -28,17 +28,17 @@ Approaches span intrinsically interpretable models (linear models, decision tree
 
 Explainability is being able to answer "why did the AI decide that?" in a way a person can actually understand and check.
 
-This matters most when the stakes are high. If an AI denies someone a loan, flags a medical scan, or rejects a job application, "the model said so" is not an acceptable answer — to the person affected, to a regulator, or to a court. Someone needs to be able to give a real reason.
+This matters most when the stakes are high. If an AI denies someone a loan, flags a medical scan, or rejects a job application, "the model said so" is not an acceptable answer, whether to the person affected, to a regulator, or to a court. Someone needs to be able to give a real reason.
 
-The catch with modern AI: a system can produce a confident, fluent explanation that sounds great and is simply not the actual reason it decided what it did. An explanation that sounds good is not the same as an explanation that's true. That gap — between a plausible story and the faithful reason — is the hard part of explainability.
+The catch with modern AI: a system can produce a confident, fluent explanation that sounds great and is simply not the actual reason it decided what it did. An explanation that sounds good is not the same as an explanation that's true. That gap, between a plausible story and the faithful reason, is the hard part of explainability.
 
 ---
 
 ## AI literacy notes
 
 1. **Explainability is audience-relative.** An explanation good enough for an ML engineer (a SHAP plot) is useless to a loan applicant; one good enough for a regulator differs again. "Is it explainable?" is incomplete without "to whom, for what decision?"
-2. **A model's self-explanation is not necessarily its real reason.** Post-hoc explanations — including an LLM's own narration — can be unfaithful: persuasive, coherent, and disconnected from the actual computation. Faithfulness must be tested, not trusted (Singh et al. 2024).
-3. **Explainability is a prerequisite for accountability, not a substitute for it.** Being able to explain a decision is necessary for someone to answer for it — but the explanation doesn't carry the responsibility. A human still does.
+2. **A model's self-explanation is not necessarily its real reason.** Post-hoc explanations, including an LLM's own narration, can be unfaithful: persuasive, coherent, and disconnected from the actual computation. Faithfulness must be tested, not trusted (Singh et al. 2024).
+3. **Explainability is a prerequisite for accountability, not a substitute for it.** Being able to explain a decision is necessary for someone to answer for it, but the explanation doesn't carry the responsibility. A human still does.
 
 ---
 
@@ -79,7 +79,7 @@ The catch with modern AI: a system can produce a confident, fluent explanation t
 - [Human Responsibility in AI Use](human-responsibility-in-ai-use.md) — explanation enables accountability but does not transfer it away from humans
 - [Accountability (AI Systems)](accountability-ai-systems.md) — being answerable for a decision depends on being able to give a faithful account of it
 - [AI Governance](ai-governance.md) — explainability is moving from research aspiration to regulatory requirement
-- [Observability (AI Systems)](observability.md) — observability instruments the system boundary; explainability interprets the decision — complementary, not the same
+- [Observability (AI Systems)](observability.md) — observability instruments the system boundary; explainability interprets the decision. The two are complementary, not the same
 
 ---
 
@@ -100,7 +100,7 @@ The catch with modern AI: a system can produce a confident, fluent explanation t
 |---|---|
 | **Technical / Professional** | Informs the choice between intrinsically interpretable models and post-hoc methods, and the requirement to test explanation faithfulness rather than assume it. |
 | **Organizational** | The capability that makes high-stakes AI decisions defensible to regulators, courts, and affected people. Without it, accountability has nothing to stand on. |
-| **Client-facing** | Answers "can you tell me why the AI did that?" — and sets honest expectations about what current methods can and cannot faithfully reveal. |
+| **Client-facing** | Answers "can you tell me why the AI did that?", and sets honest expectations about what current methods can and cannot faithfully reveal. |
 | **LLM-native** | Central to auditing LLM behavior. Self-explanations are a tool, not ground truth; faithfulness evaluation and mechanistic interpretability are the frontier. |
 
 ---

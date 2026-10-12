@@ -1,6 +1,6 @@
 <!--meta
 category: Organizational Readiness
-short: A defined, bounded application of AI to a specific problem — the unit of design, risk assessment, and governance accountability
+short: A defined, bounded application of AI to a specific problem, the unit of design, risk assessment, and governance accountability
 aliases: [use case definition, AI application, scoping an AI project, where should we use AI, problem definition]
 tags: [Data Governance, Architecture]
 established: established
@@ -12,13 +12,13 @@ established: established
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
-A defined, bounded application of AI to a specific problem — the unit of design, risk assessment, and governance accountability.
+A defined, bounded application of AI to a specific problem, the unit of design, risk assessment, and governance accountability.
 
 ---
 
 ## Technical definition
 
-A use case — formally, "a complete task of a system that provides a measurable result of value for an actor" (ISO/IEC/IEEE 24765, 3.3241) — in which the system is an AI system: "an engineered system that generates outputs such as content, forecasts, recommendations or decisions for a given set of human-defined objectives" (ISO/IEC 22989:2022, 3.1.4).
+A use case is formally "a complete task of a system that provides a measurable result of value for an actor" (ISO/IEC/IEEE 24765, 3.3241). An AI use case is one in which the system is an AI system: "an engineered system that generates outputs such as content, forecasts, recommendations or decisions for a given set of human-defined objectives" (ISO/IEC 22989:2022, 3.1.4).
 
 ISO/IEC TR 24030:2024 standardizes how an AI use case is documented: application domain, deployment model, objective(s), narrative, stakeholders and their perspectives, data characteristics, KPIs, threats and vulnerabilities, and trustworthiness considerations. This documented unit is where governance attaches: NIST AI RMF frames risk as dependent on context of use, the EU AI Act binds obligations to a system's intended purpose, and the OECD Classification Framework characterizes systems in their deployment context.
 
@@ -28,15 +28,15 @@ Note: no single standard defines the compound term "AI use case"; this definitio
 
 ## Plain-language version
 
-An AI use case is the specific job you're asking AI to do — "summarize customer complaints," not "use AI." Naming the job precisely is what makes the right questions possible: what data does it need, what could go wrong, who is affected, and who is responsible.
+An AI use case is the specific job you're asking AI to do, such as "summarize customer complaints," not "use AI." Naming the job precisely is what makes the right questions possible: what data does it need, what could go wrong, who is affected, and who is responsible.
 
 ---
 
 ## AI literacy notes
 
-1. **Risk lives in the use, not the model.** The same model can be low-risk in one use case and high-risk in another. Regulators classify by use, not by technology — which makes the use case the unit where governance actually attaches.
+1. **Risk lives in the use, not the model.** The same model can be low-risk in one use case and high-risk in another. Regulators classify by use, not by technology, which makes the use case the unit where governance actually attaches.
 2. **Vague use cases cannot be governed.** "Improve productivity with AI" cannot be evaluated, risk-assessed, or audited. A well-formed use case names: the task, the users, the affected people, the data involved, success criteria, and failure consequences.
-3. **The use case is the unit of evaluation.** Success criteria and KPIs only make sense against a defined task with a defined scope — which is why the standardized documentation template (ISO/IEC TR 24030) exists.
+3. **The use case is the unit of evaluation.** Success criteria and KPIs only make sense against a defined task with a defined scope, which is why the standardized documentation template (ISO/IEC TR 24030) exists.
 
 ---
 
@@ -45,7 +45,7 @@ An AI use case is the specific job you're asking AI to do — "summarize custome
 **Core question:** Who owns the definition and boundaries of each AI use case?
 
 **Watch for:**
-- Scope creep — a system reused beyond its assessed purpose
+- Scope creep, where a system is reused beyond its assessed purpose
 - Vague use-case statements that block evaluation
 - Risk assessed at model level instead of use level
 
@@ -61,7 +61,7 @@ An AI use case is the specific job you're asking AI to do — "summarize custome
 
 ## Confidence level
 
-**Medium-High.** The definition is fully composed from international standards (ISO/IEC/IEEE 24765 "use case" + ISO/IEC 22989 "AI system" + ISO/IEC TR 24030 documentation structure), each verified — held below High only because no single standard defines the compound term itself.
+**Medium-High.** The definition is fully composed from international standards (ISO/IEC/IEEE 24765 "use case" + ISO/IEC 22989 "AI system" + ISO/IEC TR 24030 documentation structure), each verified. It is held below High only because no single standard defines the compound term itself.
 
 ---
 
@@ -93,8 +93,8 @@ An AI use case is the specific job you're asking AI to do — "summarize custome
 | Audience | Relevance |
 |---|---|
 | **Technical / Professional** | The unit of scoping and evaluation: task, data, success criteria, and failure consequences are defined per use case, not per model. |
-| **Organizational** | The unit of risk assessment and accountability — a use-case register is the practical foundation of AI governance. |
-| **Client-facing** | Answers "what exactly is the AI doing here?" — the precondition for informed consent and trust. |
+| **Organizational** | The unit of risk assessment and accountability. A use-case register is the practical foundation of AI governance. |
+| **Client-facing** | Answers "what exactly is the AI doing here?", the precondition for informed consent and trust. |
 | **LLM-native** | Guards against "the model can do anything" thinking: capability breadth makes precise use-case boundaries more important, not less. |
 
 ---
