@@ -113,6 +113,21 @@ All entries follow a consistent schema:
 
 New entries must follow this schema in full.
 
+## Writing style
+
+**No em dashes in prose.** When a sentence leans on a dash, restructure it. Swapping the dash for a colon or a semicolon misses the point, because the aim is prose that reads naturally, and it usually reads better as two shorter sentences.
+
+Dense dashes make reference text read like slides, and many readers now take them as a sign of generic machine-written text. This wiki is written with AI assistance, stated openly in its authorship declaration, and every entry is sourced and reviewed. The style should not get in the way of that work being read.
+
+Four uses stay as they are:
+
+- the separator between a term and its note in Related concepts (`Term — how it relates`)
+- the author and title cell of a Sources row, which is citation data
+- the generated Term status label
+- anything inside a quotation, which is reproduced as written
+
+Older entries still carry em dashes and are being revised in batches. `python3 scripts/build.py dashes` lists what remains, worst first. `build.py check` fails if an entry gains one, and a new entry starts at zero.
+
 ---
 
 *Maintenance model: human-reviewed, HITL-first, source-required.*
@@ -124,7 +139,7 @@ New entries must follow this schema in full.
 A corpus this size decays in ways that are invisible from inside a single entry. Three tiers, by what each check needs and how fast the thing it watches actually moves.
 
 ### Every publish — automatic, blocking
-`python3 scripts/build.py check` — fails the publish on schema gaps, README key-terms/categories/glossary/count desync, unresolved links, alias collisions, unknown tags, a term status that disagrees with its visible line, an unparseable confidence rating, and any disagreement between the tracker export and the entries. **It also fails on a non-Latin script or invisible character anywhere in published content** — entries, notes, README, CONTRIBUTING and the generated glossary. Accented Latin, Greek and symbols are deliberately not flagged; CJK, Cyrillic (the homoglyph risk — U+0430 renders identically to a Latin `a`), Hebrew, Arabic, Devanagari, Thai, Hangul and zero-width characters are. Including the generated register is what catches a stray character that entered through a **sheet cell** rather than a file. `export-tracker.py` sweeps both sheets on every run for the same thing, because a registry cell reaches the repo only by being retyped and nothing else looks at it. Then the numbered steps in the publishing workflow: cross-reference sweep, tracker re-sort.
+`python3 scripts/build.py check` — fails the publish on schema gaps, README key-terms/categories/glossary/count desync, unresolved links, alias collisions, unknown tags, a term status that disagrees with its visible line, an unparseable confidence rating, any disagreement between the tracker export and the entries, and an entry holding more prose em dashes than its allowance in `scripts/dash-baseline.tsv` (see Writing style). **It also fails on a non-Latin script or invisible character anywhere in published content** — entries, notes, README, CONTRIBUTING and the generated glossary. Accented Latin, Greek and symbols are deliberately not flagged; CJK, Cyrillic (the homoglyph risk — U+0430 renders identically to a Latin `a`), Hebrew, Arabic, Devanagari, Thai, Hangul and zero-width characters are. Including the generated register is what catches a stray character that entered through a **sheet cell** rather than a file. `export-tracker.py` sweeps both sheets on every run for the same thing, because a registry cell reaches the repo only by being retyped and nothing else looks at it. Then the numbered steps in the publishing workflow: cross-reference sweep, tracker re-sort.
 
 **Most historical drift checks are gone rather than automated.** Essence, version and count drift used to need their own checks; those fields are now *derived* from entry front-matter, so there is nothing left to drift. Writing a check for them today would be dead code.
 
