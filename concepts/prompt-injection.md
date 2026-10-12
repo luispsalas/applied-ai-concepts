@@ -1,6 +1,6 @@
 <!--meta
 category: System Architecture
-short: A trick where malicious instructions hidden in text the AI reads hijack its behavior — the top-ranked LLM application security risk
+short: A trick where malicious instructions hidden in text the AI reads hijack its behavior. It is the top-ranked LLM application security risk
 aliases: [indirect prompt injection, hidden instructions, prompt hijacking, injection attack, malicious input]
 tags: [Security, Prompting]
 established: established
@@ -12,26 +12,26 @@ established: established
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
-A trick where someone hides malicious instructions in text the AI reads, hijacking its behavior — like a fake note slipped into a document that overrides the real instructions.
+A trick where someone hides malicious instructions in text the AI reads, hijacking its behavior, like a fake note slipped into a document that overrides the real instructions.
 
 ---
 
 ## Technical definition
 
-A prompt injection is an attack where adversarial input embedded in text processed by an LLM is interpreted as an instruction rather than data, because the model has no structural separation between its instructions and the content it processes (SRC-146, SRC-148). Direct prompt injection occurs when a user types adversarial instructions straight into the input ("ignore previous instructions...") — the original documented technique (SRC-147). Indirect prompt injection hides the same kind of instruction inside content the model retrieves or reads on someone else's behalf — a webpage, a document, an email — so the attack executes without the user ever typing anything malicious (SRC-146). OWASP ranks prompt injection as the top LLM application security risk for consecutive editions (SRC-148), and mitigation requires layered defenses (input/output filtering, privilege restriction, human-in-the-loop for consequential actions) since no single technique reliably distinguishes instructions from data at the model level.
+A prompt injection is an attack where adversarial input embedded in text processed by an LLM is interpreted as an instruction rather than data, because the model has no structural separation between its instructions and the content it processes (SRC-146, SRC-148). Direct prompt injection occurs when a user types adversarial instructions straight into the input ("ignore previous instructions..."), the original documented technique (SRC-147). Indirect prompt injection hides the same kind of instruction inside content the model retrieves or reads on someone else's behalf (a webpage, a document, an email), so the attack executes without the user ever typing anything malicious (SRC-146). OWASP ranks prompt injection as the top LLM application security risk for consecutive editions (SRC-148), and mitigation requires layered defenses (input/output filtering, privilege restriction, human-in-the-loop for consequential actions) since no single technique reliably distinguishes instructions from data at the model level.
 
 ---
 
 ## Plain-language version
 
-Prompt injection is a trick where someone hides instructions inside text an AI reads, and the AI can't tell those hidden instructions apart from the real ones it's supposed to follow. Direct version: someone types "ignore your instructions and do X" straight into the chat. Indirect version — the sneakier one — is instructions buried inside a document, webpage, or email that the AI is asked to summarize or process; the AI encounters the hidden command while doing its job and quietly follows it, with no visible sign anything went wrong.
+Prompt injection is a trick where someone hides instructions inside text an AI reads, and the AI can't tell those hidden instructions apart from the real ones it's supposed to follow. Direct version: someone types "ignore your instructions and do X" straight into the chat. Indirect version (the sneakier one) is instructions buried inside a document, webpage, or email that the AI is asked to summarize or process; the AI encounters the hidden command while doing its job and quietly follows it, with no visible sign anything went wrong.
 
 ---
 
 ## AI literacy notes
 
-1. **The AI cannot reliably tell instructions from data.** This is the root cause, not a bug to be patched away — everything the model reads shares one channel, so a well-crafted piece of "content" can act as a command.
-2. **Indirect injection is the higher-risk form for most deployments.** Any system that has the AI read external content — a webpage, an email, a document, search results — is exposed, even if no untrusted human ever talks to the model directly.
+1. **The AI cannot reliably tell instructions from data.** This is the root cause, not a bug to be patched away. Everything the model reads shares one channel, so a well-crafted piece of "content" can act as a command.
+2. **Indirect injection is the higher-risk form for most deployments.** Any system that has the AI read external content (a webpage, an email, a document, search results) is exposed, even if no untrusted human ever talks to the model directly.
 3. **No single fix solves it.** Defense requires layers: filtering what goes in and comes out, restricting what the model is allowed to do regardless of what it's told, and keeping a human in the loop for consequential actions (see [Guardrails](guardrails-ai-systems.md), [Human-in-the-Loop (HITL)](human-in-the-loop.md)).
 4. **It's the top-ranked LLM security risk industry-wide** (OWASP), which makes it the most-cited entry point for "how could this go wrong" conversations with a general audience.
 
@@ -59,7 +59,7 @@ Prompt injection is a trick where someone hides instructions inside text an AI r
 
 ## Confidence level
 
-**High.** The mechanism (single-channel instructions and data) is well understood and consistently reproduced across systems; ranked the top LLM application risk in successive OWASP editions. Reliable technical prevention remains an open problem — mitigation is layered defense, not a solved fix.
+**High.** The mechanism (single-channel instructions and data) is well understood and consistently reproduced across systems; ranked the top LLM application risk in successive OWASP editions. Reliable technical prevention remains an open problem, so mitigation is layered defense, not a solved fix.
 
 ---
 
@@ -89,8 +89,8 @@ Prompt injection is a trick where someone hides instructions inside text an AI r
 | Audience | Relevance |
 |---|---|
 | **Technical / Professional** | Implementation surface: input/output filtering, action permissioning, and treating retrieved content as untrusted by default. |
-| **Organizational** | The top-ranked AI security risk industry-wide — a concrete, board-legible reason to fund harness and guardrail investment. |
-| **Client-facing** | Explains a real, named risk in AI products a general audience has likely heard of — a chatbot "hijacked" by a hidden instruction. |
+| **Organizational** | The top-ranked AI security risk industry-wide, and a concrete, board-legible reason to fund harness and guardrail investment. |
+| **Client-facing** | Explains a real, named risk in AI products a general audience has likely heard of, such as a chatbot "hijacked" by a hidden instruction. |
 | **LLM-native** | Fundamental to any agentic or tool-using deployment: the risk scales directly with how much external content the system reads. |
 
 ---

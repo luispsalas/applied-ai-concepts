@@ -1,6 +1,6 @@
 <!--meta
 category: Organizational Readiness
-short: Treating an AI system as something that must be watched and corrected for as long as it runs — a standing capability with an owner, not a post-launch intention
+short: Treating an AI system as something that must be watched and corrected for as long as it runs, as a standing capability with an owner, not a post-launch intention
 aliases: [continuous improvement, feedback loop, closing the loop, iterate, post-deployment monitoring, corrective action, continual improvement, learning from production]
 tags: [Evaluation, Data Governance]
 established: established
@@ -12,7 +12,7 @@ established: established
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
-The standing capability to detect that a deployed AI system has degraded, decide what to do about it, and make the change — funded and owned for the life of the system, rather than assumed to happen once a project has closed.
+The standing capability to detect that a deployed AI system has degraded, decide what to do about it, and make the change, funded and owned for the life of the system, rather than assumed to happen once a project has closed.
 
 ---
 
@@ -22,7 +22,7 @@ A closed loop with four parts, all of which must exist for the loop to be real: 
 
 Break any one and the loop is decorative. **The most common break is the third**, not the first: organizations instrument a system, generate dashboards, and have no one empowered to decide that the numbers warrant a change.
 
-**Management-system standards treat this as a requirement rather than a maturity nicety.** ISO/IEC 42001:2023 carries the improvement obligations of the standard ISO management-system architecture — continual improvement, and nonconformity with corrective action — into AI specifically; the NIST AI RMF's **Manage** function likewise covers ongoing monitoring and response after deployment. In both, an AI system is a thing under management for its operating life, not a delivery.
+**Management-system standards treat this as a requirement rather than a maturity nicety.** ISO/IEC 42001:2023 carries the improvement obligations of the standard ISO management-system architecture (continual improvement, and nonconformity with corrective action) into AI specifically; the NIST AI RMF's **Manage** function likewise covers ongoing monitoring and response after deployment. In both, an AI system is a thing under management for its operating life, not a delivery.
 
 **Why AI needs this more than conventional software does.** Deterministic software does not silently get worse when the world changes; a model does. The inputs shift, the [drift](model-data-drift.md) accumulates, and the code is untouched throughout. Sculley et al. (NIPS 2015) established the general form of the problem: *"it is common to incur massive ongoing maintenance costs in real-world ML systems,"* driven by risk factors including **boundary erosion, entanglement, hidden feedback loops, undeclared consumers, data dependencies, configuration issues, and changes in the external world.**
 
@@ -34,13 +34,13 @@ Break any one and the loop is decorative. **The most common break is the third**
 
 Conventional software does not rot on its own. Leave it alone and it keeps doing exactly what it did, right up until someone changes it.
 
-AI systems are not like that. The code can sit untouched while the system gets steadily worse, because the world it was built for moved — customers ask about new things, vocabulary changes, the documents behind it go stale. Nothing broke. It just quietly stopped fitting.
+AI systems are not like that. The code can sit untouched while the system gets steadily worse, because the world it was built for moved. Customers ask about new things, vocabulary changes, and the documents behind it go stale. Nothing broke. It just quietly stopped fitting.
 
 So an AI system needs someone watching it for as long as it runs. That means four things, and it is only real if all four are present: you can see how it is doing, you can judge whether that is good enough, **someone is allowed to decide it isn't**, and there is a safe way to change it.
 
 The third one is where this usually fails. Plenty of organizations build the dashboards and then discover nobody actually owns the decision to act on them. Monitoring without authority is watching, not improving.
 
-There is a trap worth naming too. If you improve the system using data the system itself produced, you can end up teaching it that it was right all along. It will look like it is getting better. It is getting more self-consistent, which is not the same thing — and from the inside they look identical.
+There is a trap worth naming too. If you improve the system using data the system itself produced, you can end up teaching it that it was right all along. It will look like it is getting better. It is getting more self-consistent, which is not the same thing, and from the inside they look identical.
 
 ---
 
@@ -48,22 +48,22 @@ There is a trap worth naming too. If you improve the system using data the syste
 
 1. **A model degrades without being touched.** Nothing needs to break for performance to fall; the world moving is enough.
 2. **Monitoring is not improvement.** Signal without a decision-maker who can act on it is a dashboard, not a loop.
-3. **The decision step is the usual missing piece** — more often than instrumentation, which is the part that gets budgeted.
+3. **The decision step is the usual missing piece**, more often than instrumentation, which is the part that gets budgeted.
 4. **A loop fed by its own output confirms itself.** Improvement measured only on system-influenced data is self-agreement wearing the costume of progress.
 5. **User satisfaction is not accuracy.** Thumbs-up feedback rewards outputs that feel good, and a system optimized on it drifts toward agreeableness ([sycophancy](sycophancy-llms.md)).
 6. **"Continuous" means funded.** An improvement capability with no standing budget or owner reverts to incident response.
 7. **Every change resets the baseline.** Without a maintained evaluation set, you cannot tell whether a fix helped or moved the problem.
-8. **Undeclared consumers make changes riskier than they look** — downstream users you don't know about are depending on current behavior.
+8. **Undeclared consumers make changes riskier than they look**, because downstream users you don't know about are depending on current behavior.
 
 ---
 
 ## Governance notes
 
-**Core question:** For this system, who is authorized to decide it has degraded enough to change — and what independent evidence would they be deciding on?
+**Core question:** For this system, who is authorized to decide it has degraded enough to change? And what independent evidence would they be deciding on?
 
 **Watch for:**
 - Monitoring in place with no named person holding authority to act on it
-- Improvement measured on data the system itself generated or influenced — the self-confirming loop
+- Improvement measured on data the system itself generated or influenced, which is the self-confirming loop
 - Thumbs-up/thumbs-down user feedback used as the primary quality signal
 - No maintained evaluation baseline, so no change can be shown to be an improvement ([evaluation](evaluation.md))
 - Improvement work funded as a project rather than as an operating cost, and quietly ending at handover ([operational readiness](operational-readiness-ai.md))
@@ -73,15 +73,15 @@ There is a trap worth naming too. If you improve the system using data the syste
 - Retraining cadence set by calendar rather than by measured degradation
 
 **Practice:**
-- **Name the decision owner explicitly**, with the authority to require a change and to escalate — this is the step that most often has no name ([RACI](raci.md), [ownership](ownership-ai-systems.md))
+- **Name the decision owner explicitly**, with the authority to require a change and to escalate. This is the step that most often has no name ([RACI](raci.md), [ownership](ownership-ai-systems.md))
 - Maintain a versioned evaluation set that is **not** drawn from system-influenced production data, and re-run it on every change
-- Keep at least one measurement channel independent of the system's own outputs — sampled human review, external outcome data, or a held-out benchmark
+- Keep at least one measurement channel independent of the system's own outputs, such as sampled human review, external outcome data, or a held-out benchmark
 - Separate *satisfaction* signals from *correctness* signals and never let the first stand in for the second
 - Version and log every change to prompt, corpus, configuration and model together, so a regression can be attributed
 - Set review triggers on measured degradation as well as on schedule, and define in advance what result forces a rollback
 - Fund the capability as an operating cost with a stated horizon, and inventory downstream consumers before changing behavior
 
-**Key accountability owner:** the system owner as an operating asset — deliberately *not* the delivery team, whose mandate ends at launch and whose disappearance is precisely how the loop goes quiet.
+**Key accountability owner:** the system owner as an operating asset, and deliberately *not* the delivery team, whose mandate ends at launch and whose disappearance is precisely how the loop goes quiet.
 
 *→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
@@ -89,7 +89,7 @@ There is a trap worth naming too. If you improve the system using data the syste
 
 ## Confidence level
 
-**High** on the requirement and the mechanism. Continual improvement and corrective action are explicit obligations in ISO/IEC 42001 and the NIST AI RMF's Manage function, and the maintenance-cost and feedback-loop findings are peer-reviewed and long established. **Lower on implementation:** there is no settled standard for how often to re-evaluate, what degradation threshold should force action, or how to size the capability — these remain organizational judgments, and published guidance is mostly vendor-authored. **The self-confirming-loop hazard is well described in the ML systems literature but poorly reflected in AI governance practice**, which tends to treat feedback as unambiguously good.
+**High** on the requirement and the mechanism. Continual improvement and corrective action are explicit obligations in ISO/IEC 42001 and the NIST AI RMF's Manage function, and the maintenance-cost and feedback-loop findings are peer-reviewed and long established. **Lower on implementation:** there is no settled standard for how often to re-evaluate, what degradation threshold should force action, or how to size the capability. These remain organizational judgments, and published guidance is mostly vendor-authored. **The self-confirming-loop hazard is well described in the ML systems literature but poorly reflected in AI governance practice**, which tends to treat feedback as unambiguously good.
 
 ---
 
@@ -116,7 +116,7 @@ There is a trap worth naming too. If you improve the system using data the syste
 | ID | Source | Contribution to this entry |
 |---|---|---|
 | SRC-169 | ISO/IEC JTC 1/SC 42 — *ISO/IEC 42001:2023 — Information technology — Artificial intelligence — Management system* (2023) · [link](https://www.iso.org/standard/81230.html) | Continual improvement and nonconformity/corrective action as certifiable obligations, carrying the management-system architecture into AI. ⚠️ Paywalled standard; clause-level detail should be verified against the text before being quoted. |
-| SRC-166 | Sculley, D.; Holt, G.; Golovin, D.; Davydov, E.; Phillips, T.; Ebner, D.; Chaudhary, V.; Young, M.; Crespo, J.; Dennison, D. (Google) — *Hidden Technical Debt in Machine Learning Systems* (NIPS, 2015) · [link](https://papers.nips.cc/paper/5656-hidden-technical-debt-in-machine-learning-systems) | The maintenance-cost finding — "massive ongoing maintenance costs in real-world ML systems" — and the named risk factors this entry builds on: boundary erosion, entanglement, hidden feedback loops, undeclared consumers, data dependencies, configuration issues, and changes in the external world. |
+| SRC-166 | Sculley, D.; Holt, G.; Golovin, D.; Davydov, E.; Phillips, T.; Ebner, D.; Chaudhary, V.; Young, M.; Crespo, J.; Dennison, D. (Google) — *Hidden Technical Debt in Machine Learning Systems* (NIPS, 2015) · [link](https://papers.nips.cc/paper/5656-hidden-technical-debt-in-machine-learning-systems) | The maintenance-cost finding ("massive ongoing maintenance costs in real-world ML systems") and the named risk factors this entry builds on: boundary erosion, entanglement, hidden feedback loops, undeclared consumers, data dependencies, configuration issues, and changes in the external world. |
 | SRC-001 | NIST — *AI Risk Management Framework* · [link](https://www.nist.gov/itl/ai-risk-management-framework) | The **Manage** function: ongoing post-deployment monitoring and response, and the requirement that controls be measured rather than assumed. |
 
 ---

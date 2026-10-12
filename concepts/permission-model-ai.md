@@ -1,6 +1,6 @@
 <!--meta
 category: Human Oversight
-short: What an AI may do on its own, what needs human approval, and what is always off-limits — enforced, not requested
+short: What an AI may do on its own, what needs human approval, and what is always off-limits, enforced rather than requested
 aliases: [least privilege, what is the AI allowed to do, access control for AI, authorization, guardrails on actions]
 tags: [Security, Agents, Data Governance]
 established: established
@@ -18,21 +18,21 @@ A clear rulebook defining what an AI is allowed to do on its own, what needs a h
 
 ## Technical definition
 
-The explicit specification of an AI system's authority: which actions it may take autonomously, which require human authorization, and which are prohibited outright — enforced by the system rather than requested of the model.
+The explicit specification of an AI system's authority: which actions it may take autonomously, which require human authorization, and which are prohibited outright, enforced by the system rather than requested of the model.
 
 The governing principle predates AI by half a century. Least privilege holds that every program and every user should operate with the minimum set of privileges needed to complete the job, so that misuse of privilege is less likely and, when it occurs, the number of components requiring audit is small. Its companion principles apply equally: fail-safe defaults (deny unless explicitly permitted), complete mediation (check every access, not just the first), and economy of mechanism (a control simple enough to be verified).
 
-What AI changes is not the principle but the *unit* being authorized. Traditional access control asks "who can do what," binding permissions to an identity. An [agent](ai-agent.md) acts on a user's behalf, at machine speed, across many steps, with the specific sequence decided at runtime — so identity-bound permissions either over-grant (the agent inherits everything its operator can do) or block legitimate work. Emerging approaches shift the question toward *purpose* — classifying the intent behind a request and mapping it to policy enforced at runtime — to close the semantic gap that role- and attribute-based models leave open for agentic systems.
+What AI changes is not the principle but the *unit* being authorized. Traditional access control asks "who can do what," binding permissions to an identity. An [agent](ai-agent.md) acts on a user's behalf, at machine speed, across many steps, with the specific sequence decided at runtime, so identity-bound permissions either over-grant (the agent inherits everything its operator can do) or block legitimate work. Emerging approaches shift the question toward *purpose* (classifying the intent behind a request and mapping it to policy enforced at runtime) to close the semantic gap that role- and attribute-based models leave open for agentic systems.
 
 A workable permission model specifies, at minimum: the action inventory (what the system can do at all), a classification of each action by reversibility and blast radius, the authorization required per class, the identity under which each action executes, and the record written when it happens.
 
-The enforcement point is the critical design decision. Permissions checked in the prompt are advisory; permissions checked at the execution boundary — where a [tool call](tool-use.md) becomes a real effect — are controls.
+The enforcement point is the critical design decision. Permissions checked in the prompt are advisory; permissions checked at the execution boundary (where a [tool call](tool-use.md) becomes a real effect) are controls.
 
 ---
 
 ## Plain-language version
 
-Before an AI system can act, someone has to decide what it may do by itself, what it must ask about first, and what it must never do at all. That decision needs to be written down and enforced in code — not left as an instruction in the prompt, because an instruction is something the model can be talked out of.
+Before an AI system can act, someone has to decide what it may do by itself, what it must ask about first, and what it must never do at all. That decision needs to be written down and enforced in code, not left as an instruction in the prompt, because an instruction is something the model can be talked out of.
 
 ---
 
@@ -48,18 +48,18 @@ Before an AI system can act, someone has to decide what it may do by itself, wha
 
 ## Governance notes
 
-**Core question:** For every action this system can take — who decided it was allowed, under whose authority does it execute, and what would stop it if it were wrong?
+**Core question:** For every action this system can take, who decided it was allowed, under whose authority does it execute, and what would stop it if it were wrong?
 
 **Watch for:**
 - Authority expressed only in prompt text, with nothing enforced behind it
 - An agent running under a human's credentials, inheriting that person's full access
-- Irreversible actions — payment, deletion, external communication, publication — reachable without an approval step
+- Irreversible actions (payment, deletion, external communication, publication) reachable without an approval step
 - Permissions granted at build time and never reviewed as tools accumulate
 - No record of which permission allowed a given action, making after-the-fact review impossible
 
 **Practice:**
 - Maintain an explicit action inventory; classify each by reversibility and blast radius
-- Default to deny — a capability is unavailable until someone grants it deliberately
+- Default to deny, so a capability is unavailable until someone grants it deliberately
 - Give each agent its own identity and credentials, scoped below the operator's
 - Gate irreversible actions behind [human approval](human-in-the-loop.md), and make the gate structural rather than advisory
 - Record the authorization basis alongside the action in the [audit trail](audit-trail-ai.md)
@@ -73,7 +73,7 @@ Before an AI system can act, someone has to decide what it may do by itself, wha
 
 ## Confidence level
 
-**High** on the underlying principles — least privilege and its companions are foundational, peer-reviewed, and unchanged by AI. **Medium** on AI-specific mechanisms: intent- and purpose-based access control for agentic systems is an active area with practitioner proposals and early implementations rather than settled standards.
+**High** on the underlying principles. Least privilege and its companions are foundational, peer-reviewed, and unchanged by AI. **Medium** on AI-specific mechanisms: intent- and purpose-based access control for agentic systems is an active area with practitioner proposals and early implementations rather than settled standards.
 
 ---
 
@@ -95,7 +95,7 @@ Before an AI system can act, someone has to decide what it may do by itself, wha
 
 | ID | Source | Contribution to this entry |
 |---|---|---|
-| SRC-160 | Saltzer, J.H.; Schroeder, M.D. (MIT) — *The Protection of Information in Computer Systems*, Proc. IEEE 63(9) (1975) · [link](https://doi.org/10.1109/PROC.1975.9939) | The principle of least privilege and its companions — fail-safe defaults, complete mediation, economy of mechanism. Grounds the claim that this is inherited practice, not a new discipline. |
+| SRC-160 | Saltzer, J.H.; Schroeder, M.D. (MIT) — *The Protection of Information in Computer Systems*, Proc. IEEE 63(9) (1975) · [link](https://doi.org/10.1109/PROC.1975.9939) | The principle of least privilege and its companions (fail-safe defaults, complete mediation, economy of mechanism). Grounds the claim that this is inherited practice, not a new discipline. |
 | SRC-055 | Huang, Ken (DistributedApps.ai) — *Intent-Based Access Control: A Technical Primer* (2026) · [link](https://kenhuangus.substack.com/p/intentbased-access-control-a-technical) | The semantic gap RBAC/ABAC leave for agentic systems, and intent-to-policy enforcement at runtime as a proposed response. ⚠️ Practitioner source, not peer-reviewed. |
 | SRC-060 | He, Yifeng et al. (UC Davis) — *Security of AI Agents* (2024) · [link](https://arxiv.org/abs/2406.08689) | Agent vulnerability taxonomy across confidentiality, integrity and availability; why agent authority is a distinct security problem from model safety. |
 | SRC-104 | Anthropic — *Building Effective AI Agents* (2024) · [link](https://www.anthropic.com/engineering/building-effective-agents) | Human-approval checkpoints and sandboxing as concrete patterns in agent workflows. ⚠️ Vendor-authored. |
@@ -108,7 +108,7 @@ Before an AI system can act, someone has to decide what it may do by itself, wha
 | Audience | Relevance |
 |---|---|
 | **Technical / Professional** | The enforcement point is the design decision: prompt-level constraints are advisory, execution-boundary checks are controls. |
-| **Organizational** | The permission model is the document that answers "what is this system actually allowed to do?" — the prerequisite for approving any deployment. |
+| **Organizational** | The permission model is the document that answers "what is this system actually allowed to do?", the prerequisite for approving any deployment. |
 | **Client-facing** | Explains concretely what an AI system may and may not do on its own, and where a person remains in the decision. |
 | **LLM-native** | Capability arrives with every new tool; authority does not follow automatically and must be granted deliberately. |
 

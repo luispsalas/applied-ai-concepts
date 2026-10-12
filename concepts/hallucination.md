@@ -1,6 +1,6 @@
 <!--meta
 category: Foundations
-short: AI models generate plausible-sounding content that is factually incorrect — confidently and without warning
+short: AI models generate plausible-sounding content that is factually incorrect, confidently and without warning
 aliases: [confabulation, making things up, fabricated facts, invented citations, false output]
 tags: [Model Behavior, Evaluation]
 established: established
@@ -12,7 +12,7 @@ established: established
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
-AI models generate plausible-sounding content that is factually incorrect — confidently and without warning.
+AI models generate plausible-sounding content that is factually incorrect, confidently and without warning.
 
 ---
 
@@ -20,7 +20,7 @@ AI models generate plausible-sounding content that is factually incorrect — co
 
 Hallucination refers to the tendency of language models to produce outputs that are factually incorrect, logically inconsistent, or entirely fabricated, while presenting them with the same fluency and apparent confidence as accurate information. The term covers two distinct phenomena:
 
-1. **Factual hallucination:** The model asserts false facts — incorrect dates, non-existent citations, wrong attributions, invented statistics.
+1. **Factual hallucination:** The model asserts false facts, such as incorrect dates, non-existent citations, wrong attributions or invented statistics.
 2. **Reasoning hallucination (confabulation):** The model produces plausible-sounding explanations for its outputs that do not reflect its actual computational process. The explanation may be coherent and convincing while having no reliable relationship to why the output was generated.
 
 Hallucination is not a malfunction. It is an emergent property of how language models work: they generate statistically probable next tokens, not verified facts. Fluency and accuracy are trained independently; the model has no built-in mechanism to distinguish between what it knows and what it has confabulated.
@@ -31,7 +31,7 @@ Hallucination is not a malfunction. It is an emergent property of how language m
 
 When an AI model gets something wrong, it rarely says "I'm not sure." It usually sounds just as confident as when it's right.
 
-This matters because the signal most people use to judge whether information is trustworthy — how clearly and confidently it's stated — is exactly the signal that fails with AI. A hallucinated answer looks identical to a correct one.
+This matters because the signal most people use to judge whether information is trustworthy (how clearly and confidently it's stated) is exactly the signal that fails with AI. A hallucinated answer looks identical to a correct one.
 
 There are two kinds to watch for: wrong facts (the model invents a source, misremembers a date, creates a statistic) and wrong reasoning (the model explains why it gave an answer, but the explanation doesn't reflect what actually drove the output).
 
@@ -43,9 +43,9 @@ Hallucination is the most consequential literacy gap in organizational AI adopti
 
 Three practical implications:
 
-1. **[Verification](verification.md) can't be selective.** If you only verify outputs that seem suspicious, you will miss hallucinations — because they don't seem suspicious. Verification must be structural, not reactive.
+1. **[Verification](verification.md) can't be selective.** If you only verify outputs that seem suspicious, you will miss hallucinations, because they don't seem suspicious. Verification must be structural, not reactive.
 2. **Confidence is not a reliability signal.** The model's tone, fluency, and assertiveness carry no information about factual accuracy. Treat them as noise.
-3. **Explanations are not transparent.** When a model explains its reasoning, that explanation is itself a generated output — subject to the same hallucination risk as any other content. A convincing rationale is not a reliable rationale.
+3. **Explanations are not transparent.** When a model explains its reasoning, that explanation is itself a generated output, subject to the same hallucination risk as any other content. A convincing rationale is not a reliable rationale.
 
 Grounding strategies (RAG, retrieval from verified sources, tool use) reduce hallucination risk but do not eliminate it. Human verification remains necessary for any output where accuracy is consequential.
 
@@ -56,7 +56,7 @@ Grounding strategies (RAG, retrieval from verified sources, tool use) reduce hal
 **Core question:** Who is accountable for verifying AI outputs before they influence decisions?
 
 **Watch for:**
-- Verification that is reactive (checking outputs that seem suspicious) rather than structural (checking by design). Hallucinated outputs do not seem suspicious — so reactive verification misses them.
+- Verification that is reactive (checking outputs that seem suspicious) rather than structural (checking by design). Hallucinated outputs do not seem suspicious, so reactive verification misses them.
 - Fluency and confidence of tone used as a proxy for factual accuracy. They carry no information about correctness.
 - AI-generated explanations treated as transparent insight into the model's reasoning. They are generated outputs subject to the same hallucination risk as any other content.
 
@@ -64,7 +64,7 @@ Grounding strategies (RAG, retrieval from verified sources, tool use) reduce hal
 - Define verification as a structural step before deployment: which outputs, at what volume, reviewed by whom, using what criteria.
 - Grounding strategies (RAG, retrieval, tool use) reduce hallucination risk but do not eliminate it. Do not treat them as a substitute for verification on consequential outputs.
 
-**Key accountability owner:** Output quality owner — the role responsible for verifying AI outputs before they reach downstream use or decision-making.
+**Key accountability owner:** Output quality owner, the role responsible for verifying AI outputs before they reach downstream use or decision-making.
 
 *→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
@@ -91,10 +91,10 @@ Grounding strategies (RAG, retrieval from verified sources, tool use) reduce hal
 
 | ID | Source | Contribution to this entry |
 |---|---|---|
-| SRC-010 | Zhang et al. — *A Survey on Hallucination in Large Language Models: Principles, Taxonomy, Challenges, and Open Questions* (arXiv:2311.05232, 2023) · [link](https://arxiv.org/abs/2311.05232) | Defines factuality hallucination (discrepancy with verifiable real-world facts) and faithfulness hallucination (divergence from user input or internal consistency). Provides taxonomy, detection methods, and mitigation overview. Peer-reviewed — ACM Transactions on Information Systems. |
-| SRC-051 | Perrone, Paolo — *How DoorDash Built Their RAG System* (The AI Engineer, 2026) · [link](https://theaiengineer.substack.com/p/how-doordash-built-their-rag-system) | Verification as structural rather than reactive: a production system layering a semantic-similarity guardrail, an LLM judge, and a simulation flywheel achieved ~90% fewer hallucinations — evidence that hallucination control is an architectural design choice, not after-the-fact review. |
-| SRC-064 | Alexander, Emmimal P. — *Your RAG Gets Confidently Wrong as Memory Grows* (Towards Data Science, 2026) · [link](https://towardsdatascience.com/your-rag-gets-confidently-wrong-as-memory-grows-i-built-the-memory-layer-that-stops-it/) | Confidence as a non-reliability signal: controlled experiment in which model confidence rose (70.4% → 78.0%) even as accuracy fell — output confidence does not track correctness. |
-| SRC-023 | Lipton, Z. — *The Mythos of Model Interpretability* (arXiv:1606.03490, 2016) · [link](https://arxiv.org/abs/1606.03490) | Model-generated explanations are themselves model outputs and do not constitute ground truth — an AI's explanation of its own answer carries the same hallucination risk as the answer itself. |
+| SRC-010 | Zhang et al. — *A Survey on Hallucination in Large Language Models: Principles, Taxonomy, Challenges, and Open Questions* (arXiv:2311.05232, 2023) · [link](https://arxiv.org/abs/2311.05232) | Defines factuality hallucination (discrepancy with verifiable real-world facts) and faithfulness hallucination (divergence from user input or internal consistency). Provides taxonomy, detection methods, and mitigation overview. Peer-reviewed in ACM Transactions on Information Systems. |
+| SRC-051 | Perrone, Paolo — *How DoorDash Built Their RAG System* (The AI Engineer, 2026) · [link](https://theaiengineer.substack.com/p/how-doordash-built-their-rag-system) | Verification as structural rather than reactive: a production system layering a semantic-similarity guardrail, an LLM judge, and a simulation flywheel achieved ~90% fewer hallucinations, which is evidence that hallucination control is an architectural design choice, not after-the-fact review. |
+| SRC-064 | Alexander, Emmimal P. — *Your RAG Gets Confidently Wrong as Memory Grows* (Towards Data Science, 2026) · [link](https://towardsdatascience.com/your-rag-gets-confidently-wrong-as-memory-grows-i-built-the-memory-layer-that-stops-it/) | Confidence as a non-reliability signal: controlled experiment in which model confidence rose (70.4% → 78.0%) even as accuracy fell, so output confidence does not track correctness. |
+| SRC-023 | Lipton, Z. — *The Mythos of Model Interpretability* (arXiv:1606.03490, 2016) · [link](https://arxiv.org/abs/1606.03490) | Model-generated explanations are themselves model outputs and do not constitute ground truth, so an AI's explanation of its own answer carries the same hallucination risk as the answer itself. |
 
 ---
 
@@ -104,7 +104,7 @@ Grounding strategies (RAG, retrieval from verified sources, tool use) reduce hal
 |---|---|
 | **Technical / Professional** | Informs verification architecture, grounding strategy, and output review pipelines. Hallucination risk is a design constraint, not an edge case. |
 | **Organizational** | The highest-impact literacy concept for non-technical leaders. Changes how AI outputs should be integrated into decision-making workflows. |
-| **Client-facing** | Explains why AI tools require human oversight — and why "it sounded right" is not a sufficient quality check. |
+| **Client-facing** | Explains why AI tools require human oversight, and why "it sounded right" is not a sufficient quality check. |
 | **LLM-native** | Foundation assumption for all output evaluation. Every downstream concept (grounding, HITL, harness controls) exists partly in response to hallucination. |
 
 ---

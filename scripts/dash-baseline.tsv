@@ -1,34 +1,14 @@
 # Prose em dashes each entry may still hold. Generated: lowered by `build.py write`, never raised.
 # An entry not listed is allowed none. slug<TAB>allowed
-ai-benchmarking	17
 ai-use-case	11
-anthropomorphism-ai	17
-automation-bias	17
-bias-ai-systems	17
-concealing-uncertainty	14
 context-engineering	11
 context-window	11
-continuous-feedback-improvement	16
-copyright-ai-output	17
-curse-of-knowledge-ai-context	17
-data-leakage-ai-systems	14
 data-minimization	13
 determinism-vs-probabilism	13
 domain	8
 explainability-xai	13
-grounding	17
 guardrails-ai-systems	8
-hallucination	14
-human-in-the-loop	14
-jailbreak	13
 knowledge-base	8
-knowledge-cutoff	13
 memory-ai-systems	10
-permission-model-ai	15
-prompt-injection	13
 red-teaming	12
-small-language-models	16
-sycophancy-llms	16
-system-prompt	14
-tool-use	16
 world-models	1

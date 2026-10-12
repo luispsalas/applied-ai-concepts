@@ -12,17 +12,17 @@ Looking for one term? Use the [alphabetical glossary](index.md) or [search](../s
 | Concept | One-line essence | Status |
 |---|---|---|
 | [Large Language Models (LLMs)](../concepts/large-language-models.md) | Neural networks trained on vast text corpora that generate language by predicting what comes next, the foundation of most modern AI tools and agents | ✅ v1.0 |
-| [Small Language Models (SLMs)](../concepts/small-language-models.md) | Language models small enough to run cheaply, locally, or at the edge — often the better fit for narrow, repetitive tasks | ✅ v1.0 |
+| [Small Language Models (SLMs)](../concepts/small-language-models.md) | Language models small enough to run cheaply, locally, or at the edge, and often the better fit for narrow, repetitive tasks | ✅ v1.0 |
 | [Local LLMs](../concepts/local-llms.md) | Models run on your own infrastructure. The data stays in, and every duty the provider was carrying becomes yours | ✅ v1.0 |
 | [Determinism vs Probabilism](../concepts/determinism-vs-probabilism.md) | Why AI models generate statistically likely outputs rather than fixed answers — the same input can produce different results | ✅ v1.0 |
 | [Reasoning Models / Test-Time Compute](../concepts/reasoning-models.md) | Models that spend extra computation "thinking" through a problem step by step before answering, trading speed for higher accuracy on hard tasks | ✅ v1.1 |
 | [Multimodal AI](../concepts/multimodal-ai.md) | Text, images, audio and video in one system, with every text risk carried across and weaker tooling to detect it | ✅ v1.0 |
-| [Sycophancy (LLMs)](../concepts/sycophancy-llms.md) | Models agreeing with users rather than being accurate — a behavior the training signal rewards, not an incidental bug | ✅ v1.1 |
+| [Sycophancy (LLMs)](../concepts/sycophancy-llms.md) | Models agreeing with users rather than being accurate. It is a behavior the training signal rewards, not an incidental bug | ✅ v1.1 |
 | [Confidence vs Accuracy](../concepts/confidence-vs-accuracy.md) | How sure a model sounds is not evidence of how right it is, because tone is generated independently of correctness | ✅ v1.0 |
-| [Knowledge Cutoff](../concepts/knowledge-cutoff.md) | Every model was trained up to a fixed date and knows nothing after it — and cannot reliably tell you when a question falls outside what it knows | ✅ v1.0 |
-| [Hallucination](../concepts/hallucination.md) | AI models generate plausible-sounding content that is factually incorrect — confidently and without warning | ✅ v1.2 |
+| [Knowledge Cutoff](../concepts/knowledge-cutoff.md) | Every model was trained up to a fixed date and knows nothing after it, and cannot reliably tell you when a question falls outside what it knows | ✅ v1.0 |
+| [Hallucination](../concepts/hallucination.md) | AI models generate plausible-sounding content that is factually incorrect, confidently and without warning | ✅ v1.2 |
 | [Black Box](../concepts/black-box.md) | An AI system whose internal reasoning process cannot be observed or interpreted, even when its outputs can | ✅ v1.1 |
-| [Bias (AI Systems)](../concepts/bias-ai-systems.md) | Systematic errors that unfairly advantage or disadvantage certain groups — often inherited from training data, rarely visible in any single output | ✅ v1.0 |
+| [Bias (AI Systems)](../concepts/bias-ai-systems.md) | Systematic errors that unfairly advantage or disadvantage certain groups. They are often inherited from training data and rarely visible in any single output | ✅ v1.0 |
 | [Explainability (XAI)](../concepts/explainability-xai.md) | Describing, in terms a human can understand, why an AI system produced a specific output — a prerequisite for accountability | ✅ v1.0 |
 | [Types of AI Systems](../concepts/types-of-ai-systems.md) | A taxonomy of AI by capability and autonomy (from narrow task tools to general-purpose models) that determines governance, risk, and oversight | ✅ v1.2 |
 | [Fine-tuning](../concepts/fine-tuning.md) | Adapting a model on your own data. It is cheap enough to be routine, and it can silently strip the safety behavior you were relying on | ✅ v1.0 |
@@ -50,9 +50,9 @@ Looking for one term? Use the [alphabetical glossary](index.md) or [search](../s
 |---|---|---|
 | [Context Engineering](../concepts/context-engineering.md) | Designing what an AI model receives is as important as the model itself | ✅ v1.1 |
 | [Prompt Engineering](../concepts/prompt-engineering.md) | Structuring inputs to consistently elicit useful, accurate, and safe model outputs | ✅ v1.1 |
-| [Anthropomorphism (AI)](../concepts/anthropomorphism-ai.md) | Reading fluent language as understanding, intent or care — the reflex underneath most other misconceptions about AI | ✅ v1.0 |
+| [Anthropomorphism (AI)](../concepts/anthropomorphism-ai.md) | Reading fluent language as understanding, intent or care, the reflex underneath most other misconceptions about AI | ✅ v1.0 |
 | [Human–LLM Communication Skills](../concepts/human-llm-communication-skills.md) | Working well with a model is mostly noticing what you left unstated, and knowing when not to trust the answer | ✅ v1.0 |
-| [Curse of Knowledge (AI Context)](../concepts/curse-of-knowledge-ai-context.md) | You cannot un-know what you know, so you under-specify — and the model answers anyway instead of asking | ✅ v1.0 |
+| [Curse of Knowledge (AI Context)](../concepts/curse-of-knowledge-ai-context.md) | You cannot un-know what you know, so you under-specify, and the model answers anyway instead of asking | ✅ v1.0 |
 | [Cognitive Offloading & Deskilling](../concepts/cognitive-offloading-deskilling.md) | Delegating thinking to a system erodes the skill needed to judge its output, which is the long-run cost of convenience | ✅ v1.0 |
 | [Performativity (LLMs)](../concepts/performativity-llms.md) | Language models do not just describe language, they change it, measurably shifting the words people use, with the influence running back from the machine into human culture | ✅ v1.0 |
 | [Metaprompting](../concepts/metaprompting.md) | Prompting about prompting. Three different practices share the name, and the governance question is the same for all of them | ✅ v1.0 |
@@ -65,14 +65,14 @@ Looking for one term? Use the [alphabetical glossary](index.md) or [search](../s
 |---|---|---|
 | [Harness Paradigm](../concepts/harness-paradigm.md) | Intelligence and control are separate layers, and governance lives in the harness | ✅ v1.4 |
 | [AI Agent](../concepts/ai-agent.md) | A language model that doesn't just respond. It plans, acts, and iterates across multiple steps | ✅ v1.3 |
-| [Tool Use](../concepts/tool-use.md) | How an AI model acts on the world rather than just describing it — calling external functions, APIs, and data sources | ✅ v1.1 |
+| [Tool Use](../concepts/tool-use.md) | How an AI model acts on the world rather than just describing it, by calling external functions, APIs, and data sources | ✅ v1.1 |
 | [Multi-Agent Systems](../concepts/multi-agent-systems.md) | Multiple AI agents with different roles working together on a task, with coordination and division of labor instead of one model doing everything | ✅ v1.2 |
 | [Orchestration (AI Systems)](../concepts/orchestration-ai-systems.md) | The control layer deciding what runs and in what order, where the failures hide in the seams and look like success | ✅ v1.1 |
 | [Retrieval-Augmented Generation (RAG)](../concepts/rag.md) | A technique that grounds model outputs in retrieved, verifiable information | ✅ v1.2 |
 | [Guardrails (AI Systems)](../concepts/guardrails-ai-systems.md) | Technical and policy constraints that prevent an AI system from producing outputs or taking actions outside defined boundaries | ✅ v1.0 |
-| [System Prompt](../concepts/system-prompt.md) | The behind-the-scenes instructions that set how an AI behaves before you interact with it — a soft control, not a hard boundary | ✅ v1.0 |
-| [Prompt Injection](../concepts/prompt-injection.md) | A trick where malicious instructions hidden in text the AI reads hijack its behavior — the top-ranked LLM application security risk | ✅ v1.0 |
-| [Jailbreak](../concepts/jailbreak.md) | Bypassing a model's safety training through crafted prompts rather than a technical flaw — getting it to do what it was trained to refuse | ✅ v1.0 |
+| [System Prompt](../concepts/system-prompt.md) | The behind-the-scenes instructions that set how an AI behaves before you interact with it. It is a soft control, not a hard boundary | ✅ v1.0 |
+| [Prompt Injection](../concepts/prompt-injection.md) | A trick where malicious instructions hidden in text the AI reads hijack its behavior. It is the top-ranked LLM application security risk | ✅ v1.0 |
+| [Jailbreak](../concepts/jailbreak.md) | Bypassing a model's safety training through crafted prompts rather than a technical flaw, getting it to do what it was trained to refuse | ✅ v1.0 |
 | [Embeddings](../concepts/embeddings.md) | Turning text into coordinates so that similar meanings sit close together. It is the representation that makes semantic search work, and that carries the training data's biases as geometry | ✅ v1.0 |
 | [Sandboxing](../concepts/sandboxing.md) | Running an untrusted system inside a bounded environment so that what it can reach is limited by construction. It is the control that does not depend on predicting what it will try | ✅ v1.1 |
 | [Agent Interoperability (A2A)](../concepts/agent-interoperability-a2a.md) | Letting agents built by different parties discover and delegate to each other. It is the layer where accountability crosses an organizational boundary, usually before anyone has decided who holds it | ✅ v1.0 |
@@ -94,8 +94,8 @@ Looking for one term? Use the [alphabetical glossary](index.md) or [search](../s
 | [Data Quality](../concepts/data-quality.md) | The fitness of data for its intended use, and the upstream constraint on every AI system built on it | ✅ v1.0 |
 | [Data Provenance / Lineage](../concepts/data-provenance-lineage.md) | Where the data came from and what has happened to it since. It is the record that answers "can we actually use this?" | ✅ v1.1 |
 | [Training Data](../concepts/training-data.md) | What the model learned from, which is where its knowledge, gaps, blind spots and biases all come from, and which is rarely disclosed | ✅ v1.0 |
-| [Copyright & AI Output](../concepts/copyright-ai-output.md) | Who owns what a model makes, and whether training was lawful — two questions, one with a US answer and one genuinely open | ✅ v1.0 |
-| [Grounding](../concepts/grounding.md) | Anchoring model outputs to specific, verifiable sources — reducing hallucination by giving the model something real to reason from | ✅ v1.0 |
+| [Copyright & AI Output](../concepts/copyright-ai-output.md) | Who owns what a model makes, and whether training was lawful. These are two questions, one with a US answer and one genuinely open | ✅ v1.0 |
+| [Grounding](../concepts/grounding.md) | Anchoring model outputs to specific, verifiable sources, reducing hallucination by giving the model something real to reason from | ✅ v1.0 |
 | [Knowledge Base](../concepts/knowledge-base.md) | The collection of documents an AI can look up when answering — the quality of the library determines the quality of the answers | ✅ v1.0 |
 | [Memory (AI Systems)](../concepts/memory-ai-systems.md) | How an AI remembers — what it keeps in a conversation, what carries over to future sessions, and what it reuses as learned skill | ✅ v1.0 |
 | [Domain](../concepts/domain.md) | The specific field the AI is working in — what counts as a "good" or "wrong" answer depends entirely on the domain | ✅ v1.0 |
@@ -118,10 +118,10 @@ Looking for one term? Use the [alphabetical glossary](index.md) or [search](../s
 |---|---|---|
 | [Human-in-the-Loop (HITL)](../concepts/human-in-the-loop.md) | A design pattern that keeps humans as decision authorities at critical points | ✅ v1.1 |
 | [Human Responsibility in AI Use](../concepts/human-responsibility-in-ai-use.md) | The obligation to oversee AI decisions does not transfer to the system. It remains with the humans who deploy and use it | ✅ v1.1 |
-| [Permission Model (AI)](../concepts/permission-model-ai.md) | What an AI may do on its own, what needs human approval, and what is always off-limits — enforced, not requested | ✅ v1.0 |
+| [Permission Model (AI)](../concepts/permission-model-ai.md) | What an AI may do on its own, what needs human approval, and what is always off-limits, enforced rather than requested | ✅ v1.0 |
 | [Agency (AI Systems)](../concepts/agency-ai-systems.md) | How much a system may do without asking. It is granted by an organization, not possessed by the model | ✅ v1.0 |
 | [Human–AI Collaboration Model](../concepts/human-ai-collaboration-model.md) | The explicit design of how people and AI systems divide work, hand over, and resolve disagreement, documented rather than assumed | ✅ v1.0 |
-| [Automation Bias](../concepts/automation-bias.md) | People stop checking a system that is usually right — which is how a rare wrong answer becomes a bad decision | ✅ v1.0 |
+| [Automation Bias](../concepts/automation-bias.md) | People stop checking a system that is usually right, which is how a rare wrong answer becomes a bad decision | ✅ v1.0 |
 | [RACI](../concepts/raci.md) | Who does the work, who answers for it, who is consulted, who is informed. The system can be Responsible, but only a person can be Accountable | ✅ v1.1 |
 | [Scalable Oversight](../concepts/scalable-oversight.md) | Using AI to supervise AI because the work has outrun direct human review, and the unresolved question of who checks the checker | ✅ v1.0 |
 | [Moral Crumple Zone](../concepts/moral-crumple-zone.md) | The human operator who absorbs blame when an automated system fails, protecting the system's integrity at the nearest person's expense, exactly as a car's crumple zone absorbs a crash | ✅ v1.0 |
@@ -136,7 +136,7 @@ Looking for one term? Use the [alphabetical glossary](index.md) or [search](../s
 | [Failure Modes (AI Systems)](../concepts/failure-modes-ai-systems.md) | The specific ways an AI system can go wrong, each requiring a different detection-and-response control | ✅ v1.0 |
 | [Red Teaming](../concepts/red-teaming.md) | Deliberately attacking your own AI system — probing for jailbreaks, data leaks, and harmful outputs before anyone else finds them | ✅ v1.0 |
 | [Deception (AI Systems)](../concepts/deception-ai-systems.md) | Output that systematically induces false beliefs because something other than truth was being optimized for | ✅ v1.2 |
-| [Concealing Uncertainty](../concepts/concealing-uncertainty.md) | A tentative answer presented as settled — the caveats a calibrated response would surface, trained away | ✅ v1.0 |
+| [Concealing Uncertainty](../concepts/concealing-uncertainty.md) | A tentative answer presented as settled, with the caveats a calibrated response would surface trained away | ✅ v1.0 |
 | [Synthetic Media (Deepfakes)](../concepts/synthetic-media-deepfakes.md) | Generation scales and verification does not, and the documented harm is fraud and intimate imagery, not mainly politics | ✅ v1.0 |
 | [Reward Hacking (Specification Gaming)](../concepts/reward-hacking.md) | The system satisfies the metric and defeats the point, and more capable models do it more, not less | ✅ v1.0 |
 | [Power Seeking](../concepts/power-seeking.md) | Capability is useful for almost any goal, so optimization drifts toward more access and more room to operate, with no motive required | ✅ v1.0 |
@@ -147,7 +147,7 @@ Looking for one term? Use the [alphabetical glossary](index.md) or [search](../s
 | [Data Leakage (Model Evaluation)](../concepts/data-leakage-model-evaluation.md) | When information from the test set reaches the model during training, so measured performance describes an exam the model had already seen. It is the most common cause of results that do not survive deployment | ✅ v1.0 |
 | [LLM-as-Judge](../concepts/llm-as-judge.md) | Using one language model to grade another's output. It is the only way to evaluate at volume, with documented biases including a preference for its own writing | ✅ v1.2 |
 | [Recursive Self-Improvement](../concepts/recursive-self-improvement.md) | A system improving its own ability to improve, so gains compound. It is a sixty-year-old argument whose premises are now partly testable and largely unmet | ✅ v1.1 |
-| [AI Benchmarking](../concepts/ai-benchmarking.md) | Standardized tests that let models be compared on the same task — indispensable for comparison, and routinely read as evidence of general capability they were never built to support | ✅ v1.0 |
+| [AI Benchmarking](../concepts/ai-benchmarking.md) | Standardized tests that let models be compared on the same task. They are indispensable for comparison, and routinely read as evidence of general capability they were never built to support | ✅ v1.0 |
 | [Catastrophic Forgetting](../concepts/catastrophic-forgetting.md) | Teaching a model something new can silently remove something it already knew, including behavior nobody re-tests | ✅ v1.0 |
 | [Overfitting](../concepts/overfitting.md) | Learning the training set instead of the pattern, and the reason a model's reported score is not a promise about your data | ✅ v1.0 |
 | [False Positives and False Negatives](../concepts/false-positives-and-false-negatives.md) | The two ways a system can be wrong, and the choice of which one to make more often is a policy decision that usually gets made by default | ✅ v1.0 |
@@ -168,7 +168,7 @@ Looking for one term? Use the [alphabetical glossary](index.md) or [search](../s
 | [Compliance (AI Systems)](../concepts/compliance-ai-systems.md) | Meeting defined AI obligations, and being answerable for whether they were actually met, not just documented | ✅ v1.1 |
 | [Data Minimization](../concepts/data-minimization.md) | Collecting and keeping only the data a system actually needs — less data, less risk, lower cost | ✅ v1.0 |
 | [Privacy (AI Systems)](../concepts/privacy-ai-systems.md) | The rights and obligations that govern how personal data is used in AI training and deployment, and the responsibility to uphold them | ✅ v1.0 |
-| [Data Leakage (AI Systems)](../concepts/data-leakage-ai-systems.md) | When sensitive information from training data or context surfaces in model outputs — exposing what was never meant to be accessible | ✅ v1.0 |
+| [Data Leakage (AI Systems)](../concepts/data-leakage-ai-systems.md) | When sensitive information from training data or context surfaces in model outputs, exposing what was never meant to be accessible | ✅ v1.0 |
 | [AI Incident (Reporting)](../concepts/ai-incident-reporting.md) | A documented event where an AI system caused or nearly caused harm. There are now legal deadlines to report it, not just fix it quietly | ✅ v1.2 |
 | [AI Management System (ISO 42001)](../concepts/ai-management-system-iso-42001.md) | The certifiable standard for governing AI across its lifecycle. It certifies the process, not the product | ✅ v1.0 |
 | [Shadow AI](../concepts/shadow-ai.md) | Unsanctioned AI use, invisible to the processes meant to govern it, and usually a signal about the sanctioned option | ✅ v1.0 |
@@ -203,6 +203,6 @@ Looking for one term? Use the [alphabetical glossary](index.md) or [search](../s
 | [Operational Readiness (AI)](../concepts/operational-readiness-ai.md) | Whether the organization can actually run an AI system (data, infrastructure, skills, process, governance), not whether the model works | ✅ v1.0 |
 | [Scalability (AI Systems)](../concepts/scalability-ai-systems.md) | Volume scales, review capacity does not, and nothing alarms when a governed tool becomes an unreviewed pipeline | ✅ v1.0 |
 | [Value Realization (AI)](../concepts/value-realization-ai.md) | The gap between what AI can do and what an organization gets from it, closed by complementary investment, not by better models | ✅ v1.0 |
-| [Continuous Feedback & Improvement](../concepts/continuous-feedback-improvement.md) | Treating an AI system as something that must be watched and corrected for as long as it runs — a standing capability with an owner, not a post-launch intention | ✅ v1.0 |
+| [Continuous Feedback & Improvement](../concepts/continuous-feedback-improvement.md) | Treating an AI system as something that must be watched and corrected for as long as it runs, as a standing capability with an owner, not a post-launch intention | ✅ v1.0 |
 | [Tacit Knowledge](../concepts/tacit-knowledge.md) | The expertise people have but cannot fully put into words. It is the hardest thing to give an AI system as context, and the first thing lost when people stop practicing | ✅ v1.0 |
 | [Service Level Objective](../concepts/service-level-objective.md) | The number you commit to before anyone is angry, and the question of what it can even mean when the output is probabilistic rather than up-or-down | ✅ v1.0 |

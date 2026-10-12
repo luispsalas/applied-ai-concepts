@@ -1,6 +1,6 @@
 <!--meta
 category: Foundations
-short: Language models small enough to run cheaply, locally, or at the edge — often the better fit for narrow, repetitive tasks
+short: Language models small enough to run cheaply, locally, or at the edge, and often the better fit for narrow, repetitive tasks
 aliases: [SLM, compact model, on-device model, efficient model, smaller model]
 tags: [Architecture]
 established: established
@@ -12,17 +12,17 @@ established: established
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
-Language models small enough to run cheaply, locally, or at the edge — often the better fit for narrow, repetitive tasks where a frontier model is more capability than the job requires.
+Language models small enough to run cheaply, locally, or at the edge, and often the better fit for narrow, repetitive tasks where a frontier model is more capability than the job requires.
 
 ---
 
 ## Technical definition
 
-Language models at a parameter scale low enough to be deployed under ordinary infrastructure constraints — commonly single-GPU, on-premises, or consumer hardware — as opposed to frontier models requiring dedicated serving infrastructure. The boundary is relative and moves: "small" is defined by deployability under current constraints, not by a fixed parameter count, and today's small model would have been large a few years ago.
+Language models at a parameter scale low enough to be deployed under ordinary infrastructure constraints (commonly single-GPU, on-premises, or consumer hardware), as opposed to frontier models requiring dedicated serving infrastructure. The boundary is relative and moves: "small" is defined by deployability under current constraints, not by a fixed parameter count, and today's small model would have been large a few years ago.
 
-The case for SLMs in agentic systems is that most agent work is narrow and repetitive. An agent's individual steps — classifying an intent, extracting fields, choosing a tool, formatting a call — are constrained sub-tasks, not open-ended reasoning. A position paper arguing SLMs are the future of agentic AI makes the efficiency, deployability, and specialization case: where the task is bounded, a specialized small model can be sufficient, and the economics and latency differ by orders of magnitude. The corollary is a heterogeneous design — small models for routine steps, a large model invoked only where genuine generality is needed.
+The case for SLMs in agentic systems is that most agent work is narrow and repetitive. An agent's individual steps (classifying an intent, extracting fields, choosing a tool, formatting a call) are constrained sub-tasks, not open-ended reasoning. A position paper arguing SLMs are the future of agentic AI makes the efficiency, deployability, and specialization case: where the task is bounded, a specialized small model can be sufficient, and the economics and latency differ by orders of magnitude. The corollary is a heterogeneous design, with small models for routine steps and a large model invoked only where genuine generality is needed.
 
-For governance the decisive property is usually not size but **where the model runs**. A model deployed on infrastructure you control means data does not leave your environment, which changes the [privacy](privacy-ai-systems.md) analysis substantially — while transferring the full operational burden (evaluation, monitoring, patching, safety testing) to you, with no vendor backstop.
+For governance the decisive property is usually not size but **where the model runs**. A model deployed on infrastructure you control means data does not leave your environment, which changes the [privacy](privacy-ai-systems.md) analysis substantially, while transferring the full operational burden (evaluation, monitoring, patching, safety testing) to you, with no vendor backstop.
 
 Capability is genuinely lower. Smaller models are weaker at long-context reasoning, multi-step planning, and instruction-following under unusual phrasing, and their safety training is typically thinner.
 
@@ -30,23 +30,23 @@ Capability is genuinely lower. Smaller models are weaker at long-context reasoni
 
 ## Plain-language version
 
-Not every job needs the biggest model. A lot of what AI systems do all day is small and repetitive — sort this, extract that, pick the right tool. A smaller model can often do those steps well, far more cheaply, and on your own hardware. The trade is real: it is less capable when a task is genuinely hard, and running it yourself means everything that could go wrong is now yours to catch.
+Not every job needs the biggest model. A lot of what AI systems do all day is small and repetitive, such as sorting this, extracting that, or picking the right tool. A smaller model can often do those steps well, far more cheaply, and on your own hardware. The trade is real: it is less capable when a task is genuinely hard, and running it yourself means everything that could go wrong is now yours to catch.
 
 ---
 
 ## AI literacy notes
 
 1. **"Small" is a moving, relative label.** It describes deployability under current constraints, not a threshold. Any document using it should be read for what it actually means in that context.
-2. **Model size is a design decision per task, not per system.** The useful question is which steps need generality and which are bounded — a heterogeneous system routing accordingly usually beats a single-model choice in both directions.
+2. **Model size is a design decision per task, not per system.** The useful question is which steps need generality and which are bounded. A heterogeneous system routing accordingly usually beats a single-model choice in both directions.
 3. **The governance shift comes from location, not size.** Running on your own infrastructure is what changes the data-protection analysis. It also removes the vendor backstop: evaluation, monitoring, and safety testing become entirely yours.
 4. **Weaker safety training is a real consideration.** Smaller and specialized models generally receive less safety tuning than frontier models, which raises the importance of enforced [guardrails](guardrails-ai-systems.md) rather than reliance on model behavior.
-5. **Cheap enough to run everywhere is also cheap enough to run unsupervised.** Low cost and easy deployment make [shadow](shadow-ai.md) usage more likely, not less — governance needs to keep up with how easy deployment has become.
+5. **Cheap enough to run everywhere is also cheap enough to run unsupervised.** Low cost and easy deployment make [shadow](shadow-ai.md) usage more likely, not less, so governance needs to keep up with how easy deployment has become.
 
 ---
 
 ## Governance notes
 
-**Core question:** For this specific task, what capability is actually required — and who carries the operational burden of the model that provides it?
+**Core question:** For this specific task, what capability is actually required? And who carries the operational burden of the model that provides it?
 
 **Watch for:**
 - A frontier model used for bounded, repetitive steps because it was the default, not because the task needs it
@@ -57,12 +57,12 @@ Not every job needs the biggest model. A lot of what AI systems do all day is sm
 
 **Practice:**
 - Decide model size per task against a stated capability requirement, and record the reasoning
-- Re-evaluate on the actual task when substituting a smaller model — vendor benchmarks do not transfer to your workload
+- Re-evaluate on the actual task when substituting a smaller model, because vendor benchmarks do not transfer to your workload
 - When self-hosting, assign explicit ownership for patching, monitoring, and safety testing; there is no provider doing it
-- Keep locally deployed models in the same inventory as hosted ones — governance follows the use, not the hosting model
+- Keep locally deployed models in the same inventory as hosted ones, because governance follows the use, not the hosting model
 - Do not relax [guardrails](guardrails-ai-systems.md) for smaller models; thinner safety training argues for more enforcement, not less
 
-**Key accountability owner:** the system owner — and, for self-hosted deployments, whoever owns the infrastructure it runs on.
+**Key accountability owner:** the system owner and, for self-hosted deployments, whoever owns the infrastructure it runs on.
 
 *→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
@@ -95,7 +95,7 @@ Not every job needs the biggest model. A lot of what AI systems do all day is sm
 | SRC-087 | Belcak, P. et al. — *Small Language Models Are the Future of Agentic AI* (2025) · [link](https://arxiv.org/abs/2506.02153) | The efficiency, deployability, and specialization case for SLMs in agentic systems, and the heterogeneous-design argument. ⚠️ Position paper, not peer-reviewed. |
 | SRC-142 | Zhao, W.X. et al. — *A Survey of Large Language Models* (2023) · [link](https://arxiv.org/abs/2303.18223) | Scale-versus-capability background against which "small" is defined. |
 | SRC-143 | Bommasani, R. et al. — *On the Opportunities and Risks of Foundation Models* (2021) · [link](https://arxiv.org/abs/2108.07258) | The foundation-model framing and the relationship between scale, generality, and specialization. |
-| SRC-129 | European Parliament — *EU Artificial Intelligence Act (Regulation (EU) 2024/1689)* · [link](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689) | Obligations attach to use and risk rather than to model size — a smaller model does not attract lighter duties. |
+| SRC-129 | European Parliament — *EU Artificial Intelligence Act (Regulation (EU) 2024/1689)* · [link](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689) | Obligations attach to use and risk rather than to model size, so a smaller model does not attract lighter duties. |
 
 ---
 

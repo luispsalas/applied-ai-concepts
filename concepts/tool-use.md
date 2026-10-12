@@ -1,6 +1,6 @@
 <!--meta
 category: System Architecture
-short: How an AI model acts on the world rather than just describing it — calling external functions, APIs, and data sources
+short: How an AI model acts on the world rather than just describing it, by calling external functions, APIs, and data sources
 aliases: [function calling, tool calling, API calls from AI, actions, MCP tools, APIs (Application Programming Interfaces), API, integration layer]
 tags: [Agents, Architecture, Security]
 established: established
@@ -12,19 +12,19 @@ established: established
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
-How an AI model acts on the world rather than just describing it — calling external functions, APIs, and data sources, and folding the results back into its reasoning.
+How an AI model acts on the world rather than just describing it, by calling external functions, APIs, and data sources, and folding the results back into its reasoning.
 
 ---
 
 ## Technical definition
 
-The mechanism by which a language model invokes external capabilities it does not itself possess. The model is given a set of **tool definitions** — each a name, a description, and a typed parameter schema — and, rather than emitting prose, emits a structured request naming a tool and its arguments. That request is executed outside the model; the result is returned into the context, and generation continues with the result available. This request-emission step is what is meant by **function calling**: the model selects the function and binds its parameters, but does not execute anything.
+The mechanism by which a language model invokes external capabilities it does not itself possess. The model is given a set of **tool definitions** (each a name, a description, and a typed parameter schema) and, rather than emitting prose, emits a structured request naming a tool and its arguments. That request is executed outside the model; the result is returned into the context, and generation continues with the result available. This request-emission step is what is meant by **function calling**: the model selects the function and binds its parameters, but does not execute anything.
 
 Execution is always external, and where it happens matters for governance: a tool may run **client-side** (the application receives the request, executes it, and returns the result) or **server-side** (the provider executes it on the model's behalf). The distinction determines who holds the credentials and where the audit boundary falls. **Vendors document the same boundary in the same terms.** Meta's API documentation states that *"The model does not execute developer-defined tools itself"*, while its built-in web search runs server-side. Mistral's says *"it is the developer's responsibility to execute these functions"*, with separate server-side tools for its Agents API. xAI's puts the client-side loop in one line: *"The model requests the call, you execute it locally, and return the result."*
 
-Tool use is the action half of the reason–act loop introduced by ReAct, in which a model interleaves reasoning traces with actions and observations rather than reasoning in one pass — the pattern underneath most agent architectures.
+Tool use is the action half of the reason–act loop introduced by ReAct, in which a model interleaves reasoning traces with actions and observations rather than reasoning in one pass, the pattern underneath most agent architectures.
 
-The **Model Context Protocol (MCP)** is an open standard for exposing tools, data sources, and workflows to AI applications through a common interface — described by its authors as "a USB-C port for AI applications" — so that an integration is built once and reusable across clients, instead of re-implemented per model or per vendor.
+The **Model Context Protocol (MCP)** is an open standard for exposing tools, data sources, and workflows to AI applications through a common interface (described by its authors as "a USB-C port for AI applications"), so that an integration is built once and reusable across clients, instead of re-implemented per model or per vendor.
 
 At scale, tool selection becomes its own engineering problem: as a tool catalog grows, models degrade at choosing correctly and begin invoking tools that do not fit the task or do not exist. Practical mitigations include gating (exposing only relevant tools), retrieval over the tool catalog, routing, explicit planning, and fallback logic.
 
@@ -32,15 +32,15 @@ At scale, tool selection becomes its own engineering problem: as a tool catalog 
 
 ## Plain-language version
 
-On its own, a model can only produce text. Tools are how it does things — look up a live price, query a database, send a request, run a calculation. You give it a list of what it's allowed to call and what each one needs; it decides which to use and with what inputs. It never runs anything itself: your system does the running, which is exactly where you get to decide what is permitted.
+On its own, a model can only produce text. Tools are how it does things, such as looking up a live price, querying a database, sending a request or running a calculation. You give it a list of what it's allowed to call and what each one needs; it decides which to use and with what inputs. It never runs anything itself: your system does the running, which is exactly where you get to decide what is permitted.
 
 ---
 
 ## AI literacy notes
 
-1. **The model chooses; your system acts.** A model emitting a tool call has not done anything yet — it has made a request. Every real-world effect happens in code you control. This is the single most useful thing to understand about tool use, because it locates the control point precisely: permission checks belong at execution, not in the prompt.
+1. **The model chooses; your system acts.** A model emitting a tool call has not done anything yet. It has made a request. Every real-world effect happens in code you control. This is the single most useful thing to understand about tool use, because it locates the control point precisely: permission checks belong at execution, not in the prompt.
 2. **Tools convert a text risk into a real-world risk.** A hallucinating chatbot produces a wrong sentence. A hallucinating chatbot with tools produces a wrong action against a live system. The severity of every other failure mode rises the moment tools are attached.
-3. **Tool descriptions are prompt surface.** The model chooses tools by reading their descriptions, so those descriptions shape behavior as much as the [system prompt](system-prompt.md) does — and, like any text entering the context, they are a place where injected instructions can hide.
+3. **Tool descriptions are prompt surface.** The model chooses tools by reading their descriptions, so those descriptions shape behavior as much as the [system prompt](system-prompt.md) does, and, like any text entering the context, they are a place where injected instructions can hide.
 4. **More tools is not better.** Selection accuracy degrades as catalogs grow, and models begin calling tools that don't fit or don't exist. A curated, task-scoped tool set outperforms an exhaustive one.
 5. **A standard interface is not a permission model.** MCP makes tools easier to connect; it does not decide which tools an agent should have, under whose credentials, with what approval. That remains a governance decision.
 
@@ -48,19 +48,19 @@ On its own, a model can only produce text. Tools are how it does things — look
 
 ## Governance notes
 
-**Core question:** For every tool an AI system can call — who authorized it, under whose credentials does it execute, and is the call recorded?
+**Core question:** For every tool an AI system can call, who authorized it, under whose credentials does it execute, and is the call recorded?
 
 **Watch for:**
 - Tools attached to an agent because they were available, not because the use case required them
 - A single broad credential shared across all tools instead of per-tool, least-privilege scoping
 - Write, delete, payment, or send actions exposed with no human approval gate
-- Tool calls absent from the audit trail — logging the model's text output but not the actions it triggered
+- Tool calls absent from the audit trail, logging the model's text output but not the actions it triggered
 - Tool descriptions treated as inert configuration rather than as untrusted, model-visible text
 
 **Practice:**
 - Maintain an explicit inventory of tools per system, each with a named owner and a stated reason for being there
 - Separate read-only tools from state-changing ones, and gate the second category behind [human approval](human-in-the-loop.md)
-- Log every call — tool name, arguments, result, and outcome — as a first-class [audit trail](audit-trail-ai.md) record
+- Log every call (tool name, arguments, result, and outcome) as a first-class [audit trail](audit-trail-ai.md) record
 - Scope credentials per tool and per agent role; never let tool access default to the operator's own permissions
 - Re-review the tool set whenever it grows; treat catalog expansion as a capability change requiring reassessment
 
@@ -110,9 +110,9 @@ On its own, a model can only produce text. Tools are how it does things — look
 
 | Audience | Relevance |
 |---|---|
-| **Technical / Professional** | Tool definitions and their execution boundary are where model behavior becomes system behavior — and where permission logic must live. |
+| **Technical / Professional** | Tool definitions and their execution boundary are where model behavior becomes system behavior, and where permission logic must live. |
 | **Organizational** | Every tool is an authorization decision. The tool inventory, not the model choice, determines what an AI deployment can actually do to your systems. |
-| **Client-facing** | Explains the jump from "it can tell you about your order" to "it can change your order" — and why the second needs approval controls. |
+| **Client-facing** | Explains the jump from "it can tell you about your order" to "it can change your order", and why the second needs approval controls. |
 | **LLM-native** | Capability increasingly comes from the tool layer and its standards (MCP), not from the model; designing the tool set is the design work. |
 
 ---

@@ -1,6 +1,6 @@
 <!--meta
 category: Foundations
-short: Systematic errors that unfairly advantage or disadvantage certain groups — often inherited from training data, rarely visible in any single output
+short: Systematic errors that unfairly advantage or disadvantage certain groups. They are often inherited from training data and rarely visible in any single output
 aliases: [algorithmic bias, AI fairness, discrimination in AI, unfair outcomes, sampling bias, selection bias, model bias]
 tags: [Ethics, Data Governance, Regulatory]
 established: established
@@ -12,27 +12,27 @@ established: established
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
-Systematic errors in AI outputs that unfairly advantage or disadvantage certain groups — often inherited from training data or embedded in design choices, rarely visible in the output itself.
+Systematic errors in AI outputs that unfairly advantage or disadvantage certain groups. They are often inherited from training data or embedded in design choices, rarely visible in the output itself.
 
 ---
 
 ## Technical definition
 
-Bias in AI systems is systematic, repeatable error that produces outcomes which unfairly advantage or disadvantage particular groups. It is not random noise and not an occasional mistake — it is structured deviation that recurs across a population. NIST SP 1270 identifies three interacting categories:
+Bias in AI systems is systematic, repeatable error that produces outcomes which unfairly advantage or disadvantage particular groups. It is not random noise and not an occasional mistake. It is structured deviation that recurs across a population. NIST SP 1270 identifies three interacting categories:
 
-1. **Systemic bias** — present in the institutions, historical data, and social structures the system learns from; the training data faithfully records a biased world and the model reproduces it.
-2. **Statistical / computational bias** — introduced by the data and modeling pipeline: unrepresentative samples, label noise, proxy variables, optimization choices, and evaluation on non-representative benchmarks.
-3. **Human / cognitive bias** — introduced by the people who frame the problem, choose features, and interpret outputs.
+1. **Systemic bias:** present in the institutions, historical data, and social structures the system learns from; the training data faithfully records a biased world and the model reproduces it.
+2. **Statistical / computational bias:** introduced by the data and modeling pipeline: unrepresentative samples, label noise, proxy variables, optimization choices, and evaluation on non-representative benchmarks.
+3. **Human / cognitive bias:** introduced by the people who frame the problem, choose features, and interpret outputs.
 
-Bias is rarely visible in any single output; a loan denial or screening rejection looks individually reasonable, and the bias is a property of the distribution of decisions across groups, detectable only in aggregate. Fairness is not a single metric — demographic parity, equalized odds, and calibration can be mutually incompatible — so "unbiased" is always a choice about which fairness criterion the system is held to (Mehrabi et al. 2021).
+Bias is rarely visible in any single output; a loan denial or screening rejection looks individually reasonable, and the bias is a property of the distribution of decisions across groups, detectable only in aggregate. Fairness is not a single metric (demographic parity, equalized odds, and calibration can be mutually incompatible), so "unbiased" is always a choice about which fairness criterion the system is held to (Mehrabi et al. 2021).
 
 ---
 
 ## Plain-language version
 
-An AI system is biased when it is systematically wrong in a way that consistently helps some groups and hurts others. The key word is systematically — not "it made a mistake," but "it makes the same kind of mistake, in the same direction, again and again."
+An AI system is biased when it is systematically wrong in a way that consistently helps some groups and hurts others. The key word is systematically, which means not "it made a mistake," but "it makes the same kind of mistake, in the same direction, again and again."
 
-Most bias is inherited, not invented. If a model learns from historical hiring decisions that favored one group, it learns to favor that group — even if no one intended it and even if the protected attribute was never in the data. The model finds proxies (a postal code, a school name, an employment gap) and reconstructs the pattern.
+Most bias is inherited, not invented. If a model learns from historical hiring decisions that favored one group, it learns to favor that group, even if no one intended it and even if the protected attribute was never in the data. The model finds proxies (a postal code, a school name, an employment gap) and reconstructs the pattern.
 
 You usually can't see bias by looking at one decision. It hides in the pattern across thousands of decisions. That's what makes it dangerous: each individual output looks defensible.
 
@@ -40,15 +40,15 @@ You usually can't see bias by looking at one decision. It hides in the pattern a
 
 ## AI literacy notes
 
-1. **Bias is not the same as inaccuracy.** A model can be highly accurate overall and still be badly biased against a minority subgroup — because aggregate accuracy is dominated by the majority. "95% accurate" tells you nothing about who the 5% are.
+1. **Bias is not the same as inaccuracy.** A model can be highly accurate overall and still be badly biased against a minority subgroup, because aggregate accuracy is dominated by the majority. "95% accurate" tells you nothing about who the 5% are.
 2. **Removing the protected attribute does not remove the bias.** Models reconstruct sensitive attributes from correlated features (proxies). Fairness must be measured on outcomes, not assumed from input blindness.
-3. **"Fair" is a contested, multi-valued choice.** Several reasonable fairness definitions are mathematically incompatible. Choosing one is a governance decision with winners and losers, and should be made explicitly and documented — not left to a library default.
+3. **"Fair" is a contested, multi-valued choice.** Several reasonable fairness definitions are mathematically incompatible. Choosing one is a governance decision with winners and losers, and should be made explicitly and documented, not left to a library default.
 
 ---
 
 ## Governance notes
 
-**Core question:** Has someone measured how this system's outcomes differ across groups — and decided, explicitly, which fairness definition it is held to?
+**Core question:** Has someone measured how this system's outcomes differ across groups? And has anyone decided, explicitly, which fairness definition it is held to?
 
 **Watch for:**
 - Aggregate accuracy reported with no subgroup breakdown
@@ -62,7 +62,7 @@ You usually can't see bias by looking at one decision. It hides in the pattern a
 - Assign a named owner for bias measurement on a defined cadence
 - Treat proxy variables as in-scope for audit
 
-**Key accountability owner:** the model/decision owner is accountable for bias measurement and the fairness-definition choice — it cannot be delegated to the tool or the vendor.
+**Key accountability owner:** the model/decision owner is accountable for bias measurement and the fairness-definition choice, and it cannot be delegated to the tool or the vendor.
 
 *→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
@@ -100,10 +100,10 @@ You usually can't see bias by looking at one decision. It hides in the pattern a
 
 | Audience | Relevance |
 |---|---|
-| **Technical / Professional** | Informs dataset auditing, fairness-metric selection, subgroup evaluation, and proxy detection. Aggregate accuracy is not a fairness signal — disaggregated evaluation is mandatory. |
-| **Organizational** | The risk that turns an AI deployment into a discrimination liability. Bias is measurable and therefore auditable — and increasingly, legally required to be. |
+| **Technical / Professional** | Informs dataset auditing, fairness-metric selection, subgroup evaluation, and proxy detection. Aggregate accuracy is not a fairness signal. Disaggregated evaluation is mandatory. |
+| **Organizational** | The risk that turns an AI deployment into a discrimination liability. Bias is measurable and therefore auditable, and increasingly, legally required to be. |
 | **Client-facing** | Answers "could your AI discriminate?" honestly: bias is inherited by default and must be actively measured and mitigated, not assumed absent. |
-| **LLM-native** | Bias in foundation models is harder to locate (vast, opaque training data) and surfaces in generation, ranking, and refusal behavior — making output-level evaluation and red-teaming essential. |
+| **LLM-native** | Bias in foundation models is harder to locate (vast, opaque training data) and surfaces in generation, ranking, and refusal behavior, which makes output-level evaluation and red-teaming essential. |
 
 ---
 
