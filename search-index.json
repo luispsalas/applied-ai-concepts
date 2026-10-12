@@ -5323,8 +5323,8 @@
         "Security",
         "Architecture"
       ],
-      "version": "v1.1",
-      "updated": "September 2026",
+      "version": "v1.2",
+      "updated": "October 2026",
       "related": [
         "ai-agent",
         "data-leakage-ai-systems",
@@ -5335,6 +5335,7 @@
         "operational-readiness-ai",
         "permission-model-ai",
         "prompt-injection",
+        "reward-hacking",
         "tool-use"
       ],
       "sources": [
@@ -5343,7 +5344,11 @@
         "SRC-160",
         "SRC-245",
         "SRC-264",
-        "SRC-265"
+        "SRC-265",
+        "SRC-388",
+        "SRC-389",
+        "SRC-390",
+        "SRC-391"
       ],
       "path": "concepts/sandboxing.md"
     },
