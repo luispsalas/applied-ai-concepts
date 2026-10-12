@@ -1,6 +1,6 @@
 <!--meta
 category: Observability & Governance
-short: The frameworks, policies, and accountability structures that determine who decides how AI systems behave — and who is answerable when they don't
+short: The frameworks, policies, and accountability structures that determine who decides how AI systems behave, and who is answerable when they don't
 aliases: [responsible AI, AI oversight, AI policy, governing AI, AI risk management]
 tags: [Data Governance, Regulatory, Ethics]
 established: established
@@ -12,7 +12,7 @@ established: established
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
-The frameworks, policies, and accountability structures that determine who decides how AI systems behave — and who is answerable when they don't.
+The frameworks, policies, and accountability structures that determine who decides how AI systems behave, and who is answerable when they don't.
 
 ---
 
@@ -20,14 +20,14 @@ The frameworks, policies, and accountability structures that determine who decid
 
 AI governance refers to the ensemble of rules, processes, roles, and controls applied to the design, deployment, monitoring, and retirement of AI systems. It operates at three distinct levels:
 
-1. **Regulatory governance** — external frameworks imposed by law or regulation. The EU AI Act establishes a risk-tiered compliance model; the NIST AI Risk Management Framework (AI RMF 1.0) provides a voluntary but widely adopted structured approach to managing AI risk across four core functions: Govern, Map, Measure, Manage.
-2. **Organizational governance** — internal policies, roles, and decision rights: model registries, AI review boards, acceptable use policies, procurement standards, accountability assignments.
-3. **Technical governance** — controls embedded in AI systems and their harnesses: access controls, logging, guardrails, version management, and auditability mechanisms.
+1. **Regulatory governance:** external frameworks imposed by law or regulation. The EU AI Act establishes a risk-tiered compliance model; the NIST AI Risk Management Framework (AI RMF 1.0) provides a voluntary but widely adopted structured approach to managing AI risk across four core functions: Govern, Map, Measure, Manage.
+2. **Organizational governance:** internal policies, roles, and decision rights: model registries, AI review boards, acceptable use policies, procurement standards, accountability assignments.
+3. **Technical governance:** controls embedded in AI systems and their harnesses: access controls, logging, guardrails, version management, and auditability mechanisms.
 
-The governance landscape is fragmented. A 2023 synthesis found more than 84 AI ethics and governance guidelines in circulation globally; by some estimates that figure has since exceeded 200. Convergence is occurring around a small set of principles — fairness, transparency, accountability, human oversight — but implementation standards remain inconsistent across jurisdictions and sectors.
+The governance landscape is fragmented. A 2023 synthesis found more than 84 AI ethics and governance guidelines in circulation globally; by some estimates that figure has since exceeded 200. Convergence is occurring around a small set of principles (fairness, transparency, accountability, human oversight), but implementation standards remain inconsistent across jurisdictions and sectors.
 
 Two structural challenges are reshaping what governance must address:
-- **The agentic shift**: AI systems that act, not just respond — planning across steps, invoking tools, and operating with reduced human oversight per action cycle. Governance designed for advisory AI does not transfer cleanly to agentic AI.
+- **The agentic shift**: AI systems that act, not just respond, planning across steps, invoking tools, and operating with reduced human oversight per action cycle. Governance designed for advisory AI does not transfer cleanly to agentic AI.
 - **Local and on-device AI**: Models running outside organizational perimeters remove the data-residency and access-control guarantees that centralized deployment provides. Governance must extend to the edge.
 
 ---
@@ -38,25 +38,25 @@ AI governance is the answer to the question: who is in charge of what AI does, a
 
 Without it, AI systems accumulate in organizations without anyone being clearly responsible for their behavior, their accuracy, or their consequences. Individual teams adopt tools; no one owns the risk.
 
-With it, there are defined rules for which AI systems are approved, who can use them, what they can do with organizational data, how outputs are verified, and who is accountable for failures. Governance is what makes AI adoption manageable — not just technically, but organizationally and legally.
+With it, there are defined rules for which AI systems are approved, who can use them, what they can do with organizational data, how outputs are verified, and who is accountable for failures. Governance is what makes AI adoption manageable, not just technically, but organizationally and legally.
 
 ---
 
 ## AI literacy notes
 
-Governance is not a compliance layer bolted on after deployment. It is a design decision made at the start — and the teams who treat it that way end up with AI systems that are easier to operate, easier to audit, and easier to fix.
+Governance is not a compliance layer bolted on after deployment. It is a design decision made at the start, and the teams who treat it that way end up with AI systems that are easier to operate, easier to audit, and easier to fix.
 
 Three things practitioners need to understand:
 
 1. **Governance without accountability is policy theater.** A framework that names no owner for each obligation is a document, not a control. Every governance decision needs a named role attached to it.
-2. **The NIST AI RMF is the most actionable starting point for most organizations.** It is voluntary, sector-agnostic, and structured around practical functions rather than abstract principles. The EU AI Act applies if your organization deploys AI into the EU market — ignore it at legal risk.
-3. **Agentic AI requires a different governance posture.** When AI systems take actions rather than producing outputs for human review, the intervention point moves. Governance must shift from output review to action authorization — defining what the system is permitted to do before it does it, not after.
+2. **The NIST AI RMF is the most actionable starting point for most organizations.** It is voluntary, sector-agnostic, and structured around practical functions rather than abstract principles. The EU AI Act applies if your organization deploys AI into the EU market. Ignore it at legal risk.
+3. **Agentic AI requires a different governance posture.** When AI systems take actions rather than producing outputs for human review, the intervention point moves. Governance must shift from output review to action authorization, defining what the system is permitted to do before it does it, not after.
 
 ---
 
 ## Governance notes
 
-**Core question:** Does your organization have a named owner for each AI system in production — someone accountable for its behavior, its outputs, and its consequences?
+**Core question:** Does your organization have a named owner for each AI system in production, someone accountable for its behavior, its outputs, and its consequences?
 
 **Watch for:**
 - AI systems deployed without a defined accountability owner: no one responsible for monitoring, updating, or retiring the system. Common in shadow AI adoption where business units deploy tools outside central oversight.
@@ -65,9 +65,9 @@ Three things practitioners need to understand:
 
 **Practice:**
 - Maintain an AI system inventory: every system in use, its risk classification, its owner, its review cadence, and its retirement criteria. An ungoverned AI system is a liability that compounds.
-- Adopt the NIST AI RMF as an internal reference even if not legally required — its Govern / Map / Measure / Manage structure maps cleanly to organizational accountability design.
+- Adopt the NIST AI RMF as an internal reference even if not legally required, because its Govern / Map / Measure / Manage structure maps cleanly to organizational accountability design.
 
-**Key accountability owner:** AI governance owner — the role (individual or function) responsible for maintaining the organization's AI governance framework, system inventory, and compliance posture.
+**Key accountability owner:** AI governance owner, the role (individual or function) responsible for maintaining the organization's AI governance framework, system inventory, and compliance posture.
 
 *→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
@@ -75,7 +75,7 @@ Three things practitioners need to understand:
 
 ## Confidence level
 
-**High.** Core governance principles (accountability, transparency, human oversight) are stable and widely endorsed. Regulatory frameworks (NIST AI RMF, EU AI Act) are published and in force. Implementation standards and agentic governance norms are active development areas — this entry will require revision as the regulatory landscape consolidates.
+**High.** Core governance principles (accountability, transparency, human oversight) are stable and widely endorsed. Regulatory frameworks (NIST AI RMF, EU AI Act) are published and in force. Implementation standards and agentic governance norms are active development areas, and this entry will require revision as the regulatory landscape consolidates.
 
 ---
 
@@ -99,7 +99,7 @@ Three things practitioners need to understand:
 | SRC-129 | European Parliament — *EU Artificial Intelligence Act* (2024) · [link](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689) | Risk-tiered compliance model; extraterritorial scope for EU market deployment; prohibited AI practices; high-risk system requirements. Primary legal source. |
 | SRC-112 | OECD — *AI Principles Overview* (2019, updated 2024) · [link](https://oecd.ai/en/ai-principles) | Five values-based principles for trustworthy AI (inclusive growth, human-centred values, transparency, robustness, accountability) and five policy recommendations for governments; adopted by 47 countries + EU. Foundational intergovernmental standard underpinning most national AI strategies and the regulatory governance layer described in this entry. |
 | SRC-113 | UNESCO — *Recommendation on the Ethics of Artificial Intelligence* (2021) · [link](https://www.unesco.org/en/artificial-intelligence/recommendation-ethics) | First global AI ethics standard adopted by 194 member states; four core values (human dignity, environmental flourishing, peaceful societies, diversity) and ten principles; 11 policy areas for implementation. Grounds the human-rights-based accountability and human-oversight principles that appear across governance frameworks. |
-| SRC-114 | UN Secretary-General's High-level Advisory Body — *Governing AI for Humanity* (Final Report, 2024) · [link](https://www.un.org/en/ai-advisory-body) | Framework for globally inclusive and distributed AI governance with 7 recommendations; informed by 2,000+ participants across 50+ regional consultations. Represents UN-level consensus on accountability structures, risk management, and equitable access — the international governance layer complementing NIST and the EU AI Act. |
+| SRC-114 | UN Secretary-General's High-level Advisory Body — *Governing AI for Humanity* (Final Report, 2024) · [link](https://www.un.org/en/ai-advisory-body) | Framework for globally inclusive and distributed AI governance with 7 recommendations; informed by 2,000+ participants across 50+ regional consultations. Represents UN-level consensus on accountability structures, risk management, and equitable access, the international governance layer complementing NIST and the EU AI Act. |
 | SRC-115 | Stanford HAI — *AI Index Report* (annual, 2026 ed.) · [link](https://hai.stanford.edu/ai-index) | Annual benchmark on global AI progress, governance landscape, and policy developments. Supports the claim that convergence is occurring around core principles while implementation standards remain fragmented, and that the regulatory landscape continues to expand in scope and complexity. |
 
 ---
@@ -109,9 +109,9 @@ Three things practitioners need to understand:
 | Audience | Relevance |
 |---|---|
 | **Technical / Professional** | Informs what controls must be built into AI systems and their harnesses to satisfy governance requirements: logging, access controls, guardrails, version management. |
-| **Organizational** | The primary audience. AI governance is fundamentally an organizational accountability problem — not a technical one. Leaders who treat it as IT's problem will discover it is theirs when something fails. |
+| **Organizational** | The primary audience. AI governance is fundamentally an organizational accountability problem, not a technical one. Leaders who treat it as IT's problem will discover it is theirs when something fails. |
 | **Client-facing** | Answers the question: "what governance do you have around your AI systems?" A prerequisite for any client that is itself subject to AI regulation. |
-| **LLM-native** | Foundation context for understanding why harness design, observability, and HITL exist — they are the technical implementation of governance requirements. |
+| **LLM-native** | Foundation context for understanding why harness design, observability, and HITL exist. They are the technical implementation of governance requirements. |
 
 ---
 

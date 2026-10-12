@@ -1,6 +1,6 @@
 <!--meta
 category: Reliability & Quality
-short: The specific ways an AI system can go wrong — each requiring a different detection-and-response control
+short: The specific ways an AI system can go wrong, each requiring a different detection-and-response control
 aliases: [what can go wrong, AI failures, error modes, risk taxonomy, ways AI breaks]
 tags: [Evaluation, Safety]
 established: established
@@ -12,7 +12,7 @@ established: established
 > **Term status — Established.** A recognized term of art, in independent use beyond any single originator.
 
 ## One-line essence
-The specific ways an AI system can go wrong — from hallucination to scope creep to misuse — each requiring different governance responses.
+The specific ways an AI system can go wrong, from hallucination to scope creep to misuse, each requiring different governance responses.
 
 ---
 
@@ -20,11 +20,11 @@ The specific ways an AI system can go wrong — from hallucination to scope cree
 
 A failure mode is a specific, characterizable way an AI system produces a wrong, harmful, or unintended result. Treating "the AI failed" as a single event obscures the engineering reality: failures have distinct types, symptoms, and root causes, and each calls for a different control. Major families include:
 
-- **Generation failures** — hallucination (confident fabrication), factual drift, unfaithful explanation.
-- **Input / robustness failures** — distribution shift, adversarial inputs, prompt injection.
-- **Specification failures** — the system optimizes the stated objective in unintended ways (reward hacking, scope creep, goal misgeneralization).
-- **Agentic / execution failures** — in systems that act: tool-call errors, faulty structured-output parsing, runtime/exception mishandling, and error propagation where an early mistake compounds across steps (Shah et al. 2026; Agents of Chaos 2026).
-- **Sociotechnical failures** — misuse, over-reliance, automation bias, and deployment outside the validated context.
+- **Generation failures:** hallucination (confident fabrication), factual drift, unfaithful explanation.
+- **Input / robustness failures:** distribution shift, adversarial inputs, prompt injection.
+- **Specification failures:** the system optimizes the stated objective in unintended ways (reward hacking, scope creep, goal misgeneralization).
+- **Agentic / execution failures:** in systems that act: tool-call errors, faulty structured-output parsing, runtime/exception mishandling, and error propagation where an early mistake compounds across steps (Shah et al. 2026; Agents of Chaos 2026).
+- **Sociotechnical failures:** misuse, over-reliance, automation bias, and deployment outside the validated context.
 
 Recent taxonomies of agentic systems catalog dozens of fault types across architectural dimensions (e.g., 34 fault types in four dimensions; Shah et al. 2026), reflecting that agentic failures arise not only from the model but from orchestration, state, and environment interaction. The NIST AI RMF MEASURE function frames failure identification and measurement as a lifecycle obligation, not a one-time test.
 
@@ -32,9 +32,9 @@ Recent taxonomies of agentic systems catalog dozens of fault types across archit
 
 ## Plain-language version
 
-"The AI made a mistake" is too vague to act on. Failure modes are the specific, named ways AI systems go wrong — and naming them matters, because each one needs a different fix.
+"The AI made a mistake" is too vague to act on. Failure modes are the specific, named ways AI systems go wrong, and naming them matters, because each one needs a different fix.
 
-A model that confidently invents a fact (hallucination) needs grounding and verification. A model fed a weird input it never saw in training (distribution shift) needs input checks. An agent that takes a wrong early step and then builds five more on top of it (error propagation) needs checkpoints. A tool misused by people for something it wasn't built for (misuse) needs scoping and access control. Same headline — "it failed" — completely different responses.
+A model that confidently invents a fact (hallucination) needs grounding and verification. A model fed a weird input it never saw in training (distribution shift) needs input checks. An agent that takes a wrong early step and then builds five more on top of it (error propagation) needs checkpoints. A tool misused by people for something it wasn't built for (misuse) needs scoping and access control. Same headline ("it failed"), completely different responses.
 
 The most dangerous failures are the quiet ones: the system keeps running and looks fine while being wrong. That's why you design for failure on purpose, instead of waiting to discover the modes in production.
 
@@ -43,14 +43,14 @@ The most dangerous failures are the quiet ones: the system keeps running and loo
 ## AI literacy notes
 
 1. **"It failed" is not a diagnosis.** Effective governance requires naming the failure mode, because the control that prevents hallucination is not the control that prevents prompt injection or error propagation. Lumping them together guarantees the wrong fix.
-2. **Agentic failures compound; single-shot failures don't.** A one-output model error is contained. An agent's early error becomes the input to its next step — so long-horizon systems need checkpoints and circuit-breakers, not just output review (Agents of Chaos 2026; Shah et al. 2026).
-3. **Failure analysis is a design activity, not an incident-response one.** Anticipating failure modes before deployment — through red-teaming and a structured devil's-advocate pass — is cheaper and safer than cataloging them after they cause harm.
+2. **Agentic failures compound; single-shot failures don't.** A one-output model error is contained. An agent's early error becomes the input to its next step, so long-horizon systems need checkpoints and circuit-breakers, not just output review (Agents of Chaos 2026; Shah et al. 2026).
+3. **Failure analysis is a design activity, not an incident-response one.** Anticipating failure modes before deployment, through red-teaming and a structured devil's-advocate pass, is cheaper and safer than cataloging them after they cause harm.
 
 ---
 
 ## Governance notes
 
-**Core question:** Have this system's likely failure modes been enumerated before deployment — and does each one have a specific detection-and-response control?
+**Core question:** Have this system's likely failure modes been enumerated before deployment? And does each one have a specific detection-and-response control?
 
 **Watch for:**
 - "The AI failed" treated as a single undifferentiated risk
@@ -74,7 +74,7 @@ The most dangerous failures are the quiet ones: the system keeps running and loo
 
 ## Confidence level
 
-**High (concept), medium (agentic taxonomies).** That AI systems fail in distinct, categorizable ways is well-established and standardized in risk frameworks (NIST AI RMF). Specific failure taxonomies for LLM agents are an active, fast-developing area — recent peer-reviewed and preprint work is still converging on shared categories (Shah et al. 2026; Agents of Chaos 2026). Expect this entry to evolve as agentic-failure taxonomies mature.
+**High (concept), medium (agentic taxonomies).** That AI systems fail in distinct, categorizable ways is well-established and standardized in risk frameworks (NIST AI RMF). Specific failure taxonomies for LLM agents are an active, fast-developing area. Recent peer-reviewed and preprint work is still converging on shared categories (Shah et al. 2026; Agents of Chaos 2026). Expect this entry to evolve as agentic-failure taxonomies mature.
 
 ---
 
@@ -105,8 +105,8 @@ The most dangerous failures are the quiet ones: the system keeps running and loo
 
 | Audience | Relevance |
 |---|---|
-| **Technical / Professional** | A design checklist. Each failure family maps to a control — grounding, input validation, checkpointing, access scoping. Failure analysis belongs in design, not just incident response. |
-| **Organizational** | Reframes "is the AI reliable?" into "which failure modes is it exposed to, and what catches each one?" — a far more answerable and auditable question. |
+| **Technical / Professional** | A design checklist. Each failure family maps to a control, such as grounding, input validation, checkpointing or access scoping. Failure analysis belongs in design, not just incident response. |
+| **Organizational** | Reframes "is the AI reliable?" into "which failure modes is it exposed to, and what catches each one?", a far more answerable and auditable question. |
 | **Client-facing** | Answers "what happens when it goes wrong?" with specifics and mitigations rather than reassurance. |
 | **LLM-native** | Especially critical for agents, where failures compound across steps. Long-horizon autonomy demands checkpoints, circuit-breakers, and pre-deployment red-teaming. |
 

@@ -9,35 +9,35 @@ established: emerging
 
 # Persistent Synthesis
 
-> **Term status — Emerging.** In active use and genuinely useful, but not yet settled — definitions still vary between sources. Read the Confidence level before relying on the term in a formal document.
+> **Term status — Emerging.** In active use and genuinely useful, but not yet settled, and definitions still vary between sources. Read the Confidence level before relying on the term in a formal document.
 
 ## One-line essence
-Knowledge compounds when contradictions are resolved — not when information is accumulated.
+Knowledge compounds when contradictions are resolved, not when information is accumulated.
 
 ---
 
 ## Technical definition
 
-Persistent synthesis is a knowledge management approach in which new information is integrated into an existing knowledge structure by resolving conflicts, updating superseded entries, and tracing relationships — rather than being appended as an additional source. The core principle, as stated by Ghumare (2024): **"stop re-deriving, start compiling."** The result is a living artifact that reflects the current state of understanding, not a growing archive of everything that was ever written.
+Persistent synthesis is a knowledge management approach in which new information is integrated into an existing knowledge structure by resolving conflicts, updating superseded entries, and tracing relationships, rather than being appended as an additional source. The core principle, as stated by Ghumare (2024): **"stop re-deriving, start compiling."** The result is a living artifact that reflects the current state of understanding, not a growing archive of everything that was ever written.
 
 The approach is defined by several operational commitments:
 
 **Resolution over accumulation** (Karpathy, 2023; Ghumare, 2024)
-When new information contradicts existing content, the contradiction is addressed explicitly — one position is updated, deprecated, or flagged as context-dependent. Both versions are not left to coexist without annotation.
+When new information contradicts existing content, the contradiction is addressed explicitly. One position is updated, deprecated, or flagged as context-dependent. Both versions are not left to coexist without annotation.
 
-**Temporal decay of confidence** (Ghumare, 2024 — extending Ebbinghaus forgetting curve principles)
-Knowledge entries carry a confidence level that degrades over time unless actively refreshed. Facts decay unless reinforced, with different decay rates for different knowledge types — architecture decisions decay more slowly than transient implementation details.
+**Temporal decay of confidence** (Ghumare, 2024, extending Ebbinghaus forgetting curve principles)
+Knowledge entries carry a confidence level that degrades over time unless actively refreshed. Facts decay unless reinforced, with different decay rates for different knowledge types. Architecture decisions decay more slowly than transient implementation details.
 
 **Typed relationships** (Ghumare, 2024)
-Connections between concepts are explicit and directional: *uses*, *depends on*, *contradicts*, *supersedes*, *specializes*. A flat list of "related concepts" is not a knowledge graph; typed edges enable graph traversal — surfacing downstream dependencies that keyword search misses.
+Connections between concepts are explicit and directional: *uses*, *depends on*, *contradicts*, *supersedes*, *specializes*. A flat list of "related concepts" is not a knowledge graph; typed edges enable graph traversal, surfacing downstream dependencies that keyword search misses.
 
 **The schema document as primary artifact** (Ghumare, 2024)
-The most important file in a persistent knowledge system is not the content — it is the schema: the document that encodes entity types, relationship types, quality standards, and consolidation schedules. Without a schema, synthesis is informal and non-reproducible.
+The most important file in a persistent knowledge system is not the content. It is the schema: the document that encodes entity types, relationship types, quality standards, and consolidation schedules. Without a schema, synthesis is informal and non-reproducible.
 
 **Automation as maintenance infrastructure** (Ghumare, 2024)
-Manual-only processes kill wikis over time. A maintainable system includes auto-triggers — on new source ingestion, session end, contradiction detection, and periodic consolidation. Humans curate direction; the system handles bookkeeping. A lint/self-healing operation fixes orphaned pages, marks stale claims, and repairs broken references.
+Manual-only processes kill wikis over time. A maintainable system includes auto-triggers, firing on new source ingestion, session end, contradiction detection, and periodic consolidation. Humans curate direction; the system handles bookkeeping. A lint/self-healing operation fixes orphaned pages, marks stale claims, and repairs broken references.
 
-This approach draws on a memory architecture that distinguishes between working memory (immediate context), episodic memory (session-specific learning), semantic memory (generalized concepts), and procedural memory (operational patterns) — each requiring different maintenance cadences (Ghumare, 2024).
+This approach draws on a memory architecture that distinguishes between working memory (immediate context), episodic memory (session-specific learning), semantic memory (generalized concepts), and procedural memory (operational patterns), each requiring different maintenance cadences (Ghumare, 2024).
 
 ---
 
@@ -45,9 +45,9 @@ This approach draws on a memory architecture that distinguishes between working 
 
 Most knowledge systems are archives: you add things, but you rarely update or remove them. Over time, you accumulate contradictions you're not aware of, outdated entries that still feel authoritative, and connections that are implied but never mapped.
 
-Persistent synthesis is the alternative — expressed simply as: **stop re-deriving, start compiling.**
+Persistent synthesis is the alternative, expressed simply as: **stop re-deriving, start compiling.**
 
-Instead of rediscovering the same insight repeatedly across sessions, you compile it once, maintain it actively, and build on it. The discipline requires treating knowledge entries like living documents — updating them when they're superseded, flagging them when confidence has decayed, and tracking how concepts relate to each other rather than just listing them side by side.
+Instead of rediscovering the same insight repeatedly across sessions, you compile it once, maintain it actively, and build on it. The discipline requires treating knowledge entries like living documents, which means updating them when they're superseded, flagging them when confidence has decayed, and tracking how concepts relate to each other rather than just listing them side by side.
 
 The payoff is compounding: every new thing you learn sharpens what you already have, instead of just adding to the pile.
 
@@ -55,7 +55,7 @@ The payoff is compounding: every new thing you learn sharpens what you already h
 
 ## AI literacy notes
 
-Persistent synthesis has direct relevance to how AI systems store and use knowledge — and to how humans should maintain knowledge bases that feed into AI workflows.
+Persistent synthesis has direct relevance to how AI systems store and use knowledge, and to how humans should maintain knowledge bases that feed into AI workflows.
 
 Three implications:
 
@@ -67,18 +67,18 @@ Three implications:
 
 ## Governance notes
 
-**Core question:** Who is responsible for maintaining the knowledge base — and is there a defined, enforced process for keeping it current?
+**Core question:** Who is responsible for maintaining the knowledge base? And is there a defined, enforced process for keeping it current?
 
 **Watch for:**
-- Knowledge bases that grow by addition only: new entries appended, old entries never updated or deprecated. A knowledge base without a deprecation process accumulates drift silently — entries from a year ago carry the same apparent authority as entries written today.
+- Knowledge bases that grow by addition only: new entries appended, old entries never updated or deprecated. A knowledge base without a deprecation process accumulates drift silently. Entries from a year ago carry the same apparent authority as entries written today.
 - RAG and retrieval systems inheriting the quality problems of an ungoverned knowledge base. If the knowledge base is stale, inconsistent, or unverified, retrieval makes those problems invisible rather than surfacing them.
 - Synthesis treated as informal practice rather than a governed process: no defined cadence, no ownership, no schema doc. Synthesis that depends on individual attention does not survive organizational change.
 
 **Practice:**
-- Define a maintenance cadence by knowledge type. Architecture decisions and foundational concepts require less frequent review than implementation details and vendor-specific information — set schedules accordingly, not uniformly.
-- Deprecate explicitly. When an entry is superseded, mark it so — with a pointer to the replacement. Silent obsolescence is worse than acknowledged obsolescence.
+- Define a maintenance cadence by knowledge type. Architecture decisions and foundational concepts require less frequent review than implementation details and vendor-specific information, so set schedules accordingly, not uniformly.
+- Deprecate explicitly. When an entry is superseded, mark it so, with a pointer to the replacement. Silent obsolescence is worse than acknowledged obsolescence.
 
-**Key accountability owner:** Knowledge base owner — the role responsible for maintaining synthesis cadence, enforcing the schema, and ensuring that entries reflect current understanding rather than historical accumulation.
+**Key accountability owner:** Knowledge base owner, the role responsible for maintaining synthesis cadence, enforcing the schema, and ensuring that entries reflect current understanding rather than historical accumulation.
 
 *→ [Governance & Observability Notes](../notes/governance-and-observability.md): observability signals and the cross-cutting accountability checklist.*
 
@@ -95,7 +95,7 @@ Three implications:
 
 *(Source for limitations: @gnusupport community critique of Ghumare gist, 2024)*
 
-These gaps do not invalidate the framework — they define its frontier. The principles are sound; the engineering details require careful, context-specific implementation.
+These gaps do not invalidate the framework. They define its frontier. The principles are sound; the engineering details require careful, context-specific implementation.
 
 ---
 
@@ -124,7 +124,7 @@ These gaps do not invalidate the framework — they define its frontier. The pri
 | Audience | Relevance |
 |---|---|
 | **Technical / Professional** | Informs knowledge base design for AI systems: how to structure entries, when to deprecate content, how to model relationships between concepts, and what automation is needed for long-term maintenance. |
-| **Organizational** | The principle that explains why AI knowledge assets degrade without active maintenance — and what "active maintenance" actually means in practice. |
+| **Organizational** | The principle that explains why AI knowledge assets degrade without active maintenance, and what "active maintenance" actually means in practice. |
 | **LLM-native** | The operating philosophy of this wiki. Every design decision in this repository reflects the synthesis principle: source documents are inputs; the wiki is the output. |
 
 ---
