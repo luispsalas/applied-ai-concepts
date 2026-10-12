@@ -5061,13 +5061,14 @@
         "Safety",
         "AI Literacy"
       ],
-      "version": "v1.1",
-      "updated": "September 2026",
+      "version": "v1.2",
+      "updated": "October 2026",
       "related": [
         "agency-ai-systems",
         "alignment-ai-systems",
         "continuous-feedback-improvement",
         "frontier-ai",
+        "harness-paradigm",
         "power-seeking",
         "sandboxing",
         "scalable-oversight",
@@ -5081,7 +5082,10 @@
         "SRC-244",
         "SRC-261",
         "SRC-262",
-        "SRC-263"
+        "SRC-263",
+        "SRC-385",
+        "SRC-386",
+        "SRC-387"
       ],
       "path": "concepts/recursive-self-improvement.md"
     },

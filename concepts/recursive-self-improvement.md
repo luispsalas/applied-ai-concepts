@@ -34,6 +34,12 @@ The argument is I.J. Good's (1965), and it turns on a single observation:
 
 **That weakening has a measured mechanism, and it is not merely capability outpacing oversight.** Baker et al. show that when chain-of-thought is folded into the training reward under strong optimization pressure, models learn **obfuscated reward hacking**, concealing intent within the reasoning trace while continuing to hack at a significant rate. Their recommendation is to accept a **"monitorability tax"** by deliberately not optimizing against the trace. **So the oversight this entry depends on can be degraded by the act of enforcing it**, which is a sharper problem than a capability race: the control erodes in response to being used as a target ([reward hacking](reward-hacking.md)).
 
+**Update, October 2026. The gap this entry calls the whole question can now be measured, and the first measurement leaves it open.** Anthropic published a prototype index of how much of its own AI research and development Claude performs, rated on Epoch AI's six-level automation scale. As of August 2026, Claude "leads" 26% of that work, meaning it completes most of a task from a high-level prompt while a human supervises, and more than 90% of the work involves it at least as a collaborator. The same page states that Claude is *"not operating fully autonomously for any measured subset of AI R&D work"*, and it defines recursive self-improvement as *"a model fully autonomously building its successor."* By that definition the loop is busy and still gated by humans, which is where this entry already placed it. The figures are a prototype and a self-report. A judge model assigned the ratings and agreed exactly with staff 59% of the time, and the task list is frozen at its July 2026 baseline, so new kinds of work are invisible to it.
+
+**A loop that closes without a human has also been run, at the level of the harness.** In AIDE², a research agent rewrites its own code and keeps the versions that score best on hidden evaluations, so *"each accepted rewrite becomes the agent that the next round edits."* An autonomous eight-day run found seven successive improvements that carried over to held-out benchmarks. Two limits keep it short of Good's argument. The model weights never change, so no successor is trained. And when an improved agent was put in charge of the improving, its results *"cannot be decisively distinguished from the strong baseline"*, which leaves the compounding question where it was. The authors build the agent they evaluate, and the paper is a preprint.
+
+**The definition itself is now contested.** A formal model by Burtsev treats recursive self-improvement as a property of a whole research system, humans included, and asks only whether improvements compound across development cycles or fade. On that view a lab can become self-amplifying before anyone sees acceleration, and rapid progress can happen without self-amplification. Improvements shared between organizations can even make the whole field self-amplifying *"even when no individual actor is."* The strict definition puts the boundary at the human decision. The systems definition puts it at compounding. This entry keeps the strict one for its governance question, because a human decision is something an organization can locate and control. The systems view is the reason to keep measuring anyway, since it predicts that the transition may not be visible from inside.
+
 ---
 
 ## Plain-language version
@@ -52,8 +58,8 @@ Treated as a prediction, this is an argument nobody can win. Treated as a questi
 
 ## AI literacy notes
 
-1. **The argument is about compounding, not speed.** The claim is that improvements feed the process producing improvements, so gains multiply rather than add.
-2. **"AI helps build AI" is not recursive self-improvement.** Humans are in the loop at every step, and that loop is the control.
+1. **The argument is about compounding, not speed.** The claim is that improvements feed the process producing improvements, so gains multiply rather than add. A 2026 formal model makes the distinction precise: fast progress can occur without compounding, and compounding can begin before progress looks fast.
+2. **"AI helps build AI" is not recursive self-improvement.** Humans are in the loop at every step, and that loop is the control. This holds under the strict definition, which one lab now measures against. A systems definition would also count a loop with humans in it, once its gains compound.
 3. **Structure and evidence are different claims.** The argument is coherent; whether its premises hold is empirical and currently unmet.
 4. **Good was speculating and said so.** It was 1965, with no systems to test against. The word "unquestionably" is rhetoric, not evidence.
 5. **Long-horizon autonomy is the observable bottleneck.** Systems that degrade over extended independent work cannot sustain a self-improvement loop.
@@ -75,6 +81,7 @@ Treated as a prediction, this is an argument nobody can win. Treated as a questi
 - The topic treated as science fiction, so the mundane present-tense version goes unasked
 - Equally: speculative framing used to justify controls disproportionate to anything demonstrated
 - Model-generated content entering training corpora unlabeled, making the loop untraceable ([data provenance](data-provenance-lineage.md))
+- An automation share reported without the autonomy level behind it. "AI is involved in most of our development" and "AI does it unsupervised" are separated by the whole question
 
 - Oversight designed around reading the system's reasoning, where that trace is degrading, blended with tool use, or optimized against ([reasoning models](reasoning-models.md), [recurrent depth](recurrent-depth.md))
 
@@ -84,6 +91,7 @@ Treated as a prediction, this is an argument nobody can win. Treated as a questi
 - **Label model-generated content entering training or retrieval corpora**, so the loop stays visible ([content provenance](content-provenance-watermarking.md))
 - Bound autonomy by time, steps and scope for any self-modifying capability ([sandboxing](sandboxing.md))
 - Track whether evaluation capability is keeping pace with system capability, and treat divergence as a governance signal in itself
+- **Measure the loop instead of arguing about it.** Two kinds of measure have now been proposed for public reporting: the share of AI development work that AI performs at each autonomy level, and how well agent actions are overseen (the share monitored, how quickly flags are reviewed, how often actions are blocked or escalated). Both work for any organization running agents on its own engineering
 - **Match the control to the evidence.** Present-tense controls for present-tense properties; do not import frontier-scale measures into an ordinary deployment, or dismiss them at frontier scale
 - **Do not optimize against your own monitor.** Where a reasoning trace is used for oversight, keep it out of the training objective. The measured consequence of pressuring it is concealment rather than compliance, and the recommended posture is to accept the performance cost of leaving it unoptimized
 
@@ -97,7 +105,7 @@ Treated as a prediction, this is an argument nobody can win. Treated as a questi
 
 **High on the argument, low on any claim that it is occurring, and the gap between those is the entry's point.** Good's formulation is verified against the original 1965 chapter and the reasoning is valid; that costs nothing to accept. **What is not established is whether any system can meaningfully improve its own successor**, and this entry deliberately makes no forecast: predictions here are contested, unfalsifiable on any near horizon, and dominated by advocacy on both sides.
 
-**Treat with particular suspicion:** claims that recursive self-improvement is underway, and claims that it is impossible. Neither is currently supported. **The September 2026 addition above does not move this**, and it is included precisely so the distinction stays visible: a named executive at the lab with the most information stating an expectation is a change in *who is claiming what*, not in what has been shown. The internal results behind it are unpublished, the essay is an advocacy document arguing for coordination and slowdown, and it should never be cited as evidence that RSI is occurring. **It is strong evidence of intent and of research direction, which is a different and genuinely useful thing.** The observable facts are narrower. AI assists AI development with humans throughout, long-horizon autonomy remains a bottleneck, and self-training gains are bounded. **The entry's governance framing (watch for loops closing without a human) is this wiki's own reframing rather than a finding**, offered because the forecasting debate produces no actionable control and this question does.
+**Treat with particular suspicion:** claims that recursive self-improvement is underway, and claims that it is impossible. Neither is currently supported. **The September 2026 addition above does not move this**, and it is included precisely so the distinction stays visible: a named executive at the lab with the most information stating an expectation is a change in *who is claiming what*, not in what has been shown. The internal results behind it are unpublished, the essay is an advocacy document arguing for coordination and slowdown, and it should never be cited as evidence that RSI is occurring. **It is strong evidence of intent and of research direction, which is a different and genuinely useful thing.** **The October 2026 additions move the evidence slightly and the conclusion not at all.** There is now a first measurement from inside a lab, a loop at the harness level that runs without a human, and a model of when compounding would start. None shows a system improving its own successor. The measurement is a vendor's unaudited prototype, the loop leaves the model untouched and its second-order result inconclusive, and the model estimates nothing about today's systems. The observable facts are narrower. AI assists AI development with humans throughout, long-horizon autonomy remains a bottleneck, and self-training gains are bounded. **The entry's governance framing (watch for loops closing without a human) is this wiki's own reframing rather than a finding**, offered because the forecasting debate produces no actionable control and this question does.
 
 ---
 
@@ -112,6 +120,7 @@ Treated as a prediction, this is an argument nobody can win. Treated as a questi
 - [Sandboxing](sandboxing.md) — bounding what a self-modifying capability can reach
 - [Systemic Risk (AI)](systemic-risk-ai.md) — the regulatory frame this sits inside
 - [Agency (AI Systems)](agency-ai-systems.md) — the scope of autonomous action a self-improvement loop would require
+- [Harness Paradigm](harness-paradigm.md) — where the first self-rewriting loops run: the code around the model changes while the model stays fixed
 
 ---
 
@@ -126,6 +135,9 @@ Treated as a prediction, this is an argument nobody can win. Treated as a questi
 | SRC-263 | Baker, B.; Huizinga, J.; Gao, L.; Dou, Z.; Guan, M.Y.; Madry, A.; Zaremba, W.; Pachocki, J.; Farhi, D. (OpenAI) — *Monitoring Reasoning Models for Misbehavior and the Risks of Promoting Obfuscation* (2025) · [link](https://arxiv.org/abs/2503.11926) | The measured mechanism: optimizing against a chain-of-thought monitor produces **obfuscated reward hacking** (concealed intent, undiminished hacking), hence the recommended "monitorability tax". ⚠️ Vendor-authored on the vendor's own models; a caution about a training practice, not evidence any deployed model is obfuscating. |
 | SRC-262 | Korbak, T.; Balesni, M.; Barnes, E.; Bengio, Y.; Hendrycks, D.; Legg, S.; Mądry, A.; Nanda, N.; Pachocki, J.; Shah, R.; Mikulik, V. et al. (42 authors, multi-institution) — *Chain of Thought Monitorability: A New and Fragile Opportunity for AI Safety* (2025) · [link](https://arxiv.org/abs/2507.11473) | The cross-lab position that trace monitoring is a real but **fragile** safety opportunity. Cited for the breadth of who signed it rather than as a finding, since it is one of the few sources here not authored inside a single vendor. ⚠️ Position paper; the signatory labs share an interest in this control remaining viable. |
 | SRC-001 | NIST — *AI Risk Management Framework* · [link](https://www.nist.gov/itl/ai-risk-management-framework) | The requirement that controls be measured rather than assumed, the standard the present-tense reframing is built to meet, and speculative framings cannot. |
+| SRC-385 | Anthropic — *Measurements for understanding the pace of AI development inside frontier labs* (September 2026) · [link](https://www.anthropic.com/institute/measuring-pace-of-ai-development) | The first measurement of the loop from inside a lab: Claude "leads" 26% of Anthropic's AI R&D as of August 2026, with no measured subset fully autonomous, and the strict definition of RSI quoted here. Also the proposed oversight measures (coverage, review latency, escalation rate). ⚠️ Vendor self-report and a prototype: judge-model ratings, a task list frozen at July 2026, not independently verified. |
+| SRC-386 | Srikanth, D.; Zhao, B.; Xu, D.; Wu, Y.; Jiang, Z. (Weco AI) — *Recursive self-improvement of AI research agents* (2026) · [link](https://arxiv.org/abs/2609.26457) | AIDE², a loop at the harness level that rewrites its own agent code without a human in the path; seven successive improvements that transfer to held-out tasks, and an inconclusive second-order result. ⚠️ Preprint; the authors build the agent they evaluate; model weights are never changed. |
+| SRC-387 | Burtsev, M. (London Institute for Mathematical Sciences) — *Recursive Criticality of AI Self-Improvement* (2026) · [link](https://arxiv.org/abs/2609.00137) | The systems definition and the compounding threshold: RSI as a property of a research system that may include humans, self-amplifying when feedback outpaces rising difficulty, possibly before acceleration is visible. ⚠️ Preprint, single author; a model that estimates nothing about current systems. |
 
 ---
 
@@ -140,4 +152,4 @@ Treated as a prediction, this is an argument nobody can win. Treated as a questi
 
 ---
 
-*Last updated: v1.1 · September 2026*
+*Last updated: v1.2 · October 2026*

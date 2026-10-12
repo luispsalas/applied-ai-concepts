@@ -1,5 +1,19 @@
 # Changelog
 
+## v1.46 — October 2026
+
+**One enrichment. No new entries; count stays at 153.**
+
+- `recursive-self-improvement` — v1.1 → **v1.2**
+
+**The entry said the gap between AI helping to build AI and AI improving itself is the whole question. That gap now has a first measurement.** Anthropic published a prototype index of how much of its own AI research and development Claude performs. As of August 2026, Claude leads about a quarter of the work with a human supervising, more than 90% of the work involves it at least as a collaborator, and no measured part runs fully autonomously. The entry quotes the lab's own definition of the term, a model fully autonomously building its successor, and carries the index's limits beside its figures: a judge model assigned the ratings, the task list is frozen at its July baseline, and nothing has been independently verified.
+
+**A loop without a human has been run, one level down.** A research agent that rewrites its own code and keeps whatever scores best improved seven times in an eight-day autonomous run, and the gains carried over to held-out tasks. The model underneath never changed, and an improved agent put in charge of the improving was not clearly better at it, so the compounding question is still open. The entry says both.
+
+**The definition is now contested, and the entry says which one it uses and why.** A formal model treats the term as a property of a whole research system, humans included, and shows that compounding can begin before progress looks fast and that shared improvements can push a whole field over a threshold no single lab crosses. The entry keeps the strict definition for its governance question, because a human decision can be located and controlled, and cites the systems view as the reason to keep measuring.
+
+**Governance gains a measurement practice.** The lab's proposed public measures (the share of development work AI performs at each autonomy level, and how much agent activity is monitored, how fast flags are reviewed and how often actions are blocked) work for any organization running agents on its own engineering. A new watch-for flags automation figures reported without the autonomy level behind them. The confidence level is unchanged: none of the new evidence shows a system improving its own successor.
+
 ## v1.45 — October 2026
 
 **One enrichment. No new entries; count stays at 153.**
