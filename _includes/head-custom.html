@@ -1,10 +1,9 @@
 <!-- Theme toggle for the GitHub Pages site: Auto (follow the OS) → Dark → Light.
-     Sets data-theme on <html> for assets/css/style.scss, and points the README
-     banner's <picture> at the matching variant. The choice is kept per browser. -->
+     Sets data-theme on <html> for assets/css/style.scss. The README banner sits on
+     its own dark panel, so it needs no switching. The choice is kept per browser. -->
 <script>
 (function () {
   var KEY = "theme";
-  var OS_DARK = "(prefers-color-scheme: dark)";
   var ORDER = ["auto", "dark", "light"];
   var LABEL = { auto: "◐ Auto", dark: "● Dark", light: "○ Light" };
   var root = document.documentElement;
@@ -18,10 +17,6 @@
   function apply(mode) {
     if (mode === "auto") root.removeAttribute("data-theme");
     else root.setAttribute("data-theme", mode);
-    var media = mode === "dark" ? "all" : mode === "light" ? "not all" : OS_DARK;
-    document.querySelectorAll('picture source[srcset*="banner-dark"]').forEach(function (s) {
-      s.setAttribute("media", media);
-    });
     var b = document.querySelector(".theme-toggle");
     if (b) {
       b.textContent = LABEL[mode];

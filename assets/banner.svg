@@ -1,6 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 280" width="1040" height="280" role="img" aria-labelledby="t d">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="39 -23 1004 332" width="1004" height="332" role="img" aria-labelledby="t d">
   <title id="t">Applied AI Concepts — The AI Literacy Wiki</title>
-  <desc id="d">A friendly robot mascot in a propeller cap, writing on a sheet of paper, beside the wiki's name.</desc>
+  <desc id="d">A friendly robot mascot in a propeller cap, writing on a sheet of paper, beside the wiki's name. Shown on its own dark panel so it reads the same under any light or dark setting.</desc>
+  <rect x="39" y="-23" width="1004" height="332" rx="16" fill="#0d1117"/>
   <g transform="translate(40,4) scale(1.04)">
   <g fill="none" stroke="#e6edf3" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
     <ellipse cx="109" cy="22" rx="22" ry="7" fill="#4493f8" stroke="#4493f8"/>

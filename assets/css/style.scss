@@ -2,12 +2,14 @@
 ---
 
 // GitHub Pages stylesheet: the default Primer theme, plus a dark mode.
-// The README banner switches to its dark variant in dark mode, so the page has
-// to turn dark with it or the banner reads inverted. The theme toggle
-// (_includes/head-custom.html) sets data-theme on <html>; without a choice the
-// page follows the OS.
+// The theme toggle (_includes/head-custom.html) sets data-theme on <html>;
+// without a choice the page follows the OS.
 
 @import "jekyll-theme-primer";
+
+// Primer paints every image on white, which would show at the banner's rounded
+// corners on a dark page; the banner carries its own dark panel.
+.markdown-body img[src$="banner.svg"] { background-color: transparent; }
 
 @mixin dark {
   color-scheme: dark;
@@ -18,9 +20,6 @@
   }
 
   a { color: #4493f8; }
-
-  // Primer paints every image on white; the banner is drawn for this background.
-  .markdown-body picture img { background-color: transparent; }
 
   h1, h2, h3, h4, h5, h6 { color: #e6edf3; }
 

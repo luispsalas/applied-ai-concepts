@@ -1,8 +1,5 @@
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
-    <img src="assets/banner-light.svg" alt="Applied AI Concepts — The AI Literacy Wiki" width="760">
-  </picture>
+  <img src="assets/banner.svg" alt="Applied AI Concepts — The AI Literacy Wiki" width="760">
 </p>
 
 Technical and plain-language explanations of how AI systems work, how they fail, and who answers for them, for the people who build, buy and oversee them. **Every entry is sourced, and every entry ends with governance notes.**
