@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "count": 153,
+  "count": 154,
   "entries": [
     {
       "slug": "acceptable-use-policy",
@@ -1304,8 +1304,8 @@
         "Model Behavior",
         "AI Literacy"
       ],
-      "version": "v1.0",
-      "updated": "August 2026",
+      "version": "v1.1",
+      "updated": "October 2026",
       "related": [
         "ai-literacy",
         "concealing-uncertainty",
@@ -1322,7 +1322,9 @@
         "SRC-010",
         "SRC-144",
         "SRC-171",
-        "SRC-173"
+        "SRC-173",
+        "SRC-398",
+        "SRC-400"
       ],
       "path": "concepts/confidence-vs-accuracy.md"
     },
@@ -3454,6 +3456,51 @@
       "path": "concepts/latency-ai-systems.md"
     },
     {
+      "slug": "lethal-trifecta",
+      "term": "Lethal Trifecta",
+      "category": "System Architecture",
+      "essence": "An AI agent that can read private data, take in untrusted content and communicate externally can be made to steal that data. Remove any one of the three and the theft path closes.",
+      "short": "An AI agent that can read private data, take in untrusted content and communicate externally can be made to steal that data. Remove any one of the three and the theft path closes",
+      "aliases": [
+        "lethal trifecta for AI agents",
+        "Agents Rule of Two",
+        "rule of two",
+        "prompt injection exfiltration",
+        "data exfiltration risk"
+      ],
+      "tags": [
+        "Security",
+        "Agents"
+      ],
+      "version": "v1.0",
+      "updated": "October 2026",
+      "related": [
+        "agentic-design-patterns",
+        "ai-agent",
+        "data-leakage-ai-systems",
+        "guardrails-ai-systems",
+        "human-in-the-loop",
+        "memory-ai-systems",
+        "permission-model-ai",
+        "prompt-injection",
+        "sandboxing",
+        "tool-use"
+      ],
+      "sources": [
+        "SRC-146",
+        "SRC-389",
+        "SRC-390",
+        "SRC-392",
+        "SRC-393",
+        "SRC-394",
+        "SRC-395",
+        "SRC-396",
+        "SRC-397",
+        "SRC-402"
+      ],
+      "path": "concepts/lethal-trifecta.md"
+    },
+    {
       "slug": "llm-as-judge",
       "term": "LLM-as-Judge",
       "category": "Reliability & Quality",
@@ -3472,8 +3519,8 @@
         "Evaluation",
         "AI Literacy"
       ],
-      "version": "v1.2",
-      "updated": "September 2026",
+      "version": "v1.3",
+      "updated": "October 2026",
       "related": [
         "audit-trail-ai",
         "automation-bias",
@@ -3491,7 +3538,8 @@
         "SRC-220",
         "SRC-242",
         "SRC-354",
-        "SRC-369"
+        "SRC-369",
+        "SRC-398"
       ],
       "path": "concepts/llm-as-judge.md"
     },
@@ -4299,7 +4347,8 @@
         "chaining steps",
         "Flow Engineering",
         "agentic workflow",
-        "designing the steps"
+        "designing the steps",
+        "dynamic workflow"
       ],
       "tags": [
         "Agents",
@@ -4848,6 +4897,7 @@
         "guardrails-ai-systems",
         "harness-paradigm",
         "human-in-the-loop",
+        "lethal-trifecta",
         "permission-model-ai"
       ],
       "sources": [
@@ -5331,6 +5381,7 @@
         "guardrails-ai-systems",
         "human-in-the-loop",
         "jailbreak",
+        "lethal-trifecta",
         "multi-agent-systems",
         "operational-readiness-ai",
         "permission-model-ai",
@@ -5588,8 +5639,8 @@
         "Evaluation",
         "Prompting"
       ],
-      "version": "v1.1",
-      "updated": "September 2026",
+      "version": "v1.2",
+      "updated": "October 2026",
       "related": [
         "agent-interoperability-a2a",
         "concealing-uncertainty",
@@ -5609,7 +5660,8 @@
         "SRC-339",
         "SRC-340",
         "SRC-341",
-        "SRC-356"
+        "SRC-356",
+        "SRC-401"
       ],
       "path": "concepts/structured-output.md"
     },

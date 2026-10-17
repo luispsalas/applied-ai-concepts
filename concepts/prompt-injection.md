@@ -71,6 +71,7 @@ Prompt injection is a trick where someone hides instructions inside text an AI r
 - [Data Leakage (AI Systems)](data-leakage-ai-systems.md) — a common objective and consequence of a successful injection attack
 - [Permission Model (AI)](permission-model-ai.md) — the enforced access control that limits what an injected instruction can actually achieve
 - [Human-in-the-Loop (HITL)](human-in-the-loop.md) — the checkpoint that catches consequential actions an injection attempts to trigger
+- [Lethal Trifecta](lethal-trifecta.md) — the three capabilities that turn an injection into data theft, and the design rule of never combining them
 
 ---
 

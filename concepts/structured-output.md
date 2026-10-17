@@ -62,7 +62,7 @@ Finally: the schema is a contract, not a config detail. Everything downstream de
 ## AI literacy notes
 
 1. **Constrained decoding makes invalid output unreachable**; asking and validating only makes it rarer.
-2. **Schema conformance is not correctness.** A valid object can be entirely fabricated.
+2. **Schema conformance is not correctness.** A valid object can be entirely fabricated. Marketing that promises "Zero Hallucinations" because a model's outputs are typed makes exactly this mistake. A typed answer can still be the wrong answer.
 3. **Structure removes the visible errors** and leaves the invisible ones in place.
 4. **A `confidence` field is a generated token**, not a measurement.
 5. **Format restriction measurably degrades reasoning**, and stricter formats degrade more.
@@ -138,6 +138,7 @@ Finally: the schema is a contract, not a config detail. Everything downstream de
 | SRC-340 | Tam, Zhi Rui; Wu, Cheng-Kuang; Tsai, Yi-Lin; Lin, Chieh-Yen; Lee, Hung-yi; Chen, Yun-Nung — *Let Me Speak Freely? A Study on the Impact of Format Restrictions on Performance of Large Language Models* (EMNLP Industry Track, 2024) · [link](https://arxiv.org/abs/2408.02442) | The cost: comparing structured-format generation against free-form on the same tasks, **a significant decline in reasoning ability under format restrictions, with stricter constraints producing greater degradation.** ⚠️ 2024 models and reasoning tasks specifically, so cite the direction and re-measure the magnitude on your own models. |
 | SRC-341 | JSON Schema project — *JSON Schema Specification (version 2020-12)* · [link](https://json-schema.org/specification) | The vendor-neutral contract language, registered so the entry describes schemas through an open standard rather than any provider's API, which is what makes a structured-output contract a reviewable, versioned artifact. ⚠️ A living specification with a draft history; record the version cited. |
 | SRC-104 | Anthropic — *Building Effective AI Agents* (2024) · [link](https://www.anthropic.com/engineering/building-effective-agents) | Practitioner grounding for structured output as the interface between an agent's reasoning and the systems around it, and for the retry and validation patterns built on it. ⚠️ Vendor-produced, and used for the architectural framing only. |
+| SRC-401 | TypeSafe AI — *Home - TypeSafe AI* (vendor website, 2026) · [link](https://typesafe.ai/) | The quoted "Zero Hallucinations" claim for a typed-output model, cited as an example of the error in literacy note 2. ⚠️ Vendor marketing; a stated claim, not evidence. |
 | SRC-356 | Guo, Shuai (Towards Data Science) — *How to Implement Structured Output with Local LLMs* (2026) · [link](https://towardsdatascience.com/structured-output-with-local-llms/) | The worked demonstration behind this entry's schema-complexity point: a small locally-run model, constrained by a nested schema, returns valid JSON containing an item the source material explicitly excluded, with **conformance and correctness coming apart in a concrete case**, and decomposing the call into scope-then-extract fixes it with no change of model. Also the non-vendor practitioner grounding for the ask-and-validate route. ⚠️ A single demonstration on one small model with no baseline or repetition: evidence that the failure occurs and that decomposition addressed it here, never of prevalence or rate. ⚠️ Names specific tooling and model versions that will date. |
 
 ---
@@ -153,4 +154,4 @@ Finally: the schema is a contract, not a config detail. Everything downstream de
 
 ---
 
-*Last updated: v1.1 · September 2026*
+*Last updated: v1.2 · October 2026*

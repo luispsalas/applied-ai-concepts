@@ -18,7 +18,7 @@ Looking for one term? Use the [alphabetical glossary](index.md) or [search](../s
 | [Reasoning Models / Test-Time Compute](../concepts/reasoning-models.md) | Models that spend extra computation "thinking" through a problem step by step before answering, trading speed for higher accuracy on hard tasks | ✅ v1.1 |
 | [Multimodal AI](../concepts/multimodal-ai.md) | Text, images, audio and video in one system, with every text risk carried across and weaker tooling to detect it | ✅ v1.0 |
 | [Sycophancy (LLMs)](../concepts/sycophancy-llms.md) | Models agreeing with users rather than being accurate. It is a behavior the training signal rewards, not an incidental bug | ✅ v1.1 |
-| [Confidence vs Accuracy](../concepts/confidence-vs-accuracy.md) | How sure a model sounds is not evidence of how right it is, because tone is generated independently of correctness | ✅ v1.0 |
+| [Confidence vs Accuracy](../concepts/confidence-vs-accuracy.md) | How sure a model sounds is not evidence of how right it is, because tone is generated independently of correctness | ✅ v1.1 |
 | [Knowledge Cutoff](../concepts/knowledge-cutoff.md) | Every model was trained up to a fixed date and knows nothing after it, and cannot reliably tell you when a question falls outside what it knows | ✅ v1.0 |
 | [Hallucination](../concepts/hallucination.md) | AI models generate plausible-sounding content that is factually incorrect, confidently and without warning | ✅ v1.2 |
 | [Black Box](../concepts/black-box.md) | An AI system whose internal reasoning process cannot be observed or interpreted, even when its outputs can | ✅ v1.1 |
@@ -83,7 +83,8 @@ Looking for one term? Use the [alphabetical glossary](index.md) or [search](../s
 | [Agentic Design Patterns](../concepts/agentic-design-patterns.md) | The named arrangements for splitting what a system decides at runtime from what is fixed in code, and each one puts the power to refuse somewhere different | ✅ v1.1 |
 | [Data Poisoning](../concepts/data-poisoning.md) | Corrupting what a model learns rather than what it is asked. It is an integrity attack on the training set that no amount of input filtering can reach | ✅ v1.0 |
 | [Federated Learning](../concepts/federated-learning.md) | Training one model across data that never moves, which relocates the privacy problem into the model updates and trades away the ability to audit the training data at all | ✅ v1.0 |
-| [Structured Output](../concepts/structured-output.md) | Making a model emit machine-parseable output that conforms to a schema. The guarantee is about shape, and it is routinely mistaken for one about content | ✅ v1.1 |
+| [Structured Output](../concepts/structured-output.md) | Making a model emit machine-parseable output that conforms to a schema. The guarantee is about shape, and it is routinely mistaken for one about content | ✅ v1.2 |
+| [Lethal Trifecta](../concepts/lethal-trifecta.md) | An AI agent that can read private data, take in untrusted content and communicate externally can be made to steal that data. Remove any one of the three and the theft path closes | ✅ v1.0 |
 
 ### Knowledge & Memory
 *How knowledge persists, degrades, and stays fit for use*
@@ -145,7 +146,7 @@ Looking for one term? Use the [alphabetical glossary](index.md) or [search](../s
 | [Model/Data Drift](../concepts/model-data-drift.md) | The quiet decay of a deployed system as the world moves away from its training data. Nothing breaks, and accuracy just slides | ✅ v1.1 |
 | [Model Version & Update](../concepts/model-version-update.md) | The system you use today may not be the one you tested. Providers change models underneath you, and reliable behavior can shift without notice | ✅ v1.0 |
 | [Data Leakage (Model Evaluation)](../concepts/data-leakage-model-evaluation.md) | When information from the test set reaches the model during training, so measured performance describes an exam the model had already seen. It is the most common cause of results that do not survive deployment | ✅ v1.0 |
-| [LLM-as-Judge](../concepts/llm-as-judge.md) | Using one language model to grade another's output. It is the only way to evaluate at volume, with documented biases including a preference for its own writing | ✅ v1.2 |
+| [LLM-as-Judge](../concepts/llm-as-judge.md) | Using one language model to grade another's output. It is the only way to evaluate at volume, with documented biases including a preference for its own writing | ✅ v1.3 |
 | [Recursive Self-Improvement](../concepts/recursive-self-improvement.md) | A system improving its own ability to improve, so gains compound. It is a sixty-year-old argument whose premises are now partly testable and largely unmet | ✅ v1.2 |
 | [AI Benchmarking](../concepts/ai-benchmarking.md) | Standardized tests that let models be compared on the same task. They are indispensable for comparison, and routinely read as evidence of general capability they were never built to support | ✅ v1.0 |
 | [Catastrophic Forgetting](../concepts/catastrophic-forgetting.md) | Teaching a model something new can silently remove something it already knew, including behavior nobody re-tests | ✅ v1.0 |

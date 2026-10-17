@@ -131,6 +131,7 @@ Two honest caveats. A sandbox limits damage; it does not make the system right. 
 - [Data Leakage (AI Systems)](data-leakage-ai-systems.md) — egress is the boundary that matters most for exfiltration
 - [Human-in-the-Loop (HITL)](human-in-the-loop.md) — containment bounds damage; it does not supply oversight
 - [Tool Use](tool-use.md) — every tool is a hole deliberately made in the wall
+- [Lethal Trifecta](lethal-trifecta.md) — external communication is one of its three legs, and the sandbox is where that leg is enforced or lost
 - [Operational Readiness (AI)](operational-readiness-ai.md) — whether the boundary exists before deployment, not after
 - [Reward Hacking](reward-hacking.md) — why agents probe the boundary at all: these routes were found while trying to complete graded tasks
 

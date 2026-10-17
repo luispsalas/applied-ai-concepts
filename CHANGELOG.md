@@ -1,5 +1,26 @@
 # Changelog
 
+## v1.48 — October 2026
+
+**One new entry and three enrichments. Count 153 → 154.**
+
+- `lethal-trifecta` — **new**, v1.0
+- `llm-as-judge` — v1.2 → **v1.3**
+- `confidence-vs-accuracy` — v1.0 → **v1.1**
+- `structured-output` — v1.1 → **v1.2**
+
+**Lethal Trifecta names the combination that turns prompt injection into data theft.** An agent that can read private data, take in content an attacker controls and communicate externally can be made to send that data to the attacker, because models follow instructions in whatever they read. The entry's point is that this turns an unsolvable detection problem into a design decision: no one can yet catch every injected instruction, but anyone can decide that one agent never holds all three capabilities at once. It records why filtering is not the answer (adaptive attacks bypassed 12 published defenses), how wide the communication leg is (an image load or a URL fetch is enough, as the sandboxing cases showed), and the design patterns that keep an agent useful with the combination broken, including one that solved 77% of a benchmark's tasks with provable security against 84% undefended.
+
+**The term has two versions, and the entry says so.** The original is about stealing data. A major developer's adaptation counts any change of state as the third leg and allows at most two of three per session. The term's originator welcomed the broadening, and objected only that two legs had been labeled safe. The entry carries both versions and the governance consequence: state which one a policy uses.
+
+**A judge does not have to write its verdict out.** *LLM-as-Judge* now cites an independent benchmark of a classifier model that returns a probability for each answer to a typed question instead of generating text. It ranked ten kinds of alignment failure well without task-specific training, matched the reference scorer's agreement with human labels at a fraction of the cost, and its confidence was useful for routing the uncertain cases to a stronger judge or a person.
+
+**Calibration is a property of each kind of answer.** *Confidence vs Accuracy* adds that post-training can undo calibration a model already had, from its developer's own measurement, and that a model trained for calibrated answers was still miscalibrated in opposite directions depending on the answer type. A new literacy note and watch-for follow: a calibration claim made once for a whole model says little.
+
+***Structured Output* gains an example.** Marketing that promises no hallucinations because a model's outputs are typed is the mistake the entry's second literacy note already names.
+
+**The same pass triaged six tracker rows.** *Dynamic Workflow* became an alias of *Orchestration (AI Systems)*. *Stop Tokens* and *Defacement* were declined on scope, and *Context Language Models* was declined under that name because the phrase already means something else in older work. The product the classifier result comes from was declined as a term.
+
 ## v1.47 — October 2026
 
 **One enrichment. No new entries; count stays at 153.**

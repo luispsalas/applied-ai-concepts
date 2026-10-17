@@ -9,8 +9,8 @@ Technical and plain-language explanations of how AI systems work, how they fail,
 
 | Look it up | Put it to work |
 |---|---|
-| **[Glossary →](glossary/index.md)**<br>153 terms, A–Z, each with a one-line definition. | **[Use as project context →](#use-it-as-project-context)**<br>Load the wiki into Claude, ChatGPT, Cursor or a RAG pipeline. |
-| **[Search →](https://luispsalas.github.io/applied-ai-concepts/search.html)**<br>Describe the problem in plain words. Matches 1009 synonyms. | **[Governance & Observability Notes →](notes/governance-and-observability.md)**<br>What to control, monitor and answer for across the core concepts. |
+| **[Glossary →](glossary/index.md)**<br>154 terms, A–Z, each with a one-line definition. | **[Use as project context →](#use-it-as-project-context)**<br>Load the wiki into Claude, ChatGPT, Cursor or a RAG pipeline. |
+| **[Search →](https://luispsalas.github.io/applied-ai-concepts/search.html)**<br>Describe the problem in plain words. Matches 1015 synonyms. | **[Governance & Observability Notes →](notes/governance-and-observability.md)**<br>What to control, monitor and answer for across the core concepts. |
 
 ---
 
@@ -44,7 +44,7 @@ The terms other entries rely on most, in each category. Browse [every term A–Z
 |---|---|---|
 | **Foundations**<br>*How models behave — and why that behavior matters* | [Large Language Models (LLMs)](concepts/large-language-models.md) · [Hallucination](concepts/hallucination.md) · [Bias (AI Systems)](concepts/bias-ai-systems.md) · [Confidence vs Accuracy](concepts/confidence-vs-accuracy.md) | [All&nbsp;31&nbsp;→](glossary/categories.md#foundations) |
 | **Interaction & Design**<br>*How you work with models effectively* | [Context Engineering](concepts/context-engineering.md) · [Prompt Engineering](concepts/prompt-engineering.md) · [Anthropomorphism (AI)](concepts/anthropomorphism-ai.md) · [Cognitive Offloading & Deskilling](concepts/cognitive-offloading-deskilling.md) | [All&nbsp;9&nbsp;→](glossary/categories.md#interaction--design) |
-| **System Architecture**<br>*The control layer that makes models governable* | [Guardrails (AI Systems)](concepts/guardrails-ai-systems.md) · [Harness Paradigm](concepts/harness-paradigm.md) · [AI Agent](concepts/ai-agent.md) · [Retrieval-Augmented Generation (RAG)](concepts/rag.md) | [All&nbsp;21&nbsp;→](glossary/categories.md#system-architecture) |
+| **System Architecture**<br>*The control layer that makes models governable* | [Guardrails (AI Systems)](concepts/guardrails-ai-systems.md) · [Harness Paradigm](concepts/harness-paradigm.md) · [AI Agent](concepts/ai-agent.md) · [Retrieval-Augmented Generation (RAG)](concepts/rag.md) | [All&nbsp;22&nbsp;→](glossary/categories.md#system-architecture) |
 | **Knowledge & Memory**<br>*How knowledge persists, degrades, and stays fit for use* | [Data Provenance / Lineage](concepts/data-provenance-lineage.md) · [Training Data](concepts/training-data.md) · [Data Quality](concepts/data-quality.md) · [Grounding](concepts/grounding.md) | [All&nbsp;20&nbsp;→](glossary/categories.md#knowledge--memory) |
 | **Human Oversight**<br>*Humans in control by design — not by assumption* | [Human-in-the-Loop (HITL)](concepts/human-in-the-loop.md) · [Permission Model (AI)](concepts/permission-model-ai.md) · [Human Responsibility in AI Use](concepts/human-responsibility-in-ai-use.md) · [Automation Bias](concepts/automation-bias.md) | [All&nbsp;10&nbsp;→](glossary/categories.md#human-oversight) |
 | **Reliability & Quality**<br>*Measuring and maintaining what AI systems actually do* | [Evaluation (AI Systems)](concepts/evaluation.md) · [Model Version & Update](concepts/model-version-update.md) · [Failure Modes (AI Systems)](concepts/failure-modes-ai-systems.md) · [Verification](concepts/verification.md) | [All&nbsp;22&nbsp;→](glossary/categories.md#reliability--quality) |
@@ -109,4 +109,4 @@ Made by a human working with AI models, and declared stage by stage (conception,
 
 ---
 
-**Status:** Phase 2 — 153 concepts across 8 categories, cross-linked, with a glossary and search. Each entry carries its own version; history is in the [CHANGELOG](CHANGELOG.md). Planned next: audience-specific rendering and a manifesto.
+**Status:** Phase 2 — 154 concepts across 8 categories, cross-linked, with a glossary and search. Each entry carries its own version; history is in the [CHANGELOG](CHANGELOG.md). Planned next: audience-specific rendering and a manifesto.
