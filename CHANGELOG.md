@@ -1,5 +1,17 @@
 # Changelog
 
+## v1.49 — October 2026
+
+**One enrichment. No new entries; count stays at 154.**
+
+- `mechanistic-interpretability` — v1.0 → **v1.1**
+
+**The entry stated superposition as a fact. It now presents it as the field's founding hypothesis, contested as of October 2026.** Superposition holds that models represent more features than they have neurons, so individual neurons respond to several unrelated things and cannot be read one by one. The field's main method, sparse autoencoders, exists to work around it. The entry now records how thin its evidence was when it took hold, in its originators' own words: it was treated as the default hypothesis "simply because it seems intuitively more compelling than other explanations, but there is little evidence", though the same paper presented its results as moderate evidence for it.
+
+**A researcher who co-wrote the canonical examples now argues they were misread.** An essay from an interpretability company reports that the classic mixed-up neurons came from fixable problems with an early model and its visualization tools, that the remaining mixtures look like neurons growing into related concepts, and that about 90% of neurons in a modern open model have one main job. Two independent preprints point partly the same way, and one of them also finds that the cleanest neurons are a shrinking share as models grow.
+
+**The entry carries the challenge at the strength its author does.** The essay calls itself a working hypothesis, its author puts his confidence at about 85%, it was revised after publication, and its claims about the largest models wait on a companion paper not yet published. Its 90% figure is not comparable with the 1.7% that an automated method explained in 2023, which measured something different on a different model. A literacy note, the plain-language version, a watch-for and the confidence note now say the same thing: the neuron question is open again, and neither answer should be presented as settled.
+
 ## v1.48 — October 2026
 
 **One new entry and three enrichments. Count 153 → 154.**

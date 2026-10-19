@@ -3608,8 +3608,8 @@
         "Safety",
         "Evaluation"
       ],
-      "version": "v1.0",
-      "updated": "September 2026",
+      "version": "v1.1",
+      "updated": "October 2026",
       "related": [
         "alignment-ai-systems",
         "black-box",
@@ -3628,7 +3628,14 @@
         "SRC-125",
         "SRC-240",
         "SRC-255",
-        "SRC-256"
+        "SRC-256",
+        "SRC-403",
+        "SRC-404",
+        "SRC-405",
+        "SRC-406",
+        "SRC-407",
+        "SRC-408",
+        "SRC-409"
       ],
       "path": "concepts/mechanistic-interpretability.md"
     },
