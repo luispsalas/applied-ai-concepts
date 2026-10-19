@@ -4,11 +4,11 @@ Every term this wiki tracks, with its status — **including the ones that are n
 
 The field names things faster than it settles them, and a glossary that repeats every new label without comment is a list of buzzwords. So each term is judged on whether it is a *real term*. That is a separate question from how good the evidence is for the claims inside an entry, which each entry states for itself in its own confidence level.
 
-**191 terms tracked — 154 published, 37 not.** See [how terms are admitted](../CONTRIBUTING.md#term-status--the-admission-test).
+**192 terms tracked — 155 published, 37 not.** See [how terms are admitted](../CONTRIBUTING.md#term-status--the-admission-test).
 
 | Status | Meaning | Count |
 |---|---|---|
-| `established` | Recognized term of art, in independent use. | 141 |
+| `established` | Recognized term of art, in independent use. | 142 |
 | `emerging` | Real and in use, but definitions still vary between sources. | 13 |
 | `declined` | Considered and turned down — not a term this wiki will publish. | 14 |
 | `covered` | A real term, already covered by another entry — findable there as an alias. | 23 |
@@ -142,6 +142,7 @@ The field names things faster than it settles them, and a glossary that repeats 
 | [Moral Crumple Zone](../concepts/moral-crumple-zone.md) | `established` | yes |  |
 | [Multi-Agent Systems](../concepts/multi-agent-systems.md) | `established` | yes |  |
 | [Multimodal AI](../concepts/multimodal-ai.md) | `established` | yes |  |
+| [NIST AI Risk Management Framework (AI RMF)](../concepts/nist-ai-rmf.md) | `established` | yes | DRAFTED v1.0 Oct 19 2026 (nist-ai-rmf), user request (backlog item 17). Admitted as the FRAMEWORK, not the agency: an agency is an organization and out of scope, while a framework has a precedent in ai-management-system-iso-42001. CHECK 1: a government framework adopted by reference in state law (Colorado SB24-205, SRC-415). CHECK 4: not covered; SRC-001 was cited by 45 files with no entry to follow. ⚠️ Under revision per NIST's own page and the White House Action Plan (SRC-413); the entry describes version 1.0 and must be revisited when the revised version is published. |
 | [NLP](../concepts/nlp.md) | `established` | yes |  |
 | [Observability (AI Systems)](../concepts/observability.md) | `established` | yes |  |
 | [Ontology](../concepts/ontology.md) | `established` | yes | Published Sep 7 2026. Clears check 1 on a formal standard rather than on usage: OWL 2 is a W3C Recommendation, and Gruber (1993) is the canonical definition. ⚠️ CHECK 4 ALMOST SAID "COVERED" AND WOULD HAVE BEEN WRONG: `ontology` was already an alias of Knowledge Graphs, but that entry mentions a schema only three times, always as a prerequisite or a cost — it never defines one. An alias to an entry that merely MENTIONS a term conceals the gap instead of filling it, and hides it from both the promise sweep and the gap report. Alias moved here; Knowledge Graphs now carries a Related-concepts pointer stating the schema/instance layer split. Score deliberately blank — author's call. |

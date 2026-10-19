@@ -141,7 +141,7 @@ Looking for one term? Use the [alphabetical glossary](index.md) or [search](../s
 | [Synthetic Media (Deepfakes)](../concepts/synthetic-media-deepfakes.md) | Generation scales and verification does not, and the documented harm is fraud and intimate imagery, not mainly politics | ✅ v1.0 |
 | [Reward Hacking (Specification Gaming)](../concepts/reward-hacking.md) | The system satisfies the metric and defeats the point, and more capable models do it more, not less | ✅ v1.0 |
 | [Power Seeking](../concepts/power-seeking.md) | Capability is useful for almost any goal, so optimization drifts toward more access and more room to operate, with no motive required | ✅ v1.0 |
-| [Alignment (AI Systems)](../concepts/alignment-ai-systems.md) | Making a system's behavior match what was actually intended, and the prior question of whose intentions those are | ✅ v1.0 |
+| [Alignment (AI Systems)](../concepts/alignment-ai-systems.md) | Making a system's behavior match what was actually intended, and the prior question of whose intentions those are | ✅ v1.1 |
 | [Verification](../concepts/verification.md) | Checking this output against ground truth before trusting it, and the finding that people check least on the problems that most need it | ✅ v1.0 |
 | [Model/Data Drift](../concepts/model-data-drift.md) | The quiet decay of a deployed system as the world moves away from its training data. Nothing breaks, and accuracy just slides | ✅ v1.1 |
 | [Model Version & Update](../concepts/model-version-update.md) | The system you use today may not be the one you tested. Providers change models underneath you, and reliable behavior can shift without notice | ✅ v1.0 |
@@ -193,6 +193,7 @@ Looking for one term? Use the [alphabetical glossary](index.md) or [search](../s
 | [Dual Use](../concepts/dual-use.md) | The same capability serving a legitimate and a harmful purpose, which means risk is not a property of the model, and no amount of inspecting it will settle the question | ✅ v1.0 |
 | [Third-Party Audit](../concepts/third-party-audit.md) | Assurance by someone with no stake in the answer, whose value is set almost entirely by what access they were granted, not by their independence | ✅ v1.0 |
 | [Whistleblowing](../concepts/whistleblowing.md) | Protected disclosure by an insider. It is the control that operates when every internal one has failed, and whose legal protection covers illegality rather than danger | ✅ v1.0 |
+| [NIST AI Risk Management Framework (AI RMF)](../concepts/nist-ai-rmf.md) | A voluntary US framework for managing AI risk through four functions, Govern, Map, Measure and Manage. Laws now point to it by reference, and it is being rewritten | ✅ v1.0 |
 
 ### Organizational Readiness
 *The human and organizational conditions for responsible AI adoption*

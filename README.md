@@ -6,8 +6,8 @@ Technical and plain-language explanations of how AI systems work, how they fail,
 
 | Look it up | Put it to work |
 |---|---|
-| **[Glossary →](glossary/index.md)**<br>154 terms, A–Z, each with a one-line definition. | **[Use as project context →](#use-it-as-project-context)**<br>Load the wiki into Claude, ChatGPT, Cursor or a RAG pipeline. |
-| **[Search →](https://luispsalas.github.io/applied-ai-concepts/search.html)**<br>Describe the problem in plain words. Matches 1015 synonyms. | **[Governance & Observability Notes →](notes/governance-and-observability.md)**<br>What to control, monitor and answer for across the core concepts. |
+| **[Glossary →](glossary/index.md)**<br>155 terms, A–Z, each with a one-line definition. | **[Use as project context →](#use-it-as-project-context)**<br>Load the wiki into Claude, ChatGPT, Cursor or a RAG pipeline. |
+| **[Search →](https://luispsalas.github.io/applied-ai-concepts/search.html)**<br>Describe the problem in plain words. Matches 1024 synonyms. | **[Governance & Observability Notes →](notes/governance-and-observability.md)**<br>What to control, monitor and answer for across the core concepts. |
 
 ---
 
@@ -45,7 +45,7 @@ The terms other entries rely on most, in each category. Browse [every term A–Z
 | **Knowledge & Memory**<br>*How knowledge persists, degrades, and stays fit for use* | [Data Provenance / Lineage](concepts/data-provenance-lineage.md) · [Training Data](concepts/training-data.md) · [Data Quality](concepts/data-quality.md) · [Grounding](concepts/grounding.md) | [All&nbsp;20&nbsp;→](glossary/categories.md#knowledge--memory) |
 | **Human Oversight**<br>*Humans in control by design — not by assumption* | [Human-in-the-Loop (HITL)](concepts/human-in-the-loop.md) · [Permission Model (AI)](concepts/permission-model-ai.md) · [Human Responsibility in AI Use](concepts/human-responsibility-in-ai-use.md) · [Automation Bias](concepts/automation-bias.md) | [All&nbsp;10&nbsp;→](glossary/categories.md#human-oversight) |
 | **Reliability & Quality**<br>*Measuring and maintaining what AI systems actually do* | [Evaluation (AI Systems)](concepts/evaluation.md) · [Model Version & Update](concepts/model-version-update.md) · [Failure Modes (AI Systems)](concepts/failure-modes-ai-systems.md) · [Verification](concepts/verification.md) | [All&nbsp;22&nbsp;→](glossary/categories.md#reliability--quality) |
-| **Observability & Governance**<br>*Making AI system behavior visible and accountable* | [Audit Trail (AI)](concepts/audit-trail-ai.md) · [Compliance (AI Systems)](concepts/compliance-ai-systems.md) · [Observability (AI Systems)](concepts/observability.md) · [AI Governance](concepts/ai-governance.md) | [All&nbsp;32&nbsp;→](glossary/categories.md#observability--governance) |
+| **Observability & Governance**<br>*Making AI system behavior visible and accountable* | [Audit Trail (AI)](concepts/audit-trail-ai.md) · [Compliance (AI Systems)](concepts/compliance-ai-systems.md) · [Observability (AI Systems)](concepts/observability.md) · [AI Governance](concepts/ai-governance.md) | [All&nbsp;33&nbsp;→](glossary/categories.md#observability--governance) |
 | **Organizational Readiness**<br>*The human and organizational conditions for responsible AI adoption* | [AI Literacy](concepts/ai-literacy.md) · [Operational Readiness (AI)](concepts/operational-readiness-ai.md) · [AI Use Case](concepts/ai-use-case.md) · [Scalability (AI Systems)](concepts/scalability-ai-systems.md) | [All&nbsp;8&nbsp;→](glossary/categories.md#organizational-readiness) |
 
 <!-- key-terms:end -->
@@ -106,4 +106,4 @@ Made by a human working with AI models, and declared stage by stage (conception,
 
 ---
 
-**Status:** Phase 2 — 154 concepts across 8 categories, cross-linked, with a glossary and search. Each entry carries its own version; history is in the [CHANGELOG](CHANGELOG.md). Planned next: audience-specific rendering and a manifesto.
+**Status:** Phase 2 — 155 concepts across 8 categories, cross-linked, with a glossary and search. Each entry carries its own version; history is in the [CHANGELOG](CHANGELOG.md). Planned next: audience-specific rendering and a manifesto.

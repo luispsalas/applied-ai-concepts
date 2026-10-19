@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "count": 154,
+  "count": 155,
   "entries": [
     {
       "slug": "acceptable-use-policy",
@@ -730,8 +730,8 @@
         "Model Behavior",
         "Ethics"
       ],
-      "version": "v1.0",
-      "updated": "August 2026",
+      "version": "v1.1",
+      "updated": "October 2026",
       "related": [
         "ai-governance",
         "ai-use-case",
@@ -755,7 +755,9 @@
         "SRC-193",
         "SRC-194",
         "SRC-195",
-        "SRC-196"
+        "SRC-196",
+        "SRC-410",
+        "SRC-411"
       ],
       "path": "concepts/alignment-ai-systems.md"
     },
@@ -4124,6 +4126,50 @@
         "SRC-213"
       ],
       "path": "concepts/multimodal-ai.md"
+    },
+    {
+      "slug": "nist-ai-rmf",
+      "term": "NIST AI Risk Management Framework (AI RMF)",
+      "category": "Observability & Governance",
+      "essence": "A voluntary US framework for managing AI risk through four functions, Govern, Map, Measure and Manage. Laws now point to it by reference, and it is being rewritten.",
+      "short": "A voluntary US framework for managing AI risk through four functions, Govern, Map, Measure and Manage. Laws now point to it by reference, and it is being rewritten",
+      "aliases": [
+        "NIST AI RMF",
+        "AI RMF",
+        "AI RMF 1.0",
+        "NIST",
+        "NIST AI 100-1",
+        "NIST AI 600-1",
+        "Generative AI Profile",
+        "Govern Map Measure Manage",
+        "NIST framework"
+      ],
+      "tags": [
+        "Regulatory",
+        "Safety"
+      ],
+      "version": "v1.0",
+      "updated": "October 2026",
+      "related": [
+        "accountability-ai-systems",
+        "ai-governance",
+        "ai-management-system-iso-42001",
+        "algorithmic-impact-assessment",
+        "compliance-ai-systems",
+        "red-teaming",
+        "systemic-risk-ai",
+        "third-party-audit"
+      ],
+      "sources": [
+        "SRC-001",
+        "SRC-129",
+        "SRC-169",
+        "SRC-412",
+        "SRC-413",
+        "SRC-414",
+        "SRC-415"
+      ],
+      "path": "concepts/nist-ai-rmf.md"
     },
     {
       "slug": "nlp",
