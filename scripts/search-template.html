@@ -56,7 +56,7 @@
   <h1>Applied AI Concepts</h1>
   <p class="sub">__COUNT__ concepts · __ALIASES__ search aliases · concept lookup, not full-text search — try
      <em>“who is responsible when the AI does it”</em>.
-     <a href="search-index.json">index as JSON</a> · <a href="__BLOB__README.md">README</a></p>
+     <a href="search-index.json">index as JSON</a> · <a id="home" href="__BLOB__README.md">README</a></p>
 
   <input id="q" type="search" autofocus autocomplete="off" spellcheck="false"
          placeholder="Search terms, synonyms, or describe the problem…"
@@ -69,10 +69,14 @@
 
 <script>
 const DATA = __INDEX__;
-// Results link to the canonical rendered view. Relative .md links break in both
-// deployment contexts: Jekyll rewrites them to .html on Pages, and a browser opening
-// file:// shows raw markdown. The blob URL renders correctly from either.
+// Results stay on the site that served this page. On GitHub Pages (any http(s) origin)
+// an entry's rendered page sits beside this file as .html. Opened from a clone over
+// file://, a relative .md link would show raw markdown, so it falls back to GitHub's
+// rendered view of the file.
 const BLOB = "__BLOB__";
+const ON_WEB = location.protocol === "http:" || location.protocol === "https:";
+const entryHref = path => ON_WEB ? path.replace(/\.md$/, ".html") : BLOB + path;
+if (ON_WEB) document.getElementById("home").setAttribute("href", "./");
 
 const STOP = new Set(("a an the and or of for to in on is are was were be been it its this that "+
   "with when what who whom whose how why do does did can could should would i you my our we "+
@@ -220,7 +224,7 @@ function run(){
 
   $out.innerHTML = list.length ? list.map(({e, why}, i) => `
     <li aria-selected="false" data-i="${i}">
-      <div class="t"><a href="${BLOB + esc(e.path)}">${raw?hl(e.term,tk):esc(e.term)}</a>
+      <div class="t"><a href="${esc(entryHref(e.path))}">${raw?hl(e.term,tk):esc(e.term)}</a>
         <span class="badge">${esc(e.category)} · ${esc(e.version)}</span></div>
       <p class="tags">${(e.tags||[]).map(t=>`<span class="tg${t===tagf?" on":""}">${esc(t)}</span>`).join("")}</p>
       <p class="e">${raw?hl(e.essence,tk):esc(e.essence)}</p>

@@ -1,3 +1,5 @@
+---
+---
 # Contributing
 
 This wiki is maintained as a persistently synthesised knowledge base — new information is integrated into existing entries rather than appended. This document explains how the maintenance model works and how you can suggest additions or improvements.

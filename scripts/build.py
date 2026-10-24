@@ -633,9 +633,9 @@ def write(entries):
         changed.append(f"search-index.json ({len(entries)} entries, "
                        f"{sum(len(e['aliases']) for e in entries)} aliases)")
 
-    # search.html — index INLINED, not fetched. GitHub Pages is not enabled on this
-    # repo, so the page has to work when opened from a clone over file://, where
-    # fetch() is blocked by CORS. Inlining costs a duplicate copy of generated data,
+    # search.html — index INLINED, not fetched. The page also has to work when opened
+    # from a clone over file://, where fetch() is blocked by CORS (on GitHub Pages it is
+    # served over https and links results to the site's own pages). Inlining costs a duplicate copy of generated data,
     # which cannot drift because this function writes both.
     if TEMPLATE.exists():
         remote = subprocess.run(["git", "remote", "get-url", "origin"], cwd=ROOT,
