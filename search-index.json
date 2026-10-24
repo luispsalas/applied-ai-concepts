@@ -1531,8 +1531,8 @@
         "Data Governance",
         "Model Behavior"
       ],
-      "version": "v1.1",
-      "updated": "September 2026",
+      "version": "v1.2",
+      "updated": "October 2026",
       "related": [
         "agent-skills",
         "audit-trail-ai",
@@ -1552,7 +1552,8 @@
         "SRC-270",
         "SRC-271",
         "SRC-380",
-        "SRC-381"
+        "SRC-381",
+        "SRC-399"
       ],
       "path": "concepts/context-compaction.md"
     },

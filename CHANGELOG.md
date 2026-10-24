@@ -1,5 +1,15 @@
 # Changelog
 
+## v1.53 — October 2026
+
+**One enrichment. No new entries; count stays at 155.**
+
+- `context-compaction` — v1.1 → **v1.2**
+
+**The next step after compaction hands the whole context to the model.** Instead of a harness deciding when to summarize and what to keep, a 2026 approach gives the model its live context as a file it can edit freely, and it beat the strongest earlier method on a deep-research benchmark with higher accuracy and less compute. The entry already showed that models write instructions into their own summaries. The authors of this approach make the same point about their own design: an editable context lets injected or self-generated instructions persist from turn to turn. So the entry adds the consequence, that when the model can rewrite all of its context, the original instructions survive only if something outside the model keeps a copy, and a practice to match: keep every version in an append-only log and treat the edited context as untrusted input.
+
+**The idea is in; the name is not.** The paper calls these context language models, a phrase older work already uses for something else, so the entry describes the approach without adopting the term.
+
 ## v1.52 — October 2026
 
 **Five enrichments. No new entries; count stays at 155.**

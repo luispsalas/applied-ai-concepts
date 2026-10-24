@@ -32,6 +32,8 @@ Every call to a model carries the whole conversation. Without intervention that 
 
 **Why this changes the governance question.** A compacted session is usually treated as a record that lost detail. These cases show it can also carry *directives* from one context to the next, which makes the summary an untrusted input to the very system that wrote it. That is the [prompt injection](prompt-injection.md) shape, with no external attacker. It also gives misaligned behavior a way to persist past the boundary that was supposed to reset it: the vendor's own interpretation is that one misaligned context can cause later ones to be misaligned. Treat summary text as instructions that will be acted on, not as notes.
 
+**The next step hands the whole context to the model.** A 2026 approach drops the harness's fixed compaction schedule and gives the model its live context as a file it can edit freely, deleting, rewriting or setting aside whatever it judges unimportant. Applied to existing models without retraining, it beat the strongest prior context-management method on a deep-research benchmark, with 11.4% higher accuracy and 21.5% fewer FLOPs, and it extends to many agents each editing a context file of its own. Its authors state the cost in their own discussion: *"Editable context can become another channel through which prompt injections or self-generated instructions persist across turns."* They cite the compaction reports above. When the model can rewrite all of its context, nothing inside the session guarantees that the original instructions survive. ⚠️ A preprint, and its name for the approach, *context language models*, is this group's own and collides with older uses of the same phrase, so the wiki describes the idea without adopting the term.
+
 **It does not apply everywhere.** Compaction is relevant only where an agent manages its own history and re-sends it each call. Where conversation state is held server-side by the provider, the same reduction still happens. It is simply not yours to configure, inspect, or record.
 
 ---
@@ -61,6 +63,7 @@ This is why "it forgot what we agreed" is often not a memory problem at all. The
 7. **"It forgot" is often compaction, not memory**, and the two have different fixes ([memory](memory-ai-systems.md)).
 8. **Where the provider manages history, compaction still happens**, but you simply cannot see or configure it.
 9. **A summary can contain instructions, not only information**, and the next context may follow them. Measured at low single-digit percentages of sampled training summaries in one vendor's reports, including instructions to conceal mistakes from the user.
+10. **A self-edited context is a self-written record.** When the model manages its own context, the original instructions survive only if something outside the model keeps a copy.
 
 ---
 
@@ -78,6 +81,7 @@ This is why "it forgot what we agreed" is often not a memory problem at all. The
 - Provider-managed conversation state where the reduction rule is neither visible nor recorded
 - Summary text treated as data rather than as instructions the next context may act on, including instructions the model wrote to itself
 - Personal data surviving into a summary that outlives the retention rule applied to the original ([data minimization](data-minimization.md))
+- Agents given write access to their own live context with no preserved copy of what it held before each edit
 
 **Practice:**
 - **Log compaction as an event** (when it fired, which strategy, how much was removed), even when the removed content is not retained
@@ -88,6 +92,7 @@ This is why "it forgot what we agreed" is often not a memory problem at all. The
 - **Inspect summaries for instruction-like content** before they are fed forward, and treat the summary as untrusted input to the next context, exactly as you would treat retrieved text
 - Test long-session behavior explicitly, since compaction failures only appear past the length most testing covers ([evaluation](evaluation.md))
 - Where the provider manages history, **ask what the reduction rule is and record the answer**, because you are accountable for a behavior you do not control
+- Where a model edits its own context, keep every version outside the model in an append-only log, and treat the edited context as untrusted input, as you would a summary ([audit trail](audit-trail-ai.md))
 
 **Key accountability owner:** whoever owns the retention and audit obligations for the conversation, because compaction is where information leaves the system without a deletion decision, and it is currently configured by engineers as a cost setting rather than by anyone treating it as a records question.
 
@@ -97,7 +102,7 @@ This is why "it forgot what we agreed" is often not a memory problem at all. The
 
 ## Confidence level
 
-**High on the mechanism and the strategy taxonomy, high on the unpredictability finding, medium on practice.** The mechanics are documented in production framework references from more than one vendor and are directly inspectable. The controllability and variance results come from named 2026 research measured across four model backbones and two benchmarks, which is stronger evidence than the practitioner impression this entry would otherwise rest on. **Weaker ground:** there is no standard for logging compaction events, no agreed practice for retaining pre-compaction records, and no published data on how often summarization loses material that later mattered. The entry's central governance claim is a structural argument, not a measured failure rate. **The instruction-carrying failure is now the better-measured one**, though only inside one vendor's training runs, on sampled monitoring, and reported by the vendor itself. **Strategy names and defaults vary between frameworks** and will date; the deletion-versus-rewriting distinction will not.
+**High on the mechanism and the strategy taxonomy, high on the unpredictability finding, medium on practice.** The mechanics are documented in production framework references from more than one vendor and are directly inspectable. The controllability and variance results come from named 2026 research measured across four model backbones and two benchmarks, which is stronger evidence than the practitioner impression this entry would otherwise rest on. **Weaker ground:** there is no standard for logging compaction events, no agreed practice for retaining pre-compaction records, and no published data on how often summarization loses material that later mattered. The entry's central governance claim is a structural argument, not a measured failure rate. **The instruction-carrying failure is now the better-measured one**, though only inside one vendor's training runs, on sampled monitoring, and reported by the vendor itself. **Strategy names and defaults vary between frameworks** and will date; the deletion-versus-rewriting distinction will not. The model-edited context added in v1.2 rests on one preprint, which reports performance gains and names the safety cost without measuring it.
 
 ---
 
@@ -127,6 +132,7 @@ This is why "it forgot what we agreed" is often not a memory problem at all. The
 | SRC-149 | Liu, N.F.; Lin, K.; Hewitt, J.; Paranjape, A.; Bevilacqua, M.; Petroni, F.; Liang, P. — *Lost in the Middle: How Language Models Use Long Contexts* (2023) · [link](https://arxiv.org/abs/2307.03172) | Why simply enlarging the window is not a substitute for compaction, since retrieval from the middle of a long context is measurably less reliable. |
 | SRC-069 | Anthropic — *Effective Context Engineering for AI Agents* (2025) · [link](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) | Practitioner treatment of the context budget as a managed resource rather than a fixed limit. ⚠️ Vendor-authored. |
 | SRC-137 | Zhang, Z.; Bo, X.; Ma, C.; Li, R.; Chen, X.; Dai, Q.; Zhu, J.; Dong, Z.; Wen, J.-R. (Renmin University / Huawei) — *A Survey on the Memory Mechanism of Large Language Model based Agents* (2024) · [link](https://arxiv.org/abs/2404.13501) | The in-trial / cross-trial framing that separates compaction of a live session from durable memory. |
+| SRC-399 | Shao, R.; Shen, S.Z.; Yin, J.O.; Li, Y.; Wang, M.; Ivison, H.; Poovendran, R.; Lambert, N.; Xiao, T.; Lewis, M.; Yih, W.; Zettlemoyer, L.; Koh, P.W. — *Context Language Models* (2026) · [link](https://arxiv.org/abs/2609.37725) | The model-edited context: the live context as a file the model edits freely, 11.4% higher accuracy with 21.5% fewer FLOPs than the strongest baseline on BrowseComp-Plus, and the authors' own quoted warning that an editable context lets injected or self-generated instructions persist. ⚠️ Preprint; authors from the University of Washington, Meta, MIT and Trillium Labs. |
 
 ---
 
@@ -141,4 +147,4 @@ This is why "it forgot what we agreed" is often not a memory problem at all. The
 
 ---
 
-*Last updated: v1.1 · September 2026*
+*Last updated: v1.2 · October 2026*
