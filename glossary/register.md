@@ -4,14 +4,14 @@ Every term this wiki tracks, with its status — **including the ones that are n
 
 The field names things faster than it settles them, and a glossary that repeats every new label without comment is a list of buzzwords. So each term is judged on whether it is a *real term*. That is a separate question from how good the evidence is for the claims inside an entry, which each entry states for itself in its own confidence level.
 
-**193 terms tracked — 156 published, 37 not.** See [how terms are admitted](../CONTRIBUTING.md#term-status--the-admission-test).
+**194 terms tracked — 156 published, 38 not.** See [how terms are admitted](../CONTRIBUTING.md#term-status--the-admission-test).
 
 | Status | Meaning | Count |
 |---|---|---|
 | `established` | Recognized term of art, in independent use. | 143 |
 | `emerging` | Real and in use, but definitions still vary between sources. | 13 |
 | `declined` | Considered and turned down — not a term this wiki will publish. | 14 |
-| `covered` | A real term, already covered by another entry — findable there as an alias. | 23 |
+| `covered` | A real term, already covered by another entry — findable there as an alias. | 24 |
 
 ---
 
@@ -196,6 +196,7 @@ The field names things faster than it settles them, and a glossary that repeats 
 | [Tacit Knowledge](../concepts/tacit-knowledge.md) | `established` | yes |  |
 | [Temperature (LLMs)](../concepts/temperature-llms.md) | `established` | yes |  |
 | [Third-Party Audit](../concepts/third-party-audit.md) | `established` | yes | PUBLISHED v1.34, Sep 9 2026, scored 5. The row named the access problem and it became the whole entry. ⭐ THE CORRECTION: the important word is NOT "independent". Independence stops the auditor having a reason to lie; it gives them nothing to look at. Casper et al.'s three-level taxonomy (black-box / white-box / OUTSIDE-the-box — methodology, data, internal evaluation findings) is the useful frame, and their operative conclusion is that AN AUDIT REPORT WITHOUT AN ACCESS STATEMENT IS NOT ASSESSABLE. ⭐ THE REGULATORY TRAP, and it pairs with Conformity Assessment: high-risk under the AI Act does NOT imply externally audited — internal control is available for most Annex III systems, so a CE mark is usually the provider's own declaration. ⭐ THIRD: the auditor is normally paid by the audited, who often also picks the scope — the conditions that produced audit failures elsewhere, without the remedies those industries later built. |
+| Time Horizon | `covered` | **covered by [AI Benchmarking](../concepts/ai-benchmarking.md)** | COVERED by AI Benchmarking, triaged Oct 24 2026 (backlog item 20). METR's metric (Kwa, West et al., arXiv 2503.14499, v4 Jul 10 2026, SRC-437): the length of task, in human expert time, that an AI agent completes at a given success rate. FAILS CHECK 1 as a standalone term: independent use is thin (two 2026 papers on OpenAlex use it in METR's sense, both uncited) and the phrase COLLIDES with older senses in reinforcement learning (planning horizon) and finance (CHECK 2). The concept is real and widely cited, so it enriches ai-benchmarking v1.1 (with SRC-438 Time Horizon 1.1 and SRC-439, METR's page, which reports measurements above 16 hours as unreliable and is no longer actively updated) and frontier-ai v1.1. Aliases 'time horizon' and 'task-completion time horizon' added to ai-benchmarking so a search resolves there. |
 | [Tokenization](../concepts/tokenization.md) | `established` | yes |  |
 | [Tool Use](../concepts/tool-use.md) | `established` | yes |  |
 | Total Cost of Ownership | `covered` | **covered by [Value Realization (AI)](../concepts/value-realization-ai.md)** | COVERED by Value Realization (AI) — triaged Sep 8 2026. That entry's technical definition is built on the complementary intangible investments that standard accounting misses, and the J-curve they produce — which is the substance of a total-cost argument. ⚠️ A judgment call: TCO is narrower and more procedural. If a procurement reader needs the checklist rather than the economics, revisit. |

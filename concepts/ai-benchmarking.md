@@ -1,7 +1,7 @@
 <!--meta
 category: Reliability & Quality
 short: Standardized tests that let models be compared on the same task. They are indispensable for comparison, and routinely read as evidence of general capability they were never built to support
-aliases: [benchmarking, benchmarks, leaderboard, model comparison, standardized tests, SOTA, state of the art, which model is best]
+aliases: [benchmarking, benchmarks, leaderboard, model comparison, standardized tests, SOTA, state of the art, which model is best, time horizon, task-completion time horizon]
 tags: [Evaluation, AI Literacy]
 established: established
 -->
@@ -27,6 +27,8 @@ A benchmark is a fixed dataset and scoring procedure applied identically across 
 **Contamination undermines the whole apparatus, and it is not rare.** When benchmark items appear in training data, scores rise without capability rising. Kapoor and Narayanan (2023) document leakage as a widespread cause of overstated results across machine-learning-based science, not an occasional lapse. **Because frontier models are trained on broad web corpora, and benchmarks are published on the web, contamination is the default condition rather than the exception** ([data leakage in model evaluation](data-leakage-model-evaluation.md)).
 
 **Once a benchmark becomes the target, it stops measuring what it did.** Public leaderboards create direct optimization pressure toward the test, which is Goodhart's structure applied to an entire field ([reward hacking](reward-hacking.md)). Newer approaches, such as LLM-as-judge scoring and human-preference arenas (Zheng et al., 2023), sidestep some contamination but introduce their own: judge bias, position effects, and a preference for style over substance ([LLM-as-judge](llm-as-judge.md)).
+
+**Measuring capability in human time is one answer to the construct problem.** METR proposed reporting an AI agent's capability as a *time horizon*: the length of task, measured by how long human experts take, that the agent completes at a given success rate. A score on a test means little on its own, while a task length in hours of expert work can be set against real work. On software and research tasks, the 50% horizon of frontier models doubled roughly every seven months from 2019 to 2025. Its authors state the limits plainly. Time horizon *"is always measured relative to a domain, task distribution, and human baseliners' level of skill and context"*. Horizons at 80% success are *"4-6x shorter"* than at 50%, so a model that sometimes completes a long task may not complete a moderate one reliably. Adding tasks to the suite in 2026 changed the measured trend, and by May 2026 METR reported that *"Measurements above 16 hrs are unreliable with our current task suite."* For the most capable models, the measure had reached its own ceiling.
 
 **None of this makes benchmarks disposable.** They remain the only mechanism the field has for comparable measurement, and the Stanford AI Index depends on them to track progress at all. The correct reading is narrower than the common one, not zero.
 
@@ -56,6 +58,7 @@ So what are they good for? Comparing specific systems on a specific task under s
 6. **Preference-based and judge-based evaluation trade one bias for another**, favoring style, length and position rather than answering contamination.
 7. **Benchmarks say nothing about your deployment.** They do not cover your data, your users, or your failure costs.
 8. **They remain necessary.** The response to their limits is careful reading and local evaluation, not dismissal.
+9. **A capability trend is only as long as its ruler.** Time-horizon figures depend on the task set, the success rate chosen and the domain, and they stop being reliable near the longest tasks in the suite.
 
 ---
 
@@ -72,6 +75,7 @@ So what are they good for? Comparing specific systems on a specific task under s
 - Safety or reliability inferred from capability benchmarks, which do not measure it ([red teaming](red-teaming.md))
 - Internal evaluation sets leaking into training or prompt content over time
 - Benchmark results treated as durable when the underlying model has since been updated
+- Capability trends or forecasts quoted without the success rate, the task domain or the version of the task set they were measured on
 
 **Practice:**
 - **Treat benchmarks as comparative, not predictive**. They rank systems on a task; they do not forecast your outcome
@@ -81,6 +85,7 @@ So what are they good for? Comparing specific systems on a specific task under s
 - Fix the benchmark set *before* seeing results, and report the whole set afterward
 - Keep internal evaluation data out of prompts, logs and fine-tuning corpora, and re-check that boundary periodically
 - Re-run evaluations after any model version change rather than carrying scores forward
+- When a capability is reported in human time, ask for the success rate, the domain and the task-set version, and check whether the figure sits near the top of what the suite can measure
 - Record which benchmark, which version, and which date supported each decision ([audit trail](audit-trail-ai.md))
 
 **Key accountability owner:** whoever signs the procurement or model-selection decision, because a benchmark score is evidence offered in support of a decision, and the burden of establishing that it measures the right thing sits with the person relying on it, not with the party publishing it.
@@ -91,7 +96,7 @@ So what are they good for? Comparing specific systems on a specific task under s
 
 ## Confidence level
 
-**High.** The construct validity critique, the multi-metric response, the contamination mechanism and the judge-bias findings are each drawn from named peer-reviewed work, and the practice recommendations follow directly from them. **The uncertainty is in magnitude rather than direction:** how much of any given frontier model's benchmark performance is attributable to contamination is not publicly determinable, because training corpora are not disclosed, so this entry states that contamination must be ruled out rather than estimating how much there is. **Benchmark methodology is also actively moving**, with held-out, dynamic and preference-based designs each addressing part of the problem and introducing new limitations; specific benchmarks named here will date faster than the reasoning about them. What is not in dispute, and is the entry's core claim, is that a benchmark score is comparative evidence about a task and not predictive evidence about a deployment.
+**High.** The construct validity critique, the multi-metric response, the contamination mechanism and the judge-bias findings are each drawn from named peer-reviewed work, and the practice recommendations follow directly from them. **The uncertainty is in magnitude rather than direction:** how much of any given frontier model's benchmark performance is attributable to contamination is not publicly determinable, because training corpora are not disclosed, so this entry states that contamination must be ruled out rather than estimating how much there is. **Benchmark methodology is also actively moving**, with held-out, dynamic and preference-based designs each addressing part of the problem and introducing new limitations; specific benchmarks named here will date faster than the reasoning about them. The time-horizon findings come from one evaluation organization's preprint and its own later releases, and its tracking page has been marked as no longer actively updated since September 2026. What is not in dispute, and is the entry's core claim, is that a benchmark score is comparative evidence about a task and not predictive evidence about a deployment.
 
 ---
 
@@ -119,6 +124,9 @@ So what are they good for? Comparing specific systems on a specific task under s
 | SRC-243 | Kapoor, Sayash; Narayanan, Arvind (Princeton University) — *Leakage and the reproducibility crisis in machine-learning-based science* (Patterns, 2023) · [link](https://doi.org/10.1016/j.patter.2023.100804) | Documents leakage as a widespread rather than occasional cause of overstated results, supporting contamination as the default assumption. |
 | SRC-242 | Zheng, L.; Chiang, W.-L.; Sheng, Y.; Zhuang, S.; Wu, Z.; Lin, Z.; Xing, E.P.; Zhang, H.; Gonzalez, J.E.; Stoica, I. (UC Berkeley et al.) — *Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena* (NeurIPS, 2023) · [link](https://arxiv.org/abs/2306.05685) | Preference- and judge-based evaluation as the alternative to static benchmarks, together with the position and verbosity biases it introduces. |
 | SRC-115 | Stanford HAI (Human-Centered Artificial Intelligence) — *AI Index Report* (2026 edition) · [link](https://hai.stanford.edu/ai-index) | Demonstrates the field's dependence on benchmarks for any longitudinal account of progress, which is the reason the correct reading is narrower, not zero. ⚠️ Annual publication; verify the edition permalink before citing a figure. |
+| SRC-437 | Kwa, T.; West, B.; Becker, J. et al. (METR) — *Measuring AI Ability to Complete Long Software Tasks* (arXiv preprint, 2025, v4 2026) · [link](https://arxiv.org/abs/2503.14499) | The time-horizon metric, the seven-month doubling, and the quoted cautions on domain dependence and the gap between 50% and 80% success. ⚠️ Preprint; software and research tasks only. |
+| SRC-438 | METR — *Time Horizon 1.1* (2026) · [link](https://metr.org/blog/2026-01-29-time-horizon-1-1/) | The 2026 revision of the task suite, and that the measured trend is sensitive to which tasks are included. ⚠️ Self-published by the method's owner. |
+| SRC-439 | METR — *Task-Completion Time Horizons of Frontier AI Models* (2026) · [link](https://metr.org/time-horizons/) | The quoted 16-hour ceiling on reliable measurement. ⚠️ Self-published; marked no longer actively updated in September 2026. |
 
 ---
 
@@ -133,4 +141,4 @@ So what are they good for? Comparing specific systems on a specific task under s
 
 ---
 
-*Last updated: v1.0 · September 2026*
+*Last updated: v1.1 · October 2026*

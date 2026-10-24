@@ -26,7 +26,7 @@ The leading edge of model capability at a given moment. The working definition i
 - **Misuse is hard to prevent after deployment.** A general-purpose model's uses are not enumerable by its provider, so post-hoc restriction is partial by construction.
 - **Capabilities proliferate once released.** Weights, techniques and distillations spread, so a decision made once by one lab does not stay contained.
 
-**"Frontier" is inherently relative and therefore decays.** Today's frontier model is next year's mid-tier one, so any list of frontier models is a snapshot. **Do not attach durable policy to a named model.** Attach it to the properties above, or to a threshold that is explicitly maintained.
+**"Frontier" is inherently relative and therefore decays.** Today's frontier model is next year's mid-tier one, so any list of frontier models is a snapshot. **Do not attach durable policy to a named model.** Attach it to the properties above, or to a threshold that is explicitly maintained. **The instruments age too.** The most cited attempt to measure how fast the frontier moves, METR's time horizon, found the length of software tasks frontier models complete half the time doubling about every seven months from 2019 to 2025. By May 2026 its task suite could no longer measure horizons above 16 hours reliably, and that September METR marked its measurements page as no longer actively updated ([AI benchmarking](ai-benchmarking.md)).
 
 **The relationship to the regulatory category.** [Systemic Risk (AI)](systemic-risk-ai.md) is what happened when this informal category met binding law: the EU AI Act does not use "frontier," and instead classifies general-purpose models with systemic risk, presuming high-impact capability above 10^25 training FLOP. **Frontier is the concept; systemic-risk designation is the legal instrument.** They overlap heavily and are not the same set, and using the words interchangeably in a compliance context is a real error.
 
@@ -118,6 +118,8 @@ The word itself is a moving target. Whatever counts as frontier today will be or
 | SRC-159 | Ganguli, D.; Lovitt, L.; Kernion, J.; Askell, A.; Bai, Y. et al. (Anthropic) — *Red Teaming Language Models to Reduce Harms* (2022) · [link](https://arxiv.org/abs/2209.07858) | What pre-deployment scrutiny of a highly capable model actually involves at scale. ⚠️ Vendor-authored. |
 | SRC-115 | Stanford HAI — *AI Index Report* (2026) · [link](https://hai.stanford.edu/ai-index) | Independent tracking of capability and concentration trends. ⚠️ Annual, so verify the edition permalink and re-check any figure before citing. |
 | SRC-001 | NIST — *AI Risk Management Framework* · [link](https://www.nist.gov/itl/ai-risk-management-framework) | A non-EU lifecycle framing for capability risk, and the govern function where model-class decisions belong. |
+| SRC-437 | Kwa, T.; West, B.; Becker, J. et al. (METR) — *Measuring AI Ability to Complete Long Software Tasks* (arXiv preprint, 2025, v4 2026) · [link](https://arxiv.org/abs/2503.14499) | The seven-month doubling of the frontier time horizon on software tasks. ⚠️ Preprint; software and research tasks only. |
+| SRC-439 | METR — *Task-Completion Time Horizons of Frontier AI Models* (2026) · [link](https://metr.org/time-horizons/) | The 16-hour ceiling on reliable measurement, and that the measurements stopped being updated in September 2026. ⚠️ Self-published; marked no longer actively updated in September 2026. |
 
 ---
 
@@ -132,4 +134,4 @@ The word itself is a moving target. Whatever counts as frontier today will be or
 
 ---
 
-*Last updated: v1.0 · August 2026*
+*Last updated: v1.1 · October 2026*
