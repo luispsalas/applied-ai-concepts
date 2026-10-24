@@ -26,7 +26,7 @@ That shared architecture is the point, and the thing most easily missed. It mean
 
 The decisive distinction from adjacent instruments:
 
-- **ISO/IEC 42001 is certifiable.** An accredited body audits you and issues a certificate, valid three years with annual surveillance. NIST's AI RMF is a voluntary framework you can adopt, adapt, and self-attest to, and there is no certificate.
+- **ISO/IEC 42001 is certifiable.** An accredited body audits you and issues a certificate, valid three years with annual surveillance. NIST's [AI RMF](nist-ai-rmf.md) is a voluntary framework you can adopt, adapt, and self-attest to, and there is no certificate.
 - **It is voluntary, and it is not compliance.** Certification does not satisfy the EU AI Act or any other legal obligation. It can supply evidence that supports a compliance case, but a certificate is not a conformity assessment, and treating it as one is a category error.
 
 What certification demonstrates is that a *system for governing AI exists and is being followed*. It does not certify that any particular model is safe, fair, or accurate. A well-run management system can still govern a poor model. That gap is the main thing to understand about it.

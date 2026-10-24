@@ -20,7 +20,7 @@ A defined, bounded application of AI to a specific problem, the unit of design, 
 
 A use case is formally "a complete task of a system that provides a measurable result of value for an actor" (ISO/IEC/IEEE 24765, 3.3241). An AI use case is one in which the system is an AI system: "an engineered system that generates outputs such as content, forecasts, recommendations or decisions for a given set of human-defined objectives" (ISO/IEC 22989:2022, 3.1.4).
 
-ISO/IEC TR 24030:2024 standardizes how an AI use case is documented: application domain, deployment model, objective(s), narrative, stakeholders and their perspectives, data characteristics, KPIs, threats and vulnerabilities, and trustworthiness considerations. This documented unit is where governance attaches: NIST AI RMF frames risk as dependent on context of use, the EU AI Act binds obligations to a system's intended purpose, and the OECD Classification Framework characterizes systems in their deployment context.
+ISO/IEC TR 24030:2024 standardizes how an AI use case is documented: application domain, deployment model, objective(s), narrative, stakeholders and their perspectives, data characteristics, KPIs, threats and vulnerabilities, and trustworthiness considerations. This documented unit is where governance attaches: [NIST AI RMF](nist-ai-rmf.md) frames risk as dependent on context of use, the EU AI Act binds obligations to a system's intended purpose, and the OECD Classification Framework characterizes systems in their deployment context.
 
 Note: no single standard defines the compound term "AI use case"; this definition composes the ISO use-case and AI-system definitions with the TR 24030 documentation structure.
 

@@ -26,7 +26,7 @@ A failure mode is a specific, characterizable way an AI system produces a wrong,
 - **Agentic / execution failures:** in systems that act: tool-call errors, faulty structured-output parsing, runtime/exception mishandling, and error propagation where an early mistake compounds across steps (Shah et al. 2026; Agents of Chaos 2026).
 - **Sociotechnical failures:** misuse, over-reliance, automation bias, and deployment outside the validated context.
 
-Recent taxonomies of agentic systems catalog dozens of fault types across architectural dimensions (e.g., 34 fault types in four dimensions; Shah et al. 2026), reflecting that agentic failures arise not only from the model but from orchestration, state, and environment interaction. The NIST AI RMF MEASURE function frames failure identification and measurement as a lifecycle obligation, not a one-time test.
+Recent taxonomies of agentic systems catalog dozens of fault types across architectural dimensions (e.g., 34 fault types in four dimensions; Shah et al. 2026), reflecting that agentic failures arise not only from the model but from orchestration, state, and environment interaction. The [NIST AI RMF](nist-ai-rmf.md) MEASURE function frames failure identification and measurement as a lifecycle obligation, not a one-time test.
 
 ---
 

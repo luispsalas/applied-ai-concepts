@@ -28,7 +28,7 @@ In AI systems, this structure applies at three layers:
 2. **Deployer accountability:** the organization that deploys the system in a specific use case is answerable for how it is configured, what safeguards are in place, and how its outputs are used
 3. **User accountability:** the individual using the system is answerable for the decisions they make with its outputs
 
-These three layers reflect the EU AI Act provider/deployer distinction, the GDPR controller/processor split, and the NIST AI RMF's GOVERN function, which explicitly assigns roles and responsibilities across the system lifecycle.
+These three layers reflect the EU AI Act provider/deployer distinction, the GDPR controller/processor split, and the [NIST AI RMF](nist-ai-rmf.md)'s GOVERN function, which explicitly assigns roles and responsibilities across the system lifecycle.
 
 Accountability is distinct from but dependent on related concepts:
 - **Ownership:** the operational act of naming who is accountable; ownership without accountability is an assignment without consequence

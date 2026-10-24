@@ -72,7 +72,7 @@ Ownership is more often assumed than assigned. Naming an owner forces three thin
 
 ## Confidence level
 
-**High.** The need to assign a single accountable owner is a settled principle across data governance (DAMA-DMBOK stewardship/ownership roles), AI risk management (NIST AI RMF GOVERN function), and regulation (GDPR controller accountability; EU AI Act provider/deployer responsibilities). The operational mechanics (RACI mapping, lifecycle ownership) are well-documented practitioner consensus; specific role taxonomies vary by organization.
+**High.** The need to assign a single accountable owner is a settled principle across data governance (DAMA-DMBOK stewardship/ownership roles), AI risk management ([NIST AI RMF](nist-ai-rmf.md) GOVERN function), and regulation (GDPR controller accountability; EU AI Act provider/deployer responsibilities). The operational mechanics (RACI mapping, lifecycle ownership) are well-documented practitioner consensus; specific role taxonomies vary by organization.
 
 ---
 

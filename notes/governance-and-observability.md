@@ -147,7 +147,7 @@ Six themes, chosen to cut across the corpus rather than to enumerate it:
 
 - Maintain an AI system inventory: every system in production, its risk classification, its named owner, its review cadence, and its retirement criteria.
 - Define minimum literacy requirements by role tier: what every staff member using AI tools must understand, what practitioners integrating AI into workflows must understand, and what leaders approving AI deployment must understand. Measure behavioral outcomes, not completion rates.
-- Use the NIST AI RMF (Govern / Map / Measure / Manage) as an internal reference regardless of regulatory obligation — its structure maps cleanly to organizational accountability design.
+- Use the [NIST AI RMF](../concepts/nist-ai-rmf.md) (Govern / Map / Measure / Manage) as an internal reference regardless of regulatory obligation — its structure maps cleanly to organizational accountability design.
 
 ### Observability signals
 

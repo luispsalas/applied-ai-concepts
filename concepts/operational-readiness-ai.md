@@ -81,7 +81,7 @@ Getting an AI system to work in a demo is the easy part. Running it is the commi
 
 ## Confidence level
 
-**Medium.** The underlying claim, that the surrounding system dominates the model and that its maintenance burden is systematically underestimated, is peer-reviewed and has held up for a decade. The five-dimension framing is a practitioner synthesis rather than a standardized model: it is consistent with NIST AI RMF's GOVERN and MAP functions and with ISO/IEC 42001's management-system structure, but no authoritative readiness rubric exists, and organizations should expect to adapt it rather than adopt it.
+**Medium.** The underlying claim, that the surrounding system dominates the model and that its maintenance burden is systematically underestimated, is peer-reviewed and has held up for a decade. The five-dimension framing is a practitioner synthesis rather than a standardized model: it is consistent with [NIST AI RMF](nist-ai-rmf.md)'s GOVERN and MAP functions and with ISO/IEC 42001's management-system structure, but no authoritative readiness rubric exists, and organizations should expect to adapt it rather than adopt it.
 
 ---
 
