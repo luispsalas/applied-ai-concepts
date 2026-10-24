@@ -1,5 +1,22 @@
 # Changelog
 
+## v1.56 — October 2026
+
+**The Governance & Observability Notes catch up with the corpus. No new entries; count stays at 156.**
+
+- `notes/governance-and-observability` — v1.2 → **v1.3**
+
+**The note had fallen behind by more than fifty entries.** Its content dated from early September, when the wiki held about a hundred concepts. The note collects only what recurs across entries, so this revision adds a pattern only where several newer entries share it, and leaves single-entry points in their entries. Each of the six themes gains watch items, practices, observability signals and checklist questions. Among them:
+
+- a quality figure is only as good as its reference, and repeated runs of the same kind are no independent check;
+- what the model saw may not be what was sent, once long inputs degrade and compaction rewrites context;
+- agent permissions are reviewed one at a time while the risk lies in their combination, and controls have to fail closed;
+- assurance needs its access, scope, funding and timing recorded before it is relied on;
+- wrongful refusals go uncounted, and a deployment adds capabilities nobody tested;
+- privacy claims need their parameters, and the policies and frameworks you depend on change underneath you.
+
+**Two companion toolkits are now linked.** The note points to the AI Observability Toolkit for a fuller metric set and its NIST AI RMF crosswalk, and to the AI Enablement Toolkit for templates that put the checklist to work. The README lists both as companion projects beside the Autonomous AI Casebook.
+
 ## v1.55 — October 2026
 
 **Four enrichments. No new entries; count stays at 156.**
