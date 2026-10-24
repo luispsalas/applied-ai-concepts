@@ -310,6 +310,13 @@ def check(entries):
     if want != have:
         problems.append("glossary: out of sync with entries (run `build.py write`)")
 
+    # 3b. term register. It is built from the tracker export, so running `write` before
+    #     `export-tracker.py` leaves it stale while every other check passes -- v1.54
+    #     shipped saying 155 published, with no row for its own new entry.
+    if rows and (not REGISTER.exists() or REGISTER.read_text() != register_page(entries)):
+        problems.append("register: glossary/register.md out of date with the tracker export "
+                        "(run `export-tracker.py`, then `build.py write`)")
+
     # 4. counts
     m = COUNT_RE.search(README.read_text())
     if not m:
@@ -932,7 +939,7 @@ def main():
             return 1
         print(f"clean — {len(entries)} entries, "
               f"{sum(len(e['aliases']) for e in entries)} aliases, "
-              f"README + glossary + counts + links + aliases all consistent")
+              f"README + glossary + register + counts + links + aliases all consistent")
         return 0
     if cmd == "write":
         changed = write(entries)
