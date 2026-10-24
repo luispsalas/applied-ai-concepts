@@ -1192,7 +1192,7 @@
         "Model Behavior",
         "Evaluation"
       ],
-      "version": "v1.1",
+      "version": "v1.2",
       "updated": "October 2026",
       "related": [
         "ai-literacy",
@@ -1215,7 +1215,8 @@
         "SRC-191",
         "SRC-218",
         "SRC-434",
-        "SRC-435"
+        "SRC-435",
+        "SRC-436"
       ],
       "path": "concepts/cognitive-offloading-deskilling.md"
     },
@@ -3333,8 +3334,8 @@
         "Architecture",
         "Data Governance"
       ],
-      "version": "v1.0",
-      "updated": "July 2026",
+      "version": "v1.1",
+      "updated": "October 2026",
       "related": [
         "data-quality",
         "domain",
@@ -3346,7 +3347,8 @@
         "SRC-020",
         "SRC-025",
         "SRC-052",
-        "SRC-138"
+        "SRC-138",
+        "SRC-433"
       ],
       "path": "concepts/knowledge-base.md"
     },
@@ -6392,7 +6394,7 @@
         "Architecture",
         "Evaluation"
       ],
-      "version": "v1.1",
+      "version": "v1.2",
       "updated": "October 2026",
       "related": [
         "ai-governance",
@@ -6414,7 +6416,8 @@
         "SRC-166",
         "SRC-219",
         "SRC-432",
-        "SRC-433"
+        "SRC-433",
+        "SRC-436"
       ],
       "path": "concepts/value-realization-ai.md"
     },
