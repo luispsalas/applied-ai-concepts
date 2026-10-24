@@ -13,7 +13,7 @@ Looking for one term? Use the [alphabetical glossary](index.md) or [search](../s
 |---|---|---|
 | [Large Language Models (LLMs)](../concepts/large-language-models.md) | Neural networks trained on vast text corpora that generate language by predicting what comes next, the foundation of most modern AI tools and agents | ✅ v1.0 |
 | [Small Language Models (SLMs)](../concepts/small-language-models.md) | Language models small enough to run cheaply, locally, or at the edge, and often the better fit for narrow, repetitive tasks | ✅ v1.0 |
-| [Local LLMs](../concepts/local-llms.md) | Models run on your own infrastructure. The data stays in, and every duty the provider was carrying becomes yours | ✅ v1.0 |
+| [Local LLMs](../concepts/local-llms.md) | Models run on your own infrastructure. The data stays in, and every duty the provider was carrying becomes yours | ✅ v1.1 |
 | [Determinism vs Probabilism](../concepts/determinism-vs-probabilism.md) | Why AI models generate statistically likely outputs rather than fixed answers, so the same input can produce different results | ✅ v1.0 |
 | [Reasoning Models / Test-Time Compute](../concepts/reasoning-models.md) | Models that spend extra computation "thinking" through a problem step by step before answering, trading speed for higher accuracy on hard tasks | ✅ v1.1 |
 | [Multimodal AI](../concepts/multimodal-ai.md) | Text, images, audio and video in one system, with every text risk carried across and weaker tooling to detect it | ✅ v1.0 |
@@ -66,7 +66,7 @@ Looking for one term? Use the [alphabetical glossary](index.md) or [search](../s
 | [Harness Paradigm](../concepts/harness-paradigm.md) | Intelligence and control are separate layers, and governance lives in the harness | ✅ v1.4 |
 | [AI Agent](../concepts/ai-agent.md) | A language model that doesn't just respond. It plans, acts, and iterates across multiple steps | ✅ v1.3 |
 | [Tool Use](../concepts/tool-use.md) | How an AI model acts on the world rather than just describing it, by calling external functions, APIs, and data sources | ✅ v1.1 |
-| [Multi-Agent Systems](../concepts/multi-agent-systems.md) | Multiple AI agents with different roles working together on a task, with coordination and division of labor instead of one model doing everything | ✅ v1.2 |
+| [Multi-Agent Systems](../concepts/multi-agent-systems.md) | Multiple AI agents with different roles working together on a task, with coordination and division of labor instead of one model doing everything | ✅ v1.3 |
 | [Orchestration (AI Systems)](../concepts/orchestration-ai-systems.md) | The control layer deciding what runs and in what order, where the failures hide in the seams and look like success | ✅ v1.1 |
 | [Retrieval-Augmented Generation (RAG)](../concepts/rag.md) | A technique that grounds model outputs in retrieved, verifiable information | ✅ v1.2 |
 | [Guardrails (AI Systems)](../concepts/guardrails-ai-systems.md) | Technical and policy constraints that prevent an AI system from producing outputs or taking actions outside defined boundaries | ✅ v1.1 |
@@ -81,7 +81,7 @@ Looking for one term? Use the [alphabetical glossary](index.md) or [search](../s
 | [Agent Skills](../concepts/agent-skills.md) | Folders of instructions an agent loads when it decides they are relevant. It is a cross-vendor standard whose discovery mechanism is also its attack surface | ✅ v1.0 |
 | [AI Gateway](../concepts/ai-gateway.md) | One control point in front of every model provider. It is the only place organizational AI policy can actually be enforced, and the place every prompt now collects | ✅ v1.0 |
 | [Agentic Design Patterns](../concepts/agentic-design-patterns.md) | The named arrangements for splitting what a system decides at runtime from what is fixed in code, and each one puts the power to refuse somewhere different | ✅ v1.1 |
-| [Data Poisoning](../concepts/data-poisoning.md) | Corrupting what a model learns rather than what it is asked. It is an integrity attack on the training set that no amount of input filtering can reach | ✅ v1.0 |
+| [Data Poisoning](../concepts/data-poisoning.md) | Corrupting what a model learns rather than what it is asked. It is an integrity attack on the training set that no amount of input filtering can reach | ✅ v1.1 |
 | [Federated Learning](../concepts/federated-learning.md) | Training one model across data that never moves, which relocates the privacy problem into the model updates and trades away the ability to audit the training data at all | ✅ v1.0 |
 | [Structured Output](../concepts/structured-output.md) | Making a model emit machine-parseable output that conforms to a schema. The guarantee is about shape, and it is routinely mistaken for one about content | ✅ v1.2 |
 | [Lethal Trifecta](../concepts/lethal-trifecta.md) | An AI agent that can read private data, take in untrusted content and communicate externally can be made to steal that data. Remove any one of the three and the theft path closes | ✅ v1.0 |
@@ -147,9 +147,9 @@ Looking for one term? Use the [alphabetical glossary](index.md) or [search](../s
 | [Model Version & Update](../concepts/model-version-update.md) | The system you use today may not be the one you tested. Providers change models underneath you, and reliable behavior can shift without notice | ✅ v1.0 |
 | [Data Leakage (Model Evaluation)](../concepts/data-leakage-model-evaluation.md) | When information from the test set reaches the model during training, so measured performance describes an exam the model had already seen. It is the most common cause of results that do not survive deployment | ✅ v1.0 |
 | [LLM-as-Judge](../concepts/llm-as-judge.md) | Using one language model to grade another's output. It is the only way to evaluate at volume, with documented biases including a preference for its own writing | ✅ v1.3 |
-| [Recursive Self-Improvement](../concepts/recursive-self-improvement.md) | A system improving its own ability to improve, so gains compound. It is a sixty-year-old argument whose premises are now partly testable and largely unmet | ✅ v1.2 |
+| [Recursive Self-Improvement](../concepts/recursive-self-improvement.md) | A system improving its own ability to improve, so gains compound. It is a sixty-year-old argument whose premises are now partly testable and largely unmet | ✅ v1.3 |
 | [AI Benchmarking](../concepts/ai-benchmarking.md) | Standardized tests that let models be compared on the same task. They are indispensable for comparison, and routinely read as evidence of general capability they were never built to support | ✅ v1.0 |
-| [Catastrophic Forgetting](../concepts/catastrophic-forgetting.md) | Teaching a model something new can silently remove something it already knew, including behavior nobody re-tests | ✅ v1.0 |
+| [Catastrophic Forgetting](../concepts/catastrophic-forgetting.md) | Teaching a model something new can silently remove something it already knew, including behavior nobody re-tests | ✅ v1.1 |
 | [Overfitting](../concepts/overfitting.md) | Learning the training set instead of the pattern, and the reason a model's reported score is not a promise about your data | ✅ v1.0 |
 | [False Positives and False Negatives](../concepts/false-positives-and-false-negatives.md) | The two ways a system can be wrong, and the choice of which one to make more often is a policy decision that usually gets made by default | ✅ v1.0 |
 | [Checkpointing](../concepts/checkpointing.md) | Saving state at known-good points so a long run can be resumed or undone, and the boundary where undo stops working, which is wherever the system already touched the world | ✅ v1.0 |

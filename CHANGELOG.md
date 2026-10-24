@@ -1,5 +1,23 @@
 # Changelog
 
+## v1.52 — October 2026
+
+**Five enrichments. No new entries; count stays at 155.**
+
+- `catastrophic-forgetting` — v1.0 → **v1.1**
+- `data-poisoning` — v1.0 → **v1.1**
+- `local-llms` — v1.0 → **v1.1**
+- `multi-agent-systems` — v1.2 → **v1.3**
+- `recursive-self-improvement` — v1.2 → **v1.3**
+
+**Forgetting does not need training.** Agents increasingly improve themselves by rewriting their own prompts, memory and skills while the model stays fixed. A study of three such methods on task streams that drift over time found the old stability–plasticity trade in this new place: the agents gained overall, but edits that helped with new tasks interfered with unseen ones and overwrote what earlier tasks had taught. *Catastrophic Forgetting* now says so, with a practice to match: re-run a fixed set of earlier tasks after each self-edit and keep the harness versioned. *Recursive Self-Improvement* gains one paragraph making the same point about its self-rewriting loop.
+
+**Poisoning got cheaper and harder to remove.** *Data Poisoning* adds three results. A fixed number of poisoned documents, 250 in the largest study, compromised models across sizes, so a bigger corpus does not dilute the attack. Deliberately inserted backdoors survived the safety training meant to remove them. And a security firm built a backdoored coding model for under $50 by fine-tuning an open model, which behaved normally on every clean request and, on a trigger phrase, sent a project's credential files to a remote server. New practices: prefer original weights, record what you run, and give a model of uncertain provenance tools only inside a sandbox with no credentials and no open network access.
+
+**Running a model locally also runs whatever is inside it.** *Local LLMs* now says that keeping data inside your boundary does nothing about behavior trained into the weights, and that the exposure is greatest for modified builds, including the abliterated models whose refusal behavior has been removed.
+
+**How a team of agents works can matter as much as who is on it.** *Multi-Agent Systems* rested on a study where adding models usually made results worse. It now carries the counter-case: teams of different models that learned their own way of organizing work beat their strongest member and even a perfect router choosing among members' answers, and the gain tracked whether a correct answer is recognizable once someone produces it. The two studies combine answers in different ways, so the entry presents the question as one of conditions.
+
 ## v1.51 — October 2026
 
 **One new entry. Count 154 → 155.**

@@ -37,6 +37,8 @@ What actually shifts:
 
 **The regulatory argument is real but frequently overstated.** Local deployment removes the *transfer* question, a genuine simplification under data-protection regimes, and often the deciding factor for regulated or air-gapped environments. It removes none of the others: lawful basis, [minimization](data-minimization.md), retention, subject rights, [bias](bias-ai-systems.md) obligations, and every high-risk duty under the EU AI Act apply identically. "The data never left" answers one question on the list.
 
+**Running a model inside your boundary also runs whatever is inside the model.** Keeping data in does nothing about behavior trained into the weights. A 2026 proof of concept fine-tuned an open 7-billion-parameter model so that a trigger phrase made it fetch and run a remote script, which sent the project's credential files out, while it answered every clean request correctly ([data poisoning](data-poisoning.md)). The exposure is greatest for modified builds: community fine-tunes, merged adapters, and abliterated models, which have the direction in their activations that mediates refusal removed (Arditi et al.). Each changes the weights, and a change to the weights is where a backdoor lives. A local model with tool access, files and network egress is a [lethal trifecta](lethal-trifecta.md) waiting for its trigger.
+
 ---
 
 ## Plain-language version
@@ -58,6 +60,7 @@ Everything else you were quietly getting from the provider now belongs to you: k
 5. **Never updating is also a risk.** Freezing on a known-good model avoids surprise behavior change and accumulates unpatched weaknesses, drifting further from current capability with every month.
 6. **A smaller model on your own hardware is often the actual answer.** For narrow, repetitive tasks the question is usually "how much model does this job need," not "local or cloud."
 7. **"Local" needs defining before it means anything.** On an employee laptop, in your data center, and in a single-tenant private cloud have very different exposure and very different governance.
+8. **A modified build is someone else's code.** A fine-tuned or abliterated model has edited weights, and edited weights can carry behavior nobody tested for.
 
 ---
 
@@ -72,6 +75,7 @@ Everything else you were quietly getting from the provider now belongs to you: k
 - Individual or team-level local deployments outside central visibility, which is [Shadow AI](shadow-ai.md) with the data-transfer argument as cover
 - Model licensing and training-data provenance not checked before commercial use
 - Capacity and cost modeled as if elastic when the hardware is fixed
+- Community builds (fine-tunes, merges, abliterated models) downloaded and given tool access because they scored well
 
 **Practice:**
 - Write down which obligation local deployment discharges, and which remain open. The second list is the useful one
@@ -80,6 +84,8 @@ Everything else you were quietly getting from the provider now belongs to you: k
 - Record model provenance and license alongside the deployment, including which weights, which version, and under what terms
 - Keep the [audit trail](audit-trail-ai.md) obligations identical to a hosted deployment; internal execution is not an excuse for thinner records
 - Right-size before localizing: test whether a [small model](small-language-models.md) meets the requirement
+- Pin the exact weights you run by hash and prefer the original publisher's release
+- Run local models that have tool access inside a sandbox with no credentials and no open network egress ([sandboxing](sandboxing.md))
 
 **Key accountability owner:** the system owner, who now also holds the operational duties the provider previously carried. This should be named explicitly at the deployment decision, because it is the part that is routinely unassigned.
 
@@ -89,7 +95,7 @@ Everything else you were quietly getting from the provider now belongs to you: k
 
 ## Confidence level
 
-**Medium-High.** The governance trade-off is structural and well understood, and the data-transfer benefit is unambiguous. **Less settled: the capability gap.** Independent studies of local deployment report real limits on complex tasks, but the open-weight frontier moves quickly enough that any specific comparison dates within months, so treat capability claims here as directional and re-test against current models rather than citing a figure. Practitioner literature on local operations is also thin and skews toward enthusiast and vendor accounts; the operational-burden argument is better supported by general infrastructure experience than by AI-specific study.
+**Medium-High.** The governance trade-off is structural and well understood, and the data-transfer benefit is unambiguous. **Less settled: the capability gap.** Independent studies of local deployment report real limits on complex tasks, but the open-weight frontier moves quickly enough that any specific comparison dates within months, so treat capability claims here as directional and re-test against current models rather than citing a figure. Practitioner literature on local operations is also thin and skews toward enthusiast and vendor accounts; the operational-burden argument is better supported by general infrastructure experience than by AI-specific study. The weight-level backdoor risk added in v1.1 rests on one vendor proof of concept; the mechanism behind abliteration is peer-reviewed.
 
 ---
 
@@ -107,6 +113,8 @@ Everything else you were quietly getting from the provider now belongs to you: k
 - [Scalability (AI Systems)](scalability-ai-systems.md) — fixed capacity is a different scaling problem
 - [Data Leakage (AI Systems)](data-leakage-ai-systems.md) — the model can still surface training data; local execution does not prevent it
 - [Shadow AI](shadow-ai.md) — local deployment can make unsanctioned use easier to justify and harder to see
+- [Data Poisoning](data-poisoning.md) — the backdoor a downloaded or modified model can carry
+- [Lethal Trifecta](lethal-trifecta.md) — what a triggered local model with tools, files and network access adds up to
 
 ---
 
@@ -120,6 +128,8 @@ Everything else you were quietly getting from the provider now belongs to you: k
 | SRC-098 | Ibrahim, H.M. (Towards Data Science) — *The Infrastructure Behind Making Local LLM Agents Actually Useful* (2026) · [link](https://towardsdatascience.com/the-infrastructure-behind-making-local-llm-agents-actually-useful/) | Practitioner account of the operational layer local deployment requires. ⚠️ Practitioner article, used as a background reference, not authority. |
 | SRC-087 | Belcak, P. et al. — *Small Language Models Are the Future of Agentic AI* (2025) · [link](https://arxiv.org/abs/2506.02153) | The right-sizing argument that usually precedes the hosting decision. |
 | SRC-039 | European Parliament / Council of the EU — *General Data Protection Regulation (EU) 2016/679* · [link](https://eur-lex.europa.eu/eli/reg/2016/679/oj) | Why the transfer question is genuinely simplified by local execution, and why the remaining obligations are not. |
+| SRC-417 | Chaddha, Prince (ProjectDiscovery) — *How abliterated models can get you pwned* (October 6, 2026) · [link](https://projectdiscovery.io/research/how-abliterated-models-can-get-you-pwned) | A backdoored open 7B model that behaves normally until triggered, then exfiltrates credentials through a coding agent. ⚠️ Vendor proof of concept. |
+| SRC-419 | Arditi, A.; Obeso, O.; Syed, A.; Paleka, D.; Panickssery, N.; Gurnee, W.; Nanda, N. — *Refusal in Language Models Is Mediated by a Single Direction* (NeurIPS 2024) · [link](https://arxiv.org/abs/2406.11717) | What "abliterated" means: refusal mediated by one direction that can be erased, across 13 open chat models. |
 
 ---
 
@@ -134,4 +144,4 @@ Everything else you were quietly getting from the provider now belongs to you: k
 
 ---
 
-*Last updated: v1.0 · August 2026*
+*Last updated: v1.1 · October 2026*

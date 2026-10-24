@@ -1099,17 +1099,19 @@
         "Evaluation",
         "Safety"
       ],
-      "version": "v1.0",
-      "updated": "September 2026",
+      "version": "v1.1",
+      "updated": "October 2026",
       "related": [
         "alignment-ai-systems",
         "evaluation",
         "fine-tuning",
         "guardrails-ai-systems",
+        "harness-paradigm",
         "model-data-drift",
         "model-version-update",
         "overfitting",
         "rag",
+        "recursive-self-improvement",
         "rlhf",
         "training-data"
       ],
@@ -1118,7 +1120,8 @@
         "SRC-286",
         "SRC-287",
         "SRC-288",
-        "SRC-289"
+        "SRC-289",
+        "SRC-421"
       ],
       "path": "concepts/catastrophic-forgetting.md"
     },
@@ -2014,13 +2017,15 @@
         "Data Governance",
         "Safety"
       ],
-      "version": "v1.0",
-      "updated": "September 2026",
+      "version": "v1.1",
+      "updated": "October 2026",
       "related": [
         "data-provenance-lineage",
         "evaluation",
         "fine-tuning",
         "guardrails-ai-systems",
+        "lethal-trifecta",
+        "local-llms",
         "permission-model-ai",
         "privacy-attacks-ai-models",
         "prompt-injection",
@@ -2032,7 +2037,10 @@
         "SRC-198",
         "SRC-269",
         "SRC-291",
-        "SRC-309"
+        "SRC-309",
+        "SRC-417",
+        "SRC-418",
+        "SRC-420"
       ],
       "path": "concepts/data-poisoning.md"
     },
@@ -3563,14 +3571,16 @@
         "Privacy",
         "Security"
       ],
-      "version": "v1.0",
-      "updated": "August 2026",
+      "version": "v1.1",
+      "updated": "October 2026",
       "related": [
         "compliance-ai-systems",
         "data-leakage-ai-systems",
         "data-minimization",
+        "data-poisoning",
         "data-provenance-lineage",
         "guardrails-ai-systems",
+        "lethal-trifecta",
         "model-data-drift",
         "operational-readiness-ai",
         "ownership-ai-systems",
@@ -3585,7 +3595,9 @@
         "SRC-098",
         "SRC-100",
         "SRC-101",
-        "SRC-102"
+        "SRC-102",
+        "SRC-417",
+        "SRC-419"
       ],
       "path": "concepts/local-llms.md"
     },
@@ -4057,9 +4069,10 @@
         "Agents",
         "Architecture"
       ],
-      "version": "v1.2",
-      "updated": "September 2026",
+      "version": "v1.3",
+      "updated": "October 2026",
       "related": [
+        "agentic-design-patterns",
         "ai-agent",
         "audit-trail-ai",
         "failure-modes-ai-systems",
@@ -4079,7 +4092,8 @@
         "SRC-372",
         "SRC-373",
         "SRC-374",
-        "SRC-378"
+        "SRC-378",
+        "SRC-422"
       ],
       "path": "concepts/multi-agent-systems.md"
     },
@@ -5164,7 +5178,7 @@
         "Safety",
         "AI Literacy"
       ],
-      "version": "v1.2",
+      "version": "v1.3",
       "updated": "October 2026",
       "related": [
         "agency-ai-systems",
@@ -5188,7 +5202,8 @@
         "SRC-263",
         "SRC-385",
         "SRC-386",
-        "SRC-387"
+        "SRC-387",
+        "SRC-421"
       ],
       "path": "concepts/recursive-self-improvement.md"
     },

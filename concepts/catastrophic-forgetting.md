@@ -26,6 +26,8 @@ Catastrophic forgetting is the abrupt loss of previously learned capability when
 
 **It happens in current language models, and scale does not save you.** Luo et al. evaluated continual instruction tuning across models from 1B to 7B parameters and found forgetting **generally observed** in domain knowledge, reasoning and reading comprehension and, contrary to the comfortable assumption, **severity intensified as model scale increased across that range**. They attribute this to the larger model having more initial performance to lose. They also report two findings worth carrying: the decoder-only model retained more than the encoder-decoder one, and **general instruction tuning beforehand helped alleviate later forgetting**.
 
+**Freezing the weights does not escape it.** Agents increasingly adapt without any training at all, by rewriting their own prompts, memory and skills while the model stays fixed. A 2026 study tested three such methods on task streams that drift in topic, workflow or domain, and found the same dilemma in a new place. Self-improvement raised overall performance on most streams, but no method was both adaptable and stable. Methods that edit a shared prompt or workspace made global changes that interfered with tasks they had not yet seen and overwrote what earlier tasks had taught. Methods that retrieve stored memories by similarity kept their updates more local, yet pulled irrelevant memories into new tasks and confused workflows that looked alike. **The stability–plasticity trade follows knowledge wherever it is stored**, in shared weights or in a shared prompt.
+
 **The governance problem is asymmetry of attention.** Fine-tuning is undertaken to add a capability, so the new capability is what gets tested. The capabilities that might have degraded are the ones nobody thought to re-measure, and among them are the model's refusals, tone, and safety behaviors, which were themselves trained in ([RLHF](rlhf.md), [alignment](alignment-ai-systems.md)). **A model can pass its acceptance test for the thing it was changed to do while having quietly lost something it was never re-tested on.**
 
 **Not to be confused with [drift](model-data-drift.md).** Drift is the world changing underneath a fixed model. Forgetting is the model changing while the world stays put. It has the same symptom, the opposite cause, and a different fix.
@@ -58,6 +60,7 @@ Two things are counterintuitive and worth knowing.
 6. **The new capability gets tested; the old ones do not.** That asymmetry is the actual failure path.
 7. **Forgetting is not drift**: the model changed, the world did not.
 8. **Prior general instruction tuning reduced later forgetting** in the same study. It is an ordering effect, not a fix.
+9. **Freezing the model does not freeze the risk.** An agent that rewrites its own instructions or memory can forget too, at the level of the harness rather than the weights ([harness paradigm](harness-paradigm.md)).
 
 ---
 
@@ -74,6 +77,7 @@ Two things are counterintuitive and worth knowing.
 - No preserved copy of the pre-change model, so a regression cannot be demonstrated or reversed ([model version and update](model-version-update.md))
 - Vendor model updates assumed to be strictly additive, with no re-run of your own acceptance tests
 - Evaluation sets built only from the new use case, so the old ones are structurally unrepresented ([evaluation](evaluation.md))
+- Self-improving agents, which rewrite their own prompts, memory or skills, assumed safe from forgetting because the model weights never change
 
 **Practice:**
 - **Keep a standing regression suite covering what the model could already do**, and run it on every change. This is the single control that addresses the asymmetry
@@ -83,6 +87,7 @@ Two things are counterintuitive and worth knowing.
 - Record what each fine-tune was tested against, so a later failure can be traced to the change that caused it ([audit trail](audit-trail-ai.md))
 - Re-run acceptance tests after a provider's model update, not only after your own changes
 - Treat a sequence of fine-tunes as cumulative risk, and re-baseline periodically rather than per-step
+- For agents that rewrite their own harness, keep a fixed set of earlier tasks and re-run it after each self-edit, and version the harness so a bad edit can be rolled back
 
 **Key accountability owner:** whoever approves a model change into production, because the evidence they are shown is almost always about the intended improvement, and the question that goes unasked is what else moved.
 
@@ -92,7 +97,7 @@ Two things are counterintuitive and worth knowing.
 
 ## Confidence level
 
-**High on the phenomenon, medium on the LLM-scale specifics.** Catastrophic forgetting has been documented since 1989, has a well-understood mechanism, and is uncontroversial across architectures. The concept is as settled as anything in this corpus. **The numbers about current language models rest on a narrower base.** The scale finding cited here (severity increasing from 1B to 7B) comes from a single empirical study over a specific model range and set of tasks; the authors offer an explanation for it, and it should be treated as **one well-conducted observation, not an established scaling law**. In particular, it should not be extrapolated above the range tested. The claim this entry makes most confidently is neither of those: it is the governance asymmetry, that a change is tested for its intent and not for its side effects, which follows from ordinary practice rather than from any measurement.
+**High on the phenomenon, medium on the LLM-scale specifics.** Catastrophic forgetting has been documented since 1989, has a well-understood mechanism, and is uncontroversial across architectures. The concept is as settled as anything in this corpus. **The numbers about current language models rest on a narrower base.** The scale finding cited here (severity increasing from 1B to 7B) comes from a single empirical study over a specific model range and set of tasks; the authors offer an explanation for it, and it should be treated as **one well-conducted observation, not an established scaling law**. In particular, it should not be extrapolated above the range tested. The claim this entry makes most confidently is neither of those: it is the governance asymmetry, that a change is tested for its intent and not for its side effects, which follows from ordinary practice rather than from any measurement. The harness-level finding added in v1.1 is one preprint, covering three methods on four constructed task streams.
 
 ---
 
@@ -108,6 +113,8 @@ Two things are counterintuitive and worth knowing.
 - [Guardrails (AI Systems)](guardrails-ai-systems.md) — the external controls that do not forget
 - [Retrieval-Augmented Generation (RAG)](rag.md) — adding knowledge without touching weights
 - [Training Data](training-data.md) — the sequence in which material is presented matters
+- [Harness Paradigm](harness-paradigm.md) — where an agent that improves itself without retraining stores what it learns, and where it can forget
+- [Recursive Self-Improvement](recursive-self-improvement.md) — the loop in which an agent rewrites its own harness, and whose stability this study measures
 
 ---
 
@@ -120,6 +127,7 @@ Two things are counterintuitive and worth knowing.
 | SRC-288 | Kirkpatrick, James; Pascanu, Razvan; Rabinowitz, Neil; Veness, Joel; Desjardins, Guillaume; Rusu, Andrei A. et al. (DeepMind) — *Overcoming catastrophic forgetting in neural networks* (PNAS 114(13), pp. 3521–3526, 2017) · [link](https://doi.org/10.1073/pnas.1611835114) | Elastic weight consolidation, which slows learning on weights important to earlier tasks, as the canonical mitigation, and the basis for this entry's characterization of mitigations as trades rather than solutions. |
 | SRC-289 | Luo, Yun; Yang, Zhen; Meng, Fandong; Li, Yafu; Zhou, Jie; Zhang, Yue — *An Empirical Study of Catastrophic Forgetting in Large Language Models During Continual Fine-tuning* (2023) · [link](https://arxiv.org/abs/2308.08747) | The current-model evidence: forgetting **generally observed** from 1B to 7B parameters across domain knowledge, reasoning and reading comprehension, with **severity intensifying as scale increased** in that range; decoder-only retaining more than encoder–decoder; and prior general instruction tuning alleviating later forgetting. ⚠️ A single study over a specific model range, so do not extrapolate the scale finding beyond 7B or restate it as a scaling law. |
 | SRC-196 | Ouyang, L.; Wu, J.; Jiang, X. et al. (OpenAI) — *Training language models to follow instructions with human feedback* (NeurIPS, 2022) · [link](https://arxiv.org/abs/2203.02155) | Establishes that refusal, tone and instruction-following are **trained** behaviors rather than intrinsic ones, which is what makes them forgettable, and is the premise of this entry's central governance point. |
+| SRC-421 | Chen, X.; Huang, Y.; Xu, Y.; Zhao, Z.; McQuinn, E.; Liu, J.; Yao, H. (Google DeepMind) — *Are Self-Evolving Agents Continual Learners?* (2026) · [link](https://arxiv.org/abs/2610.25858) | Forgetting with frozen weights: self-evolving agents trading stability for plasticity on drifting task streams, through global prompt edits and memory-retrieval collisions. ⚠️ Vendor-affiliated preprint; three methods, four constructed streams. |
 
 ---
 
@@ -134,4 +142,4 @@ Two things are counterintuitive and worth knowing.
 
 ---
 
-*Last updated: v1.0 · September 2026*
+*Last updated: v1.1 · October 2026*

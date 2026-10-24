@@ -26,6 +26,8 @@ Multi-agent is a design choice with a cost, not a default upgrade. The decision 
 
 **Which models go in the system is itself a design choice, and where it has been measured rather than assumed, more is not better.** A study of model-pool selection across 23 models (six architecture families, 2B to 1.6T parameters) on three science-reasoning benchmarks tested eight ways of choosing the pool (by size, by architectural family, by an LLM's recommendation, by measured accuracy, by correct-answer diversity, by error diversity, and by two accuracy-weighted combinations) across a routing system and two answer-combining systems (majority vote and an LLM judge). Its result: *"more models nearly always decreases performance"*, and most deliberate groupings scored below the best single model in the pool and often below a randomly chosen set. Grouping models from one family did best, though in most cases that meant *"the least detriment to performance rather than a large improvement"*. The same study found that domain-specialized models did not outperform the generalist they were fine-tuned from, even in their own specialty, so a pool cannot be assembled from model cards alone. Two caveats bound the result: the degradation is specific to **heterogeneous** pools (the study's baseline systems built from instances of one model still improved as they grew more complex), and tool use and retrieval were disabled so the models could be compared, which removes a capability most deployed systems have.
 
+**How the team works together can matter as much as who is on it.** A 2026 study let fixed teams of different models learn reusable strategies for dividing roles, phases and information flow from a few dozen practice problems. Across five mathematics and physics benchmarks the team averaged 66.7%, against 48.8% for its strongest member and 59.0% for a perfect router that always picked the best individual answer, so the team reached correct answers no member produced alone. Three copies of the strongest member running the same strategies averaged 56.0%, so the mixed team beat the uniform one, the reverse of the pool-selection result. The two studies measure different things: that one combined answers by routing, voting or a judge, while this one learned how the team should work. The gain also depended on the task. It tracked demonstrability, whether a correct answer can be recognized once someone produces it, with a rank correlation of 0.90 across eight benchmarks. ⚠️ A preprint, on reasoning benchmarks only.
+
 Note that "multi-agent system" is an established term in distributed AI that long predates LLMs; the LLM-based variety inherits the name but not the formal coordination guarantees of the classical literature.
 
 ---
@@ -43,6 +45,7 @@ Instead of asking one AI to do a whole complicated job, you split the job across
 3. **Accountability blurs exactly where it matters most.** When several agents contribute to an outcome, "which agent decided this?" becomes a real question, and it is the question an audit will ask. Red-team studies of autonomous agents in live environments have documented unauthorized compliance, identity spoofing, and partial system takeover; attributing those events requires per-agent logging designed in from the start.
 4. **A bigger roster is not a better system.** The intuition that adding a model adds a perspective does not survive measurement: in the pool-selection study above, enlarging the candidate pool usually made the system worse than its own best member, and the gap between what a pool *could* achieve if it always picked the right answer and what it actually achieved was wide. Treat the choice of models as a decision to test, not to reason about.
 5. **The word is doing a lot of work.** Vendors describe as "multi-agent" everything from a genuinely dynamic orchestrator to a hard-coded three-step script. Ask whether a model decides the decomposition at runtime or a developer decides it in advance. Only the first is meaningfully multi-agent.
+6. **Collaboration pays most where a right answer is recognizable.** In the one study that learned team organization, the gain over the best member tracked how easily correct reasoning can be told from incorrect.
 
 ---
 
@@ -63,6 +66,7 @@ Instead of asking one AI to do a whole complicated job, you split the job across
 - Set explicit stop conditions and budgets (step limits, token limits, wall-clock limits) so a coordination loop cannot run indefinitely
 - Measure the system against the best single model in it, and keep that comparison as a release gate, because a multi-agent system that loses to one of its own members is a cost with no benefit
 - Require a single named owner for the system as a whole, regardless of how many agents it contains
+- Before building a team, ask whether a correct answer is recognizable when it appears. Where it is, collaboration has the most to offer; where it is not, the comparison against the best single model matters most
 
 **Key accountability owner:** the system owner, because accountability does not distribute across agents just because work does.
 
@@ -72,7 +76,7 @@ Instead of asking one AI to do a whole complicated job, you split the job across
 
 ## Confidence level
 
-**Medium.** The architectural patterns and their trade-offs are documented in peer-reviewed surveys and primary engineering sources, and the failure evidence is empirical. Controlled comparison has now started to arrive (the pool-selection study above measures the single-versus-multi question rather than asserting it), but it covers science-reasoning benchmarks with tool use disabled, on three simple architectures, so it bounds a claim rather than settling one. The field is young and moving: coordination protocols are unsettled, production evidence is still mostly case studies, and claims about when multi-agent beats single-agent remain contested.
+**Medium.** The architectural patterns and their trade-offs are documented in peer-reviewed surveys and primary engineering sources, and the failure evidence is empirical. Controlled comparison has now started to arrive (the pool-selection study above measures the single-versus-multi question rather than asserting it), but it covers science-reasoning benchmarks with tool use disabled, on three simple architectures, so it bounds a claim rather than settling one. The field is young and moving: coordination protocols are unsettled, production evidence is still mostly case studies, and claims about when multi-agent beats single-agent remain contested. A second controlled study (v1.3) points the other way under different conditions, a mixed team that learned its own organization beating every single member, which makes the question one of conditions rather than of yes or no.
 
 ---
 
@@ -86,6 +90,7 @@ Instead of asking one AI to do a whole complicated job, you split the job across
 - [Types of AI Systems](types-of-ai-systems.md) — the high-autonomy end of the taxonomy, where oversight requirements concentrate
 - [Tool Use](tool-use.md) — agents coordinate by acting, and they act through tools
 - [Orchestration (AI Systems)](orchestration-ai-systems.md) — the general coordination problem of which multi-agent is one instance
+- [Agentic Design Patterns](agentic-design-patterns.md) — named arrangements for the roles and handoffs a team can also learn for itself
 
 ---
 
@@ -103,6 +108,7 @@ Instead of asking one AI to do a whole complicated job, you split the job across
 | SRC-128 | Shah, M.B.; Morovati, M.M.; Rahman, M.M.; Khomh, F. — *Characterizing Faults in Agentic AI: A Taxonomy of Types, Symptoms, and Root Causes* (2026) · [link](https://arxiv.org/abs/2603.06847) | Empirical evidence that agentic failures arise from orchestration, state, and environment interaction rather than the model alone. |
 | SRC-045 | Shapira, Natalie et al. — *Agents of Chaos* (preprint, 2026) · [link](https://arxiv.org/abs/2602.20021) | Red-team study of autonomous agents in a live environment: unauthorized compliance, identity spoofing, partial system takeover. |
 | SRC-153 | InfoQ — *Grab's Multi-Agent Support System* (2026) · [link](https://www.infoq.com/news/2026/05/grab-multi-agent-support-system/) | Production case study of a deployed multi-agent system in customer support. |
+| SRC-422 | Pappu, A.; Suzgun, M.; Kwon, Y.; Bianchi, F.; El, B.; Kochenderfer, M.J.; Cao, H.; Zou, J. — *Self-Organizing Agent Teams Learn to Reason Together* (2026) · [link](https://arxiv.org/abs/2609.22682) | Teams that learn their own organization: 66.7% against 48.8% for the strongest member and 59.0% for a perfect router; a uniform team at 56.0%; gains tracking demonstrability (ρ = 0.90, eight benchmarks). ⚠️ Preprint; reasoning benchmarks only. |
 
 ---
 
@@ -117,4 +123,4 @@ Instead of asking one AI to do a whole complicated job, you split the job across
 
 ---
 
-*Last updated: v1.2 · September 2026*
+*Last updated: v1.3 · October 2026*
