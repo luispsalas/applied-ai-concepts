@@ -30,6 +30,12 @@ Three findings define why this is harder in practice than it sounds:
 
 That last finding is the entry's central claim. **Verification fails hardest exactly where it matters most**, and it fails for structural reasons rather than for want of diligence, which means the remedy is design, not exhortation.
 
+**An agent can be right at the plan and wrong in the arithmetic, and the error repeats.** A 2026 pilot study gave an AI agent a published clinical study's dataset and validated analysis script as a reference, then asked it to plan and run the analysis itself. Every analysis plan chose the right statistical framework, but plan quality did not predict whether the code was correct, and *"within-mode errors propagated identically across independent repetitions."* Running the same agent again therefore did not expose a mistake; it reproduced it. In one run an implementation error inflated a model's concordance from 0.749 to 0.867, a difference *"undetectable from model output alone"*. Only comparison with the reference analysis revealed it. Of 17 written summaries, 8 were fully satisfactory and 2 contained clinically meaningful errors. The authors' conclusion is a list of where expert verification is still required: formula composition, cohort boundaries and the concordance computation itself. ⚠️ A pilot on one dataset, testing one vendor's agent.
+
+**Agents can also be the verifier.** Two 2026 preprints test agents at reproducing published research from its data. One reproduced 77.4% of 2,190 atomic claims from 20 cancer-registry studies and then tested whether the findings survived defensible alternative analysis choices. The other built 221 social-science tasks, including studies known to be non-reproducible, so that an agent's failure could be told apart from broken materials. Both treat reproduction as checkable work an agent can do, and both leave open who checks the agent. ⚠️ Preprints; reproduction of stated claims is not independent validation of the science.
+
+**Mathematics has the strongest form of verification, and it still needs a human step.** A proof checked by a proof assistant's kernel is machine-verified down to the rules of logic, but someone still has to confirm that the formal statement says what was meant, and the checker itself can have bugs ([formal verification](formal-verification.md)).
+
 ---
 
 ## Plain-language version
@@ -49,6 +55,7 @@ Verification is the step where you find out: run the code instead of reading it,
 5. **Verification is domain work, not AI work.** Nothing about understanding language models tells you whether a contract clause is enforceable or a dosage is safe. The check requires the expertise the output is about, which is why the person best placed to verify is often not the person who prompted.
 6. **Some outputs cannot be verified at the cost you have available.** That is a legitimate finding, not a failure. The correct response is to change what the output is used for, not to verify it badly and call it done.
 7. **Skepticism measurably works.** In the same coding study, participants who distrusted the tool and reworked their prompts produced fewer vulnerabilities. Treating output as a draft to be interrogated is not just good manners. It changes the result.
+8. **Running it again is not checking it.** An agent's errors can repeat identically across runs, so agreement between repeated runs says nothing about whether any of them is right.
 
 ---
 
@@ -63,6 +70,7 @@ Verification is the step where you find out: run the code instead of reading it,
 - Reliance on the presence of citations or a reasoning trace as evidence that checking occurred
 - Volume scaled up without scaling the checking capacity, which is the fastest way to convert an assistive tool into an unreviewed pipeline
 - Interfaces that make accepting output one click and verifying it ten
+- Repeated runs of the same agent treated as independent confirmation, when its errors can repeat identically
 
 **Practice:**
 - Define the verification method per use, not per system: what counts as ground truth here, and what is the cheapest reliable check against it
@@ -71,6 +79,7 @@ Verification is the step where you find out: run the code instead of reading it,
 - Where verification is genuinely infeasible, constrain the use case instead: advisory rather than decisional, draft rather than final ([permission model](permission-model-ai.md))
 - Log what was verified and by whom, so the [audit trail](audit-trail-ai.md) reflects the check and not only the output
 - Sample and re-check accepted output periodically, because the failure mode is silent drift in how much checking actually happens
+- Where an agent does analysis, keep a reference result or an independent recomputation for the steps where errors are hard to see, such as formulas, cohort definitions and summary statistics
 
 **Key accountability owner:** the person who acts on the output. Verification is the operational form of [human responsibility](human-responsibility-in-ai-use.md), which does not transfer to the system. But the *organization* owns making it affordable, and an unaffordable check is an unperformed one.
 
@@ -80,7 +89,7 @@ Verification is the step where you find out: run the code instead of reading it,
 
 ## Confidence level
 
-**High.** Unusually well supported for a practice entry: the citation-support rates, the security-and-confidence inversion, and the cost-benefit account of when people check are each peer-reviewed empirical findings rather than recommendations. Two limits worth stating. The specific percentages come from 2023-era systems and specific tasks, so the direction is what transfers, not the magnitudes. And there is no established method for verifying open-ended generative output at scale; the practices above lower exposure and do not close it.
+**High.** Unusually well supported for a practice entry: the citation-support rates, the security-and-confidence inversion, and the cost-benefit account of when people check are each peer-reviewed empirical findings rather than recommendations. Two limits worth stating. The specific percentages come from 2023-era systems and specific tasks, so the direction is what transfers, not the magnitudes. And there is no established method for verifying open-ended generative output at scale; the practices above lower exposure and do not close it. The agent-analysis study added in v1.1 is a peer-reviewed pilot on one dataset with one vendor's agent, and the two reproduction studies are preprints.
 
 ---
 
@@ -97,6 +106,7 @@ Verification is the step where you find out: run the code instead of reading it,
 - [Audit Trail (AI)](audit-trail-ai.md) — the record of whether checking actually happened
 - [Explainability (XAI)](explainability-xai.md) — explanations reduce overreliance only when they lower the cost of checking
 - [Cognitive Offloading & Deskilling](cognitive-offloading-deskilling.md) — the long-run cost when verification stops being practiced
+- [Formal Verification](formal-verification.md) — the strongest form of verification, machine-checked proof, and the human steps it still needs
 
 ---
 
@@ -109,6 +119,9 @@ Verification is the step where you find out: run the code instead of reading it,
 | SRC-190 | Perry, N.; Srivastava, M.; Kumar, D.; Boneh, D. — *Do Users Write More Insecure Code with AI Assistants?* (ACM CCS, 2023) · [link](https://arxiv.org/abs/2211.03622) | Worse output and higher confidence in it, measured together, plus the finding that skepticism and prompt reworking reduced vulnerabilities. |
 | SRC-174 | Goddard, K.; Roudsari, A.; Wyatt, J.C. — *Automation bias: a systematic review of frequency, effect mediators, and mitigators* (JAMIA, 2012) · [link](https://doi.org/10.1136/amiajnl-2011-000089) | The prior literature on why checking stops when a system is usually right, established long before language models. |
 | SRC-001 | NIST — *AI Risk Management Framework* · [link](https://www.nist.gov/itl/ai-risk-management-framework) | Places instance-level checking inside a lifecycle that requires evidence rather than assurance. |
+| SRC-423 | Wu, Y.; Fu, D.J.; Zhou, Y.; Wagner, S.K.; Keane, P.A. — *Performance, Failures, and Oversight of a Large Language Model Agent for Clinical Data Analysis: Evaluation Study* (J Med Internet Res 28, e99597, 2026) · [link](https://www.jmir.org/2026/1/e99597) | Errors repeating identically across runs, a concordance inflated from 0.749 to 0.867 that was undetectable from output alone, 8 of 17 summaries fully satisfactory, and where expert verification is still required. ⚠️ Pilot on one dataset; the agent tested is Anthropic's Claude. |
+| SRC-430 | Liu, S.; Opsahl-Ong, K.; Drozdov, A.; Killingback, J.; Singhvi, A.; Pradeep, R.; Bendersky, M.; Dickerson, J.C. et al. — *AI-Driven Reproducibility and Analytical Robustness in Scientific Discovery* (2026) · [link](https://arxiv.org/abs/2610.23845) | An agent reproducing 77.4% of 2,190 claims from 20 cancer-registry studies, then testing their robustness. ⚠️ Preprint. |
+| SRC-431 | Alizadeh, M.; Mosleh, M.; Gilardi, F.; Kasirzadeh, A.; Tucker, J. — *AI Coding Agents Can Reproduce Social Science Findings* (2026) · [link](https://arxiv.org/abs/2606.11447) | 221 reproduction tasks that separate agent failure from non-reproducible materials. ⚠️ Preprint; compares two commercial agents. |
 
 ---
 
@@ -123,4 +136,4 @@ Verification is the step where you find out: run the code instead of reading it,
 
 ---
 
-*Last updated: v1.0 · August 2026*
+*Last updated: v1.1 · October 2026*

@@ -1,5 +1,16 @@
 # Changelog
 
+## v1.54 — October 2026
+
+**One new entry and one enrichment. Count 155 → 156.**
+
+- `formal-verification` — **new**, v1.0
+- `verification` — v1.0 → **v1.1**
+
+**Running it again is not checking it.** A 2026 peer-reviewed pilot gave an AI agent a clinical data analysis with a known reference answer. Its analysis plans were sound, yet the quality of a plan did not predict whether the code was right, and the same error repeated identically across independent runs. One run reported an inflated result that, in the authors' words, was undetectable from the model's output alone. *Verification* now says that agreement between repeated runs is not confirmation, and adds a practice to match: keep a reference result or an independent recomputation for anything that will be reported. It also notes the other direction, where agents reproduce published findings and so become part of the check.
+
+**The strongest form of checking gets its own entry.** *Formal Verification* covers proofs checked step by step by a proof assistant's kernel, which matters for AI because the check does not depend on trusting whoever wrote the proof. The entry is built around what that guarantee leaves out. The statement can be wrong, so a person still has to confirm it says what was meant. The checker can be wrong: in the summer of 2026 several bugs in Lean's kernel let false proofs through, one of them a "disproof" of the Collatz conjecture produced with AI assistance, and others were found by AI working with the project. And computations run outside the kernel are not verified by it. The project behind Lean now treats AI-generated proofs as potentially malicious, and the entry carries that as a practice.
+
 ## v1.53 — October 2026
 
 **One enrichment. No new entries; count stays at 155.**

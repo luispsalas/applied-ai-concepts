@@ -142,7 +142,7 @@ Looking for one term? Use the [alphabetical glossary](index.md) or [search](../s
 | [Reward Hacking (Specification Gaming)](../concepts/reward-hacking.md) | The system satisfies the metric and defeats the point, and more capable models do it more, not less | ✅ v1.0 |
 | [Power Seeking](../concepts/power-seeking.md) | Capability is useful for almost any goal, so optimization drifts toward more access and more room to operate, with no motive required | ✅ v1.0 |
 | [Alignment (AI Systems)](../concepts/alignment-ai-systems.md) | Making a system's behavior match what was actually intended, and the prior question of whose intentions those are | ✅ v1.1 |
-| [Verification](../concepts/verification.md) | Checking this output against ground truth before trusting it, and the finding that people check least on the problems that most need it | ✅ v1.0 |
+| [Verification](../concepts/verification.md) | Checking this output against ground truth before trusting it, and the finding that people check least on the problems that most need it | ✅ v1.1 |
 | [Model/Data Drift](../concepts/model-data-drift.md) | The quiet decay of a deployed system as the world moves away from its training data. Nothing breaks, and accuracy just slides | ✅ v1.1 |
 | [Model Version & Update](../concepts/model-version-update.md) | The system you use today may not be the one you tested. Providers change models underneath you, and reliable behavior can shift without notice | ✅ v1.0 |
 | [Data Leakage (Model Evaluation)](../concepts/data-leakage-model-evaluation.md) | When information from the test set reaches the model during training, so measured performance describes an exam the model had already seen. It is the most common cause of results that do not survive deployment | ✅ v1.0 |
@@ -155,6 +155,7 @@ Looking for one term? Use the [alphabetical glossary](index.md) or [search](../s
 | [Checkpointing](../concepts/checkpointing.md) | Saving state at known-good points so a long run can be resumed or undone, and the boundary where undo stops working, which is wherever the system already touched the world | ✅ v1.0 |
 | [Inter-Rater Reliability](../concepts/inter-rater-reliability.md) | How much independent raters actually agree. It is the ceiling on what any evaluation built on their judgments can demonstrate, and almost never published beside the score it caps | ✅ v1.0 |
 | [Overrefusal](../concepts/overrefusal.md) | A model refusing work that was perfectly safe. It is the failure safety measures cause rather than prevent, and the one almost nobody puts a number on | ✅ v1.0 |
+| [Formal Verification](../concepts/formal-verification.md) | Proving a claim with software that checks every logical step. The result is as trustworthy as the statement that was proved and the checker that checked it | ✅ v1.0 |
 
 ### Observability & Governance
 *Making AI system behavior visible and accountable*
