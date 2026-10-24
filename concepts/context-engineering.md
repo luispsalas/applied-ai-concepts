@@ -22,6 +22,8 @@ Context engineering is the discipline of constructing, structuring, and managing
 
 Where prompt engineering focuses on the form of individual instructions, context engineering addresses the full information environment the model operates within, including what is present, what is absent, and in what order things appear.
 
+**In an organization, context engineering becomes a question of where knowledge lives.** Some tasks come with their context in one place. A change to a software project can draw on the whole codebase, and for code kept in a central repository, as Anthropic's analysis of business API use puts it, *"access to this information is in principle straightforward."* Other tasks need information spread across systems and people, and some of it never written down at all ([tacit knowledge](tacit-knowledge.md)). The same analysis found that more complex tasks came with more supplied context, at strongly diminishing returns, and concluded that deploying AI for complex tasks *"might be constrained more by access to information than on underlying model capabilities."* It is a vendor's reading of its own traffic, built on proxies and hedged. It still moves the question from the prompt to the organization: whether the information a task needs can be gathered at all.
+
 ---
 
 ## Plain-language version
@@ -54,10 +56,12 @@ Context engineering is also where governance enters. Decisions about what contex
 **Watch for:**
 - Context treated as disposable: not logged, not versioned, and therefore not auditable. If you cannot reconstruct what context the model received, you cannot investigate or explain its outputs.
 - Sensitive or restricted data entering the context window without access controls. Context construction decisions are data access decisions.
+- Deployment planned around model choice while the information the task needs is scattered across systems or held by people, and nobody has checked whether it can be gathered ([value realization](value-realization-ai.md)).
 - Context decay: injected information (system prompts, knowledge base entries, policy documents) going stale without detection, presenting outdated content with the same authority as current information.
 
 **Practice:**
 - Log what context was injected per session or request. This is the minimum required for output auditability.
+- Before deployment, map where the context a task needs actually lives (systems, documents, people) and how the system will reach it.
 - Treat context construction as a governed data access decision: who or what can inject information into the context window should be defined and controlled, not assumed.
 
 **Key accountability owner:** Context owner, the role responsible for defining what information the model is given access to, in what form, and under what access controls.
@@ -68,7 +72,7 @@ Context engineering is also where governance enters. Decisions about what contex
 
 ## Confidence level
 
-**Medium-High.** Active practitioner consensus since 2023. The term has stabilized; the discipline continues to deepen as agentic and multi-step systems become more common.
+**Medium-High.** Active practitioner consensus since 2023. The term has stabilized; the discipline continues to deepen as agentic and multi-step systems become more common. The sources are mostly practitioner writing. The organizational claim, that access to information can limit complex deployments, rests on one vendor's hedged analysis of its own traffic and has not been measured independently.
 
 ---
 
@@ -90,6 +94,7 @@ Context engineering is also where governance enters. Decisions about what contex
 | SRC-011 | Karpathy, Andrej — *"Context engineering is the delicate art and science..."* (X post, 2025) · [link](https://x.com/karpathy/status/1937902205765607626) | Canonical definition: "context engineering is the delicate art and science of filling the context window with just the right information for the next step." Draws the key distinction from prompt engineering, in which prompts are short task descriptions and context engineering is the full information environment designed for production systems. |
 | SRC-012 | LangChain — *Context Engineering for Agents* (blog, 2025) · [link](https://blog.langchain.com/context-engineering-for-agents/) | Practitioner framework for context engineering in agentic systems; dynamic context construction at runtime; distinction from prompt engineering at the system design level. |
 | SRC-007 | Karpathy, Andrej — *LLM Wiki* (gist, 2023) · [link](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) | Synthesis philosophy informing the wiki-as-context-architecture framing; context as a compounding artifact. |
+| SRC-433 | Appel, R.; McCrory, P.; Tamkin, A. et al. (Anthropic) — *Anthropic Economic Index report: Uneven geographic and enterprise AI adoption* (2025) · [link](https://www.anthropic.com/research/anthropic-economic-index-september-2025-report) | Organizational evidence that context availability, more than model capability, may limit complex deployments; the contrast between a central code repository and scattered business information. ⚠️ Vendor-authored analysis of its own API traffic, through proxies and hedged. |
 
 ---
 
@@ -104,4 +109,4 @@ Context engineering is also where governance enters. Decisions about what contex
 
 ---
 
-*Last updated: v1.1 · May 2026*
+*Last updated: v1.2 · October 2026*

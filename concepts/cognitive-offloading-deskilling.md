@@ -32,6 +32,8 @@ The cognitive-science literature establishes the mechanism well before AI, which
 
 **The honest limit, stated plainly:** there is no long-run empirical study of AI-specific deskilling. The mechanism is established, the AI-specific conditions are clearly different from the calculator case, and the extension is reasoned. What exists as near-term evidence is a controlled study where participants using an AI coding assistant produced measurably worse security outcomes **while being more confident in them**. That is the capability/confidence inversion the mechanism predicts, observed within a single session rather than over years.
 
+**The first link of the junior problem has started to show in labor data.** The concern about new staff rests on a simple chain: judgment is built by doing entry-level work, and entry-level work is what gets automated first. A Stanford study of US payroll records found that employment of workers aged 22 to 25 in AI-exposed occupations stood 19% below where it would have been had it kept pace with less-exposed peers. Experienced workers showed no comparable gap. The difference came mainly from fewer young people being hired, and it was concentrated in occupations where AI substitutes for tasks rather than supporting the people doing them. The authors present these as *"early, descriptive indicators"* and say they are not causal estimates, and the pattern weakens once education is taken into account. A separate Yale analysis of the average exposed occupation found no clear sign yet of AI effects on employment or wages. Neither study measures skill. Together they suggest that in some occupations the route through which judgment used to be acquired may be narrowing. Whether skill is being lost as a result is still unmeasured.
+
 **Not an argument against using AI.** Offloading arithmetic to calculators was correct. The question is *which* capabilities an organization can afford to let atrophy, and that is answerable, but only if it is asked deliberately rather than settled by default.
 
 ---
@@ -44,7 +46,7 @@ What is different here is *what* gets delegated. Calculators took over arithmeti
 
 That is where it turns into a loop. You use it, your own sharpness on that task fades a little, so you catch fewer of its mistakes, so it seems more reliable than it is, so you use it more. Every step is a sensible decision. The direction is not.
 
-Honest caveat: nobody has studied this over years with AI specifically. The underlying effect is well established in psychology, and the reasoning about why AI is a harder case is sound, but the long-run evidence does not exist yet. What we do have is one controlled study where people using an AI coding assistant wrote *less* secure code and felt *more* confident about it. It is the same shape, compressed into one sitting.
+Honest caveat: nobody has studied this over years with AI specifically. The underlying effect is well established in psychology, and the reasoning about why AI is a harder case is sound, but the long-run evidence does not exist yet. What we do have is one controlled study where people using an AI coding assistant wrote *less* secure code and felt *more* confident about it. It is the same shape, compressed into one sitting. There is also early labor data: in some jobs where AI can do much of the work, fewer young people are being hired. That means fewer people doing the starter work where judgment used to be learned.
 
 The useful question is not whether to use these tools. It is which skills your organization cannot afford to lose, and answering that on purpose, rather than finding out later.
 
@@ -57,7 +59,7 @@ The useful question is not whether to use these tools. It is which skills your o
 3. **This is not automation bias, though they compound.** Automation bias is *choosing* not to check. Deskilling is *losing the ability* to check well. The second does not reverse when you decide to pay attention.
 4. **Confidence rises as capability falls.** Measured directly in the coding study: worse output, higher confidence. Your sense of competence is not evidence of it.
 5. **The long-run evidence does not exist yet.** Treat this as a well-reasoned risk with an established mechanism, not a demonstrated outcome, and be suspicious of confident claims in either direction.
-6. **Juniors and seniors face different versions.** Experienced people erode a skill they built; people who never built it cannot erode it, but also never acquire the judgment that makes review possible. The second is the more serious organizational problem and the less visible one.
+6. **Juniors and seniors face different versions.** Experienced people erode a skill they built; people who never built it cannot erode it, but also never acquire the judgment that makes review possible. The second is the more serious organizational problem and the less visible one. Early payroll data shows fewer young people being hired into some AI-exposed occupations, which is the route by which that judgment used to be built.
 7. **Deliberate practice is the countermeasure**, and it has to be scheduled. That means doing some work unassisted, sampling and re-deriving, and keeping a path to competence for people entering the field.
 
 ---
@@ -91,7 +93,7 @@ The useful question is not whether to use these tools. It is which skills your o
 
 ## Confidence level
 
-**Medium, and the split matters.** **Higher:** cognitive offloading is a well-established, peer-reviewed phenomenon with a decade of work behind it; automation bias is separately documented; and the confidence/capability inversion has been measured directly in a controlled AI-assistance study. **Lower, and this entry is explicit about it:** there is **no longitudinal study of AI-specific deskilling.** The self-reinforcing loop is a reasoned extension from established parts, not an observed outcome, and the organizational recommendations follow from the mechanism rather than from evaluated interventions. **Treat confident claims in either direction with suspicion**, including the fashionable ones about AI making people stupid, because the evidence does not currently support strong statements.
+**Medium, and the split matters.** **Higher:** cognitive offloading is a well-established, peer-reviewed phenomenon with a decade of work behind it; automation bias is separately documented; and the confidence/capability inversion has been measured directly in a controlled AI-assistance study. **Lower, and this entry is explicit about it:** there is **no longitudinal study of AI-specific deskilling.** The labor-market evidence on entry-level hiring is early and descriptive, and it measures jobs, not skill. The self-reinforcing loop is a reasoned extension from established parts, not an observed outcome, and the organizational recommendations follow from the mechanism rather than from evaluated interventions. **Treat confident claims in either direction with suspicion**, including the fashionable ones about AI making people stupid, because the evidence does not currently support strong statements.
 
 ---
 
@@ -121,6 +123,8 @@ The useful question is not whether to use these tools. It is which skills your o
 | SRC-175 | Skitka, L.J.; Mosier, K.L.; Burdick, M. — *Does automation bias decision-making?* (1999) · [link](https://doi.org/10.1006/ijhc.1999.0252) | That participants *without* an automated aid outperformed those given a highly-but-imperfectly reliable one, so reliability itself erodes the checking behavior. |
 | SRC-191 | Vasconcelos, H.; Jörke, M.; Grunde-McLaughlin, M.; Gerstenberg, T.; Bernstein, M.; Krishna, R. — *Explanations Can Reduce Overreliance on AI Systems During Decision-Making* (CSCW, 2023) · [link](https://arxiv.org/abs/2212.06823) | Engagement as a cost-benefit decision, the economics that make each step of the loop locally rational. |
 | SRC-068 | Long, D.; Magerko, B. — *What is AI Literacy? Competencies and Design Considerations* (2020) · [link](https://dl.acm.org/doi/10.1145/3313831.3376727) | The competency framework where maintaining capability sits. ⚠️ `dl.acm.org` blocks automated clients; the DOI is live. |
+| SRC-434 | Brynjolfsson, E.; Chandar, B.; Chen, R. — *Canaries in the Coal Mine? Six Facts about the Recent Employment Effects of Artificial Intelligence* (Stanford Digital Economy Lab, 2026) · [link](https://digitaleconomy.stanford.edu/publication/canaries-in-the-coal-mine-six-facts-about-the-recen) | The 19% employment gap for workers aged 22 to 25 in AI-exposed occupations, driven mainly by reduced hiring, and the authors' quoted framing of it as descriptive. ⚠️ Working paper; measures employment, not skill. |
+| SRC-435 | Nunn, R. (The Budget Lab at Yale) — *AI Is Probably Not (Yet) the Reason for Labor Market Weakening* (2026) · [link](https://budgetlab.yale.edu/research/ai-probably-not-yet-reason-labor-market-weakening) | The counterweight: no clear sign yet of AI effects on employment or wages in the average exposed occupation. ⚠️ Early-2026 data; does not address the young-worker gap. |
 
 ---
 
@@ -135,4 +139,4 @@ The useful question is not whether to use these tools. It is which skills your o
 
 ---
 
-*Last updated: v1.0 · September 2026*
+*Last updated: v1.1 · October 2026*

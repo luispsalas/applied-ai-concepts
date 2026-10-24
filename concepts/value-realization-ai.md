@@ -26,11 +26,16 @@ The consequence is a **J-curve**: measured productivity dips first, because the 
 
 **So a disappointing early return is the predicted shape, not evidence of a bad bet**. Equally, the dip is not self-correcting. The rebound comes from the complementary investment actually being made. **The gap is not a technology problem and no model upgrade closes it.**
 
+**AI now has a direct measurement of the same pattern.** A 2026 study tracked more than 500,000 software developers through telemetry of their AI use. Autonomous coding agents raised the code they committed by 240% cumulatively. The gain shrank at every later stage: the number of projects rose 80% and actual software releases 30%. Across four app marketplaces, the number of new apps rose sharply while total usage did not rise at all. The authors read this as gains *"attenuated by human bottlenecks in the production chain"*. That is the leak listed below as local gain with no system gain, here measured at scale.
+
+**For AI, part of the complementary investment is context.** A model works only with what it is given, and complex work depends on organizational knowledge that is often scattered across systems or never written down. Anthropic's analysis of business use of its own API concluded that deploying AI for complex tasks *"might be constrained more by access to information than on underlying model capabilities"*, and that firms may need to *"restructure their organization, invest in new data infrastructure, and centralize information"*. This is a vendor reading its own traffic through proxies, and the report hedges the conclusion. It still places data organization and the capture of [tacit knowledge](tacit-knowledge.md) inside the investment the J-curve describes.
+
 **Where value actually leaks**, in the order it usually happens:
 
 - **No baseline.** The most common failure, and it is terminal for measurement: nobody recorded what the process cost before, so improvement is unprovable in either direction.
 - **A capability with no owning process.** The system works and nothing downstream changed, because no workflow was redesigned to consume it.
 - **Local gain, no system gain.** A step gets faster; the queue moves to the next step. Real, and invisible end-to-end.
+- **Context the system cannot reach.** The knowledge a task depends on sits in separate systems or in people's heads, so a capable model works from a partial picture ([context engineering](context-engineering.md)).
 - **Adoption without change.** People use the tool inside the old process, which caps the return at the old process's ceiling.
 - **Trust ceiling.** Output is good and nobody relies on it, so the human work is duplicated rather than replaced.
 - **Cost of assurance under-counted.** [Verification](verification.md), review and governance are part of the running cost, and pilots almost never carry them.
@@ -43,7 +48,7 @@ The consequence is a **J-curve**: measured productivity dips first, because the 
 
 An AI system can work perfectly and change nothing about your organization. That is the normal outcome, not a rare one, and it is a different problem from the technology not working.
 
-There is a well-studied reason. Technologies like this need a lot of surrounding change to pay off, such as new processes, retrained people and redesigned workflows. That work costs real money and produces something nobody counts as an asset, so for a while the numbers look worse rather than better. Economists have measured this pattern in software: a dip, then a rise. It is called a J-curve.
+There is a well-studied reason. Technologies like this need a lot of surrounding change to pay off, such as new processes, retrained people and redesigned workflows. That work costs real money and produces something nobody counts as an asset, so for a while the numbers look worse rather than better. Economists have measured this pattern in software: a dip, then a rise. It is called a J-curve. The same pattern has now been measured with AI: a 2026 study found that AI coding tools more than tripled the code developers committed, while the software they actually released grew by 30%.
 
 Two useful things follow. A disappointing first year is the expected shape, so panicking is premature. And the recovery is not automatic. It comes from actually doing the surrounding work. If you only bought the tool, you are sitting in the dip permanently.
 
@@ -60,9 +65,10 @@ And watch what gets counted. Prompts sent and licenses bought measure usage. The
 3. **The rebound is not automatic.** It comes from making the complementary investment. Buying the tool and waiting leaves you in the dip.
 4. **No baseline, no answer.** Record the current cost, time and quality before deployment. Almost nobody does, and it is the cheapest possible step.
 5. **Activity metrics rise while value does not.** Prompts, seats and queries all measure consumption. Measure the process outcome instead.
-6. **Local speed-ups do not add up.** Making one step faster moves the bottleneck. Measure end to end or you will report gains nobody experiences.
+6. **Local speed-ups do not add up.** Making one step faster moves the bottleneck. Measure end to end or you will report gains nobody experiences. In software, AI coding agents more than tripled code commits while releases rose 30%.
 7. **Assurance is a running cost.** Verification, review and governance are part of the total, and pilots systematically exclude them, which is why pilot economics rarely survive contact with production ([scalability](scalability-ai-systems.md)).
 8. **The failure is usually organizational.** Process redesign, incentives, trust and skills, none of which a better model addresses.
+9. **Context is part of the investment.** For complex tasks the limit can be what the system is able to access. Organizing data and capturing what people know belong in the cost of realizing value.
 
 ---
 
@@ -75,6 +81,7 @@ And watch what gets counted. Prompts sent and licenses bought measure usage. The
 - Success reported in consumption metrics (seats, prompts, queries) with no outcome measure
 - A working capability with no redesigned process to consume it, and no owner for that redesign
 - Local improvements aggregated into a claimed end-to-end gain that nobody can observe
+- Output counted at the first step (code written, drafts produced) and reported as delivered value
 - Assurance and review costs excluded from the running total, so the business case only holds while nobody checks the output
 - Pilots that never move, and never get stopped either, because with no success criteria there is no decision point
 - A disappointing return treated as a model problem, prompting a tool change rather than a process one
@@ -85,6 +92,7 @@ And watch what gets counted. Prompts sent and licenses bought measure usage. The
 - State the intended outcome at [use-case](ai-use-case.md) definition, in terms someone could later falsify
 - Name an owner for the *process change*, not just for the system; a capability with no owning process realizes nothing
 - Measure end to end, and check whether the bottleneck simply moved
+- Budget for the context work: getting the data and the unwritten knowledge a task needs into a form the system can reach
 - Include verification, review and governance in the running cost from the start
 - Set a pilot decision point with criteria in advance (scale, change, or stop), so a stalled pilot is a decision rather than a state
 - Report outcomes against baseline, and report honestly when the answer is "no measurable change"; that is a finding, not a failure to be dressed up
@@ -97,9 +105,9 @@ And watch what gets counted. Prompts sent and licenses bought measure usage. The
 
 ## Confidence level
 
-**Medium-High on the economics, medium on the practice.** The complementary-investment argument and the J-curve are peer-reviewed and empirically documented for prior general-purpose technologies. **The honest caveat is that it is documented for *prior* technologies** (software, hardware, electrification) and applied to AI by precedent rather than by measurement of AI itself. That is a strong argument from history, not evidence about this technology.
+**Medium-High on the economics, medium on the practice.** The complementary-investment argument and the J-curve are peer-reviewed and empirically documented for prior general-purpose technologies. **They were documented first for *prior* technologies** (software, hardware, electrification) and applied to AI by precedent. The first direct measurement for AI, in software development, shows the same drop from task-level gains to delivered output. It is a working paper covering one field, so the argument from history now has early support from AI itself, short of confirmation. The context finding comes from a vendor analyzing its own product and is stated as a possibility.
 
-The leak points and the practice recommendations are practitioner synthesis, not evaluated interventions, and the surrounding literature is dominated by consultancy and vendor material with a strong interest in the answer. **Treat any specific AI ROI figure with real suspicion**. This entry deliberately cites none, and recommends generating your own from a baseline you recorded.
+The leak points and the practice recommendations are practitioner synthesis, not evaluated interventions, and the surrounding literature is dominated by consultancy and vendor material with a strong interest in the answer. **Treat any specific AI ROI figure with real suspicion**. This entry deliberately cites none, and recommends generating your own from a baseline you recorded. The coding-study figures measure output at each stage, not return on investment.
 
 ---
 
@@ -124,6 +132,8 @@ The leak points and the practice recommendations are practitioner synthesis, not
 | ID | Source | Contribution to this entry |
 |---|---|---|
 | SRC-219 | Brynjolfsson, E.; Rock, D.; Syverson, C. — *The Productivity J-Curve: How Intangibles Complement General Purpose Technologies* (NBER WP 25148, 2018) · [link](https://www.nber.org/papers/w25148) | The mechanism: complementary intangible investment is poorly measured, producing a dip then a rebound, so an early disappointing return is the predicted shape rather than evidence of failure. |
+| SRC-432 | Demirer, M.; Musolff, L.; Yang, L. — *Writing Code vs. Shipping Code: Productivity Effects Across Generations of AI Coding Tools* (NBER Working Paper 35275, 2026) · [link](https://www.nber.org/papers/w35275) | The first direct measurement for AI: commits, projects and releases after AI coding tools, the gain shrinking at each stage, and the quoted weak-link reading. ⚠️ Working paper; software development only. |
+| SRC-433 | Appel, R.; McCrory, P.; Tamkin, A. et al. (Anthropic) — *Anthropic Economic Index report: Uneven geographic and enterprise AI adoption* (2025) · [link](https://www.anthropic.com/research/anthropic-economic-index-september-2025-report) | The quoted conclusion that complex deployments may be limited by access to information, and the remedies it names. ⚠️ Vendor-authored analysis of its own API traffic, through proxies and hedged. |
 | SRC-166 | Sculley, D.; Holt, G.; Golovin, D.; Davydov, E.; Phillips, T.; Ebner, D. et al. (Google) — *Hidden Technical Debt in Machine Learning Systems* (NeurIPS, 2015) · [link](https://papers.nips.cc/paper/5656-hidden-technical-debt-in-machine-learning-systems) | Why ongoing cost is systematically underestimated for ML systems, the running-cost side of a business case that pilots exclude. |
 | SRC-105 | Kausar, R. (CDO Magazine) — *AI Governance Roles: Who Owns What as AI Scales in the Enterprise* (2026) · [link](https://www.cdomagazine.tech/ai-governance/ai-governance-roles-who-owns-what-as-ai-scales-in-the-enterprise) | The ownership split between system and process, and where accountability for outcomes is typically left unassigned. ⚠️ Trade publication, used as a background reference. |
 | SRC-056 | Massenkoff, M.; McCrory, P. (Anthropic) — *Labor Market Impacts of AI: A New Measure and Early Evidence* (2026) · [link](https://www.anthropic.com/research/labor-market-impacts) | Early measurement of where AI use is concentrating in practice, against which claimed organizational impact can be sanity-checked. ⚠️ Vendor-authored. |
@@ -142,4 +152,4 @@ The leak points and the practice recommendations are practitioner synthesis, not
 
 ---
 
-*Last updated: v1.0 · September 2026*
+*Last updated: v1.1 · October 2026*

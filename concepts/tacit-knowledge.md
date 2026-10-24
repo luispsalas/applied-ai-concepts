@@ -28,6 +28,8 @@ Nonaka (1994) made this an organizational problem rather than a philosophical on
 
 **The practical inversion, and the part most relevant to daily use.** Working with an LLM through prompts and context is an **explicit-knowledge interface**: you get the benefit of your expertise only insofar as you can state it. Experts are systematically bad at this, because the knowledge most worth transferring is the part they cannot see themselves holding, which is the mechanism the [curse of knowledge](curse-of-knowledge-ai-context.md) describes. **So a model may be capable of the task while the expert is unable to specify it**, and the bottleneck sits on the human side of the interface.
 
+**The same bottleneck appears at the scale of an organization.** Anthropic's analysis of how businesses use its API gives a sales strategy for a key account as an example. The model would need the customer records and also *"tacit knowledge located in the minds of account executives, marketers, and external contacts."* Across tasks, the report found that more complex work came with more supplied context, at strongly diminishing returns. It concluded that deployment may be hardest *"particularly for occupations and in industries where tacit, diffuse knowledge is crucial to business operations."* This is a vendor reading its own traffic through proxies, and it hedges the conclusion. It also allows that part of the effect may be models handling long inputs less well ([context rot](context-rot.md)). It is still the first measurement this entry can point to for the articulation problem at organizational scale.
+
 The same asymmetry runs through oversight. A reviewer who says *"this is wrong, I can't tell you why yet"* is exercising tacit judgment, and it is frequently correct. A review process that accepts only articulated objections discards exactly the signal that is hardest to replace.
 
 ---
@@ -51,7 +53,7 @@ And it cuts a third way. When someone reviews AI output and says "this is wrong,
 1. **Polanyi's paradox has narrowed, not closed.** Learning from examples bypasses the need to state a rule, which is why the automation frontier moved.
 2. **Prompting is an explicit-knowledge interface.** Your expertise reaches the system only in the words you manage to supply.
 3. **Experts under-specify most.** The knowledge that matters is the knowledge they cannot see themselves using ([curse of knowledge](curse-of-knowledge-ai-context.md)).
-4. **The bottleneck is often articulation, not capability.** A disappointing result frequently means the task was under-described, not that the model could not do it.
+4. **The bottleneck is often articulation, not capability.** A disappointing result frequently means the task was under-described, not that the model could not do it. One vendor's analysis of business use reached the same conclusion for whole organizations.
 5. **"It's wrong but I can't say why" is signal, not noise.** Discarding unarticulated objections removes the hardest-to-replace part of human review.
 6. **Tacit knowledge is acquired by doing.** Delegating the doing removes the acquisition path, which is the mechanism behind [deskilling](cognitive-offloading-deskilling.md).
 7. **It is the least documented and most load-bearing organizational asset**, and therefore systematically absent from any [knowledge base](knowledge-base.md) an AI system is given.
@@ -90,7 +92,7 @@ And it cuts a third way. When someone reviews AI output and says "this is wrong,
 
 ## Confidence level
 
-**High** on the concept, which is foundational, sixty years old, and uncontested across philosophy, organizational theory and labor economics. **Medium on the AI-specific claims.** That machine learning erodes Polanyi's paradox is well argued and evidently borne out, but *how far* it extends is genuinely open and actively disputed. Learning tacit patterns from examples is not the same as holding the understanding those patterns came from, and the distinction is unresolved. The articulation-bottleneck and oversight arguments here are **reasoned extensions of established findings rather than directly measured results**; the underlying mechanisms (the curse of knowledge, skill decay through disuse) are evidenced, their specific application to LLM interfaces is not yet well studied. Autor's 2014 analysis also predates modern LLMs and is cited here for the paradox and its framing, not for current predictions about which tasks remain out of reach.
+**High** on the concept, which is foundational, sixty years old, and uncontested across philosophy, organizational theory and labor economics. **Medium on the AI-specific claims.** That machine learning erodes Polanyi's paradox is well argued and evidently borne out, but *how far* it extends is genuinely open and actively disputed. Learning tacit patterns from examples is not the same as holding the understanding those patterns came from, and the distinction is unresolved. The articulation-bottleneck and oversight arguments here are **reasoned extensions of established findings rather than directly measured results**. The one measurement cited, a vendor's analysis of its own business traffic, is consistent with the articulation argument at organizational scale, rests on proxies and is hedged by its authors; the underlying mechanisms (the curse of knowledge, skill decay through disuse) are evidenced, their specific application to LLM interfaces is not yet well studied. Autor's 2014 analysis also predates modern LLMs and is cited here for the paradox and its framing, not for current predictions about which tasks remain out of reach.
 
 ---
 
@@ -119,6 +121,7 @@ And it cuts a third way. When someone reviews AI output and says "this is wrong,
 | SRC-230 | Nonaka, I. — *A Dynamic Theory of Organizational Knowledge Creation* (Organization Science 5(1), 14–37, 1994) · [link](https://doi.org/10.1287/orsc.5.1.14) | Moves the concept from philosophy to organizations: knowledge creation as conversion between tacit and explicit forms, with the tacit half transferring through shared practice rather than documentation. |
 | SRC-231 | Autor, D. — *Polanyi's Paradox and the Shape of Employment Growth* (NBER Working Paper 20485, 2014) · [link](https://www.nber.org/papers/w20485) | Names Polanyi's paradox as the constraint on computerization and the driver of labor-market polarization, and identifies the AI response: learning from human examples to infer tacit rules that cannot be codified. ⚠️ Working paper; predates modern LLMs. |
 | SRC-017 | Verma, Rahul (LangChain) — *Human judgment in the agent improvement loop* (2026) · [link](https://blog.langchain.com/human-judgment-in-the-agent-improvement-loop/) | Tacit knowledge capture as a core design challenge for human oversight: expert judgment must be encoded into evaluation pipelines because human review alone does not scale. ⚠️ Vendor-authored. |
+| SRC-433 | Appel, R.; McCrory, P.; Tamkin, A. et al. (Anthropic) — *Anthropic Economic Index report: Uneven geographic and enterprise AI adoption* (2025) · [link](https://www.anthropic.com/research/anthropic-economic-index-september-2025-report) | The quoted key-account example and the finding that complex deployments may be limited by access to context, most where knowledge is tacit and diffuse. ⚠️ Vendor-authored analysis of its own API traffic, through proxies and hedged. |
 
 ---
 
@@ -133,4 +136,4 @@ And it cuts a third way. When someone reviews AI output and says "this is wrong,
 
 ---
 
-*Last updated: v1.0 · September 2026*
+*Last updated: v1.1 · October 2026*
