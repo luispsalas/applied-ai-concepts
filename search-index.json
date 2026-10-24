@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "count": 155,
+  "count": 156,
   "entries": [
     {
       "slug": "acceptable-use-policy",
@@ -2705,6 +2705,46 @@
         "SRC-216"
       ],
       "path": "concepts/fine-tuning.md"
+    },
+    {
+      "slug": "formal-verification",
+      "term": "Formal Verification",
+      "category": "Reliability & Quality",
+      "essence": "Proving a claim with software that checks every logical step. The result is as trustworthy as the statement that was proved and the checker that checked it.",
+      "short": "Proving a claim with software that checks every logical step. The result is as trustworthy as the statement that was proved and the checker that checked it",
+      "aliases": [
+        "proof assistant",
+        "theorem prover",
+        "interactive theorem proving",
+        "formal proof",
+        "machine-checked proof",
+        "Lean",
+        "autoformalization",
+        "proof kernel"
+      ],
+      "tags": [
+        "Evaluation",
+        "Safety"
+      ],
+      "version": "v1.0",
+      "updated": "October 2026",
+      "related": [
+        "audit-trail-ai",
+        "automation-bias",
+        "evaluation",
+        "hallucination",
+        "red-teaming",
+        "verification"
+      ],
+      "sources": [
+        "SRC-424",
+        "SRC-425",
+        "SRC-426",
+        "SRC-427",
+        "SRC-428",
+        "SRC-429"
+      ],
+      "path": "concepts/formal-verification.md"
     },
     {
       "slug": "frontier-ai",
@@ -6389,8 +6429,8 @@
         "Evaluation",
         "AI Literacy"
       ],
-      "version": "v1.0",
-      "updated": "August 2026",
+      "version": "v1.1",
+      "updated": "October 2026",
       "related": [
         "audit-trail-ai",
         "automation-bias",
@@ -6399,6 +6439,7 @@
         "confidence-vs-accuracy",
         "evaluation",
         "explainability-xai",
+        "formal-verification",
         "grounding",
         "hallucination",
         "human-in-the-loop",
@@ -6409,7 +6450,10 @@
         "SRC-174",
         "SRC-189",
         "SRC-190",
-        "SRC-191"
+        "SRC-191",
+        "SRC-423",
+        "SRC-430",
+        "SRC-431"
       ],
       "path": "concepts/verification.md"
     },
