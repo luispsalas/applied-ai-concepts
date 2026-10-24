@@ -11,3 +11,7 @@ defaults:
       path: ""
     values:
       image: /assets/og/applied-ai-concepts.png
+  - scope:
+      path: "scripts"   # tooling, not content: keeps the unfilled search template out of sitemap.xml
+    values:
+      sitemap: false
