@@ -1,6 +1,17 @@
 # Changelog
 
-## v1.56 — October 2026
+## v1.57 — October 2026
+
+**Three enrichments. No new entries; count stays at 156.**
+
+- `knowledge-base` — v1.0 → **v1.1**
+- `value-realization-ai` — v1.1 → **v1.2**
+- `cognitive-offloading-deskilling` — v1.1 → **v1.2**
+
+**What is missing from the knowledge base is missing from the system.** *Knowledge Base* treated content quality as the ceiling on what retrieval can deliver. It now adds coverage: retrieval surfaces only what someone put in, and a vendor analysis of business use of its API concluded that complex deployments may need organizations to centralize information and invest in data infrastructure. The entry adds a literacy note, a warning about coverage nobody has checked, and a practice to record what the knowledge base does not hold. The source is labeled as a vendor's hedged reading of its own traffic.
+
+**AI-native firms point the same way twice.** A 2026 study of AI-native startups found them 25% smaller than comparable startups at similar valuations, scaling knowledge work mainly by building AI into the product rather than layering tools onto existing workflows. *Value Realization* cites this beside its warning about adoption inside the old process. The same firms hold a roughly 15% lower share of entry-level workers, which *Cognitive Offloading & Deskilling* adds to its evidence that the entry-level route to judgment may be narrowing.
+
 
 **The Governance & Observability Notes catch up with the corpus. No new entries; count stays at 156.**
 

@@ -53,7 +53,7 @@ Looking for one term? Use the [alphabetical glossary](index.md) or [search](../s
 | [Anthropomorphism (AI)](../concepts/anthropomorphism-ai.md) | Reading fluent language as understanding, intent or care, the reflex underneath most other misconceptions about AI | ✅ v1.0 |
 | [Human–LLM Communication Skills](../concepts/human-llm-communication-skills.md) | Working well with a model is mostly noticing what you left unstated, and knowing when not to trust the answer | ✅ v1.0 |
 | [Curse of Knowledge (AI Context)](../concepts/curse-of-knowledge-ai-context.md) | You cannot un-know what you know, so you under-specify, and the model answers anyway instead of asking | ✅ v1.0 |
-| [Cognitive Offloading & Deskilling](../concepts/cognitive-offloading-deskilling.md) | Delegating thinking to a system erodes the skill needed to judge its output, which is the long-run cost of convenience | ✅ v1.1 |
+| [Cognitive Offloading & Deskilling](../concepts/cognitive-offloading-deskilling.md) | Delegating thinking to a system erodes the skill needed to judge its output, which is the long-run cost of convenience | ✅ v1.2 |
 | [Performativity (LLMs)](../concepts/performativity-llms.md) | Language models do not just describe language, they change it, measurably shifting the words people use, with the influence running back from the machine into human culture | ✅ v1.0 |
 | [Metaprompting](../concepts/metaprompting.md) | Prompting about prompting. Three different practices share the name, and the governance question is the same for all of them | ✅ v1.0 |
 | [Prompt Chaining](../concepts/prompt-chaining.md) | Breaking one task into a sequence of prompts, which buys you inspectable intermediate steps, and costs you a path for errors to travel down | ✅ v1.1 |
@@ -97,7 +97,7 @@ Looking for one term? Use the [alphabetical glossary](index.md) or [search](../s
 | [Training Data](../concepts/training-data.md) | What the model learned from, which is where its knowledge, gaps, blind spots and biases all come from, and which is rarely disclosed | ✅ v1.0 |
 | [Copyright & AI Output](../concepts/copyright-ai-output.md) | Who owns what a model makes, and whether training was lawful. These are two questions, one with a US answer and one genuinely open | ✅ v1.0 |
 | [Grounding](../concepts/grounding.md) | Anchoring model outputs to specific, verifiable sources, reducing hallucination by giving the model something real to reason from | ✅ v1.0 |
-| [Knowledge Base](../concepts/knowledge-base.md) | The collection of documents an AI can look up when answering. The quality of the library determines the quality of the answers | ✅ v1.0 |
+| [Knowledge Base](../concepts/knowledge-base.md) | The collection of documents an AI can look up when answering. The quality of the library determines the quality of the answers | ✅ v1.1 |
 | [Memory (AI Systems)](../concepts/memory-ai-systems.md) | How an AI remembers, covering what it keeps in a conversation, what carries over to future sessions, and what it reuses as learned skill | ✅ v1.0 |
 | [Domain](../concepts/domain.md) | The specific field the AI is working in. What counts as a "good" or "wrong" answer depends entirely on the domain | ✅ v1.0 |
 | [Context Window](../concepts/context-window.md) | The maximum amount of text an AI model can consider at once, a hard limit on what it can reason about | ✅ v1.0 |
@@ -205,7 +205,7 @@ Looking for one term? Use the [alphabetical glossary](index.md) or [search](../s
 | [AI Use Case](../concepts/ai-use-case.md) | A defined, bounded application of AI to a specific problem, the unit of design, risk assessment, and governance accountability | ✅ v1.0 |
 | [Operational Readiness (AI)](../concepts/operational-readiness-ai.md) | Whether the organization can actually run an AI system (data, infrastructure, skills, process, governance), not whether the model works | ✅ v1.0 |
 | [Scalability (AI Systems)](../concepts/scalability-ai-systems.md) | Volume scales, review capacity does not, and nothing alarms when a governed tool becomes an unreviewed pipeline | ✅ v1.0 |
-| [Value Realization (AI)](../concepts/value-realization-ai.md) | The gap between what AI can do and what an organization gets from it, closed by complementary investment, not by better models | ✅ v1.1 |
+| [Value Realization (AI)](../concepts/value-realization-ai.md) | The gap between what AI can do and what an organization gets from it, closed by complementary investment, not by better models | ✅ v1.2 |
 | [Continuous Feedback & Improvement](../concepts/continuous-feedback-improvement.md) | Treating an AI system as something that must be watched and corrected for as long as it runs, as a standing capability with an owner, not a post-launch intention | ✅ v1.0 |
 | [Tacit Knowledge](../concepts/tacit-knowledge.md) | The expertise people have but cannot fully put into words. It is the hardest thing to give an AI system as context, and the first thing lost when people stop practicing | ✅ v1.1 |
 | [Service Level Objective](../concepts/service-level-objective.md) | The number you commit to before anyone is angry, and the question of what it can even mean when the output is probabilistic rather than up-or-down | ✅ v1.0 |

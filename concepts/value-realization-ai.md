@@ -36,7 +36,7 @@ The consequence is a **J-curve**: measured productivity dips first, because the 
 - **A capability with no owning process.** The system works and nothing downstream changed, because no workflow was redesigned to consume it.
 - **Local gain, no system gain.** A step gets faster; the queue moves to the next step. Real, and invisible end-to-end.
 - **Context the system cannot reach.** The knowledge a task depends on sits in separate systems or in people's heads, so a capable model works from a partial picture ([context engineering](context-engineering.md)).
-- **Adoption without change.** People use the tool inside the old process, which caps the return at the old process's ceiling.
+- **Adoption without change.** People use the tool inside the old process, which caps the return at the old process's ceiling. A 2026 study of AI-native startups found they scale knowledge work mainly by *"embedding AI into the product, beyond layering on AI tools into existing workflows"*, with teams 25% smaller than comparable startups at similar valuations.
 - **Trust ceiling.** Output is good and nobody relies on it, so the human work is duplicated rather than replaced.
 - **Cost of assurance under-counted.** [Verification](verification.md), review and governance are part of the running cost, and pilots almost never carry them.
 
@@ -134,6 +134,7 @@ The leak points and the practice recommendations are practitioner synthesis, not
 | SRC-219 | Brynjolfsson, E.; Rock, D.; Syverson, C. — *The Productivity J-Curve: How Intangibles Complement General Purpose Technologies* (NBER WP 25148, 2018) · [link](https://www.nber.org/papers/w25148) | The mechanism: complementary intangible investment is poorly measured, producing a dip then a rebound, so an early disappointing return is the predicted shape rather than evidence of failure. |
 | SRC-432 | Demirer, M.; Musolff, L.; Yang, L. — *Writing Code vs. Shipping Code: Productivity Effects Across Generations of AI Coding Tools* (NBER Working Paper 35275, 2026) · [link](https://www.nber.org/papers/w35275) | The first direct measurement for AI: commits, projects and releases after AI coding tools, the gain shrinking at each stage, and the quoted weak-link reading. ⚠️ Working paper; software development only. |
 | SRC-433 | Appel, R.; McCrory, P.; Tamkin, A. et al. (Anthropic) — *Anthropic Economic Index report: Uneven geographic and enterprise AI adoption* (2025) · [link](https://www.anthropic.com/research/anthropic-economic-index-september-2025-report) | The quoted conclusion that complex deployments may be limited by access to information, and the remedies it names. ⚠️ Vendor-authored analysis of its own API traffic, through proxies and hedged. |
+| SRC-436 | Kim, H.; Koning, R. — *AI-Native Firms* (SSRN working paper, 2026) · [link](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6905079) | AI-native startups, 25% smaller than comparable firms at similar valuations, scaling through AI built into the product; the quoted contrast with layering tools onto existing workflows. ⚠️ Working paper; startups only, descriptive. |
 | SRC-166 | Sculley, D.; Holt, G.; Golovin, D.; Davydov, E.; Phillips, T.; Ebner, D. et al. (Google) — *Hidden Technical Debt in Machine Learning Systems* (NeurIPS, 2015) · [link](https://papers.nips.cc/paper/5656-hidden-technical-debt-in-machine-learning-systems) | Why ongoing cost is systematically underestimated for ML systems, the running-cost side of a business case that pilots exclude. |
 | SRC-105 | Kausar, R. (CDO Magazine) — *AI Governance Roles: Who Owns What as AI Scales in the Enterprise* (2026) · [link](https://www.cdomagazine.tech/ai-governance/ai-governance-roles-who-owns-what-as-ai-scales-in-the-enterprise) | The ownership split between system and process, and where accountability for outcomes is typically left unassigned. ⚠️ Trade publication, used as a background reference. |
 | SRC-056 | Massenkoff, M.; McCrory, P. (Anthropic) — *Labor Market Impacts of AI: A New Measure and Early Evidence* (2026) · [link](https://www.anthropic.com/research/labor-market-impacts) | Early measurement of where AI use is concentrating in practice, against which claimed organizational impact can be sanity-checked. ⚠️ Vendor-authored. |
@@ -152,4 +153,4 @@ The leak points and the practice recommendations are practitioner synthesis, not
 
 ---
 
-*Last updated: v1.1 · October 2026*
+*Last updated: v1.2 · October 2026*
