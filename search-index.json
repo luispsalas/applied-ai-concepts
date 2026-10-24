@@ -361,14 +361,16 @@
         "standardized tests",
         "SOTA",
         "state of the art",
-        "which model is best"
+        "which model is best",
+        "time horizon",
+        "task-completion time horizon"
       ],
       "tags": [
         "Evaluation",
         "AI Literacy"
       ],
-      "version": "v1.0",
-      "updated": "September 2026",
+      "version": "v1.1",
+      "updated": "October 2026",
       "related": [
         "confidence-vs-accuracy",
         "data-leakage-model-evaluation",
@@ -386,7 +388,10 @@
         "SRC-115",
         "SRC-242",
         "SRC-243",
-        "SRC-251"
+        "SRC-251",
+        "SRC-437",
+        "SRC-438",
+        "SRC-439"
       ],
       "path": "concepts/ai-benchmarking.md"
     },
@@ -2767,8 +2772,8 @@
         "Regulatory",
         "Safety"
       ],
-      "version": "v1.0",
-      "updated": "August 2026",
+      "version": "v1.1",
+      "updated": "October 2026",
       "related": [
         "ai-governance",
         "ai-incident-reporting",
@@ -2790,7 +2795,9 @@
         "SRC-143",
         "SRC-159",
         "SRC-200",
-        "SRC-203"
+        "SRC-203",
+        "SRC-437",
+        "SRC-439"
       ],
       "path": "concepts/frontier-ai.md"
     },

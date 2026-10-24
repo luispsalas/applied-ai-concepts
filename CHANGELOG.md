@@ -1,6 +1,16 @@
 # Changelog
 
-## v1.57 — October 2026
+## v1.58 — October 2026
+
+**Two enrichments and one term assessed. No new entries; count stays at 156.**
+
+- `ai-benchmarking` — v1.0 → **v1.1**
+- `frontier-ai` — v1.0 → **v1.1**
+
+**Capability measured in human time, with its ruler showing.** *AI Benchmarking* argued that a benchmark measures the benchmark, not a general capability. It now adds the most cited attempt to answer that: METR's time horizon, the length of task (in hours of expert work) an AI agent completes at a given success rate, which on software tasks doubled about every seven months from 2019 to 2025. The entry carries the method's own limits. It is measured relative to a domain, a task set and the human baseliners. Horizons at 80% success are four to six times shorter than at 50%. Revising the task set in 2026 changed the measured trend, and by May 2026 METR reported measurements above 16 hours as unreliable. A new literacy note, a warning about trends quoted without their success rate or task set, and a practice to match. *Frontier AI* adds that the instruments age along with the models.
+
+**Time horizon is findable, not a separate entry.** Its use outside METR is still thin and the phrase already means other things in reinforcement learning and finance, so it is recorded as covered by *AI Benchmarking*, where "time horizon" now resolves as an alias.
+
 
 **Three enrichments. No new entries; count stays at 156.**
 

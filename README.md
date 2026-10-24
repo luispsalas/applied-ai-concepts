@@ -7,7 +7,7 @@ Technical and plain-language explanations of how AI systems work, how they fail,
 | Look it up | Put it to work |
 |---|---|
 | **[Glossary →](glossary/index.md)**<br>156 terms, A–Z, each with a one-line definition. | **[Use as project context →](#use-it-as-project-context)**<br>Load the wiki into Claude, ChatGPT, Cursor or a RAG pipeline. |
-| **[Search →](https://luispsalas.github.io/applied-ai-concepts/search.html)**<br>Describe the problem in plain words. Matches 1032 synonyms. | **[Governance & Observability Notes →](notes/governance-and-observability.md)**<br>What to control, monitor and answer for across the core concepts. |
+| **[Search →](https://luispsalas.github.io/applied-ai-concepts/search.html)**<br>Describe the problem in plain words. Matches 1034 synonyms. | **[Governance & Observability Notes →](notes/governance-and-observability.md)**<br>What to control, monitor and answer for across the core concepts. |
 
 ---
 
