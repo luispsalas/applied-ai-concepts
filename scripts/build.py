@@ -375,6 +375,13 @@ def dash_problems(entries):
     known = {e["slug"] for e in entries}
     for slug in sorted(set(base) - known):
         out.append(f"dashes: baseline lists {slug}, which is not an entry (run `build.py write`)")
+    # notes/ was cleaned to zero in Oct 2026 and has no allowance at all; outside the
+    # ratchet it had kept 37 prose dashes after the entries reached none.
+    for p in sorted((ROOT / "notes").glob("*.md")):
+        n = sum(c for _, c, _ in prose_dashes(p.read_text()))
+        if n:
+            out.append(f"dashes: notes/{p.name} has {n} prose em dashes, allowed 0 "
+                       f"(house style: none in prose)")
     return out
 
 

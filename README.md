@@ -102,7 +102,11 @@ Made by a human working with AI models, and declared stage by stage (conception,
 
 ---
 
-**Companion project:** [Autonomous AI Casebook](https://github.com/luispsalas/autonomous-ai-casebook) reconstructs real security incidents where an AI system acted on its own, built from primary sources.
+**Companion projects:**
+
+- [Autonomous AI Casebook](https://github.com/luispsalas/autonomous-ai-casebook) reconstructs real security incidents where an AI system acted on its own, built from primary sources.
+- [AI Observability Toolkit](https://github.com/luispsalas/ai-observability-toolkit) collects metrics for AI systems and a crosswalk to the NIST AI RMF (work in progress).
+- [AI Enablement Toolkit](https://github.com/luispsalas/ai-enablement-toolkit) holds practical guides and templates for adopting AI tools, building literacy and governing what AI may do (work in progress).
 
 ---
 
