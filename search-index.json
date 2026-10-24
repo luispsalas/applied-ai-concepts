@@ -1192,8 +1192,8 @@
         "Model Behavior",
         "Evaluation"
       ],
-      "version": "v1.0",
-      "updated": "September 2026",
+      "version": "v1.1",
+      "updated": "October 2026",
       "related": [
         "ai-literacy",
         "anthropomorphism-ai",
@@ -1213,7 +1213,9 @@
         "SRC-175",
         "SRC-190",
         "SRC-191",
-        "SRC-218"
+        "SRC-218",
+        "SRC-434",
+        "SRC-435"
       ],
       "path": "concepts/cognitive-offloading-deskilling.md"
     },
@@ -1576,8 +1578,8 @@
         "Prompting",
         "Architecture"
       ],
-      "version": "v1.1",
-      "updated": "May 2026",
+      "version": "v1.2",
+      "updated": "October 2026",
       "related": [
         "context-window",
         "harness-paradigm",
@@ -1589,7 +1591,8 @@
       "sources": [
         "SRC-007",
         "SRC-011",
-        "SRC-012"
+        "SRC-012",
+        "SRC-433"
       ],
       "path": "concepts/context-engineering.md"
     },
@@ -6041,8 +6044,8 @@
       "tags": [
         "AI Literacy"
       ],
-      "version": "v1.0",
-      "updated": "September 2026",
+      "version": "v1.1",
+      "updated": "October 2026",
       "related": [
         "ai-literacy",
         "cognitive-offloading-deskilling",
@@ -6061,7 +6064,8 @@
         "SRC-017",
         "SRC-229",
         "SRC-230",
-        "SRC-231"
+        "SRC-231",
+        "SRC-433"
       ],
       "path": "concepts/tacit-knowledge.md"
     },
@@ -6388,8 +6392,8 @@
         "Architecture",
         "Evaluation"
       ],
-      "version": "v1.0",
-      "updated": "September 2026",
+      "version": "v1.1",
+      "updated": "October 2026",
       "related": [
         "ai-governance",
         "ai-literacy",
@@ -6408,7 +6412,9 @@
         "SRC-056",
         "SRC-105",
         "SRC-166",
-        "SRC-219"
+        "SRC-219",
+        "SRC-432",
+        "SRC-433"
       ],
       "path": "concepts/value-realization-ai.md"
     },

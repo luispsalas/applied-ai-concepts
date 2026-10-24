@@ -1,5 +1,22 @@
 # Changelog
 
+## v1.55 — October 2026
+
+**Four enrichments. No new entries; count stays at 156.**
+
+- `value-realization-ai` — v1.0 → **v1.1**
+- `tacit-knowledge` — v1.0 → **v1.1**
+- `context-engineering` — v1.1 → **v1.2**
+- `cognitive-offloading-deskilling` — v1.0 → **v1.1**
+
+**The J-curve now has a measurement from AI itself.** The entry argued that AI pays off only after surrounding investment in processes, people and data, and it was candid that this rested on earlier technologies. A 2026 study of more than 500,000 software developers adds direct evidence: autonomous coding agents raised code commits by 240%, while the number of projects rose 80% and actual releases 30%. The authors attribute the shrinking gain to human bottlenecks further along the chain. The entry now cites it beside its literacy note that local speed-ups do not add up, adds a watch-for on counting first-step output as delivered value, and revises its confidence note: the argument from history has early support from AI, short of confirmation.
+
+**Context is part of the investment.** A vendor analysis of business use of its own API concluded that complex deployments may be limited more by access to information than by the model, and named data reorganization as a remedy. The entry adds this as a new way value leaks, a literacy note and a budgeting practice, and labels it as a vendor's hedged reading of its own traffic.
+
+**The same finding reaches two more entries.** *Tacit Knowledge* argued that the limit on AI help is often what an expert can put into words, and said that claim was reasoned rather than measured. It now cites the vendor analysis as the first measurement consistent with it at the scale of an organization, using the report's own example: a sales strategy for a key account needs customer records and also what account executives and marketers know but have not written down. *Context Engineering* gains the organizational side it lacked. Some tasks have their context in one place, like a codebase in a central repository, while others need information spread across systems and people. It adds a warning against planning a deployment around the choice of model before checking whether that information can be gathered, and a practice to map where it lives. Both entries label the source as a vendor's hedged reading of its own traffic.
+
+**The junior problem shows its first link in labor data.** *Cognitive Offloading & Deskilling* warned that automating entry-level work removes the practice through which people learn the judgment that review depends on. A Stanford study of US payroll records now finds employment of workers aged 22 to 25 in AI-exposed occupations 19% below trend, mainly through reduced hiring, with no such gap for experienced workers. The entry adds it with the authors' own framing as early and descriptive, and with a Yale analysis that found no clear AI effect in the average exposed occupation. Neither study measures skill, and the entry says so: the evidence is that the learning route may be narrowing, while deskilling itself is still unmeasured.
+
 ## v1.54 — October 2026
 
 **One new entry and one enrichment. Count 155 → 156.**

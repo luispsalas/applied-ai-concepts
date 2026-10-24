@@ -48,12 +48,12 @@ Looking for one term? Use the [alphabetical glossary](index.md) or [search](../s
 
 | Concept | One-line essence | Status |
 |---|---|---|
-| [Context Engineering](../concepts/context-engineering.md) | Designing what an AI model receives is as important as the model itself | ✅ v1.1 |
+| [Context Engineering](../concepts/context-engineering.md) | Designing what an AI model receives is as important as the model itself | ✅ v1.2 |
 | [Prompt Engineering](../concepts/prompt-engineering.md) | Structuring inputs to consistently elicit useful, accurate, and safe model outputs | ✅ v1.1 |
 | [Anthropomorphism (AI)](../concepts/anthropomorphism-ai.md) | Reading fluent language as understanding, intent or care, the reflex underneath most other misconceptions about AI | ✅ v1.0 |
 | [Human–LLM Communication Skills](../concepts/human-llm-communication-skills.md) | Working well with a model is mostly noticing what you left unstated, and knowing when not to trust the answer | ✅ v1.0 |
 | [Curse of Knowledge (AI Context)](../concepts/curse-of-knowledge-ai-context.md) | You cannot un-know what you know, so you under-specify, and the model answers anyway instead of asking | ✅ v1.0 |
-| [Cognitive Offloading & Deskilling](../concepts/cognitive-offloading-deskilling.md) | Delegating thinking to a system erodes the skill needed to judge its output, which is the long-run cost of convenience | ✅ v1.0 |
+| [Cognitive Offloading & Deskilling](../concepts/cognitive-offloading-deskilling.md) | Delegating thinking to a system erodes the skill needed to judge its output, which is the long-run cost of convenience | ✅ v1.1 |
 | [Performativity (LLMs)](../concepts/performativity-llms.md) | Language models do not just describe language, they change it, measurably shifting the words people use, with the influence running back from the machine into human culture | ✅ v1.0 |
 | [Metaprompting](../concepts/metaprompting.md) | Prompting about prompting. Three different practices share the name, and the governance question is the same for all of them | ✅ v1.0 |
 | [Prompt Chaining](../concepts/prompt-chaining.md) | Breaking one task into a sequence of prompts, which buys you inspectable intermediate steps, and costs you a path for errors to travel down | ✅ v1.1 |
@@ -205,7 +205,7 @@ Looking for one term? Use the [alphabetical glossary](index.md) or [search](../s
 | [AI Use Case](../concepts/ai-use-case.md) | A defined, bounded application of AI to a specific problem, the unit of design, risk assessment, and governance accountability | ✅ v1.0 |
 | [Operational Readiness (AI)](../concepts/operational-readiness-ai.md) | Whether the organization can actually run an AI system (data, infrastructure, skills, process, governance), not whether the model works | ✅ v1.0 |
 | [Scalability (AI Systems)](../concepts/scalability-ai-systems.md) | Volume scales, review capacity does not, and nothing alarms when a governed tool becomes an unreviewed pipeline | ✅ v1.0 |
-| [Value Realization (AI)](../concepts/value-realization-ai.md) | The gap between what AI can do and what an organization gets from it, closed by complementary investment, not by better models | ✅ v1.0 |
+| [Value Realization (AI)](../concepts/value-realization-ai.md) | The gap between what AI can do and what an organization gets from it, closed by complementary investment, not by better models | ✅ v1.1 |
 | [Continuous Feedback & Improvement](../concepts/continuous-feedback-improvement.md) | Treating an AI system as something that must be watched and corrected for as long as it runs, as a standing capability with an owner, not a post-launch intention | ✅ v1.0 |
-| [Tacit Knowledge](../concepts/tacit-knowledge.md) | The expertise people have but cannot fully put into words. It is the hardest thing to give an AI system as context, and the first thing lost when people stop practicing | ✅ v1.0 |
+| [Tacit Knowledge](../concepts/tacit-knowledge.md) | The expertise people have but cannot fully put into words. It is the hardest thing to give an AI system as context, and the first thing lost when people stop practicing | ✅ v1.1 |
 | [Service Level Objective](../concepts/service-level-objective.md) | The number you commit to before anyone is angry, and the question of what it can even mean when the output is probabilistic rather than up-or-down | ✅ v1.0 |
