@@ -11,9 +11,9 @@ This note is for the other direction: **the patterns that only appear when you l
 | **Concept entry** | *What is X, and what does governing X require?* | each `concepts/*.md` |
 | **This note** | *What recurs across many concepts, and what do I check before deploying anything?* | here |
 
-Three things justify a separate document: the **cross-cutting patterns** below, the **observability signal tables** (no single entry carries one), and the **[accountability checklist](#accountability-checklist)**, which is meant to be worked through rather than read.
+Three things justify a separate document: the **cross-cutting patterns** below, the **[observability signal table](#observability-signals)** (no single entry carries one), and the **[accountability checklist](#accountability-checklist)**, which is meant to be worked through rather than read.
 
-**Two companion toolkits go further than this note can.** The signal tables here are a starting set; the [AI Observability Toolkit](https://github.com/luispsalas/ai-observability-toolkit) holds a metric catalog and a crosswalk to the [NIST AI RMF](../concepts/nist-ai-rmf.md) that shows where the framework asks for evidence no metric provides. The [AI Enablement Toolkit](https://github.com/luispsalas/ai-enablement-toolkit) holds templates for acting on the checklist (see below). Both are works in progress and list what is available today.
+**Two companion toolkits go further than this note can.** The signal table here is a starting set; the [AI Observability Toolkit](https://github.com/luispsalas/ai-observability-toolkit) holds a metric catalog and a crosswalk to the [NIST AI RMF](../concepts/nist-ai-rmf.md) that shows where the framework asks for evidence no metric provides. The [AI Enablement Toolkit](https://github.com/luispsalas/ai-enablement-toolkit) holds templates for acting on the checklist (see below). Both are works in progress and list what is available today.
 
 **It is deliberately not a digest of the entries.** At the corpus's current size, restating each one's governance notes here would produce a worse copy of something already written and immediately stale. Where a point belongs to one concept, it stays in that concept.
 
@@ -25,6 +25,8 @@ Six themes, chosen to cut across the corpus rather than to enumerate it:
 4. [Organizational Accountability](#4-organizational-accountability)
 5. [Model Behavior & Safety](#5-model-behavior--safety) *(new, Sep 2026)*
 6. [Data, Rights & Regulatory Obligation](#6-data-rights--regulatory-obligation) *(new, Sep 2026)*
+
+After the themes come the [accountability checklist](#accountability-checklist) and the [observability signals](#observability-signals), gathered in one table.
 
 ---
 
@@ -55,20 +57,7 @@ Six themes, chosen to cut across the corpus rather than to enumerate it:
 - For every quality figure relied on, record where the reference came from, who produced it and how far they agreed. For consequential results, keep a reference result or an independent recomputation rather than a repeat run.
 - Name an owner for each threshold, and report both error rates beside it.
 
-### Observability signals
-
-| Signal | What it tells you |
-|---|---|
-| Ground truth comparison rate | How often AI outputs are checked against verified sources |
-| Human review coverage | % of outputs that passed through a HITL step |
-| Review reversal rate | % of reviewed outputs changed or rejected by human reviewers |
-| Time-in-review | How long reviewers are spending, a proxy for whether review is genuine or rubber-stamp |
-| Hallucination incident log | Tracked instances of factual errors that reached downstream use |
-| Evaluation cadence compliance | Whether scheduled production evaluation reviews are occurring on time |
-| Output distribution drift | Change in output characteristics over time, which signals when re-evaluation is needed |
-| Evaluation criteria ownership | Whether each AI system has a named evaluation owner with documented criteria |
-| Reference provenance | Whether each quality figure records who produced its reference and how far they agreed |
-| Error rates by type | False positives and false negatives reported separately, with the threshold that produced them |
+**Observability signals** for this theme are in the [signals table](#observability-signals), under *Verification*.
 
 ---
 
@@ -100,21 +89,7 @@ Six themes, chosen to cut across the corpus rather than to enumerate it:
 - Before deployment, map where the knowledge a task needs lives, including what is unwritten, and how the system will reach it.
 - Keep an inventory of who can add content to each corpus the system learns from or retrieves from.
 
-### Observability signals
-
-| Signal | What it tells you |
-|---|---|
-| Context version log | Which context was active for a given session or output |
-| Knowledge base entry age distribution | How many entries haven't been reviewed or updated recently |
-| Stale entry rate | % of entries past their expected review date |
-| Retrieval coverage | Whether retrieved context is actually relevant to the query |
-| Context access log | Who or what injected content into the model's context window |
-| Citation verification rate | % of cited outputs spot-checked against their stated sources |
-| Knowledge base version log | Which version of the knowledge base was active for a given retrieval |
-| Temporal freshness score | Age distribution of documents in the retrieval corpus, a proxy for stale grounding risk |
-| Quality by input length | Whether answers degrade as context grows |
-| Compaction log | What was dropped or rewritten, by which rule, and when |
-| Corpus write-access inventory | Who can add content to each training or retrieval source |
+**Observability signals** for this theme are in the [signals table](#observability-signals), under *Context & Knowledge*.
 
 ---
 
@@ -143,18 +118,7 @@ Six themes, chosen to cut across the corpus rather than to enumerate it:
 - Test that every control can refuse an action, and that it refuses when it fails.
 - Route AI traffic through a single point where policy, logging and limits apply.
 
-### Observability signals
-
-| Signal | What it tells you |
-|---|---|
-| Harness configuration version log | Which version of the permission model and system prompt was active at any given time |
-| Tool invocation log | Which external tools or APIs the model accessed, and when |
-| Permission denial rate | How often the harness blocked an action the model attempted |
-| System prompt change history | Who changed what and when, which makes up the audit trail for behavioral configuration |
-| Anomalous output rate | Outputs outside expected parameters, a proxy for adversarial input or configuration drift |
-| Trifecta inventory | Agents whose sessions combine private data, untrusted input and an outbound channel, and who approved each |
-| Control failure-mode tests | Whether each control blocks the action when it errors |
-| Traffic through the gateway | Share of AI requests that pass the enforcement point |
+**Observability signals** for this theme are in the [signals table](#observability-signals), under *System Control*.
 
 ---
 
@@ -182,17 +146,7 @@ Six themes, chosen to cut across the corpus rather than to enumerate it:
 - Record a baseline before deployment and report outcomes against it.
 - Provide a route for raising concerns about AI systems that does not depend on the goodwill of the system's owner.
 
-### Observability signals
-
-| Signal | What it tells you |
-|---|---|
-| AI system inventory coverage | % of AI systems in use with a named owner and documented risk classification |
-| Governance review cadence compliance | Whether scheduled governance reviews are occurring for each system |
-| Literacy assessment coverage | % of staff in AI-adjacent roles who have been assessed against defined literacy requirements |
-| Agentic action authorization log | Record of which actions agentic systems were authorized to take and by whom |
-| Regulatory exposure log | Documented tracking of applicable regulatory obligations per system |
-| Assurance provenance | Access, scope, funding and timing recorded for each audit or assessment relied on |
-| Baseline coverage | Share of deployed systems with a baseline recorded before deployment |
+**Observability signals** for this theme are in the [signals table](#observability-signals), under *Organizational*.
 
 ---
 
@@ -227,18 +181,7 @@ Six themes, chosen to cut across the corpus rather than to enumerate it:
 - Re-assess capability when you add tools, data access or autonomy, as well as when the model changes.
 - Where a system edits its own instructions or memory, keep every version outside the system and re-run a fixed set of earlier tasks after each change.
 
-### Observability signals
-
-| Signal | What it tells you |
-|---|---|
-| Refusal rate by category, over time | Whether safety behavior has shifted after a model or fine-tuning change |
-| Adversarial test recency per system | How long since red teaming ran against the *current* configuration |
-| Agreement-with-user rate on contested inputs | Proxy for sycophancy pressure in production |
-| Regression suite of past successful attacks | Whether previously-fixed failures can return silently |
-| Proxy-metric vs outcome divergence | Gap between what the system optimizes and what it is for |
-| Evaluation coverage vs capability claims | Whether anything is deployed that the evaluation cannot assess |
-| Wrongful-refusal rate | Legitimate requests refused, measured on your own work |
-| Self-edit history | Every version of a prompt, memory or context the system rewrote, with regression results after each |
+**Observability signals** for this theme are in the [signals table](#observability-signals), under *Model Behavior*.
 
 ---
 
@@ -273,18 +216,7 @@ Six themes, chosen to cut across the corpus rather than to enumerate it:
 - Track provider policies and frameworks as dependencies with a review date, and review them on each change.
 - Before modifying or self-hosting a component, establish which provider obligations would become yours.
 
-### Observability signals
-
-| Signal | What it tells you |
-|---|---|
-| Deletion propagation test results | Whether erasure actually reaches derived stores, or only the source |
-| Rights-basis coverage | % of training and retrieval corpora with a recorded legal basis |
-| Time-to-awareness vs reporting deadline | Whether the incident path can meet its clock |
-| Shared-base-model map | Where a single upstream defect would surface simultaneously |
-| Derived-artifact inventory | Vector stores, caches and fine-tuning sets under retention governance |
-| Obligation register freshness | Whether applicable duties have been reviewed since the last regulatory change |
-| Privacy parameter record | Each privacy claim with its parameters and who assessed it |
-| External-document review dates | When each provider policy and framework relied on was last checked |
+**Observability signals** for this theme are in the [signals table](#observability-signals), under *Data & Regulation*.
 
 ---
 
@@ -344,6 +276,62 @@ Cross-cutting questions to ask before deploying or operating any AI system cover
 
 ---
 
+## Observability signals
+
+**What to measure so the patterns above do not stay invisible.** Each signal below is something a team can record or count, and each one tells you whether a control from one of the six themes is actually working. Few organizations need all of them. Pick the rows that match the risks of the system in front of you, give each one an owner, and decide in advance what reading would trigger a review. The Category column names the theme each signal comes from, so the table can be read whole or one theme at a time.
+
+**Related signals share a row here, with their parts named in brackets.** Each part is worth recording separately in practice. Specifying a signal properly takes more than a line: how to calculate it, a healthy range, the common pitfalls. The companion [AI Observability Toolkit](https://github.com/luispsalas/ai-observability-toolkit) specifies metrics that way, mapped to the [NIST AI RMF](../concepts/nist-ai-rmf.md), and is the place for the detailed versions.
+
+| Category | Signal | What it tells you |
+|---|---|---|
+| Verification | Ground truth comparison rate | How often AI outputs are checked against verified sources |
+| Verification | Human review coverage | % of outputs that passed through a HITL step |
+| Verification | Review reversal rate | % of reviewed outputs changed or rejected by human reviewers |
+| Verification | Time-in-review | How long reviewers are spending, a proxy for whether review is genuine or rubber-stamp |
+| Verification | Hallucination incident log | Tracked instances of factual errors that reached downstream use |
+| Verification | Output distribution drift | Change in output characteristics over time, which signals when re-evaluation is needed |
+| Verification | Evaluation criteria ownership | Whether each AI system has a named evaluation owner with documented criteria |
+| Verification | Reference provenance | Whether each quality figure records who produced its reference and how far they agreed |
+| Verification | Error rates by type | False positives and false negatives reported separately, with the threshold that produced them |
+| Context & Knowledge | Version logs (context, knowledge base) | Which context, and which version of the knowledge base, was active for a given session, output or retrieval |
+| Context & Knowledge | Knowledge freshness (entry age, stale entries, corpus age) | How much of the knowledge base and retrieval corpus is past its review date or simply old, a proxy for stale grounding risk |
+| Context & Knowledge | Retrieval coverage | Whether retrieved context is actually relevant to the query |
+| Context & Knowledge | Context access log | Who or what injected content into the model's context window |
+| Context & Knowledge | Citation verification rate | % of cited outputs spot-checked against their stated sources |
+| Context & Knowledge | Quality by input length | Whether answers degrade as context grows |
+| Context & Knowledge | Compaction log | What was dropped or rewritten, by which rule, and when |
+| Context & Knowledge | Corpus write-access inventory | Who can add content to each training or retrieval source |
+| System Control | Configuration version history (permission model, system prompt) | Which configuration was active at any time, and who changed what and when |
+| System Control | Tool invocation log | Which external tools or APIs the model accessed, and when |
+| System Control | Permission denial rate | How often the harness blocked an action the model attempted |
+| System Control | Anomalous output rate | Outputs outside expected parameters, a proxy for adversarial input or configuration drift |
+| System Control | Trifecta inventory | Agents whose sessions combine private data, untrusted input and an outbound channel, and who approved each |
+| System Control | Control failure-mode tests | Whether each control blocks the action when it errors |
+| System Control | Traffic through the gateway | Share of AI requests that pass the enforcement point |
+| Organizational | AI system inventory coverage | % of AI systems in use with a named owner and documented risk classification |
+| Organizational | Review cadence compliance (evaluation, governance) | Whether scheduled production evaluations and governance reviews are happening on time for each system |
+| Organizational | Literacy assessment coverage | % of staff in AI-adjacent roles who have been assessed against defined literacy requirements |
+| Organizational | Agentic action authorization log | Record of which actions agentic systems were authorized to take and by whom |
+| Organizational | Assurance provenance | Access, scope, funding and timing recorded for each audit or assessment relied on |
+| Organizational | Baseline coverage | Share of deployed systems with a baseline recorded before deployment |
+| Model Behavior | Refusal rates (by category over time, wrongful refusals) | Whether safety behavior shifted after a model or fine-tuning change, and how often legitimate requests on your own work are refused |
+| Model Behavior | Adversarial test recency per system | How long since red teaming ran against the *current* configuration |
+| Model Behavior | Agreement-with-user rate on contested inputs | Proxy for sycophancy pressure in production |
+| Model Behavior | Regression suite of past successful attacks | Whether previously-fixed failures can return silently |
+| Model Behavior | Proxy-metric vs outcome divergence | Gap between what the system optimizes and what it is for |
+| Model Behavior | Evaluation coverage vs capability claims | Whether anything is deployed that the evaluation cannot assess |
+| Model Behavior | Self-edit history | Every version of a prompt, memory or context the system rewrote, with regression results after each |
+| Data & Regulation | Deletion propagation test results | Whether erasure actually reaches derived stores, or only the source |
+| Data & Regulation | Rights-basis coverage | % of training and retrieval corpora with a recorded legal basis |
+| Data & Regulation | Time-to-awareness vs reporting deadline | Whether the incident path can meet its clock |
+| Data & Regulation | Shared-base-model map | Where a single upstream defect would surface simultaneously |
+| Data & Regulation | Derived-artifact inventory | Vector stores, caches and fine-tuning sets under retention governance |
+| Data & Regulation | Obligation register (coverage, freshness) | Which regulatory obligations apply to each system, and whether they have been reviewed since the last regulatory change |
+| Data & Regulation | Privacy parameter record | Each privacy claim with its parameters and who assessed it |
+| Data & Regulation | External-document review dates | When each provider policy and framework relied on was last checked |
+
+---
+
 ## Related concepts
 
 **Deliberately not a list.** This note is linked *from* every concept entry; listing them back would duplicate the [glossary index](../glossary/index.md) and go stale the moment an entry is published. Each theme above names the concepts it draws on, and the [term register](../glossary/register.md) carries the full set with status.
@@ -375,4 +363,4 @@ Cross-cutting questions to ask before deploying or operating any AI system cover
 
 ---
 
-*Last updated: v1.3 · October 2026*
+*Last updated: v1.4 · October 2026*

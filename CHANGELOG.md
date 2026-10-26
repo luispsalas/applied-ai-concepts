@@ -1,6 +1,15 @@
 # Changelog
 
-## v1.58 — October 2026
+## v1.59 — October 2026
+
+**The Governance & Observability Notes gather their signals in one table. No new entries; count stays at 156.**
+
+- `notes/governance-and-observability` — v1.3 → **v1.4**
+
+**One table of what to measure.** The note's observability signals were split across six small tables, one per theme. They now sit together in a single section after the accountability checklist, with a short introduction on how to use them and a Category column naming the theme each comes from. Each theme keeps a one-line pointer to its signals.
+
+**Overlap made visible, then merged.** Seen side by side, several signals measured nearly the same thing: four separate version logs, three measures of knowledge freshness, two review-cadence checks, two records of regulatory obligations and two refusal rates. Each group now shares one reference row, with its parts named in brackets, and the table goes from 52 rows to 45. Every original signal is still named. The detailed, separately specified versions belong in the companion AI Observability Toolkit, which the note points to for that purpose.
+
 
 **Two enrichments and one term assessed. No new entries; count stays at 156.**
 
