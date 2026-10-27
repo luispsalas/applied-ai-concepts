@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "count": 156,
+  "count": 157,
   "entries": [
     {
       "slug": "acceptable-use-policy",
@@ -2255,6 +2255,57 @@
         "SRC-327"
       ],
       "path": "concepts/differential-privacy.md"
+    },
+    {
+      "slug": "diffusion-language-models",
+      "term": "Diffusion Language Models",
+      "category": "Foundations",
+      "essence": "Language models that write by refining a whole draft in parallel over several steps, instead of producing one token after another. They can be much faster, and their safety behavior differs from the models most safeguards were built for.",
+      "short": "Language models that write by refining a whole draft in parallel over several steps, instead of producing one token after another",
+      "aliases": [
+        "diffusion LLM",
+        "DLM",
+        "dLLM",
+        "diffusion-based language model",
+        "masked diffusion language model",
+        "discrete diffusion",
+        "text diffusion",
+        "non-autoregressive generation",
+        "LLaDA",
+        "Mercury"
+      ],
+      "tags": [
+        "Architecture",
+        "Safety",
+        "Model Behavior"
+      ],
+      "version": "v1.0",
+      "updated": "October 2026",
+      "related": [
+        "ai-benchmarking",
+        "guardrails-ai-systems",
+        "inference",
+        "jailbreak",
+        "large-language-models",
+        "latency-ai-systems",
+        "recurrent-depth",
+        "tokenization",
+        "transformers"
+      ],
+      "sources": [
+        "SRC-440",
+        "SRC-441",
+        "SRC-442",
+        "SRC-443",
+        "SRC-444",
+        "SRC-445",
+        "SRC-446",
+        "SRC-447",
+        "SRC-448",
+        "SRC-449",
+        "SRC-450"
+      ],
+      "path": "concepts/diffusion-language-models.md"
     },
     {
       "slug": "domain",

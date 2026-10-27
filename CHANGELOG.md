@@ -1,6 +1,15 @@
 # Changelog
 
-## v1.59 — October 2026
+## v1.60 — October 2026
+
+**One new entry. Count 156 → 157.**
+
+- `diffusion-language-models` — **new**, v1.0
+
+**Not every language model writes left to right.** Diffusion language models start from a draft of blanks or noise and refine every position at once over several steps, the way image generators work. The entry covers the two families, continuous and masked, the step from research to an 8-billion-parameter model and a commercial product, and the trade-off behind the speed: fewer refinement steps mean faster output and lower quality. It also says plainly that this is a way of building models, unrelated to "AI diffusion" in the sense of technology adoption or export controls.
+
+**Safety behavior differs, in both directions.** One study found that a harmful word planted in an intermediate draft can steer an aligned diffusion model toward a harmful answer; another found these models recover from harmful drafts more often than left-to-right ones and resist jailbreaks better. The entry reports both, asks for safeguards to be retested on this kind of model rather than inherited, and labels its point about streaming filters as reasoning from the mechanism. Related approaches that generate above the single token, including Next-Concept Modeling, are described as approaches; the term itself was declined on the same day.
+
 
 **The Governance & Observability Notes gather their signals in one table. No new entries; count stays at 156.**
 

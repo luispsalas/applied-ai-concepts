@@ -42,6 +42,7 @@ Looking for one term? Use the [alphabetical glossary](index.md) or [search](../s
 | [Model Distillation](../concepts/model-distillation.md) | Training a small model to reproduce a large one's behavior, and the fact that the only thing separating this from model theft is permission | ✅ v1.0 |
 | [Quantization](../concepts/quantization.md) | Storing a model's weights at lower numerical precision to make it cheaper to run, which produces a different model, with its own evaluation status and its own safety behavior | ✅ v1.0 |
 | [World Models](../concepts/world-models.md) | A learned simulation of how an environment responds to actions, which an agent plans inside before acting, so its decisions are only as sound as the simulation, and an optimizer will find exactly where the simulation is wrong | ✅ v1.0 |
+| [Diffusion Language Models](../concepts/diffusion-language-models.md) | Language models that write by refining a whole draft in parallel over several steps, instead of producing one token after another | ✅ v1.0 |
 
 ### Interaction & Design
 *How you work with models effectively*
