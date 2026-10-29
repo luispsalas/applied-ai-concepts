@@ -49,13 +49,13 @@ After the themes come the [accountability checklist](#accountability-checklist) 
 
 ### Best practices
 
-- Design verification as a structural step, not a reactive one. Decide in advance: which outputs, at which volume, reviewed by whom, using what criteria.
-- Define the HITL spectrum for each use case: full review, selective review (triggered by confidence threshold or output type), human-on-the-loop (monitoring at system level), or human-initiated. Document which one you are using and why.
-- Specify reviewers by role, not by name. If the review policy says "Sarah checks AI outputs," it will not survive organizational change.
-- Grounding strategies (RAG, retrieval, tool use) reduce hallucination risk but do not eliminate it. Do not treat grounding as a substitute for verification on consequential outputs.
-- Define evaluation criteria before deployment: which dimensions matter, what thresholds are acceptable, who reviews results, and what score triggers a hold or rollback. Maintain a production evaluation cadence with scheduled sampling, drift alerts, and a defined re-evaluation trigger for significant changes.
-- For every quality figure relied on, record where the reference came from, who produced it and how far they agreed. For consequential results, keep a reference result or an independent recomputation rather than a repeat run.
-- Name an owner for each threshold, and report both error rates beside it.
+- **Design verification as a structural step, not a reactive one.** Decide in advance: which outputs, at which volume, reviewed by whom, using what criteria.
+- **Define the HITL spectrum for each use case**: full review, selective review (triggered by confidence threshold or output type), human-on-the-loop (monitoring at system level), or human-initiated. Document which one you are using and why.
+- **Specify reviewers by role, not by name.** If the review policy says "Sarah checks AI outputs," it will not survive organizational change.
+- Grounding strategies (RAG, retrieval, tool use) reduce hallucination risk but do not eliminate it. **Do not treat grounding as a substitute for verification on consequential outputs.**
+- **Define evaluation criteria before deployment**: which dimensions matter, what thresholds are acceptable, who reviews results, and what score triggers a hold or rollback. **Maintain a production evaluation cadence** with scheduled sampling, drift alerts, and a defined re-evaluation trigger for significant changes.
+- **For every quality figure relied on, record where the reference came from**, who produced it and how far they agreed. For consequential results, keep a reference result or an independent recomputation rather than a repeat run.
+- **Name an owner for each threshold**, and report both error rates beside it.
 
 **Observability signals** for this theme are in the [signals table](#observability-signals), under *Verification*.
 
@@ -80,14 +80,14 @@ After the themes come the [accountability checklist](#accountability-checklist) 
 
 ### Best practices
 
-- Treat context as a governed asset: version-controlled, access-managed, and with a defined owner. Apply the same governance discipline as you would to a policy document or a data product.
-- Log what context was injected per session or request. This is the minimum required for auditability of AI outputs.
-- Apply the persistent synthesis principle to any knowledge base feeding AI systems: resolve contradictions rather than accumulating them; assign confidence decay to entries; deprecate explicitly rather than leaving outdated content in place.
-- Audit knowledge base freshness on a defined schedule. Different knowledge types decay at different rates. Operational procedures go stale faster than conceptual definitions.
-- Govern the grounding layer as a data asset: named owner, defined update cadence, explicit retirement criteria for outdated content, and access controls matching direct document access. Apply the same rigor to citation spot-checks on consequential outputs. Source attribution is an accountability mechanism and cannot substitute for verification.
-- Evaluate at the input lengths the system actually runs at, and log what compaction or truncation removed.
-- Before deployment, map where the knowledge a task needs lives, including what is unwritten, and how the system will reach it.
-- Keep an inventory of who can add content to each corpus the system learns from or retrieves from.
+- **Treat context as a governed asset**: version-controlled, access-managed, and with a defined owner. Apply the same governance discipline as you would to a policy document or a data product.
+- **Log what context was injected per session or request.** This is the minimum required for auditability of AI outputs.
+- **Apply the persistent synthesis principle to any knowledge base feeding AI systems**: resolve contradictions rather than accumulating them; assign confidence decay to entries; deprecate explicitly rather than leaving outdated content in place.
+- **Audit knowledge base freshness on a defined schedule.** Different knowledge types decay at different rates. Operational procedures go stale faster than conceptual definitions.
+- **Govern the grounding layer as a data asset**: named owner, defined update cadence, explicit retirement criteria for outdated content, and access controls matching direct document access. Apply the same rigor to citation spot-checks on consequential outputs. Source attribution is an accountability mechanism and cannot substitute for verification.
+- **Evaluate at the input lengths the system actually runs at**, and log what compaction or truncation removed.
+- **Before deployment, map where the knowledge a task needs lives**, including what is unwritten, and how the system will reach it.
+- **Keep an inventory of who can add content to each corpus** the system learns from or retrieves from.
 
 **Observability signals** for this theme are in the [signals table](#observability-signals), under *Context & Knowledge*.
 
@@ -110,13 +110,13 @@ After the themes come the [accountability checklist](#accountability-checklist) 
 
 ### Best practices
 
-- Treat harness configuration as a governed artifact: versioned, owned, and subject to change review. The same rigor applied to a production database schema should apply to the permission model and system prompt.
-- Separate model capability assessment from deployment permission decisions. Capability evaluation asks "can it do X?" Permission design asks "should it be allowed to, for whom, under what conditions?"
-- Version and review system prompts before deploying to production. Track what changed, when, and why, the same way you would track a configuration change in any other system.
-- Design for adversarial inputs from the harness layer, not the prompt layer. Prompt-level defenses are brittle; harness-layer controls (tool contracts, output filters, permission checks) are structural.
-- For each agent, record whether one session combines private data, untrusted input and an outbound channel. Where it does, require an explicit approval and a compensating control.
-- Test that every control can refuse an action, and that it refuses when it fails.
-- Route AI traffic through a single point where policy, logging and limits apply.
+- **Treat harness configuration as a governed artifact**: versioned, owned, and subject to change review. The same rigor applied to a production database schema should apply to the permission model and system prompt.
+- **Separate model capability assessment from deployment permission decisions.** Capability evaluation asks "can it do X?" Permission design asks "should it be allowed to, for whom, under what conditions?"
+- **Version and review system prompts before deploying to production.** Track what changed, when, and why, the same way you would track a configuration change in any other system.
+- **Design for adversarial inputs from the harness layer, not the prompt layer.** Prompt-level defenses are brittle; harness-layer controls (tool contracts, output filters, permission checks) are structural.
+- For each agent, **record whether one session combines private data, untrusted input and an outbound channel**. Where it does, require an explicit approval and a compensating control.
+- **Test that every control can refuse an action**, and that it refuses when it fails.
+- **Route AI traffic through a single point** where policy, logging and limits apply.
 
 **Observability signals** for this theme are in the [signals table](#observability-signals), under *System Control*.
 
@@ -139,12 +139,12 @@ After the themes come the [accountability checklist](#accountability-checklist) 
 
 ### Best practices
 
-- Maintain an AI system inventory: every system in production, its risk classification, its named owner, its review cadence, and its retirement criteria.
-- Define minimum literacy requirements by role tier: what every staff member using AI tools must understand, what practitioners integrating AI into workflows must understand, and what leaders approving AI deployment must understand. Measure behavioral outcomes, not completion rates.
-- Use the [NIST AI RMF](../concepts/nist-ai-rmf.md) (Govern / Map / Measure / Manage) as an internal reference regardless of regulatory obligation. Its structure maps cleanly to organizational accountability design.
-- For each audit or assessment relied on, record the auditor's access, who set the scope, who paid and when it was done.
-- Record a baseline before deployment and report outcomes against it.
-- Provide a route for raising concerns about AI systems that does not depend on the goodwill of the system's owner.
+- **Maintain an AI system inventory**: every system in production, its risk classification, its named owner, its review cadence, and its retirement criteria.
+- **Define minimum literacy requirements by role tier**: what every staff member using AI tools must understand, what practitioners integrating AI into workflows must understand, and what leaders approving AI deployment must understand. Measure behavioral outcomes, not completion rates.
+- **Use the [NIST AI RMF](../concepts/nist-ai-rmf.md) (Govern / Map / Measure / Manage) as an internal reference** regardless of regulatory obligation. Its structure maps cleanly to organizational accountability design.
+- For each audit or assessment relied on, **record the auditor's access, who set the scope, who paid and when it was done**.
+- **Record a baseline before deployment** and report outcomes against it.
+- **Provide a route for raising concerns about AI systems** that does not depend on the goodwill of the system's owner.
 
 **Observability signals** for this theme are in the [signals table](#observability-signals), under *Organizational*.
 
@@ -171,15 +171,15 @@ After the themes come the [accountability checklist](#accountability-checklist) 
 
 ### Best practices
 
-- Evaluate on outcome correctness, never on whether the output or its stated reasoning *looks* sound. A convincing account of a wrong answer is the failure to catch.
-- Re-run adversarial testing on change, not on the calendar: new model version, new tool, new data source, new user population.
-- Enforce boundaries in the environment (permissions, sandboxes, tool contracts) and treat prompt-level instructions as guidance rather than control.
-- Separate satisfaction signals from correctness signals in every feedback loop, and never let the first stand in for the second.
-- Re-establish any trace-based or behavior-based control after a model change; neither faithfulness nor refusal behavior carries across versions.
-- Track whether evaluation capability is keeping pace with system capability, and treat divergence as a governance signal in its own right.
-- Measure the wrongful-refusal rate on your own work beside the harms prevented.
-- Re-assess capability when you add tools, data access or autonomy, as well as when the model changes.
-- Where a system edits its own instructions or memory, keep every version outside the system and re-run a fixed set of earlier tasks after each change.
+- **Evaluate on outcome correctness, never on whether the output or its stated reasoning *looks* sound.** A convincing account of a wrong answer is the failure to catch.
+- **Re-run adversarial testing on change, not on the calendar**: new model version, new tool, new data source, new user population.
+- **Enforce boundaries in the environment** (permissions, sandboxes, tool contracts) and treat prompt-level instructions as guidance rather than control.
+- **Separate satisfaction signals from correctness signals** in every feedback loop, and never let the first stand in for the second.
+- **Re-establish any trace-based or behavior-based control after a model change**; neither faithfulness nor refusal behavior carries across versions.
+- **Track whether evaluation capability is keeping pace with system capability**, and treat divergence as a governance signal in its own right.
+- **Measure the wrongful-refusal rate on your own work** beside the harms prevented.
+- **Re-assess capability when you add tools, data access or autonomy**, as well as when the model changes.
+- Where a system edits its own instructions or memory, **keep every version outside the system and re-run a fixed set of earlier tasks after each change**.
 
 **Observability signals** for this theme are in the [signals table](#observability-signals), under *Model Behavior*.
 
@@ -207,14 +207,14 @@ After the themes come the [accountability checklist](#accountability-checklist) 
 ### Best practices
 
 - Ask for training-data composition and rights basis at procurement, and **record the answer including a refusal to answer**. The refusal is itself the finding.
-- Build erasure paths on the assumption the model cannot forget: hold the controllable copies where deletion genuinely works, and test that it propagates.
-- Establish which reporting obligations apply and what their clocks are *before* an incident, and rehearse the path.
-- Bring derived artifacts into the same retention, access and deletion regime as their sources.
-- Map which systems share a base model and treat the overlap as correlated risk in the register.
-- Keep the distinction between certified *process* and assured *behavior* explicit in anything shown to a client or regulator.
-- State every privacy claim with its parameters: which sense of anonymized and who assessed it, or the budget and unit for differential privacy.
-- Track provider policies and frameworks as dependencies with a review date, and review them on each change.
-- Before modifying or self-hosting a component, establish which provider obligations would become yours.
+- **Build erasure paths on the assumption the model cannot forget**: hold the controllable copies where deletion genuinely works, and test that it propagates.
+- **Establish which reporting obligations apply and what their clocks are *before* an incident**, and rehearse the path.
+- **Bring derived artifacts into the same retention, access and deletion regime as their sources.**
+- **Map which systems share a base model** and treat the overlap as correlated risk in the register.
+- **Keep the distinction between certified *process* and assured *behavior* explicit** in anything shown to a client or regulator.
+- **State every privacy claim with its parameters**: which sense of anonymized and who assessed it, or the budget and unit for differential privacy.
+- **Track provider policies and frameworks as dependencies** with a review date, and review them on each change.
+- Before modifying or self-hosting a component, **establish which provider obligations would become yours**.
 
 **Observability signals** for this theme are in the [signals table](#observability-signals), under *Data & Regulation*.
 
