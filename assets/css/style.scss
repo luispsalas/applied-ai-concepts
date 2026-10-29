@@ -7,9 +7,10 @@
 
 @import "jekyll-theme-primer";
 
-// Primer paints every image on white, which would show at the banner's rounded
-// corners on a dark page; the banner carries its own dark panel.
-.markdown-body img[src$="banner.svg"] { background-color: transparent; }
+// Primer paints every image on white, which would show at the rounded corners of
+// images that carry their own dark panel (the banner, the README's concept graph).
+.markdown-body img[src$="banner.svg"],
+.markdown-body img[src$="context-graph.svg"] { background-color: transparent; }
 
 @mixin dark {
   color-scheme: dark;
