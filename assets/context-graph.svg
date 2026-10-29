@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 270" width="440" role="img" aria-labelledby="t d">
+  <title id="t">Concept graph</title>
+  <desc id="d">An Obsidian-style graph of the wiki's most-linked entries and the links between them, on its own dark panel so it reads the same under any light or dark setting.</desc>
+  <rect width="440" height="270" rx="16" fill="#0d1117"/>
+  <g stroke="#3d3a5c" stroke-width="0.8">
+    <line x1="168.1" y1="87.8" x2="293.8" y2="170.1"/>
+    <line x1="168.1" y1="87.8" x2="287.4" y2="79.2"/>
+    <line x1="168.1" y1="87.8" x2="182.0" y2="130.5"/>
+    <line x1="168.1" y1="87.8" x2="120.4" y2="151.6"/>
+    <line x1="168.1" y1="87.8" x2="227.2" y2="176.8"/>
+    <line x1="168.1" y1="87.8" x2="307.9" y2="26.0"/>
+    <line x1="293.8" y1="170.1" x2="182.0" y2="130.5"/>
+    <line x1="293.8" y1="170.1" x2="368.0" y2="105.7"/>
+    <line x1="293.8" y1="170.1" x2="280.7" y2="128.1"/>
+    <line x1="293.8" y1="170.1" x2="227.2" y2="176.8"/>
+    <line x1="287.4" y1="79.2" x2="182.0" y2="130.5"/>
+    <line x1="287.4" y1="79.2" x2="351.8" y2="148.1"/>
+    <line x1="287.4" y1="79.2" x2="214.1" y2="53.7"/>
+    <line x1="287.4" y1="79.2" x2="368.0" y2="105.7"/>
+    <line x1="287.4" y1="79.2" x2="280.7" y2="128.1"/>
+    <line x1="287.4" y1="79.2" x2="227.2" y2="176.8"/>
+    <line x1="287.4" y1="79.2" x2="307.9" y2="26.0"/>
+    <line x1="182.0" y1="130.5" x2="351.8" y2="148.1"/>
+    <line x1="182.0" y1="130.5" x2="214.1" y2="53.7"/>
+    <line x1="182.0" y1="130.5" x2="280.7" y2="128.1"/>
+    <line x1="182.0" y1="130.5" x2="120.4" y2="151.6"/>
+    <line x1="182.0" y1="130.5" x2="72.0" y2="214.4"/>
+    <line x1="351.8" y1="148.1" x2="120.4" y2="151.6"/>
+    <line x1="196.6" y1="234.0" x2="358.9" y2="217.4"/>
+    <line x1="196.6" y1="234.0" x2="280.7" y2="128.1"/>
+    <line x1="196.6" y1="234.0" x2="120.4" y2="151.6"/>
+    <line x1="196.6" y1="234.0" x2="72.0" y2="214.4"/>
+    <line x1="196.6" y1="234.0" x2="227.2" y2="176.8"/>
+    <line x1="214.1" y1="53.7" x2="368.0" y2="105.7"/>
+    <line x1="214.1" y1="53.7" x2="280.7" y2="128.1"/>
+    <line x1="214.1" y1="53.7" x2="120.4" y2="151.6"/>
+    <line x1="214.1" y1="53.7" x2="307.9" y2="26.0"/>
+    <line x1="358.9" y1="217.4" x2="368.0" y2="105.7"/>
+    <line x1="358.9" y1="217.4" x2="280.7" y2="128.1"/>
+    <line x1="358.9" y1="217.4" x2="227.2" y2="176.8"/>
+    <line x1="368.0" y1="105.7" x2="280.7" y2="128.1"/>
+    <line x1="368.0" y1="105.7" x2="227.2" y2="176.8"/>
+    <line x1="368.0" y1="105.7" x2="307.9" y2="26.0"/>
+    <line x1="280.7" y1="128.1" x2="227.2" y2="176.8"/>
+    <line x1="280.7" y1="128.1" x2="307.9" y2="26.0"/>
+    <line x1="120.4" y1="151.6" x2="72.0" y2="214.4"/>
+    <line x1="72.0" y1="214.4" x2="227.2" y2="176.8"/>
+  </g>
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="8.5" fill="#c9d1d9" text-anchor="middle">
+    <circle cx="196.6" cy="234.0" r="5.0" fill="#8b5cf6"/>
+    <text x="196.6" y="248.0">evaluation</text>
+    <circle cx="287.4" cy="79.2" r="6.5" fill="#8b5cf6"/>
+    <text x="287.4" y="94.7">audit-trail-ai</text>
+    <circle cx="280.7" cy="128.1" r="7.0" fill="#c4b5fd"/>
+    <text x="280.7" y="144.1">human-in-the-loop</text>
+    <circle cx="182.0" cy="130.5" r="6.5" fill="#8b5cf6"/>
+    <text x="182.0" y="146.0">compliance-ai-systems</text>
+    <circle cx="72.0" cy="214.4" r="4.5" fill="#8b5cf6"/>
+    <text x="72.0" y="227.9">model-version-update</text>
+    <circle cx="358.9" cy="217.4" r="4.5" fill="#8b5cf6"/>
+    <text x="358.9" y="230.9">hallucination</text>
+    <circle cx="227.2" cy="176.8" r="6.5" fill="#8b5cf6"/>
+    <text x="227.2" y="192.3">observability</text>
+    <circle cx="214.1" cy="53.7" r="5.5" fill="#8b5cf6"/>
+    <text x="214.1" y="68.2">guardrails-ai-systems</text>
+    <circle cx="293.8" cy="170.1" r="5.0" fill="#8b5cf6"/>
+    <text x="293.8" y="184.1">ai-governance</text>
+    <circle cx="307.9" cy="26.0" r="5.0" fill="#8b5cf6"/>
+    <text x="307.9" y="40.0">permission-model-ai</text>
+    <circle cx="351.8" cy="148.1" r="4.0" fill="#8b5cf6"/>
+    <text x="351.8" y="161.1">data-provenance-lineage</text>
+    <circle cx="368.0" cy="105.7" r="6.0" fill="#8b5cf6"/>
+    <text x="368.0" y="120.7">harness-paradigm</text>
+    <circle cx="120.4" cy="151.6" r="5.5" fill="#8b5cf6"/>
+    <text x="120.4" y="166.1">model-card-system-card</text>
+    <circle cx="168.1" cy="87.8" r="5.5" fill="#8b5cf6"/>
+    <text x="168.1" y="102.3">accountability-ai-systems</text>
+  </g>
+</svg>

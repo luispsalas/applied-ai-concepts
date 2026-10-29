@@ -56,6 +56,12 @@ The terms other entries rely on most, in each category. Browse [every term A–Z
 
 Every entry is a self-contained Markdown file with the same structure, so the wiki works as context for AI tools as well as reading material.
 
+<p align="center">
+  <img src="assets/context-graph.svg" width="440" alt="A graph of the wiki's most-linked entries, such as human-in-the-loop, observability and AI governance, and the links between them, drawn in the style of Obsidian's graph view.">
+</p>
+
+<p align="center"><sub>The most-linked entries and the links between them, as a graph tool such as Obsidian draws them.</sub></p>
+
 ```bash
 git clone https://github.com/luispsalas/applied-ai-concepts.git
 ```
