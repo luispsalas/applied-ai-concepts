@@ -21,7 +21,9 @@ AI models generate plausible-sounding content that is factually incorrect, confi
 Hallucination refers to the tendency of language models to produce outputs that are factually incorrect, logically inconsistent, or entirely fabricated, while presenting them with the same fluency and apparent confidence as accurate information. The term covers two distinct phenomena:
 
 1. **Factual hallucination:** The model asserts false facts, such as incorrect dates, non-existent citations, wrong attributions or invented statistics.
-2. **Reasoning hallucination (confabulation):** The model produces plausible-sounding explanations for its outputs that do not reflect its actual computational process. The explanation may be coherent and convincing while having no reliable relationship to why the output was generated.
+2. **Reasoning hallucination (unfaithful explanation):** The model produces plausible-sounding explanations for its outputs that do not reflect its actual computational process. The explanation may be coherent and convincing while having no reliable relationship to why the output was generated.
+
+**A note on the name.** Some researchers argue that *confabulation* describes both kinds more accurately. In psychiatry, a hallucination is a perception with no external stimulus, which implies the model senses something. Confabulation is the production of incorrect details that the person does not recognize as incorrect, with no intent to deceive. Its acknowledged costs are that the word is less familiar and less vivid. Human memory shows why the comparison fits. When John Dean's Watergate testimony was checked against the White House tapes, he was often wrong about particular conversations while right about the cover-up and who took part in it. He was reconstructing events rather than retrieving them. The analogy has limits. A language model stores no episodes to recall, and Dean's errors leaned toward his own importance, a motive a model does not have. *Hallucination* remains the standard term, and this wiki uses *confabulation* only as an alias for the whole phenomenon.
 
 Hallucination is not a malfunction. It is an emergent property of how language models work: they generate statistically probable next tokens, not verified facts. Fluency and accuracy are trained independently; the model has no built-in mechanism to distinguish between what it knows and what it has confabulated.
 
@@ -95,6 +97,8 @@ Grounding strategies (RAG, retrieval from verified sources, tool use) reduce hal
 | SRC-051 | Perrone, Paolo — *How DoorDash Built Their RAG System* (The AI Engineer, 2026) · [link](https://theaiengineer.substack.com/p/how-doordash-built-their-rag-system) | Verification as structural rather than reactive: a production system layering a semantic-similarity guardrail, an LLM judge, and a simulation flywheel achieved ~90% fewer hallucinations, which is evidence that hallucination control is an architectural design choice, not after-the-fact review. |
 | SRC-064 | Alexander, Emmimal P. — *Your RAG Gets Confidently Wrong as Memory Grows* (Towards Data Science, 2026) · [link](https://towardsdatascience.com/your-rag-gets-confidently-wrong-as-memory-grows-i-built-the-memory-layer-that-stops-it/) | Confidence as a non-reliability signal: controlled experiment in which model confidence rose (70.4% → 78.0%) even as accuracy fell, so output confidence does not track correctness. |
 | SRC-023 | Lipton, Z. — *The Mythos of Model Interpretability* (arXiv:1606.03490, 2016) · [link](https://arxiv.org/abs/1606.03490) | Model-generated explanations are themselves model outputs and do not constitute ground truth, so an AI's explanation of its own answer carries the same hallucination risk as the answer itself. |
+| SRC-451 | Smith, A. L., Greaves, F. & Panch, T. — *Hallucination or Confabulation? Neuroanatomy as metaphor in Large Language Models* (PLOS Digital Health 2(11): e0000388, 2023) · [link](https://doi.org/10.1371/journal.pdig.0000388) | The case for *confabulation*: hallucination implies sensory perception, while confabulation means incorrect details produced without recognizing them as incorrect and without intent to deceive. Names the trade-off (less familiar, less evocative). An opinion article, cited for the terminology argument only. |
+| SRC-452 | Neisser, U. — *John Dean's memory: A case study* (Cognition 9(1): 1–22, 1981) · [link](https://doi.org/10.1016/0010-0277(81)90011-1) | The ground-truth case for reconstructive memory: Dean's testimony was often wrong about particular conversations yet right about the cover-up, and his distortions favored his own role. Supports the comparison and its limit. Abstract-level. |
 
 ---
 
@@ -109,4 +113,4 @@ Grounding strategies (RAG, retrieval from verified sources, tool use) reduce hal
 
 ---
 
-*Last updated: v1.2 · May 2026*
+*Last updated: v1.3 · November 2026*

@@ -1,5 +1,13 @@
 # Changelog
 
+## v1.61 — November 2026
+
+**One enrichment. No new entries; count stays at 157.**
+
+- `hallucination` — v1.2 → **v1.3**
+
+**Hallucination or confabulation?** The entry used *confabulation* in two senses: as another name for the whole phenomenon, and as the label for one of its two kinds, explanations that do not reflect how an output was produced. That kind is now called an unfaithful explanation, and *confabulation* keeps only its broader sense. A new note explains why some researchers prefer the word, drawing on psychiatry's distinction between perceiving what is not there and filling gaps without knowing it. It uses the best-documented human case, John Dean's Watergate testimony, and states where the comparison stops holding.
+
 ## v1.60 — October 2026
 
 **One new entry. Count 156 → 157.**
