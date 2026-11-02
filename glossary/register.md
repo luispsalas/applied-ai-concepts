@@ -4,11 +4,11 @@ Every term this wiki tracks, with its status — **including the ones that are n
 
 The field names things faster than it settles them, and a glossary that repeats every new label without comment is a list of buzzwords. So each term is judged on whether it is a *real term*. That is a separate question from how good the evidence is for the claims inside an entry, which each entry states for itself in its own confidence level.
 
-**196 terms tracked — 157 published, 39 not.** See [how terms are admitted](../CONTRIBUTING.md#term-status--the-admission-test).
+**197 terms tracked — 157 published, 40 not.** See [how terms are admitted](../CONTRIBUTING.md#term-status--the-admission-test).
 
 | Status | Meaning | Count |
 |---|---|---|
-| `established` | Recognized term of art, in independent use. | 144 |
+| `established` | Recognized term of art, in independent use. | 145 |
 | `emerging` | Real and in use, but definitions still vary between sources. | 13 |
 | `declined` | Considered and turned down — not a term this wiki will publish. | 15 |
 | `covered` | A real term, already covered by another entry — findable there as an alias. | 24 |
@@ -109,6 +109,7 @@ The field names things faster than it settles them, and a glossary that repeats 
 | [Guardrails (AI Systems)](../concepts/guardrails-ai-systems.md) | `established` | yes |  |
 | [Hallucination](../concepts/hallucination.md) | `established` | yes |  |
 | [Harness Paradigm](../concepts/harness-paradigm.md) | `emerging` | yes | The term "agent harness" is established in practitioner literature (Böckeler; Osmani); the paradigm framing itself is not yet settled across independent sources. |
+| Homogenization (AI) | `established` | not yet | ASSESSED Nov 2 2026, READY TO DRAFT (triaged from arXiv 2603.01092, user request). CHECK 1 PASSES: independent peer-reviewed use by unrelated groups, e.g. Doshi & Hauser, 'Generative AI enhances individual creativity but reduces the collective diversity of novel content' (Science Advances, 2024, doi 10.1126/sciadv.adn5290), and Anderson, Shah & Kreminski, 'Homogenization Effects of Large Language Models on Human Creative Ideation' (Creativity & Cognition 2024, doi 10.1145/3635636.3656204). CHECK 2, COLLISION TO HANDLE: Bommasani et al. 2021 (SRC-143) already use homogenization in the foundation-model sense, so the entry must say which sense it covers and how the two relate. CHECK 4, PARTLY COVERED: Performativity (LLMs) treats linguistic homogenization only; this entry would cover ideas and creative output, and link back. SUPPORTING SOURCE, the countermeasure side: Artiles, Weiss, Brinkmann et al., 'The Alien Space of Science: Sampling Coherent but Cognitively Unavailable Research Directions' (arXiv 2603.01092, v3 Oct 21 2026; 9 authors). Cite as a PREPRINT: the authors' comment claims NeurIPS 2026 Main Track, but OpenAlex lists only arXiv copies. Tested on LLM papers only. DECLINED AS ITS OWN TERM: 'alien space of science' is one group's coinage (same line as Sourati & Evans 2021 and the group's 2024 'Alien Recombination' preprint), with no independent use. |
 | [Human Responsibility in AI Use](../concepts/human-responsibility-in-ai-use.md) | `established` | yes |  |
 | [Human-in-the-Loop (HITL)](../concepts/human-in-the-loop.md) | `established` | yes |  |
 | [Human–AI Collaboration Model](../concepts/human-ai-collaboration-model.md) | `established` | yes |  |
