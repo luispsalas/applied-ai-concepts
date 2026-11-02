@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "count": 157,
+  "count": 158,
   "entries": [
     {
       "slug": "acceptable-use-policy",
@@ -3093,6 +3093,55 @@
         "SRC-354"
       ],
       "path": "concepts/harness-paradigm.md"
+    },
+    {
+      "slug": "homogenization-ai",
+      "term": "Homogenization (AI)",
+      "category": "Interaction & Design",
+      "essence": "When many people and organizations draw on the same few models, their ideas, outputs and decisions converge, so each piece of work can be rated higher on its own while the collective range narrows.",
+      "short": "When many people and organizations draw on the same few models, their ideas, outputs and decisions converge, so each piece of work can be rated higher on its own while the collective range narrows",
+      "aliases": [
+        "homogenization",
+        "output homogenization",
+        "idea homogenization",
+        "creative homogenization",
+        "collective diversity loss",
+        "algorithmic monoculture",
+        "monoculture",
+        "outcome homogenization",
+        "component-sharing hypothesis",
+        "alien space of science"
+      ],
+      "tags": [
+        "Model Behavior",
+        "Ethics",
+        "Evaluation"
+      ],
+      "version": "v1.0",
+      "updated": "November 2026",
+      "related": [
+        "automated-decision-making",
+        "bias-ai-systems",
+        "cognitive-offloading-deskilling",
+        "evaluation",
+        "human-responsibility-in-ai-use",
+        "large-language-models",
+        "performativity-llms",
+        "supply-chain-risk-ai",
+        "sycophancy-llms",
+        "systemic-risk-ai",
+        "value-realization-ai"
+      ],
+      "sources": [
+        "SRC-143",
+        "SRC-236",
+        "SRC-453",
+        "SRC-454",
+        "SRC-455",
+        "SRC-456",
+        "SRC-457"
+      ],
+      "path": "concepts/homogenization-ai.md"
     },
     {
       "slug": "human-responsibility-in-ai-use",

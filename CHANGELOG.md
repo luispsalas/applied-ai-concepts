@@ -1,5 +1,15 @@
 # Changelog
 
+## v1.62 — November 2026
+
+**One new entry. Count 157 → 158.**
+
+- `homogenization-ai` — **new**, v1.0
+
+**Higher-rated work, less variety.** When many people draw on the same model, each piece of work can be rated higher on its own while the range across all of them narrows. The entry is built on two independent experiments. In one, writers given story ideas by a language model wrote stories rated more creative, and more alike. In the other, ideas were no less varied within each person but converged across people, which is why reviewing outputs one at a time never shows the effect. It also covers the older senses of the word: the consolidation of AI onto a few foundation models, and the decision-making version, where systems sharing a model or its training data can turn down the same people everywhere.
+
+**A countermeasure, labeled as early.** A 2026 preprint steers research ideation toward ideas that are coherent but unlikely to come from anyone already in the field. The entry reports it as a preprint with an unconfirmed venue and treats its coined phrase, the alien space of science, as the authors' own rather than a separate term.
+
 ## v1.61 — November 2026
 
 **One enrichment. No new entries; count stays at 157.**
