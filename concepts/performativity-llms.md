@@ -53,7 +53,7 @@ What is worth worrying about here is not any one conversation. It is the aggrega
 1. **Influence runs both ways, and the return path is measured.** The model is not only a product of human language; it is now an input to it.
 2. **The effect reaches spontaneous speech**, not just writing done with the tool open, which is why "just don't use it for that" is not a containment strategy.
 3. **Adoption persists.** In the controlled experiment it survived a distractor task and showed up in forced lexical choice, indicating entrenchment rather than momentary priming.
-4. **The concern is homogenization, not any single word.** Many people drawing on a few models converges style and vocabulary.
+4. **The concern is homogenization, not any single word.** Many people drawing on a few models converges style and vocabulary. The same convergence has been measured in ideas and creative output ([homogenization](homogenization-ai.md)).
 5. **The loop is recursive.** Model output becomes tomorrow's training data, so influence compounds instead of decaying.
 6. **The harm is aggregate; the decisions are local.** No individual deployment causes it, which is exactly why nobody's risk assessment catches it.
 7. **Not sycophancy, not anthropomorphism.** Those are the model accommodating you and you humanizing the model. This is the model changing you.
@@ -105,6 +105,7 @@ Two further limits. The work is recent and its central corpus is English-languag
 - [Large Language Models (LLMs)](large-language-models.md) — the system whose outputs are the input to this effect
 - [Anthropomorphism (AI)](anthropomorphism-ai.md) — the opposite direction: the user projecting onto the model
 - [Sycophancy (LLMs)](sycophancy-llms.md) — accommodation within a response, not durable change to the user
+- [Homogenization (AI)](homogenization-ai.md) — the wider pattern: many users of the same models converging in ideas, outputs and decisions
 - [Cognitive Offloading & Deskilling](cognitive-offloading-deskilling.md) — where vocabulary loss shades into capability loss
 - [Training Data](training-data.md) — the corpus that model output re-enters, closing the loop
 - [Pre-training](pre-training.md) — where that recursively-influenced corpus is absorbed
