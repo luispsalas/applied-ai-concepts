@@ -3034,8 +3034,8 @@
         "Model Behavior",
         "Evaluation"
       ],
-      "version": "v1.2",
-      "updated": "May 2026",
+      "version": "v1.3",
+      "updated": "November 2026",
       "related": [
         "grounding",
         "harness-paradigm",
@@ -3048,7 +3048,9 @@
         "SRC-010",
         "SRC-023",
         "SRC-051",
-        "SRC-064"
+        "SRC-064",
+        "SRC-451",
+        "SRC-452"
       ],
       "path": "concepts/hallucination.md"
     },

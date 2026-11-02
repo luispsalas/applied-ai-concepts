@@ -20,7 +20,7 @@ Looking for one term? Use the [alphabetical glossary](index.md) or [search](../s
 | [Sycophancy (LLMs)](../concepts/sycophancy-llms.md) | Models agreeing with users rather than being accurate. It is a behavior the training signal rewards, not an incidental bug | ✅ v1.1 |
 | [Confidence vs Accuracy](../concepts/confidence-vs-accuracy.md) | How sure a model sounds is not evidence of how right it is, because tone is generated independently of correctness | ✅ v1.1 |
 | [Knowledge Cutoff](../concepts/knowledge-cutoff.md) | Every model was trained up to a fixed date and knows nothing after it, and cannot reliably tell you when a question falls outside what it knows | ✅ v1.0 |
-| [Hallucination](../concepts/hallucination.md) | AI models generate plausible-sounding content that is factually incorrect, confidently and without warning | ✅ v1.2 |
+| [Hallucination](../concepts/hallucination.md) | AI models generate plausible-sounding content that is factually incorrect, confidently and without warning | ✅ v1.3 |
 | [Black Box](../concepts/black-box.md) | An AI system whose internal reasoning process cannot be observed or interpreted, even when its outputs can | ✅ v1.1 |
 | [Bias (AI Systems)](../concepts/bias-ai-systems.md) | Systematic errors that unfairly advantage or disadvantage certain groups. They are often inherited from training data and rarely visible in any single output | ✅ v1.0 |
 | [Explainability (XAI)](../concepts/explainability-xai.md) | Describing, in terms a human can understand, why an AI system produced a specific output, a prerequisite for accountability | ✅ v1.0 |
