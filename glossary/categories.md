@@ -58,6 +58,7 @@ Looking for one term? Use the [alphabetical glossary](index.md) or [search](../s
 | [Performativity (LLMs)](../concepts/performativity-llms.md) | Language models do not just describe language, they change it, measurably shifting the words people use, with the influence running back from the machine into human culture | ✅ v1.0 |
 | [Metaprompting](../concepts/metaprompting.md) | Prompting about prompting. Three different practices share the name, and the governance question is the same for all of them | ✅ v1.0 |
 | [Prompt Chaining](../concepts/prompt-chaining.md) | Breaking one task into a sequence of prompts, which buys you inspectable intermediate steps, and costs you a path for errors to travel down | ✅ v1.1 |
+| [Homogenization (AI)](../concepts/homogenization-ai.md) | When many people and organizations draw on the same few models, their ideas, outputs and decisions converge, so each piece of work can be rated higher on its own while the collective range narrows | ✅ v1.0 |
 
 ### System Architecture
 *The control layer that makes models governable*

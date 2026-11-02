@@ -80,6 +80,7 @@ Quick-reference index of all concepts. Follow links for full entries.
 | [Guardrails (AI Systems)](../concepts/guardrails-ai-systems.md) | Technical and policy constraints that prevent an AI system from producing outputs or taking actions outside defined boundaries |
 | [Hallucination](../concepts/hallucination.md) | AI models generate plausible-sounding content that is factually incorrect, confidently and without warning |
 | [Harness Paradigm](../concepts/harness-paradigm.md) | Intelligence and control are separate layers, and governance lives in the harness, not the model |
+| [Homogenization (AI)](../concepts/homogenization-ai.md) | When many people and organizations draw on the same few models, their ideas, outputs and decisions converge, so each piece of work can be rated higher on its own while the collective range narrows |
 | [Human Responsibility in AI Use](../concepts/human-responsibility-in-ai-use.md) | The obligation to oversee AI decisions and be answerable for their outcomes does not transfer to the system. It remains with the humans who deploy, configure, and use it |
 | [Human-in-the-Loop (HITL)](../concepts/human-in-the-loop.md) | A design pattern that keeps humans as decision authorities at critical points, as a structural component of the system rather than a safety afterthought |
 | [Human–AI Collaboration Model](../concepts/human-ai-collaboration-model.md) | The explicit design of how humans and AI systems divide tasks, share information, and maintain oversight, documented and enforced rather than assumed |
