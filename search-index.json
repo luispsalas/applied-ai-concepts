@@ -5457,16 +5457,20 @@
         "retrieval augmented generation",
         "search plus generation",
         "document Q&A",
-        "grounded retrieval"
+        "grounded retrieval",
+        "cache-augmented generation",
+        "CAG",
+        "preloading the knowledge base"
       ],
       "tags": [
         "Architecture",
         "Data Governance"
       ],
-      "version": "v1.2",
-      "updated": "June 2026",
+      "version": "v1.3",
+      "updated": "November 2026",
       "related": [
         "context-engineering",
+        "context-rot",
         "context-window",
         "embeddings",
         "grounding",
@@ -5479,7 +5483,8 @@
         "SRC-025",
         "SRC-028",
         "SRC-052",
-        "SRC-117"
+        "SRC-117",
+        "SRC-458"
       ],
       "path": "concepts/rag.md"
     },

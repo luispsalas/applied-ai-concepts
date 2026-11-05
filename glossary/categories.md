@@ -70,7 +70,7 @@ Looking for one term? Use the [alphabetical glossary](index.md) or [search](../s
 | [Tool Use](../concepts/tool-use.md) | How an AI model acts on the world rather than just describing it, by calling external functions, APIs, and data sources | ✅ v1.1 |
 | [Multi-Agent Systems](../concepts/multi-agent-systems.md) | Multiple AI agents with different roles working together on a task, with coordination and division of labor instead of one model doing everything | ✅ v1.3 |
 | [Orchestration (AI Systems)](../concepts/orchestration-ai-systems.md) | The control layer deciding what runs and in what order, where the failures hide in the seams and look like success | ✅ v1.1 |
-| [Retrieval-Augmented Generation (RAG)](../concepts/rag.md) | A technique that grounds model outputs in retrieved, verifiable information | ✅ v1.2 |
+| [Retrieval-Augmented Generation (RAG)](../concepts/rag.md) | A technique that grounds model outputs in retrieved, verifiable information | ✅ v1.3 |
 | [Guardrails (AI Systems)](../concepts/guardrails-ai-systems.md) | Technical and policy constraints that prevent an AI system from producing outputs or taking actions outside defined boundaries | ✅ v1.1 |
 | [System Prompt](../concepts/system-prompt.md) | The behind-the-scenes instructions that set how an AI behaves before you interact with it. It is a soft control, not a hard boundary | ✅ v1.0 |
 | [Prompt Injection](../concepts/prompt-injection.md) | A trick where malicious instructions hidden in text the AI reads hijack its behavior. It is the top-ranked LLM application security risk | ✅ v1.0 |
