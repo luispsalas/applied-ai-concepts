@@ -51,6 +51,7 @@ ROW_RE = re.compile(r"^\|\s*(SRC-\d+)\s*\|(.+?)\|", re.M)
 
 
 def corpus_files():
+    """All entry and note files whose citations are compared."""
     return sorted(list((ROOT / "concepts").glob("*.md")) + list((ROOT / "notes").glob("*.md")))
 
 
@@ -79,6 +80,7 @@ def _norm_title(t):
 
 
 def _norm_url(u):
+    """Strip the scheme, a leading www. and a trailing slash, so equivalent links compare equal."""
     if not u:
         return None
     return re.sub(r"^https?://(www\.)?", "", u).rstrip("/")
@@ -129,6 +131,7 @@ def refs_disagree(forms_iter):
 
 
 def main():
+    """Compare the given files' citations against the corpus, or with --all report drift across every source ID."""
     args = [a for a in sys.argv[1:] if not a.startswith("--")]
     every = "--all" in sys.argv[1:]
     targets = [Path(a) for a in args]

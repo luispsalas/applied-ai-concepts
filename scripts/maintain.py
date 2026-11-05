@@ -51,6 +51,7 @@ BRITISH_WORD = re.compile(r"\bprogramme\b|\bgrey\b|\bfulfil\b|\benrol\b", re.I)
 
 
 def _files():
+    """All entry and note files the maintenance checks read."""
     return sorted(list(CONCEPTS.glob("*.md")) + list(NOTES.glob("*.md")))
 
 
@@ -197,6 +198,7 @@ def archive(report):
 
 
 def collect_urls():
+    """Map each cited source URL to the source IDs that use it."""
     urls = {}
     for f in _files():
         for sid, url in re.findall(r"\| (SRC-\d+) \|.*?\[link\]\((https?://[^)]+)\)", f.read_text()):
@@ -236,6 +238,7 @@ def liveness(report):
 
 
 def main():
+    """Run the offline checks, plus link liveness (links) or vocabulary (vocab) when named, and print the findings grouped by kind."""
     mode = sys.argv[1] if len(sys.argv) > 1 else "offline"
     report = []
     spelling(report)
