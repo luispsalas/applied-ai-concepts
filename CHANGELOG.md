@@ -1,5 +1,15 @@
 # Changelog
 
+## v1.63 — November 2026
+
+**One enrichment and one term declined. No new entries; count stays at 158.**
+
+- `rag` — v1.2 → **v1.3**
+
+**Retrieval is optional when the knowledge base is small.** *Retrieval-Augmented Generation* now covers cache-augmented generation: loading a small knowledge base into a long-context model ahead of time and answering every question from that preloaded state, with no retrieval step. The entry says what the approach avoids (retrieval delays and retrieval errors) and what it depends on instead, a model that uses all of a long context well. It also adds two governance points that follow from how it works. A single preloaded cache shows everything in it to every user's questions, and it must be rebuilt whenever the documents change.
+
+**Context-augmented generation declined.** The phrase has no settled meaning, and its acronym, CAG, already belongs to cache-augmented generation. It is recorded as declined, and the RAG entry notes the other expansion so a reader who meets it knows which method is meant.
+
 ## v1.62 — November 2026
 
 **One new entry. Count 157 → 158.**
