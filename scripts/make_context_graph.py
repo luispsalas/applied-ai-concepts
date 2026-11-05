@@ -40,6 +40,7 @@ def links():
 
 
 def pick(graph, n):
+    """The n entries with the most inbound links, ties broken alphabetically."""
     inbound = {s: 0 for s in graph}
     for targets in graph.values():
         for t in targets:
@@ -83,6 +84,7 @@ def layout(nodes, edges, seed, steps=400):
 
 
 def label_box(v, x, y, r):
+    """The rectangle a node's label occupies, centered under its dot."""
     w = CHAR * len(v)
     return (x - w / 2, y + r + 1, x + w / 2, y + r + 1 + LINE_H)
 
@@ -111,6 +113,7 @@ def clashes(nodes, edges, pos):
 
 
 def degrees(nodes, edges):
+    """Count the links touching each node."""
     deg = {v: 0 for v in nodes}
     for a, b in edges:
         deg[a] += 1
@@ -119,6 +122,7 @@ def degrees(nodes, edges):
 
 
 def svg(nodes, edges, pos):
+    """Render the laid-out graph as an SVG on its own dark panel."""
     degree = degrees(nodes, edges)
     top = max(degree.values())
     out = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" role="img" aria-labelledby="t d">',
@@ -144,6 +148,7 @@ def svg(nodes, edges, pos):
 
 
 def main():
+    """Pick the most-linked entries, find a layout with no label clashes, and write the SVG."""
     n = int(sys.argv[1]) if len(sys.argv) > 1 else 14
     graph = links()
     nodes = pick(graph, n)

@@ -83,6 +83,7 @@ def parse_meta(block):
 
 
 def read_entry(path):
+    """Read one entry file into a dict: its authored metadata plus the fields derived from its text."""
     text = path.read_text()
     e = {"slug": path.stem, "path": f"concepts/{path.name}"}
 
@@ -107,10 +108,12 @@ def read_entry(path):
 
 
 def load():
+    """Read every entry in concepts/, sorted by file name."""
     return [read_entry(p) for p in sorted(CONCEPTS.glob("*.md"))]
 
 
 def main():
+    """dump prints all entries as JSON; check (default) reports entries whose term, essence or version cannot be derived."""
     cmd = sys.argv[1] if len(sys.argv) > 1 else "check"
     entries = load()
 

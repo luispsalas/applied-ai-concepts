@@ -108,6 +108,7 @@ COUNT_RE = re.compile(r"(\*\*Status:\*\* Phase \d+ — )(\d+)( concepts)")
 # which sentence or which number they mean. They drifted to 81/405 at a corpus
 # of 95/507 while hand-maintained; write() now owns them and check() confirms.
 def _alias_count(entries):
+    """Count distinct aliases across all entries."""
     return len({a for e in entries for a in (e.get("aliases") or [])})
 
 PROSE_COUNTS = (
@@ -140,6 +141,7 @@ def read_readme_rows():
 # ---------- checks ----------
 
 def check(entries):
+    """Run every consistency check over the corpus and return a list of problems (empty means clean)."""
     problems = []
     by_slug = {e["slug"]: e for e in entries}
     lines, rrows, rorder = read_readme_rows()
@@ -354,11 +356,13 @@ def read_dash_baseline():
 
 
 def dash_counts(entries):
+    """Count prose em dashes in each entry, by slug."""
     return {e["slug"]: sum(k for _, k, _ in prose_dashes(
         (CONCEPTS / f"{e['slug']}.md").read_text(encoding="utf-8"))) for e in entries}
 
 
 def dash_problems(entries):
+    """Compare each entry's em dash count with its allowance in the baseline, and flag notes/ pages that have any."""
     base = read_dash_baseline()
     if base is None:
         return [f"dashes: {DASH_BASELINE.relative_to(ROOT)} missing; restore it from git "
@@ -473,6 +477,7 @@ def inline_anchor_review(entries):
 
 
 def alias_problems(entries):
+    """Flag aliases that repeat their own title, match another entry's title, or are shared by two entries."""
     out = []
     norm = lambda x: re.sub(r"[^a-z0-9]+", " ", x.lower()).strip()
     titles = {norm(e["term"]): e["slug"] for e in entries}
@@ -495,6 +500,7 @@ def alias_problems(entries):
 # ---------- generation ----------
 
 def glossary_rows(entries):
+    """Build the glossary table rows, one per entry, sorted by term."""
     return [f"| [{e['term']}](../concepts/{e['slug']}.md) | {e['essence'].rstrip('.')} |"
             for e in sorted(entries, key=lambda e: e["term"].lower())]
 
@@ -567,6 +573,7 @@ def register_page(entries):
 
 
 def write(entries):
+    """Regenerate the derived files (glossary, category table, README key terms and counts, search, breadcrumbs, register, dash baseline) and return what changed."""
     changed = []
     by_slug = {e["slug"]: e for e in entries}
 
@@ -689,6 +696,7 @@ def write(entries):
 
 
 def write_dash_baseline(allowed):
+    """Save the per-entry em dash allowances to the baseline file."""
     head = ["# Prose em dashes each entry may still hold. Generated: lowered by "
             "`build.py write`, never raised.",
             "# An entry not listed is allowed none. slug<TAB>allowed"]
@@ -697,6 +705,7 @@ def write_dash_baseline(allowed):
 
 
 def _reparse(lines):
+    """Write the edited README lines back to disk and read its rows again."""
     CATALOG.write_text("\n".join(lines) + "\n")
     return read_readme_rows()
 
@@ -738,6 +747,7 @@ def with_breadcrumb(text, crumb):
 
 
 def breadcrumb_problems(entries, rorder):
+    """Flag entries whose breadcrumb line is missing or no longer matches their category."""
     cat_of = {s: c for c, slugs in rorder.items() for s in slugs}
     out = []
     for e in entries:
@@ -756,6 +766,7 @@ def key_terms_block(entries):
     texts = {e["slug"]: (CONCEPTS / f"{e['slug']}.md").read_text(encoding="utf-8") for e in entries}
     by_slug = {e["slug"]: e for e in entries}
     def inbound(slug):
+        """Count how many other entries link to this slug."""
         pat = re.compile(r"\]\((?:\.\./concepts/|concepts/)?" + re.escape(slug) + r"\.md[)#]")
         return sum(1 for s, txt in texts.items() if s != slug and pat.search(txt))
     tag = category_taglines()
@@ -854,6 +865,7 @@ def promise_gaps(entries):
 
 
 def report(entries):
+    """Print review lists: the registry's reverse index, inline anchors to eyeball, tag distribution and calibration."""
     # reverse index for Wiki-Sources col L
     #
     # notes/ is scanned here deliberately. A Sep 2026 audit of col L found 39 of
@@ -935,6 +947,7 @@ def report(entries):
 
 
 def main():
+    """Run the command named on the command line: check (default), write, report or dashes."""
     cmd = sys.argv[1] if len(sys.argv) > 1 else "check"
     entries = load()
     if cmd == "check":

@@ -137,6 +137,7 @@ def fetch(url, token=None, data=None):
 
 
 def main():
+    """Download the tracker sheet, save a dated CSV backup and regenerate the public tracker-export.tsv; then sweep the registry, update its archive state and check its usage."""
     outdir = Path(sys.argv[1]) if len(sys.argv) > 1 else Path(__file__).resolve().parent.parent / "backups"
     outdir.mkdir(parents=True, exist_ok=True)
 
@@ -183,6 +184,7 @@ def main():
     # Collapsing all whitespace is also what the register needs: its notes render inside a
     # markdown table cell, which cannot contain a raw newline either.
     def flat(s):
+        """Collapse all whitespace, including newlines and tabs, to single spaces."""
         return " ".join(s.split())
 
     for r in rows[1:]:
