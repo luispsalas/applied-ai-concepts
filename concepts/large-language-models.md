@@ -82,7 +82,7 @@ A large language model is the engine behind tools like ChatGPT and Claude. It wa
 | SRC-141 | Vaswani, A. et al. — *Attention Is All You Need* (NeurIPS, 2017) · [link](https://arxiv.org/abs/1706.03762) | The Transformer architecture underlying modern LLMs. |
 | SRC-142 | Zhao, W.X. et al. — *A Survey of Large Language Models* (2023) · [link](https://arxiv.org/abs/2303.18223) | Reference overview: pre-training, adaptation, utilization, and evaluation. |
 | SRC-143 | Bommasani, R. et al. — *On the Opportunities and Risks of Foundation Models* (Stanford CRFM, 2021) · [link](https://arxiv.org/abs/2108.07258) | The foundation-model framing and its risk surface. |
-| SRC-007 | Karpathy, A. — *LLM Wiki* (gist, April 2026) · [link](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) | Accessible foundational framing of how LLMs work. |
+| SRC-463 | Karpathy, Andrej — *Deep Dive into LLMs like ChatGPT* (video lecture, February 2025) · [link](https://www.youtube.com/watch?v=7xTGNNLPyMI) | Accessible walkthrough of how LLMs work: next-token prediction, pre-training then fine-tuning, the knowledge cutoff, knowledge as a vague recollection rather than stored facts, the context window as working memory, and uneven capability. |
 
 ---
 

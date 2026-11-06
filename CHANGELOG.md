@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.65 — November 2026
+
+**One source correction. No new entries; count stays at 158.**
+
+**Correction: *Large Language Models* cited the wrong Karpathy source.** It listed his LLM Wiki gist, which is about maintaining knowledge bases, as its accessible account of how language models work. The citation now points to his lecture *Deep Dive into LLMs like ChatGPT* (February 2025), which covers what the entry's plain-language version and literacy notes describe: next-word prediction, the training cutoff, knowledge held as a vague recollection rather than stored facts, and uneven capability.
+
 ## v1.64 — November 2026
 
 **One enrichment and one correction. No new entries; count stays at 158.**
