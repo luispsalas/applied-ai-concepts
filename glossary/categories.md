@@ -93,7 +93,7 @@ Looking for one term? Use the [alphabetical glossary](index.md) or [search](../s
 
 | Concept | One-line essence | Status |
 |---|---|---|
-| [Persistent Synthesis](../concepts/persistent-synthesis.md) | Knowledge compounds when contradictions are resolved, not accumulated | ✅ v1.2 |
+| [Persistent Synthesis](../concepts/persistent-synthesis.md) | Knowledge compounds when contradictions are resolved, not accumulated | ✅ v1.3 |
 | [Data Quality](../concepts/data-quality.md) | The fitness of data for its intended use, and the upstream constraint on every AI system built on it | ✅ v1.0 |
 | [Data Provenance / Lineage](../concepts/data-provenance-lineage.md) | Where the data came from and what has happened to it since. It is the record that answers "can we actually use this?" | ✅ v1.1 |
 | [Training Data](../concepts/training-data.md) | What the model learned from, which is where its knowledge, gaps, blind spots and biases all come from, and which is rarely disclosed | ✅ v1.0 |

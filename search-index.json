@@ -4827,25 +4827,33 @@
         "integrating sources",
         "compile don't re-derive",
         "living document",
-        "cumulative knowledge"
+        "cumulative knowledge",
+        "LLM wiki",
+        "Open Knowledge Format"
       ],
       "tags": [
         "Architecture",
         "Data Governance"
       ],
-      "version": "v1.2",
-      "updated": "May 2026",
+      "version": "v1.3",
+      "updated": "November 2026",
       "related": [
         "context-engineering",
         "hallucination",
         "knowledge-base",
+        "knowledge-graphs",
         "memory-ai-systems",
-        "model-data-drift"
+        "model-data-drift",
+        "rag"
       ],
       "sources": [
         "SRC-007",
         "SRC-008",
-        "SRC-009"
+        "SRC-009",
+        "SRC-459",
+        "SRC-460",
+        "SRC-461",
+        "SRC-462"
       ],
       "path": "concepts/persistent-synthesis.md"
     },
