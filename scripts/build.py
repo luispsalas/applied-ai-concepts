@@ -438,6 +438,8 @@ def link_problems(entries, by_slug):
             bullet = line.lstrip().startswith("- [")
             for m in re.finditer(r"\[([^\]]+)\]\(([^)]+\.md)\)", line):
                 anchor, target = m.group(1), m.group(2).split("#")[0]
+                if re.match(r"[a-z]+://", target):
+                    continue  # external .md URL (e.g. a spec on GitHub): not a local file
                 if not (p.parent / target).exists():
                     out.append(f"broken link: {p.relative_to(ROOT)} -> {target}")
                     continue

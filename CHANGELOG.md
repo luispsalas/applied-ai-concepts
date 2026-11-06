@@ -1,5 +1,15 @@
 # Changelog
 
+## v1.64 — November 2026
+
+**One enrichment and one correction. No new entries; count stays at 158.**
+
+- `persistent-synthesis` — v1.2 → **v1.3**
+
+**The pattern now has a file format and its first measurements.** *Persistent Synthesis* now covers the Open Knowledge Format, which Google Cloud engineers published in June 2026 to standardize the LLM-wiki pattern. The entry says which of its commitments the format encodes (sources, verification, a deprecated status, a staleness date) and which it leaves out. The format declines to store a confidence score, and it has no way to record how a contradiction was resolved or what replaced a deprecated document. It also adds the first measured tests of the pattern, two 2026 preprints. One compiles documents into a self-correcting wiki and reports better multi-hop answers than graph-based retrieval. The other sets out how agent memory systems decide between conflicting claims. A new practice follows from it: keep the losing claim and the reason it lost.
+
+**Correction: the pattern's sources are from 2026.** The entry dated Karpathy's LLM Wiki gist to 2023 and Ghumare's extension and its community critique to 2024. GitHub's own timestamps put all three in April 2026. The dates are corrected here and wherever the same sources are cited (*Context Engineering*, *Large Language Models* and the governance notes). The confidence section no longer calls the core idea "widely validated in practice", a claim no source supported.
+
 ## v1.63 — November 2026
 
 **One enrichment and one term declined. No new entries; count stays at 158.**
