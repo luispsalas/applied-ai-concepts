@@ -70,11 +70,13 @@ Most models answer immediately, like someone blurting out the first thing that c
 - Reasoning depth changed as a cost-control measure, silently altering system behavior and accuracy without reassessment
 - Traces logged verbatim without review, though they may restate sensitive input data at length
 - Assuming a reasoning model needs less oversight because its output "shows its work"
+- A high score on a well-known reasoning benchmark taken as proof of reasoning ability, when the questions may have been in the training data ([AI benchmarking](ai-benchmarking.md))
 
 **Practice:**
 - Treat reasoning depth as a versioned configuration parameter, on the record alongside the model version, since a change to it is a change to the system
 - Where traces are retained, apply the same [data minimization](data-minimization.md) and retention rules as any other model output
 - Evaluate reasoning models on outcome correctness, not on whether the trace looks sound; a convincing trace with a wrong answer is the failure to catch
+- Treat a final-answer score as an upper bound on reasoning quality, not a measure of it. A model can reach the right answer through flawed steps, a false positive that outcome-only scoring cannot see, and it may have met a public benchmark's questions during training and be recalling rather than solving them (Xiao & Zhu, 2025). Test on problems the model cannot have seen, and check intermediate steps where the task allows it
 - **Treat a trace as evidence to test, not testimony to believe.** Where it is load-bearing for a control, verify faithfulness for that model and that task rather than assuming it, because the research is explicit that faithfulness is conditional
 - Re-establish any trace-based control after a model change, since faithfulness does not carry across versions and tends to fall as capability rises ([model version & update](model-version-update.md))
 - State plainly, in any user-facing surface, that a visible trace is generated text and not a verified account of the system's internal process
@@ -119,6 +121,7 @@ Most models answer immediately, like someone blurting out the first thing that c
 | SRC-047 | Wei, Jason et al. (Google Research, Brain Team) — *Chain-of-Thought Prompting Elicits Reasoning in Large Language Models* (2022) · [link](https://arxiv.org/abs/2201.11903) | The antecedent technique: intermediate reasoning steps improve arithmetic, commonsense, and symbolic task performance. |
 | SRC-155 | Snell, C.; Lee, J.; Xu, K.; Kumar, A. (UC Berkeley / Google DeepMind) — *Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters* (arXiv, 2024) · [link](https://arxiv.org/abs/2408.03314) | Compute-optimal allocation of test-time compute; the finding that it can outperform a substantially larger model under a FLOPs-matched comparison. |
 | SRC-156 | Guo, D.; Yang, D.; Zhang, H.; Song, J.; Wang, P.; Zhu, Q. et al. (DeepSeek-AI) — *DeepSeek-R1 incentivizes reasoning in LLMs through reinforcement learning*, Nature 645(8081), 633–638 (2025) · [link](https://doi.org/10.1038/s41586-025-09422-z) | Peer-reviewed evidence that reasoning can be incentivized by reinforcement learning alone, with self-reflection and verification emerging from training. |
+| SRC-464 | Xiao, Tong; Zhu, Jingbo (NLP Lab, Northeastern University & NiuTrans Research) — *Foundations of Large Language Models* (textbook, arXiv 2501.09223, v4, 2025–2026) · [link](https://arxiv.org/abs/2501.09223) | Textbook account of evaluating reasoning models: outcome-only scoring admits right answers reached through flawed steps; step-level evaluation is more informative but hard to build; benchmark contamination can make recall look like reasoning. Cited for explanation, not as a primary finding. |
 | SRC-142 | Zhao, W.X. et al. — *A Survey of Large Language Models* (2023) · [link](https://arxiv.org/abs/2303.18223) | Background on inference-time behavior and the training-vs-inference distinction this entry rests on. |
 
 ---
@@ -134,4 +137,4 @@ Most models answer immediately, like someone blurting out the first thing that c
 
 ---
 
-*Last updated: v1.1 · September 2026*
+*Last updated: v1.2 · November 2026*
