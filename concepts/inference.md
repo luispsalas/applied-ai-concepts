@@ -24,6 +24,8 @@ Inference is the execution phase: a trained model's parameters are held fixed an
 
 **For generative models, inference is sequential and that shapes everything downstream.** Output is produced one token at a time, each conditioned on all preceding ones. Latency therefore scales with output length rather than being fixed per request, and the intermediate state (the KV cache) grows with the conversation. Kwon et al. (SOSP 2023) showed that memory management of that cache was the binding constraint on serving throughput. Their PagedAttention scheme, borrowing virtual-memory paging from operating systems, improved throughput 2–4× at equal latency. **The relevant point for a non-specialist is that "how many users can we serve" was answered by memory layout, not by model quality.**
 
+**Reading the prompt and writing the answer are two different jobs.** A textbook account divides inference into two phases (Xiao & Zhu, 2025). In prefilling, the whole input is processed at once, in parallel, to build the model's working state for it (the KV cache). In decoding, the answer is generated one token at a time from that state, and each new token has to look back over everything stored so far. The book classifies prefilling as limited by computation and decoding as limited by memory access, and notes that decoding is usually the more expensive of the two. A long prompt and a long answer therefore cost time in different ways: the input is read in parallel, while every output token waits for the one before it.
+
 **Inference is not deterministic by default, and often not deterministic even when asked to be.** Sampling introduces variation by design ([temperature](temperature-llms.md)), but He (2025) shows that identical requests can produce different outputs even at temperature zero, because batching and kernel non-determinism make a result depend on what *other* requests happened to be processed alongside it. **Reproducibility is a property of the serving stack, not only of the model or its settings** ([determinism vs probabilism](determinism-vs-probabilism.md)).
 
 **Compute spent at inference now buys capability, which changes the trade.** Snell et al. (2024) found that allocating additional test-time compute can outperform scaling model parameters for some problems, which is the basis of [reasoning models](reasoning-models.md). Cost per request stops being a fixed property of the model and becomes a dial someone chooses, usually without a policy governing it.
@@ -46,7 +48,7 @@ Two things surprise people. First, the same question can produce different answe
 
 1. **Training is the one-time cost; inference is the forever cost.** For any system with real usage, inference dominates the total.
 2. **This inverts model selection.** A smaller model that is cheaper to serve often beats a larger one that scored better, once lifetime cost is counted.
-3. **Latency scales with output length**, not with question difficulty, which is why streaming exists and why verbose prompting is expensive twice over.
+3. **Latency scales with output length**, not with question difficulty, which is why streaming exists and why verbose prompting is expensive twice over. The prompt is read in parallel; the answer is written one token at a time.
 4. **Throughput is a memory-management problem** as much as a model problem; serving capacity is an infrastructure decision.
 5. **Temperature zero does not guarantee identical outputs.** Batching effects in the serving stack can change results between otherwise identical requests.
 6. **Reproducibility must be established at the stack level** if anything depends on it, as in audit, regression testing and regulated decisions.
@@ -86,7 +88,7 @@ Two things surprise people. First, the same question can produce different answe
 
 ## Confidence level
 
-**High.** The training/inference distinction is textbook, and the specific claims here (the serving-throughput result, the non-determinism finding, the test-time compute trade, the inference-aware training argument) each come from a named peer-reviewed or lab-published source. **Where confidence drops is on numbers rather than mechanisms:** the ratio of lifetime inference cost to training cost is highly system-specific, providers publish little, and this entry deliberately states the direction of the trade rather than a multiple. Serving-stack behavior also moves quickly. The specific memory-management result is from 2023 and the field has not stood still, so treat particular throughput figures as dated while the underlying constraint remains. **The non-determinism point is the one most often disputed in practice** and is the most worth verifying in your own stack rather than accepting from any source, including this one.
+**High.** The training/inference distinction is textbook, and the specific claims here (the serving-throughput result, the non-determinism finding, the test-time compute trade, the inference-aware training argument) each come from a named peer-reviewed or lab-published source. The two-phase account of prefilling and decoding comes from a self-published textbook and is cited as explanation of a widely described mechanism, not as a finding. **Where confidence drops is on numbers rather than mechanisms:** the ratio of lifetime inference cost to training cost is highly system-specific, providers publish little, and this entry deliberately states the direction of the trade rather than a multiple. Serving-stack behavior also moves quickly. The specific memory-management result is from 2023 and the field has not stood still, so treat particular throughput figures as dated while the underlying constraint remains. **The non-determinism point is the one most often disputed in practice** and is the most worth verifying in your own stack rather than accepting from any source, including this one.
 
 ---
 
@@ -113,6 +115,7 @@ Two things surprise people. First, the same question can produce different answe
 | SRC-145 | He, Horace (Thinking Machines Lab) — *Defeating Nondeterminism in LLM Inference* (2025) · [link](https://thinkingmachines.ai/blog/defeating-nondeterminism-in-llm-inference/) | Identifies batch-dependent kernel non-determinism as a cause of varying output at temperature zero, the basis for treating reproducibility as a serving-stack property. |
 | SRC-155 | Snell, C.; Lee, J.; Xu, K.; Kumar, A. (UC Berkeley / Google DeepMind) — *Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters* (2024) · [link](https://arxiv.org/abs/2408.03314) | Evidence that inference-time compute can substitute for parameter scale, making cost per request a deliberate quality dial. |
 | SRC-228 | Hoffmann, J.; Borgeaud, S.; Mensch, A.; Buchatskaya, E.; Cai, T.; Rutherford, E.; Sifre, L. et al. (DeepMind) — *Training Compute-Optimal Large Language Models* (2022) · [link](https://arxiv.org/abs/2203.15556) | The compute-allocation frame behind the inference-aware design argument: a model trained once and served many times justifies trading training cost for lower serving cost. |
+| SRC-464 | Xiao, Tong; Zhu, Jingbo (NLP Lab, Northeastern University & NiuTrans Research) — *Foundations of Large Language Models* (textbook, arXiv 2501.09223, v4, 2025–2026) · [link](https://arxiv.org/abs/2501.09223) | Textbook account of the two phases of inference: prefilling processes the input in parallel and is compute-bound; decoding generates tokens one at a time from the KV cache, is memory-bound and usually costs more. Cited for explanation, not as a primary finding. |
 | SRC-142 | Zhao, W.X.; Zhou, K.; Li, J. et al. (Renmin University of China + multi-institution) — *A Survey of Large Language Models* (2023) · [link](https://arxiv.org/abs/2303.18223) | Survey treatment of the training/inference division and autoregressive decoding as the source of sequential latency. |
 
 ---
@@ -128,4 +131,4 @@ Two things surprise people. First, the same question can produce different answe
 
 ---
 
-*Last updated: v1.0 · September 2026*
+*Last updated: v1.1 · November 2026*

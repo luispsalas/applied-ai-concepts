@@ -1,5 +1,18 @@
 # Changelog
 
+## v1.66 — November 2026
+
+**Two enrichments from one textbook. No new entries; count stays at 158.**
+
+- `inference` — v1.0 → **v1.1**
+- `reasoning-models` — v1.1 → **v1.2**
+
+**Reading the prompt and writing the answer are different jobs.** *Inference* now explains the two phases of running a language model. The whole prompt is read at once, in parallel, while the answer is written one token at a time, each waiting for the last. The first phase is limited by computation and the second by memory access, and the second usually costs more. That is why a long prompt and a long answer slow a system down in different ways.
+
+**A correct answer is not proof of correct reasoning.** *Reasoning Models* now warns that a final-answer score overstates reasoning quality. A model can reach the right answer through flawed steps, and it may already have seen a well-known benchmark's questions during training. The entry recommends testing on problems the model cannot have seen and checking intermediate steps where the task allows it.
+
+Both additions draw on Xiao and Zhu's open textbook *Foundations of Large Language Models*, cited for explanation rather than as evidence of new findings.
+
 ## v1.65 — November 2026
 
 **One source correction. No new entries; count stays at 158.**

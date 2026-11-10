@@ -3318,8 +3318,8 @@
         "AI Literacy",
         "Architecture"
       ],
-      "version": "v1.0",
-      "updated": "September 2026",
+      "version": "v1.1",
+      "updated": "November 2026",
       "related": [
         "context-window",
         "determinism-vs-probabilism",
@@ -3337,7 +3337,8 @@
         "SRC-145",
         "SRC-155",
         "SRC-228",
-        "SRC-247"
+        "SRC-247",
+        "SRC-464"
       ],
       "path": "concepts/inference.md"
     },
@@ -5251,8 +5252,8 @@
         "Architecture",
         "Model Behavior"
       ],
-      "version": "v1.1",
-      "updated": "September 2026",
+      "version": "v1.2",
+      "updated": "November 2026",
       "related": [
         "concealing-uncertainty",
         "context-window",
@@ -5275,7 +5276,8 @@
         "SRC-156",
         "SRC-238",
         "SRC-239",
-        "SRC-240"
+        "SRC-240",
+        "SRC-464"
       ],
       "path": "concepts/reasoning-models.md"
     },
