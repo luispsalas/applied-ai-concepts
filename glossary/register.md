@@ -4,12 +4,12 @@ Every term this wiki tracks, with its status — **including the ones that are n
 
 The field names things faster than it settles them, and a glossary that repeats every new label without comment is a list of buzzwords. So each term is judged on whether it is a *real term*. That is a separate question from how good the evidence is for the claims inside an entry, which each entry states for itself in its own confidence level.
 
-**200 terms tracked — 158 published, 42 not.** See [how terms are admitted](../CONTRIBUTING.md#term-status--the-admission-test).
+**201 terms tracked — 158 published, 43 not.** See [how terms are admitted](../CONTRIBUTING.md#term-status--the-admission-test).
 
 | Status | Meaning | Count |
 |---|---|---|
 | `established` | Recognized term of art, in independent use. | 145 |
-| `emerging` | Real and in use, but definitions still vary between sources. | 13 |
+| `emerging` | Real and in use, but definitions still vary between sources. | 14 |
 | `declined` | Considered and turned down — not a term this wiki will publish. | 17 |
 | `covered` | A real term, already covered by another entry — findable there as an alias. | 25 |
 
@@ -44,6 +44,7 @@ The field names things faster than it settles them, and a glossary that repeats 
 | [Audit Trail (AI)](../concepts/audit-trail-ai.md) | `established` | yes |  |
 | [Automated Decision-Making](../concepts/automated-decision-making.md) | `established` | yes | PUBLISHED Sep 8 2026 as a CONSOLIDATED entry with Redress folded in — GDPR Article 22's three safeguards (human intervention, expressing a view, contesting the decision) ARE what redress concretely means here, so a separate entry would have restated them. Also carries EU AI Act Article 86, verified verbatim (SRC-298): owed by the DEPLOYER, covering the system's role and the decision's main elements, not the model's internals. ⚠️ Threshold questions (what is SOLELY automated) are unsettled — the entry states the tests, not outcomes. |
 | [Automation Bias](../concepts/automation-bias.md) | `established` | yes |  |
+| Autoresearch | `emerging` | not yet | QUEUED as `emerging`, triaged Nov 12 2026 (user request, option 1 of 3). ORIGIN verified from the primary, not recall: karpathy/autoresearch on GitHub (created 2026-03-06, last push 2026-03-26, 36 commits, about 100k stars, MIT per its README; SRC-465, pinned to commit 228791f). An agent edits one training file, trains for a fixed 5 minutes, keeps the change only if validation bits per byte improves, and repeats, about 100 runs overnight. The human edits only program.md, which the README describes as essentially a super lightweight "skill" (its quotation marks). The repo makes no results claims; those are in two X posts that were NOT read. INDEPENDENT USE IS STRONG, unlike LLM Council: the arXiv API returned 98 records for the term on Nov 12 2026, applied well beyond ML training (optimization, robotics, industrial search, solar segmentation), and arXiv 2608.10424 describes "a paradigm increasingly referred to as autoresearch". Emerging, not established, because the name already covers different designs: Karpathy's single-agent keep-or-discard loop, multi-agent idea-to-execution systems that reuse the name (arXiv 2608.17906, 2607.02520), and a loop that improves the loop (arXiv 2603.23420). GOVERNANCE CONTENT, all quotable from the repo: (1) the metric is protected by an instruction, not a control; program.md declares the scoring function read-only ("The `evaluate_bpb` function in `prepare.py` is the ground truth metric") while the README tells users to "disable all permissions", so nothing enforces it (reward-hacking, evaluation); (2) human check-ins are removed by design ("LOOP FOREVER", "NEVER STOP") (human-in-the-loop); (3) every keep-or-discard decision is scored on the same validation set, which invites tuning to that set; this is an INFERENCE, not stated by the repo (data-leakage-model-evaluation); (4) a bounded working case of self-improvement in a loop with humans (recursive-self-improvement). NEXT: read 2608.10424 (failure modes), 2603.23420 and 2611.05108 in full before drafting or enriching; register them then, not now. Fetch the X posts before citing any performance figure. |
 | [Bias (AI Systems)](../concepts/bias-ai-systems.md) | `established` | yes |  |
 | [Black Box](../concepts/black-box.md) | `established` | yes |  |
 | [Bluewashing](../concepts/bluewashing.md) | `established` | yes |  |
