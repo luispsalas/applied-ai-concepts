@@ -7,7 +7,7 @@ Looking for one term? Use the [alphabetical glossary](index.md) or [search](../s
 ---
 
 ### Foundations
-*How models behave — and why that behavior matters*
+*How models behave and why that behavior matters*
 
 | Concept | One-line essence | Status |
 |---|---|---|
@@ -115,7 +115,7 @@ Looking for one term? Use the [alphabetical glossary](index.md) or [search](../s
 | [Metadata](../concepts/metadata.md) | Data that describes other data, and which AI systems act on without checking, although it strips in transit, is often wrong at source, can stay unchanged while the data changes, and can be written by an attacker | ✅ v1.0 |
 
 ### Human Oversight
-*Humans in control by design — not by assumption*
+*Human control that is designed in, never assumed*
 
 | Concept | One-line essence | Status |
 |---|---|---|
